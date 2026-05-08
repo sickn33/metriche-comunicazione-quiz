@@ -943,33 +943,61 @@ Distribuzione: 1) Fondamenti 11; 2) Ricerche 11; 3) Modelli e digitale 11; 4) Mo
       ];
 
       const variants = [
-        (fact, area) => ({
+        (fact, area, factIndex) => ({
           section: area,
-          text: `Nel tema "${area}", quale affermazione è corretta su ${fact[0]}?`,
+          text: pickPrompt([
+            `Tra queste affermazioni, quale descrive meglio ${fact[0]} nel contesto di ${area}?`,
+            `Rispetto a ${fact[0]}, quale lettura è più corretta?`,
+            `Quando si parla di ${fact[0]}, quale interpretazione è più solida?`,
+            `Che cosa va ricordato soprattutto su ${fact[0]}?`
+          ], factIndex),
           correct: fact[1],
           distractors: pickDistractors(fact, 0)
         }),
-        (fact, area) => ({
+        (fact, area, factIndex) => ({
           section: area,
-          text: `Quale errore va evitato quando si parla di ${fact[0]}?`,
+          text: pickPrompt([
+            `Il fraintendimento più rischioso su ${fact[0]} riguarda quale aspetto?`,
+            `Nel valutare ${fact[0]}, quale errore metodologico va evitato?`,
+            `Una lettura fuorviante di ${fact[0]} sarebbe:`,
+            `Dove sta il rischio principale quando si interpreta ${fact[0]}?`
+          ], factIndex),
           correct: fact[2],
           distractors: pickDistractors(fact, 1)
         }),
-        (fact, area) => ({
+        (fact, area, factIndex) => ({
           section: area,
-          text: `Quale esempio applica correttamente ${fact[0]}?`,
+          text: pickPrompt([
+            `L'applicazione più coerente di ${fact[0]} è:`,
+            `In quale scelta operativa riconosci un uso corretto di ${fact[0]}?`,
+            `Un esempio coerente con ${fact[0]} sarebbe:`,
+            `La decisione che mostra una buona comprensione di ${fact[0]} è:`
+          ], factIndex),
           correct: fact[3],
           distractors: pickDistractors(fact, 2)
         }),
-        (fact, area) => ({
+        (fact, area, factIndex) => ({
           section: area,
-          text: `Quale distinzione aiuta a non confondere ${fact[0]}?`,
+          text: pickPrompt([
+            `La distinzione decisiva per interpretare correttamente ${fact[0]} è:`,
+            `Per non confondere ${fact[0]} con concetti vicini, quale criterio aiuta di più?`,
+            `Il confronto che chiarisce meglio ${fact[0]} è:`,
+            `Il confine concettuale da mantenere quando si usa ${fact[0]} è:`
+          ], factIndex),
           correct: fact[4],
           distractors: pickDistractors(fact, 3)
         }),
-        (fact, area) => ({
+        (fact, area, factIndex) => ({
           section: area,
-          text: `Se in un caso d'esame compare questa situazione: ${fact[5]}, quale lettura è più solida?`,
+          text: pickPrompt([
+            `Lo scenario presenta questo indizio: ${fact[5]}. La conclusione più difendibile è:`,
+            `Davanti al caso "${fact[5]}", quale interpretazione useresti?`,
+            `Il caso ruota attorno a "${fact[5]}". La lettura che regge meglio è:`,
+            `Nel caso pratico "${fact[5]}", quale risposta mostra più padronanza?`,
+            `La situazione descritta è "${fact[5]}". L'interpretazione più solida è:`,
+            `L'indizio pratico è "${fact[5]}". Che cosa suggerisce?`,
+            `Nel caso compare "${fact[5]}". La risposta più robusta è:`
+          ], factIndex),
           correct: fact[6],
           distractors: pickDistractors(fact, 4)
         })
@@ -977,14 +1005,18 @@ Distribuzione: 1) Fondamenti 11; 2) Ricerche 11; 3) Modelli e digitale 11; 4) Mo
 
       const built = [];
       for (const [area, facts] of blueprints) {
-        for (const fact of facts) {
+        for (const [factIndex, fact] of facts.entries()) {
           for (const make of variants) {
-            const q = make(fact, area);
+            const q = make(fact, area, built.length);
             built.push(toQuestion(built.length + 1, q));
           }
         }
       }
       return built;
+    }
+
+    function pickPrompt(prompts, seed) {
+      return prompts[seed % prompts.length];
     }
 
     function pickDistractors(fact, offset) {
@@ -997,24 +1029,68 @@ Distribuzione: 1) Fondamenti 11; 2) Ricerche 11; 3) Modelli e digitale 11; 4) Mo
     }
 
     function balanceDistractors(correct, distractors) {
-      const target = Math.min(wordCount(correct), 21);
-      const fillers = [
-        "nel quadro teorico del corso",
-        "come criterio generale di analisi",
-        "nella lettura manageriale del caso",
-        "per orientare decisioni e valutazioni",
-        "rispetto agli obiettivi della comunicazione"
-      ];
+      const target = Math.min(wordCount(correct), 20);
 
       return distractors.map((text, index) => {
-        let balanced = text;
-        let fillerIndex = index;
-        while (wordCount(balanced) < target - 2 && fillerIndex < index + fillers.length) {
-          balanced += ` ${fillers[fillerIndex % fillers.length]}`;
-          fillerIndex += 1;
+        let balanced = expandDistractor(text);
+        const clauses = [
+          "senza collegarla agli obiettivi del caso",
+          "trascurando pubblici, contesto e livelli di effetto",
+          "come se bastasse a spiegare l'intero fenomeno",
+          "senza distinguere mezzi, risultati e impatti"
+        ];
+
+        let clauseIndex = index;
+        while (wordCount(balanced) < target - 2 && clauseIndex < index + clauses.length) {
+          balanced = `${trimPeriod(balanced)}, ${clauses[clauseIndex % clauses.length]}.`;
+          clauseIndex += 1;
         }
         return balanced;
       });
+    }
+
+    function expandDistractor(text) {
+      const clean = trimPeriod(text);
+      const lower = clean.charAt(0).toLowerCase() + clean.slice(1);
+      const onlyMatch = clean.match(/^È solo (.+)$/);
+      const serveSoloMatch = clean.match(/^Serve solo (.+)$/);
+      const contaSoloMatch = clean.match(/^Conta solo (.+)$/);
+      const misuraSoloMatch = clean.match(/^Misura solo (.+)$/);
+      const bastaMatch = clean.match(/^Basta (.+)$/);
+      const coincideMatch = clean.match(/^Coincide con (.+)$/);
+      const eUnaMatch = clean.match(/^È (una|un) (.+)$/);
+
+      if (wordCount(clean) > 7) return `${clean}.`;
+      if (onlyMatch) return `Riduce la risposta a ${onlyMatch[1]}, trascurando la logica del modello.`;
+      if (serveSoloMatch) return expandServeSolo(serveSoloMatch[1]);
+      if (contaSoloMatch) return `Limita l'analisi a ${normalizeSoloObject(contaSoloMatch[1])}, ignorando le altre fasi del processo.`;
+      if (misuraSoloMatch) return `Limita la misurazione a ${normalizeSoloObject(misuraSoloMatch[1])}, senza collegare il dato agli obiettivi.`;
+      if (bastaMatch) return `Considera sufficiente ${bastaMatch[1]}, senza controllare coerenza e contesto.`;
+      if (coincideMatch) return `Fa coincidere il concetto con ${coincideMatch[1]}, semplificando troppo la distinzione.`;
+      if (eUnaMatch) return `Lo interpreta come ${eUnaMatch[1]} ${eUnaMatch[2]}, spostando l'analisi su un piano non pertinente.`;
+      if (/^(Elimina|Sostituisce|Calcola|Certifica|Riguarda|Non richiede|Ignora)\\b/.test(clean)) {
+        return `${clean}, trattandolo come criterio sufficiente di valutazione.`;
+      }
+      return `${clean}, senza distinguere correttamente livello, obiettivo e contesto.`;
+    }
+
+    function trimPeriod(text) {
+      return String(text).trim().replace(/[.。]+$/, "");
+    }
+
+    function expandServeSolo(text) {
+      const value = String(text).trim();
+      if (/^a\s+/i.test(value)) {
+        return `Riduce la valutazione alla sola azione di ${value.replace(/^a\s+/i, "")}, senza verificare gli effetti.`;
+      }
+      return `Riduce la valutazione a ${value}, senza verificare gli effetti.`;
+    }
+
+    function normalizeSoloObject(text) {
+      return String(text)
+        .trim()
+        .replace(/^a\s+/, "")
+        .replace(/^(un|una|uno|il|lo|la|i|gli|le)\s+/i, "");
     }
 
     function toQuestion(id, q) {
