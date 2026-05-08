@@ -1,0 +1,1366 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz Metriche della Comunicazione</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f7f2;
+      --panel: #ffffff;
+      --panel-2: #eef2ea;
+      --text: #172018;
+      --muted: #657066;
+      --line: #d9e0d6;
+      --accent: #256f5c;
+      --accent-2: #b8552c;
+      --good: #1b7a4b;
+      --bad: #b43c38;
+      --focus: #f2c14e;
+      --shadow: 0 18px 45px rgba(29, 46, 34, 0.12);
+      --radius: 8px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        linear-gradient(180deg, rgba(37, 111, 92, 0.08), transparent 260px),
+        var(--bg);
+      color: var(--text);
+    }
+
+    button,
+    select {
+      font: inherit;
+    }
+
+    button {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      color: var(--text);
+      border-radius: var(--radius);
+      min-height: 42px;
+      padding: 0 14px;
+      cursor: pointer;
+      transition: border-color 160ms ease, background 160ms ease, transform 160ms ease;
+    }
+
+    button:hover { border-color: #9caf9e; }
+    button:active { transform: translateY(1px); }
+    button:focus-visible,
+    select:focus-visible {
+      outline: 3px solid rgba(242, 193, 78, 0.55);
+      outline-offset: 2px;
+    }
+
+    button.primary {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+
+    button.danger {
+      color: var(--bad);
+    }
+
+    button.ghost {
+      background: transparent;
+    }
+
+    button:disabled {
+      cursor: not-allowed;
+      opacity: 0.55;
+      transform: none;
+    }
+
+    .shell {
+      width: min(1180px, calc(100vw - 32px));
+      margin: 0 auto;
+      padding: 28px 0 40px;
+    }
+
+    .topbar {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: end;
+      gap: 20px;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: clamp(28px, 4vw, 46px);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    .subhead {
+      margin: 0;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.55;
+      max-width: 760px;
+    }
+
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 310px;
+      gap: 18px;
+      align-items: start;
+    }
+
+    .card,
+    .side {
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .card {
+      overflow: hidden;
+    }
+
+    .question-head {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      align-items: center;
+      padding: 22px 24px 18px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(180deg, #fff, #fbfcfa);
+    }
+
+    .section-label {
+      display: none;
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 750;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .question-count {
+      display: none;
+      color: var(--muted);
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    .progress {
+      height: 8px;
+      background: #e4eadf;
+      overflow: hidden;
+    }
+
+    .progress > span {
+      display: block;
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--accent), #59a78f);
+      transition: width 220ms ease;
+    }
+
+    .question-body {
+      padding: 24px;
+    }
+
+    .question-text {
+      margin: 0 0 22px;
+      font-size: clamp(21px, 2.4vw, 30px);
+      line-height: 1.25;
+      letter-spacing: 0;
+      max-width: 920px;
+    }
+
+    .answers {
+      display: grid;
+      gap: 10px;
+    }
+
+      .answer {
+      display: grid;
+      grid-template-columns: 38px 1fr;
+      gap: 12px;
+      align-items: center;
+      width: 100%;
+      min-height: 58px;
+      padding: 12px 14px;
+      text-align: left;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: #fff;
+    }
+
+      .answer .letter {
+      display: grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: var(--panel-2);
+      color: var(--accent);
+      font-weight: 800;
+    }
+
+    .answer.correct {
+      border-color: rgba(27, 122, 75, 0.55);
+      background: rgba(27, 122, 75, 0.08);
+    }
+
+    .answer.correct .letter {
+      background: var(--good);
+      color: #fff;
+    }
+
+    .answer.wrong {
+      border-color: rgba(180, 60, 56, 0.55);
+      background: rgba(180, 60, 56, 0.08);
+    }
+
+    .answer.wrong .letter {
+      background: var(--bad);
+      color: #fff;
+    }
+
+    .feedback {
+      min-height: 32px;
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-weight: 650;
+    }
+
+    .feedback.good { color: var(--good); }
+    .feedback.bad { color: var(--bad); }
+
+    .card-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 18px 24px 24px;
+      border-top: 1px solid var(--line);
+    }
+
+    .side {
+      padding: 18px;
+      position: sticky;
+      top: 18px;
+    }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .stat {
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 24px;
+      line-height: 1;
+    }
+
+    .stat span {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .control {
+      display: grid;
+      gap: 7px;
+      margin-bottom: 14px;
+    }
+
+    .control label {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    select {
+      width: 100%;
+      min-height: 42px;
+      padding: 0 10px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      color: var(--text);
+    }
+
+    .toggles {
+      display: grid;
+      gap: 8px;
+      margin: 16px 0;
+    }
+
+    .toggle {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.35;
+    }
+
+    .toggle input {
+      width: 18px;
+      height: 18px;
+      accent-color: var(--accent);
+    }
+
+    .mini-title {
+      margin: 18px 0 8px;
+      font-size: 13px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .topic-list {
+      display: grid;
+      gap: 7px;
+      max-height: 260px;
+      overflow: auto;
+      padding-right: 4px;
+    }
+
+    .topic-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 8px;
+      align-items: center;
+      font-size: 13px;
+      line-height: 1.25;
+      color: var(--muted);
+    }
+
+    .topic-meter {
+      width: 64px;
+      height: 7px;
+      border-radius: 999px;
+      background: #e6ebe2;
+      overflow: hidden;
+    }
+
+    .topic-meter span {
+      display: block;
+      height: 100%;
+      background: var(--accent-2);
+    }
+
+    .review {
+      margin-top: 18px;
+      display: none;
+    }
+
+    .review.visible {
+      display: block;
+    }
+
+    .review-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 10px;
+      max-height: 320px;
+      overflow: auto;
+      padding-right: 4px;
+    }
+
+    .review-item {
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 10px;
+      font-size: 13px;
+      line-height: 1.35;
+    }
+
+    .review-item button {
+      margin-top: 8px;
+      min-height: 32px;
+      padding: 0 10px;
+      font-size: 12px;
+    }
+
+    .empty {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    @media (max-width: 900px) {
+      .topbar,
+      .layout,
+      .question-head {
+        grid-template-columns: 1fr;
+      }
+
+      .toolbar {
+        justify-content: flex-start;
+      }
+
+      .side {
+        position: static;
+      }
+
+      .question-count {
+        white-space: normal;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <h1>Quiz Metriche della Comunicazione</h1>
+        <p class="subhead">Quiz da 50 domande pescate casualmente dalla banca completa da 525, con correzione immediata e nuovo giro random quando vuoi.</p>
+      </div>
+      <div class="toolbar">
+        <button id="restartBtn" type="button">Nuovo quiz</button>
+        <button id="reviewModeBtn" type="button">Ripassa errori</button>
+      </div>
+    </header>
+
+    <section class="layout" aria-label="Quiz interattivo">
+      <article class="card">
+        <div class="question-head">
+          <div>
+            <p class="section-label" id="sectionLabel"></p>
+            <p class="question-text" id="questionText"></p>
+          </div>
+          <div class="question-count" id="questionCount"></div>
+        </div>
+        <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+        <div class="question-body">
+          <div class="answers" id="answers"></div>
+          <p class="feedback" id="feedback" aria-live="polite"></p>
+        </div>
+        <div class="card-actions">
+          <button id="prevBtn" type="button">Indietro</button>
+          <div>
+            <button id="revealBtn" type="button" class="ghost">Mostra risposta</button>
+            <button id="nextBtn" type="button" class="primary">Avanti</button>
+          </div>
+        </div>
+      </article>
+
+      <aside class="side" aria-label="Controlli e risultati">
+        <div class="stat-grid">
+          <div class="stat"><strong id="scoreStat">0</strong><span>Corrette</span></div>
+          <div class="stat"><strong id="percentStat">0%</strong><span>Precisione</span></div>
+          <div class="stat"><strong id="doneStat">0</strong><span>Risposte</span></div>
+          <div class="stat"><strong id="leftStat">50</strong><span>Da fare</span></div>
+        </div>
+
+        <div class="control">
+          <label for="topicFilter">Argomento</label>
+          <select id="topicFilter"></select>
+        </div>
+
+        <div class="toggles">
+          <label class="toggle"><input id="shuffleToggle" type="checkbox" checked> Mescola domande</label>
+          <label class="toggle"><input id="unansweredToggle" type="checkbox"> Mostra solo non risposte</label>
+        </div>
+
+        <p class="mini-title">Copertura argomenti</p>
+        <div class="topic-list" id="topicList"></div>
+
+        <div class="review" id="reviewPanel">
+          <p class="mini-title">Errori da ripassare</p>
+          <div class="review-list" id="reviewList"></div>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <script>
+    const rawQuiz = String.raw`
+# Quiz - 100 domande a risposta multipla
+
+Distribuzione: 1) Fondamenti 11; 2) Ricerche 11; 3) Modelli e digitale 11; 4) Monitoring/listening/sentiment 11; 5) Enti certificatori 11; 6) Modelli di valutazione 11; 7) Performance measurement e CCPM 12; 8) ROI/AVE/economia 11; 9) Intangibili e reputazione 11.
+
+## 1. Fondamenti della misurazione
+
+1. In un piano di comunicazione, quale ragione giustifica meglio la misurazione? A. Dimostrare che sono state prodotte molte attività. B. Collegare attività, effetti e decisioni manageriali in modo verificabile. C. Sostituire il giudizio professionale con dati automatici. D. Eliminare la necessità di obiettivi qualitativi. Risposta: B
+
+2. Una campagna ha generato 40 articoli, ma non si sa se il pubblico abbia compreso il messaggio. Quale livello è stato misurato? A. Output. B. Out-take. C. Outcome. D. Impatto. Risposta: A
+
+3. Quale indicatore appartiene più chiaramente agli out-take? A. Numero di comunicati inviati. B. Ricordo e comprensione del messaggio. C. Aumento delle vendite annuali. D. Valore reputazionale consolidato. Risposta: B
+
+4. Quale affermazione distingue correttamente outcome e impatto? A. L'outcome riguarda cambiamenti nei pubblici; l'impatto riguarda il contributo agli obiettivi organizzativi. B. L'outcome è sempre economico; l'impatto è sempre mediatico. C. L'outcome misura solo output quantitativi; l'impatto misura solo ricordo. D. Outcome e impatto sono sinonimi se la campagna ha successo. Risposta: A
+
+5. Perché è rischioso usare solo vanity metrics nella valutazione? A. Perché sono sempre false. B. Perché misurano solo canali offline. C. Perché sono numeriche ma poco decisionali. D. Perché impediscono qualsiasi confronto temporale. Risposta: C
+
+6. Una misura usata durante una campagna per correggere messaggi e canali è soprattutto: A. Formativa. B. Sommativa. C. Rendicontativa. D. Reputazionale. Risposta: A
+
+7. Quale esempio è più coerente con una misura sommativa? A. Numero di materiali distribuiti a un evento. B. Valutazione del capitale comunicativo consolidato nel tempo. C. Conteggio dei click dopo un post. D. Calcolo del costo di stampa dei volantini. Risposta: B
+
+8. Una misura rendicontativa serve principalmente a: A. Migliorare un layout prima della pubblicazione. B. Dimostrare agli stakeholder il contributo della comunicazione al business. C. Scegliere il moderatore di un focus group. D. Raccogliere tutte le metriche disponibili senza selezione. Risposta: B
+
+9. Quale sequenza descrive meglio la catena logica della misurazione? A. Impatto -> output -> out-take -> outcome. B. Output -> out-take -> outcome -> impatto. C. Outcome -> output -> impatto -> out-take. D. Out-take -> impatto -> output -> outcome. Risposta: B
+
+10. Perché le metriche non sono mai completamente neutrali? A. Perché selezionano ciò che viene considerato importante. B. Perché tutte le metriche sono manipolate dai media. C. Perché i dati quantitativi non esistono nella comunicazione. D. Perché ogni metrica misura automaticamente il ROI. Risposta: A
+
+11. Quale uso della misurazione è metodologicamente più debole? A. Collegare KPI agli obiettivi del piano. B. Interpretare i dati nel loro contesto. C. Attribuire impatto solo perché aumentano gli output. D. Combinare dati qualitativi e quantitativi. Risposta: C
+
+## 2. Ricerche in comunicazione
+
+12. Quando è più adatto un approccio qualitativo? A. Quando si vuole esplorare motivazioni e significati non ancora chiari. B. Quando si vuole ottenere una stima statisticamente generalizzabile subito. C. Quando si vuole eliminare ogni interpretazione soggettiva. D. Quando si misura esclusivamente la tiratura della stampa. Risposta: A
+
+13. Quale limite va ricordato nella ricerca qualitativa? A. Non può generare ipotesi. B. Non produce profondità interpretativa. C. Non è automaticamente generalizzabile statisticamente. D. Non può essere usata nella comunicazione. Risposta: C
+
+14. In una ricerca causale, il gruppo di controllo serve a: A. Aumentare il numero di output prodotti. B. Confrontare esposti e non esposti. C. Sostituire l'analisi dei dati. D. Rendere qualitativo un questionario. Risposta: B
+
+15. Una survey standardizzata su un campione ampio è tipicamente: A. Qualitativa. B. Quantitativa. C. Partecipante. D. Narrativa. Risposta: B
+
+16. Qual è il valore distintivo del focus group rispetto a interviste individuali? A. La possibilità di evitare qualsiasi influenza sociale. B. Interazione che mostra consenso e dissenso. C. La certezza di ottenere dati rappresentativi dell'intera popolazione. D. L'assenza di moderazione. Risposta: B
+
+17. In un focus group aziendale, perché è meglio evitare rapporti gerarchici diretti tra partecipanti? A. Perché rendono impossibile registrare l'audio. B. Perché possono condizionare spontaneità e libertà di espressione. C. Perché trasformano la ricerca in una survey. D. Perché aumentano automaticamente la validità statistica. Risposta: B
+
+18. L'osservazione partecipante è più correttamente descritta come: A. Analisi di dati già pubblicati. B. Immersione nel contesto naturale del gruppo. C. Intervista telefonica assistita da computer. D. Conteggio delle visualizzazioni social. Risposta: B
+
+19. Quale coppia distingue bene ricerca primaria e secondaria? A. Primaria raccolta ad hoc; secondaria già esistente. B. Primaria = dati vecchi; secondaria = dati sempre sperimentali. C. Primaria = solo online; secondaria = solo offline. D. Primaria = qualitativa; secondaria = causale. Risposta: A
+
+20. Qual è una criticità tipica della ricerca secondaria? A. È sempre più costosa della primaria. B. Può essere obsoleta o poco aderente. C. Non può mai essere usata per il benchmark. D. Richiede sempre gruppi sperimentali. Risposta: B
+
+21. Per misurare il customer journey, perché non basta osservare solo la conversione finale? A. Perché la conversione è sempre una vanity metric. B. Perché il percorso include ricerca, valutazione, esperienza e raccomandazione. C. Perché il post-acquisto non influenza mai il comportamento futuro. D. Perché il customer journey riguarda solo i media tradizionali. Risposta: B
+
+22. Quale sequenza rappresenta meglio il comportamento d'acquisto studiato nel corso? A. Acquisto -> bisogno -> ricerca -> raccomandazione. B. Bisogno, ricerca, valutazione, scelta, esperienza, raccomandazione. C. Awareness -> tiratura -> diffusione -> impatto. D. Output -> ADS -> TER -> Auditel. Risposta: B
+
+## 3. Modelli di comunicazione e digitale
+
+23. Una campagna TV nazionale orientata alla notorietà e misurata con reach e GRP è soprattutto: A. ATL. B. BTL. C. TTL. D. Listening. Risposta: A
+
+24. Quale esempio è più coerente con una logica BTL? A. Spot televisivo generalista per pubblico indifferenziato. B. Direct marketing con call to action misurata. C. Misurazione della tiratura di un quotidiano. D. Golden Rule di Auditel. Risposta: B
+
+25. La logica TTL si caratterizza per: A. Separare rigorosamente media di massa e canali diretti. B. Integrare ATL e BTL lungo il funnel. C. Misurare solo la stampa cartacea. D. Sostituire la strategia con un singolo KPI. Risposta: B
+
+26. Quale distinzione tra Web 3.0 e Web 4.0 è più corretta? A. Web 3.0 è statico; Web 4.0 è solo social. B. Web 3.0 struttura e interpreta dati; Web 4.0 introduce sistemi predittivi e agenti autonomi. C. Web 3.0 è la stampa digitale; Web 4.0 è la TV connessa. D. Web 3.0 coincide con i blog; Web 4.0 con i forum. Risposta: B
+
+27. La formula “leggi, partecipi, capisce, agisce” rimanda a: A. Livelli del Yardstick Model. B. Evoluzione Web 1.0-4.0. C. Fasi ADS di certificazione. D. Tipi di capitale intellettuale. Risposta: B
+
+28. Un insight, rispetto a un semplice dato, è: A. Un numero grezzo senza contesto. B. Interpretazione collegata a obiettivi e decisioni. C. Un output editoriale. D. Un sinonimo di follower count. Risposta: B
+
+29. Il benchmark è importante perché: A. Rende inutile definire obiettivi. B. Dà contesto a un dato isolato. C. Misura solo l'AVE. D. Elimina ogni bisogno di analisi qualitativa. Risposta: B
+
+30. Quando una vanity metric può diventare fuorviante? A. Quando manca trend, benchmark o obiettivo. B. Quando viene inserita in una dashboard. C. Quando riguarda il digitale. D. Quando è confrontata con un competitor. Risposta: A
+
+31. Lo ZMOT indica principalmente: A. L'acquisto finale in negozio. B. Ricerca online prima della scelta d'acquisto. C. La misurazione della diffusione stampa. D. Il calcolo del PQII. Risposta: B
+
+32. Nel modello PESO, i contenuti pubblicati sui canali proprietari dell'organizzazione sono: A. Paid. B. Earned. C. Shared. D. Owned. Risposta: D
+
+33. Quale logica descrive meglio Altimeter/Owyang? A. Partire dai like per definire poi il business. B. Partire dal business e collegare metriche social. C. Misurare solo le conversazioni spontanee. D. Eliminare le metriche social dal piano. Risposta: B
+
+## 4. Media monitoring, listening e sentiment
+
+34. Quale differenza tra monitoring e listening è più corretta? A. Monitoring descrive; listening parte dal business. B. Monitoring è qualitativo; listening è solo conteggio automatico. C. Monitoring riguarda solo TV; listening solo stampa. D. Monitoring e listening sono sinonimi perfetti. Risposta: A
+
+35. Un processo di listening ben impostato dovrebbe partire da: A. Tutti i messaggi raccolti senza filtro. B. Domande informative e obiettivi di business. C. Una metrica unica di volume. D. La classifica dei post più recenti. Risposta: B
+
+36. Una mappa semantica serve soprattutto a: A. Certificare la tiratura. B. Relazioni tra topic, sentiment e nodi. C. Calcolare automaticamente il ROI. D. Sostituire il moderatore del focus group. Risposta: B
+
+37. Un hot topic è meglio interpretato come: A. Un tema emergente nelle conversazioni. B. Un obiettivo SMART. C. Un indice di diffusione stampa. D. Una metrica finanziaria. Risposta: A
+
+38. Nella sentiment analysis, perché è importante definire il soggetto del giudizio? A. Perché lo stesso contenuto può avere toni diversi verso soggetti diversi. B. Perché il sentiment è sempre positivo se il brand è noto. C. Perché evita la necessità di leggere il testo. D. Perché il soggetto coincide sempre con l'autore del post. Risposta: A
+
+39. Il punto di vista del “lettore medio” nella sentiment analysis serve a: A. Valutare senza strategie o pregiudizi aziendali. B. Premiare sempre la copertura giornalistica. C. Trasformare il sentiment in GRP. D. Evitare la classificazione neutra. Risposta: A
+
+40. Quale limite è tipico degli analytics nativi delle piattaforme social? A. Mostrano sempre i dati dei competitor. B. Cecità competitiva e frammentazione tra piattaforme. C. Misurano direttamente la reputazione totale. D. Sono sempre più profondi del listening. Risposta: B
+
+41. Perché un commento negativo e un commento positivo non dovrebbero valere entrambi solo come “+1 engagement”? A. Perché l'engagement non esiste. B. Il volume non cattura tono e qualità. C. Perché i commenti negativi non vanno mai misurati. D. Perché solo i like sono rilevanti. Risposta: B
+
+42. Quale rischio riguarda l'uso dell'AI nella misurazione social? A. Non può leggere grandi volumi. B. Può sbagliare ironia, slang e ambiguità. C. Impedisce il topic modeling. D. Elimina la necessità di privacy e controllo umano. Risposta: B
+
+43. Quale pratica riduce il rischio di automazione cieca nell'analisi con AI? A. Accettare sempre il primo output del tool. B. Supervisionare con campioni e prompt strutturati. C. Rimuovere gli obiettivi di business. D. Misurare solo il numero di menzioni. Risposta: B
+
+44. La combinazione topic + sentiment è utile perché: A. Collega tono e temi in modo azionabile. B. Elimina il bisogno di fonti. C. Trasforma ogni conversazione in ROI. D. Misura la tiratura della stampa. Risposta: A
+
+## 5. Enti certificatori delle audience
+
+45. La logica JIC serve soprattutto a: A. Dati condivisi con controllo incrociato del mercato. B. Dare agli editori il controllo esclusivo della misurazione. C. Sostituire tutte le ricerche qualitative. D. Misurare solo i social media. Risposta: A
+
+46. La “currency” di mercato è: A. Una valuta estera usata per comprare spazi pubblicitari. B. Misura condivisa per pianificare e comprare spazi. C. Un sinonimo di insight. D. Il costo di un focus group. Risposta: B
+
+47. ADS certifica principalmente: A. Lettura effettiva individuale dei giornali. B. Tiratura e diffusione di quotidiani/periodici. C. Ascolti televisivi minuto per minuto. D. Podcast on demand. Risposta: B
+
+48. Qual è la trappola principale su ADS? A. Pensare che misuri direttamente l'audience effettiva di lettura. B. Pensare che pubblichi dati mensili. C. Pensare che riguardi stampa cartacea e digitale. D. Pensare che usi certificazione terza. Risposta: A
+
+49. Audicom nasce per: A. Integrare digital e print dopo Audiweb-Audipress. B. Misurare solo la radio lineare. C. Certificare i costi pubblicitari equivalenti. D. Sostituire la Balanced Scorecard. Risposta: A
+
+50. La Total Digital Audience richiede deduplicazione perché: A. Lo stesso individuo può usare più device. B. I contenuti online non hanno utenti. C. La stampa non può essere digitale. D. Le app non usano SDK. Risposta: A
+
+51. Auditel misura la TV in ottica Total Audience integrando: A. Solo interviste telefoniche. B. Meter e SDK censuari. C. Solo dichiarazioni degli editori. D. Solo readership certificata. Risposta: B
+
+52. La Golden Rule di Auditel garantisce che: A. Software diversi producano lo stesso risultato partendo dagli stessi dati. B. Ogni programma abbia lo stesso share. C. La TV sia misurata solo su televisore domestico. D. Le agenzie possano modificare i dati grezzi. Risposta: A
+
+53. Audiradio, rispetto al precedente modello TER, rappresenta: A. Il passaggio a un JIC audio ibrido. B. Una riduzione alla sola rilevazione editoriale. C. La fine della misurazione radiofonica. D. Un sistema dedicato esclusivamente alla stampa. Risposta: A
+
+54. La metodologia Audiradio combina principalmente: A. CATI e SDK. B. AVE e REAV. C. GRP e PQII. D. Focus group e laddering. Risposta: A
+
+55. Quale associazione mezzo-ente/metodo è corretta? A. Stampa ADS; TV Auditel Total Audience. B. Radio: ADS per podcast; TV: Audicom per meter domestici. C. Digitale: Audiradio; stampa: Golden Rule. D. TV: TER; radio: Audipress. Risposta: A
+
+## 6. Modelli di valutazione
+
+56. Un obiettivo SMART deve essere: A. Specifico, misurabile, raggiungibile, rilevante e temporalmente definito. B. Sociale, mediatico, automatico, rapido e tattico. C. Soggettivo, monetario, assoluto, reputazionale e tecnico. D. Standard, minimo, astratto, ricorsivo e testuale. Risposta: A
+
+57. Nei Barcelona Principles 3.0, quale affermazione è centrale? A. L'AVE misura sempre il valore della comunicazione. B. L'AVE non misura il valore della comunicazione. C. Conta solo il numero di uscite media. D. Gli obiettivi sono opzionali. Risposta: B
+
+58. Quale principio dei Barcelona 3.0 contrasta una valutazione solo quantitativa? A. Integrare analisi qualitative e quantitative. B. Usare solo copertura e impression. C. Limitare la valutazione ai canali offline. D. Evitare la trasparenza. Risposta: A
+
+59. Il Yardstick Model procede principalmente per livelli: A. Output, out-take, outcome. B. Capitale umano, strutturale, relazionale. C. ADS, Audicom, Auditel. D. Paid, earned, shared. Risposta: A
+
+60. Nel PII Model, la fase Implementation misura soprattutto: A. Output, non outcome. B. Impatto economico finale. C. Capitale narrativo. D. Fiducia, integrità e benevolenza. Risposta: A
+
+61. Nel PII Model, perché gli output sono detti pseudo-effetti? A. Perché non provano cambiamenti nei pubblici. B. Perché sono sempre qualitativi. C. Perché non possono essere contati. D. Perché coincidono con il ROI. Risposta: A
+
+62. Nel MACRO Model, gli input sono soprattutto: A. Micro-decisioni professionali. B. Solo budget annuale. C. Solo ricavi di vendita. D. Solo stakeholder esterni. Risposta: A
+
+63. Quale immagine descrive il Measurement Tree? A. Radici obiettivi, tronco strategie, rami pubblici, fiori outcome. B. Radici come ROI, tronco come AVE, rami come ADS. C. Radici come competitor, tronco come Golden Rule. D. Radici come commenti, tronco come sentiment. Risposta: A
+
+64. Il PRE Model sottolinea che la valutazione: A. Arriva solo dopo la campagna. B. Accompagna pianificazione, ricerca e azione in parallelo. C. Sostituisce la definizione degli obiettivi. D. Riguarda solo l'analisi degli spot. Risposta: B
+
+65. Quale errore riguarda il PRE Model? A. Considerarlo un modello di valutazione continua. B. Pensare ricerca e valutazione solo ex post. C. Collegarlo alla pianificazione. D. Usarlo per audit iniziale e valutazione ongoing. Risposta: B
+
+66. Quale combinazione modello-trappola è corretta? A. MACRO: valutazione dagli input/micro-decisioni. B. Yardstick: scambiare ADS per Auditel. C. PII: usare solo capitale narrativo. D. PRE: misurare solo tiratura. Risposta: A
+
+## 7. Performance measurement e CCPM
+
+67. La performance measurement sposta la domanda da: A. Dalla singola attività al contributo organizzativo. B. “Quanto costa la TV?” a “quante copie stampiamo?”. C. “Quale font usiamo?” a “quale logo scegliamo?”. D. “Quanti focus group?” a “quanti moderatori?”. Risposta: A
+
+68. La distinzione lead/lag indica che: A. I lead guardano ai driver futuri; i lag misurano risultati passati. B. I lead sono sempre economici; i lag sempre qualitativi. C. I lead misurano solo la stampa; i lag solo il digitale. D. Lead e lag sono sinonimi. Risposta: A
+
+69. Nel Value Link, la comunicazione crea valore quando: A. Collega conoscenza, relazione e contributo agli obiettivi. B. Conta solo le impressions. C. Evita il rapporto con il business. D. Misura solo la diffusione ADS. Risposta: A
+
+70. Il Return on Communication implica che: A. Collegare azioni comunicative ai fattori critici di business. B. Ogni azione comunicativa deve produrre ROI finanziario immediato. C. La comunicazione non produce asset intangibili. D. I pubblici interni non contano. Risposta: A
+
+71. Il Communication Value System parte da: A. Obiettivi di business rilevanti. B. Numero di follower. C. Scelta dei colori della campagna. D. AVE della rassegna stampa. Risposta: A
+
+72. La Balanced Scorecard traduce la strategia in: A. Quattro prospettive strategiche integrate. B. Solo misure economico-finanziarie. C. Solo metriche social native. D. Solo sentiment positivo/negativo. Risposta: A
+
+73. Quale affermazione sul CCPM è corretta? A. È situazionale, relazionale, manageriale e partecipativo. B. È un modello puramente tecnico senza contesto. C. Misura solo gli output. D. Sostituisce ogni forma di KPI. Risposta: A
+
+74. Le performance expectations nel CCPM indicano che: A. Attori diversi possono avere criteri diversi per definire il successo. B. Il successo è sempre uguale per tutti gli stakeholder. C. Le aspettative non entrano nella misurazione. D. Solo il top management può definire i KPI. Risposta: A
+
+75. L'acronimo VALUES richiede che gli obiettivi siano anche collegati a: A. Dimensioni dell'acronimo VALUES. B. Solo specificità e misurabilità. C. Solo copertura media. D. Solo listini pubblicitari. Risposta: A
+
+76. Perché VALUES non è un semplice sinonimo di SMART? A. Perché collega obiettivi, business e benchmark. B. Perché elimina la misurabilità. C. Perché vale solo per i social media. D. Perché riguarda solo i costi. Risposta: A
+
+77. Nel modello logico, le variabili ponte sono importanti perché: A. Collegano outcome e impatto tramite fiducia e reputazione. B. Dimostrano che l'output coincide sempre con il profitto. C. Eliminano la necessità di stakeholder. D. Sono solo metriche di stampa. Risposta: A
+
+78. La causalità realistica riconosce che: A. Si lavora con plausibilità causale, non prova pura. B. Ogni effetto comunicativo è sempre isolabile perfettamente. C. Non si possono mai fare valutazioni. D. La causalità riguarda solo le vendite online. Risposta: A
+
+## 8. ROI, AVE e indicatori economici
+
+79. Quale domanda sul ROI dei social è formulata meglio secondo la logica di Cosenza? A. Qual è il ROI dei social media? B. ROI del customer care Facebook nel primo semestre. C. Qual è il ROI di internet? D. Qual è il ROI della reputazione in generale? Risposta: B
+
+80. Il ROI della comunicazione è controverso perché: A. Effetti spesso indiretti, intangibili e di lungo periodo. B. Non esistono mai costi nella comunicazione. C. Tutti gli effetti sono immediatamente monetizzabili. D. Il ROI è sempre vietato. Risposta: A
+
+81. Il ROO si concentra su: A. Raggiungimento degli obiettivi. B. Valore dello spazio pubblicitario equivalente. C. Copie diffuse. D. Algoritmi di Auditel. Risposta: A
+
+82. L'AVE calcola in modo base: A. Spazio x costo pubblicitario equivalente. B. Fiducia x soddisfazione. C. Reach x frequenza radio. D. Topic x sentiment x follower. Risposta: A
+
+83. Quale limite dell'AVE è più importante? A. Non considera tono, qualità, centralità e credibilità. B. Non può essere espresso in forma economica. C. Misura solo i podcast. D. È identico al Reputation Quotient. Risposta: A
+
+84. Il REAV tenta di correggere l'AVE tramite: A. Moltiplicatori qualitativi. B. Interviste CATI. C. Meter televisivi. D. Questionari relazionali. Risposta: A
+
+85. Il PQII è dato da: A. REAV x readership / 1.000.000. B. ROI x AVE / GRP. C. Output x out-take. D. Trust x integrity. Risposta: A
+
+86. Perché il PQII non va letto come valore in euro? A. Perché è indice qualitativo, non valore monetario. B. Perché riguarda solo il costo della carta. C. Perché è sempre negativo. D. Perché misura solo gli utenti unici. Risposta: A
+
+87. La critica al ROI come “silver metric” sostiene che: A. Il solo ROI trascura valore relazionale e strategico. B. Il ROI deve essere l'unica metrica valida. C. Ogni like deve essere convertito in euro. D. L'AVE risolve tutti i problemi di valutazione. Risposta: A
+
+88. Il “Return on Ignorance” indica: A. Costo reputazionale dell'assenza comunicativa. B. Un indice ADS. C. Il valore di una pagina pubblicitaria. D. Una fase del PII Model. Risposta: A
+
+89. Quale affermazione distingue bene ROI, ROO e AVE? A. ROI finanziario; ROO obiettivi; AVE spazio equivalente. B. ROI = sentiment; ROO = tiratura; AVE = reputazione. C. ROI, ROO e AVE sono sinonimi. D. ROI = audience radio; ROO = TV; AVE = digitale. Risposta: A
+
+## 9. Intangibili, capitale comunicativo e reputazione
+
+90. Nel modello del capitale intellettuale, le componenti principali richiamate sono: A. Umano, relazionale e organizzativo/strutturale. B. ATL, BTL e TTL. C. ADS, Audicom e Auditel. D. AVE, REAV e PQII. Risposta: A
+
+91. Il capitale comunicativo è meglio definito come: A. Trasforma risorse immateriali in valore comunicativo. B. Numero di post prodotti in un mese. C. Prezzo degli spazi pubblicitari acquistati. D. Somma delle copie stampate. Risposta: A
+
+92. Il capitale narrativo riguarda soprattutto: A. Storie che rendono visibili le risorse organizzative. B. Solo il bilancio economico. C. Solo la struttura tecnica di un sito. D. Solo la reach televisiva. Risposta: A
+
+93. Quale distinzione tra immagine e identità è corretta? A. Immagine = percezione esterna; identità = autorappresentazione organizzativa. B. Immagine = cultura interna; identità = audience TV. C. Immagine e identità sono sinonimi operativi. D. Identità = sentiment automatico; immagine = ROI. Risposta: A
+
+94. Nel modello Grunig e Hon, la qualità relazionale include: A. Impegno, fiducia, reciprocità, soddisfazione. B. Solo ricavi e costi. C. Solo tiratura e diffusione. D. Solo reach e GRP. Risposta: A
+
+95. La fiducia nel modello Grunig e Hon comprende: A. Integrità, affidabilità e competenza. B. ATL, BTL e TTL. C. AVE, REAV e PQII. D. CATI, SDK e meter. Risposta: A
+
+96. La reputazione è: A. Giudizio sedimentato su storia, comportamenti e percezioni. B. Fotografia immediata prodotta da una singola campagna. C. Solo il numero di follower. D. Sinonimo di tiratura certificata. Risposta: A
+
+97. Perché non esiste uno standard unico universale per misurare la reputazione? A. Perché dipende da stakeholder, contesto, dimensioni considerate e modelli valutativi. B. Perché la reputazione non produce mai valore. C. Perché tutti i modelli usano gli stessi indicatori. D. Perché può essere misurata solo con ADS. Risposta: A
+
+98. Nella classificazione di Berens e Van Riel, i filoni reputazionali includono: A. Aspettative sociali, corporate character e trust. B. Output, out-take e outcome. C. CATI, SDK e tag. D. Web 1.0, 2.0 e 3.0. Risposta: A
+
+99. Quale limite riguarda Fortune WMAC? A. Privilegia manager e analisti, trascurando altri stakeholder. B. Misura solo la lettura effettiva della stampa. C. È un modello di social listening con AI. D. Non considera mai performance finanziarie. Risposta: A
+
+100. Nel Reputation Quotient, la reputazione è misurata tramite: A. Dimensioni affettive e cognitive. B. Solo la Golden Rule. C. Solo il numero di uscite media. D. Solo l'AVE corretto. Risposta: A
+`;
+
+    const els = {
+      sectionLabel: document.getElementById("sectionLabel"),
+      questionText: document.getElementById("questionText"),
+      questionCount: document.getElementById("questionCount"),
+      answers: document.getElementById("answers"),
+      feedback: document.getElementById("feedback"),
+      progressBar: document.getElementById("progressBar"),
+      scoreStat: document.getElementById("scoreStat"),
+      percentStat: document.getElementById("percentStat"),
+      doneStat: document.getElementById("doneStat"),
+      leftStat: document.getElementById("leftStat"),
+      topicFilter: document.getElementById("topicFilter"),
+      topicList: document.getElementById("topicList"),
+      prevBtn: document.getElementById("prevBtn"),
+      nextBtn: document.getElementById("nextBtn"),
+      revealBtn: document.getElementById("revealBtn"),
+      restartBtn: document.getElementById("restartBtn"),
+      reviewModeBtn: document.getElementById("reviewModeBtn"),
+      shuffleToggle: document.getElementById("shuffleToggle"),
+      unansweredToggle: document.getElementById("unansweredToggle"),
+      reviewPanel: document.getElementById("reviewPanel"),
+      reviewList: document.getElementById("reviewList")
+    };
+
+    const letters = ["A", "B", "C", "D"];
+    const quizSize = 50;
+    const storageKey = "metriche-comunicazione-quiz-v5-50";
+    let questions = buildExpandedQuiz();
+    const questionById = new Map(questions.map(q => [q.id, q]));
+    let state = loadState();
+    let order = [];
+    let optionOrder = {};
+    let index = 0;
+    let reviewOnly = false;
+
+    init();
+
+    function parseQuiz(markdown) {
+      const lines = markdown.split(/\n/);
+      let section = "";
+      const parsed = [];
+      const questionRe = /^\s*(\d+)\.\s+(.+?)\s+A\.\s+(.+?)\s+B\.\s+(.+?)\s+C\.\s+(.+?)\s+D\.\s+(.+?)\s+Risposta:\s+([ABCD])\s*$/;
+
+      for (const line of lines) {
+        const sectionMatch = line.match(/^##\s+(.+)$/);
+        if (sectionMatch) {
+          section = sectionMatch[1].trim();
+          continue;
+        }
+
+        const match = line.match(questionRe);
+        if (!match) continue;
+
+        parsed.push({
+          id: Number(match[1]),
+          section,
+          text: match[2].trim(),
+          options: {
+            A: match[3].trim(),
+            B: match[4].trim(),
+            C: match[5].trim(),
+            D: match[6].trim()
+          },
+          answer: match[7]
+        });
+      }
+      return parsed;
+    }
+
+    function buildExpandedQuiz() {
+      const blueprints = [
+        ["Fondamenti della misurazione", [
+          ["legittimazione della comunicazione", "Misurare serve a dimostrare valore, orientare decisioni e collegare comunicazione e business.", "Ridurre la misurazione a controllo punitivo.", "Usare dati per correggere una campagna e difendere il budget.", "Controllo punitivo non equivale a apprendimento manageriale.", "la direzione chiede perché investire in comunicazione", "Serve mostrare contributi a reputazione, relazioni e performance.", ["Serve solo a contare materiali prodotti.", "Elimina il giudizio professionale.", "Coincide con il gradimento immediato."]],
+          ["dati come mezzo", "Il dato ha valore solo se collegato a obiettivi, contesto e decisioni.", "Raccogliere dati facili ma inutili per decidere.", "Scartare una metrica popolare se non risponde al bisogno informativo.", "Dato, informazione e insight non sono lo stesso livello.", "un report contiene molti numeri senza raccomandazioni", "Manca interpretazione orientata alle decisioni.", ["Più dati significano sempre più qualità.", "Il dato sostituisce gli obiettivi.", "Il dato numerico è sempre neutrale."]],
+          ["metriche non neutrali", "Ogni metrica seleziona cosa l'organizzazione considera rilevante.", "Pensare che la scelta della metrica sia solo tecnica.", "Scegliere KPI di relazione quando l'obiettivo è fiducia.", "Una metrica di volume non descrive automaticamente valore.", "il team misura solo reach perché è disponibile", "La metrica privilegia visibilità e trascura effetti.", ["Ogni metrica misura tutto il processo.", "Le metriche qualitative sono inutili.", "La neutralità dipende dal software."]],
+          ["output, out-take, outcome, impatto", "La catena distingue produzione, ricezione, cambiamento nei pubblici e contributo organizzativo.", "Scambiare output per efficacia finale.", "Valutare comprensione prima di attribuire cambiamento di atteggiamento.", "Outcome non coincide con impatto di business.", "una campagna produce molte uscite ma nessun test sui pubblici", "Sono misurati output, non efficacia sui pubblici.", ["Le uscite media dimostrano impatto.", "Out-take e outcome sono sinonimi.", "L'impatto precede sempre gli output."]],
+          ["misure formative, sommative e rendicontative", "Formative migliorano attività; sommative leggono capitale comunicativo; rendicontative parlano al business.", "Usare click e partecipanti per rispondere al board.", "Usare una misura formativa per correggere in itinere.", "Formativo misura attività, rendicontativo misura contributo organizzativo.", "il CEO chiede valore creato e riceve solo numero di post", "La risposta usa un livello troppo operativo.", ["Sommativo significa solo ex ante.", "Rendicontativo riguarda solo creatività.", "Formativo misura solo reputazione consolidata."]]
+        ]],
+        ["Output, effetti e KPI", [
+          ["output", "Gli output sono attività e prodotti realizzati, come comunicati, eventi, post o uscite.", "Confondere produzione con cambiamento del pubblico.", "Contare articoli pubblicati come risultato immediato.", "Output indica cosa produco; outcome indica cosa cambia.", "si contano eventi e materiali distribuiti", "La misura è di produzione comunicativa.", ["Misura la fiducia consolidata.", "Coincide con vendite incrementali.", "È sempre un indicatore lag economico."]],
+          ["out-take", "Gli out-take misurano ricezione, comprensione, ricordo e reazione cognitiva.", "Saltare questo livello tra output e outcome.", "Usare recall e retention dopo una campagna informativa.", "Out-take riguarda comprensione, outcome riguarda atteggiamenti o comportamenti.", "si verifica se il messaggio è stato capito", "Si sta misurando il primo effetto cognitivo.", ["Si misura solo il budget.", "Si certifica una audience pubblicitaria.", "Si calcola il valore AVE."]],
+          ["outcome", "Gli outcome sono cambiamenti in conoscenze, opinioni, atteggiamenti o comportamenti.", "Chiamare outcome un semplice numero di post.", "Misurare variazione di awareness con pre/post test.", "Outcome è effetto sui pubblici, non prodotto diffuso.", "dopo l'evento cresce la propensione all'acquisto", "È un cambiamento nel pubblico target.", ["È solo un riscontro logistico.", "È il prezzo dello spazio editoriale.", "È la certificazione di tiratura."]],
+          ["impatto", "L'impatto è il contributo finale agli obiettivi strategici dell'organizzazione.", "Attribuirlo senza plausibilità causale.", "Collegare reputazione e talent attraction agli obiettivi aziendali.", "Impatto è più ampio e più finale dell'outcome.", "la comunicazione sostiene vendite e fiducia nel tempo", "Serve collegare effetti comunicativi e performance organizzativa.", ["Coincide con il primo ricordo.", "È sempre misurabile solo a breve.", "È un output di canale."]],
+          ["KPI, KRI, lead e lag", "I KPI sono spesso lead e orientano azioni future; i KRI sono lag e raccontano risultati passati.", "Confondere driver operativi con consuntivi storici.", "Monitorare un KPI giornaliero per correggere il servizio.", "Lead anticipa; lag consuntiva.", "un indicatore descrive cosa è già accaduto nel trimestre", "È più vicino a un KRI o lag indicator.", ["È sempre una misura formativa.", "È sempre un indice di qualità stampa.", "È sempre una misura di out-take."]]
+        ]],
+        ["Ricerca in comunicazione", [
+          ["finalità della ricerca", "La ricerca serve a conoscere pubblici, mercato, competitor, reputazione e visibilità digitale.", "Fare ricerca senza domanda informativa.", "Studiare bisogni e journey prima di scegliere KPI.", "Ricerca formativa precede l'azione; valutativa verifica effetti.", "prima di lanciare una campagna si studiano bisogni e target", "È una ricerca utile alla pianificazione.", ["È una misurazione rendicontativa finale.", "È una certificazione JIC.", "È una metrica di AVE."]],
+          ["ricerche formative", "Sono svolte prima dell'azione per orientare strategia, pubblici, messaggi e canali.", "Usarle come prova finale di impatto.", "Testare messaggi e bisogni prima del piano media.", "Formativa non coincide con rendicontativa.", "si vogliono scegliere touchpoint e messaggi", "La ricerca sostiene decisioni ex ante.", ["Misura solo audience TV.", "Calcola il ROI a consuntivo.", "Certifica diffusione stampa."]],
+          ["ricerche continuative", "Raccolgono dati nel tempo per seguire fenomeni, crisi, media monitoring e listening.", "Trattarle come indagini una tantum.", "Monitorare sentiment e volumi ogni settimana.", "Continuativa osserva evoluzioni, ad hoc risponde a un caso specifico.", "la marca segue conversazioni durante una crisi", "Serve una raccolta sistematica nel tempo.", ["Basta un focus group singolo.", "Serve solo un certificato ADS.", "È sempre un esperimento causale."]],
+          ["ricerca primaria e secondaria", "La primaria raccoglie dati ad hoc; la secondaria usa dati già esistenti.", "Ignorare obsolescenza e adattabilità della secondaria.", "Usare survey proprietaria quando il quesito è molto specifico.", "Primaria è aderente ma costosa; secondaria è rapida ma meno mirata.", "si usano report già pubblicati per capire un mercato", "È ricerca secondaria con limiti di adattamento.", ["È automaticamente causale.", "È sempre più valida della primaria.", "Non richiede verifica della fonte."]],
+          ["approcci qualitativo, quantitativo e causale", "Il qualitativo esplora significati; il quantitativo misura; il causale testa relazioni causa-effetto.", "Generalizzare statisticamente un focus group.", "Combinare focus group esplorativo e survey successiva.", "Profondità interpretativa non equivale a rappresentatività.", "si confronta un gruppo esposto con uno non esposto", "La logica è causale o sperimentale.", ["È solo ricerca secondaria.", "È solo media monitoring.", "È una misura di diffusione."]]
+        ]],
+        ["Metodi qualitativi e customer journey", [
+          ["focus group", "Il valore del focus group nasce dall'interazione tra partecipanti, consenso, dissenso e linguaggio spontaneo.", "Trattarlo come somma di interviste individuali.", "Osservare come i partecipanti reagiscono tra loro.", "Focus group studia dinamiche di gruppo; intervista approfondisce il singolo.", "sei persone discutono una proposta creativa", "Conta la dinamica di interazione, non solo le risposte.", ["Misura automaticamente la rappresentatività.", "Sostituisce ogni verifica quantitativa.", "È una rilevazione censuaria."]],
+          ["ruoli e setting del focus group", "Moderatore, osservatore e partecipanti richiedono setting neutro e assenza di gerarchie dirette.", "Mettere capo e subordinati nello stesso gruppo.", "Usare tavolo rotondo e osservare segnali non verbali.", "Moderatore guida; osservatore registra dinamiche.", "un partecipante dominante blocca gli altri", "Il moderatore deve riequilibrare la discussione.", ["L'osservatore decide le risposte corrette.", "Il capotavola aumenta neutralità.", "Le gerarchie migliorano spontaneità."]],
+          ["osservazione partecipante", "Il ricercatore entra nel contesto naturale per comprendere azioni, regole e significati.", "Confonderla con discussione guidata.", "Studiare cultura e relazioni nel luogo in cui emergono.", "Palese dichiara il ruolo; dissimulata lo nasconde.", "il ricercatore osserva un gruppo nel suo ambiente", "È immersione nel contesto sociale.", ["È un questionario standardizzato.", "È una rassegna stampa.", "È una metrica di conversione."]],
+          ["tecniche proiettive", "Usano stimoli indiretti per far emergere associazioni, emozioni e significati impliciti.", "Interpretarle come dati puramente razionali.", "Chiedere associazioni a immagini per valutare immagine di marca.", "Proiettivo aggira barriere razionali; survey standardizza risposte.", "il target sceglie immagini associate a un brand", "Si esplora l'immaginario implicito.", ["Si misura solo tiratura.", "Si calcola il GRP.", "Si deduplica l'audience."]],
+          ["customer journey", "Il journey mappa touchpoint, frizioni, fonti informative e post-acquisto.", "Misurare solo la conversione finale.", "Analizzare ricerca, valutazione, acquisto, esperienza e raccomandazione.", "Journey è percorso relazionale; acquisto è processo decisionale.", "un cliente legge recensioni prima della scelta", "Va misurato anche lo ZMOT e il post-acquisto.", ["Conta solo la vendita finale.", "Riguarda solo la stampa.", "Sostituisce la segmentazione."]]
+        ]],
+        ["ATL, BTL e comunicazione integrata", [
+          ["ATL", "ATL è comunicazione di massa orientata a awareness, copertura e posizionamento.", "Valutarla solo con lead generati.", "Usare reach, frequenza, GRP e share of voice.", "ATL parla a pubblici ampi; BTL lavora su segmenti mirati.", "uno spot TV nazionale punta alla notorietà", "La metrica coerente è copertura o GRP.", ["È una tecnica qualitativa.", "È sempre customer care.", "È una misura di reputazione interna."]],
+          ["BTL", "BTL è comunicazione mirata orientata ad attivazione, relazione e conversione.", "Misurarla solo con copertura lorda.", "Valutare redemption, lead, tasso di risposta o partecipazione.", "BTL privilegia risposta e segmento, ATL notorietà di massa.", "una promozione email invita a una call to action", "La valutazione deve guardare all'attivazione.", ["Serve solo il GRP.", "È sempre una campagna TV.", "Non richiede target."]],
+          ["TTL", "TTL integra ATL e BTL in una strategia coordinata e omnicanale lungo il funnel.", "Trattarlo come semplice somma di canali scollegati.", "Collegare spot, landing page, social e retargeting.", "TTL unisce notorietà e conversione.", "la TV porta traffico a una landing con retargeting", "È una logica integrata cross-channel.", ["È solo comunicazione di massa.", "È solo couponing.", "È solo audit interno."]],
+          ["coerenza metrica-canale", "Ogni modello comunicativo richiede indicatori coerenti con obiettivo e canale.", "Usare metriche ATL per giudicare BTL.", "Scegliere conversion rate per una campagna targettizzata.", "Reach non basta quando l'obiettivo è risposta.", "un evento esperienziale viene valutato solo con impression", "La metrica non è allineata all'obiettivo.", ["La metrica unica è sempre ROI.", "Il canale non influenza i KPI.", "Le metriche native bastano sempre."]],
+          ["funnel integrato", "La comunicazione integrata coordina awareness, activation, conversione e loyalty.", "Isolare un touchpoint dal percorso complessivo.", "Leggere contributi diversi lungo tutto il funnel.", "Awareness e conversione sono fasi diverse ma collegate.", "una persona vede lo spot e poi compra online", "Serve attribuzione cross-channel prudente.", ["La conversione annulla l'awareness.", "Un solo canale spiega tutto.", "Il post-acquisto è irrilevante."]]
+        ]],
+        ["Web, social landscape e rischi algoritmici", [
+          ["Web 1.0", "Il Web 1.0 è statico, vetrina, unidirezionale e con pubblico passivo.", "Confonderlo con partecipazione sociale.", "Riconoscere siti catalogo e contenuti poco aggiornati.", "Web 1.0 legge; Web 2.0 partecipa.", "un sito aziendale mostra solo pagine informative", "È logica statica e unidirezionale.", ["È basato su agenti autonomi.", "È dominato da UGC.", "È social commerce integrato."]],
+          ["Web 2.0", "Il Web 2.0 introduce interattività, UGC, community, blog, wiki e social network.", "Attribuirlo a dati semantici leggibili dalle macchine.", "Associare O'Reilly e la partecipazione degli utenti.", "Web 2.0 partecipa; Web 3.0 capisce.", "gli utenti commentano, modificano e condividono contenuti", "È la logica sociale e partecipativa.", ["È solo indicizzazione tecnica.", "È TV lineare.", "È comunicazione one-way."]],
+          ["Web 3.0", "Il Web 3.0 è semantico, intelligente, basato su dati strutturati e interoperabilità.", "Confonderlo con AI agentica autonoma del Web 4.0.", "Usare dati leggibili anche dalle macchine.", "Web 3.0 capisce; Web 4.0 agisce.", "un sistema interpreta significato e relazioni tra dati", "È una logica semantica.", ["È una pagina statica.", "È solo un forum.", "È solo tiratura digitale."]],
+          ["Web 4.0", "Il Web 4.0 è predittivo, conversazionale e basato su agenti autonomi.", "Ridurlo a semplice personalizzazione semantica.", "Pensare a sistemi che anticipano bisogni e supportano decisioni.", "Web 4.0 agisce, non solo organizza dati.", "un agente software compie attività per l'utente", "È AI Web orientato all'azione.", ["È solo una wiki.", "È solo stampa online.", "È solo Web statico."]],
+          ["filter bubble ed echo chamber", "Gli algoritmi possono rinforzare esposizione selettiva, isolamento informativo e polarizzazione.", "Leggere engagement alto come qualità sociale certa.", "Valutare anche rischi di chiusura e radicalizzazione.", "Filter bubble è filtro algoritmico; echo chamber è rinforzo sociale.", "l'utente vede solo contenuti coerenti con le sue credenze", "C'è rischio di isolamento informativo.", ["È una metrica ADS.", "È un modello di ROI.", "È una fase del PII."]]
+        ]],
+        ["SEO, GEO e motori di risposta", [
+          ["crawling", "Il crawling è la scoperta dei contenuti tramite crawler o spider che seguono link.", "Confonderlo con ranking finale.", "Verificare se il sito è esplorabile e aggiornabile.", "Crawling scopre; indexing organizza.", "un motore trova nuove pagine seguendo collegamenti", "Si parla della fase di scoperta.", ["È calcolo del ROI.", "È ascolto radiofonico.", "È reputazione sintetica."]],
+          ["indexing", "L'indexing organizza le informazioni scoperte rendendole interrogabili.", "Scambiarlo per scelta dell'ordine in SERP.", "Curare struttura, metadata e leggibilità del contenuto.", "Indexing archivia; ranking ordina.", "il motore inserisce una pagina nel proprio archivio", "È la fase di organizzazione dell'informazione.", ["È una survey causale.", "È una metrica di engagement.", "È un focus group."]],
+          ["ranking", "Il ranking decide l'ordine dei risultati in base a pertinenza, autorevolezza e segnali.", "Pensare che basti essere indicizzati.", "Lavorare su qualità, autorevolezza, link e intento.", "Indicizzazione rende presente; ranking rende visibile.", "due pagine sono indicizzate ma una appare prima", "La differenza è posizionamento.", ["È una deduplicazione audience.", "È il valore AVE.", "È un tipo di relazione comunitaria."]],
+          ["GEO", "La GEO ottimizza contenuti per essere citati o usati dai motori generativi di risposta.", "Pensare che l'unico obiettivo sia il click.", "Rendere contenuti chiari, citabili, autorevoli e strutturati.", "SEO punta a risultati; GEO punta a risposte generate.", "un AI Overview sintetizza fonti senza click", "Conta essere fonte della risposta.", ["Conta solo acquistare spazi.", "È solo direct marketing.", "È solo auditel digitale."]],
+          ["zero-click search", "Le zero-click search si chiudono nella pagina dei risultati o nella risposta sintetica.", "Valutare il successo solo dal traffico in entrata.", "Misurare visibilità, citazioni e share of answer.", "Traffico e presenza nella risposta non coincidono.", "la risposta appare senza visita al sito", "Serve una metrica oltre il click.", ["È sempre fallimento comunicativo.", "È una metrica radio.", "È un test proiettivo."]]
+        ]],
+        ["Social analytics, insight e benchmark", [
+          ["data-information-insight-recommendation", "La piramide va dal dato grezzo alla raccomandazione azionabile.", "Chiamare insight un dato descrittivo.", "Passare da menzioni aumentate a decisione di customer care.", "Insight interpreta; recommendation suggerisce azione.", "un report dice solo che crescono i follower", "Manca il passaggio interpretativo-operativo.", ["È già una raccomandazione.", "È una certificazione di audience.", "È un outcome comportamentale."]],
+          ["analytics nativi", "Gli analytics nativi mostrano performance dei propri canali ma sono parziali.", "Usarli come visione completa del mercato.", "Leggere Instagram, LinkedIn o TikTok con contesto e limiti.", "Analytics proprietari non equivalgono a listening competitivo.", "un brand vede solo i dati del proprio account", "C'è cecità competitiva.", ["Mostrano tutti i competitor.", "Misurano reputazione universale.", "Sostituiscono survey e ricerca."]],
+          ["benchmark", "Il benchmark dà valore relativo confrontando dati con competitor, settore o trend.", "Valutare un numero isolato come successo.", "Confrontare engagement rate con categoria e periodo.", "Dato assoluto non basta; confronto genera interpretazione.", "un +5% follower non è confrontato col mercato", "Serve un parametro competitivo o storico.", ["Il benchmark elimina gli obiettivi.", "È solo un valore monetario.", "È sinonimo di sentiment."]],
+          ["vanity metrics", "Follower, like, reach e views sono deboli se isolate, utili se contestualizzate.", "Scartarle sempre o usarle come prova unica.", "Leggere like insieme a engagement rate e obiettivo.", "Vanity non significa inutile, significa insufficiente da sola.", "un report celebra solo visualizzazioni", "Manca collegamento a obiettivo e benchmark.", ["È sempre outcome finale.", "È sempre ROI sociale.", "È sempre reputazione."]],
+          ["engagement rate", "L'engagement rate rapporta interazioni a una base e migliora la comparabilità.", "Confondere volume assoluto e reazione reale.", "Confrontare like/follower tra competitor simili.", "Interazione totale e tasso non raccontano la stessa cosa.", "un profilo piccolo ha poche interazioni ma tasso alto", "Il tasso può indicare relazione più intensa.", ["Conta solo la copertura lorda.", "Misura tiratura stampa.", "È un indice GRV."]]
+        ]],
+        ["ZMOT, PESO e Lovett", [
+          ["ZMOT", "Lo ZMOT è il momento digitale di ricerca, confronto e recensioni prima dell'acquisto.", "Scambiarlo per acquisto finale.", "Studiare query, recensioni e comparazioni prima della scelta.", "ZMOT precede l'acquisto; non coincide con conversione.", "un cliente confronta recensioni online", "È ricerca informativa pre-acquisto.", ["È post vendita.", "È tiratura certificata.", "È solo TV lineare."]],
+          ["PESO", "PESO distingue Paid, Earned, Shared e Owned media.", "Confondere earned con contenuti comprati.", "Classificare un sito aziendale come owned.", "Paid è acquistato; earned è guadagnato.", "una recensione spontanea cita il brand", "È earned media.", ["È paid media.", "È owned media.", "È una metrica KRI."]],
+          ["Lovett counting metrics", "Le counting metrics contano fan, follower, visite, visualizzazioni e commenti.", "Trattarle come valore strategico autosufficiente.", "Usarle come base descrittiva da collegare agli outcome.", "Counting metric non equivale a business value.", "si riportano follower e pagine viste", "È un conteggio di piattaforma.", ["È una metrica di business.", "È una variabile ponte.", "È un indicatore reputazionale sintetico."]],
+          ["Lovett foundation metrics", "Interaction, engagement, influence, advocacy e impact fondano KPI social più robusti.", "Confondere interaction con engagement.", "Pesare condivisioni più dei like in un punteggio.", "Interaction conta risposte; engagement valuta coinvolgimento.", "un commento pesa più di un like", "Si applica una metrica di coinvolgimento pesata.", ["È solo reach lorda.", "È tiratura digitale.", "È deduplicazione TV."]],
+          ["Lovett outcome metrics", "Le outcome metrics sono costruite rispetto a obiettivi specifici come dialogo, supporto o advocacy.", "Usare la stessa metrica per ogni obiettivo.", "Misurare tasso di risoluzione se l'obiettivo è supporto.", "Outcome metric dipende dall'obiettivo.", "il social serve a ridurre richieste al call center", "Serve una metrica di supporto e risoluzione.", ["Basta contare follower.", "Serve solo AVE.", "Serve solo GRP."]]
+        ]],
+        ["Altimeter, Compass e ROI social", [
+          ["ROI Pyramid", "La ROI Pyramid collega obiettivi aziendali, metriche di business e metriche social.", "Partire dai like invece che dal business.", "Tradurre riduzione costi call center in metrica social.", "Prima business objective, poi social metric.", "il social care deve ridurre chiamate al call center", "La metrica social va collegata al saving.", ["La tecnologia viene prima della strategia.", "Il like è sempre il KPI finale.", "Il ROI si applica al canale astratto."]],
+          ["framework strategia-metriche-organizzazione-tecnologia", "Altimeter richiede strategia, metriche, organizzazione e solo poi tecnologia.", "Scegliere tool prima di obiettivi e competenze.", "Definire cosa misurare prima della piattaforma.", "Tecnologia serve metriche già progettate.", "l'azienda compra tool senza obiettivi", "Manca il percorso logico di misurazione.", ["È un approccio corretto.", "È il principio 5 di Barcellona.", "È il modello ADS."]],
+          ["Social Measurement Compass", "La bussola misura social in sei direzioni di business.", "Ridurre tutto a brand health.", "Usare customer experience o operational efficiency quando pertinente.", "Le sei direzioni non sono metriche native ma obiettivi.", "il social individua problemi ricorrenti di assistenza", "La direzione è customer experience o efficienza.", ["È solo counting metrics.", "È solo un modello reputazionale.", "È solo una ricerca primaria."]],
+          ["Return on Ignorance", "Indica il costo reputazionale e competitivo dell'ignorare ambienti social e conversazioni.", "Usarlo come formula finanziaria precisa.", "Argomentare che non presidiare crisi online ha un costo.", "Return on Ignorance è provocazione strategica, non ROI classico.", "un brand ignora conversazioni critiche", "Il rischio è costo reputazionale dell'assenza.", ["È PQII in euro.", "È un certificato JIC.", "È un punteggio di focus group."]],
+          ["silver metric", "La silver metric è l'errore di considerare il ROI l'unica misura valida.", "Monetizzare ogni attività social a breve periodo.", "Usare KPI di relazione per attività non monetizzabili direttamente.", "ROI non esaurisce valore relazionale, reputazionale e di apprendimento.", "si vuole monetizzare una gestione crisi", "Serve evitare la riduzione al ROI puro.", ["Il ROI è sempre vietato.", "AVE risolve la misurazione.", "Solo i follower contano."]]
+        ]],
+        ["Monitoring, listening e sentiment", [
+          ["media monitoring", "Il monitoring osserva sistematicamente copertura, rilevanza, visibilità e presenza sui media.", "Fermarsi al solo volume senza qualità.", "Misurare dove, quanto e con che prominenza appare il brand.", "Monitoring conta e descrive; listening interpreta strategicamente.", "si rilevano uscite, fonti e posizione nel pezzo", "È monitoraggio della copertura media.", ["È focus group.", "È ranking SEO.", "È Balanced Scorecard."]],
+          ["social listening", "Il listening parte da domande di business e analizza conversazioni spontanee per insight.", "Partire da messaggi raccolti casualmente.", "Definire query e fonti sulla base di obiettivi reputazionali.", "Listening non è semplice conteggio keyword.", "si vuole capire perché aumentano reclami online", "Serve ascolto guidato da domanda informativa.", ["Basta contare menzioni.", "È solo ADS Notizie.", "È solo meter TV."]],
+          ["criteri delle fonti", "Le fonti vanno selezionate per rilevanza tematica, influenza, territorio, lingua e finestra temporale.", "Raccogliere qualsiasi fonte senza perimetro.", "Escludere forum fuori lingua se non pertinenti.", "Perimetro di indagine condiziona validità del listening.", "la query include fonti non rilevanti geograficamente", "Il campione digitale è mal delimitato.", ["La fonte è sempre irrilevante.", "Basta una piattaforma nativa.", "La lingua non conta mai."]],
+          ["sentiment analysis", "Il sentiment valuta tono positivo, negativo o neutro rispetto a soggetto e contenuto.", "Attribuirlo a sensazione o conoscenze pregresse.", "Classificare dal punto di vista del lettore medio.", "Sentiment richiede soggetto, prospettiva e regole.", "un articolo critica il prodotto ma loda l'azienda", "Il soggetto del sentiment va disambiguato.", ["Il tono è sempre unico.", "Il sentiment è solo volume.", "Il sentiment coincide con reach."]],
+          ["topic, hot topic e mappa semantica", "Topic e hot topic spiegano di cosa si parla; la mappa semantica mostra relazioni e nodi.", "Assegnare solo sentiment generale.", "Collegare temi negativi a influencer o fonti specifiche.", "Topic dice tema; sentiment dice tono.", "cresce improvvisamente il tema assistenza", "È un hot topic da interpretare.", ["È una metrica di tiratura.", "È un obiettivo SMART.", "È un costo pubblicitario."]]
+        ]],
+        ["AI, analytics nativi e reporting", [
+          ["AI per sentiment e topic modeling", "L'AI aiuta su grandi volumi con NLP, topic modeling, spam detection e alert.", "Sostituire il giudizio dell'analista.", "Usare AI per cluster iniziali e verifica umana su campione.", "AI accelera, analista interpreta.", "migliaia di commenti sono raggruppati per tema", "È topic modeling assistito da AI.", ["È una survey rappresentativa.", "È certificazione audience.", "È il PII Model."]],
+          ["limiti linguistici dell'AI", "Ironia, slang, dialetti e ambiguità restano criticità per l'AI.", "Fidarsi ciecamente del report automatico.", "Controllare manualmente esempi borderline.", "Prompt strutturato riduce ma non annulla errori.", "un commento ironico viene letto come positivo", "Serve controllo umano del sentiment.", ["L'AI non sbaglia mai.", "Lo slang migliora sempre accuratezza.", "I prompt sono inutili."]],
+          ["privacy e GDPR", "Dati demografici, reach e interessi possono avere margini di errore e vincoli privacy.", "Trattare stime native come dati certi.", "Segnalare limiti di privacy nel report.", "Disponibilità del dato non equivale ad accuratezza.", "una piattaforma riduce dati demografici disponibili", "Il report deve esplicitare il limite.", ["È un problema solo TV.", "Il GDPR non riguarda analytics.", "La stima è sempre puntuale."]],
+          ["qualità della reazione", "Non basta il volume: un commento critico e uno entusiasta non hanno lo stesso valore.", "Contare ogni interazione come equivalente.", "Separare qualità, tono e implicazioni operative.", "Engagement quantitativo va letto con contenuto.", "due post hanno stesso numero di commenti ma tono opposto", "Serve analisi qualitativa della reazione.", ["Vince sempre il volume maggiore.", "Il tono non è misurabile.", "Il contenuto non conta."]],
+          ["report e azione", "Il reporting utile collega risultati, insight, soglie di rischio, alert e decisioni operative.", "Produrre dashboard senza next step.", "Integrare listening con PR, crisis e customer care.", "Report descrittivo non è performance story.", "un report segnala crisi ma non attiva responsabilità", "Manca passaggio all'azione.", ["È già una strategia completa.", "Serve solo cambiare grafico.", "Basta aumentare follower."]]
+        ]],
+        ["Audience: JIC, ADS e Audicom", [
+          ["JIC", "Un JIC riunisce investitori, agenzie, editori e concessionarie per produrre dati condivisi.", "Confonderlo con controllo esclusivo degli editori.", "Usare dati JIC come base di compravendita pubblicitaria.", "JIC riduce conflitti; MOC privilegia media owner.", "il mercato accetta una currency comune", "Serve un organismo a controllo incrociato.", ["È una ricerca proiettiva.", "È una metrica social nativa.", "È un focus group."]],
+          ["currency", "La currency è la misura ufficiale riconosciuta dal mercato per acquistare e vendere spazi.", "Intenderla come moneta contabile generica.", "Usare ascolti certificati per pianificare investimenti TV.", "Currency serve fiducia e comparabilità del mercato.", "agenzie e investitori usano lo stesso dato", "Il dato agisce da moneta di scambio.", ["È un indice di reputazione.", "È una variabile ponte.", "È un outcome cognitivo."]],
+          ["ADS", "ADS certifica tiratura e diffusione della stampa, non lettura effettiva.", "Scambiare diffusione per audience reale.", "Distinguere copie stampate e copie arrivate al mercato.", "Tiratura non coincide con lettori.", "un quotidiano dichiara copie diffuse", "È certificazione di diffusione, non audience.", ["Misura utenti unici.", "Deduplica device.", "Calcola VOSDAL."]],
+          ["Audicom", "Audicom nasce da Audiweb e Audipress per integrare digital e print.", "Citare Audiweb e Audipress come sistemi separati attuali.", "Misurare Total Digital Audience con panel e dati censuari.", "Audicom supera separazione internet-lettura stampa.", "un utente accede da smartphone e desktop", "Serve deduplicazione dell'utente unico.", ["Si sommano device senza deduplica.", "Misura solo radio.", "Certifica solo copie stampate."]],
+          ["panel e censuario", "Il panel descrive persone; il censuario misura intensità tecnica tramite tag e SDK.", "Confondere persona e device.", "Combinare campione rappresentativo e big data di fruizione.", "Panel dà profilo; censuario dà volume tecnico.", "un SDK registra tempo speso in app", "È componente censuaria.", ["È intervista qualitativa.", "È test proiettivo.", "È indice AVE."]]
+        ]],
+        ["Auditel, radio e total audience", [
+          ["Auditel Total Audience", "Auditel integra meter domestici e SDK digitali per misurare TV su device e tempi diversi.", "Limitare Auditel al televisore di casa.", "Misurare live, on-demand e fruizione digitale.", "Total Audience supera piattaforma e device.", "Sanremo inizia in TV e continua su smartphone", "La deduplicazione evita doppio conteggio.", ["Conta due spettatori.", "È solo ADS.", "È solo readership."]],
+          ["Golden Rule", "La Golden Rule garantisce che software house diverse restituiscano lo stesso dato.", "Lasciare interpretazioni divergenti del dato grezzo.", "Far elaborare dati a Nielsen e altri con identico risultato.", "Univocità del dato sostiene la currency.", "due software elaborano lo stesso ascolto", "Devono arrivare allo stesso risultato.", ["Devono produrre stime libere.", "Devono misurare il sentiment.", "Devono fare interviste qualitative."]],
+          ["VOSDAL e TSV", "VOSDAL misura visione differita nello stesso giorno; TSV misura differita a più giorni.", "Confondere tutte le visioni asincrone.", "Distinguere same day e time shifted viewing.", "VOSDAL è stesso giorno; TSV è scarto temporale.", "un programma visto la sera della messa in onda", "È VOSDAL se entro lo stesso giorno.", ["È Day After Recall.", "È PQII.", "È una vanity metric."]],
+          ["TER e Audiradio", "Audiradio subentra a TER passando verso un JIC audio con metodologia ibrida.", "Citare TER come assetto attuale definitivo.", "Integrare CATI e SDK per lineare e on demand.", "TER era modello precedente; Audiradio mira a Total Audio.", "si misurano podcast e streaming radio", "Serve componente censuaria digitale.", ["Basta day after recall.", "Si misura solo stampa.", "È Audicom print."]],
+          ["Day After Recall", "Il Day After Recall è un metodo legacy basato sul ricordo dell'ascolto del giorno precedente.", "Scambiarlo per misurazione digitale oggettiva.", "Riconoscerlo come approccio soggettivo radiofonico.", "Recall dichiara ricordo; SDK registra flussi.", "un intervistato ricorda la radio ascoltata ieri", "È rilevazione basata sul ricordo.", ["È un tag censuario.", "È un meter televisivo.", "È un indicatore GRV."]]
+        ]],
+        ["Modelli di valutazione", [
+          ["SMART", "SMART richiede obiettivi specifici, misurabili, raggiungibili, rilevanti e temporalmente definiti.", "Usare obiettivi vaghi o non misurabili.", "Definire target, effetto atteso e tempo.", "SMART definisce forma dell'obiettivo; VALUES aggiunge ancoraggio strategico.", "aumentare awareness del 10% entro sei mesi", "È formulazione più misurabile.", ["È un output.", "È una currency.", "È una tecnica proiettiva."]],
+          ["Barcelona Principles 3.0", "I principi AMEC chiedono obiettivi, outcome, impatto, integrazione quali-quanti, canali on/offline e integrità.", "Dimenticare che l'AVE non misura valore.", "Rifiutare l'AVE come metrica unica di comunicazione.", "Barcelona non è solo elenco, è criterio metodologico.", "un report usa AVE come prova finale di valore", "Contraddice il principio 5.", ["È perfettamente allineato.", "È solo una metrica ATL.", "È un approccio qualitativo."]],
+          ["Short e Continuing Model", "Short è lineare e di breve periodo; Continuing usa feedback continuo nel tempo.", "Usare Short per effetti complessi di lungo periodo.", "Applicare Continuing a processi con correzioni continue.", "Short non prevede vero feedback.", "una campagna media punta solo a raggiungere interlocutori", "Short Model può essere adeguato.", ["È CCPM completo.", "È reputazione sedimentata.", "È Total Audience."]],
+          ["Yardstick e Brioschi", "Yardstick procede output-out-take-outcome; Brioschi valuta efficacia tecnica, economica e sociale.", "Ridurre Brioschi alla sola economia.", "Misurare prima uscita media, poi ricordo, poi atteggiamento.", "Yardstick ordina livelli; Brioschi allarga dimensioni di efficacia.", "si valuta anche benessere degli interlocutori", "Entra la dimensione sociale dell'efficacia.", ["È solo AVE.", "È solo ADS.", "È solo crawling."]],
+          ["PII, MACRO, Measurement Tree e PRE", "PII separa Preparation, Implementation, Impact; MACRO parte da input; Tree visualizza livelli; PRE integra pianificazione e valutazione.", "Confondere implementation con impatto reale.", "Valutare micro-decisioni prima degli output.", "PRE accompagna il processo, non solo la fine.", "si testano formato e immagine prima della pubblicazione", "È logica MACRO sugli input.", ["È una metrica KRI.", "È una survey radio.", "È solo ROI social."]]
+        ]],
+        ["Performance, Value Link e BSC", [
+          ["performance measurement", "Sposta l'attenzione dalla singola attività al contributo alla performance organizzativa.", "Fermarsi a conteggi operativi.", "Collegare comunicazione a risultati commerciali, relazionali e interni.", "Performance measurement integra più misure contestualizzate.", "il board chiede impatto complessivo della funzione", "Serve una lettura sistemica.", ["Basta contare comunicati.", "Serve solo un focus group.", "È solo AVE."]],
+          ["Value Link", "Value Link collega consapevolezza, relazione stabile e contributo agli obiettivi organizzativi.", "Saltare la relazione e andare direttamente al profitto.", "Misurare passaggio da conoscenza a coinvolgimento.", "Gli asset immateriali mediano il risultato economico.", "un pubblico conosce, poi si lega, poi contribuisce", "È la catena del Value Link.", ["È deduplicazione digitale.", "È una tecnica proiettiva.", "È un filtro algoritmico."]],
+          ["Return on Communication", "Collega ogni azione comunicativa ai fattori critici di successo e agli intangibili generati.", "Ridurlo a ROI finanziario puro.", "Valutare conoscenza, preferenza, fiducia e relazioni.", "Return on Communication non coincide con ROI stretto.", "una comunicazione crea fiducia utile al business", "Si considera valore intangibile strategico.", ["È solo costo per impression.", "È solo tiratura.", "È un indice TV."]],
+          ["Communication Value System", "Il CVS parte dagli obiettivi di business, poi stakeholder, obiettivi comunicativi, KPI e scorecard.", "Partire direttamente dai post da pubblicare.", "Definire obiettivi business per stakeholder prima dei KPI.", "CVS ribalta la prospettiva rispetto al solo piano comunicativo.", "il team sceglie KPI prima di chiarire il business", "Il processo è invertito.", ["È corretto secondo CVS.", "È una metrica di BTL.", "È un principio ADS."]],
+          ["Balanced Scorecard", "La BSC traduce strategia in prospettive finanziaria, cliente, processi, apprendimento, più comunità e dipendenti.", "Considerarla solo finanziaria.", "Mappare comunicazione istituzionale, marketing e interna sulle prospettive.", "BSC integra tangibili e intangibili.", "la comunicazione interna sostiene processi e change management", "È prospettiva processi interni riletta comunicativamente.", ["È solo audience radio.", "È solo sentiment.", "È solo counting metric."]]
+        ]],
+        ["CCPM, VALUES e causalità", [
+          ["CCPM", "Il CCPM collega capitale comunicativo, performance, contesto e stakeholder in modo situazionale.", "Trattarlo come modello tecnico isolato.", "Coinvolgere stakeholder per definire aspettative di successo.", "CCPM è partecipativo e contestuale.", "manager e clienti chiedono indicatori diversi", "Sono performance expectations differenti.", ["Conta solo output.", "Elimina stakeholder.", "Misura solo tiratura."]],
+          ["VALUES", "VALUES ancora gli obiettivi a business, contesto, tempi, pubblici, effetti e storia/benchmark.", "Pensarlo identico a SMART.", "Aggiungere benchmark storico e unità di analisi.", "SMART cura forma; VALUES cura anche strategia.", "l'obiettivo non indica pubblico né benchmark", "Manca una parte della logica VALUES.", ["È automaticamente completo.", "È un indice AVE.", "È una metrica nativa."]],
+          ["modello logico", "Il modello logico collega input, attività, output, outcome, variabili ponte e impatto.", "Saltare le variabili ponte.", "Usare fiducia e relazione per spiegare impatto sulle performance.", "Variabili ponte traducono outcome in valore organizzativo.", "aumenta fiducia e poi fedeltà cliente", "La fiducia funziona da variabile ponte.", ["È output immediato.", "È solo costo.", "È un dato censuario."]],
+          ["causalità realistica", "Nei contesti reali si lavora con causalità plausibile più che prova sperimentale pura.", "Pretendere isolamento perfetto di tutte le variabili.", "Usare GEM, MSC o SCM per rafforzare inferenze.", "Rigore non significa sempre esperimento puro.", "molti fattori influenzano reputazione e vendite", "Serve una spiegazione causale plausibile.", ["Non si può valutare nulla.", "Basta contare post.", "La correlazione prova tutto."]],
+          ["performance stories e mappe narrative", "Le performance stories collegano contesto, risultati, lezioni e next step; le mappe mostrano interdipendenze.", "Presentare solo numeri senza storia interpretativa.", "Raccontare perché un outcome è plausibilmente emerso.", "Dashboard sintetizza; performance story interpreta.", "un cruscotto non spiega condizioni di successo", "Serve narrazione valutativa.", ["Serve solo più grafica.", "Basta AVE.", "È una deduplicazione."]]
+        ]],
+        ["Tassonomia KPI e livelli di valore", [
+          ["livello formativo", "Il livello formativo misura attività, riscontri, efficienza, effetti iniziali e adeguatezza.", "Usarlo per rendicontare valore al board.", "Valutare leggibilità di strumenti e risposta immediata.", "Formativo è operativo e utile in itinere.", "si misura gradimento immediato a una convention", "È una misura formativa.", ["È impatto ESG finale.", "È reputazione sedimentata.", "È Total Audience."]],
+          ["misure di efficienza", "L'efficienza mette in rapporto input, attività, output e outcome.", "Confondere efficienza con efficacia finale.", "Calcolare costo per partecipante o inviti/partecipanti.", "Efficienza riguarda risorse e risultati.", "un evento costa meno a parità di partecipanti", "È lettura input/output.", ["È solo sentiment.", "È solo identità.", "È solo audience."]],
+          ["livello sommativo", "Il sommativo misura capitale comunicativo consolidato nelle dimensioni organizzativa, relazionale e reputazionale.", "Focalizzarsi solo su singole attività.", "Valutare fiducia, cultura comunicativa e narrazione nel tempo.", "Sommativo guarda valore aggregato.", "si misura qualità relazionale dopo molte iniziative", "È capitale comunicativo consolidato.", ["È solo click.", "È solo costo per post.", "È solo tiratura."]],
+          ["livello rendicontativo", "Il rendicontativo collega comunicazione a KPI di business, ESG, clienti, produttività e performance.", "Usare vanity metrics per rispondere al CEO.", "Mostrare contributo a fidelizzazione e performance commerciali.", "Rendicontativo parla con metriche condivise aziendali.", "il board chiede impatto su risultati commerciali", "Serve livello rendicontativo.", ["Basta numero di post.", "È solo focus group.", "È solo out-take."]],
+          ["coerenza dei livelli KPI", "La tassonomia evita di confondere operatività, capitale comunicativo e business impact.", "Mescolare livelli senza spiegare finalità.", "Usare cruscotti separati per attività, capitale e business.", "Ogni livello risponde a bisogni informativi diversi.", "un tecnico e il board chiedono misure diverse", "Servono KPI coerenti con l'utilizzatore.", ["Stessa metrica per tutti.", "Solo KPI finanziari.", "Solo metriche native."]]
+        ]],
+        ["ROI, AVE e indicatori economici", [
+          ["ROI della comunicazione", "Il ROI monetizza benefici e costi ma resta controverso per effetti indiretti e intangibili.", "Applicarlo a ogni attività senza attribuzione.", "Calcolare ROI solo con costi, benefici e periodo definiti.", "ROI stretto non esaurisce valore comunicativo.", "una campagna awareness non genera vendite immediate", "Meglio integrare ROI con altri KPI.", ["Il ROI è sempre impossibile.", "L'AVE prova tutto.", "I like bastano."]],
+          ["ROO", "Il ROO misura il raggiungimento degli obiettivi definiti quando il ritorno monetario non è adeguato.", "Usarlo senza obiettivi ex ante.", "Valutare se una campagna ha raggiunto awareness prevista.", "ROO non monetizza, verifica obiettivi.", "l'obiettivo era migliorare conoscenza del messaggio", "ROO può essere più adatto del ROI.", ["Serve solo prezzo pubblicitario.", "È sempre GRV.", "È una currency TV."]],
+          ["AVE", "L'AVE stima valore dello spazio editoriale come costo pubblicitario equivalente.", "Usarlo come valore della comunicazione.", "Calcolare spazio x listino sapendo che è una proxy debole.", "AVE non valuta tono, qualità e credibilità.", "un articolo negativo genera molto spazio", "L'AVE sovrastima o distorce il valore.", ["È un outcome comportamentale.", "È una misura JIC.", "È un indice di fiducia."]],
+          ["REAV e PQII", "REAV corregge AVE con moltiplicatori qualitativi; PQII unisce REAV e readership in unità GRV.", "Leggere il PQII come euro.", "Applicare formula (REAV x readership) / 1.000.000.", "GRV è indice, non valore monetario.", "un articolo ha titolo, foto e readership certificata", "Si può calcolare un impatto qualitativo indicizzato.", ["È ROI puro.", "È VOSDAL.", "È customer journey."]],
+          ["posizioni sul ROI", "Approcci integralista, critico e intermedio differiscono su monetizzazione e attribuzione.", "Pensare che esista una sola posizione corretta.", "Usare approccio intermedio per dialogare col business senza forzare tutto in euro.", "Critico rifiuta ROI puro; integralista monetizza di più.", "l'effetto comunicativo è distribuito nel tempo", "L'approccio critico segnala limiti di attribuzione.", ["Integralista rifiuta ogni euro.", "Intermedio ignora business.", "Critico usa solo AVE."]]
+        ]],
+        ["Intangibili e capitale comunicativo", [
+          ["capitale intellettuale", "Comprende capitale umano, relazionale e organizzativo/strutturale.", "Ridurlo alla sola reputazione esterna.", "Valutare competenze, processi, cultura e relazioni.", "Capitale intellettuale è ciò che l'azienda possiede come risorsa immateriale.", "si analizzano competenze e sistemi interni", "È componente umano/organizzativa del capitale.", ["È solo reach.", "È solo AVE.", "È solo GRP."]],
+          ["capitale comunicativo e strumenti interni", "È la capacità di trasformare capitale intellettuale in valore; OCIPO, ROIT, OCAI e CSQ aiutano a leggere comunicazione interna, cultura, relazioni e clima.", "Confonderlo con numero di messaggi prodotti.", "Misurare come comunicazione attiva fiducia e conoscenza anche dentro l'organizzazione.", "Capitale comunicativo rende attive le risorse immateriali; gli strumenti interni ne osservano condizioni e qualità.", "la comunicazione collega persone, processi, cultura e relazioni interne", "Sta attivando e diagnosticando capitale comunicativo.", ["È semplice output.", "È solo costo pubblicitario.", "È solo audience."]],
+          ["capitale narrativo", "È l'insieme di storie e conversazioni che rendono visibile l'organizzazione.", "Ridurlo a storytelling decorativo.", "Valutare quali narrazioni rendono riconoscibili valori e competenze.", "Narrativo rende visibile; comunicativo rende attivo.", "gli stakeholder raccontano l'azienda in modo ricorrente", "È capitale narrativo in circolazione.", ["È tiratura stampa.", "È un meter.", "È un gruppo di controllo."]],
+          ["immagine aziendale", "L'immagine è percezione istantanea nella mente dei pubblici.", "Confonderla con reputazione sedimentata.", "Misurare percezioni immediate dopo uno stimolo.", "Immagine è fotografia; reputazione è giudizio nel tempo.", "una campagna cambia la percezione momentanea del brand", "Si sta lavorando sull'immagine.", ["È identità profonda.", "È Total Audience.", "È KPI rendicontativo puro."]],
+          ["identità organizzativa", "L'identità è come l'organizzazione definisce e presenta se stessa, anche tramite simboli e valori.", "Confonderla con percezione esterna.", "Analizzare coerenza tra logo, cultura, valori e comportamento.", "Identità è autorappresentazione; immagine è percezione.", "l'azienda ridefinisce valori e visual identity", "Sta intervenendo sull'identità.", ["Misura solo audience.", "Calcola solo ROI.", "È solo sentiment esterno."]]
+        ]],
+        ["Relazioni, reputazione e neuromarketing", [
+          ["Grunig e Hon", "Il modello misura relazioni di scambio e comunitarie tramite impegno, fiducia, reciprocità e soddisfazione.", "Ridurre la relazione a numero di contatti.", "Valutare integrità, affidabilità e competenza nella fiducia.", "Relazione comunitaria non richiede vantaggio immediato.", "l'organizzazione aiuta uno stakeholder senza ritorno diretto", "È relazione comunitaria.", ["È solo relazione di scambio.", "È una metrica ATL.", "È una tecnica SEO."]],
+          ["reputazione", "La reputazione è giudizio sedimentato su storia, comportamenti e percezioni degli stakeholder.", "Misurarla come dato unico universale.", "Integrare valutazione, misurazione e feedback nel tempo.", "Reputazione non coincide con immagine momentanea.", "una crisi passata influenza fiducia attuale", "Conta la sedimentazione storica del giudizio.", ["È solo fotografia istantanea.", "È solo numero follower.", "È solo tiratura."]],
+          ["Berens e Van Riel", "I filoni reputazionali sono aspettative sociali, corporate character e trust.", "Dimenticare che i modelli hanno basi teoriche diverse.", "Associare trust ad affidabilità, onestà e benevolenza.", "Corporate character vede l'organizzazione come personalità.", "si valuta la marca come se avesse tratti umani", "È filone corporate character.", ["È solo output media.", "È solo CATI.", "È solo ZMOT."]],
+          ["Fortune WMAC, RepTrak e RQ", "WMAC privilegia manager e analisti; RQ usa dimensioni affettive e cognitive; RepTrak integra dimensioni razionali/emotive.", "Usare WMAC come reputazione di tutti gli stakeholder.", "Criticare campione limitato di CEO e analisti.", "Modelli sintetici e analitici non coincidono.", "un ranking reputazionale ignora clienti e dipendenti", "Il limite è la fonte degli stakeholder.", ["È perfettamente universale.", "Misura solo readership.", "È un KPI formativo."]],
+          ["neuromarketing", "Il neuromarketing usa misure biometriche e neuroscientifiche per valutare stimoli e messaggi.", "Scambiarlo per semplice opinione dichiarata.", "Integrare reazioni non consapevoli con altri metodi.", "Dato neuro non sostituisce interpretazione comunicativa.", "si testa una pubblicità con indicatori attentivi ed emotivi", "È valutazione neuro/biometrica dello stimolo.", ["È una certificazione ADS.", "È solo social listening.", "È un indice PQII."]]
+        ]]
+      ];
+
+      const variants = [
+        (fact, area) => ({
+          section: area,
+          text: `Nel tema "${area}", quale affermazione è corretta su ${fact[0]}?`,
+          correct: fact[1],
+          distractors: pickDistractors(fact, 0)
+        }),
+        (fact, area) => ({
+          section: area,
+          text: `Quale errore va evitato quando si parla di ${fact[0]}?`,
+          correct: fact[2],
+          distractors: pickDistractors(fact, 1)
+        }),
+        (fact, area) => ({
+          section: area,
+          text: `Quale esempio applica correttamente ${fact[0]}?`,
+          correct: fact[3],
+          distractors: pickDistractors(fact, 2)
+        }),
+        (fact, area) => ({
+          section: area,
+          text: `Quale distinzione aiuta a non confondere ${fact[0]}?`,
+          correct: fact[4],
+          distractors: pickDistractors(fact, 3)
+        }),
+        (fact, area) => ({
+          section: area,
+          text: `Se in un caso d'esame compare questa situazione: ${fact[5]}, quale lettura è più solida?`,
+          correct: fact[6],
+          distractors: pickDistractors(fact, 4)
+        })
+      ];
+
+      const built = [];
+      for (const [area, facts] of blueprints) {
+        for (const fact of facts) {
+          for (const make of variants) {
+            const q = make(fact, area);
+            built.push(toQuestion(built.length + 1, q));
+          }
+        }
+      }
+      return built;
+    }
+
+    function pickDistractors(fact, offset) {
+      const pool = fact[7];
+      return [0, 1, 2].map(i => pool[(offset + i) % pool.length]);
+    }
+
+    function wordCount(text) {
+      return String(text).trim().split(/\s+/).filter(Boolean).length;
+    }
+
+    function balanceDistractors(correct, distractors) {
+      const target = Math.min(wordCount(correct), 21);
+      const fillers = [
+        "nel quadro teorico del corso",
+        "come criterio generale di analisi",
+        "nella lettura manageriale del caso",
+        "per orientare decisioni e valutazioni",
+        "rispetto agli obiettivi della comunicazione"
+      ];
+
+      return distractors.map((text, index) => {
+        let balanced = text;
+        let fillerIndex = index;
+        while (wordCount(balanced) < target - 2 && fillerIndex < index + fillers.length) {
+          balanced += ` ${fillers[fillerIndex % fillers.length]}`;
+          fillerIndex += 1;
+        }
+        return balanced;
+      });
+    }
+
+    function toQuestion(id, q) {
+      const distractors = balanceDistractors(q.correct, q.distractors);
+
+      return {
+        id,
+        section: q.section,
+        text: q.text,
+        options: {
+          A: q.correct,
+          B: distractors[0],
+          C: distractors[1],
+          D: distractors[2]
+        },
+        answer: "A"
+      };
+    }
+
+    function init() {
+      if (questions.length !== 525) {
+        console.warn(`Attenzione: la banca quiz contiene ${questions.length} domande.`);
+      }
+
+      ensureQuizSession();
+      updateTopicFilter();
+
+      els.topicFilter.addEventListener("change", () => {
+        reviewOnly = false;
+        index = 0;
+        rebuildOrder();
+        render();
+      });
+
+      els.shuffleToggle.addEventListener("change", () => {
+        index = 0;
+        rebuildOrder();
+        render();
+      });
+
+      els.unansweredToggle.addEventListener("change", () => {
+        reviewOnly = false;
+        index = 0;
+        rebuildOrder();
+        render();
+      });
+
+      els.answers.addEventListener("click", event => {
+        const button = event.target.closest("button[data-letter]");
+        if (!button || !els.answers.contains(button)) return;
+        choose(button.dataset.letter);
+      });
+
+      els.prevBtn.addEventListener("click", () => {
+        index = Math.max(0, index - 1);
+        render();
+      });
+
+      els.nextBtn.addEventListener("click", () => {
+        index = Math.min(order.length - 1, index + 1);
+        render();
+      });
+
+      els.revealBtn.addEventListener("click", () => {
+        const q = currentQuestion();
+        if (!q) return;
+        state.answers[q.id] = state.answers[q.id] || { selected: null, revealed: true };
+        state.answers[q.id].revealed = true;
+        saveState();
+        render();
+      });
+
+      els.restartBtn.addEventListener("click", () => {
+        startNewQuiz();
+      });
+
+      els.reviewModeBtn.addEventListener("click", () => {
+        reviewOnly = !reviewOnly;
+        index = 0;
+        rebuildOrder();
+        render();
+      });
+
+      document.addEventListener("keydown", event => {
+        if (event.target.matches("select, button, input")) return;
+        const key = event.key.toUpperCase();
+        if (["1", "2", "3", "4"].includes(event.key)) {
+          const q = currentQuestion();
+          const visibleLetter = q ? getOptionOrder(q.id)[Number(event.key) - 1] : null;
+          if (visibleLetter) choose(visibleLetter);
+        }
+        if (event.key === "ArrowRight") els.nextBtn.click();
+        if (event.key === "ArrowLeft") els.prevBtn.click();
+      });
+
+      rebuildOrder();
+      render();
+    }
+
+    function ensureQuizSession() {
+      const validIds = new Set(questions.map(q => q.id));
+      const expectedSize = Math.min(quizSize, questions.length);
+      const ids = Array.isArray(state.quizIds) ? state.quizIds : [];
+      const validSession = ids.length === expectedSize && ids.every(id => validIds.has(id));
+
+      if (!validSession) {
+        state = { answers: {}, quizIds: pickQuizIds() };
+        saveState();
+      }
+    }
+
+    function startNewQuiz() {
+      state = { answers: {}, quizIds: pickQuizIds() };
+      optionOrder = {};
+      order = [];
+      index = 0;
+      reviewOnly = false;
+      els.topicFilter.value = "all";
+      els.unansweredToggle.checked = false;
+      els.shuffleToggle.checked = true;
+      saveState();
+      updateTopicFilter();
+      rebuildOrder();
+      render();
+    }
+
+    function pickQuizIds() {
+      return shuffle(questions.map(q => q.id)).slice(0, Math.min(quizSize, questions.length));
+    }
+
+    function getActiveQuestions() {
+      return state.quizIds
+        .map(id => questionById.get(id))
+        .filter(Boolean);
+    }
+
+    function updateTopicFilter() {
+      const current = els.topicFilter.value || "all";
+      const sections = [...new Set(getActiveQuestions().map(q => q.section))];
+      els.topicFilter.innerHTML = `<option value="all">Tutti gli argomenti</option>` +
+        sections.map(section => `<option value="${escapeHtml(section)}">${escapeHtml(cleanSection(section))}</option>`).join("");
+      els.topicFilter.value = current === "all" || sections.includes(current) ? current : "all";
+    }
+
+    function rebuildOrder() {
+      const topic = els.topicFilter.value;
+      const onlyUnanswered = els.unansweredToggle.checked;
+      const wrongIds = new Set(getWrongQuestions().map(q => q.id));
+
+      order = getActiveQuestions()
+        .filter(q => topic === "all" || q.section === topic)
+        .filter(q => !onlyUnanswered || !state.answers[q.id]?.selected)
+        .filter(q => !reviewOnly || wrongIds.has(q.id))
+        .map(q => q.id);
+
+      if (els.shuffleToggle.checked) {
+        order = shuffle([...order]);
+      }
+
+      if (index >= order.length) index = Math.max(0, order.length - 1);
+    }
+
+    function render() {
+      renderStats();
+      renderTopicList();
+      renderReview();
+
+      const q = currentQuestion();
+      if (!q) {
+        els.sectionLabel.textContent = "Nessuna domanda";
+        els.questionText.textContent = "Non ci sono domande con i filtri attuali.";
+        els.questionCount.textContent = "";
+        els.answers.innerHTML = "";
+        els.feedback.textContent = "Cambia filtro o disattiva il ripasso errori.";
+        els.feedback.className = "feedback";
+        els.progressBar.style.width = "0%";
+        els.prevBtn.disabled = true;
+        els.nextBtn.disabled = true;
+        els.revealBtn.disabled = true;
+        return;
+      }
+
+      const answerState = state.answers[q.id];
+      const selected = answerState?.selected;
+      const revealed = answerState?.revealed || Boolean(selected);
+
+      els.questionText.textContent = q.text;
+      els.sectionLabel.textContent = cleanSection(q.section);
+      els.questionCount.textContent = `Domanda ${index + 1} di ${order.length}`;
+      els.progressBar.style.width = `${((index + 1) / order.length) * 100}%`;
+      els.prevBtn.disabled = index === 0;
+      els.nextBtn.disabled = index === order.length - 1;
+      els.revealBtn.disabled = Boolean(revealed);
+
+      const displayLetters = getOptionOrder(q.id);
+      els.answers.innerHTML = displayLetters.map((letter, displayIndex) => {
+        const classes = ["answer"];
+        if (revealed && letter === q.answer) classes.push("correct");
+        if (revealed && selected === letter && selected !== q.answer) classes.push("wrong");
+        return `
+          <button type="button" class="${classes.join(" ")}" data-letter="${letter}">
+            <span class="letter">${displayIndex + 1}</span>
+            <span>${escapeHtml(q.options[letter])}</span>
+          </button>
+        `;
+      }).join("");
+
+      if (!selected && !revealed) {
+        els.feedback.textContent = "Scegli una risposta. Puoi usare anche i tasti 1, 2, 3, 4.";
+        els.feedback.className = "feedback";
+      } else if (selected === q.answer) {
+        els.feedback.textContent = "Corretto.";
+        els.feedback.className = "feedback good";
+      } else if (revealed && !selected) {
+        els.feedback.textContent = "Risposta corretta evidenziata.";
+        els.feedback.className = "feedback";
+      } else {
+        els.feedback.textContent = "Non corretta. La risposta giusta è evidenziata.";
+        els.feedback.className = "feedback bad";
+      }
+    }
+
+    function choose(letter) {
+      const q = currentQuestion();
+      if (!q) return;
+      state.answers[q.id] = {
+        selected: letter,
+        revealed: true
+      };
+      saveState();
+      render();
+    }
+
+    function currentQuestion() {
+      const id = order[index];
+      return questionById.get(id);
+    }
+
+    function renderStats() {
+      const activeQuestions = getActiveQuestions();
+      const answered = activeQuestions.filter(q => state.answers[q.id]?.selected);
+      const correct = answered.filter(q => state.answers[q.id].selected === q.answer);
+      const percent = answered.length ? Math.round((correct.length / answered.length) * 100) : 0;
+
+      els.scoreStat.textContent = correct.length;
+      els.percentStat.textContent = `${percent}%`;
+      els.doneStat.textContent = answered.length;
+      els.leftStat.textContent = activeQuestions.length - answered.length;
+    }
+
+    function renderTopicList() {
+      const activeQuestions = getActiveQuestions();
+      const sections = [...new Set(activeQuestions.map(q => q.section))];
+      els.topicList.innerHTML = sections.map(section => {
+        const topicQuestions = activeQuestions.filter(q => q.section === section);
+        const answered = topicQuestions.filter(q => state.answers[q.id]?.selected).length;
+        const width = Math.round((answered / topicQuestions.length) * 100);
+        return `
+          <div class="topic-row">
+            <span>${escapeHtml(cleanSection(section))} · ${answered}/${topicQuestions.length}</span>
+            <span class="topic-meter"><span style="width:${width}%"></span></span>
+          </div>
+        `;
+      }).join("");
+    }
+
+    function renderReview() {
+      const wrong = getWrongQuestions();
+      els.reviewPanel.classList.toggle("visible", wrong.length > 0 || reviewOnly);
+      if (!wrong.length) {
+        els.reviewList.innerHTML = `<p class="empty">Nessun errore registrato. Bel segnale.</p>`;
+        return;
+      }
+
+      els.reviewList.innerHTML = wrong.map(q => `
+        <div class="review-item">
+          ${escapeHtml(q.text)}
+          <br>La risposta corretta è evidenziata quando riapri la domanda.
+          <button type="button" data-jump="${q.id}">Vai alla domanda</button>
+        </div>
+      `).join("");
+
+      els.reviewList.querySelectorAll("button").forEach(button => {
+        button.addEventListener("click", () => {
+          const id = Number(button.dataset.jump);
+          const existing = order.indexOf(id);
+          if (existing >= 0) {
+            index = existing;
+          } else {
+            els.topicFilter.value = "all";
+            els.unansweredToggle.checked = false;
+            reviewOnly = false;
+            rebuildOrder();
+            index = order.indexOf(id);
+          }
+          render();
+        });
+      });
+    }
+
+    function getWrongQuestions() {
+      return getActiveQuestions().filter(q => {
+        const selected = state.answers[q.id]?.selected;
+        return selected && selected !== q.answer;
+      });
+    }
+
+    function loadState() {
+      try {
+        return JSON.parse(localStorage.getItem(storageKey)) || { answers: {} };
+      } catch {
+        return { answers: {} };
+      }
+    }
+
+    function saveState() {
+      localStorage.setItem(storageKey, JSON.stringify(state));
+    }
+
+    function getOptionOrder(questionId) {
+      if (!optionOrder[questionId]) {
+        optionOrder[questionId] = shuffle([...letters]);
+      }
+      return optionOrder[questionId];
+    }
+
+    function cleanSection(section) {
+      return section.replace(/^\d+\.\s*/, "");
+    }
+
+    function shuffle(items) {
+      for (let i = items.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [items[i], items[j]] = [items[j], items[i]];
+      }
+      return items;
+    }
+
+    function escapeHtml(value) {
+      return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+  </script>
+</body>
+</html>
