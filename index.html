@@ -748,7 +748,7 @@ Distribuzione: 1) Fondamenti 11; 2) Ricerche 11; 3) Modelli e digitale 11; 4) Mo
 
     const letters = ["A", "B", "C", "D"];
     const quizSize = 50;
-    const storageKey = "metriche-comunicazione-quiz-v5-50";
+    const storageKey = "metriche-comunicazione-quiz-v6-quality";
     let questions = buildExpandedQuiz();
     const questionById = new Map(questions.map(q => [q.id, q]));
     let state = loadState();
@@ -928,7 +928,7 @@ Distribuzione: 1) Fondamenti 11; 2) Ricerche 11; 3) Modelli e digitale 11; 4) Mo
         ]],
         ["Intangibili e capitale comunicativo", [
           ["capitale intellettuale", "Comprende capitale umano, relazionale e organizzativo/strutturale.", "Ridurlo alla sola reputazione esterna.", "Valutare competenze, processi, cultura e relazioni.", "Capitale intellettuale è ciò che l'azienda possiede come risorsa immateriale.", "si analizzano competenze e sistemi interni", "È componente umano/organizzativa del capitale.", ["È solo reach.", "È solo AVE.", "È solo GRP."]],
-          ["capitale comunicativo e strumenti interni", "È la capacità di trasformare capitale intellettuale in valore; OCIPO, ROIT, OCAI e CSQ aiutano a leggere comunicazione interna, cultura, relazioni e clima.", "Confonderlo con numero di messaggi prodotti.", "Misurare come comunicazione attiva fiducia e conoscenza anche dentro l'organizzazione.", "Capitale comunicativo rende attive le risorse immateriali; gli strumenti interni ne osservano condizioni e qualità.", "la comunicazione collega persone, processi, cultura e relazioni interne", "Sta attivando e diagnosticando capitale comunicativo.", ["È semplice output.", "È solo costo pubblicitario.", "È solo audience."]],
+          ["capitale comunicativo e strumenti interni", "Trasforma capitale intellettuale in valore tramite comunicazione; OCIPO, ROIT, OCAI e CSQ leggono cultura, relazioni e clima interno.", "Confonderlo con numero di messaggi prodotti.", "Misurare come comunicazione attiva fiducia e conoscenza anche dentro l'organizzazione.", "Capitale comunicativo attiva risorse immateriali; gli strumenti interni leggono condizioni e qualità.", "la comunicazione collega persone, processi, cultura e relazioni interne", "Sta attivando e diagnosticando capitale comunicativo.", ["È semplice output.", "È solo costo pubblicitario.", "È solo audience."]],
           ["capitale narrativo", "È l'insieme di storie e conversazioni che rendono visibile l'organizzazione.", "Ridurlo a storytelling decorativo.", "Valutare quali narrazioni rendono riconoscibili valori e competenze.", "Narrativo rende visibile; comunicativo rende attivo.", "gli stakeholder raccontano l'azienda in modo ricorrente", "È capitale narrativo in circolazione.", ["È tiratura stampa.", "È un meter.", "È un gruppo di controllo."]],
           ["immagine aziendale", "L'immagine è percezione istantanea nella mente dei pubblici.", "Confonderla con reputazione sedimentata.", "Misurare percezioni immediate dopo uno stimolo.", "Immagine è fotografia; reputazione è giudizio nel tempo.", "una campagna cambia la percezione momentanea del brand", "Si sta lavorando sull'immagine.", ["È identità profonda.", "È Total Audience.", "È KPI rendicontativo puro."]],
           ["identità organizzativa", "L'identità è come l'organizzazione definisce e presenta se stessa, anche tramite simboli e valori.", "Confonderla con percezione esterna.", "Analizzare coerenza tra logo, cultura, valori e comportamento.", "Identità è autorappresentazione; immagine è percezione.", "l'azienda ridefinisce valori e visual identity", "Sta intervenendo sull'identità.", ["Misura solo audience.", "Calcola solo ROI.", "È solo sentiment esterno."]]
@@ -945,50 +945,51 @@ Distribuzione: 1) Fondamenti 11; 2) Ricerche 11; 3) Modelli e digitale 11; 4) Mo
       const variants = [
         (fact, area, factIndex) => ({
           section: area,
+          kind: "definition",
           text: pickPrompt([
             `Tra queste affermazioni, quale descrive meglio ${fact[0]} nel contesto di ${area}?`,
             `Rispetto a ${fact[0]}, quale lettura è più corretta?`,
             `Quando si parla di ${fact[0]}, quale interpretazione è più solida?`,
             `Che cosa va ricordato soprattutto su ${fact[0]}?`
           ], factIndex),
-          correct: fact[1],
-          distractors: pickDistractors(fact, 0)
+          correct: fact[1]
         }),
         (fact, area, factIndex) => ({
           section: area,
+          kind: "error",
           text: pickPrompt([
             `Il fraintendimento più rischioso su ${fact[0]} riguarda quale aspetto?`,
             `Nel valutare ${fact[0]}, quale errore metodologico va evitato?`,
             `Una lettura fuorviante di ${fact[0]} sarebbe:`,
             `Dove sta il rischio principale quando si interpreta ${fact[0]}?`
           ], factIndex),
-          correct: fact[2],
-          distractors: pickDistractors(fact, 1)
+          correct: fact[2]
         }),
         (fact, area, factIndex) => ({
           section: area,
+          kind: "application",
           text: pickPrompt([
             `L'applicazione più coerente di ${fact[0]} è:`,
             `In quale scelta operativa riconosci un uso corretto di ${fact[0]}?`,
             `Un esempio coerente con ${fact[0]} sarebbe:`,
             `La decisione che mostra una buona comprensione di ${fact[0]} è:`
           ], factIndex),
-          correct: fact[3],
-          distractors: pickDistractors(fact, 2)
+          correct: fact[3]
         }),
         (fact, area, factIndex) => ({
           section: area,
+          kind: "distinction",
           text: pickPrompt([
             `La distinzione decisiva per interpretare correttamente ${fact[0]} è:`,
             `Per non confondere ${fact[0]} con concetti vicini, quale criterio aiuta di più?`,
             `Il confronto che chiarisce meglio ${fact[0]} è:`,
             `Il confine concettuale da mantenere quando si usa ${fact[0]} è:`
           ], factIndex),
-          correct: fact[4],
-          distractors: pickDistractors(fact, 3)
+          correct: fact[4]
         }),
         (fact, area, factIndex) => ({
           section: area,
+          kind: "scenario",
           text: pickPrompt([
             `Lo scenario presenta questo indizio: ${fact[5]}. La conclusione più difendibile è:`,
             `Davanti al caso "${fact[5]}", quale interpretazione useresti?`,
@@ -998,113 +999,79 @@ Distribuzione: 1) Fondamenti 11; 2) Ricerche 11; 3) Modelli e digitale 11; 4) Mo
             `L'indizio pratico è "${fact[5]}". Che cosa suggerisce?`,
             `Nel caso compare "${fact[5]}". La risposta più robusta è:`
           ], factIndex),
-          correct: fact[6],
-          distractors: pickDistractors(fact, 4)
+          correct: fact[6]
         })
       ];
 
-      const built = [];
+      const raw = [];
       for (const [area, facts] of blueprints) {
-        for (const [factIndex, fact] of facts.entries()) {
+        for (const fact of facts) {
           for (const make of variants) {
-            const q = make(fact, area, built.length);
-            built.push(toQuestion(built.length + 1, q));
+            raw.push(make(fact, area, raw.length));
           }
         }
       }
-      return built;
+      return raw.map((q, index) => toQuestion(index + 1, {
+        ...q,
+        distractors: chooseDistractors(q, raw, index)
+      }));
     }
 
     function pickPrompt(prompts, seed) {
       return prompts[seed % prompts.length];
     }
 
-    function pickDistractors(fact, offset) {
-      const pool = fact[7];
-      return [0, 1, 2].map(i => pool[(offset + i) % pool.length]);
+    function chooseDistractors(question, allQuestions, seed) {
+      const correctLength = wordCount(question.correct);
+      const candidates = allQuestions
+        .filter(candidate => candidate.kind === question.kind && candidate.correct !== question.correct);
+      const local = candidates
+        .filter(candidate => candidate.section === question.section && Math.abs(wordCount(candidate.correct) - correctLength) <= 3)
+        .sort((a, b) => distractorScore(a, question, correctLength, seed) - distractorScore(b, question, correctLength, seed))
+        .map(candidate => candidate.correct);
+      const fallback = candidates
+        .filter(candidate => candidate.section !== question.section || Math.abs(wordCount(candidate.correct) - correctLength) > 3)
+        .sort((a, b) => distractorScore(a, question, correctLength, seed) - distractorScore(b, question, correctLength, seed))
+        .map(candidate => candidate.correct);
+
+      return uniqueTexts([...local, ...fallback])
+        .slice(0, 3);
+    }
+
+    function distractorScore(candidate, question, correctLength, seed) {
+      const lengthPenalty = Math.abs(wordCount(candidate.correct) - correctLength) * 12;
+      const sectionPenalty = candidate.section === question.section ? 0 : 30;
+      const jitter = seededScore(candidate.correct, seed) % 7;
+      return sectionPenalty + lengthPenalty + jitter;
+    }
+
+    function uniqueTexts(items) {
+      return [...new Set(items)];
     }
 
     function wordCount(text) {
       return String(text).trim().split(/\s+/).filter(Boolean).length;
     }
 
-    function balanceDistractors(correct, distractors) {
-      const target = Math.min(wordCount(correct), 20);
-
-      return distractors.map((text, index) => {
-        let balanced = expandDistractor(text);
-        const clauses = [
-          "senza collegarla agli obiettivi del caso",
-          "trascurando pubblici, contesto e livelli di effetto",
-          "come se bastasse a spiegare l'intero fenomeno",
-          "senza distinguere mezzi, risultati e impatti"
-        ];
-
-        let clauseIndex = index;
-        while (wordCount(balanced) < target - 2 && clauseIndex < index + clauses.length) {
-          balanced = `${trimPeriod(balanced)}, ${clauses[clauseIndex % clauses.length]}.`;
-          clauseIndex += 1;
-        }
-        return balanced;
-      });
-    }
-
-    function expandDistractor(text) {
-      const clean = trimPeriod(text);
-      const lower = clean.charAt(0).toLowerCase() + clean.slice(1);
-      const onlyMatch = clean.match(/^È solo (.+)$/);
-      const serveSoloMatch = clean.match(/^Serve solo (.+)$/);
-      const contaSoloMatch = clean.match(/^Conta solo (.+)$/);
-      const misuraSoloMatch = clean.match(/^Misura solo (.+)$/);
-      const bastaMatch = clean.match(/^Basta (.+)$/);
-      const coincideMatch = clean.match(/^Coincide con (.+)$/);
-      const eUnaMatch = clean.match(/^È (una|un) (.+)$/);
-
-      if (wordCount(clean) > 7) return `${clean}.`;
-      if (onlyMatch) return `Riduce la risposta a ${onlyMatch[1]}, trascurando la logica del modello.`;
-      if (serveSoloMatch) return expandServeSolo(serveSoloMatch[1]);
-      if (contaSoloMatch) return `Limita l'analisi a ${normalizeSoloObject(contaSoloMatch[1])}, ignorando le altre fasi del processo.`;
-      if (misuraSoloMatch) return `Limita la misurazione a ${normalizeSoloObject(misuraSoloMatch[1])}, senza collegare il dato agli obiettivi.`;
-      if (bastaMatch) return `Considera sufficiente ${bastaMatch[1]}, senza controllare coerenza e contesto.`;
-      if (coincideMatch) return `Fa coincidere il concetto con ${coincideMatch[1]}, semplificando troppo la distinzione.`;
-      if (eUnaMatch) return `Lo interpreta come ${eUnaMatch[1]} ${eUnaMatch[2]}, spostando l'analisi su un piano non pertinente.`;
-      if (/^(Elimina|Sostituisce|Calcola|Certifica|Riguarda|Non richiede|Ignora)\\b/.test(clean)) {
-        return `${clean}, trattandolo come criterio sufficiente di valutazione.`;
+    function seededScore(text, seed) {
+      let hash = seed + 2166136261;
+      for (let i = 0; i < text.length; i++) {
+        hash ^= text.charCodeAt(i);
+        hash = Math.imul(hash, 16777619);
       }
-      return `${clean}, senza distinguere correttamente livello, obiettivo e contesto.`;
-    }
-
-    function trimPeriod(text) {
-      return String(text).trim().replace(/[.。]+$/, "");
-    }
-
-    function expandServeSolo(text) {
-      const value = String(text).trim();
-      if (/^a\s+/i.test(value)) {
-        return `Riduce la valutazione alla sola azione di ${value.replace(/^a\s+/i, "")}, senza verificare gli effetti.`;
-      }
-      return `Riduce la valutazione a ${value}, senza verificare gli effetti.`;
-    }
-
-    function normalizeSoloObject(text) {
-      return String(text)
-        .trim()
-        .replace(/^a\s+/, "")
-        .replace(/^(un|una|uno|il|lo|la|i|gli|le)\s+/i, "");
+      return hash >>> 0;
     }
 
     function toQuestion(id, q) {
-      const distractors = balanceDistractors(q.correct, q.distractors);
-
       return {
         id,
         section: q.section,
         text: q.text,
         options: {
           A: q.correct,
-          B: distractors[0],
-          C: distractors[1],
-          D: distractors[2]
+          B: q.distractors[0],
+          C: q.distractors[1],
+          D: q.distractors[2]
         },
         answer: "A"
       };
