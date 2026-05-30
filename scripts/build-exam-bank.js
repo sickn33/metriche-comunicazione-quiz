@@ -562,18 +562,35 @@ function restoreItalianAccents(value) {
     .replace(/\b([Cc]ome) e\b/g, "$1 è")
     .replace(/\b([Qq]uando) e\b/g, "$1 è")
     .replace(/\b([Dd]ove) e\b/g, "$1 è")
+    .replace(/\b(Quale tipo di metodo) e (?=più adatto\b)/g, "$1 è ")
+    .replace(/\b(la visibilità) e (?=più selettiva\b)/g, "$1 è ")
+    .replace(/\b(ciò che) e (?=facile\b)/g, "$1 è ")
+    .replace(/\b(se) e (?=protagonista\b)/g, "$1 è ")
+    .replace(/\b(comportamento) e (?=stato interpretato\b)/g, "$1 è ")
+    .replace(/\b(Fino a quando|fino a quando|finche|Finche)\b/g, match => preserveCase(match, "finché"))
     .replace(/\b([Pp]erché) e\b/g, "$1 è")
     .replace(/\b([Nn]on) e\b/g, "$1 è")
+    .replace(/\b(l'utilizzo dell'analisi del contenuto) e (?=particolarmente\b)/gi, "$1 è ")
+    .replace(/\b(Quale media) e (?=migliore\b)/g, "$1 è ")
+    .replace(/\b(La competizione) e (?=interna\b)/g, "$1 è ")
+    .replace(/\b(il search advertising) e (?=separato\b)/gi, "$1 è ")
     .replace(/\b(Quale tra i seguenti) e (?=un\b)/g, "$1 è ")
     .replace(/\b(Quale delle seguenti) e (?=una\b)/g, "$1 è ")
     .replace(/\b(Quale metrica) e (?=considerata\b)/g, "$1 è ")
     .replace(/\b(Quale di queste affermazioni sul ROI della comunicazione) e (?=corretta\b)/g, "$1 è ")
     .replace(/\b(L'indicatore ROEM \(Return on Earned Media\)) e (?=un sinonimo\b)/g, "$1 è ")
     .replace(/\b(del '[^']+') e (?=utile\b)/g, "$1 è ")
+    .replace(/\b(valutazione) e (?=efficace\b)/g, "$1 è ")
     .replace(/\b(non sempre) e (?=possibile\b)/g, "$1 è ")
     .replace(/\b(la comunicazione) e (?=centrale\b)/g, "$1 è ")
+    .replace(/\b(focus group) e (?=già\b)/g, "$1 è ")
+    .replace(/\b(l'esposizione) e (?=favorevole\b)/g, "$1 è ")
+    .replace(/\b(messaggio chiave) e (?=ripetuto\b)/g, "$1 è ")
     .replace(/\bc'e\b/g, "c'è")
     .replace(/\bC'e\b/g, "C'è")
+    .replace(/ciòè/g, "cioè")
+    .replace(/Ciòè/g, "Cioè")
+    .replace(/\b(ADS) e (?=stato costituito\b)/g, "$1 è ")
     .replace(/\be([:?!])/g, "è$1")
     .replace(/\bE([:?!])/g, "È$1")
     .replace(/(^|[.!?]\s+)E (?=(?:necessario|utile|corretto|sbagliato|possibile|importante|preferibile|opportuno|rilevante|centrale|misurabile)\b)/g, "$1È ");
@@ -582,6 +599,7 @@ function restoreItalianAccents(value) {
 function cleanText(value) {
   return restoreItalianAccents(String(value || "")
     .normalize("NFKC")
+    .replace(/\$([0-9]+)\\%\$/g, "$1%")
     .replace(/\$([A-Za-z0-9]+)\$/g, "$1")
     .replace(/[’]/g, "'")
     .replace(/[“”]/g, "\"")
@@ -939,6 +957,14 @@ const manualReviewOverrides = {
       D: "Un riscontro immediato di esposizione.",
     },
   },
+  7: {
+    options: {
+      A: "È un processo circolare con feedback continuo che accompagna tutte le fasi del piano.",
+      B: "È un modello lineare focalizzato soprattutto sulla copertura ottenuta nel breve periodo.",
+      C: "È una valutazione svolta solo al termine della campagna per rendicontare i risultati.",
+      D: "È un approccio centrato sugli output operativi più che sugli aggiustamenti in itinere.",
+    },
+  },
   16: {
     options: {
       A: "Il numero di uscite media ottenute rispetto ai punti percentuali di aumento della conoscenza.",
@@ -1185,26 +1211,26 @@ const manualReviewOverrides = {
   },
   87: {
     options: {
-      A: "Una survey somministrata direttamente a un campione definito per la ricerca.",
-      B: "Una tabella statistica gia pubblicata da un ente esterno.",
-      C: "Un report storico prodotto da una precedente campagna.",
-      D: "Una rassegna di dati amministrativi gia disponibili in azienda.",
-    },
-  },
-  88: {
-    options: {
       A: "Il percorso di interazioni e touchpoint che accompagna il cliente dalla conoscenza al post-acquisto.",
       B: "Il solo momento in cui il cliente paga il prodotto nel punto vendita.",
       C: "La sequenza interna con cui l'azienda approva una campagna pubblicitaria.",
       D: "Il calendario editoriale dei contenuti pubblicati sui canali social proprietari.",
     },
   },
+  88: {
+    options: {
+      A: "La presenza e il peso delle citazioni attribuite a portavoce o rappresentanti ufficiali.",
+      B: "La centralità dell'organizzazione all'interno del singolo articolo.",
+      C: "La quota di copertura ottenuta rispetto ai competitor nel periodo.",
+      D: "Il valore economico equivalente dello spazio editoriale occupato.",
+    },
+  },
   90: {
     options: {
-      A: "Possono essere obsolete o poco adattabili agli obiettivi specifici della ricerca.",
-      B: "Garantiscono sempre maggiore accuratezza rispetto alle ricerche primarie.",
-      C: "Permettono di evitare qualunque interpretazione da parte del ricercatore.",
-      D: "Sono utilizzabili solo quando non esistono dati quantitativi disponibili.",
+      A: "Una visione interpretativa e non deterministica, attenta a significati, vissuti e contesto.",
+      B: "Una visione puramente deterministica, in cui ogni comportamento è prevedibile con certezza.",
+      C: "Una visione esclusivamente numerica, basata solo su campioni statisticamente rappresentativi.",
+      D: "Una visione amministrativa, centrata sulla certificazione esterna dei dati di audience.",
     },
   },
   92: {
@@ -1214,6 +1240,14 @@ const manualReviewOverrides = {
       B: "Per ottenere automaticamente un campione statisticamente rappresentativo.",
       C: "Per trasformare la discussione qualitativa in un esperimento causale.",
       D: "Per evitare che il moderatore debba preparare una traccia di discussione.",
+    },
+  },
+  93: {
+    options: {
+      A: "Funziona da stimolo per il dialogo e la creatività, facendo emergere idee che non uscirebbero in un'intervista singola.",
+      B: "Garantisce risultati statisticamente rappresentativi dell'intera popolazione.",
+      C: "Elimina l'influenza reciproca tra partecipanti durante la raccolta delle risposte.",
+      D: "Permette di dimostrare un nesso causale tra campagna e comportamento d'acquisto.",
     },
   },
   98: {
@@ -1227,82 +1261,90 @@ const manualReviewOverrides = {
   },
   100: {
     options: {
-      A: "Il ricercatore partecipa al contesto senza dichiarare apertamente il proprio ruolo di osservatore.",
-      B: "Il ricercatore osserva il gruppo dichiarando fin dall'inizio obiettivi e metodo.",
-      C: "I partecipanti compilano un questionario anonimo senza incontrare il ricercatore.",
-      D: "Il moderatore conduce una discussione collettiva con una traccia a imbuto.",
+      A: "Trasformare dati e interpretazioni in indicazioni utili per scegliere, correggere o migliorare le azioni.",
+      B: "Produrre un archivio completo di dati grezzi senza indicazioni operative.",
+      C: "Sostituire le decisioni manageriali con un unico indicatore automatico.",
+      D: "Limitarsi a controllare se le attività previste sono state svolte.",
     },
   },
   102: {
     options: {
-      A: "Trasformare dati e interpretazioni in indicazioni utili per scegliere o correggere le azioni.",
-      B: "Produrre un archivio completo di dati grezzi senza raccomandazioni operative.",
-      C: "Sostituire le decisioni manageriali con un unico indicatore automatico.",
-      D: "Misurare solo la visibilita media ottenuta nel periodo analizzato.",
-    },
-  },
-  104: {
-    options: {
-      A: "La costruzione del campione e del questionario, perche condiziona la qualita dei dati raccolti.",
+      A: "La costruzione del campione e del questionario, perché condiziona la qualità dei dati raccolti.",
       B: "La scelta del software di impaginazione usato per presentare il report finale.",
       C: "L'archiviazione dei questionari dopo la chiusura dell'analisi.",
       D: "La selezione degli esempi grafici da inserire nelle slide conclusive.",
     },
   },
+  101: {
+    options: {
+      A: "La necessità di verificare o approfondire i risultati con ulteriori strumenti, spesso quantitativi.",
+      B: "La difficoltà di generalizzare i risultati all'intera popolazione di riferimento.",
+      C: "La possibile influenza reciproca tra partecipanti durante la discussione.",
+      D: "La dipendenza dalla qualità della traccia e dalla conduzione del moderatore.",
+    },
+  },
+  104: {
+    options: {
+      A: "Integra raccolta dati, interpretazione e supporto alle decisioni, non solo verifica a posteriori.",
+      B: "Si limita a contare gli output prodotti senza interpretarli rispetto agli obiettivi.",
+      C: "Coincide con la certificazione esterna di tiratura, audience e ascolti.",
+      D: "Esclude la fase di pianificazione per concentrarsi solo sul report finale.",
+    },
+  },
   118: {
     options: {
-      A: "Perche si articola sulla presenza in risposte sintetiche e contestualizzate anziche su link espliciti.",
-      B: "Perche coincide con un miglior posizionamento organico nella SERP tradizionale.",
-      C: "Perche misura soltanto il traffico diretto generato verso il sito aziendale.",
-      D: "Perche dipende esclusivamente dal numero di pagine indicizzate dal motore.",
+      A: "Citation frequency.",
+      B: "Traffico organico.",
+      C: "Bounce rate.",
+      D: "Cost per click.",
     },
   },
   136: {
     options: {
-      A: "La preparazione delle persone a misurare e comprendere i social media.",
-      B: "La scelta di metriche di engagement indipendenti dagli obiettivi aziendali.",
-      C: "La separazione tra chi produce contenuti e chi interpreta i risultati.",
-      D: "L'acquisto di dashboard senza un processo condiviso di lettura dei dati.",
+      A: "Brand Health.",
+      B: "Revenue Generation.",
+      C: "Customer Experience.",
+      D: "Marketing Optimization.",
     },
   },
   144: {
     options: {
-      A: "Basarle strettamente sugli obiettivi di business identificati nel social media plan.",
-      B: "Formularle a partire dai soli dati gia disponibili negli analytics nativi.",
-      C: "Ridurre le domande a metriche standard uguali per ogni settore.",
-      D: "Definirle dopo la raccolta, osservando quali conversazioni emergono.",
+      A: "Web 3.0.",
+      B: "Web 1.0.",
+      C: "Web 2.0.",
+      D: "Web 4.0.",
     },
   },
   145: {
     options: {
-      A: "Per scovare i luoghi di discussione specifici e rilevanti nei singoli Paesi in cui si opera.",
-      B: "Per sostituire l'analisi semantica con la semplice localizzazione geografica degli utenti.",
-      C: "Per confrontare Paesi diversi usando sempre le stesse fonti e le stesse query.",
-      D: "Per limitare l'ascolto alle property proprietarie nei mercati principali.",
+      A: "Counting metrics.",
+      B: "Outcome metrics.",
+      C: "Business value metrics.",
+      D: "Foundation metrics.",
     },
   },
   146: {
     options: {
-      A: "Il social listening parte da domande di business e deve produrre insight e raccomandazioni.",
-      B: "Il social listening coincide con il conteggio automatico di like, follower e impression.",
-      C: "Il monitoraggio interpreta sempre le conversazioni, mentre il listening le archivia.",
-      D: "Il social listening riguarda solo i contenuti pubblicati dall'organizzazione.",
+      A: "Insight.",
+      B: "Data.",
+      C: "Information.",
+      D: "Recommendation.",
     },
   },
   147: {
     options: {
-      A: "La presenza di soggetti terzi indipendenti che sostengono o citano positivamente l'organizzazione.",
-      B: "Il volume complessivo delle menzioni generate dai canali proprietari.",
-      C: "La quota di copertura ottenuta rispetto ai competitor diretti.",
-      D: "La centralita dell'organizzazione all'interno del singolo articolo.",
+      A: "Costo per Engagement.",
+      B: "Costo per Impression.",
+      C: "Costo per Earned Media.",
+      D: "Costo per Email inviata.",
     },
   },
   156: {
     options: {
-      A: "La trasformazione dei canali in ecosistemi digitali integrati.",
-      B: "La concentrazione delle piattaforme su una sola funzione editoriale.",
-      C: "La riduzione del ruolo dei contenuti video e delle community.",
-      D: "Il ritorno a modelli di fruizione prevalentemente unidirezionali.",
+      A: "Service Level Agreement.",
+      B: "Social Listening Audit.",
+      C: "Standard Language Analysis.",
+      D: "Shared Link Attribution.",
     },
   },
   157: {
@@ -1315,90 +1357,90 @@ const manualReviewOverrides = {
   },
   159: {
     options: {
-      A: "L'attivita di customer service svolta pubblicamente e rapidamente sui social.",
-      B: "Il monitoraggio passivo delle conversazioni senza risposta agli utenti.",
-      C: "La pianificazione dei contenuti editoriali per aumentare la reach.",
-      D: "La misurazione del sentiment aggregato in un report periodico.",
+      A: "Discord.",
+      B: "TikTok.",
+      C: "X (ex Twitter).",
+      D: "Instagram.",
     },
   },
   162: {
     options: {
-      A: "93,8%.",
-      B: "68,7%.",
-      C: "45,6%.",
-      D: "82,4%.",
+      A: "Serve a capire chi conta davvero nelle reti, non solo chi ha più reach o follower.",
+      B: "Si limita a ordinare gli account in base al numero assoluto di follower.",
+      C: "Esclude social, community e forum per concentrarsi solo sui blog.",
+      D: "Misura soltanto il volume degli investimenti pubblicitari digitali.",
     },
   },
   163: {
     options: {
-      A: "Il numero di visitatori unici esposti a un contenuto moltiplicato per l'engagement.",
-      B: "Il volume assoluto delle menzioni raccolte senza ponderazione.",
-      C: "La quota di conversazioni positive rispetto al totale analizzato.",
-      D: "Il tempo medio di permanenza degli utenti su una pagina web.",
+      A: "La variabile tempo e/o il confronto con la numerosità dei messaggi dei competitor.",
+      B: "Il numero di post pubblicati dall'organizzazione nello stesso periodo.",
+      C: "Il valore economico equivalente degli spazi media occupati.",
+      D: "La lunghezza media dei messaggi raccolti nei diversi canali.",
     },
   },
   165: {
     options: {
-      A: "Piattaforme che coprono tutto il funnel, dalla consapevolezza alla fedelta.",
-      B: "Canali orientati quasi esclusivamente alla pubblicazione di immagini statiche.",
-      C: "Ambienti utili solo per la notorieta, ma non per relazione o conversione.",
-      D: "Strumenti separati dal customer journey e dalla misurazione delle performance.",
+      A: "Si analizza la situazione di partenza: contesto, pubblici, baseline e problemi da affrontare.",
+      B: "Si calcola soltanto il ROI finanziario conclusivo della campagna.",
+      C: "Si pubblicano i contenuti prima di definire obiettivi e criteri di valutazione.",
+      D: "Si raccolgono solo gli output prodotti dalla funzione comunicazione.",
     },
   },
   166: {
     options: {
-      A: "La decisione del CERN di rendere pubblica e gratuita la tecnologia.",
-      B: "La nascita delle prime piattaforme social basate su profili personali.",
-      C: "L'introduzione dei motori di ricerca commerciali come unico accesso al web.",
-      D: "La diffusione degli smartphone come principale dispositivo di navigazione.",
+      A: "La valorizzazione monetaria della copertura media ottenuta gratuitamente.",
+      B: "Il raggiungimento di obiettivi relazionali non necessariamente monetari.",
+      C: "Il costo medio sostenuto per ogni interazione generata sui social.",
+      D: "Il valore della reputazione misurato tramite interviste agli stakeholder.",
     },
   },
   167: {
     options: {
-      A: "Perche l'analisi rischierebbe di essere guidata dai dati disponibili invece che dalle domande di business a cui rispondere.",
-      B: "Perche ridurrebbe automaticamente il numero di messaggi raccolti dal tool.",
-      C: "Perche impedirebbe di applicare qualsiasi classificazione del sentiment.",
-      D: "Perche renderebbe impossibile il confronto tra canali proprietari e earned media.",
+      A: "Il confronto tra la copertura dell'organizzazione e quella dei concorrenti nello stesso periodo.",
+      B: "Il tono favorevole, neutro o sfavorevole attribuito alle citazioni raccolte.",
+      C: "Il numero di portavoce ufficiali citati negli articoli analizzati.",
+      D: "Il valore economico equivalente dello spazio editoriale occupato.",
     },
   },
   169: {
     options: {
-      A: "La variabile tempo e/o il confronto con la numerosita dei messaggi dei competitor.",
-      B: "La sola ampiezza potenziale del pubblico raggiungibile dal canale.",
-      C: "Il numero di contenuti prodotti dall'organizzazione nello stesso periodo.",
-      D: "Il valore economico equivalente degli spazi media occupati.",
+      A: "La centralità o prominence del soggetto all'interno del contenuto.",
+      B: "La quota di copertura ottenuta rispetto ai competitor diretti.",
+      C: "Il tono favorevole, neutro o sfavorevole della copertura.",
+      D: "La presenza dei messaggi chiave predefiniti dall'organizzazione.",
     },
   },
   172: {
     options: {
-      A: "La valorizzazione monetaria della copertura media ottenuta gratuitamente.",
-      B: "Il ritorno sugli obiettivi di relazione definiti con gli stakeholder.",
-      C: "Il valore della quota di conversazione rispetto ai competitor.",
-      D: "Il rapporto tra contenuti pubblicati e interazioni generate.",
+      A: "CPE, cioè costo per engagement.",
+      B: "Share of Voice, cioè quota di copertura rispetto ai competitor.",
+      C: "Third-party endorsement, cioè presenza di sostegno da soggetti terzi.",
+      D: "Prominence, cioè centralità del soggetto nel contenuto.",
     },
   },
   173: {
     options: {
-      A: "Il confronto tra la copertura dell'organizzazione e quella dei concorrenti.",
-      B: "Il tono medio della copertura ottenuta nel periodo analizzato.",
-      C: "La percentuale di messaggi chiave presenti negli articoli pubblicati.",
-      D: "La posizione dell'organizzazione all'interno del singolo contenuto.",
+      A: "La definizione della strategia, degli obiettivi e delle metriche di business.",
+      B: "L'acquisto della piattaforma di listening più completa disponibile.",
+      C: "La raccolta casuale di tutti i messaggi pubblicati online sul brand.",
+      D: "La produzione del report finale con grafici e raccomandazioni.",
     },
   },
   175: {
     options: {
-      A: "Perche i mezzi sono interconnessi (es. TV in streaming, quotidiani sui social).",
-      B: "Perche i media tradizionali usano sempre gli stessi KPI del social listening.",
-      C: "Perche la distinzione dipende solo dal dispositivo usato dall'utente.",
-      D: "Perche la pianificazione media misura ormai solo canali digitali.",
+      A: "L'information è dato contestualizzato; l'insight è interpretazione del dato alla luce degli obiettivi.",
+      B: "L'information coincide con la raccomandazione finale; l'insight è il dato grezzo non lavorato.",
+      C: "L'information riguarda solo i social, mentre l'insight riguarda solo media tradizionali.",
+      D: "Non c'è differenza: entrambi indicano il numero grezzo di download o visite.",
     },
   },
   176: {
     options: {
-      A: "Per analizzare la visibilita nei motori di risposta che usano l'IA.",
-      B: "Per sostituire completamente il monitoraggio di motori di ricerca e social media.",
-      C: "Per misurare soltanto il traffico diretto generato verso il sito aziendale.",
-      D: "Per concentrare l'analisi solo sui contenuti pubblicati dai giornalisti.",
+      A: "Focalizzarsi sulle counting metrics native della piattaforma senza collegarle agli obiettivi di business.",
+      B: "Collegare gli indicatori social a obiettivi strategici e risultati di business.",
+      C: "Integrare dati social, CRM e benchmark competitivo in una lettura comune.",
+      D: "Usare le metriche di piattaforma come segnali da interpretare nel tempo.",
     },
   },
   189: {
@@ -1411,18 +1453,18 @@ const manualReviewOverrides = {
   },
   197: {
     options: {
-      A: "Possono generare ambiguita nel dataset, includendo messaggi non attinenti al brand.",
-      B: "Riducono drasticamente il volume dei messaggi raccolti dal sistema.",
-      C: "Impediscono l'uso di operatori logici come AND e OR nelle query.",
-      D: "Rendono inutilizzabili i metadati temporali dei messaggi raccolti.",
+      A: "Un equilibrio tra automazione algoritmica e supervisione umana per migliorare l'accuratezza.",
+      B: "L'uso esclusivo di dizionari predefiniti senza controllo dell'analista.",
+      C: "La lettura manuale di ogni singolo messaggio senza alcun supporto software.",
+      D: "La classificazione del sentiment basata solo sul numero di parole positive.",
     },
   },
   199: {
     options: {
-      A: "Collegare le metriche utilizzate ai risultati di business e all'impatto strategico.",
-      B: "Sostituire tutte le metriche qualitative con un unico indice monetario.",
-      C: "Eliminare le metriche di output dai report di comunicazione.",
-      D: "Usare soltanto gli analytics nativi delle piattaforme social.",
+      A: "Tokenizzazione, cioè suddivisione del testo in parole o unità elementari.",
+      B: "Costruzione di un modello Transformer addestrato su grandi corpus.",
+      C: "Interpretazione pragmatica del contesto e dell'ironia del messaggio.",
+      D: "Calcolo del ROI economico generato da ogni singola parola chiave.",
     },
   },
   201: {
@@ -1612,10 +1654,10 @@ const manualReviewOverrides = {
   },
   256: {
     options: {
-      A: "La diffusione delle edizioni digitali e dei supplementi opzionali.",
-      B: "La readership effettiva stimata dei singoli articoli pubblicati.",
-      C: "Il tempo medio trascorso dagli utenti sulle pagine della testata.",
-      D: "La performance pubblicitaria degli annunci presenti nel quotidiano.",
+      A: "Auditel.",
+      B: "ADS.",
+      C: "Audicom.",
+      D: "Audiradio.",
     },
   },
   262: {
@@ -1662,67 +1704,70 @@ const manualReviewOverrides = {
   },
   276: {
     options: {
-      A: "Perche deve comprendere anche la valutazione ex ante e quella in itinere.",
-      B: "Perche coincide con la sola misurazione degli output immediati.",
-      C: "Perche considera irrilevante la definizione preventiva degli obiettivi.",
-      D: "Perche misura solo gli outcome finali senza guardare al processo.",
+      A: "Un processo dinamico e circolare con feedback continuo lungo tutte le fasi del piano.",
+      B: "Un modello lineare centrato solo sulla copertura media di breve periodo.",
+      C: "Una valutazione svolta esclusivamente dopo la chiusura della campagna.",
+      D: "Un modello che misura soltanto output quantitativi senza correggere il piano.",
     },
   },
   277: {
     options: {
-      A: "È un processo dinamico e flessibile basato su un meccanismo di feedback continuo.",
-      B: "È un modello lineare centrato quasi esclusivamente sulla copertura mediatica.",
-      C: "È un modello a tre livelli progressivi: output, out-take e outcome.",
-      D: "È un modello focalizzato sulle micro-decisioni della fase di input.",
+      A: "Output, out-take e outcome.",
+      B: "Input, budget e fatturato.",
+      C: "Reach, frequency e GRP.",
+      D: "Reputazione, identità e immagine.",
     },
   },
   279: {
     options: {
-      A: "Perche rappresentano sforzi e prodotti realizzati, ma non garantiscono alcun cambiamento effettivo nei pubblici.",
-      B: "Perche misurano gli effetti cognitivi, affettivi e conativi della comunicazione.",
-      C: "Perche coincidono con il contributo della comunicazione agli obiettivi di business.",
-      D: "Perche indicano il cambiamento di comportamento osservato nei pubblici.",
+      A: "Reattività.",
+      B: "Chiarezza.",
+      C: "Coerenza.",
+      D: "Efficienza.",
     },
   },
   289: {
     options: {
-      A: "Le tecniche diventano piu sofisticate e richiedono competenze specifiche per l'interpretazione.",
-      B: "Le tecniche diventano piu semplici e richiedono meno tempo di analisi.",
-      C: "La valutazione si limita progressivamente al conteggio degli output.",
-      D: "Il costo della misurazione diminuisce perche si usano solo dati gia disponibili.",
+      A: "Che gli obiettivi devono essere specifici, misurabili, attuabili, rilevanti e definiti nel tempo.",
+      B: "Che gli obiettivi devono coincidere sempre con un risultato economico immediato.",
+      C: "Che ogni obiettivo deve essere misurato con un unico indicatore standard.",
+      D: "Che la misurazione deve iniziare solo al termine della campagna.",
     },
   },
   291: {
     options: {
-      A: "Che gli obiettivi devono essere specifici, misurabili, attuabili, rilevanti e definiti nel tempo.",
-      B: "Che gli obiettivi devono coincidere sempre con un risultato economico di breve periodo.",
-      C: "Che ogni obiettivo deve essere misurato con lo stesso indicatore standard.",
-      D: "Che la misurazione deve iniziare solo al termine della campagna.",
+      A: "Audit iniziale.",
+      B: "Definizione degli obiettivi.",
+      C: "Valutazione ongoing.",
+      D: "Valutazione finale.",
     },
   },
   292: {
     options: {
-      A: "Il macro-tema o l'argomento specifico a cui e associato un certo sentiment.",
-      B: "La polarita positiva, negativa o neutra attribuita a un contenuto.",
-      C: "La fonte in cui viene pubblicato il messaggio analizzato.",
-      D: "Il profilo dell'autore che genera piu engagement nel periodo.",
+      A: "Gli outcome, cioè i cambiamenti in opinioni, atteggiamenti o comportamenti.",
+      B: "Le radici, cioè gli obiettivi di comunicazione.",
+      C: "Il tronco, cioè le strategie e le tattiche operative.",
+      D: "Il suolo, cioè l'organizzazione e il contesto competitivo.",
     },
   },
   299: {
     options: {
-      A: "Incremento del 200%.",
-      B: "Incremento del 100%.",
-      C: "Incremento del 50%.",
-      D: "Incremento del 120%.",
+      A: "VALUES esplicita il collegamento con business, contesto, tempi, pubblici, effetti e benchmark.",
+      B: "VALUES elimina la necessità che gli obiettivi siano misurabili e temporalmente definiti.",
+      C: "VALUES si applica solo alla pubblicità commerciale, SMART solo alla comunicazione interna.",
+      D: "VALUES sostituisce gli obiettivi con metriche di piattaforma già disponibili.",
     },
   },
   308: {
     options: {
-      A: "Essere specifico, misurabile, raggiungibile, rilevante e temporizzato.",
-      B: "Essere definito in modo ampio per adattarsi a ogni evoluzione della campagna.",
-      C: "Essere formulato solo dopo la raccolta dei risultati finali.",
-      D: "Essere espresso come elenco di attivita operative da svolgere.",
+      A: "Outcome avanzati, cioè cambiamenti di opinioni, atteggiamenti e comportamenti.",
+      B: "Output immediati, come quantità di comunicati e uscite media prodotte.",
+      C: "Input economici, come budget e risorse disponibili prima del piano.",
+      D: "Benchmark tecnici, come strumenti usati per raccogliere i dati.",
     },
+  },
+  314: {
+    text: "Nel modello Yardstick, il 'Ricordo' rientra in quale livello di valutazione?",
   },
   316: {
     text: "Nel modello Yardstick, a quale livello appartiene la valutazione del 'ricordo'?",
@@ -1735,58 +1780,58 @@ const manualReviewOverrides = {
   },
   317: {
     options: {
-      A: "Outputs, outcomes e l'impatto potenziale.",
-      B: "Solo il ritorno economico immediato (ROI).",
-      C: "Soltanto il volume di copertura media ottenuta.",
-      D: "Esclusivamente il numero di attivita realizzate dalla funzione.",
+      A: "Integra ATL e BTL seguendo il percorso dall'awareness alla conversione.",
+      B: "Separa rigidamente media di massa e canali orientati alla risposta diretta.",
+      C: "Si limita alla copertura televisiva e ai Gross Rating Points.",
+      D: "Misura solo promozioni nel punto vendita senza considerare awareness.",
     },
   },
   318: {
     options: {
-      A: "Principio 4.",
-      B: "Principio 1.",
-      C: "Principio 5.",
-      D: "Principio 7.",
+      A: "L'impatto della comunicazione sul benessere sociale degli interlocutori.",
+      B: "Il contenimento dei costi di produzione della campagna.",
+      C: "La qualità tecnica del messaggio e della sua esecuzione creativa.",
+      D: "Il contributo diretto della comunicazione ai risultati economici.",
     },
   },
   319: {
     options: {
-      A: "È una strategia che integra ATL e BTL per accompagnare l'utente lungo l'intero funnel, dalla notorieta alla conversione.",
-      B: "È una logica basata solo su media di massa e indicatori di copertura.",
-      C: "È un approccio focalizzato solo su promozioni dirette e conversione immediata.",
-      D: "È una misurazione separata dei canali senza integrazione tra awareness e azione.",
+      A: "L'adeguatezza di background, contenuti, messaggi e decisioni prese prima dell'implementazione.",
+      B: "Il numero di comunicati diffusi, eventi organizzati e uscite media ottenute.",
+      C: "Gli effetti cognitivi, affettivi e conativi generati sui pubblici.",
+      D: "Il ritorno economico diretto generato dalla copertura editoriale.",
     },
   },
   320: {
     options: {
-      A: "Perche costringono a definire traguardi specifici, misurabili e temporalmente definiti, rendendo possibile il confronto con i risultati.",
-      B: "Perche sostituiscono la necessita di scegliere KPI coerenti con gli obiettivi.",
-      C: "Perche garantiscono automaticamente il raggiungimento degli outcome attesi.",
-      D: "Perche permettono di valutare la comunicazione senza una baseline iniziale.",
+      A: "È lineare e concentrato sul breve periodo, quindi offre poco feedback continuo.",
+      B: "Richiede troppi cicli di feedback e diventa inutilizzabile nelle campagne brevi.",
+      C: "Misura solo gli input prima della pianificazione senza considerare gli output.",
+      D: "Si applica soltanto alla comunicazione interna e non alle relazioni media.",
     },
   },
   325: {
     options: {
-      A: "Efficacia tecnica, economica e sociale.",
-      B: "Output, out-take e outcome.",
-      C: "Cognitiva, affettiva e conativa.",
-      D: "Interna, esterna e istituzionale.",
+      A: "Un modello lineare e one-way, focalizzato sul raggiungimento dei giusti interlocutori nel breve periodo.",
+      B: "Un modello circolare con feedback continuo e aggiustamenti in itinere.",
+      C: "Un modello a tre livelli progressivi: output, out-take e outcome.",
+      D: "Un modello centrato sulle micro-decisioni della fase di input.",
     },
   },
   327: {
     options: {
-      A: "Un modello lineare e one-way focalizzato sul raggiungimento degli output media.",
-      B: "Un modello circolare fondato sul feedback continuo degli stakeholder.",
-      C: "Un modello a tre livelli progressivi: output, out-take e outcome.",
-      D: "Un modello che integra valutazione ongoing e valutazione finale.",
+      A: "Debba avvenire in parallelo alla pianificazione e accompagnare tutte le fasi del piano.",
+      B: "Debba essere svolta solo dopo la conclusione della campagna.",
+      C: "Debba concentrarsi esclusivamente sul ritorno economico monetario.",
+      D: "Debba evitare la fase di audit per non rallentare l'azione.",
     },
   },
   331: {
     options: {
-      A: "50%.",
-      B: "10%.",
-      C: "200%.",
-      D: "5%.",
+      A: "1977.",
+      B: "1990.",
+      C: "2001.",
+      D: "2025.",
     },
   },
   336: {
@@ -1913,21 +1958,21 @@ const manualReviewOverrides = {
   },
   373: {
     options: {
-      A: "Raggiungere le persone e renderle consapevoli.",
-      B: "Trasformare immediatamente la relazione in risultati economici.",
-      C: "Calcolare il ROI totale dell'azienda prima della pianificazione.",
-      D: "Raccogliere dati di output senza collegarli agli obiettivi di relazione.",
+      A: "Prospettiva economico-finanziaria.",
+      B: "Prospettiva del cliente.",
+      C: "Prospettiva dei processi interni.",
+      D: "Prospettiva dell'apprendimento e della crescita.",
+    },
+  },
+  376: {
+    options: {
+      A: "Perché ciascuno ha aspettative e bisogni informativi differenti che guidano l'utilizzo dei risultati.",
+      B: "Perché la misurazione richiede sempre lo stesso report sintetico per tutti i destinatari.",
+      C: "Perché gli stakeholder interni devono essere esclusi dalla lettura degli outcome.",
+      D: "Perché i soggetti coinvolti servono solo a validare tecnicamente i dati raccolti.",
     },
   },
   378: {
-    options: {
-      A: "Perche ciascuno ha aspettative e bisogni informativi differenti che guidano l'utilizzo dei risultati.",
-      B: "Per produrre un unico report standardizzato identico per tutti.",
-      C: "Per separare la valutazione dagli obiettivi decisionali dei destinatari.",
-      D: "Per limitare la misurazione alle sole esigenze della funzione comunicazione.",
-    },
-  },
-  380: {
     options: {
       A: "General Elimination Methodology (GEM).",
       B: "Analisi SWOT qualitativa.",
@@ -1935,20 +1980,45 @@ const manualReviewOverrides = {
       D: "Balanced Scorecard applicata.",
     },
   },
+  380: {
+    options: {
+      A: "Il livello che collega la comunicazione alle performance di business complessive.",
+      B: "Il livello che corregge strumenti e messaggi durante l'implementazione.",
+      C: "Il livello che misura il capitale comunicativo consolidato nel tempo.",
+      D: "Il livello che verifica ex ante l'adeguatezza dei contenuti.",
+    },
+  },
+  381: {
+    options: {
+      A: "Per assicurarsi che i risultati siano comunicati in modo mirato a chi deve prendere decisioni.",
+      B: "Per produrre un report unico e indistinto per tutti gli attori coinvolti.",
+      C: "Per limitare la misurazione agli indicatori già disponibili nelle dashboard.",
+      D: "Per separare i risultati dagli obiettivi decisionali del management.",
+    },
+  },
   382: {
     options: {
-      A: "Le misure che consentono di dimostrare il contributo della comunicazione ai risultati complessivi di business.",
-      B: "La fase in cui si contano gli output prodotti dalle singole attivita.",
-      C: "Il livello che serve a correggere strumenti e messaggi durante l'implementazione.",
-      D: "La valutazione ex ante dell'adeguatezza dei contenuti prima del lancio.",
+      A: "Si passa dal conteggio dei prodotti realizzati ai cambiamenti generati nei pubblici.",
+      B: "Si trasformano automaticamente i comunicati stampa in risultati economici certi.",
+      C: "Si misura soltanto l'efficienza operativa delle attività svolte.",
+      D: "Si verifica esclusivamente l'adeguatezza dei messaggi prima del lancio.",
     },
   },
   383: {
+    text: "Cosa indica il parametro 'Storia' (S) nel sistema di obiettivi VALUES?",
     options: {
-      A: "Per assicurarsi che i risultati siano comunicati in modo mirato a chi deve prendere decisioni.",
-      B: "Per produrre lo stesso livello di dettaglio informativo per tutti gli stakeholder.",
-      C: "Per separare la misurazione dalle aspettative dei soggetti coinvolti.",
-      D: "Per limitare l'analisi ai soli indicatori disponibili nelle dashboard.",
+      A: "La necessità di avere un termine di confronto, come l'andamento passato o un benchmark dei competitor.",
+      B: "La descrizione cronologica delle campagne già realizzate dall'organizzazione.",
+      C: "La memoria dei valori fondativi da richiamare nella comunicazione interna.",
+      D: "La durata complessiva della relazione tra agenzia e committente.",
+    },
+  },
+  384: {
+    options: {
+      A: "Riconoscere che, pur non essendoci certezza assoluta, i dati suggeriscono un legame credibile tra comunicazione ed effetti.",
+      B: "Dimostrare con certezza sperimentale che la comunicazione è l'unica causa dei risultati.",
+      C: "Attribuire i risultati positivi alla comunicazione anche senza una catena di evidenze.",
+      D: "Rinunciare a collegare attività, output e outcome quando il contesto è complesso.",
     },
   },
   385: {
@@ -1962,26 +2032,26 @@ const manualReviewOverrides = {
   },
   386: {
     options: {
-      A: "Riconoscere che, pur non essendoci certezza assoluta, i dati suggeriscono un legame credibile tra comunicazione ed effetti.",
-      B: "Assumere che ogni risultato positivo derivi direttamente dalla comunicazione.",
-      C: "Rinunciare a collegare attivita, output e outcome per evitare errori di attribuzione.",
-      D: "Usare solo esperimenti di laboratorio per isolare ogni variabile esterna.",
+      A: "Le attività.",
+      B: "Gli outcome.",
+      C: "Le variabili ponte.",
+      D: "L'impatto.",
     },
   },
   389: {
     options: {
-      A: "Perche le decisioni e le azioni intraprese rialimentano l'analisi del contesto per le valutazioni successive.",
-      B: "Perche la stessa misurazione va ripetuta identica senza adattamenti nel tempo.",
-      C: "Perche il modello si chiude con la rendicontazione finale al management.",
-      D: "Perche ogni ciclo elimina la necessita di ridefinire obiettivi e stakeholder.",
+      A: "Sviluppare competenze, apprendimento organizzativo e capacità comunicative interne.",
+      B: "Misurare la soddisfazione dei clienti finali verso prodotti e servizi.",
+      C: "Valutare la comunicazione istituzionale rivolta agli investitori.",
+      D: "Controllare esclusivamente i tempi di produzione dei contenuti.",
     },
   },
   387: {
     options: {
-      A: "Obiettivi realistici rispetto alle risorse e coerenti con il contesto specifico della valutazione.",
-      B: "Obiettivi accettati dal mercato perche basati su metriche certificate.",
-      C: "Obiettivi analitici perche scomposti in sotto-indicatori di canale.",
-      D: "Obiettivi approvati perche gia utilizzati in campagne precedenti.",
+      A: "Prospettiva economico-finanziaria.",
+      B: "Prospettiva del cliente.",
+      C: "Prospettiva dei processi interni.",
+      D: "Prospettiva dell'apprendimento e della crescita.",
     },
   },
   390: {
@@ -1995,26 +2065,34 @@ const manualReviewOverrides = {
   },
   392: {
     options: {
-      A: "Sviluppare una coerenza tra tutte le attivita e promuovere l'innovazione nella comunicazione.",
-      B: "Massimizzare la pressione pubblicitaria sui canali a pagamento.",
-      C: "Misurare la quota di mercato ottenuta con le campagne di prodotto.",
-      D: "Garantire la puntualita dei processi amministrativi interni.",
+      A: "A valutare singole attività e strumenti durante l'implementazione per correggerli e migliorarli.",
+      B: "A dimostrare il contributo finale della comunicazione ai risultati di business.",
+      C: "A misurare il capitale reputazionale consolidato nel medio-lungo periodo.",
+      D: "A sostituire gli obiettivi di comunicazione con dati economico-finanziari.",
     },
   },
   393: {
     options: {
-      A: "Verificare che gli obiettivi di comunicazione siano sempre coerenti con la strategia aziendale.",
-      B: "Uniformare la lunghezza dei comunicati stampa prodotti dalla funzione.",
-      C: "Rendere identici i KPI usati da tutte le unita organizzative.",
-      D: "Aggiornare con frequenza fissa i contenuti pubblicati sul sito aziendale.",
+      A: "Outcome.",
+      B: "Input.",
+      C: "Output.",
+      D: "Attività.",
+    },
+  },
+  397: {
+    options: {
+      A: "Business Objectives, cioè il miglioramento delle performance finanziarie e strategiche.",
+      B: "Social Media Metrics, come numero di retweet, commenti e visualizzazioni.",
+      C: "KPI tattici di engagement raccolti sulle piattaforme social.",
+      D: "Metriche operative sul volume dei contenuti pubblicati.",
     },
   },
   400: {
     options: {
-      A: "Business Objectives (es. miglioramento delle performance finanziarie).",
-      B: "Social Media Metrics (es. numero di retweet).",
-      C: "Indicatori di engagement raccolti sulle piattaforme social.",
-      D: "Dati operativi sul volume dei contenuti pubblicati.",
+      A: "Cercare una causalità plausibile e argomentata, non una causalità perfetta e isolata.",
+      B: "Attribuire automaticamente ogni risultato di business alla comunicazione.",
+      C: "Evitare qualsiasi collegamento tra attività, output e outcome.",
+      D: "Usare solo esperimenti di laboratorio per misurare gli effetti comunicativi.",
     },
   },
   403: {
@@ -2023,6 +2101,14 @@ const manualReviewOverrides = {
       B: "Un valore monetario equivalente ottenuto dalle tariffe pubblicitarie degli spazi.",
       C: "Una misura di reach lorda calcolata sui contatti potenziali del mezzo.",
       D: "Un indicatore di sentiment che classifica la copertura come positiva o negativa.",
+    },
+  },
+  398: {
+    options: {
+      A: "Il rapporto tra partecipanti attivi e membri totali, considerando anche la loro capacità di influenzare altri.",
+      B: "Il costo medio sostenuto per ogni contenuto pubblicato dagli influencer coinvolti.",
+      C: "La quota di impression ottenute sui canali paid rispetto ai canali earned.",
+      D: "Il numero di menzioni complessive prodotte durante il periodo di campagna.",
     },
   },
   406: {
@@ -2035,10 +2121,10 @@ const manualReviewOverrides = {
   },
   410: {
     options: {
-      A: "Perche rileverebbe troppi messaggi non attinenti agli obiettivi e aumenterebbe inutilmente i costi.",
-      B: "Perche ridurrebbe la possibilita di confrontare fonti diverse nello stesso periodo.",
-      C: "Perche impedirebbe di distinguere tra canali proprietari, earned e paid.",
-      D: "Perche renderebbe impossibile qualunque classificazione automatica del sentiment.",
+      A: "ROE (Return on Expectations).",
+      B: "ROEM (Return on Earned Media).",
+      C: "ROTI (Return on Target Influence).",
+      D: "AVE (Advertising Value Equivalent).",
     },
   },
   408: {
@@ -2060,18 +2146,34 @@ const manualReviewOverrides = {
   },
   415: {
     options: {
-      A: "Perche applica moltiplicatori qualitativi legati alla posizione, al titolo e alle immagini.",
-      B: "Perche usa solo il costo dello spazio pubblicitario senza correzioni qualitative.",
-      C: "Perche misura direttamente il fatturato generato dalla copertura editoriale.",
-      D: "Perche somma al valore media i costi di produzione dell'agenzia di PR.",
+      A: "Le informazioni sono dati lavorati e collocati in un contesto significativo.",
+      B: "I dati sono già raccomandazioni operative pronte per essere applicate.",
+      C: "Le informazioni sono unità grezze non ancora interpretate.",
+      D: "Dati e informazioni coincidono sempre nel processo di analisi.",
+    },
+  },
+  414: {
+    options: {
+      A: "Un coefficiente, pari a 1 quando l'intero articolo è dedicato all'azienda o al prodotto.",
+      B: "Un coefficiente che riduce il valore quando l'azienda è citata solo marginalmente.",
+      C: "Un moltiplicatore applicato quando il titolo richiama direttamente il brand.",
+      D: "Un indicatore usato per pesare la presenza di immagini o box di approfondimento.",
     },
   },
   416: {
     options: {
-      A: "Un coefficiente che considera quanto l'articolo e centrato sull'azienda o sul prodotto analizzato.",
-      B: "Un fattore che aumenta il valore quando il brand e citato solo marginalmente.",
-      C: "Il confronto tra la readership certificata e la quota di mercato dell'azienda.",
-      D: "Un indicatore di sentiment applicato soltanto agli articoli negativi.",
+      A: "Un'unità indice per esprimere l'impatto qualitativo della copertura senza tradurlo direttamente in euro.",
+      B: "Il valore monetario dello spazio pubblicitario equivalente acquistato sul mezzo.",
+      C: "La readership certificata moltiplicata per il costo medio di una pagina pubblicitaria.",
+      D: "Un indicatore di sentiment usato soltanto per classificare gli articoli negativi.",
+    },
+  },
+  417: {
+    options: {
+      A: "EAV (Advertising Value Equivalent).",
+      B: "ROO (Return on Objectives).",
+      C: "NPS (Net Promoter Score).",
+      D: "GRP (Gross Rating Point).",
     },
   },
   421: {
@@ -2103,10 +2205,18 @@ const manualReviewOverrides = {
   },
   424: {
     options: {
-      A: "È un AVE corretto con coefficienti e moltiplicatori qualitativi.",
-      B: "È un indicatore di ritorno sugli obiettivi non monetari.",
-      C: "È una misura di reach certificata dagli enti di audience.",
-      D: "È un indice di soddisfazione espresso dagli stakeholder.",
+      A: "Costo sostenuto per ogni comunicato prodotto o per ogni partecipante effettivo a un evento.",
+      B: "Miglioramento della fiducia degli stakeholder dopo una campagna.",
+      C: "Quota di mercato ottenuta nel trimestre successivo alla campagna.",
+      D: "Reputazione complessiva dell'organizzazione presso i pubblici esterni.",
+    },
+  },
+  425: {
+    options: {
+      A: "Il rapporto tra il guadagno finanziario generato dalla comunicazione e il costo sostenuto per realizzarla.",
+      B: "Il valore pubblicitario equivalente dello spazio editoriale ottenuto gratuitamente.",
+      C: "Il grado di raggiungimento degli obiettivi comunicativi prefissati.",
+      D: "La propensione dei pubblici a raccomandare l'organizzazione.",
     },
   },
   426: {
@@ -2120,10 +2230,10 @@ const manualReviewOverrides = {
   },
   427: {
     options: {
-      A: "Il rapporto tra il guadagno finanziario generato dalla comunicazione e il costo sostenuto per realizzarla.",
-      B: "Il rapporto tra reach ottenuta e costo per mille contatti lordi della campagna.",
-      C: "Il livello di raggiungimento degli obiettivi comunicativi non monetari.",
-      D: "L'equivalente in denaro dello spazio pubblicitario ottenuto gratuitamente.",
+      A: "Che lo spazio editoriale ottenuto possa essere valorizzato come spazio pubblicitario equivalente.",
+      B: "Che tutti gli outcome comunicativi siano direttamente attribuibili alle vendite.",
+      C: "Che la copertura media sia sempre negativa se non è stata acquistata come paid media.",
+      D: "Che le relazioni con gli stakeholder possano essere misurate solo con survey qualitative.",
     },
   },
   431: {
@@ -2150,6 +2260,30 @@ const manualReviewOverrides = {
       B: "Si applica solo alla televisione e non puo essere usato per stampa o web.",
       C: "Misura direttamente gli outcome cognitivi, affettivi e comportamentali.",
       D: "Richiede sempre una survey rappresentativa su tutti i lettori esposti.",
+    },
+  },
+  429: {
+    options: {
+      A: "(Benefici - Costi) / Costi x 100.",
+      B: "(Reach x Frequenza) / Costo.",
+      C: "(REAV x Readership) / 1.000.000.",
+      D: "Costi / Benefici x 100.",
+    },
+  },
+  430: {
+    options: {
+      A: "(Benefici - costi) / costi x 100; il limite è attribuire causalmente i benefici alla sola comunicazione.",
+      B: "Numero di lead / investimento totale; il limite è ignorare la qualità dei contatti generati.",
+      C: "Spazio editoriale x costo pubblicità equivalente; il limite è sovrastimare il valore reale.",
+      D: "Percentuale promotori - percentuale detrattori; il limite è non essere espresso in euro.",
+    },
+  },
+  434: {
+    options: {
+      A: "AVE/EAV, cioè il valore pubblicitario equivalente della copertura earned.",
+      B: "ROO, cioè il ritorno sugli obiettivi comunicativi prefissati.",
+      C: "NPS, cioè la propensione alla raccomandazione del brand.",
+      D: "GRP, cioè la pressione pubblicitaria lorda sui pubblici esposti.",
     },
   },
   437: {
@@ -2187,26 +2321,34 @@ const manualReviewOverrides = {
   },
   442: {
     options: {
-      A: "Perche confondono il costo di uno spazio pubblicitario con il valore relazionale ed editoriale di un contenuto spontaneo.",
-      B: "Perche misurano direttamente outcome e impatto, ignorando gli output intermedi.",
-      C: "Perche certificano automaticamente la qualita della relazione con gli stakeholder.",
-      D: "Perche sono applicabili solo alle campagne paid e non alla copertura editoriale.",
+      A: "ROTI (Return on Target Influence).",
+      B: "ROE (Return on Expectations).",
+      C: "ROEM (Return on Earned Media).",
+      D: "ROO (Return on Objectives).",
+    },
+  },
+  443: {
+    options: {
+      A: "Perché confondono il costo di uno spazio pubblicitario con il valore relazionale ed editoriale di un contenuto spontaneo.",
+      B: "Perché misurano direttamente outcome e impatto, ignorando gli output intermedi.",
+      C: "Perché certificano automaticamente la qualità della relazione con gli stakeholder.",
+      D: "Perché valgono solo per i media paid e non per la copertura editoriale earned.",
     },
   },
   444: {
     options: {
-      A: "Per aumentare la credibilita dei comunicatori agli occhi del top management, spesso abituato a indicatori economico-finanziari.",
-      B: "Perche il ROI misura direttamente fiducia, reputazione e soddisfazione degli stakeholder.",
-      C: "Perche permette sempre di isolare perfettamente la comunicazione dalle altre leve aziendali.",
-      D: "Perche rende secondaria la definizione di obiettivi e KPI prima della campagna.",
+      A: "Confonde il costo dello spazio pubblicitario con il valore reale della copertura editoriale ottenuta.",
+      B: "Misura direttamente fiducia, reputazione e soddisfazione degli stakeholder.",
+      C: "Permette di isolare perfettamente la comunicazione dalle altre leve aziendali.",
+      D: "Rende secondaria la definizione di obiettivi e KPI prima della campagna.",
     },
   },
   445: {
     options: {
-      A: "Non considera variabili qualitative come tono, credibilita della fonte o centralita della citazione.",
-      B: "Non puo essere applicato a stampa, radio, televisione o canali online.",
-      C: "Richiede sempre dati di vendita certificati dal reparto commerciale.",
-      D: "Misura il raggiungimento degli obiettivi strategici meglio del ROO.",
+      A: "Si fermano al conteggio di dati grezzi senza trasformarli in informazioni, insight e decisioni.",
+      B: "Richiedono sempre dati di vendita certificati dal reparto commerciale.",
+      C: "Misurano meglio del ROO il raggiungimento degli obiettivi strategici.",
+      D: "Possono essere applicate solo alla stampa, ma non ai canali digitali.",
     },
   },
   451: {
@@ -2399,13 +2541,19 @@ const manualReviewOverrides = {
     text: "Quale tra i seguenti e un limite intrinseco dei focus group?",
     options: {
       A: "La necessita di verificare o approfondire i risultati con ulteriori strumenti, spesso quantitativi.",
-      B: "La possibilita di ottenere automaticamente dati rappresentativi dell'intera popolazione.",
-      C: "L'assenza di interazione tra partecipanti durante la discussione.",
-      D: "La capacita di eliminare completamente il ruolo del moderatore.",
+      B: "La capacita di far emergere significati condivisi attraverso l'interazione.",
+      C: "La possibilita di esplorare temi poco noti prima di una survey.",
+      D: "La ricchezza interpretativa delle risposte e delle dinamiche osservate.",
     },
   },
   131: {
     text: "Cosa manca solitamente ai sistemi di Social Media Analytics nativi delle piattaforme?",
+    options: {
+      A: "Il collegamento diretto con gli obiettivi strategici e il benchmark di settore.",
+      B: "La possibilità di contare follower, like e visualizzazioni dei contenuti.",
+      C: "La disponibilità di grafici sulle performance dei post pubblicati.",
+      D: "L'aggiornamento operativo dei dati prodotti dalla piattaforma stessa.",
+    },
   },
   152: {
     text: "Quale delle seguenti e una caratteristica del Web 4.0?",
@@ -2418,21 +2566,51 @@ const manualReviewOverrides = {
   },
   158: {
     text: "Quale di questi NON rientra tra i grandi vettori del cambiamento digitale?",
+    options: {
+      A: "L'aumento della tassazione sui servizi digitali.",
+      B: "La Rete come infrastruttura reticolare di relazioni.",
+      C: "L'affermarsi di nuovi spazi di relazione.",
+      D: "Il peso dei motori di ricerca e di risposta.",
+    },
   },
   267: {
     text: "Nel processo ADS, qual e il tempo medio che porta alla certificazione definitiva dei dati?",
+    options: {
+      A: "Quasi due anni.",
+      B: "Circa sei mesi.",
+      C: "Ogni mese, subito dopo la raccolta dei dati.",
+      D: "Sette giorni dalla chiusura del periodo di rilevazione.",
+    },
   },
   270: {
     text: "Il sistema ADS e stato costituito nel:",
+    options: {
+      A: "1975, dalle associazioni UPA, FIEG e dalle federazioni pubblicitarie.",
+      B: "2023, con la nascita del sistema Audicom digitale.",
+      C: "2018, dopo l'avvio della Total Audience televisiva.",
+      D: "2025, con la riforma delle rilevazioni JIC italiane.",
+    },
   },
   300: {
     text: "Quale metrica e considerata troppo ampia e spesso misurata tramite il ROI?",
+    options: {
+      A: "Impatto.",
+      B: "Reach.",
+      C: "Share of Voice.",
+      D: "Advocacy.",
+    },
   },
   404: {
     text: "Quale di queste affermazioni sul ROI della comunicazione e corretta?",
   },
   412: {
     text: "Che cos'e l'AVE (Advertising Value Equivalency)?",
+    options: {
+      A: "Il valore monetario equivalente dello spazio pubblicitario corrispondente alla copertura ottenuta.",
+      B: "Il livello di raggiungimento degli obiettivi comunicativi prefissati.",
+      C: "La propensione dei pubblici a raccomandare l'organizzazione.",
+      D: "Il rapporto tra benefici economici generati e costi sostenuti.",
+    },
   },
   433: {
     text: "Qual e la differenza tra ROI e ROO?",
@@ -2445,6 +2623,12 @@ const manualReviewOverrides = {
   },
   434: {
     text: "L'indicatore ROEM (Return on Earned Media) e un sinonimo di:",
+    options: {
+      A: "AVE/EAV, cioè il valore pubblicitario equivalente della copertura earned.",
+      B: "ROO, cioè il ritorno sugli obiettivi comunicativi prefissati.",
+      C: "NPS, cioè la propensione alla raccomandazione del brand.",
+      D: "GRP, cioè la pressione pubblicitaria lorda sui pubblici esposti.",
+    },
   },
   468: {
     text: "Perche non si deve trattare la reputazione come una misura diretta con standard unico?",
@@ -2470,50 +2654,50 @@ const manualReviewOverrides = {
   },
   89: {
     options: {
-      A: "La presenza e il peso delle citazioni attribuite a portavoce o rappresentanti ufficiali.",
-      B: "La presenza dei messaggi chiave definiti dall'organizzazione nel contenuto.",
-      C: "La centralita del soggetto citato all'interno dell'articolo analizzato.",
-      D: "La valutazione del tono favorevole, neutro o sfavorevole della copertura.",
+      A: "Possono essere obsolete o poco adattabili agli obiettivi specifici della ricerca.",
+      B: "Sono sempre aggiornate e perfettamente coerenti con la domanda di ricerca.",
+      C: "Eliminano la necessità di interpretare i dati nel contesto dell'organizzazione.",
+      D: "Garantiscono lo stesso livello di profondità delle interviste qualitative primarie.",
     },
   },
   94: {
     options: {
-      A: "Registrare reazioni non verbali e dinamiche di gruppo, supportando il moderatore senza guidare la discussione.",
-      B: "Sostituire il moderatore nella conduzione delle domande piu delicate.",
-      C: "Valutare economicamente il contributo di ogni partecipante alla ricerca.",
-      D: "Trasformare in tempo reale tutte le risposte in un questionario quantitativo.",
+      A: "Un monitoraggio sistematico e ripetuto nel tempo di un fenomeno in evoluzione.",
+      B: "Una singola intervista esplorativa svolta prima della campagna.",
+      C: "Un esperimento causale con gruppo di controllo e gruppo sperimentale.",
+      D: "Una rilevazione una tantum usata solo per chiudere il report finale.",
     },
   },
   95: {
     options: {
-      A: "Funziona da stimolo per il dialogo e fa emergere idee che potrebbero non uscire in un'intervista singola.",
-      B: "Elimina ogni influenza reciproca tra partecipanti durante la discussione.",
-      C: "Garantisce risultati statisticamente generalizzabili alla popolazione.",
-      D: "Permette di dimostrare il nesso causale tra campagna e acquisto.",
-    },
-  },
-  86: {
-    options: {
-      A: "Sono poco costose ma soffrono di obsolescenza e scarsa adattabilita agli obiettivi specifici.",
-      B: "Sono sempre aggiornate e perfettamente coerenti con la domanda di ricerca.",
-      C: "Eliminano la necessita di interpretare i dati nel contesto dell'organizzazione.",
-      D: "Garantiscono lo stesso livello di profondita delle interviste qualitative primarie.",
-    },
-  },
-  97: {
-    options: {
-      A: "Su numerosi fattori di rilevanza, autorevolezza e pertinenza rispetto alla query dell'utente.",
+      A: "Su fattori di rilevanza, autorevolezza e pertinenza rispetto alla query dell'utente.",
       B: "Sulla sola frequenza della parola chiave all'interno della pagina.",
       C: "Sul volume di traffico paid acquistato dall'organizzazione.",
       D: "Sull'ordine cronologico con cui le pagine sono state scoperte dal crawler.",
     },
   },
+  86: {
+    options: {
+      A: "Una survey somministrata direttamente a un campione definito per la ricerca.",
+      B: "Una tabella statistica già pubblicata da un ente esterno.",
+      C: "Un report storico prodotto da una precedente campagna.",
+      D: "Una rassegna di dati amministrativi già disponibili in azienda.",
+    },
+  },
+  97: {
+    options: {
+      A: "Permette di confrontare l'effetto dello stimolo con una situazione simile non esposta allo stimolo.",
+      B: "Serve a rendere il focus group statisticamente rappresentativo dell'intera popolazione.",
+      C: "Sostituisce la definizione degli obiettivi con un benchmark esterno.",
+      D: "Misura automaticamente il valore economico della copertura mediatica.",
+    },
+  },
   103: {
     options: {
-      A: "Per evitare che la ricerca sia guidata casualmente dai messaggi trovati, perdendo di vista le esigenze dell'azienda.",
-      B: "Per scegliere prima il tool piu completo, indipendentemente dagli obiettivi conoscitivi.",
-      C: "Per usare lo stesso set di keyword in ogni mercato senza adattamenti locali.",
-      D: "Per sostituire gli obiettivi di business con il volume complessivo dei messaggi raccolti.",
+      A: "Una descrizione obiettiva, sistematica e replicabile del contenuto della comunicazione.",
+      B: "Una discussione qualitativa guidata tra partecipanti selezionati.",
+      C: "Un esperimento causale basato su gruppo sperimentale e gruppo di controllo.",
+      D: "Una raccolta di dati secondari senza griglia di codifica.",
     },
   },
   13: {
@@ -2542,10 +2726,10 @@ const manualReviewOverrides = {
   },
   417: {
     options: {
-      A: "Le informazioni sono dati lavorati e inseriti in un contesto specifico.",
-      B: "I dati sono gia interpretati, mentre le informazioni sono unita grezze non contestualizzate.",
-      C: "Le informazioni coincidono con raccomandazioni operative gia pronte per l'azione.",
-      D: "Non c'e alcuna differenza, sono sinonimi nel processo di analisi.",
+      A: "EAV (Advertising Value Equivalent).",
+      B: "ROO (Return on Objectives).",
+      C: "NPS (Net Promoter Score).",
+      D: "GRP (Gross Rating Point).",
     },
   },
   18: {
@@ -2590,26 +2774,225 @@ const manualReviewOverrides = {
   },
   42: {
     options: {
-      A: "Per capire quante richieste o domande degli utenti restano senza risposta.",
-      B: "Per misurare quante persone non sono state esposte a una pubblicita.",
-      C: "Per stimare il numero di contenuti non pubblicati nel calendario editoriale.",
-      D: "Per calcolare la differenza tra follower acquisiti e follower persi.",
-    },
-  },
-  43: {
-    options: {
-      A: "L'utente puo essere piu vulnerabile a contenuti falsi se coerenti con i propri bias.",
-      B: "Le filter bubble riducono sempre la circolazione di contenuti non verificati.",
+      A: "L'utente può essere più vulnerabile a contenuti falsi se coerenti con i propri bias.",
+      B: "Le filter bubble eliminano sempre la circolazione di contenuti non verificati.",
       C: "La disinformazione riguarda solo contenuti esterni agli ambienti social.",
       D: "Le notizie false perdono efficacia quando sono allineate alle credenze pregresse.",
     },
   },
-  44: {
+  43: {
     options: {
       A: "HyperText Markup Language.",
       B: "Hyper Transfer Media Logic.",
       C: "Home Tool Management Link.",
       D: "High Text Marketing Language.",
+    },
+  },
+  44: {
+    options: {
+      A: "La centralità o il rilievo attribuito al soggetto nel contenuto analizzato.",
+      B: "Il numero complessivo di articoli pubblicati in un determinato periodo.",
+      C: "Il tono favorevole, neutro o sfavorevole della copertura ottenuta.",
+      D: "La presenza di messaggi chiave diffusi dall'organizzazione.",
+    },
+  },
+  2: {
+    text: "Perché la distinzione tra output, outcome e impatto è strategicamente rilevante?",
+    options: {
+      A: "Perché ciascun livello risponde a obiettivi diversi e si manifesta in tempi diversi.",
+      B: "Perché impatto e outcome coincidono sempre nei risultati di business.",
+      C: "Perché tutti e tre vanno misurati con la stessa frequenza temporale.",
+      D: "Perché solo l'output è realmente misurabile in modo affidabile.",
+    },
+  },
+  15: {
+    options: {
+      A: "Un out-take.",
+      B: "Un input.",
+      C: "Un output.",
+      D: "Un impatto di business.",
+    },
+  },
+  35: {
+    options: {
+      A: "Si parte da uno schema generale per arrivare a temi molto specifici e strutturati.",
+      B: "Si apre con domande specifiche e si chiude con una discussione più generale.",
+      C: "Si alternano domande esplorative e domande di controllo causale.",
+      D: "Si usa una sequenza fissa di domande chiuse a risposta numerica.",
+    },
+  },
+  70: {
+    options: {
+      A: "L'interazione tra i partecipanti genera idee e approfondimenti impossibili in un'intervista singola.",
+      B: "La possibilità di ottenere stime statisticamente rappresentative dell'intera popolazione.",
+      C: "La maggiore velocità di elaborazione dei dati numerici tramite sistemi CAPI.",
+      D: "Il controllo sperimentale delle variabili attraverso gruppi di trattamento e controllo.",
+    },
+  },
+  93: {
+    text: "Nella ricerca qualitativa, qual è il vantaggio principale dell'interazione tra i partecipanti di un Focus Group?",
+    options: {
+      A: "Funziona da stimolo per il dialogo e la creatività, facendo emergere idee che non uscirebbero in un'intervista singola.",
+      B: "Garantisce risultati statisticamente rappresentativi dell'intera popolazione di riferimento.",
+      C: "Elimina l'influenza reciproca tra partecipanti durante la raccolta delle risposte.",
+      D: "Permette di dimostrare un nesso causale tra campagna e comportamento d'acquisto.",
+    },
+  },
+  99: {
+    options: {
+      A: "La necessità di testare o approfondire i risultati con un'indagine quantitativa successiva.",
+      B: "La possibilità di osservare interazioni e conflitti tra partecipanti.",
+      C: "La ricchezza delle motivazioni emerse durante la discussione.",
+      D: "La flessibilità della traccia rispetto a un questionario standardizzato.",
+    },
+  },
+  102: {
+    options: {
+      A: "La costruzione del campione e del questionario, perché condiziona la qualità dei dati raccolti.",
+      B: "La scelta del canale di somministrazione, perché incide su tassi di risposta e copertura.",
+      C: "La definizione delle scale di risposta, perché può influenzare comparabilità e interpretazione.",
+      D: "La fase di pulizia dei dati, perché può modificare la numerosità effettiva del campione.",
+    },
+  },
+  134: {
+    text: "Secondo il framework di misurazione semplificato, qual è il fattore critico di successo rappresentato dall'Organizzazione?",
+    options: {
+      A: "La preparazione delle persone a misurare e comprendere i social media.",
+      B: "La scelta di una piattaforma tecnologica coerente con obiettivi e risorse.",
+      C: "La definizione di processi condivisi per raccogliere, leggere e usare i dati.",
+      D: "L'allineamento tra reporting operativo e decisioni del management.",
+    },
+  },
+  143: {
+    options: {
+      A: "La presenza di soggetti terzi indipendenti che sostengono o citano positivamente l'organizzazione.",
+      B: "La quota di messaggi chiave ripresi nei contenuti pubblicati dai media.",
+      C: "La frequenza con cui i portavoce ufficiali compaiono nella copertura.",
+      D: "La centralità dell'organizzazione all'interno del singolo articolo.",
+    },
+  },
+  154: {
+    options: {
+      A: "L'attività di customer service svolta pubblicamente e rapidamente sui social.",
+      B: "La sola analisi periodica del sentiment senza presa in carico delle richieste.",
+      C: "La pianificazione editoriale dei contenuti social orientati all'awareness.",
+      D: "La misurazione della reach ottenuta dalle campagne paid sui social network.",
+    },
+  },
+  160: {
+    options: {
+      A: "Piattaforme che coprono tutto il funnel, dalla consapevolezza alla fedeltà.",
+      B: "Canali centrati solo sulla pubblicazione di contenuti fotografici personali.",
+      C: "Ambienti usati esclusivamente per attività di awareness senza conversione.",
+      D: "Piattaforme separate dai processi di customer care e social commerce.",
+    },
+  },
+  161: {
+    options: {
+      A: "La decisione del CERN di rendere pubblica e gratuita la tecnologia.",
+      B: "La disponibilità dei primi browser grafici accessibili a un pubblico più ampio.",
+      C: "La standardizzazione dei protocolli che rese più semplice pubblicare e navigare.",
+      D: "La crescita dell'interesse accademico e commerciale verso le reti ipertestuali.",
+    },
+  },
+  177: {
+    options: {
+      A: "È la somma dei visitatori unici più le condivisioni pesate sui vari social network.",
+      B: "È il numero di utenti che hanno visualizzato almeno una volta il contenuto.",
+      C: "È la quota di utenti esposti che hanno interagito con il post.",
+      D: "È il rapporto tra impression ottenute e costo sostenuto per la pubblicazione.",
+    },
+  },
+  178: {
+    options: {
+      A: "Riduzione del traffico al call center tradizionale grazie al supporto social.",
+      B: "Numero di visualizzazioni complessive ottenute dai post pubblicati.",
+      C: "Tasso medio di engagement sui contenuti organici della pagina.",
+      D: "Crescita netta dei follower nel periodo di osservazione.",
+    },
+  },
+  179: {
+    options: {
+      A: "La quota di richieste di supporto o reclami risolti con successo attraverso i canali social.",
+      B: "Il tempo medio necessario per prendere in carico una richiesta ricevuta sui social.",
+      C: "Il numero di conversazioni assegnate correttamente al team di customer care.",
+      D: "La percentuale di richieste classificate per tema o livello di priorità.",
+    },
+  },
+  180: {
+    options: {
+      A: "L'utilizzo dei social per influenzare direttamente o indirettamente l'aumento del fatturato e delle vendite.",
+      B: "La misurazione dello stato di salute del brand attraverso sentiment e share of voice.",
+      C: "Il miglioramento del servizio clienti attraverso tempi di risposta e risoluzione.",
+      D: "La raccolta di idee e suggerimenti per sviluppare nuovi prodotti o servizi.",
+    },
+  },
+  195: {
+    text: "Nel processo di analisi semantica, cos'è l'Estrattore di funzioni semantiche?",
+  },
+  215: {
+    options: {
+      A: "Il contributo della comunicazione ai risultati di business nel medio-lungo periodo, come vendite o fidelizzazione.",
+      B: "Il cambiamento immediato di conoscenze, atteggiamenti o comportamenti dei pubblici.",
+      C: "Il prodotto operativo generato dalla funzione, come contenuti o uscite media.",
+      D: "La ricezione e comprensione del messaggio subito dopo l'esposizione.",
+    },
+  },
+  219: {
+    text: "Qual è il rischio principale dell'automazione cieca nell'uso dell'AI per la misurazione social?",
+    options: {
+      A: "Far agire un sistema o prendere decisioni operative direttamente sugli output dell'AI senza supervisione umana.",
+      B: "Aumentare i tempi di configurazione iniziale dei dizionari e delle tassonomie.",
+      C: "Ridurre il numero di fonti monitorabili quando le piattaforme chiudono le API.",
+      D: "Rendere più costoso il salvataggio storico dei dataset di conversazioni.",
+    },
+  },
+  469: {
+    options: {
+      A: "A creare un clima di fiducia e avviare la partecipazione rompendo il ghiaccio.",
+      B: "A presentare subito gli stimoli principali senza introdurre gradualmente il tema.",
+      C: "A raccogliere dati anagrafici e informazioni di profilo prima della discussione.",
+      D: "A selezionare i partecipanti più adatti prima dell'inizio del focus group.",
+    },
+  },
+  306: {
+    options: {
+      A: "Essere specifico, misurabile, raggiungibile, rilevante e temporizzato.",
+      B: "Essere formulato in modo ampio per adattarsi a qualsiasi risultato ottenuto.",
+      C: "Essere definito solo dopo la raccolta dei dati conclusivi della campagna.",
+      D: "Essere espresso come elenco di attività operative da completare.",
+    },
+  },
+  368: {
+    options: {
+      A: "Misure derivate dal marketing e management, come vendite, quota di mercato e fidelizzazione.",
+      B: "Indicatori di visibilità e copertura media ottenuta nel periodo.",
+      C: "Metriche di efficienza operativa, come costi per output prodotto.",
+      D: "Indicatori relazionali, come fiducia e qualità della relazione con gli stakeholder.",
+    },
+  },
+  449: {
+    options: {
+      A: "Tende a privilegiare il dato aggregato, mentre l'analitico scompone la reputazione in dimensioni.",
+      B: "Misura soltanto la reputazione finanziaria e trascura le percezioni degli stakeholder.",
+      C: "Coincide con la valorizzazione monetaria della copertura media ottenuta.",
+      D: "Descrive in dettaglio le singole cause del giudizio reputazionale.",
+    },
+  },
+  463: {
+    options: {
+      A: "Relazioni di scambio, basate su benefici attesi, e relazioni comunitarie, basate sul bene dell'altro.",
+      B: "Relazioni digitali, mediate dai social media, e relazioni fisiche, gestite in presenza.",
+      C: "Relazioni verticali, basate sulla gerarchia, e relazioni orizzontali, basate sul pari grado.",
+      D: "Relazioni contrattuali, regolate da accordi formali, e relazioni reputazionali, fondate sull'immagine.",
+    },
+  },
+  486: {
+    options: {
+      A: "L'immagine è una percezione istantanea, mentre la reputazione è un giudizio sedimentato nel tempo.",
+      B: "L'immagine è il giudizio sedimentato nel tempo, mentre la reputazione è una percezione immediata.",
+      C: "L'immagine riguarda la comunicazione di prodotto, mentre la reputazione riguarda solo la comunicazione interna.",
+      D: "Immagine e reputazione sono sinonimi perché entrambe derivano dalla percezione dei pubblici.",
     },
   },
 };
