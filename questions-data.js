@@ -123,15 +123,15 @@
     "section": "Fondamenti della misurazione",
     "text": "Nel contesto dei livelli di valutazione della comunicazione, quale di questi rappresenta un 'Outcome'?",
     "options": {
-      "A": "Essere piu difficili da imitare rispetto agli asset fisici.",
-      "B": "Essere sempre contabilizzabili con un valore economico certo.",
-      "C": "Produrre risultati immediati e direttamente osservabili.",
-      "D": "Dipendere solo dagli investimenti in asset materiali."
+      "A": "Un cambiamento nelle conoscenze, negli atteggiamenti o nei comportamenti dei pubblici.",
+      "B": "Il numero di comunicati, eventi o contenuti prodotti dalla funzione comunicazione.",
+      "C": "Le risorse economiche e professionali impiegate per realizzare l'attivita.",
+      "D": "Il contributo finale della comunicazione alle performance complessive di business."
     },
     "answer": "A",
     "tags": [
       "fondamenti",
-      "seo_geo_digitale"
+      "ricerca_metodi"
     ]
   },
   {
@@ -139,10 +139,10 @@
     "section": "Fondamenti della misurazione",
     "text": "Cosa si intende per 'Trappola della misurazione'?",
     "options": {
-      "A": "Perche gli esiti possono essere condizionati dal contesto specifico in cui avvengono.",
-      "B": "Perche deve essere applicata solo nelle situazioni di crisi organizzativa.",
-      "C": "Perche dipende esclusivamente dalla quantita di dati raccolti.",
-      "D": "Perche misura solo variabili esterne non controllabili dalla comunicazione."
+      "A": "Raccogliere cio che e facile misurare ma poco utile per decidere.",
+      "B": "Usare solo indicatori qualitativi anche quando servono dati quantitativi.",
+      "C": "Comunicare i risultati al management prima della raccolta dei dati.",
+      "D": "Confrontare gli output con gli outcome in momenti temporali diversi."
     },
     "answer": "A",
     "tags": [
@@ -295,14 +295,16 @@
     "section": "Fondamenti della misurazione",
     "text": "Quale delle seguenti e una misura di efficienza di tipo 'Output/Outcome'?",
     "options": {
-      "A": "La percezione soggettiva di occupare una posizione periferica nell'organizzazione.",
-      "B": "L'incapacita dei dipendenti di utilizzare i nuovi strumenti digitali.",
-      "C": "La mancanza di budget per la comunicazione interna.",
-      "D": "Il grado di identificazione dichiarata verso i valori aziendali."
+      "A": "Il numero di uscite media ottenute rispetto ai punti percentuali di aumento della conoscenza.",
+      "B": "Il budget totale investito nella campagna rispetto al numero di persone nello staff.",
+      "C": "Il livello di fiducia dichiarato dagli stakeholder dopo un anno.",
+      "D": "Il numero di comunicati stampa prodotti durante il periodo analizzato."
     },
     "answer": "A",
     "tags": [
-      "fondamenti"
+      "fondamenti",
+      "ricerca_metodi",
+      "seo_geo_digitale"
     ]
   },
   {
@@ -325,7 +327,7 @@
     "section": "Fondamenti della misurazione",
     "text": "Quale tra questi e un esempio di 'Metrica di Interazione'?",
     "options": {
-      "A": "Crescita dei follower del canale.",
+      "A": "Commenti, condivisioni o risposte generate dai contenuti pubblicati.",
       "B": "Budget investito in campagne ADV.",
       "C": "Numero di post prodotti a settimana.",
       "D": "Numero di dipendenti assegnati al social media listening."
@@ -333,6 +335,7 @@
     "answer": "A",
     "tags": [
       "fondamenti",
+      "ricerca_metodi",
       "seo_geo_digitale",
       "social_roi"
     ]
@@ -358,10 +361,10 @@
     "section": "Fondamenti della misurazione",
     "text": "Nella misurazione della comunicazione, cosa si intende per 'Output'?",
     "options": {
-      "A": "Un out-take.",
-      "B": "Un input.",
-      "C": "Un output.",
-      "D": "Un impatto organizzativo finale."
+      "A": "Il prodotto immediato delle attivita di comunicazione, come contenuti, eventi o uscite media.",
+      "B": "La comprensione e il ricordo del messaggio da parte del pubblico.",
+      "C": "Il cambiamento stabile di atteggiamenti o comportamenti nei pubblici.",
+      "D": "Il contributo della comunicazione alle performance economiche dell'organizzazione."
     },
     "answer": "A",
     "tags": [
@@ -420,15 +423,14 @@
     "section": "Fondamenti della misurazione",
     "text": "Cosa si intende per 'Out-take' nella catena della misurazione?",
     "options": {
-      "A": "Avere chiari strategia, metriche e livello di preparazione dell'organizzazione.",
-      "B": "L'esportazione manuale di almeno un anno di dati storici.",
-      "C": "Il confronto tra piattaforme basato solo sul prezzo di licenza.",
-      "D": "La scelta delle dashboard grafiche da inserire nel report finale."
+      "A": "Cio che il pubblico riceve, comprende o ricorda subito dopo l'esposizione.",
+      "B": "Il prodotto operativo realizzato dalla funzione comunicazione.",
+      "C": "Il cambiamento comportamentale consolidato nel lungo periodo.",
+      "D": "Il ritorno economico complessivo generato dalla campagna."
     },
     "answer": "A",
     "tags": [
-      "fondamenti",
-      "social_roi"
+      "fondamenti"
     ]
   },
   {
@@ -451,16 +453,15 @@
     "section": "Fondamenti della misurazione",
     "text": "Nel contesto dei modelli di comunicazione, cosa caratterizza l'approccio 'Through The Line' (TTL)?",
     "options": {
-      "A": "La misurazione del trend (mensile, quotidiano, annuale) dei volumi di discussione.",
-      "B": "La misurazione del sentiment in tempo reale durante una crisi.",
-      "C": "Il passaggio automatico dei dati tra diverse piattaforme di ascolto.",
-      "D": "Il conteggio statico delle menzioni in un singolo momento di osservazione."
+      "A": "L'integrazione di logiche ATL e BTL in una strategia che accompagna awareness e conversione.",
+      "B": "La misurazione del solo trend temporale dei volumi di conversazione.",
+      "C": "Il conteggio statico delle menzioni in un singolo momento di osservazione.",
+      "D": "La separazione netta tra media di massa e canali orientati alla risposta diretta."
     },
     "answer": "A",
     "tags": [
       "fondamenti",
-      "ricerca_metodi",
-      "social_roi"
+      "ricerca_metodi"
     ]
   },
   {
@@ -484,14 +485,17 @@
     "section": "Fondamenti della misurazione",
     "text": "Cosa si intende per 'Filter Bubble' nel digital landscape?",
     "options": {
-      "A": "L'investimento risultera inutile perche le persone non sapranno interpretare i dati.",
-      "B": "La tecnologia correggera automaticamente le lacune del personale.",
-      "C": "Il tool produrra report piu ricchi ma non necessariamente utili alle decisioni.",
-      "D": "La dashboard sostituira la definizione preventiva degli obiettivi."
+      "A": "Un ambiente informativo personalizzato che tende a rinforzare gusti, credenze e bias dell'utente.",
+      "B": "Una dashboard che raccoglie automaticamente tutti i dati social dell'organizzazione.",
+      "C": "Un modello di valutazione che misura solo output e copertura media.",
+      "D": "Una tecnica di ricerca qualitativa basata su domande a imbuto."
     },
     "answer": "A",
     "tags": [
-      "fondamenti"
+      "fondamenti",
+      "modelli",
+      "ricerca_metodi",
+      "social_roi"
     ]
   },
   {
@@ -514,10 +518,10 @@
     "section": "Fondamenti della misurazione",
     "text": "Quale strumento viene utilizzato per misurare il grado di identificazione dei membri all'interno di un'organizzazione?",
     "options": {
-      "A": "ROIT",
-      "B": "OCIPO",
-      "C": "OCAI",
-      "D": "Laddering"
+      "A": "OCIPO.",
+      "B": "OCAI.",
+      "C": "ROIT.",
+      "D": "Laddering."
     },
     "answer": "A",
     "tags": [
@@ -548,7 +552,7 @@
     "section": "Fondamenti della misurazione",
     "text": "Secondo Krueger, quali domande hanno lo scopo di condurre i partecipanti alla chiave del tema di studio?",
     "options": {
-      "A": "Domande di transizione.",
+      "A": "Domande chiave.",
       "B": "Domande di apertura.",
       "C": "Domande di introduzione.",
       "D": "Domande finali."
@@ -564,14 +568,15 @@
     "section": "Fondamenti della misurazione",
     "text": "Nell'applicazione dell'OCAI (Organizational Culture Assessment Instrument), come devono rispondere i partecipanti alle domande?",
     "options": {
-      "A": "La presenza dei messaggi chiave dell'organizzazione all'interno della copertura ottenuta.",
-      "B": "Il numero di lingue in cui un comunicato stampa e stato tradotto.",
-      "C": "La capacita di un messaggio di diventare virale in meno di 24 ore.",
-      "D": "Il tono medio delle citazioni ottenute nella copertura mediatica."
+      "A": "Distribuiscono punti tra alternative che descrivono la cultura attuale e quella desiderata.",
+      "B": "Indicano il numero di messaggi chiave presenti nella copertura media.",
+      "C": "Attribuiscono un valore economico a ogni articolo pubblicato.",
+      "D": "Selezionano automaticamente il campione statistico della survey."
     },
     "answer": "A",
     "tags": [
       "fondamenti",
+      "ricerca_metodi",
       "seo_geo_digitale",
       "social_roi"
     ]
@@ -581,14 +586,16 @@
     "section": "Fondamenti della misurazione",
     "text": "Nel contesto dell'Advocacy, cosa misura l'Indice di Influenza dei membri?",
     "options": {
-      "A": "Utilizzare un approccio multidimensionale che integri media tradizionali e digitali.",
-      "B": "Evitare di coinvolgere il top management per non subire interferenze.",
-      "C": "Misurare solo i post che hanno ottenuto risultati negativi.",
-      "D": "Usare una sola metrica standard per tutte le campagne."
+      "A": "La capacita dei membri o advocate di influenzare altri utenti nella relazione con l'organizzazione.",
+      "B": "Il numero di contenuti negativi rimossi dai canali social nel periodo.",
+      "C": "La quota di budget investita in campagne paid rispetto al budget totale.",
+      "D": "La frequenza con cui il management approva i contenuti editoriali."
     },
     "answer": "A",
     "tags": [
-      "fondamenti"
+      "fondamenti",
+      "seo_geo_digitale",
+      "social_roi"
     ]
   },
   {
@@ -627,14 +634,15 @@
     "section": "Fondamenti della misurazione",
     "text": "Cosa indica lo SLA (Service Level Agreement) riferito al tempo di risposta?",
     "options": {
-      "A": "Bisogna superare la sola logica della visibilita per interpretare dati complessi ed ecosistemi interconnessi.",
-      "B": "Le aziende hanno smesso di investire in metriche per risparmiare budget.",
-      "C": "La misurazione e diventata piu semplice grazie all'intelligenza artificiale.",
-      "D": "Basta contare la visibilita ottenuta sui media tradizionali e digitali."
+      "A": "Il livello di servizio atteso, ad esempio il tempo massimo entro cui rispondere a una richiesta.",
+      "B": "Il valore economico equivalente della copertura editoriale ottenuta.",
+      "C": "Il numero di post pubblicati entro una finestra temporale standard.",
+      "D": "La capacita di una fonte media di influenzarne altre nel tempo."
     },
     "answer": "A",
     "tags": [
       "fondamenti",
+      "ricerca_metodi",
       "seo_geo_digitale"
     ]
   },
@@ -643,7 +651,7 @@
     "section": "Fondamenti della misurazione",
     "text": "Quale delle seguenti e una 'Outcome Metric' legata alla promozione dell'Advocacy?",
     "options": {
-      "A": "Rappresentazioni grafiche dei legami tra temi, giudizi e influencer nelle conversazioni.",
+      "A": "La raccomandazione o condivisione positiva dell'esperienza da parte degli utenti.",
       "B": "L'elenco cronologico delle uscite media prodotte nel periodo.",
       "C": "Il valore economico equivalente della copertura editoriale ottenuta.",
       "D": "Il numero complessivo di impression generate da un contenuto."
@@ -658,10 +666,10 @@
     "section": "Fondamenti della misurazione",
     "text": "Quale piattaforma nel 2005 ha introdotto il video come linguaggio dominante della socialita digitale?",
     "options": {
-      "A": "Valutazioni effettuate al termine di un'attivita per misurarne i risultati complessivi.",
-      "B": "Ricerche condotte prima di iniziare qualsiasi attivita di comunicazione.",
-      "C": "Valutazioni usate durante l'attivita per correggere strumenti e messaggi.",
-      "D": "Analisi preliminari per definire pubblici, obiettivi e contenuti."
+      "A": "YouTube.",
+      "B": "Facebook.",
+      "C": "Twitter.",
+      "D": "Wikipedia."
     },
     "answer": "A",
     "tags": [
@@ -674,14 +682,15 @@
     "section": "Fondamenti della misurazione",
     "text": "Secondo Manuel Castells, come comunica e consuma la 'societa in Rete'?",
     "options": {
-      "A": "Attraverso processi che diffondono istantaneamente simboli e conoscenze",
-      "B": "Tornando a forme di baratto non digitali",
-      "C": "Limitando lo scambio di informazioni per proteggere i governi",
-      "D": "Esclusivamente attraverso la televisione tradizionale"
+      "A": "Attraverso processi reticolari che diffondono rapidamente simboli, conoscenze e contenuti.",
+      "B": "Attraverso una comunicazione prevalentemente unidirezionale controllata dai media di massa.",
+      "C": "Attraverso canali separati in cui produzione e consumo restano rigidamente distinti.",
+      "D": "Attraverso processi locali che limitano lo scambio di informazioni tra comunita."
     },
     "answer": "A",
     "tags": [
       "fondamenti",
+      "seo_geo_digitale",
       "social_roi"
     ]
   },
@@ -690,10 +699,10 @@
     "section": "Fondamenti della misurazione",
     "text": "Nel 2026, qual e la strategia suggerita per gestire la varieta di dispositivi?",
     "options": {
-      "A": "Strategia multi-device reale con focus anche su desktop",
-      "B": "Ignorare completamente chi usa il computer",
-      "C": "Sviluppare applicazioni solo per smartwatch",
-      "D": "Tornare a stampare cataloghi cartacei"
+      "A": "Strategia multi-device reale, considerando anche il ruolo ancora rilevante del desktop.",
+      "B": "Strategia mobile-only, ignorando gli altri dispositivi di accesso.",
+      "C": "Strategia centrata solo su smartwatch e dispositivi indossabili.",
+      "D": "Strategia offline, sostituendo i touchpoint digitali con materiali cartacei."
     },
     "answer": "A",
     "tags": [
@@ -706,14 +715,16 @@
     "section": "Fondamenti della misurazione",
     "text": "Perche le aziende tracciano il 'Tasso di non risposta'?",
     "options": {
-      "A": "Per identificare quante domande degli utenti rimangono senza soluzione",
-      "B": "Per sapere quanti utenti non hanno ancora visto la pubblicita",
-      "C": "Perche le domande degli utenti non sono importanti",
-      "D": "Per premiare i dipendenti che lavorano meno"
+      "A": "Per capire quante richieste o domande degli utenti restano senza risposta.",
+      "B": "Per misurare quante persone non sono state esposte a una pubblicita.",
+      "C": "Per stimare il numero di contenuti non pubblicati nel calendario editoriale.",
+      "D": "Per calcolare la differenza tra follower acquisiti e follower persi."
     },
     "answer": "A",
     "tags": [
-      "fondamenti"
+      "fondamenti",
+      "ricerca_metodi",
+      "seo_geo_digitale"
     ]
   },
   {
@@ -721,15 +732,17 @@
     "section": "Fondamenti della misurazione",
     "text": "Quale di queste affermazioni sulla 'Disinformazione' nelle filter bubble e corretta?",
     "options": {
-      "A": "L'utente e piu vulnerabile a fake news se coerenti con i propri bias",
-      "B": "Le filter bubble eliminano automaticamente tutte le notizie false",
-      "C": "La disinformazione colpisce solo chi non ha uno smartphone",
-      "D": "Le notizie false non hanno alcun impatto sulla societa"
+      "A": "L'utente puo essere piu vulnerabile a contenuti falsi se coerenti con i propri bias.",
+      "B": "Le filter bubble riducono sempre la circolazione di contenuti non verificati.",
+      "C": "La disinformazione riguarda solo contenuti esterni agli ambienti social.",
+      "D": "Le notizie false perdono efficacia quando sono allineate alle credenze pregresse."
     },
     "answer": "A",
     "tags": [
       "fondamenti",
-      "modelli"
+      "ricerca_metodi",
+      "seo_geo_digitale",
+      "social_roi"
     ]
   },
   {
@@ -737,10 +750,10 @@
     "section": "Fondamenti della misurazione",
     "text": "Che cosa identifica l'acronimo HTML?",
     "options": {
-      "A": "HyperText Markup Language",
-      "B": "High Transfer Mode Language",
-      "C": "Hyper Tool Markup Link",
-      "D": "Home Text Mobile Link"
+      "A": "HyperText Markup Language.",
+      "B": "Hyper Transfer Media Logic.",
+      "C": "Home Tool Management Link.",
+      "D": "High Text Marketing Language."
     },
     "answer": "A",
     "tags": [

@@ -2641,6 +2641,166 @@ const manualReviewOverrides = {
       D: "Non c'e alcuna differenza, sono sinonimi nel processo di analisi.",
     },
   },
+  5: {
+    options: {
+      A: "Un cambiamento nelle conoscenze, negli atteggiamenti o nei comportamenti dei pubblici.",
+      B: "Il numero di comunicati, eventi o contenuti prodotti dalla funzione comunicazione.",
+      C: "Le risorse economiche e professionali impiegate per realizzare l'attivita.",
+      D: "Il contributo finale della comunicazione alle performance complessive di business.",
+    },
+  },
+  6: {
+    options: {
+      A: "Raccogliere cio che e facile misurare ma poco utile per decidere.",
+      B: "Usare solo indicatori qualitativi anche quando servono dati quantitativi.",
+      C: "Comunicare i risultati al management prima della raccolta dei dati.",
+      D: "Confrontare gli output con gli outcome in momenti temporali diversi.",
+    },
+  },
+  16: {
+    options: {
+      A: "Il numero di uscite media ottenute rispetto ai punti percentuali di aumento della conoscenza.",
+      B: "Il budget totale investito nella campagna rispetto al numero di persone nello staff.",
+      C: "Il livello di fiducia dichiarato dagli stakeholder dopo un anno.",
+      D: "Il numero di comunicati stampa prodotti durante il periodo analizzato.",
+    },
+  },
+  18: {
+    options: {
+      A: "Commenti, condivisioni o risposte generate dai contenuti pubblicati.",
+      B: "Budget investito in campagne ADV.",
+      C: "Numero di post prodotti a settimana.",
+      D: "Numero di dipendenti assegnati al social media listening.",
+    },
+  },
+  20: {
+    options: {
+      A: "Il prodotto immediato delle attivita di comunicazione, come contenuti, eventi o uscite media.",
+      B: "La comprensione e il ricordo del messaggio da parte del pubblico.",
+      C: "Il cambiamento stabile di atteggiamenti o comportamenti nei pubblici.",
+      D: "Il contributo della comunicazione alle performance economiche dell'organizzazione.",
+    },
+  },
+  24: {
+    options: {
+      A: "Cio che il pubblico riceve, comprende o ricorda subito dopo l'esposizione.",
+      B: "Il prodotto operativo realizzato dalla funzione comunicazione.",
+      C: "Il cambiamento comportamentale consolidato nel lungo periodo.",
+      D: "Il ritorno economico complessivo generato dalla campagna.",
+    },
+  },
+  26: {
+    options: {
+      A: "L'integrazione di logiche ATL e BTL in una strategia che accompagna awareness e conversione.",
+      B: "La misurazione del solo trend temporale dei volumi di conversazione.",
+      C: "Il conteggio statico delle menzioni in un singolo momento di osservazione.",
+      D: "La separazione netta tra media di massa e canali orientati alla risposta diretta.",
+    },
+  },
+  28: {
+    options: {
+      A: "Un ambiente informativo personalizzato che tende a rinforzare gusti, credenze e bias dell'utente.",
+      B: "Una dashboard che raccoglie automaticamente tutti i dati social dell'organizzazione.",
+      C: "Un modello di valutazione che misura solo output e copertura media.",
+      D: "Una tecnica di ricerca qualitativa basata su domande a imbuto.",
+    },
+  },
+  30: {
+    options: {
+      A: "OCIPO.",
+      B: "OCAI.",
+      C: "ROIT.",
+      D: "Laddering.",
+    },
+  },
+  32: {
+    options: {
+      A: "Domande chiave.",
+      B: "Domande di apertura.",
+      C: "Domande di introduzione.",
+      D: "Domande finali.",
+    },
+  },
+  33: {
+    options: {
+      A: "Distribuiscono punti tra alternative che descrivono la cultura attuale e quella desiderata.",
+      B: "Indicano il numero di messaggi chiave presenti nella copertura media.",
+      C: "Attribuiscono un valore economico a ogni articolo pubblicato.",
+      D: "Selezionano automaticamente il campione statistico della survey.",
+    },
+  },
+  34: {
+    options: {
+      A: "La capacita dei membri o advocate di influenzare altri utenti nella relazione con l'organizzazione.",
+      B: "Il numero di contenuti negativi rimossi dai canali social nel periodo.",
+      C: "La quota di budget investita in campagne paid rispetto al budget totale.",
+      D: "La frequenza con cui il management approva i contenuti editoriali.",
+    },
+  },
+  37: {
+    options: {
+      A: "Il livello di servizio atteso, ad esempio il tempo massimo entro cui rispondere a una richiesta.",
+      B: "Il valore economico equivalente della copertura editoriale ottenuta.",
+      C: "Il numero di post pubblicati entro una finestra temporale standard.",
+      D: "La capacita di una fonte media di influenzarne altre nel tempo.",
+    },
+  },
+  38: {
+    options: {
+      A: "La raccomandazione o condivisione positiva dell'esperienza da parte degli utenti.",
+      B: "L'elenco cronologico delle uscite media prodotte nel periodo.",
+      C: "Il valore economico equivalente della copertura editoriale ottenuta.",
+      D: "Il numero complessivo di impression generate da un contenuto.",
+    },
+  },
+  39: {
+    options: {
+      A: "YouTube.",
+      B: "Facebook.",
+      C: "Twitter.",
+      D: "Wikipedia.",
+    },
+  },
+  40: {
+    options: {
+      A: "Attraverso processi reticolari che diffondono rapidamente simboli, conoscenze e contenuti.",
+      B: "Attraverso una comunicazione prevalentemente unidirezionale controllata dai media di massa.",
+      C: "Attraverso canali separati in cui produzione e consumo restano rigidamente distinti.",
+      D: "Attraverso processi locali che limitano lo scambio di informazioni tra comunita.",
+    },
+  },
+  41: {
+    options: {
+      A: "Strategia multi-device reale, considerando anche il ruolo ancora rilevante del desktop.",
+      B: "Strategia mobile-only, ignorando gli altri dispositivi di accesso.",
+      C: "Strategia centrata solo su smartwatch e dispositivi indossabili.",
+      D: "Strategia offline, sostituendo i touchpoint digitali con materiali cartacei.",
+    },
+  },
+  42: {
+    options: {
+      A: "Per capire quante richieste o domande degli utenti restano senza risposta.",
+      B: "Per misurare quante persone non sono state esposte a una pubblicita.",
+      C: "Per stimare il numero di contenuti non pubblicati nel calendario editoriale.",
+      D: "Per calcolare la differenza tra follower acquisiti e follower persi.",
+    },
+  },
+  43: {
+    options: {
+      A: "L'utente puo essere piu vulnerabile a contenuti falsi se coerenti con i propri bias.",
+      B: "Le filter bubble riducono sempre la circolazione di contenuti non verificati.",
+      C: "La disinformazione riguarda solo contenuti esterni agli ambienti social.",
+      D: "Le notizie false perdono efficacia quando sono allineate alle credenze pregresse.",
+    },
+  },
+  44: {
+    options: {
+      A: "HyperText Markup Language.",
+      B: "Hyper Transfer Media Logic.",
+      C: "Home Tool Management Link.",
+      D: "High Text Marketing Language.",
+    },
+  },
 };
 
 for (const question of bank) {
