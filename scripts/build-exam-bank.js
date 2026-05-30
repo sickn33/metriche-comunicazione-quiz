@@ -793,18 +793,18 @@ const bank = selected.map((candidate, index) => toQuestion(index + 1, candidate,
 const manualReviewOverrides = {
   5: {
     options: {
-      A: "Essere piu difficili da imitare rispetto agli asset fisici.",
-      B: "Essere sempre contabilizzabili con un valore economico certo.",
-      C: "Produrre risultati immediati e direttamente osservabili.",
-      D: "Dipendere solo dagli investimenti in asset materiali.",
+      A: "Un cambiamento nelle conoscenze, negli atteggiamenti o nei comportamenti dei pubblici.",
+      B: "Il numero di comunicati, eventi o contenuti prodotti dalla funzione comunicazione.",
+      C: "Le risorse economiche e professionali impiegate per realizzare l'attivita.",
+      D: "Il contributo finale della comunicazione alle performance complessive di business.",
     },
   },
   6: {
     options: {
-      A: "Perche gli esiti possono essere condizionati dal contesto specifico in cui avvengono.",
-      B: "Perche deve essere applicata solo nelle situazioni di crisi organizzativa.",
-      C: "Perche dipende esclusivamente dalla quantita di dati raccolti.",
-      D: "Perche misura solo variabili esterne non controllabili dalla comunicazione.",
+      A: "Raccogliere cio che e facile misurare ma poco utile per decidere.",
+      B: "Usare solo indicatori qualitativi anche quando servono dati quantitativi.",
+      C: "Comunicare i risultati al management prima della raccolta dei dati.",
+      D: "Confrontare gli output con gli outcome in momenti temporali diversi.",
     },
   },
   12: {
@@ -827,18 +827,18 @@ const manualReviewOverrides = {
   },
   16: {
     options: {
-      A: "La percezione soggettiva di occupare una posizione periferica nell'organizzazione.",
-      B: "L'incapacita dei dipendenti di utilizzare i nuovi strumenti digitali.",
-      C: "La mancanza di budget per la comunicazione interna.",
-      D: "Il grado di identificazione dichiarata verso i valori aziendali.",
+      A: "Il numero di uscite media ottenute rispetto ai punti percentuali di aumento della conoscenza.",
+      B: "Il budget totale investito nella campagna rispetto al numero di persone nello staff.",
+      C: "Il livello di fiducia dichiarato dagli stakeholder dopo un anno.",
+      D: "Il numero di comunicati stampa prodotti durante il periodo analizzato.",
     },
   },
   20: {
     options: {
-      A: "Un out-take.",
-      B: "Un input.",
-      C: "Un output.",
-      D: "Un impatto organizzativo finale.",
+      A: "Il prodotto immediato delle attivita di comunicazione, come contenuti, eventi o uscite media.",
+      B: "La comprensione e il ricordo del messaggio da parte del pubblico.",
+      C: "Il cambiamento stabile di atteggiamenti o comportamenti nei pubblici.",
+      D: "Il contributo della comunicazione alle performance economiche dell'organizzazione.",
     },
   },
   23: {
@@ -852,63 +852,64 @@ const manualReviewOverrides = {
   },
   24: {
     options: {
-      A: "Avere chiari strategia, metriche e livello di preparazione dell'organizzazione.",
-      B: "L'esportazione manuale di almeno un anno di dati storici.",
-      C: "Il confronto tra piattaforme basato solo sul prezzo di licenza.",
-      D: "La scelta delle dashboard grafiche da inserire nel report finale.",
+      A: "Cio che il pubblico riceve, comprende o ricorda subito dopo l'esposizione.",
+      B: "Il prodotto operativo realizzato dalla funzione comunicazione.",
+      C: "Il cambiamento comportamentale consolidato nel lungo periodo.",
+      D: "Il ritorno economico complessivo generato dalla campagna.",
     },
   },
   26: {
     options: {
-      A: "La misurazione del trend (mensile, quotidiano, annuale) dei volumi di discussione.",
-      B: "La misurazione del sentiment in tempo reale durante una crisi.",
-      C: "Il passaggio automatico dei dati tra diverse piattaforme di ascolto.",
-      D: "Il conteggio statico delle menzioni in un singolo momento di osservazione.",
+      A: "L'integrazione di logiche ATL e BTL in una strategia che accompagna awareness e conversione.",
+      B: "La misurazione del solo trend temporale dei volumi di conversazione.",
+      C: "Il conteggio statico delle menzioni in un singolo momento di osservazione.",
+      D: "La separazione netta tra media di massa e canali orientati alla risposta diretta.",
     },
   },
   28: {
     options: {
-      A: "L'investimento risultera inutile perche le persone non sapranno interpretare i dati.",
-      B: "La tecnologia correggera automaticamente le lacune del personale.",
-      C: "Il tool produrra report piu ricchi ma non necessariamente utili alle decisioni.",
-      D: "La dashboard sostituira la definizione preventiva degli obiettivi.",
+      A: "Un ambiente informativo personalizzato che tende a rinforzare gusti, credenze e bias dell'utente.",
+      B: "Una dashboard che raccoglie automaticamente tutti i dati social dell'organizzazione.",
+      C: "Un modello di valutazione che misura solo output e copertura media.",
+      D: "Una tecnica di ricerca qualitativa basata su domande a imbuto.",
     },
   },
   33: {
     options: {
-      A: "La presenza dei messaggi chiave dell'organizzazione all'interno della copertura ottenuta.",
-      B: "Il numero di lingue in cui un comunicato stampa e stato tradotto.",
-      C: "La capacita di un messaggio di diventare virale in meno di 24 ore.",
-      D: "Il tono medio delle citazioni ottenute nella copertura mediatica.",
+      A: "Distribuiscono punti tra alternative che descrivono la cultura attuale e quella desiderata.",
+      B: "Indicano il numero di messaggi chiave presenti nella copertura media.",
+      C: "Attribuiscono un valore economico a ogni articolo pubblicato.",
+      D: "Selezionano automaticamente il campione statistico della survey.",
     },
   },
   34: {
     options: {
-      A: "Utilizzare un approccio multidimensionale che integri media tradizionali e digitali.",
-      B: "Evitare di coinvolgere il top management per non subire interferenze.",
-      C: "Misurare solo i post che hanno ottenuto risultati negativi.",
-      D: "Usare una sola metrica standard per tutte le campagne.",
+      A: "La capacita dei membri o advocate di influenzare altri utenti nella relazione con l'organizzazione.",
+      B: "Il numero di contenuti negativi rimossi dai canali social nel periodo.",
+      C: "La quota di budget investita in campagne paid rispetto al budget totale.",
+      D: "La frequenza con cui il management approva i contenuti editoriali.",
     },
   },
   36: {
+    text: "Nel questionario di relazione, quale dimensione misura integrita, affidabilita e competenza percepita dell'organizzazione?",
     options: {
-      A: "La creazione e pubblicazione di 10 post settimanali sulla pagina LinkedIn aziendale.",
-      B: "Il miglioramento della fiducia degli stakeholder verso il CEO.",
-      C: "Il ricordo spontaneo del brand dopo l'esposizione al contenuto.",
-      D: "L'aumento della propensione all'acquisto dopo la campagna.",
+      A: "La fiducia.",
+      B: "La soddisfazione.",
+      C: "Il commitment.",
+      D: "Il controllo reciproco.",
     },
   },
   37: {
     options: {
-      A: "Bisogna superare la sola logica della visibilita per interpretare dati complessi ed ecosistemi interconnessi.",
-      B: "Le aziende hanno smesso di investire in metriche per risparmiare budget.",
-      C: "La misurazione e diventata piu semplice grazie all'intelligenza artificiale.",
-      D: "Basta contare la visibilita ottenuta sui media tradizionali e digitali.",
+      A: "Il livello di servizio atteso, ad esempio il tempo massimo entro cui rispondere a una richiesta.",
+      B: "Il valore economico equivalente della copertura editoriale ottenuta.",
+      C: "Il numero di post pubblicati entro una finestra temporale standard.",
+      D: "La capacita di una fonte media di influenzarne altre nel tempo.",
     },
   },
   38: {
     options: {
-      A: "Rappresentazioni grafiche dei legami tra temi, giudizi e influencer nelle conversazioni.",
+      A: "La raccomandazione o condivisione positiva dell'esperienza da parte degli utenti.",
       B: "L'elenco cronologico delle uscite media prodotte nel periodo.",
       C: "Il valore economico equivalente della copertura editoriale ottenuta.",
       D: "Il numero complessivo di impression generate da un contenuto.",
@@ -916,26 +917,26 @@ const manualReviewOverrides = {
   },
   39: {
     options: {
-      A: "Valutazioni effettuate al termine di un'attivita per misurarne i risultati complessivi.",
-      B: "Ricerche condotte prima di iniziare qualsiasi attivita di comunicazione.",
-      C: "Valutazioni usate durante l'attivita per correggere strumenti e messaggi.",
-      D: "Analisi preliminari per definire pubblici, obiettivi e contenuti.",
+      A: "YouTube.",
+      B: "Facebook.",
+      C: "Twitter.",
+      D: "Wikipedia.",
     },
   },
   54: {
     options: {
-      A: "Per l'obsolescenza e la scarsa adattabilita dei dati gia esistenti.",
-      B: "Perche richiedono molto piu tempo rispetto a quelle primarie.",
-      C: "Perche non possono mai essere utilizzate per decisioni aziendali.",
-      D: "Perche producono solo insight qualitativi e non dati numerici.",
+      A: "Approfondire vissuti, motivazioni e significati individuali senza la pressione del gruppo.",
+      B: "Ottenere stime statisticamente rappresentative dell'intera popolazione.",
+      C: "Misurare automaticamente il ROI economico della campagna.",
+      D: "Osservare direttamente i comportamenti senza dialogare con il soggetto.",
     },
   },
   56: {
     options: {
-      A: "Manipolare o osservare variazioni controllate per verificare un nesso tra variabili.",
-      B: "Esplorare liberamente vissuti e motivazioni senza ipotesi iniziali.",
-      C: "Raccogliere dati esistenti prodotti per altri obiettivi.",
-      D: "Descrivere la copertura media ottenuta in un periodo.",
+      A: "Prima dell'acquisto, quando il consumatore cerca informazioni e confronta alternative online.",
+      B: "Dopo l'acquisto, quando il cliente valuta la soddisfazione e il servizio ricevuto.",
+      C: "Nel momento fisico della vendita, quando il prodotto viene pagato in negozio.",
+      D: "Nella fase di rendicontazione, quando l'azienda calcola i risultati economici.",
     },
   },
   57: {
@@ -955,35 +956,36 @@ const manualReviewOverrides = {
     },
   },
   65: {
+    text: "Nel focus group, perche la composizione del gruppo va progettata prima della sessione?",
     options: {
-      A: "Per evitare che l'interazione sia condizionata e che i partecipanti non siano liberi di esprimersi.",
-      B: "Perche i vertici aziendali non sono considerati target interessanti per le indagini qualitative.",
-      C: "Perche le gerarchie impediscono al moderatore di guidare la discussione.",
-      D: "Per aumentare la numerosita statistica del campione osservato.",
+      A: "Per favorire un confronto utile, coerente con gli obiettivi conoscitivi e non condizionato da squilibri eccessivi.",
+      B: "Per rendere il gruppo statisticamente rappresentativo dell'intera popolazione nazionale.",
+      C: "Per sostituire la traccia del moderatore con una selezione casuale dei partecipanti.",
+      D: "Per garantire che ogni risposta possa essere trasformata direttamente in un dato di vendita.",
     },
   },
   67: {
     options: {
-      A: "La ricerca e valutazione delle informazioni.",
-      B: "La raccomandazione del prodotto ad altri utenti.",
-      C: "La valutazione della soddisfazione post-acquisto.",
-      D: "La produzione del contenuto da parte dell'azienda.",
+      A: "La survey.",
+      B: "Il focus group.",
+      C: "L'osservazione partecipante.",
+      D: "Le tecniche proiettive.",
     },
   },
   68: {
     options: {
-      A: "La lettura dei dati alla luce di contesto, obiettivi e decisioni.",
-      B: "La conversione automatica delle risposte in percentuali.",
-      C: "La trascrizione letterale delle risposte senza interpretazione.",
-      D: "La pulizia formale del dataset prima dell'archiviazione.",
+      A: "Ricerca ex ante o diagnostica, utile a orientare obiettivi e strategia prima dell'azione.",
+      B: "Valutazione sommativa, usata solo per tirare le somme a fine campagna.",
+      C: "Rendicontazione economica, centrata esclusivamente sui KPI di business.",
+      D: "Certificazione di audience, necessaria per validare tiratura e ascolti.",
     },
   },
   71: {
     options: {
-      A: "Per evitare che la conoscenza pregressa influenzi o inibisca la libera espressione delle opinioni.",
-      B: "Per garantire che il campione sia statisticamente rappresentativo.",
-      C: "Per evitare che il moderatore debba spiegare il tema di discussione.",
-      D: "Per poter applicare un disegno causale con gruppo di controllo.",
+      A: "Quanto ritiene che l'organizzazione abbia le capacita necessarie per mantenere le promesse?",
+      B: "Quanto ricorda il logo dell'organizzazione dopo aver visto la campagna?",
+      C: "Quante volte ha letto un articolo sull'organizzazione nell'ultimo mese?",
+      D: "Quanto spesso riceve comunicazioni interne dal suo responsabile diretto?",
     },
   },
   72: {
@@ -997,106 +999,107 @@ const manualReviewOverrides = {
   },
   73: {
     options: {
-      A: "L'inserimento del ricercatore in un gruppo sociale nel suo ambiente naturale per un periodo lungo.",
-      B: "Guardare un focus group da dietro uno specchio unidirezionale senza farsi vedere.",
-      C: "Monitorare i commenti degli utenti sulle pagine Facebook aziendali per 24 ore.",
-      D: "Somministrare un questionario standardizzato a un campione ampio.",
+      A: "La raccolta di dati originali progettati appositamente per il problema di ricerca.",
+      B: "L'utilizzo di dati gia raccolti da altri soggetti per finalita differenti.",
+      C: "La sola analisi dei report storici gia disponibili in azienda.",
+      D: "La rielaborazione di statistiche pubbliche senza contatto con i rispondenti.",
     },
   },
   74: {
     options: {
-      A: "Un riconoscimento (economico o di altra natura) fornito ai partecipanti per il loro tempo e contributo.",
-      B: "La promessa di non pubblicare le risposte date dai partecipanti.",
-      C: "Il compenso riconosciuto al moderatore per condurre la discussione.",
-      D: "La selezione preliminare dei partecipanti prima del field.",
+      A: "L'utilizzo di dati gia esistenti, raccolti in precedenza per altri obiettivi.",
+      B: "La raccolta di risposte originali tramite interviste, survey o osservazione.",
+      C: "Una tecnica proiettiva basata su immagini e frasi da completare.",
+      D: "Un esperimento con gruppo sperimentale e gruppo di controllo.",
     },
   },
   75: {
     options: {
-      A: "L'analisi del contesto, la costruzione di ipotesi di lavoro e l'individuazione del target.",
-      B: "La gestione dei conflitti che emergono durante la discussione tra i partecipanti.",
-      C: "Il calcolo statistico della varianza delle risposte ottenute.",
-      D: "La codifica delle risposte al termine della sessione di gruppo.",
+      A: "Le tecniche proiettive.",
+      B: "La survey a risposta chiusa.",
+      C: "L'analisi dei dati secondari.",
+      D: "Il panel Auditel.",
     },
   },
   76: {
     options: {
-      A: "Ricerche Qualitative.",
-      B: "Ricerche Quantitative.",
-      C: "Analisi dei costi-benefici puramente economici.",
-      D: "Ricerche causali con gruppo sperimentale e gruppo di controllo.",
+      A: "Si parte da domande generali per arrivare progressivamente a domande piu specifiche.",
+      B: "Si chiede subito al partecipante di scegliere tra alternative numeriche chiuse.",
+      C: "Si alternano domande di vendita e domande di certificazione delle audience.",
+      D: "Si evitano le domande di apertura per ridurre la durata della sessione.",
     },
   },
   79: {
     options: {
-      A: "Perche si basa su regole di scomposizione del testo fisse che chiunque puo replicare.",
-      B: "Perche utilizza solo numeri e ignora completamente il significato delle parole.",
-      C: "Perche si limita alla lettura impressionistica del testo da parte dell'analista.",
-      D: "Perche interpreta liberamente i testi senza categorie condivise.",
+      A: "Suddividere il contenuto in unita di analisi e categorie definite in modo replicabile.",
+      B: "Riassumere liberamente il testo senza una griglia condivisa di codifica.",
+      C: "Trasformare ogni contenuto in un valore economico equivalente.",
+      D: "Selezionare i partecipanti piu adatti a un focus group.",
     },
   },
   80: {
     options: {
-      A: "La survey",
-      B: "L'intervista in profondita",
-      C: "Le tecniche proiettive",
-      D: "L'osservazione partecipante",
+      A: "Il prodotto immediato di un'attivita, come comunicati, eventi, contenuti o uscite media.",
+      B: "Il cambiamento stabile di opinioni, atteggiamenti o comportamenti dei pubblici.",
+      C: "L'impatto finale sulle performance economiche complessive dell'organizzazione.",
+      D: "La baseline strategica usata prima dell'avvio della campagna.",
     },
   },
   81: {
     options: {
-      A: "Perche dalla sua efficacia dipende la qualita e l'affidabilita delle informazioni raccolte.",
-      B: "Perche sostituisce la fase di campionamento della ricerca.",
-      C: "Perche elimina la necessita di interpretare i dati raccolti.",
-      D: "Perche rende superflua la definizione degli obiettivi conoscitivi.",
+      A: "A definire obiettivi, target, composizione del gruppo, traccia e condizioni della discussione.",
+      B: "A trasformare automaticamente le risposte dei partecipanti in percentuali generalizzabili.",
+      C: "A sostituire il ruolo del moderatore con un questionario standardizzato.",
+      D: "A calcolare il ROI della campagna prima di raccogliere i dati qualitativi.",
     },
   },
   82: {
     options: {
-      A: "Perche le organizzazioni preferiscono spesso dati numerici e percentuali piu facili da inserire in report sintetici.",
-      B: "Perche consentono sempre generalizzazioni statistiche piu solide.",
-      C: "Perche richiedono meno tempo e meno competenze interpretative.",
-      D: "Perche sono usate solo dopo il lancio della campagna.",
+      A: "La formativa serve a migliorare in corso d'opera, la sommativa a valutare risultati e valore conclusivo.",
+      B: "La formativa si usa solo dopo la campagna, la sommativa solo prima dell'implementazione.",
+      C: "La formativa riguarda le audience certificate, la sommativa riguarda i dati qualitativi.",
+      D: "La formativa misura solo il ROI, la sommativa solo il numero di comunicati prodotti.",
     },
   },
   84: {
     options: {
-      A: "Esperimento con gruppo di controllo e gruppo sperimentale",
-      B: "Survey su campione statisticamente rappresentativo",
-      C: "Focus group con domande a imbuto",
-      D: "Analisi del contenuto della rassegna stampa",
+      A: "Analisi del contenuto della rassegna stampa.",
+      B: "Survey su campione statisticamente rappresentativo.",
+      C: "Focus group con domande a imbuto.",
+      D: "Esperimento con gruppo di controllo e gruppo sperimentale.",
     },
   },
   87: {
     options: {
-      A: "Immagini, spot, oggetti concreti o frasi da completare.",
-      B: "Questionari a risposta chiusa somministrati a un campione ampio.",
-      C: "Tabelle statistiche ricavate da dati secondari gia disponibili.",
-      D: "Liste di KPI economici da inserire nel report finale.",
+      A: "Una survey somministrata direttamente a un campione definito per la ricerca.",
+      B: "Una tabella statistica gia pubblicata da un ente esterno.",
+      C: "Un report storico prodotto da una precedente campagna.",
+      D: "Una rassegna di dati amministrativi gia disponibili in azienda.",
     },
   },
   88: {
     options: {
-      A: "Mostrare una lista di marchi e chiedere quali si ricordano di aver visto in pubblicita.",
-      B: "Chiedere 'Qual e l'ultima pubblicita che hai visto?' a bruciapelo.",
-      C: "Analizzare se l'utente ha acquistato il prodotto dopo un anno.",
-      D: "Misurare la quota di mercato raggiunta dopo la campagna.",
+      A: "Il percorso di interazioni e touchpoint che accompagna il cliente dalla conoscenza al post-acquisto.",
+      B: "Il solo momento in cui il cliente paga il prodotto nel punto vendita.",
+      C: "La sequenza interna con cui l'azienda approva una campagna pubblicitaria.",
+      D: "Il calendario editoriale dei contenuti pubblicati sui canali social proprietari.",
     },
   },
   90: {
     options: {
-      A: "Domande che permettono ai partecipanti di riflettere sui commenti precedenti e chiudere la discussione.",
-      B: "Domande di apertura usate per rompere il ghiaccio all'inizio.",
-      C: "Domande di transizione che accompagnano verso il tema centrale.",
-      D: "Domande chiave usate per approfondire il nucleo della discussione.",
+      A: "Possono essere obsolete o poco adattabili agli obiettivi specifici della ricerca.",
+      B: "Garantiscono sempre maggiore accuratezza rispetto alle ricerche primarie.",
+      C: "Permettono di evitare qualunque interpretazione da parte del ricercatore.",
+      D: "Sono utilizzabili solo quando non esistono dati quantitativi disponibili.",
     },
   },
   92: {
+    text: "Nel focus group, perche e importante evitare dinamiche che inibiscono la parola dei partecipanti?",
     options: {
-      A: "A causa del rischio di obsolescenza e della difficolta di adattamento dei dati a obiettivi specifici.",
-      B: "Perche permettono di raccogliere dati progettati ad hoc per il problema.",
-      C: "Perche sono sempre piu accurate delle ricerche primarie.",
-      D: "Perche eliminano il bisogno di interpretazione contestuale.",
+      A: "Per raccogliere opinioni libere e ridurre il rischio che alcuni soggetti orientino o blocchino gli altri.",
+      B: "Per ottenere automaticamente un campione statisticamente rappresentativo.",
+      C: "Per trasformare la discussione qualitativa in un esperimento causale.",
+      D: "Per evitare che il moderatore debba preparare una traccia di discussione.",
     },
   },
   98: {
@@ -1110,26 +1113,26 @@ const manualReviewOverrides = {
   },
   100: {
     options: {
-      A: "L'utilizzo di citazioni dirette e un resoconto ordinato tematicamente.",
-      B: "La trasformazione delle risposte in frequenze e percentuali sintetiche.",
-      C: "La presentazione dei risultati come sequenza cronologica dell'incontro.",
-      D: "La verifica del nesso causale tramite gruppo sperimentale e controllo.",
+      A: "Il ricercatore partecipa al contesto senza dichiarare apertamente il proprio ruolo di osservatore.",
+      B: "Il ricercatore osserva il gruppo dichiarando fin dall'inizio obiettivi e metodo.",
+      C: "I partecipanti compilano un questionario anonimo senza incontrare il ricercatore.",
+      D: "Il moderatore conduce una discussione collettiva con una traccia a imbuto.",
     },
   },
   102: {
     options: {
-      A: "La necessita di testare i risultati ottenuti con un'indagine quantitativa successiva.",
-      B: "La possibilita di stimare con precisione la quota di mercato del brand.",
-      C: "La capacita di osservare comportamenti reali senza dichiarazioni verbali.",
-      D: "L'applicazione di inferenze causali tramite gruppo di controllo.",
+      A: "Trasformare dati e interpretazioni in indicazioni utili per scegliere o correggere le azioni.",
+      B: "Produrre un archivio completo di dati grezzi senza raccomandazioni operative.",
+      C: "Sostituire le decisioni manageriali con un unico indicatore automatico.",
+      D: "Misurare solo la visibilita media ottenuta nel periodo analizzato.",
     },
   },
   104: {
     options: {
-      A: "Per evitare che la ricerca sia guidata casualmente dai messaggi trovati, perdendo di vista le esigenze dell'azienda.",
-      B: "Per scegliere prima le metriche piu facili da raccogliere sulle piattaforme disponibili.",
-      C: "Per limitare l'analisi ai soli canali proprietari dell'organizzazione.",
-      D: "Per trasformare ogni conversazione raccolta in un indicatore di performance economica.",
+      A: "La costruzione del campione e del questionario, perche condiziona la qualita dei dati raccolti.",
+      B: "La scelta del software di impaginazione usato per presentare il report finale.",
+      C: "L'archiviazione dei questionari dopo la chiusura dell'analisi.",
+      D: "La selezione degli esempi grafici da inserire nelle slide conclusive.",
     },
   },
   118: {
@@ -2272,6 +2275,12 @@ const manualReviewOverrides = {
   },
   101: {
     text: "Quale tra i seguenti e un limite intrinseco dei focus group?",
+    options: {
+      A: "La necessita di verificare o approfondire i risultati con ulteriori strumenti, spesso quantitativi.",
+      B: "La possibilita di ottenere automaticamente dati rappresentativi dell'intera popolazione.",
+      C: "L'assenza di interazione tra partecipanti durante la discussione.",
+      D: "La capacita di eliminare completamente il ruolo del moderatore.",
+    },
   },
   131: {
     text: "Cosa manca solitamente ai sistemi di Social Media Analytics nativi delle piattaforme?",
@@ -2309,93 +2318,12 @@ const manualReviewOverrides = {
   471: {
     text: "Quali sono i due pilastri necessari per monitorare la reputazione online di un brand?",
   },
-  54: {
-    options: {
-      A: "Approfondire vissuti, motivazioni e significati individuali senza la pressione del gruppo.",
-      B: "Ottenere stime statisticamente rappresentative dell'intera popolazione.",
-      C: "Misurare automaticamente il ROI economico della campagna.",
-      D: "Osservare direttamente i comportamenti senza dialogare con il soggetto.",
-    },
-  },
-  56: {
-    options: {
-      A: "Prima dell'acquisto, quando il consumatore cerca informazioni e confronta alternative online.",
-      B: "Dopo l'acquisto, quando il cliente valuta la soddisfazione e il servizio ricevuto.",
-      C: "Nel momento fisico della vendita, quando il prodotto viene pagato in negozio.",
-      D: "Nella fase di rendicontazione, quando l'azienda calcola i risultati economici.",
-    },
-  },
   64: {
     options: {
       A: "Partire da temi generali e poco strutturati per arrivare gradualmente a domande specifiche.",
       B: "Ripetere la stessa domanda in modo identico finche tutti non danno la stessa risposta.",
       C: "Alternare domande statistiche e domande sperimentali con gruppo di controllo.",
       D: "Iniziare dalla conclusione del moderatore e chiedere ai partecipanti di confermarla.",
-    },
-  },
-  65: {
-    text: "Nel focus group, perche la composizione del gruppo va progettata prima della sessione?",
-    options: {
-      A: "Per favorire un confronto utile, coerente con gli obiettivi conoscitivi e non condizionato da squilibri eccessivi.",
-      B: "Per rendere il gruppo statisticamente rappresentativo dell'intera popolazione nazionale.",
-      C: "Per sostituire la traccia del moderatore con una selezione casuale dei partecipanti.",
-      D: "Per garantire che ogni risposta possa essere trasformata direttamente in un dato di vendita.",
-    },
-  },
-  67: {
-    options: {
-      A: "La survey.",
-      B: "Il focus group.",
-      C: "L'osservazione partecipante.",
-      D: "Le tecniche proiettive.",
-    },
-  },
-  68: {
-    options: {
-      A: "Ricerca ex ante o diagnostica, utile a orientare obiettivi e strategia prima dell'azione.",
-      B: "Valutazione sommativa, usata solo per tirare le somme a fine campagna.",
-      C: "Rendicontazione economica, centrata esclusivamente sui KPI di business.",
-      D: "Certificazione di audience, necessaria per validare tiratura e ascolti.",
-    },
-  },
-  71: {
-    options: {
-      A: "Quanto ritiene che l'organizzazione abbia le capacita necessarie per mantenere le promesse?",
-      B: "Quanto ricorda il logo dell'organizzazione dopo aver visto la campagna?",
-      C: "Quante volte ha letto un articolo sull'organizzazione nell'ultimo mese?",
-      D: "Quanto spesso riceve comunicazioni interne dal suo responsabile diretto?",
-    },
-  },
-  73: {
-    options: {
-      A: "La raccolta di dati originali progettati appositamente per il problema di ricerca.",
-      B: "L'utilizzo di dati gia raccolti da altri soggetti per finalita differenti.",
-      C: "La sola analisi dei report storici gia disponibili in azienda.",
-      D: "La rielaborazione di statistiche pubbliche senza contatto con i rispondenti.",
-    },
-  },
-  74: {
-    options: {
-      A: "L'utilizzo di dati gia esistenti, raccolti in precedenza per altri obiettivi.",
-      B: "La raccolta di risposte originali tramite interviste, survey o osservazione.",
-      C: "Una tecnica proiettiva basata su immagini e frasi da completare.",
-      D: "Un esperimento con gruppo sperimentale e gruppo di controllo.",
-    },
-  },
-  75: {
-    options: {
-      A: "Le tecniche proiettive.",
-      B: "La survey a risposta chiusa.",
-      C: "L'analisi dei dati secondari.",
-      D: "Il panel Auditel.",
-    },
-  },
-  76: {
-    options: {
-      A: "Si parte da domande generali per arrivare progressivamente a domande piu specifiche.",
-      B: "Si chiede subito al partecipante di scegliere tra alternative numeriche chiuse.",
-      C: "Si alternano domande di vendita e domande di certificazione delle audience.",
-      D: "Si evitano le domande di apertura per ridurre la durata della sessione.",
     },
   },
   78: {
@@ -2406,77 +2334,12 @@ const manualReviewOverrides = {
       D: "La costruzione del database dei contatti giornalistici.",
     },
   },
-  79: {
-    options: {
-      A: "Suddividere il contenuto in unita di analisi e categorie definite in modo replicabile.",
-      B: "Riassumere liberamente il testo senza una griglia condivisa di codifica.",
-      C: "Trasformare ogni contenuto in un valore economico equivalente.",
-      D: "Selezionare i partecipanti piu adatti a un focus group.",
-    },
-  },
-  80: {
-    options: {
-      A: "Il prodotto immediato di un'attivita, come comunicati, eventi, contenuti o uscite media.",
-      B: "Il cambiamento stabile di opinioni, atteggiamenti o comportamenti dei pubblici.",
-      C: "L'impatto finale sulle performance economiche complessive dell'organizzazione.",
-      D: "La baseline strategica usata prima dell'avvio della campagna.",
-    },
-  },
-  81: {
-    options: {
-      A: "A definire obiettivi, target, composizione del gruppo, traccia e condizioni della discussione.",
-      B: "A trasformare automaticamente le risposte dei partecipanti in percentuali generalizzabili.",
-      C: "A sostituire il ruolo del moderatore con un questionario standardizzato.",
-      D: "A calcolare il ROI della campagna prima di raccogliere i dati qualitativi.",
-    },
-  },
-  82: {
-    options: {
-      A: "La formativa serve a migliorare in corso d'opera, la sommativa a valutare risultati e valore conclusivo.",
-      B: "La formativa si usa solo dopo la campagna, la sommativa solo prima dell'implementazione.",
-      C: "La formativa riguarda le audience certificate, la sommativa riguarda i dati qualitativi.",
-      D: "La formativa misura solo il ROI, la sommativa solo il numero di comunicati prodotti.",
-    },
-  },
-  87: {
-    options: {
-      A: "Una survey somministrata direttamente a un campione definito per la ricerca.",
-      B: "Una tabella statistica gia pubblicata da un ente esterno.",
-      C: "Un report storico prodotto da una precedente campagna.",
-      D: "Una rassegna di dati amministrativi gia disponibili in azienda.",
-    },
-  },
-  88: {
-    options: {
-      A: "Il percorso di interazioni e touchpoint che accompagna il cliente dalla conoscenza al post-acquisto.",
-      B: "Il solo momento in cui il cliente paga il prodotto nel punto vendita.",
-      C: "La sequenza interna con cui l'azienda approva una campagna pubblicitaria.",
-      D: "Il calendario editoriale dei contenuti pubblicati sui canali social proprietari.",
-    },
-  },
   89: {
     options: {
       A: "La presenza e il peso delle citazioni attribuite a portavoce o rappresentanti ufficiali.",
-      B: "La velocita con cui il portavoce pronuncia il messaggio durante un'intervista.",
-      C: "Il numero di lingue parlate dal personale dell'ufficio stampa.",
-      D: "Il costo sostenuto per preparare il portavoce prima della conferenza.",
-    },
-  },
-  90: {
-    options: {
-      A: "Possono essere obsolete o poco adattabili agli obiettivi specifici della ricerca.",
-      B: "Garantiscono sempre maggiore accuratezza rispetto alle ricerche primarie.",
-      C: "Permettono di evitare qualunque interpretazione da parte del ricercatore.",
-      D: "Sono utilizzabili solo quando non esistono dati quantitativi disponibili.",
-    },
-  },
-  92: {
-    text: "Nel focus group, perche e importante evitare dinamiche che inibiscono la parola dei partecipanti?",
-    options: {
-      A: "Per raccogliere opinioni libere e ridurre il rischio che alcuni soggetti orientino o blocchino gli altri.",
-      B: "Per ottenere automaticamente un campione statisticamente rappresentativo.",
-      C: "Per trasformare la discussione qualitativa in un esperimento causale.",
-      D: "Per evitare che il moderatore debba preparare una traccia di discussione.",
+      B: "La presenza dei messaggi chiave definiti dall'organizzazione nel contenuto.",
+      C: "La centralita del soggetto citato all'interno dell'articolo analizzato.",
+      D: "La valutazione del tono favorevole, neutro o sfavorevole della copertura.",
     },
   },
   94: {
@@ -2495,60 +2358,12 @@ const manualReviewOverrides = {
       D: "Permette di dimostrare il nesso causale tra campagna e acquisto.",
     },
   },
-  100: {
-    options: {
-      A: "Il ricercatore partecipa al contesto senza dichiarare apertamente il proprio ruolo di osservatore.",
-      B: "Il ricercatore osserva il gruppo dichiarando fin dall'inizio obiettivi e metodo.",
-      C: "I partecipanti compilano un questionario anonimo senza incontrare il ricercatore.",
-      D: "Il moderatore conduce una discussione collettiva con una traccia a imbuto.",
-    },
-  },
-  101: {
-    options: {
-      A: "La necessita di verificare o approfondire i risultati con ulteriori strumenti, spesso quantitativi.",
-      B: "La possibilita di ottenere automaticamente dati rappresentativi dell'intera popolazione.",
-      C: "L'assenza di interazione tra partecipanti durante la discussione.",
-      D: "La capacita di eliminare completamente il ruolo del moderatore.",
-    },
-  },
-  102: {
-    options: {
-      A: "Trasformare dati e interpretazioni in indicazioni utili per scegliere o correggere le azioni.",
-      B: "Produrre un archivio completo di dati grezzi senza raccomandazioni operative.",
-      C: "Sostituire le decisioni manageriali con un unico indicatore automatico.",
-      D: "Misurare solo la visibilita media ottenuta nel periodo analizzato.",
-    },
-  },
-  104: {
-    options: {
-      A: "La costruzione del campione e del questionario, perche condiziona la qualita dei dati raccolti.",
-      B: "La scelta dei colori del report finale da consegnare al management.",
-      C: "La pubblicazione dei risultati prima della pulizia del dataset.",
-      D: "La conversione automatica delle risposte aperte in valore economico.",
-    },
-  },
-  84: {
-    options: {
-      A: "Analisi del contenuto della rassegna stampa.",
-      B: "Survey su campione statisticamente rappresentativo.",
-      C: "Focus group con domande a imbuto.",
-      D: "Esperimento con gruppo di controllo e gruppo sperimentale.",
-    },
-  },
   86: {
     options: {
       A: "Sono poco costose ma soffrono di obsolescenza e scarsa adattabilita agli obiettivi specifici.",
-      B: "Sono veloci da reperire ma possono non rispondere pienamente alla domanda di ricerca.",
-      C: "Sono gia disponibili ma richiedono comunque interpretazione e contestualizzazione.",
-      D: "Sono utili come punto di partenza ma raramente bastano da sole a chiudere l'analisi.",
-    },
-  },
-  89: {
-    options: {
-      A: "La presenza e il peso delle citazioni attribuite a portavoce o rappresentanti ufficiali.",
-      B: "La presenza dei messaggi chiave definiti dall'organizzazione nel contenuto.",
-      C: "La centralita del soggetto citato all'interno dell'articolo analizzato.",
-      D: "La valutazione del tono favorevole, neutro o sfavorevole della copertura.",
+      B: "Sono sempre aggiornate e perfettamente coerenti con la domanda di ricerca.",
+      C: "Eliminano la necessita di interpretare i dati nel contesto dell'organizzazione.",
+      D: "Garantiscono lo stesso livello di profondita delle interviste qualitative primarie.",
     },
   },
   97: {
@@ -2559,15 +2374,6 @@ const manualReviewOverrides = {
       D: "Sull'ordine cronologico con cui le pagine sono state scoperte dal crawler.",
     },
   },
-  101: {
-    text: "Quale tra i seguenti e un limite intrinseco dei focus group?",
-    options: {
-      A: "La necessita di verificare o approfondire i risultati con ulteriori strumenti, spesso quantitativi.",
-      B: "La possibilita di ottenere automaticamente dati rappresentativi dell'intera popolazione.",
-      C: "L'assenza di interazione tra partecipanti durante la discussione.",
-      D: "La capacita di eliminare completamente il ruolo del moderatore.",
-    },
-  },
   103: {
     options: {
       A: "Per evitare che la ricerca sia guidata casualmente dai messaggi trovati, perdendo di vista le esigenze dell'azienda.",
@@ -2576,45 +2382,12 @@ const manualReviewOverrides = {
       D: "Per sostituire gli obiettivi di business con il volume complessivo dei messaggi raccolti.",
     },
   },
-  104: {
-    options: {
-      A: "La costruzione del campione e del questionario, perche condiziona la qualita dei dati raccolti.",
-      B: "La scelta della piattaforma grafica con cui presentare i risultati al committente.",
-      C: "La definizione del titolo del report prima ancora di raccogliere le risposte.",
-      D: "La selezione degli esempi da mostrare nelle slide conclusive.",
-    },
-  },
   13: {
     options: {
       A: "Elementi che collegano gli output agli obiettivi desiderati, su cui il comunicatore ha potere.",
       B: "Indicatori economici utilizzati per stimare direttamente il valore finanziario del brand.",
       C: "Fattori esterni non controllabili che agiscono sul contesto della comunicazione.",
       D: "Misure di copertura media usate per descrivere solo la visibilita ottenuta.",
-    },
-  },
-  36: {
-    text: "Nel questionario di relazione, quale dimensione misura integrita, affidabilita e competenza percepita dell'organizzazione?",
-    options: {
-      A: "La fiducia.",
-      B: "La soddisfazione.",
-      C: "Il commitment.",
-      D: "Il controllo reciproco.",
-    },
-  },
-  86: {
-    options: {
-      A: "Sono poco costose ma soffrono di obsolescenza e scarsa adattabilita agli obiettivi specifici.",
-      B: "Sono sempre aggiornate e perfettamente coerenti con la domanda di ricerca.",
-      C: "Eliminano la necessita di interpretare i dati nel contesto dell'organizzazione.",
-      D: "Garantiscono lo stesso livello di profondita delle interviste qualitative primarie.",
-    },
-  },
-  104: {
-    options: {
-      A: "La costruzione del campione e del questionario, perche condiziona la qualita dei dati raccolti.",
-      B: "La scelta del software di impaginazione usato per presentare il report finale.",
-      C: "L'archiviazione dei questionari dopo la chiusura dell'analisi.",
-      D: "La selezione degli esempi grafici da inserire nelle slide conclusive.",
     },
   },
   198: {
@@ -2641,68 +2414,12 @@ const manualReviewOverrides = {
       D: "Non c'e alcuna differenza, sono sinonimi nel processo di analisi.",
     },
   },
-  5: {
-    options: {
-      A: "Un cambiamento nelle conoscenze, negli atteggiamenti o nei comportamenti dei pubblici.",
-      B: "Il numero di comunicati, eventi o contenuti prodotti dalla funzione comunicazione.",
-      C: "Le risorse economiche e professionali impiegate per realizzare l'attivita.",
-      D: "Il contributo finale della comunicazione alle performance complessive di business.",
-    },
-  },
-  6: {
-    options: {
-      A: "Raccogliere cio che e facile misurare ma poco utile per decidere.",
-      B: "Usare solo indicatori qualitativi anche quando servono dati quantitativi.",
-      C: "Comunicare i risultati al management prima della raccolta dei dati.",
-      D: "Confrontare gli output con gli outcome in momenti temporali diversi.",
-    },
-  },
-  16: {
-    options: {
-      A: "Il numero di uscite media ottenute rispetto ai punti percentuali di aumento della conoscenza.",
-      B: "Il budget totale investito nella campagna rispetto al numero di persone nello staff.",
-      C: "Il livello di fiducia dichiarato dagli stakeholder dopo un anno.",
-      D: "Il numero di comunicati stampa prodotti durante il periodo analizzato.",
-    },
-  },
   18: {
     options: {
       A: "Commenti, condivisioni o risposte generate dai contenuti pubblicati.",
       B: "Budget investito in campagne ADV.",
       C: "Numero di post prodotti a settimana.",
       D: "Numero di dipendenti assegnati al social media listening.",
-    },
-  },
-  20: {
-    options: {
-      A: "Il prodotto immediato delle attivita di comunicazione, come contenuti, eventi o uscite media.",
-      B: "La comprensione e il ricordo del messaggio da parte del pubblico.",
-      C: "Il cambiamento stabile di atteggiamenti o comportamenti nei pubblici.",
-      D: "Il contributo della comunicazione alle performance economiche dell'organizzazione.",
-    },
-  },
-  24: {
-    options: {
-      A: "Cio che il pubblico riceve, comprende o ricorda subito dopo l'esposizione.",
-      B: "Il prodotto operativo realizzato dalla funzione comunicazione.",
-      C: "Il cambiamento comportamentale consolidato nel lungo periodo.",
-      D: "Il ritorno economico complessivo generato dalla campagna.",
-    },
-  },
-  26: {
-    options: {
-      A: "L'integrazione di logiche ATL e BTL in una strategia che accompagna awareness e conversione.",
-      B: "La misurazione del solo trend temporale dei volumi di conversazione.",
-      C: "Il conteggio statico delle menzioni in un singolo momento di osservazione.",
-      D: "La separazione netta tra media di massa e canali orientati alla risposta diretta.",
-    },
-  },
-  28: {
-    options: {
-      A: "Un ambiente informativo personalizzato che tende a rinforzare gusti, credenze e bias dell'utente.",
-      B: "Una dashboard che raccoglie automaticamente tutti i dati social dell'organizzazione.",
-      C: "Un modello di valutazione che misura solo output e copertura media.",
-      D: "Una tecnica di ricerca qualitativa basata su domande a imbuto.",
     },
   },
   30: {
@@ -2719,46 +2436,6 @@ const manualReviewOverrides = {
       B: "Domande di apertura.",
       C: "Domande di introduzione.",
       D: "Domande finali.",
-    },
-  },
-  33: {
-    options: {
-      A: "Distribuiscono punti tra alternative che descrivono la cultura attuale e quella desiderata.",
-      B: "Indicano il numero di messaggi chiave presenti nella copertura media.",
-      C: "Attribuiscono un valore economico a ogni articolo pubblicato.",
-      D: "Selezionano automaticamente il campione statistico della survey.",
-    },
-  },
-  34: {
-    options: {
-      A: "La capacita dei membri o advocate di influenzare altri utenti nella relazione con l'organizzazione.",
-      B: "Il numero di contenuti negativi rimossi dai canali social nel periodo.",
-      C: "La quota di budget investita in campagne paid rispetto al budget totale.",
-      D: "La frequenza con cui il management approva i contenuti editoriali.",
-    },
-  },
-  37: {
-    options: {
-      A: "Il livello di servizio atteso, ad esempio il tempo massimo entro cui rispondere a una richiesta.",
-      B: "Il valore economico equivalente della copertura editoriale ottenuta.",
-      C: "Il numero di post pubblicati entro una finestra temporale standard.",
-      D: "La capacita di una fonte media di influenzarne altre nel tempo.",
-    },
-  },
-  38: {
-    options: {
-      A: "La raccomandazione o condivisione positiva dell'esperienza da parte degli utenti.",
-      B: "L'elenco cronologico delle uscite media prodotte nel periodo.",
-      C: "Il valore economico equivalente della copertura editoriale ottenuta.",
-      D: "Il numero complessivo di impression generate da un contenuto.",
-    },
-  },
-  39: {
-    options: {
-      A: "YouTube.",
-      B: "Facebook.",
-      C: "Twitter.",
-      D: "Wikipedia.",
     },
   },
   40: {
