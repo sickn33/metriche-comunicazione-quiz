@@ -41,7 +41,7 @@
     "id": "reputazione",
     "label": "Reputazione e intangibili",
     "tag": "reputazione_intangibili",
-    "description": "Identita, immagine, fiducia, capitale narrativo e reputazione"
+    "description": "Identità, immagine, fiducia, capitale narrativo e reputazione"
   },
   {
     "id": "digitale",
@@ -55,12 +55,12 @@
   {
     "id": 1,
     "section": "Fondamenti della misurazione",
-    "text": "Perche la distinzione tra output, outcome e impatto e strategicamente rilevante?",
+    "text": "Un team di comunicazione vuole apportare aggiustamenti durante la realizzazione di una campagna pubblicitaria in corso. Che tipo di valutazione sta facendo?",
     "options": {
-      "A": "Perche ciascun livello risponde a obiettivi diversi e si manifesta in tempi diversi",
-      "B": "Perche impatto e outcome di fatto coincidono nei risultati di business",
-      "C": "Perche tutti e tre vanno misurati con la stessa frequenza temporale",
-      "D": "Perche solo l'output e realmente misurabile in modo affidabile"
+      "A": "Valutazione formativa, finalizzata al miglioramento",
+      "B": "Valutazione ex ante, prima dell'implementazione",
+      "C": "Valutazione sommativa, finalizzata al controllo",
+      "D": "Valutazione di responsabilità verso gli stakeholder"
     },
     "answer": "A",
     "tags": [
@@ -71,12 +71,12 @@
   {
     "id": 2,
     "section": "Fondamenti della misurazione",
-    "text": "Un team di comunicazione vuole apportare aggiustamenti durante la realizzazione di una campagna pubblicitaria in corso. Che tipo di valutazione sta facendo?",
+    "text": "Perché la distinzione tra output, outcome e impatto e strategicamente rilevante?",
     "options": {
-      "A": "Valutazione formativa, finalizzata al miglioramento",
-      "B": "Valutazione ex ante, prima dell'implementazione",
-      "C": "Valutazione sommativa, finalizzata al controllo",
-      "D": "Valutazione di responsabilita verso gli stakeholder"
+      "A": "Perché ciascun livello risponde a obiettivi diversi e si manifesta in tempi diversi",
+      "B": "Perché impatto e outcome di fatto coincidono nei risultati di business",
+      "C": "Perché tutti e tre vanno misurati con la stessa frequenza temporale",
+      "D": "Perché solo l'output e realmente misurabile in modo affidabile"
     },
     "answer": "A",
     "tags": [
@@ -108,7 +108,7 @@
     "options": {
       "A": "A dimostrare impatto e accountability verso management e stakeholder",
       "B": "A correggere una campagna durante la sua realizzazione operativa",
-      "C": "A selezionare il metodo qualitativo piu adatto alla ricerca esplorativa",
+      "C": "A selezionare il metodo qualitativo più adatto alla ricerca esplorativa",
       "D": "A stimare la tiratura e la diffusione certificate della stampa"
     },
     "answer": "A",
@@ -125,7 +125,7 @@
     "options": {
       "A": "Un cambiamento nelle conoscenze, negli atteggiamenti o nei comportamenti dei pubblici.",
       "B": "Il numero di comunicati, eventi o contenuti prodotti dalla funzione comunicazione.",
-      "C": "Le risorse economiche e professionali impiegate per realizzare l'attivita.",
+      "C": "Le risorse economiche e professionali impiegate per realizzare l'attività.",
       "D": "Il contributo finale della comunicazione alle performance complessive di business."
     },
     "answer": "A",
@@ -139,7 +139,7 @@
     "section": "Fondamenti della misurazione",
     "text": "Cosa si intende per 'Trappola della misurazione'?",
     "options": {
-      "A": "Raccogliere cio che e facile misurare ma poco utile per decidere.",
+      "A": "Raccogliere ciò che e facile misurare ma poco utile per decidere.",
       "B": "Usare solo indicatori qualitativi anche quando servono dati quantitativi.",
       "C": "Comunicare i risultati al management prima della raccolta dei dati.",
       "D": "Confrontare gli output con gli outcome in momenti temporali diversi."
@@ -155,7 +155,7 @@
     "text": "Cosa caratterizza il modello 'Continuing' nella valutazione della comunicazione?",
     "options": {
       "A": "È un processo circolare con feedback continuo che accompagna tutte le fasi del piano.",
-      "B": "È un modello che si applica solo dopo che la comunicazione e terminata da almeno un anno.",
+      "B": "È un modello che si applica solo dopo che la comunicazione è terminata da almeno un anno.",
       "C": "È un modello statico che non ammette cambiamenti agli obiettivi iniziali.",
       "D": "Prevede l'uso di un solo indicatore economico ripetuto ogni giorno."
     },
@@ -168,11 +168,11 @@
   {
     "id": 8,
     "section": "Fondamenti della misurazione",
-    "text": "Nella catena della misurazione della comunicazione, qual e la distinzione fondamentale tra 'out-take' e 'outcome'?",
+    "text": "Nella catena della misurazione della comunicazione, qual è la distinzione fondamentale tra 'out-take' e 'outcome'?",
     "options": {
       "A": "L'out-take riguarda la ricezione e il ricordo del messaggio, mentre l'outcome indica un cambiamento cognitivo o comportamentale.",
-      "B": "L'out-take e un indicatore di impatto strategico a lungo termine, mentre l'outcome e un risultato immediato di visibilita.",
-      "C": "Non vi e differenza sostanziale, poiche entrambi appartengono alla fase di valutazione sommativa della campagna.",
+      "B": "L'out-take è un indicatore di impatto strategico a lungo termine, mentre l'outcome è un risultato immediato di visibilità.",
+      "C": "Non vi è differenza sostanziale, poiché entrambi appartengono alla fase di valutazione sommativa della campagna.",
       "D": "L'out-take misura l'efficienza dei processi interni, mentre l'outcome si riferisce esclusivamente ai prodotti realizzati."
     },
     "answer": "A",
@@ -203,7 +203,7 @@
     "text": "Quale errore riguarda l'utilizzo delle 'Impression' nelle relazioni media?",
     "options": {
       "A": "Confonderle con l'awareness (conoscenza effettiva).",
-      "B": "Considerarle inutili perche non misurano la produzione fisica.",
+      "B": "Considerarle inutili perché non misurano la produzione fisica.",
       "C": "Dimenticare di moltiplicarle per il numero di articoli pubblicati.",
       "D": "Ritenere che debbano essere validate solo da enti interni all'organizzazione."
     },
@@ -216,11 +216,11 @@
   {
     "id": 11,
     "section": "Fondamenti della misurazione",
-    "text": "Nella gerarchia degli effetti, qual e la differenza tra 'Out-take' e 'Outcome'?",
+    "text": "Nella gerarchia degli effetti, qual è la differenza tra 'Out-take' e 'Outcome'?",
     "options": {
-      "A": "L'out-take e la ricezione/ricordo, l'outcome e il cambiamento di atteggiamento/comportamento.",
-      "B": "L'out-take e un effetto di lungo periodo, l'outcome di brevissimo periodo.",
-      "C": "Non c'e differenza, sono sinonimi utilizzati in modelli diversi.",
+      "A": "L'out-take è la ricezione/ricordo, l'outcome è il cambiamento di atteggiamento/comportamento.",
+      "B": "L'out-take è un effetto di lungo periodo, l'outcome di brevissimo periodo.",
+      "C": "Non c'è differenza, sono sinonimi utilizzati in modelli diversi.",
       "D": "L'out-take riguarda la produzione, l'outcome la distribuzione."
     },
     "answer": "A",
@@ -231,9 +231,9 @@
   {
     "id": 12,
     "section": "Fondamenti della misurazione",
-    "text": "Nell'analisi qualitativa della copertura media, cosa misura la centralita del soggetto nel contenuto?",
+    "text": "Nell'analisi qualitativa della copertura media, cosa misura la centralità del soggetto nel contenuto?",
     "options": {
-      "A": "La centralita o il rilievo dato al soggetto all'interno del pezzo (es. se e protagonista o citato marginalmente).",
+      "A": "La centralità o il rilievo dato al soggetto all'interno del pezzo (es. se e protagonista o citato marginalmente).",
       "B": "Il numero totale di citazioni del brand all'interno di un dataset.",
       "C": "La presenza di messaggi chiave predefiniti dall'ufficio stampa.",
       "D": "La percentuale di contenuti favorevoli sul totale della copertura."
@@ -252,7 +252,7 @@
       "A": "Elementi che collegano gli output agli obiettivi desiderati, su cui il comunicatore ha potere.",
       "B": "Indicatori economici utilizzati per stimare direttamente il valore finanziario del brand.",
       "C": "Fattori esterni non controllabili che agiscono sul contesto della comunicazione.",
-      "D": "Misure di copertura media usate per descrivere solo la visibilita ottenuta."
+      "D": "Misure di copertura media usate per descrivere solo la visibilità ottenuta."
     },
     "answer": "A",
     "tags": [
@@ -262,12 +262,12 @@
   {
     "id": 14,
     "section": "Fondamenti della misurazione",
-    "text": "Nelle ricerche qualitative, perche i risultati non sono considerati 'generalizzabili'?",
+    "text": "Nelle ricerche qualitative, perché i risultati non sono considerati 'generalizzabili'?",
     "options": {
-      "A": "Perche mirano a esplorare la soggettivita e le esperienze uniche dei partecipanti.",
-      "B": "Perche la visione della realta proposta e di tipo puramente deterministico.",
-      "C": "Perche si basano su campioni statistici troppo ampi e dispersivi.",
-      "D": "Perche vengono condotte esclusivamente attraverso l'uso di dati secondari."
+      "A": "Perché mirano a esplorare la soggettività e le esperienze uniche dei partecipanti.",
+      "B": "Perché la visione della realtà proposta è di tipo puramente deterministico.",
+      "C": "Perché si basano su campioni statistici troppo ampi e dispersivi.",
+      "D": "Perché vengono condotte esclusivamente attraverso l'uso di dati secondari."
     },
     "answer": "A",
     "tags": [
@@ -293,7 +293,7 @@
   {
     "id": 16,
     "section": "Fondamenti della misurazione",
-    "text": "Quale delle seguenti e una misura di efficienza di tipo 'Output/Outcome'?",
+    "text": "Quale delle seguenti è una misura di efficienza di tipo 'Output/Outcome'?",
     "options": {
       "A": "Il numero di uscite media ottenute rispetto ai punti percentuali di aumento della conoscenza.",
       "B": "Il budget totale investito nella campagna rispetto al numero di persone nello staff.",
@@ -310,7 +310,7 @@
   {
     "id": 17,
     "section": "Fondamenti della misurazione",
-    "text": "Quale criterio di selezione delle fonti si riferisce alla capacita di una fonte di influenzarne altre o raggiungere molte persone?",
+    "text": "Quale criterio di selezione delle fonti si riferisce alla capacità di una fonte di influenzarne altre o raggiungere molte persone?",
     "options": {
       "A": "Criterio di Rilevanza.",
       "B": "Criterio Tematico.",
@@ -325,7 +325,7 @@
   {
     "id": 18,
     "section": "Fondamenti della misurazione",
-    "text": "Quale tra questi e un esempio di 'Metrica di Interazione'?",
+    "text": "Quale tra questi è un esempio di 'Metrica di Interazione'?",
     "options": {
       "A": "Commenti, condivisioni o risposte generate dai contenuti pubblicati.",
       "B": "Budget investito in campagne ADV.",
@@ -343,7 +343,7 @@
   {
     "id": 19,
     "section": "Fondamenti della misurazione",
-    "text": "Quale criterio di selezione puo sostituire o accoppiarsi al criterio Territoriale?",
+    "text": "Quale criterio di selezione può sostituire o accoppiarsi al criterio Territoriale?",
     "options": {
       "A": "Criterio Linguistico.",
       "B": "Criterio Semantico.",
@@ -361,7 +361,7 @@
     "section": "Fondamenti della misurazione",
     "text": "Nella misurazione della comunicazione, cosa si intende per 'Output'?",
     "options": {
-      "A": "Il prodotto immediato delle attivita di comunicazione, come contenuti, eventi o uscite media.",
+      "A": "Il prodotto immediato delle attività di comunicazione, come contenuti, eventi o uscite media.",
       "B": "La comprensione e il ricordo del messaggio da parte del pubblico.",
       "C": "Il cambiamento stabile di atteggiamenti o comportamenti nei pubblici.",
       "D": "Il contributo della comunicazione alle performance economiche dell'organizzazione."
@@ -374,7 +374,7 @@
   {
     "id": 21,
     "section": "Fondamenti della misurazione",
-    "text": "Quale tra i seguenti e considerato un 'Outcome' comportamentale?",
+    "text": "Quale tra i seguenti è considerato un 'Outcome' comportamentale?",
     "options": {
       "A": "La partecipazione effettiva di un utente a un evento aziendale.",
       "B": "Il numero di articoli pubblicati su una testata nazionale.",
@@ -392,7 +392,7 @@
     "section": "Fondamenti della misurazione",
     "text": "Cosa indica l'indicatore 'Prominence' nell'analisi qualitativa dei media?",
     "options": {
-      "A": "La centralita dell'organizzazione o del soggetto all'interno dell'articolo.",
+      "A": "La centralità dell'organizzazione o del soggetto all'interno dell'articolo.",
       "B": "L'autorevolezza della testata giornalistica che pubblica la notizia.",
       "C": "La percentuale di commenti positivi rispetto a quelli negativi.",
       "D": "Il numero totale di menzioni di un brand in un mese."
@@ -423,7 +423,7 @@
     "section": "Fondamenti della misurazione",
     "text": "Cosa si intende per 'Out-take' nella catena della misurazione?",
     "options": {
-      "A": "Cio che il pubblico riceve, comprende o ricorda subito dopo l'esposizione.",
+      "A": "Ciò che il pubblico riceve, comprende o ricorda subito dopo l'esposizione.",
       "B": "Il prodotto operativo realizzato dalla funzione comunicazione.",
       "C": "Il cambiamento comportamentale consolidato nel lungo periodo.",
       "D": "Il ritorno economico complessivo generato dalla campagna."
@@ -467,9 +467,9 @@
   {
     "id": 27,
     "section": "Fondamenti della misurazione",
-    "text": "Quale dimensione della qualita della comunicazione, nel modello di Vos e Schoemaker, riguarda la capacita di rispondere prontamente agli stimoli dell'ambiente?",
+    "text": "Quale dimensione della qualità della comunicazione, nel modello di Vos e Schoemaker, riguarda la capacità di rispondere prontamente agli stimoli dell'ambiente?",
     "options": {
-      "A": "Reattivita",
+      "A": "Reattività",
       "B": "Chiarezza",
       "C": "Coerenza",
       "D": "Efficienza"
@@ -501,7 +501,7 @@
   {
     "id": 29,
     "section": "Fondamenti della misurazione",
-    "text": "Quale tipo di misurazione del livello formativo valuta se un'attivita ha raggiunto i risultati utilizzando risorse adeguate (es. costo per partecipante)?",
+    "text": "Quale tipo di misurazione del livello formativo valuta se un'attività ha raggiunto i risultati utilizzando risorse adeguate (es. costo per partecipante)?",
     "options": {
       "A": "Misure di efficienza",
       "B": "Misure di adeguatezza",
@@ -537,7 +537,7 @@
     "options": {
       "A": "La soddisfazione dei dipendenti verso la comunicazione interna su otto dimensioni.",
       "B": "Il grado di apprezzamento dei giornalisti verso i comunicati stampa ricevuti.",
-      "C": "La qualita visiva del logo aziendale percepita dagli stakeholder.",
+      "C": "La qualità visiva del logo aziendale percepita dagli stakeholder.",
       "D": "La soddisfazione dei clienti verso i prodotti dell'azienda."
     },
     "answer": "A",
@@ -586,7 +586,7 @@
     "section": "Fondamenti della misurazione",
     "text": "Nel contesto dell'Advocacy, cosa misura l'Indice di Influenza dei membri?",
     "options": {
-      "A": "La capacita dei membri o advocate di influenzare altri utenti nella relazione con l'organizzazione.",
+      "A": "La capacità dei membri o advocate di influenzare altri utenti nella relazione con l'organizzazione.",
       "B": "Il numero di contenuti negativi rimossi dai canali social nel periodo.",
       "C": "La quota di budget investita in campagne paid rispetto al budget totale.",
       "D": "La frequenza con cui il management approva i contenuti editoriali."
@@ -601,11 +601,11 @@
   {
     "id": 35,
     "section": "Fondamenti della misurazione",
-    "text": "Nella tecnica delle domande 'a imbuto', come e strutturata la traccia del moderatore?",
+    "text": "Nella tecnica delle domande 'a imbuto', come è strutturata la traccia del moderatore?",
     "options": {
       "A": "Si parte da uno schema generale per arrivare a temi molto specifici e strutturati.",
-      "B": "Si pongono subito le domande piu difficili per testare la resistenza del gruppo.",
-      "C": "Si estraggono le domande a sorte da un contenitore per garantire la casualita.",
+      "B": "Si pongono subito le domande più difficili per testare la resistenza del gruppo.",
+      "C": "Si estraggono le domande a sorte da un contenitore per garantire la casualità.",
       "D": "Tutte le domande devono essere poste contemporaneamente all'inizio."
     },
     "answer": "A",
@@ -616,7 +616,7 @@
   {
     "id": 36,
     "section": "Fondamenti della misurazione",
-    "text": "Nel questionario di relazione, quale dimensione misura integrita, affidabilita e competenza percepita dell'organizzazione?",
+    "text": "Nel questionario di relazione, quale dimensione misura integrità, affidabilità e competenza percepita dell'organizzazione?",
     "options": {
       "A": "La fiducia.",
       "B": "La soddisfazione.",
@@ -637,7 +637,7 @@
       "A": "Il livello di servizio atteso, ad esempio il tempo massimo entro cui rispondere a una richiesta.",
       "B": "Il valore economico equivalente della copertura editoriale ottenuta.",
       "C": "Il numero di post pubblicati entro una finestra temporale standard.",
-      "D": "La capacita di una fonte media di influenzarne altre nel tempo."
+      "D": "La capacità di una fonte media di influenzarne altre nel tempo."
     },
     "answer": "A",
     "tags": [
@@ -649,7 +649,7 @@
   {
     "id": 38,
     "section": "Fondamenti della misurazione",
-    "text": "Quale delle seguenti e una 'Outcome Metric' legata alla promozione dell'Advocacy?",
+    "text": "Quale delle seguenti è una 'Outcome Metric' legata alla promozione dell'Advocacy?",
     "options": {
       "A": "La raccomandazione o condivisione positiva dell'esperienza da parte degli utenti.",
       "B": "L'elenco cronologico delle uscite media prodotte nel periodo.",
@@ -664,7 +664,7 @@
   {
     "id": 39,
     "section": "Fondamenti della misurazione",
-    "text": "Quale piattaforma nel 2005 ha introdotto il video come linguaggio dominante della socialita digitale?",
+    "text": "Quale piattaforma nel 2005 ha introdotto il video come linguaggio dominante della socialità digitale?",
     "options": {
       "A": "YouTube.",
       "B": "Facebook.",
@@ -680,12 +680,12 @@
   {
     "id": 40,
     "section": "Fondamenti della misurazione",
-    "text": "Secondo Manuel Castells, come comunica e consuma la 'societa in Rete'?",
+    "text": "Secondo Manuel Castells, come comunica e consuma la 'società in Rete'?",
     "options": {
       "A": "Attraverso processi reticolari che diffondono rapidamente simboli, conoscenze e contenuti.",
       "B": "Attraverso una comunicazione prevalentemente unidirezionale controllata dai media di massa.",
       "C": "Attraverso canali separati in cui produzione e consumo restano rigidamente distinti.",
-      "D": "Attraverso processi locali che limitano lo scambio di informazioni tra comunita."
+      "D": "Attraverso processi locali che limitano lo scambio di informazioni tra comunità."
     },
     "answer": "A",
     "tags": [
@@ -697,7 +697,7 @@
   {
     "id": 41,
     "section": "Fondamenti della misurazione",
-    "text": "Nel 2026, qual e la strategia suggerita per gestire la varieta di dispositivi?",
+    "text": "Nel 2026, qual è la strategia suggerita per gestire la varietà di dispositivi?",
     "options": {
       "A": "Strategia multi-device reale, considerando anche il ruolo ancora rilevante del desktop.",
       "B": "Strategia mobile-only, ignorando gli altri dispositivi di accesso.",
@@ -713,10 +713,10 @@
   {
     "id": 42,
     "section": "Fondamenti della misurazione",
-    "text": "Perche le aziende tracciano il 'Tasso di non risposta'?",
+    "text": "Quale di queste affermazioni sulla 'Disinformazione' nelle filter bubble è corretta?",
     "options": {
       "A": "Per capire quante richieste o domande degli utenti restano senza risposta.",
-      "B": "Per misurare quante persone non sono state esposte a una pubblicita.",
+      "B": "Per misurare quante persone non sono state esposte a una pubblicità.",
       "C": "Per stimare il numero di contenuti non pubblicati nel calendario editoriale.",
       "D": "Per calcolare la differenza tra follower acquisiti e follower persi."
     },
@@ -730,9 +730,9 @@
   {
     "id": 43,
     "section": "Fondamenti della misurazione",
-    "text": "Quale di queste affermazioni sulla 'Disinformazione' nelle filter bubble e corretta?",
+    "text": "Che cosa identifica l'acronimo HTML?",
     "options": {
-      "A": "L'utente puo essere piu vulnerabile a contenuti falsi se coerenti con i propri bias.",
+      "A": "L'utente può essere più vulnerabile a contenuti falsi se coerenti con i propri bias.",
       "B": "Le filter bubble riducono sempre la circolazione di contenuti non verificati.",
       "C": "La disinformazione riguarda solo contenuti esterni agli ambienti social.",
       "D": "Le notizie false perdono efficacia quando sono allineate alle credenze pregresse."
@@ -748,7 +748,7 @@
   {
     "id": 44,
     "section": "Fondamenti della misurazione",
-    "text": "Che cosa identifica l'acronimo HTML?",
+    "text": "Nel monitoraggio dei media tradizionali, cosa indica l'indicatore di 'Prominence'?",
     "options": {
       "A": "HyperText Markup Language.",
       "B": "Hyper Transfer Media Logic.",
@@ -763,23 +763,22 @@
   {
     "id": 45,
     "section": "Fondamenti della misurazione",
-    "text": "Nel monitoraggio dei media tradizionali, cosa indica l'indicatore di 'Prominence'?",
+    "text": "Nella piramide dell'analisi digitale (derivata da Maslow), perché l'attività di fornire 'Recommendations' è considerata il vertice di maggior valore?",
     "options": {
-      "A": "Quanto il soggetto dell'analisi e centrale nel pezzo (es. presenza nel titolo o nelle parti visibili).",
-      "B": "La percentuale di articoli che incorporano correttamente i messaggi chiave aziendali.",
-      "C": "Il numero di volte che un portavoce aziendale viene citato testualmente.",
-      "D": "Il costo equivalente dello spazio pubblicitario occupato dall'articolo."
+      "A": "Perché trasforma l'informazione interpretata in indicazioni strategiche per i decisori, compito dell'analista umano.",
+      "B": "Perché è l'unica fase che può essere completamente automatizzata dalle piattaforme di analisi.",
+      "C": "Perché rappresenta il volume più alto di dati grezzi raccolti dal sistema.",
+      "D": "Perché serve esclusivamente a misurare il numero di download di un'applicazione."
     },
     "answer": "A",
     "tags": [
-      "fondamenti",
-      "social_roi"
+      "fondamenti"
     ]
   },
   {
     "id": 46,
     "section": "Ricerca in comunicazione",
-    "text": "Un team vuole esplorare un fenomeno poco noto e formulare le prime ipotesi interpretative. Quale tipo di metodo e piu adatto?",
+    "text": "Un team vuole esplorare un fenomeno poco noto e formulare le prime ipotesi interpretative. Quale tipo di metodo e più adatto?",
     "options": {
       "A": "Metodi qualitativi",
       "B": "Survey su grandi campioni statisticamente rappresentativi",
@@ -795,7 +794,7 @@
   {
     "id": 47,
     "section": "Ricerca in comunicazione",
-    "text": "Cosa e il neuromarketing?",
+    "text": "Cosa è il neuromarketing?",
     "options": {
       "A": "Un campo che integra neuroscienze, psicologia cognitiva e marketing",
       "B": "Una metodologia di calcolo del ROI delle campagne pubblicitarie",
@@ -812,7 +811,7 @@
   {
     "id": 48,
     "section": "Ricerca in comunicazione",
-    "text": "Lo strumento principale all'interno delle ricerche di tipo quantitativo e:",
+    "text": "Lo strumento principale all'interno delle ricerche di tipo quantitativo è:",
     "options": {
       "A": "La survey",
       "B": "L'osservazione partecipante",
@@ -861,12 +860,12 @@
   {
     "id": 51,
     "section": "Ricerca in comunicazione",
-    "text": "Nel contesto della ricerca valutativa, perche l'attivita e definita 'manageriale integrata'?",
+    "text": "Nel contesto della ricerca valutativa, perché l'attività è definita 'manageriale integrata'?",
     "options": {
-      "A": "Perche si intreccia con le fasi di progettazione, pianificazione e attuazione dell'organizzazione.",
-      "B": "Perche deve essere condotta esclusivamente dai top manager aziendali.",
-      "C": "Perche mira unicamente al controllo delle performance del personale.",
-      "D": "Perche richiede l'utilizzo di software gestionali di alta complessita."
+      "A": "Perché si intreccia con le fasi di progettazione, pianificazione e attuazione dell'organizzazione.",
+      "B": "Perché deve essere condotta esclusivamente dai top manager aziendali.",
+      "C": "Perché mira unicamente al controllo delle performance del personale.",
+      "D": "Perché richiede l'utilizzo di software gestionali di alta complessità."
     },
     "answer": "A",
     "tags": [
@@ -877,7 +876,7 @@
   {
     "id": 52,
     "section": "Ricerca in comunicazione",
-    "text": "Nelle tecniche proiettive, l'obiettivo e sollecitare l'intervistato a descrivere sensazioni profonde mediante:",
+    "text": "Nelle tecniche proiettive, l'obiettivo è sollecitare l'intervistato a descrivere sensazioni profonde mediante:",
     "options": {
       "A": "Stimoli mascherati che fanno leva sul subconscio.",
       "B": "Domande dirette sulla soddisfazione del prodotto.",
@@ -908,7 +907,7 @@
   {
     "id": 54,
     "section": "Ricerca in comunicazione",
-    "text": "Nelle indagini qualitative, l'intervista in profondita ha il vantaggio di:",
+    "text": "Nelle indagini qualitative, l'intervista in profondità ha il vantaggio di:",
     "options": {
       "A": "Approfondire vissuti, motivazioni e significati individuali senza la pressione del gruppo.",
       "B": "Ottenere stime statisticamente rappresentative dell'intera popolazione.",
@@ -927,8 +926,8 @@
     "text": "Cosa distingue la ricerca 'causale' dagli approcci qualitativo e quantitativo nel monitoraggio degli effetti comunicativi?",
     "options": {
       "A": "La verifica sperimentale del nesso tra l'azione comunicativa e l'effetto osservato tramite gruppi di controllo.",
-      "B": "La capacita di esplorare le motivazioni profonde e i vissuti inconsci dei consumatori.",
-      "C": "Il ricorso esclusivo a dati secondari gia esistenti all'interno dei database aziendali.",
+      "B": "La capacità di esplorare le motivazioni profonde e i vissuti inconsci dei consumatori.",
+      "C": "Il ricorso esclusivo a dati secondari già esistenti all'interno dei database aziendali.",
       "D": "L'uso di campioni statisticamente rappresentativi dell'intera popolazione nazionale."
     },
     "answer": "A",
@@ -955,11 +954,11 @@
   {
     "id": 57,
     "section": "Ricerca in comunicazione",
-    "text": "Nella fase di ricerca qualitativa, perche e consigliabile evitare 'rapporti gerarchici diretti' all'interno di un focus group?",
+    "text": "Nella fase di ricerca qualitativa, perché è consigliabile evitare 'rapporti gerarchici diretti' all'interno di un focus group?",
     "options": {
       "A": "Per evitare che l'interazione sia condizionata e che i partecipanti non siano liberi di esprimersi.",
       "B": "Per assicurare che tutti i partecipanti abbiano lo stesso ruolo formale nell'organizzazione.",
-      "C": "Per aumentare la rappresentativita statistica del gruppo rispetto alla popolazione.",
+      "C": "Per aumentare la rappresentatività statistica del gruppo rispetto alla popolazione.",
       "D": "Per facilitare la trasformazione delle risposte qualitative in frequenze numeriche."
     },
     "answer": "A",
@@ -970,10 +969,10 @@
   {
     "id": 58,
     "section": "Ricerca in comunicazione",
-    "text": "Quale tra i seguenti e un punto di forza specifico del Focus Group rispetto all'intervista individuale?",
+    "text": "Quale tra i seguenti è un punto di forza specifico del Focus Group rispetto all'intervista individuale?",
     "options": {
       "A": "L'interazione tra partecipanti fa emergere confronti, accordi, conflitti e significati condivisi.",
-      "B": "La possibilita di ottenere stime percentuali generalizzabili all'intera popolazione.",
+      "B": "La possibilità di ottenere stime percentuali generalizzabili all'intera popolazione.",
       "C": "Il controllo sperimentale delle variabili per dimostrare un nesso causale.",
       "D": "L'assenza di influenza reciproca tra partecipanti durante la raccolta delle risposte."
     },
@@ -1006,8 +1005,8 @@
     "options": {
       "A": "A sollecitare le sensazioni emotive profonde attraverso stimoli mascherati.",
       "B": "A misurare la portata potenziale (reach) di una campagna pubblicitaria.",
-      "C": "A garantire la replicabilita scientifica dei risultati su larga scala.",
-      "D": "A stabilire il nesso di causalita tra spesa in comunicazione e aumento vendite."
+      "C": "A garantire la replicabilità scientifica dei risultati su larga scala.",
+      "D": "A stabilire il nesso di causalità tra spesa in comunicazione e aumento vendite."
     },
     "answer": "A",
     "tags": [
@@ -1037,7 +1036,7 @@
     "text": "Quale funzione svolge principalmente la ricerca valutativa nel contesto organizzativo?",
     "options": {
       "A": "Supportare il processo decisionale comprendendo i fenomeni e definendo azioni correttive.",
-      "B": "Sostituire la creativita del comunicatore con modelli statistici predittivi a lungo termine.",
+      "B": "Sostituire la creatività del comunicatore con modelli statistici predittivi a lungo termine.",
       "C": "Eliminare l'incertezza assoluta nelle campagne di comunicazione attraverso il monitoraggio dei media.",
       "D": "Fornire una giustificazione numerica a posteriori per le spese sostenute dal dipartimento di comunicazione."
     },
@@ -1050,7 +1049,7 @@
   {
     "id": 63,
     "section": "Ricerca in comunicazione",
-    "text": "Nello svolgimento di un focus group, qual e la funzione principale dell'osservatore?",
+    "text": "Nello svolgimento di un focus group, qual è la funzione principale dell'osservatore?",
     "options": {
       "A": "Annotare le dinamiche verbali e non verbali e trascrivere i commenti salienti.",
       "B": "Garantire che tutti i partecipanti ricevano l'incentivo economico a fine seduta.",
@@ -1082,7 +1081,7 @@
   {
     "id": 65,
     "section": "Ricerca in comunicazione",
-    "text": "Nel focus group, perche la composizione del gruppo va progettata prima della sessione?",
+    "text": "Nel focus group, perché la composizione del gruppo va progettata prima della sessione?",
     "options": {
       "A": "Per favorire un confronto utile, coerente con gli obiettivi conoscitivi e non condizionato da squilibri eccessivi.",
       "B": "Per rendere il gruppo statisticamente rappresentativo dell'intera popolazione nazionale.",
@@ -1114,7 +1113,7 @@
   {
     "id": 67,
     "section": "Ricerca in comunicazione",
-    "text": "Quale di questi strumenti e tipico della ricerca quantitativa?",
+    "text": "Quale di questi strumenti è tipico della ricerca quantitativa?",
     "options": {
       "A": "La survey.",
       "B": "Il focus group.",
@@ -1146,7 +1145,7 @@
   {
     "id": 69,
     "section": "Ricerca in comunicazione",
-    "text": "Nel focus group su Poste Italiane, quale comportamento e stato interpretato come segnale di percezione di marginalita organizzativa?",
+    "text": "Nel focus group su Poste Italiane, quale comportamento e stato interpretato come segnale di percezione di marginalità organizzativa?",
     "options": {
       "A": "La tendenza dei postini a collocarsi in posizione marginale nel setting fisico (tavolo).",
       "B": "La richiesta di uscire prima della fine della sessione di due ore.",
@@ -1164,8 +1163,8 @@
     "text": "Quale vantaggio offre il Focus Group rispetto a un questionario quantitativo nella fase di valutazione ex-ante?",
     "options": {
       "A": "L'interazione tra i partecipanti genera idee e approfondimenti impossibili in un'intervista singola.",
-      "B": "La velocita di elaborazione dei dati numerici tramite sistemi CAPI.",
-      "C": "La possibilita di ottenere dati statisticamente rappresentativi dell'intera popolazione.",
+      "B": "La velocità di elaborazione dei dati numerici tramite sistemi CAPI.",
+      "C": "La possibilità di ottenere dati statisticamente rappresentativi dell'intera popolazione.",
       "D": "L'eliminazione totale della figura del moderatore per evitare bias."
     },
     "answer": "A",
@@ -1179,7 +1178,7 @@
     "section": "Ricerca in comunicazione",
     "text": "Quale di queste domande in un questionario misura la 'Competenza' dell'organizzazione?",
     "options": {
-      "A": "Quanto ritiene che l'organizzazione abbia le capacita necessarie per mantenere le promesse?",
+      "A": "Quanto ritiene che l'organizzazione abbia le capacità necessarie per mantenere le promesse?",
       "B": "Quanto ricorda il logo dell'organizzazione dopo aver visto la campagna?",
       "C": "Quante volte ha letto un articolo sull'organizzazione nell'ultimo mese?",
       "D": "Quanto spesso riceve comunicazioni interne dal suo responsabile diretto?"
@@ -1209,11 +1208,11 @@
   {
     "id": 73,
     "section": "Ricerca in comunicazione",
-    "text": "Quale delle seguenti e una caratteristica distintiva delle 'Ricerche Primarie'?",
+    "text": "Quale delle seguenti è una caratteristica distintiva delle 'Ricerche Primarie'?",
     "options": {
       "A": "La raccolta di dati originali progettati appositamente per il problema di ricerca.",
-      "B": "L'utilizzo di dati gia raccolti da altri soggetti per finalita differenti.",
-      "C": "La sola analisi dei report storici gia disponibili in azienda.",
+      "B": "L'utilizzo di dati già raccolti da altri soggetti per finalità differenti.",
+      "C": "La sola analisi dei report storici già disponibili in azienda.",
       "D": "La rielaborazione di statistiche pubbliche senza contatto con i rispondenti."
     },
     "answer": "A",
@@ -1226,7 +1225,7 @@
     "section": "Ricerca in comunicazione",
     "text": "Nella ricerca valutativa, cosa si intende per 'ricerche secondarie'?",
     "options": {
-      "A": "L'utilizzo di dati gia esistenti, raccolti in precedenza per altri obiettivi.",
+      "A": "L'utilizzo di dati già esistenti, raccolti in precedenza per altri obiettivi.",
       "B": "La raccolta di risposte originali tramite interviste, survey o osservazione.",
       "C": "Una tecnica proiettiva basata su immagini e frasi da completare.",
       "D": "Un esperimento con gruppo sperimentale e gruppo di controllo."
@@ -1240,7 +1239,7 @@
   {
     "id": 75,
     "section": "Ricerca in comunicazione",
-    "text": "Quale strumento di ricerca qualitativa e piu indicato per far emergere sensazioni emotive profonde attraverso stimoli mascherati?",
+    "text": "Quale strumento di ricerca qualitativa è più indicato per far emergere sensazioni emotive profonde attraverso stimoli mascherati?",
     "options": {
       "A": "Le tecniche proiettive.",
       "B": "La survey a risposta chiusa.",
@@ -1259,7 +1258,7 @@
     "section": "Ricerca in comunicazione",
     "text": "Cosa caratterizza la tecnica delle domande 'a imbuto' in un focus group?",
     "options": {
-      "A": "Si parte da domande generali per arrivare progressivamente a domande piu specifiche.",
+      "A": "Si parte da domande generali per arrivare progressivamente a domande più specifiche.",
       "B": "Si chiede subito al partecipante di scegliere tra alternative numeriche chiuse.",
       "C": "Si alternano domande di vendita e domande di certificazione delle audience.",
       "D": "Si evitano le domande di apertura per ridurre la durata della sessione."
@@ -1288,7 +1287,7 @@
   {
     "id": 78,
     "section": "Ricerca in comunicazione",
-    "text": "Quale tra queste e una fase della valutazione degli outcome nel modello PRE?",
+    "text": "Quale tra queste è una fase della valutazione degli outcome nel modello PRE?",
     "options": {
       "A": "La valutazione finale del cambiamento prodotto sui pubblici rispetto agli obiettivi.",
       "B": "Il monitoraggio operativo delle uscite stampa durante l'implementazione.",
@@ -1306,10 +1305,10 @@
     "section": "Ricerca in comunicazione",
     "text": "Nell'analisi del contenuto, cosa si intende per 'scomposizione'?",
     "options": {
-      "A": "Suddividere il contenuto in unita di analisi e categorie definite in modo replicabile.",
+      "A": "Suddividere il contenuto in unità di analisi e categorie definite in modo replicabile.",
       "B": "Riassumere liberamente il testo senza una griglia condivisa di codifica.",
       "C": "Trasformare ogni contenuto in un valore economico equivalente.",
-      "D": "Selezionare i partecipanti piu adatti a un focus group."
+      "D": "Selezionare i partecipanti più adatti a un focus group."
     },
     "answer": "A",
     "tags": [
@@ -1321,7 +1320,7 @@
     "section": "Ricerca in comunicazione",
     "text": "Cosa si intende per 'Output' in una ricerca valutativa?",
     "options": {
-      "A": "Il prodotto immediato di un'attivita, come comunicati, eventi, contenuti o uscite media.",
+      "A": "Il prodotto immediato di un'attività, come comunicati, eventi, contenuti o uscite media.",
       "B": "Il cambiamento stabile di opinioni, atteggiamenti o comportamenti dei pubblici.",
       "C": "L'impatto finale sulle performance economiche complessive dell'organizzazione.",
       "D": "La baseline strategica usata prima dell'avvio della campagna."
@@ -1334,7 +1333,7 @@
   {
     "id": 81,
     "section": "Ricerca in comunicazione",
-    "text": "Nel focus group, qual e lo scopo della fase di 'Pianificazione'?",
+    "text": "Nel focus group, qual è lo scopo della fase di 'Pianificazione'?",
     "options": {
       "A": "A definire obiettivi, target, composizione del gruppo, traccia e condizioni della discussione.",
       "B": "A trasformare automaticamente le risposte dei partecipanti in percentuali generalizzabili.",
@@ -1366,11 +1365,11 @@
   {
     "id": 83,
     "section": "Ricerca in comunicazione",
-    "text": "Nella ricerca qualitativa, qual e il principale limite metodologico?",
+    "text": "Nella ricerca qualitativa, qual è il principale limite metodologico?",
     "options": {
       "A": "I risultati non sono generalizzabili all'intera popolazione con caratteristiche analoghe.",
-      "B": "L'incapacita di esplorare situazioni poco note o nuove ipotesi interpretative.",
-      "C": "L'impossibilita di far emergere la soggettivita degli stakeholder coinvolti.",
+      "B": "L'incapacità di esplorare situazioni poco note o nuove ipotesi interpretative.",
+      "C": "L'impossibilità di far emergere la soggettività degli stakeholder coinvolti.",
       "D": "L'eccessivo costo economico rispetto alle grandi indagini campionarie quantitative."
     },
     "answer": "A",
@@ -1396,11 +1395,11 @@
   {
     "id": 85,
     "section": "Ricerca in comunicazione",
-    "text": "Nella ricerca valutativa, perche e fondamentale definire dei 'Benchmark'?",
+    "text": "Nella ricerca valutativa, perché è fondamentale definire dei 'Benchmark'?",
     "options": {
       "A": "Per avere delle pietre di paragone rispetto alle quali valutare scostamenti e risultati.",
       "B": "Per obbligare il management a non cambiare mai la strategia di comunicazione.",
-      "C": "Per ridurre i costi della valutazione eliminando la necessita di campionamento.",
+      "C": "Per ridurre i costi della valutazione eliminando la necessità di campionamento.",
       "D": "Per garantire l'anonimato delle aziende concorrenti durante l'analisi."
     },
     "answer": "A",
@@ -1413,12 +1412,12 @@
   {
     "id": 86,
     "section": "Ricerca in comunicazione",
-    "text": "Perche le ricerche secondarie sono considerate vantaggiose ma limitate?",
+    "text": "Quale di questi metodi di raccolta dati è considerato 'Primario'?",
     "options": {
-      "A": "Sono poco costose ma soffrono di obsolescenza e scarsa adattabilita agli obiettivi specifici.",
+      "A": "Sono poco costose ma soffrono di obsolescenza e scarsa adattabilità agli obiettivi specifici.",
       "B": "Sono sempre aggiornate e perfettamente coerenti con la domanda di ricerca.",
-      "C": "Eliminano la necessita di interpretare i dati nel contesto dell'organizzazione.",
-      "D": "Garantiscono lo stesso livello di profondita delle interviste qualitative primarie."
+      "C": "Eliminano la necessità di interpretare i dati nel contesto dell'organizzazione.",
+      "D": "Garantiscono lo stesso livello di profondità delle interviste qualitative primarie."
     },
     "answer": "A",
     "tags": [
@@ -1429,12 +1428,12 @@
   {
     "id": 87,
     "section": "Ricerca in comunicazione",
-    "text": "Quale di questi metodi di raccolta dati e considerato 'Primario'?",
+    "text": "Cosa si intende per 'Customer Journey' nel contesto della comunicazione?",
     "options": {
       "A": "Una survey somministrata direttamente a un campione definito per la ricerca.",
-      "B": "Una tabella statistica gia pubblicata da un ente esterno.",
+      "B": "Una tabella statistica già pubblicata da un ente esterno.",
       "C": "Un report storico prodotto da una precedente campagna.",
-      "D": "Una rassegna di dati amministrativi gia disponibili in azienda."
+      "D": "Una rassegna di dati amministrativi già disponibili in azienda."
     },
     "answer": "A",
     "tags": [
@@ -1444,7 +1443,7 @@
   {
     "id": 88,
     "section": "Ricerca in comunicazione",
-    "text": "Cosa si intende per 'Customer Journey' nel contesto della comunicazione?",
+    "text": "Cosa indica il parametro 'Spoke person' in un'analisi qualitativa?",
     "options": {
       "A": "Il percorso di interazioni e touchpoint che accompagna il cliente dalla conoscenza al post-acquisto.",
       "B": "Il solo momento in cui il cliente paga il prodotto nel punto vendita.",
@@ -1460,11 +1459,11 @@
   {
     "id": 89,
     "section": "Ricerca in comunicazione",
-    "text": "Cosa indica il parametro 'Spoke person' in un'analisi qualitativa?",
+    "text": "Nel contesto della ricerca valutativa, qual è il principale limite delle 'Ricerche Secondarie'?",
     "options": {
       "A": "La presenza e il peso delle citazioni attribuite a portavoce o rappresentanti ufficiali.",
       "B": "La presenza dei messaggi chiave definiti dall'organizzazione nel contenuto.",
-      "C": "La centralita del soggetto citato all'interno dell'articolo analizzato.",
+      "C": "La centralità del soggetto citato all'interno dell'articolo analizzato.",
       "D": "La valutazione del tono favorevole, neutro o sfavorevole della copertura."
     },
     "answer": "A",
@@ -1477,7 +1476,7 @@
   {
     "id": 90,
     "section": "Ricerca in comunicazione",
-    "text": "Nel contesto della ricerca valutativa, qual e il principale limite delle 'Ricerche Secondarie'?",
+    "text": "Quale visione della realtà caratterizza l'applicazione dei metodi di ricerca qualitativi?",
     "options": {
       "A": "Possono essere obsolete o poco adattabili agli obiettivi specifici della ricerca.",
       "B": "Garantiscono sempre maggiore accuratezza rispetto alle ricerche primarie.",
@@ -1493,36 +1492,6 @@
   {
     "id": 91,
     "section": "Ricerca in comunicazione",
-    "text": "Quale visione della realta caratterizza l'applicazione dei metodi di ricerca qualitativi?",
-    "options": {
-      "A": "Una visione interpretativa orientata a esplorare intenzioni, motivazioni e l'esperienza soggettiva.",
-      "B": "Una visione positivista finalizzata alla generalizzazione statistica dei risultati all'intera popolazione.",
-      "C": "Una visione puramente economica volta a calcolare il ritorno monetario immediato di un'intervista.",
-      "D": "Una visione causale volta a dimostrare rigorosamente il legame diretto tra stimolo comunicativo e acquisto."
-    },
-    "answer": "A",
-    "tags": [
-      "ricerca_metodi"
-    ]
-  },
-  {
-    "id": 92,
-    "section": "Ricerca in comunicazione",
-    "text": "Nel focus group, perche e importante evitare dinamiche che inibiscono la parola dei partecipanti?",
-    "options": {
-      "A": "Per raccogliere opinioni libere e ridurre il rischio che alcuni soggetti orientino o blocchino gli altri.",
-      "B": "Per ottenere automaticamente un campione statisticamente rappresentativo.",
-      "C": "Per trasformare la discussione qualitativa in un esperimento causale.",
-      "D": "Per evitare che il moderatore debba preparare una traccia di discussione."
-    },
-    "answer": "A",
-    "tags": [
-      "ricerca_metodi"
-    ]
-  },
-  {
-    "id": 93,
-    "section": "Ricerca in comunicazione",
     "text": "Cosa si intende per 'Osservazione Dissimulata' nella ricerca sul campo?",
     "options": {
       "A": "Una tecnica in cui il ricercatore entra in un gruppo senza dichiarare apertamente il proprio ruolo di studioso.",
@@ -1537,14 +1506,14 @@
     ]
   },
   {
-    "id": 94,
+    "id": 92,
     "section": "Ricerca in comunicazione",
-    "text": "Nel contesto della ricerca qualitativa, qual e il ruolo dell''Osservatore' durante un Focus Group?",
+    "text": "Nel focus group, perché è importante evitare dinamiche che inibiscono la parola dei partecipanti?",
     "options": {
-      "A": "Registrare reazioni non verbali e dinamiche di gruppo, supportando il moderatore senza guidare la discussione.",
-      "B": "Sostituire il moderatore nella conduzione delle domande piu delicate.",
-      "C": "Valutare economicamente il contributo di ogni partecipante alla ricerca.",
-      "D": "Trasformare in tempo reale tutte le risposte in un questionario quantitativo."
+      "A": "Per raccogliere opinioni libere e ridurre il rischio che alcuni soggetti orientino o blocchino gli altri.",
+      "B": "Per ottenere automaticamente un campione statisticamente rappresentativo.",
+      "C": "Per trasformare la discussione qualitativa in un esperimento causale.",
+      "D": "Per evitare che il moderatore debba preparare una traccia di discussione."
     },
     "answer": "A",
     "tags": [
@@ -1552,9 +1521,41 @@
     ]
   },
   {
+    "id": 93,
+    "section": "Ricerca in comunicazione",
+    "text": "Nella ricerca qualitativa, qual è il vantaggio principale dell''Interazione' tra i partecipanti di un Focus Group?",
+    "options": {
+      "A": "Funziona da stimolo per il dialogo e la creatività, facendo emergere idee che non uscirebbero in un'intervista singola.",
+      "B": "Permette ai partecipanti di dividersi il costo del parcheggio fuori dalla sede della ricerca.",
+      "C": "Serve a creare nuovi gruppi di amici che poi compreranno insieme i prodotti dell'azienda.",
+      "D": "Consente al moderatore di addormentarsi mentre i partecipanti discutono autonomamente."
+    },
+    "answer": "A",
+    "tags": [
+      "ricerca_metodi",
+      "seo_geo_digitale"
+    ]
+  },
+  {
+    "id": 94,
+    "section": "Ricerca in comunicazione",
+    "text": "Quale tra i seguenti è un esempio di 'Ricerca Continuativa' nella comunicazione?",
+    "options": {
+      "A": "Registrare reazioni non verbali e dinamiche di gruppo, supportando il moderatore senza guidare la discussione.",
+      "B": "Sostituire il moderatore nella conduzione delle domande più delicate.",
+      "C": "Valutare economicamente il contributo di ogni partecipante alla ricerca.",
+      "D": "Trasformare in tempo reale tutte le risposte in un questionario quantitativo."
+    },
+    "answer": "A",
+    "tags": [
+      "ricerca_metodi",
+      "seo_geo_digitale"
+    ]
+  },
+  {
     "id": 95,
     "section": "Ricerca in comunicazione",
-    "text": "Nella ricerca qualitativa, qual e il vantaggio principale dell''Interazione' tra i partecipanti di un Focus Group?",
+    "text": "Nella fase di Ranking dei motori di ricerca, su cosa si basa la selezione dei risultati?",
     "options": {
       "A": "Funziona da stimolo per il dialogo e fa emergere idee che potrebbero non uscire in un'intervista singola.",
       "B": "Elimina ogni influenza reciproca tra partecipanti durante la discussione.",
@@ -1569,24 +1570,22 @@
   {
     "id": 96,
     "section": "Ricerca in comunicazione",
-    "text": "Quale tra i seguenti e un esempio di 'Ricerca Continuativa' nella comunicazione?",
+    "text": "Quale elemento caratterizza specificamente la ricerca causale nel campo della comunicazione?",
     "options": {
-      "A": "Il media monitoring o social listening svolto sistematicamente nel tempo.",
-      "B": "Un sondaggio svolto una sola volta dopo un evento catastrofico.",
-      "C": "L'analisi dei bilanci dei competitor fatta una volta l'anno.",
-      "D": "Un test condotto su un nuovo prototipo di packaging prima del lancio."
+      "A": "L'impiego di gruppi sperimentali e gruppi di controllo per verificare variazioni.",
+      "B": "L'uso esclusivo di interviste in profondità per isolare le variabili.",
+      "C": "La raccolta di dati già esistenti per formulare ipotesi interpretative.",
+      "D": "L'analisi dei trend socio-culturali emergenti senza intervento diretto."
     },
     "answer": "A",
     "tags": [
-      "ricerca_metodi",
-      "seo_geo_digitale",
-      "social_roi"
+      "ricerca_metodi"
     ]
   },
   {
     "id": 97,
     "section": "Ricerca in comunicazione",
-    "text": "Nella fase di Ranking dei motori di ricerca, su cosa si basa la selezione dei risultati?",
+    "text": "Nella ricerca causale, qual è la funzione principale del 'gruppo di controllo'?",
     "options": {
       "A": "Su numerosi fattori di rilevanza, autorevolezza e pertinenza rispetto alla query dell'utente.",
       "B": "Sulla sola frequenza della parola chiave all'interno della pagina.",
@@ -1619,22 +1618,23 @@
   {
     "id": 99,
     "section": "Ricerca in comunicazione",
-    "text": "Nella ricerca causale, qual e la funzione principale del 'gruppo di controllo'?",
+    "text": "Quale tra i seguenti è un limite intrinseco dei 'Focus Group' menzionato nel materiale?",
     "options": {
-      "A": "Servire da termine di paragone non venendo sottoposto agli stimoli comunicativi.",
-      "B": "Controllare che i ricercatori non commettano errori tecnici durante la survey.",
-      "C": "Analizzare i dati raccolti dalle ricerche secondarie precedenti.",
-      "D": "Fornire un supporto creativo al gruppo sperimentale."
+      "A": "La necessità di testare i risultati ottenuti con un'indagine quantitativa successiva.",
+      "B": "Il fatto di essere troppo economici per essere considerati professionali.",
+      "C": "L'obbligo di svolgerli esclusivamente in forma scritta via email.",
+      "D": "L'impossibilità per i partecipanti di parlare tra loro."
     },
     "answer": "A",
     "tags": [
-      "ricerca_metodi"
+      "ricerca_metodi",
+      "seo_geo_digitale"
     ]
   },
   {
     "id": 100,
     "section": "Ricerca in comunicazione",
-    "text": "Cosa caratterizza l'osservazione partecipante di tipo 'dissimulato'?",
+    "text": "Cosa significa che la ricerca valutativa deve 'supportare la decisione'?",
     "options": {
       "A": "Il ricercatore partecipa al contesto senza dichiarare apertamente il proprio ruolo di osservatore.",
       "B": "Il ricercatore osserva il gruppo dichiarando fin dall'inizio obiettivi e metodo.",
@@ -1649,12 +1649,12 @@
   {
     "id": 101,
     "section": "Ricerca in comunicazione",
-    "text": "Quale tra i seguenti e un limite intrinseco dei focus group?",
+    "text": "Quale tra i seguenti è un limite intrinseco dei focus group?",
     "options": {
-      "A": "La necessita di verificare o approfondire i risultati con ulteriori strumenti, spesso quantitativi.",
-      "B": "La possibilita di ottenere automaticamente dati rappresentativi dell'intera popolazione.",
+      "A": "La necessità di verificare o approfondire i risultati con ulteriori strumenti, spesso quantitativi.",
+      "B": "La possibilità di ottenere automaticamente dati rappresentativi dell'intera popolazione.",
       "C": "L'assenza di interazione tra partecipanti durante la discussione.",
-      "D": "La capacita di eliminare completamente il ruolo del moderatore."
+      "D": "La capacità di eliminare completamente il ruolo del moderatore."
     },
     "answer": "A",
     "tags": [
@@ -1664,12 +1664,12 @@
   {
     "id": 102,
     "section": "Ricerca in comunicazione",
-    "text": "Cosa significa che la ricerca valutativa deve 'supportare la decisione'?",
+    "text": "Qual è la fase più delicata nella costruzione di un'indagine su campioni (survey)?",
     "options": {
       "A": "Trasformare dati e interpretazioni in indicazioni utili per scegliere o correggere le azioni.",
       "B": "Produrre un archivio completo di dati grezzi senza raccomandazioni operative.",
       "C": "Sostituire le decisioni manageriali con un unico indicatore automatico.",
-      "D": "Misurare solo la visibilita media ottenuta nel periodo analizzato."
+      "D": "Misurare solo la visibilità media ottenuta nel periodo analizzato."
     },
     "answer": "A",
     "tags": [
@@ -1679,26 +1679,25 @@
   {
     "id": 103,
     "section": "Ricerca in comunicazione",
-    "text": "Nel contesto del Social Media Listening, perche e fondamentale definire le 'domande di business' prima di raccogliere i dati?",
+    "text": "L'analisi del contenuto si distingue per essere una tecnica di ricerca:",
     "options": {
       "A": "Per evitare che la ricerca sia guidata casualmente dai messaggi trovati, perdendo di vista le esigenze dell'azienda.",
-      "B": "Per scegliere prima il tool piu completo, indipendentemente dagli obiettivi conoscitivi.",
+      "B": "Per scegliere prima il tool più completo, indipendentemente dagli obiettivi conoscitivi.",
       "C": "Per usare lo stesso set di keyword in ogni mercato senza adattamenti locali.",
       "D": "Per sostituire gli obiettivi di business con il volume complessivo dei messaggi raccolti."
     },
     "answer": "A",
     "tags": [
       "ricerca_metodi",
-      "seo_geo_digitale",
-      "social_roi"
+      "seo_geo_digitale"
     ]
   },
   {
     "id": 104,
     "section": "Ricerca in comunicazione",
-    "text": "Qual e la fase piu delicata nella costruzione di un'indagine su campioni (survey)?",
+    "text": "Qual è una caratteristica distintiva della ricerca valutativa rispetto al semplice controllo?",
     "options": {
-      "A": "La costruzione del campione e del questionario, perche condiziona la qualita dei dati raccolti.",
+      "A": "La costruzione del campione e del questionario, perché condiziona la qualità dei dati raccolti.",
       "B": "La scelta del software di impaginazione usato per presentare il report finale.",
       "C": "L'archiviazione dei questionari dopo la chiusura dell'analisi.",
       "D": "La selezione degli esempi grafici da inserire nelle slide conclusive."
@@ -1712,12 +1711,12 @@
   {
     "id": 105,
     "section": "Ricerca in comunicazione",
-    "text": "L'analisi del contenuto si distingue per essere una tecnica di ricerca:",
+    "text": "In una ricerca di tipo 'causale', qual è lo scopo principale dell'utilizzo di un 'gruppo di controllo'?",
     "options": {
-      "A": "Obiettiva, sistematica e quantitativa dei contenuti della comunicazione.",
-      "B": "Soggettiva e basata esclusivamente sull'intuito del valutatore.",
-      "C": "Focalizzata esclusivamente sulla qualita estetica delle immagini.",
-      "D": "Utilizzata solo per la comunicazione interna aziendale."
+      "A": "Verificare se un effetto osservato dipende effettivamente dall'azione di comunicazione o da altri fattori esterni.",
+      "B": "Fornire al moderatore del focus group una lista di domande standardizzate per guidare la discussione.",
+      "C": "Raccogliere dati secondari da fonti istituzionali per risparmiare sui costi della ricerca primaria.",
+      "D": "Garantire che il campione selezionato sia rappresentativo delle quote demografiche del mercato."
     },
     "answer": "A",
     "tags": [
@@ -1727,29 +1726,10 @@
   {
     "id": 106,
     "section": "Digitale, social e motori di ricerca",
-    "text": "La visibilita digitale non e un risultato puntuale ma un processo articolato in piu fasi successive. Attraverso quali di questi tre livelli si articola la visibilita digitale?",
-    "options": {
-      "A": "Essere trovati, essere scelti, essere ricordati",
-      "B": "Ottimizzazione tecnica, posizionamento e monetizzazione del traffico",
-      "C": "Pubblicazione, condivisione e diffusione virale dei contenuti online",
-      "D": "Awareness, consideration e fase decisionale di acquisto del cliente"
-    },
-    "answer": "A",
-    "tags": [
-      "enti_audience",
-      "ricerca_metodi",
-      "seo_geo_digitale",
-      "social_roi",
-      "stile_esame"
-    ]
-  },
-  {
-    "id": 107,
-    "section": "Digitale, social e motori di ricerca",
     "text": "Quali sono i sei obiettivi cui si ricollegano le outcome metrics secondo quanto riportato da Lovett?",
     "options": {
       "A": "Awareness, consideration, intent, purchase, loyalty, advocacy",
-      "B": "Visibilita, dialogo, interazioni, supporto, advocacy, innovazione",
+      "B": "Visibilità, dialogo, interazioni, supporto, advocacy, innovazione",
       "C": "Crawling, indexing, ranking, listening, monitoring, analytics",
       "D": "Fatturato, soddisfazione, market share, retention, lead, conversione"
     },
@@ -1763,12 +1743,12 @@
     ]
   },
   {
-    "id": 108,
+    "id": 107,
     "section": "Digitale, social e motori di ricerca",
     "text": "Nella direzione \"brand health\" del Social Measurement Compass di Altimeter, le metriche utilizzabili sono:",
     "options": {
       "A": "Share of voice, sentiment, argomenti di interesse e motivi di insoddisfazione",
-      "B": "Conversioni, ROI delle vendite e ambienti che generano opportunita d'acquisto",
+      "B": "Conversioni, ROI delle vendite e ambienti che generano opportunità d'acquisto",
       "C": "Tasso di risoluzione dei problemi, recensioni positive e condivisione di esperienze positive",
       "D": "Idee ricevute, ampiezza delle condivisioni e livello di innovazione percepita"
     },
@@ -1783,7 +1763,7 @@
     ]
   },
   {
-    "id": 109,
+    "id": 108,
     "section": "Digitale, social e motori di ricerca",
     "text": "Quali sono le quattro tipologie di metriche del framework di Lovett?",
     "options": {
@@ -1802,12 +1782,12 @@
     ]
   },
   {
-    "id": 110,
+    "id": 109,
     "section": "Digitale, social e motori di ricerca",
     "text": "Nella piramide dei bisogni di analisi messa a punto da Web Analytics Demystified e ispirata a Maslow, cosa rappresenta il livello \"data\" alla base?",
     "options": {
-      "A": "Unita informative grezze che mostrano un singolo frammento di realta",
-      "B": "Consigli puntuali da mettere in pratica per migliorare le attivita",
+      "A": "Unità informative grezze che mostrano un singolo frammento di realtà",
+      "B": "Consigli puntuali da mettere in pratica per migliorare le attività",
       "C": "Dati lavorati e collocati in un contesto significativo per l'azienda",
       "D": "Informazioni analizzate alla luce delle conoscenze dell'analista"
     },
@@ -1820,11 +1800,11 @@
     ]
   },
   {
-    "id": 111,
+    "id": 110,
     "section": "Digitale, social e motori di ricerca",
     "text": "Cosa significa l'acronimo SEM (Search Engine Marketing)?",
     "options": {
-      "A": "Insieme di attivita di digital marketing per aumentare la visibilita sui motori di ricerca",
+      "A": "Insieme di attività di digital marketing per aumentare la visibilità sui motori di ricerca",
       "B": "Tecnica di analisi dei dati raccolti dai motori di ricerca per il targeting",
       "C": "Sistema di tracciamento degli utenti basato sui cookie pubblicitari di terze parti",
       "D": "Acronimo che indica le metriche standard delle campagne sui social network"
@@ -1838,7 +1818,7 @@
     ]
   },
   {
-    "id": 112,
+    "id": 111,
     "section": "Digitale, social e motori di ricerca",
     "text": "Tra i KPI principali della SEO, cosa misura il \"traffico organico\"?",
     "options": {
@@ -1856,9 +1836,9 @@
     ]
   },
   {
-    "id": 113,
+    "id": 112,
     "section": "Digitale, social e motori di ricerca",
-    "text": "Tra le tre fasi del processo dei motori di ricerca, si descrive il crawling come la fase in cui programmi automatici entrano in azione. Qual e la sua funzione principale?",
+    "text": "Tra le tre fasi del processo dei motori di ricerca, si descrive il crawling come la fase in cui programmi automatici entrano in azione. Qual è la sua funzione principale?",
     "options": {
       "A": "Esplorare il web seguendo i collegamenti per scoprire i contenuti",
       "B": "Sintetizzare le informazioni provenienti da fonti diverse in una risposta",
@@ -1874,18 +1854,37 @@
     ]
   },
   {
-    "id": 114,
+    "id": 113,
     "section": "Digitale, social e motori di ricerca",
-    "text": "Rispetto al modello SEO tradizionale, nella GEO la visibilita diventa piu selettiva e meno distribuita: il sistema premia pochi contenuti, ma in modo piu intenso. Perche la visibilita e piu selettiva?",
+    "text": "Rispetto al modello SEO tradizionale, nella GEO la visibilità diventa più selettiva e meno distribuita: il sistema premia pochi contenuti, ma in modo più intenso. Perché la visibilità e più selettiva?",
     "options": {
-      "A": "Perche solo alcune fonti vengono selezionate per costruire le risposte",
-      "B": "Perche il sistema distribuisce il traffico in modo uniforme",
-      "C": "Perche aumenta il numero complessivo di contenuti disponibili",
-      "D": "Perche tutte le fonti vengono mostrate agli utenti"
+      "A": "Perché solo alcune fonti vengono selezionate per costruire le risposte",
+      "B": "Perché il sistema distribuisce il traffico in modo uniforme",
+      "C": "Perché aumenta il numero complessivo di contenuti disponibili",
+      "D": "Perché tutte le fonti vengono mostrate agli utenti"
     },
     "answer": "A",
     "tags": [
       "modelli",
+      "ricerca_metodi",
+      "seo_geo_digitale",
+      "social_roi",
+      "stile_esame"
+    ]
+  },
+  {
+    "id": 114,
+    "section": "Digitale, social e motori di ricerca",
+    "text": "La visibilità digitale non è un risultato puntuale ma un processo articolato in più fasi successive. Attraverso quali di questi tre livelli si articola la visibilità digitale?",
+    "options": {
+      "A": "Essere trovati, essere scelti, essere ricordati",
+      "B": "Ottimizzazione tecnica, posizionamento e monetizzazione del traffico",
+      "C": "Pubblicazione, condivisione e diffusione virale dei contenuti online",
+      "D": "Awareness, consideration e fase decisionale di acquisto del cliente"
+    },
+    "answer": "A",
+    "tags": [
+      "enti_audience",
       "ricerca_metodi",
       "seo_geo_digitale",
       "social_roi",
@@ -1916,8 +1915,8 @@
     "options": {
       "A": "Strategie per rendere i contenuti visibili all'interno delle risposte generate dai sistemi di AI.",
       "B": "Un sistema di protezione contro gli attacchi informatici generati da bot.",
-      "C": "Un nuovo metodo di geolocalizzazione per il marketing di prossimita.",
-      "D": "L'ottimizzazione del codice sorgente per aumentare la velocita del sito."
+      "C": "Un nuovo metodo di geolocalizzazione per il marketing di prossimità.",
+      "D": "L'ottimizzazione del codice sorgente per aumentare la velocità del sito."
     },
     "answer": "A",
     "tags": [
@@ -1932,8 +1931,8 @@
     "text": "Nel passaggio dalla SEO alla GEO, come cambia il ruolo del contenuto?",
     "options": {
       "A": "Da destinazione finale (punto di arrivo) a fonte per la costruzione della risposta.",
-      "B": "Diventa meno importante e puo essere sostituito da sole immagini.",
-      "C": "Deve essere necessariamente piu corto per essere letto dagli algoritmi.",
+      "B": "Diventa meno importante e può essere sostituito da sole immagini.",
+      "C": "Deve essere necessariamente più corto per essere letto dagli algoritmi.",
       "D": "Viene utilizzato esclusivamente per generare traffico diretto al sito."
     },
     "answer": "A",
@@ -1946,12 +1945,12 @@
   {
     "id": 118,
     "section": "Digitale, social e motori di ricerca",
-    "text": "Perche si afferma che nella GEO la visibilita diventa 'meno visibile, ma piu distribuita'?",
+    "text": "Quale di queste metriche GEO indica la frequenza con cui un contenuto viene citato dall'AI?",
     "options": {
-      "A": "Perche si articola sulla presenza in risposte sintetiche e contestualizzate anziche su link espliciti.",
-      "B": "Perche coincide con un miglior posizionamento organico nella SERP tradizionale.",
-      "C": "Perche misura soltanto il traffico diretto generato verso il sito aziendale.",
-      "D": "Perche dipende esclusivamente dal numero di pagine indicizzate dal motore."
+      "A": "Perché si articola sulla presenza in risposte sintetiche e contestualizzate anziche su link espliciti.",
+      "B": "Perché coincide con un miglior posizionamento organico nella SERP tradizionale.",
+      "C": "Perché misura soltanto il traffico diretto generato verso il sito aziendale.",
+      "D": "Perché dipende esclusivamente dal numero di pagine indicizzate dal motore."
     },
     "answer": "A",
     "tags": [
@@ -1962,23 +1961,6 @@
   },
   {
     "id": 119,
-    "section": "Digitale, social e motori di ricerca",
-    "text": "Quale di queste metriche GEO indica la frequenza con cui un contenuto viene citato dall'AI?",
-    "options": {
-      "A": "Citation frequency.",
-      "B": "Bounce rate.",
-      "C": "Page load time.",
-      "D": "Follower growth rate."
-    },
-    "answer": "A",
-    "tags": [
-      "ricerca_metodi",
-      "seo_geo_digitale",
-      "social_roi"
-    ]
-  },
-  {
-    "id": 120,
     "section": "Digitale, social e motori di ricerca",
     "text": "Quale delle seguenti affermazioni descrive correttamente il Web 3.0?",
     "options": {
@@ -1995,12 +1977,12 @@
     ]
   },
   {
-    "id": 121,
+    "id": 120,
     "section": "Digitale, social e motori di ricerca",
     "text": "Cosa caratterizza il Web 4.0 (AI Web)?",
     "options": {
       "A": "L'integrazione di sistemi predittivi e agenti autonomi capaci di intervenire nei processi decisionali.",
-      "B": "La possibilita per gli utenti di caricare video su piattaforme come YouTube.",
+      "B": "La possibilità per gli utenti di caricare video su piattaforme come YouTube.",
       "C": "La nascita del primo browser Mosaic per navigare tra pagine statiche.",
       "D": "L'uso esclusivo di blog personali per la condivisione di opinioni."
     },
@@ -2012,29 +1994,11 @@
     ]
   },
   {
-    "id": 122,
+    "id": 121,
     "section": "Digitale, social e motori di ricerca",
-    "text": "Perche il 2004 e un anno fondamentale per l'evoluzione del Web?",
+    "text": "Nel contesto del Web, chi è Manuel Castells?",
     "options": {
-      "A": "Tim O'Reilly conia il termine Web 2.0 durante una conferenza.",
-      "B": "Viene lanciato il primo sito web della storia al CERN.",
-      "C": "Viene inventato il linguaggio HTML per creare pagine web.",
-      "D": "Viene rilasciato l'assistente vocale Siri per smartphone."
-    },
-    "answer": "A",
-    "tags": [
-      "modelli",
-      "ricerca_metodi",
-      "seo_geo_digitale",
-      "social_roi"
-    ]
-  },
-  {
-    "id": 123,
-    "section": "Digitale, social e motori di ricerca",
-    "text": "Nel contesto del Web, chi e Manuel Castells?",
-    "options": {
-      "A": "L'autore associato alla teoria della 'societa in rete' (network society).",
+      "A": "L'autore associato alla teoria della 'società in rete' (network society).",
       "B": "Il fondatore della prima conferenza sul Web 2.0 nel 2004.",
       "C": "L'inventore dei primi algoritmi di ricerca su Google.",
       "D": "Il critico che ha definito il Web 3.0 come 'web dei dati'."
@@ -2047,12 +2011,12 @@
     ]
   },
   {
-    "id": 124,
+    "id": 122,
     "section": "Digitale, social e motori di ricerca",
-    "text": "Quale delle seguenti e una caratteristica del Web 1.0?",
+    "text": "Quale delle seguenti è una caratteristica del Web 1.0?",
     "options": {
       "A": "Contenuti fissi e preconfezionati, realizzati da pochi sviluppatori o aziende.",
-      "B": "Alta interattivita e possibilita per gli utenti di modificare i contenuti.",
+      "B": "Alta interattività e possibilità per gli utenti di modificare i contenuti.",
       "C": "Presenza di community online attive come wiki e blog.",
       "D": "Uso massiccio dell'intelligenza artificiale per risposte contestualizzate."
     },
@@ -2064,14 +2028,14 @@
     ]
   },
   {
-    "id": 125,
+    "id": 123,
     "section": "Digitale, social e motori di ricerca",
     "text": "Quale elemento caratterizza il passaggio dal Web 3.0 al Web 4.0 secondo l'evoluzione tecnologica descritta?",
     "options": {
-      "A": "La capacita del web di agire in modo predittivo tramite agenti autonomi e automazione decisionale.",
+      "A": "La capacità del web di agire in modo predittivo tramite agenti autonomi e automazione decisionale.",
       "B": "La nascita del contenuto generato dagli utenti (UGC) e delle prime community social.",
       "C": "L'introduzione della semantica e dei dati strutturati leggibili dalle macchine.",
-      "D": "L'ipertestualita statica e la comunicazione unidirezionale tipica dei siti vetrina."
+      "D": "L'ipertestualità statica e la comunicazione unidirezionale tipica dei siti vetrina."
     },
     "answer": "A",
     "tags": [
@@ -2081,13 +2045,13 @@
     ]
   },
   {
-    "id": 126,
+    "id": 124,
     "section": "Digitale, social e motori di ricerca",
-    "text": "Che cosa misura il 'Net Promoter Score' (NPS) e qual e la sua formula?",
+    "text": "Che cosa misura il 'Net Promoter Score' (NPS) e qual è la sua formula?",
     "options": {
       "A": "La propensione alla raccomandazione; formula: % Promotori - % Detrattori.",
       "B": "Il ritorno dell'investimento pubblicitario; formula: (Entrate - Costi) / Costi.",
-      "C": "La velocita di risposta del customer care; formula: Tempo totale / Numero richieste.",
+      "C": "La velocità di risposta del customer care; formula: Tempo totale / Numero richieste.",
       "D": "La crescita organica dei follower; formula: Nuovi follower / Follower totali x 100."
     },
     "answer": "A",
@@ -2098,13 +2062,13 @@
     ]
   },
   {
-    "id": 127,
+    "id": 125,
     "section": "Digitale, social e motori di ricerca",
     "text": "Cosa differenzia il Web 3.0 dal Web 2.0 secondo le definizioni del corso?",
     "options": {
-      "A": "L'uso di dati strutturati, web semantico, Intelligenza Artificiale e interoperabilita tra piattaforme.",
+      "A": "L'uso di dati strutturati, web semantico, Intelligenza Artificiale e interoperabilità tra piattaforme.",
       "B": "La creazione dei primi siti web statici e vetrina da parte delle organizzazioni.",
-      "C": "L'introduzione della possibilita per gli utenti di produrre contenuti propri (User Generated Content).",
+      "C": "L'introduzione della possibilità per gli utenti di produrre contenuti propri (User Generated Content).",
       "D": "Il passaggio dalla comunicazione unidirezionale a quella bidirezionale e sociale."
     },
     "answer": "A",
@@ -2115,7 +2079,7 @@
     ]
   },
   {
-    "id": 128,
+    "id": 126,
     "section": "Digitale, social e motori di ricerca",
     "text": "Nel contesto del Web 1.0, come viene descritto il flusso comunicativo?",
     "options": {
@@ -2132,11 +2096,11 @@
     ]
   },
   {
-    "id": 129,
+    "id": 127,
     "section": "Digitale, social e motori di ricerca",
     "text": "Cosa caratterizza il Web 4.0 rispetto alle fasi precedenti?",
     "options": {
-      "A": "La capacita dei sistemi di prevedere, apprendere e agire autonomamente.",
+      "A": "La capacità dei sistemi di prevedere, apprendere e agire autonomamente.",
       "B": "L'uso di dati strutturati per migliorare l'interazione tra uomo e macchina.",
       "C": "Il passaggio da una rete che legge a una rete che partecipa.",
       "D": "L'emergere delle community online e della conoscenza condivisa."
@@ -2149,14 +2113,14 @@
     ]
   },
   {
-    "id": 130,
+    "id": 128,
     "section": "Digitale, social e motori di ricerca",
-    "text": "Nella comunicazione 'BTL' (Below The Line), qual e l'obiettivo prevalente?",
+    "text": "Nella comunicazione 'BTL' (Below The Line), qual è l'obiettivo prevalente?",
     "options": {
       "A": "L'engagement, la conversione e la creazione di una relazione con segmenti mirati.",
       "B": "La misurazione della 'reach' e dei 'GRP' attraverso media tradizionali.",
       "C": "L'integrazione di canali fisici e digitali lungo l'intero customer journey.",
-      "D": "Raggiungere il pubblico piu ampio e indifferenziato possibile."
+      "D": "Raggiungere il pubblico più ampio e indifferenziato possibile."
     },
     "answer": "A",
     "tags": [
@@ -2166,13 +2130,13 @@
     ]
   },
   {
-    "id": 131,
+    "id": 129,
     "section": "Digitale, social e motori di ricerca",
-    "text": "Cosa manca solitamente ai sistemi di Social Media Analytics nativi delle piattaforme?",
+    "text": "Secondo le dispense, cosa manca solitamente ai sistemi di 'Social Media Analytics' nativi delle piattaforme?",
     "options": {
       "A": "Il collegamento diretto con gli obiettivi strategici e il benchmark di settore.",
-      "B": "La capacita di mostrare il numero di 'like' e 'follower'.",
-      "C": "La velocita nell'aggiornamento dei dati in tempo reale.",
+      "B": "La capacità di mostrare il numero di 'like' e 'follower'.",
+      "C": "La velocità nell'aggiornamento dei dati in tempo reale.",
       "D": "L'interfaccia grafica per la visualizzazione delle statistiche."
     },
     "answer": "A",
@@ -2183,9 +2147,9 @@
     ]
   },
   {
-    "id": 132,
+    "id": 130,
     "section": "Digitale, social e motori di ricerca",
-    "text": "Quale delle seguenti e definita una 'Vanity Metric' nelle analisi digitali?",
+    "text": "Quale delle seguenti è definita una 'Vanity Metric' nelle analisi digitali?",
     "options": {
       "A": "Il numero totale di follower o 'mi piace' senza contesto di engagement.",
       "B": "Il ROI (Return on Investment) diretto di una campagna.",
@@ -2200,9 +2164,9 @@
     ]
   },
   {
-    "id": 133,
+    "id": 131,
     "section": "Digitale, social e motori di ricerca",
-    "text": "Quale 'formula di memoria' viene suggerita per l'evoluzione del Web da 1.0 a 4.0?",
+    "text": "Cosa manca solitamente ai sistemi di Social Media Analytics nativi delle piattaforme?",
     "options": {
       "A": "Leggi -> Partecipi -> Capisce -> Agisce.",
       "B": "Ascolta -> Partecipa -> Compra -> Recensisci.",
@@ -2217,12 +2181,12 @@
     ]
   },
   {
-    "id": 134,
+    "id": 132,
     "section": "Digitale, social e motori di ricerca",
-    "text": "Nell'analisi quantitativa, cos'e la 'Share of Voice'?",
+    "text": "Nell'analisi quantitativa, cos'è la 'Share of Voice'?",
     "options": {
       "A": "La percentuale di discussioni che riguardano l'azienda rispetto a quelle dei competitor nello stesso periodo.",
-      "B": "La velocita con cui un messaggio si diffonde tra i diversi canali social.",
+      "B": "La velocità con cui un messaggio si diffonde tra i diversi canali social.",
       "C": "Il numero totale di post prodotti proattivamente dall'azienda in un mese.",
       "D": "Il tasso di engagement medio ottenuto dai post degli influencer contattati."
     },
@@ -2234,9 +2198,9 @@
     ]
   },
   {
-    "id": 135,
+    "id": 133,
     "section": "Digitale, social e motori di ricerca",
-    "text": "Quale tra queste e classificata come una 'Metrica di Attivita' per definire il successo di una Social Media Strategy?",
+    "text": "Quale tra queste è classificata come una 'Metrica di Attività' per definire il successo di una Social Media Strategy?",
     "options": {
       "A": "Cadenza temporale (frequenza di pubblicazione).",
       "B": "Engagement (like, commenti).",
@@ -2251,14 +2215,14 @@
     ]
   },
   {
-    "id": 136,
+    "id": 134,
     "section": "Digitale, social e motori di ricerca",
-    "text": "Secondo il framework di misurazione semplificato, qual e il fattore critico di successo rappresentato dall''Organizzazione'?",
+    "text": "Secondo il framework di misurazione semplificato, qual è il fattore critico di successo rappresentato dall''Organizzazione'?",
     "options": {
       "A": "La preparazione delle persone a misurare e comprendere i social media.",
-      "B": "La scelta di metriche di engagement indipendenti dagli obiettivi aziendali.",
-      "C": "La separazione tra chi produce contenuti e chi interpreta i risultati.",
-      "D": "L'acquisto di dashboard senza un processo condiviso di lettura dei dati."
+      "B": "L'automazione totale dei processi di risposta ai commenti tramite AI.",
+      "C": "La creazione di un dipartimento separato che non comunichi con il marketing.",
+      "D": "L'acquisto del software più costoso per la data visualization."
     },
     "answer": "A",
     "tags": [
@@ -2269,7 +2233,7 @@
     ]
   },
   {
-    "id": 137,
+    "id": 135,
     "section": "Digitale, social e motori di ricerca",
     "text": "Nella 'Social Media Measurement Compass' di Altimeter, l'obiettivo 'Innovation' si focalizza su:",
     "options": {
@@ -2288,14 +2252,14 @@
     ]
   },
   {
-    "id": 138,
+    "id": 136,
     "section": "Digitale, social e motori di ricerca",
     "text": "Quale obiettivo della bussola Altimeter si occupa di misurare attitudini, conversazioni e comportamenti verso il brand?",
     "options": {
-      "A": "Brand Health.",
-      "B": "Revenue Generation.",
-      "C": "Customer Experience.",
-      "D": "Marketing Optimization."
+      "A": "La preparazione delle persone a misurare e comprendere i social media.",
+      "B": "La scelta di metriche di engagement indipendenti dagli obiettivi aziendali.",
+      "C": "La separazione tra chi produce contenuti e chi interpreta i risultati.",
+      "D": "L'acquisto di dashboard senza un processo condiviso di lettura dei dati."
     },
     "answer": "A",
     "tags": [
@@ -2307,13 +2271,13 @@
     ]
   },
   {
-    "id": 139,
+    "id": 137,
     "section": "Digitale, social e motori di ricerca",
     "text": "Che cosa permette di costruire un sistema di classificazione a 'tassonomia gerarchica'?",
     "options": {
       "A": "Un'analisi puntuale dell'argomento tramite classi strutturate ad albero.",
       "B": "Un dataset coerente basato solo su metadata temporali.",
-      "C": "La selezione automatica degli influencer con piu follower.",
+      "C": "La selezione automatica degli influencer con più follower.",
       "D": "L'esportazione manuale dei dati dai social network chiusi come Facebook."
     },
     "answer": "A",
@@ -2324,24 +2288,7 @@
     ]
   },
   {
-    "id": 140,
-    "section": "Digitale, social e motori di ricerca",
-    "text": "Perche le aziende monitorano 'Yahoo! Answers' nonostante sia una fonte meno 'social' rispetto ad Instagram?",
-    "options": {
-      "A": "Per capire il grado di informazioni corrette o scorrette sui prodotti e intervenire.",
-      "B": "Per misurare il numero di fan che hanno abbandonato i social network tradizionali.",
-      "C": "Perche genera un tasso di rumore molto piu alto rispetto ad X.",
-      "D": "Perche e l'unica fonte che permette l'analisi delle caratteristiche demografiche."
-    },
-    "answer": "A",
-    "tags": [
-      "ricerca_metodi",
-      "seo_geo_digitale",
-      "social_roi"
-    ]
-  },
-  {
-    "id": 141,
+    "id": 138,
     "section": "Digitale, social e motori di ricerca",
     "text": "Nelle query di monitoraggio, a cosa servono gli 'operatori logici'?",
     "options": {
@@ -2358,7 +2305,7 @@
     ]
   },
   {
-    "id": 142,
+    "id": 139,
     "section": "Digitale, social e motori di ricerca",
     "text": "Nella fase 3 (recupero dati), quali informazioni sono comprese nei 'metadati'?",
     "options": {
@@ -2375,7 +2322,7 @@
     ]
   },
   {
-    "id": 143,
+    "id": 140,
     "section": "Digitale, social e motori di ricerca",
     "text": "Quale obiettivo della bussola Altimeter punta a migliorare l'efficacia dei programmi di marketing?",
     "options": {
@@ -2394,12 +2341,63 @@
     ]
   },
   {
-    "id": 144,
+    "id": 141,
     "section": "Digitale, social e motori di ricerca",
     "text": "Cosa deve fare l'analista per 'razionalizzare' le domande dell'ascolto nella Fase 1?",
     "options": {
       "A": "Basarle strettamente sugli obiettivi di business identificati nel social media plan.",
-      "B": "Formularle a partire dai soli dati gia disponibili negli analytics nativi.",
+      "B": "Tradurre tutte le domande in inglese per usare tool internazionali.",
+      "C": "Limitare le domande a quelle che possono ricevere risposta tramite soli 'like'.",
+      "D": "Chiedere agli influencer quali domande vorrebbero ricevere."
+    },
+    "answer": "A",
+    "tags": [
+      "ricerca_metodi",
+      "seo_geo_digitale",
+      "social_roi"
+    ]
+  },
+  {
+    "id": 142,
+    "section": "Digitale, social e motori di ricerca",
+    "text": "Nel monitoraggio dei media, cosa distingue il 'Social Listening' dal semplice monitoraggio?",
+    "options": {
+      "A": "Il social listening parte da domande di business e deve produrre insight e raccomandazioni.",
+      "B": "Il social listening conta solo i like, il monitoraggio conta anche i commenti.",
+      "C": "Il monitoraggio è un'attività gratuita, il listening è sempre a pagamento.",
+      "D": "Il social listening si applica solo ai canali televisivi."
+    },
+    "answer": "A",
+    "tags": [
+      "ricerca_metodi",
+      "seo_geo_digitale",
+      "social_roi"
+    ]
+  },
+  {
+    "id": 143,
+    "section": "Digitale, social e motori di ricerca",
+    "text": "Cosa indica l'indicatore 'Third-party endorsement'?",
+    "options": {
+      "A": "La presenza di soggetti terzi indipendenti che sostengono o citano positivamente l'organizzazione.",
+      "B": "Il numero di querele ricevute da soggetti esterni nell'ultimo anno.",
+      "C": "La percentuale di dipendenti che parlano male dell'azienda sui social.",
+      "D": "La quantità di soldi pagati a un'agenzia esterna."
+    },
+    "answer": "A",
+    "tags": [
+      "ricerca_metodi",
+      "seo_geo_digitale",
+      "social_roi"
+    ]
+  },
+  {
+    "id": 144,
+    "section": "Digitale, social e motori di ricerca",
+    "text": "Secondo l'evoluzione del Web, quale fase è definita come il 'Web che capisce', caratterizzata da dati strutturati e AI per l'interoperabilità?",
+    "options": {
+      "A": "Basarle strettamente sugli obiettivi di business identificati nel social media plan.",
+      "B": "Formularle a partire dai soli dati già disponibili negli analytics nativi.",
       "C": "Ridurre le domande a metriche standard uguali per ogni settore.",
       "D": "Definirle dopo la raccolta, osservando quali conversazioni emergono."
     },
@@ -2413,7 +2411,7 @@
   {
     "id": 145,
     "section": "Digitale, social e motori di ricerca",
-    "text": "Perche il criterio 'Territoriale' e importante per le aziende multinazionali?",
+    "text": "Nella tassonomia delle metriche social di John Lovett, quali indicatori sono definiti come 'utili solo se letti dinamicamente' e includono fan, follower e visite?",
     "options": {
       "A": "Per scovare i luoghi di discussione specifici e rilevanti nei singoli Paesi in cui si opera.",
       "B": "Per sostituire l'analisi semantica con la semplice localizzazione geografica degli utenti.",
@@ -2422,6 +2420,7 @@
     },
     "answer": "A",
     "tags": [
+      "modelli",
       "ricerca_metodi",
       "seo_geo_digitale",
       "social_roi"
@@ -2430,7 +2429,7 @@
   {
     "id": 146,
     "section": "Digitale, social e motori di ricerca",
-    "text": "Nel monitoraggio dei media, cosa distingue il 'Social Listening' dal semplice monitoraggio?",
+    "text": "Secondo la piramide del valore digitale, qual è il gradino superiore all' 'Information' che consiste nell'interpretazione dei dati alla luce degli obiettivi?",
     "options": {
       "A": "Il social listening parte da domande di business e deve produrre insight e raccomandazioni.",
       "B": "Il social listening coincide con il conteggio automatico di like, follower e impression.",
@@ -2447,12 +2446,12 @@
   {
     "id": 147,
     "section": "Digitale, social e motori di ricerca",
-    "text": "Cosa indica l'indicatore 'Third-party endorsement'?",
+    "text": "Nella comunicazione digitale, che cosa indica l'indicatore CPE?",
     "options": {
       "A": "La presenza di soggetti terzi indipendenti che sostengono o citano positivamente l'organizzazione.",
       "B": "Il volume complessivo delle menzioni generate dai canali proprietari.",
       "C": "La quota di copertura ottenuta rispetto ai competitor diretti.",
-      "D": "La centralita dell'organizzazione all'interno del singolo articolo."
+      "D": "La centralità dell'organizzazione all'interno del singolo articolo."
     },
     "answer": "A",
     "tags": [
@@ -2464,76 +2463,7 @@
   {
     "id": 148,
     "section": "Digitale, social e motori di ricerca",
-    "text": "Secondo l'evoluzione del Web, quale fase e definita come il 'Web che capisce', caratterizzata da dati strutturati e AI per l'interoperabilita?",
-    "options": {
-      "A": "Web 3.0",
-      "B": "Web 1.0",
-      "C": "Web 2.0",
-      "D": "Web 4.0"
-    },
-    "answer": "A",
-    "tags": [
-      "ricerca_metodi",
-      "seo_geo_digitale",
-      "social_roi"
-    ]
-  },
-  {
-    "id": 149,
-    "section": "Digitale, social e motori di ricerca",
-    "text": "Nella tassonomia delle metriche social di John Lovett, quali indicatori sono definiti come 'utili solo se letti dinamicamente' e includono fan, follower e visite?",
-    "options": {
-      "A": "Counting Metrics",
-      "B": "Outcome Metrics",
-      "C": "Foundation Metrics",
-      "D": "Business Value Metrics"
-    },
-    "answer": "A",
-    "tags": [
-      "modelli",
-      "ricerca_metodi",
-      "seo_geo_digitale",
-      "social_roi"
-    ]
-  },
-  {
-    "id": 150,
-    "section": "Digitale, social e motori di ricerca",
-    "text": "Secondo la piramide del valore digitale, qual e il gradino superiore all' 'Information' che consiste nell'interpretazione dei dati alla luce degli obiettivi?",
-    "options": {
-      "A": "Insight",
-      "B": "Data",
-      "C": "Recommendations",
-      "D": "KPI"
-    },
-    "answer": "A",
-    "tags": [
-      "ricerca_metodi",
-      "seo_geo_digitale",
-      "social_roi"
-    ]
-  },
-  {
-    "id": 151,
-    "section": "Digitale, social e motori di ricerca",
-    "text": "Nella comunicazione digitale, che cosa indica l'indicatore CPE?",
-    "options": {
-      "A": "Costo per Engagement",
-      "B": "Costo per Impression",
-      "C": "Costo per Earned Media",
-      "D": "Costo per Email inviata"
-    },
-    "answer": "A",
-    "tags": [
-      "ricerca_metodi",
-      "seo_geo_digitale",
-      "social_roi"
-    ]
-  },
-  {
-    "id": 152,
-    "section": "Digitale, social e motori di ricerca",
-    "text": "Quale delle seguenti e una caratteristica del Web 4.0?",
+    "text": "Quale delle seguenti è una caratteristica del Web 4.0 secondo la formula discussa a lezione?",
     "options": {
       "A": "Il Web che agisce (agenti autonomi e sistemi predittivi).",
       "B": "Il Web in cui partecipi (social media).",
@@ -2548,7 +2478,7 @@
     ]
   },
   {
-    "id": 153,
+    "id": 149,
     "section": "Digitale, social e motori di ricerca",
     "text": "Quale tecnologia del Web definisce in modo univoco le risorse online permettendo di trovarle?",
     "options": {
@@ -2565,26 +2495,9 @@
     ]
   },
   {
-    "id": 154,
+    "id": 150,
     "section": "Digitale, social e motori di ricerca",
-    "text": "Perche il Web 1.0 viene definito come 'fase statica' della rete?",
-    "options": {
-      "A": "I contenuti erano fissi e l'utente era un fruitore passivo",
-      "B": "Le connessioni internet erano troppo lente per i video",
-      "C": "I siti web non potevano essere aggiornati",
-      "D": "Non esistevano ancora i motori di ricerca"
-    },
-    "answer": "A",
-    "tags": [
-      "ricerca_metodi",
-      "seo_geo_digitale",
-      "social_roi"
-    ]
-  },
-  {
-    "id": 155,
-    "section": "Digitale, social e motori di ricerca",
-    "text": "Quale tra i seguenti e considerato il primo social network moderno della storia?",
+    "text": "Quale tra i seguenti è considerato il primo social network moderno della storia?",
     "options": {
       "A": "SixDegrees",
       "B": "MySpace",
@@ -2599,9 +2512,95 @@
     ]
   },
   {
-    "id": 156,
+    "id": 151,
     "section": "Digitale, social e motori di ricerca",
     "text": "Quale trend caratterizza l'evoluzione dei social media negli anni 2020?",
+    "options": {
+      "A": "La trasformazione dei canali in ecosistemi digitali integrati",
+      "B": "Il ritorno all'uso esclusivo del testo scritto",
+      "C": "L'abbandono delle applicazioni mobile a favore dei siti web",
+      "D": "La fine della monetizzazione dei contenuti"
+    },
+    "answer": "A",
+    "tags": [
+      "ricerca_metodi",
+      "seo_geo_digitale",
+      "social_roi"
+    ]
+  },
+  {
+    "id": 152,
+    "section": "Digitale, social e motori di ricerca",
+    "text": "Quale delle seguenti è una caratteristica del Web 4.0?",
+    "options": {
+      "A": "Sistemi predittivi, AI conversazionale, agenti autonomi e automazione decisionale.",
+      "B": "Siti statici consultati in modo prevalentemente unidirezionale dagli utenti.",
+      "C": "Piattaforme social basate soprattutto su profili, commenti e condivisioni.",
+      "D": "Pagine semanticamente collegate ma senza capacità di azione autonoma."
+    },
+    "answer": "A",
+    "tags": [
+      "ricerca_metodi",
+      "seo_geo_digitale",
+      "social_roi"
+    ]
+  },
+  {
+    "id": 153,
+    "section": "Digitale, social e motori di ricerca",
+    "text": "Quale di questi NON è uno dei 'quattro grandi vettori del cambiamento' citati nelle dispense?",
+    "options": {
+      "A": "L'aumento della tassazione sui servizi digitali",
+      "B": "L'affermarsi di nuovi spazi di relazione",
+      "C": "La Rete quale infrastruttura reticolare di relazioni",
+      "D": "Il peso dei motori di ricerca e di risposta"
+    },
+    "answer": "A",
+    "tags": [
+      "modelli",
+      "ricerca_metodi",
+      "seo_geo_digitale",
+      "social_roi"
+    ]
+  },
+  {
+    "id": 154,
+    "section": "Digitale, social e motori di ricerca",
+    "text": "Cosa si intende per 'Social Caring' in ambito aziendale?",
+    "options": {
+      "A": "L'attività di customer service svolta pubblicamente e rapidamente sui social",
+      "B": "La donazione di parte dei profitti ad associazioni di beneficenza tramite social",
+      "C": "L'invio di messaggi di auguri personalizzati ai follower",
+      "D": "Il monitoraggio segreto dei profili personali dei dipendenti"
+    },
+    "answer": "A",
+    "tags": [
+      "ricerca_metodi",
+      "seo_geo_digitale",
+      "social_roi"
+    ]
+  },
+  {
+    "id": 155,
+    "section": "Digitale, social e motori di ricerca",
+    "text": "Quale social network nel 2011 ha introdotto il concetto di 'contenuti effimeri'?",
+    "options": {
+      "A": "Snapchat",
+      "B": "WhatsApp",
+      "C": "Facebook",
+      "D": "Twitch"
+    },
+    "answer": "A",
+    "tags": [
+      "ricerca_metodi",
+      "seo_geo_digitale",
+      "social_roi"
+    ]
+  },
+  {
+    "id": 156,
+    "section": "Digitale, social e motori di ricerca",
+    "text": "Cosa indica l'acronimo SLA menzionato nel contesto del social caring?",
     "options": {
       "A": "La trasformazione dei canali in ecosistemi digitali integrati.",
       "B": "La concentrazione delle piattaforme su una sola funzione editoriale.",
@@ -2618,7 +2617,7 @@
   {
     "id": 157,
     "section": "Digitale, social e motori di ricerca",
-    "text": "Secondo il report 'We Are Social 2026', qual e la percentuale di traffico web generata da dispositivi mobile?",
+    "text": "Quale percentuale di penetrazione hanno i social media tra gli utenti Internet totali?",
     "options": {
       "A": "59,14%.",
       "B": "39,28%.",
@@ -2637,14 +2636,13 @@
     "section": "Digitale, social e motori di ricerca",
     "text": "Quale di questi NON rientra tra i grandi vettori del cambiamento digitale?",
     "options": {
-      "A": "L'aumento della tassazione sui servizi digitali",
-      "B": "L'affermarsi di nuovi spazi di relazione",
-      "C": "La Rete quale infrastruttura reticolare di relazioni",
-      "D": "Il peso dei motori di ricerca e di risposta"
+      "A": "Il numero di visitatori unici esposti a un contenuto moltiplicato per l'engagement",
+      "B": "La lunghezza in centimetri di un post su uno schermo standard",
+      "C": "Il numero totale di lingue in cui è tradotto un sito",
+      "D": "Il tempo totale di visualizzazione di un video"
     },
     "answer": "A",
     "tags": [
-      "modelli",
       "ricerca_metodi",
       "seo_geo_digitale",
       "social_roi"
@@ -2653,9 +2651,9 @@
   {
     "id": 159,
     "section": "Digitale, social e motori di ricerca",
-    "text": "Cosa si intende per 'Social Caring' in ambito aziendale?",
+    "text": "Quale social network è diventato centrale per le community verticali e persistenti?",
     "options": {
-      "A": "L'attivita di customer service svolta pubblicamente e rapidamente sui social.",
+      "A": "L'attività di customer service svolta pubblicamente e rapidamente sui social.",
       "B": "Il monitoraggio passivo delle conversazioni senza risposta agli utenti.",
       "C": "La pianificazione dei contenuti editoriali per aumentare la reach.",
       "D": "La misurazione del sentiment aggregato in un report periodico."
@@ -2670,12 +2668,12 @@
   {
     "id": 160,
     "section": "Digitale, social e motori di ricerca",
-    "text": "Quale social network nel 2011 ha introdotto il concetto di 'contenuti effimeri'?",
+    "text": "Quale ruolo hanno oggi TikTok e Instagram secondo la definizione di 'ecosistemi complessi'?",
     "options": {
-      "A": "Snapchat",
-      "B": "WhatsApp",
-      "C": "Facebook",
-      "D": "Twitch"
+      "A": "Piattaforme che coprono tutto il funnel, dalla consapevolezza alla fedeltà",
+      "B": "Semplici bacheche per appendere foto personali",
+      "C": "Siti web statici non aggiornabili",
+      "D": "Servizi di posta elettronica moderni"
     },
     "answer": "A",
     "tags": [
@@ -2687,15 +2685,16 @@
   {
     "id": 161,
     "section": "Digitale, social e motori di ricerca",
-    "text": "Cosa indica l'acronimo SLA menzionato nel contesto del social caring?",
+    "text": "Quale evento ha portato al successo immediato del Web nel 1993?",
     "options": {
-      "A": "Service Level Agreement",
-      "B": "Social Level Advertising",
-      "C": "Standard Language Analysis",
-      "D": "Simple Layout Application"
+      "A": "La decisione del CERN di rendere pubblica e gratuita la tecnologia",
+      "B": "La chiusura di tutti i giornali cartacei in Europa",
+      "C": "L'invenzione dello smartphone da parte di Apple",
+      "D": "L'inizio delle trasmissioni televisive a colori"
     },
     "answer": "A",
     "tags": [
+      "modelli",
       "ricerca_metodi",
       "seo_geo_digitale",
       "social_roi"
@@ -2704,7 +2703,7 @@
   {
     "id": 162,
     "section": "Digitale, social e motori di ricerca",
-    "text": "Quale percentuale di penetrazione hanno i social media tra gli utenti Internet totali?",
+    "text": "Nel contesto della Social Network Analysis (SNA) moderna, cosa è cambiato rispetto al passato nell'identificazione degli opinion leader?",
     "options": {
       "A": "93,8%.",
       "B": "68,7%.",
@@ -2721,7 +2720,7 @@
   {
     "id": 163,
     "section": "Digitale, social e motori di ricerca",
-    "text": "Cosa permette di misurare l'Ampiezza delle conversazioni?",
+    "text": "Nell'analisi quantitativa del Social Media Listening, quale variabile deve essere sempre considerata in congiunzione con la numerosità dei messaggi?",
     "options": {
       "A": "Il numero di visitatori unici esposti a un contenuto moltiplicato per l'engagement.",
       "B": "Il volume assoluto delle menzioni raccolte senza ponderazione.",
@@ -2738,12 +2737,12 @@
   {
     "id": 164,
     "section": "Digitale, social e motori di ricerca",
-    "text": "Quale social network e diventato centrale per le community verticali e persistenti?",
+    "text": "Quale delle seguenti affermazioni descrive correttamente i beni intangibili?",
     "options": {
-      "A": "Discord",
-      "B": "TikTok",
-      "C": "Instagram",
-      "D": "X (ex Twitter)"
+      "A": "Rappresentano una delle principali fonti di vantaggio competitivo e sono difficili da imitare",
+      "B": "Non possono essere misurati né con metodi finanziari né con metodi non finanziari",
+      "C": "Hanno un impatto limitato sulla creazione di valore a lungo termine rispetto ai beni fisici",
+      "D": "Sono asset materiali come impianti e macchinari facilmente valutabili"
     },
     "answer": "A",
     "tags": [
@@ -2755,15 +2754,16 @@
   {
     "id": 165,
     "section": "Digitale, social e motori di ricerca",
-    "text": "Quale ruolo hanno oggi TikTok e Instagram secondo la definizione di 'ecosistemi complessi'?",
+    "text": "Nel modello PRE, cosa accade nella Fase 1 (Audit)?",
     "options": {
-      "A": "Piattaforme che coprono tutto il funnel, dalla consapevolezza alla fedelta.",
+      "A": "Piattaforme che coprono tutto il funnel, dalla consapevolezza alla fedeltà.",
       "B": "Canali orientati quasi esclusivamente alla pubblicazione di immagini statiche.",
-      "C": "Ambienti utili solo per la notorieta, ma non per relazione o conversione.",
+      "C": "Ambienti utili solo per la notorietà, ma non per relazione o conversione.",
       "D": "Strumenti separati dal customer journey e dalla misurazione delle performance."
     },
     "answer": "A",
     "tags": [
+      "modelli",
       "ricerca_metodi",
       "seo_geo_digitale",
       "social_roi"
@@ -2772,7 +2772,7 @@
   {
     "id": 166,
     "section": "Digitale, social e motori di ricerca",
-    "text": "Quale evento ha portato al successo immediato del Web nel 1993?",
+    "text": "Che cosa misura il Return on Earned Media (ROEM)?",
     "options": {
       "A": "La decisione del CERN di rendere pubblica e gratuita la tecnologia.",
       "B": "La nascita delle prime piattaforme social basate su profili personali.",
@@ -2791,12 +2791,12 @@
   {
     "id": 167,
     "section": "Digitale, social e motori di ricerca",
-    "text": "Perche nel Social Media Listening si afferma che partire dai messaggi raccolti (invece che dagli obiettivi) sia un errore metodologico?",
+    "text": "Cosa si intende per 'Share of Voice' (SoV) nel monitoraggio dei media?",
     "options": {
-      "A": "Perche l'analisi rischierebbe di essere guidata dai dati disponibili invece che dalle domande di business a cui rispondere.",
-      "B": "Perche ridurrebbe automaticamente il numero di messaggi raccolti dal tool.",
-      "C": "Perche impedirebbe di applicare qualsiasi classificazione del sentiment.",
-      "D": "Perche renderebbe impossibile il confronto tra canali proprietari e earned media."
+      "A": "Perché l'analisi rischierebbe di essere guidata dai dati disponibili invece che dalle domande di business a cui rispondere.",
+      "B": "Perché ridurrebbe automaticamente il numero di messaggi raccolti dal tool.",
+      "C": "Perché impedirebbe di applicare qualsiasi classificazione del sentiment.",
+      "D": "Perché renderebbe impossibile il confronto tra canali proprietari e earned media."
     },
     "answer": "A",
     "tags": [
@@ -2808,12 +2808,12 @@
   {
     "id": 168,
     "section": "Digitale, social e motori di ricerca",
-    "text": "Nel contesto della Social Network Analysis (SNA) moderna, cosa e cambiato rispetto al passato nell'identificazione degli opinion leader?",
+    "text": "Quale metrica BTL (Below The Line) si concentra sull'interazione dell'utente?",
     "options": {
-      "A": "L'influenza non e piu concentrata solo sui blogger, ma distribuita su creator, media verticali e community.",
-      "B": "Gli opinion leader sono identificati esclusivamente attraverso i link in entrata verso i propri siti web.",
-      "C": "L'unico criterio di autorevolezza e diventato il numero totale di follower su un singolo canale.",
-      "D": "Non e piu possibile individuare leader di opinione a causa dell'uso massiccio di profili fake."
+      "A": "Engagement",
+      "B": "Copertura (Reach) di massa",
+      "C": "Share of Voice televisiva",
+      "D": "Notorietà del brand a livello nazionale"
     },
     "answer": "A",
     "tags": [
@@ -2825,9 +2825,9 @@
   {
     "id": 169,
     "section": "Digitale, social e motori di ricerca",
-    "text": "Nell'analisi quantitativa del Social Media Listening, quale variabile deve essere sempre considerata in congiunzione con la numerosita dei messaggi?",
+    "text": "Quale metrica analizza se l'organizzazione è il soggetto principale dell'articolo o se è condivisa con altri?",
     "options": {
-      "A": "La variabile tempo e/o il confronto con la numerosita dei messaggi dei competitor.",
+      "A": "La variabile tempo e/o il confronto con la numerosità dei messaggi dei competitor.",
       "B": "La sola ampiezza potenziale del pubblico raggiungibile dal canale.",
       "C": "Il numero di contenuti prodotti dall'organizzazione nello stesso periodo.",
       "D": "Il valore economico equivalente degli spazi media occupati."
@@ -2841,144 +2841,6 @@
   },
   {
     "id": 170,
-    "section": "Digitale, social e motori di ricerca",
-    "text": "Quale delle seguenti affermazioni descrive correttamente i beni intangibili?",
-    "options": {
-      "A": "Rappresentano una delle principali fonti di vantaggio competitivo e sono difficili da imitare",
-      "B": "Non possono essere misurati ne con metodi finanziari ne con metodi non finanziari",
-      "C": "Hanno un impatto limitato sulla creazione di valore a lungo termine rispetto ai beni fisici",
-      "D": "Sono asset materiali come impianti e macchinari facilmente valutabili"
-    },
-    "answer": "A",
-    "tags": [
-      "ricerca_metodi",
-      "seo_geo_digitale",
-      "social_roi"
-    ]
-  },
-  {
-    "id": 171,
-    "section": "Digitale, social e motori di ricerca",
-    "text": "Nel modello PRE, cosa accade nella Fase 1 (Audit)?",
-    "options": {
-      "A": "Vengono condotte analisi SWOT e monitorati i media per creare benchmark.",
-      "B": "Si decreta il successo o il fallimento del processo appena concluso.",
-      "C": "Si decide se condurre la valutazione a livello di output o di outcome.",
-      "D": "Si definiscono gli obiettivi SMART allineati al business."
-    },
-    "answer": "A",
-    "tags": [
-      "modelli",
-      "ricerca_metodi",
-      "seo_geo_digitale",
-      "social_roi"
-    ]
-  },
-  {
-    "id": 172,
-    "section": "Digitale, social e motori di ricerca",
-    "text": "Che cosa misura il Return on Earned Media (ROEM)?",
-    "options": {
-      "A": "La valorizzazione monetaria della copertura media ottenuta gratuitamente.",
-      "B": "Il ritorno sugli obiettivi di relazione definiti con gli stakeholder.",
-      "C": "Il valore della quota di conversazione rispetto ai competitor.",
-      "D": "Il rapporto tra contenuti pubblicati e interazioni generate."
-    },
-    "answer": "A",
-    "tags": [
-      "ricerca_metodi",
-      "seo_geo_digitale",
-      "social_roi"
-    ]
-  },
-  {
-    "id": 173,
-    "section": "Digitale, social e motori di ricerca",
-    "text": "Cosa si intende per 'Share of Voice' (SoV) nel monitoraggio dei media?",
-    "options": {
-      "A": "Il confronto tra la copertura dell'organizzazione e quella dei concorrenti.",
-      "B": "Il tono medio della copertura ottenuta nel periodo analizzato.",
-      "C": "La percentuale di messaggi chiave presenti negli articoli pubblicati.",
-      "D": "La posizione dell'organizzazione all'interno del singolo contenuto."
-    },
-    "answer": "A",
-    "tags": [
-      "ricerca_metodi",
-      "seo_geo_digitale",
-      "social_roi"
-    ]
-  },
-  {
-    "id": 174,
-    "section": "Digitale, social e motori di ricerca",
-    "text": "Quale metrica BTL (Below The Line) si concentra sull'interazione dell'utente?",
-    "options": {
-      "A": "Engagement",
-      "B": "Copertura (Reach) di massa",
-      "C": "Share of Voice televisiva",
-      "D": "Notorieta del brand a livello nazionale"
-    },
-    "answer": "A",
-    "tags": [
-      "ricerca_metodi",
-      "seo_geo_digitale",
-      "social_roi"
-    ]
-  },
-  {
-    "id": 175,
-    "section": "Digitale, social e motori di ricerca",
-    "text": "Perche oggi non e piu possibile distinguere nettamente tra media tradizionali e web?",
-    "options": {
-      "A": "Perche i mezzi sono interconnessi (es. TV in streaming, quotidiani sui social).",
-      "B": "Perche i media tradizionali usano sempre gli stessi KPI del social listening.",
-      "C": "Perche la distinzione dipende solo dal dispositivo usato dall'utente.",
-      "D": "Perche la pianificazione media misura ormai solo canali digitali."
-    },
-    "answer": "A",
-    "tags": [
-      "ricerca_metodi",
-      "seo_geo_digitale",
-      "social_roi"
-    ]
-  },
-  {
-    "id": 176,
-    "section": "Digitale, social e motori di ricerca",
-    "text": "Perche e importante monitorare i 'Nuovi ambienti digitali' come le piattaforme generative (GEO)?",
-    "options": {
-      "A": "Per analizzare la visibilita nei motori di risposta che usano l'IA.",
-      "B": "Per sostituire completamente il monitoraggio di motori di ricerca e social media.",
-      "C": "Per misurare soltanto il traffico diretto generato verso il sito aziendale.",
-      "D": "Per concentrare l'analisi solo sui contenuti pubblicati dai giornalisti."
-    },
-    "answer": "A",
-    "tags": [
-      "ricerca_metodi",
-      "seo_geo_digitale",
-      "social_roi"
-    ]
-  },
-  {
-    "id": 177,
-    "section": "Digitale, social e motori di ricerca",
-    "text": "Quale metrica analizza se l'organizzazione e il soggetto principale dell'articolo o se e condivisa con altri?",
-    "options": {
-      "A": "Shared/sole mentions",
-      "B": "Visual Quality",
-      "C": "Tono",
-      "D": "ADS"
-    },
-    "answer": "A",
-    "tags": [
-      "enti_audience",
-      "ricerca_metodi",
-      "seo_geo_digitale",
-      "social_roi"
-    ]
-  },
-  {
-    "id": 178,
     "section": "Digitale, social e motori di ricerca",
     "text": "Secondo Jim Lecinski (Google), cosa avviene durante lo Zero Moment of Truth (ZMOT)?",
     "options": {
@@ -2996,7 +2858,7 @@
     ]
   },
   {
-    "id": 179,
+    "id": 171,
     "section": "Digitale, social e motori di ricerca",
     "text": "Nel modello PESO, quale categoria rappresenta i contenuti pubblicati sui social media che favoriscono l'interazione e la condivisione?",
     "options": {
@@ -3014,17 +2876,159 @@
     ]
   },
   {
-    "id": 180,
+    "id": 172,
     "section": "Digitale, social e motori di ricerca",
-    "text": "Quale di questi e un indicatore di efficienza utilizzato per calcolare il costo unitario di una singola interazione sui social media?",
+    "text": "Quale di questi è un indicatore di efficienza utilizzato per calcolare il costo unitario di una singola interazione sui social media?",
     "options": {
-      "A": "CPE (Cost Per Engagement)",
-      "B": "CPI (Cost Per Impression)",
-      "C": "CPL (Cost Per Lead)",
-      "D": "CPR (Cost Per Referral)"
+      "A": "La valorizzazione monetaria della copertura media ottenuta gratuitamente.",
+      "B": "Il ritorno sugli obiettivi di relazione definiti con gli stakeholder.",
+      "C": "Il valore della quota di conversazione rispetto ai competitor.",
+      "D": "Il rapporto tra contenuti pubblicati e interazioni generate."
     },
     "answer": "A",
     "tags": [
+      "ricerca_metodi",
+      "seo_geo_digitale",
+      "social_roi"
+    ]
+  },
+  {
+    "id": 173,
+    "section": "Digitale, social e motori di ricerca",
+    "text": "Nel percorso logico proposto da Altimeter per creare un programma di misurazione, quale fase deve precedere la scelta della tecnologia?",
+    "options": {
+      "A": "Il confronto tra la copertura dell'organizzazione e quella dei concorrenti.",
+      "B": "Il tono medio della copertura ottenuta nel periodo analizzato.",
+      "C": "La percentuale di messaggi chiave presenti negli articoli pubblicati.",
+      "D": "La posizione dell'organizzazione all'interno del singolo contenuto."
+    },
+    "answer": "A",
+    "tags": [
+      "enti_audience",
+      "modelli",
+      "ricerca_metodi",
+      "seo_geo_digitale",
+      "social_roi"
+    ]
+  },
+  {
+    "id": 174,
+    "section": "Digitale, social e motori di ricerca",
+    "text": "Quale direzione della 'Social Media Measurement Compass' si occupa di valutare l'efficacia dei programmi di marketing nel migliorare i risultati delle campagne?",
+    "options": {
+      "A": "Marketing Optimization",
+      "B": "Brand Health",
+      "C": "Operational Efficiency",
+      "D": "Innovation"
+    },
+    "answer": "A",
+    "tags": [
+      "ricerca_metodi",
+      "seo_geo_digitale",
+      "social_roi"
+    ]
+  },
+  {
+    "id": 175,
+    "section": "Digitale, social e motori di ricerca",
+    "text": "Nella gerarchia del valore del dato digitale, qual è la differenza principale tra 'Information' e 'Insight'?",
+    "options": {
+      "A": "Perché i mezzi sono interconnessi (es. TV in streaming, quotidiani sui social).",
+      "B": "Perché i media tradizionali usano sempre gli stessi KPI del social listening.",
+      "C": "Perché la distinzione dipende solo dal dispositivo usato dall'utente.",
+      "D": "Perché la pianificazione media misura ormai solo canali digitali."
+    },
+    "answer": "A",
+    "tags": [
+      "ricerca_metodi",
+      "seo_geo_digitale",
+      "social_roi"
+    ]
+  },
+  {
+    "id": 176,
+    "section": "Digitale, social e motori di ricerca",
+    "text": "Quale errore commettono spesso le aziende nell'approccio alle social media analytics secondo il materiale del corso?",
+    "options": {
+      "A": "Per analizzare la visibilità nei motori di risposta che usano l'IA.",
+      "B": "Per sostituire completamente il monitoraggio di motori di ricerca e social media.",
+      "C": "Per misurare soltanto il traffico diretto generato verso il sito aziendale.",
+      "D": "Per concentrare l'analisi solo sui contenuti pubblicati dai giornalisti."
+    },
+    "answer": "A",
+    "tags": [
+      "ricerca_metodi",
+      "seo_geo_digitale",
+      "social_roi"
+    ]
+  },
+  {
+    "id": 177,
+    "section": "Digitale, social e motori di ricerca",
+    "text": "Quale di queste affermazioni descrive correttamente la 'Reach di un post' secondo la formula proposta nel materiale?",
+    "options": {
+      "A": "È la somma dei visitatori unici più le condivisioni pesate sui vari social network (es. FB, Twitter)",
+      "B": "È la differenza tra chi ha visto il post e chi lo ha nascosto dal feed",
+      "C": "È il numero totale di commenti ricevuti dal post moltiplicato per due",
+      "D": "È un dato che non può mai essere calcolato con precisione"
+    },
+    "answer": "A",
+    "tags": [
+      "ricerca_metodi",
+      "seo_geo_digitale",
+      "social_roi"
+    ]
+  },
+  {
+    "id": 178,
+    "section": "Digitale, social e motori di ricerca",
+    "text": "Quale di questi è un indicatore di 'Business Value' nel framework Altimeter?",
+    "options": {
+      "A": "Riduzione del traffico al call center tradizionale grazie al supporto social",
+      "B": "Percentuale di utenti che hanno attivato le notifiche della pagina",
+      "C": "Numero di 'cuori' ricevuti su una storia di Instagram",
+      "D": "Tempo impiegato dal grafico per creare un'immagine coordinata"
+    },
+    "answer": "A",
+    "tags": [
+      "enti_audience",
+      "modelli",
+      "ricerca_metodi",
+      "seo_geo_digitale",
+      "social_roi"
+    ]
+  },
+  {
+    "id": 179,
+    "section": "Digitale, social e motori di ricerca",
+    "text": "Cosa indica l'indicatore 'Tasso di risoluzione dei problemi' (Resolution Rate) nei social media?",
+    "options": {
+      "A": "La quota di richieste di supporto o reclami risolti con successo attraverso i canali social",
+      "B": "La velocità media di connessione a internet degli utenti della pagina",
+      "C": "Il numero di bug tecnici risolti dagli sviluppatori dell'app Facebook",
+      "D": "Quante volte l'azienda ha cancellato i commenti negativi degli utenti"
+    },
+    "answer": "A",
+    "tags": [
+      "ricerca_metodi",
+      "seo_geo_digitale",
+      "social_roi"
+    ]
+  },
+  {
+    "id": 180,
+    "section": "Digitale, social e motori di ricerca",
+    "text": "Cosa si intende per 'Revenue Generation' nella bussola Altimeter?",
+    "options": {
+      "A": "L'utilizzo dei social per influenzare direttamente o indirettamente l'aumento del fatturato e delle vendite",
+      "B": "L'aumento del numero di follower che hanno un alto stipendio",
+      "C": "La quantità di tasse che l'azienda deve pagare allo Stato",
+      "D": "La stampa di banconote false con il logo dell'azienda"
+    },
+    "answer": "A",
+    "tags": [
+      "enti_audience",
+      "modelli",
       "ricerca_metodi",
       "seo_geo_digitale",
       "social_roi"
@@ -3035,7 +3039,7 @@
     "section": "Monitoring, listening e sentiment",
     "text": "Cosa misura l'OTS (Opportunity To See)?",
     "options": {
-      "A": "Il numero di occasioni in cui il pubblico puo essere raggiunto dal messaggio",
+      "A": "Il numero di occasioni in cui il pubblico può essere raggiunto dal messaggio",
       "B": "Il numero di copie effettivamente vendute di un giornale nel periodo",
       "C": "Il livello di awareness raggiunto dal pubblico target della campagna",
       "D": "La percentuale di articoli con citazioni di terzi sull'organizzazione"
@@ -3086,7 +3090,7 @@
   {
     "id": 184,
     "section": "Monitoring, listening e sentiment",
-    "text": "Le metodologie quanti-qualitative per misurare la visibilita di un soggetto su una testata online rispondono a due domande:",
+    "text": "Le metodologie quanti-qualitative per misurare la visibilità di un soggetto su una testata online rispondono a due domande:",
     "options": {
       "A": "\"Quanto si parla di me?\" e \"Come se ne parla?\"",
       "B": "\"Quanto costa la copertura?\" e \"A quanti arriva?\"",
@@ -3105,7 +3109,7 @@
     "section": "Monitoring, listening e sentiment",
     "text": "Che cosa misura l'indicatore 'OTS' (Opportunity To See)?",
     "options": {
-      "A": "Le opportunita potenziali di esposizione a un contenuto, basate sulla reach e sul numero di uscite.",
+      "A": "Le opportunità potenziali di esposizione a un contenuto, basate sulla reach e sul numero di uscite.",
       "B": "Il tempo trascorso tra la pubblicazione di un post e il primo like ricevuto.",
       "C": "La percentuale di utenti che hanno acquistato il prodotto dopo aver visto l'annuncio.",
       "D": "Il numero di persone che hanno effettivamente capito il messaggio pubblicitario."
@@ -3120,7 +3124,7 @@
   {
     "id": 186,
     "section": "Monitoring, listening e sentiment",
-    "text": "Nella metodologia di 'Sentiment Analysis', qual e la prospettiva corretta da assumere per attribuire l'etichetta di tono?",
+    "text": "Nella metodologia di 'Sentiment Analysis', qual è la prospettiva corretta da assumere per attribuire l'etichetta di tono?",
     "options": {
       "A": "Quella del lettore medio che incontra il testo per la prima volta senza pregiudizi.",
       "B": "Quella dell'esperto di settore che conosce tutti i retroscena aziendali.",
@@ -3137,12 +3141,12 @@
   {
     "id": 187,
     "section": "Monitoring, listening e sentiment",
-    "text": "Nel contesto del social listening, qual e la differenza tra un 'Topic' e un 'Hot Topic'?",
+    "text": "Nel contesto del social listening, qual è la differenza tra un 'Topic' e un 'Hot Topic'?",
     "options": {
-      "A": "Il topic e un tema ricorrente; l'hot topic e un tema emergente o improvvisamente esplosivo.",
-      "B": "Il topic e una parola chiave, l'hot topic e una citazione diretta di un influencer.",
-      "C": "Il topic e positivo, mentre l'hot topic e sempre legato a una crisi reputazionale negativa.",
-      "D": "Il topic e rilevato manualmente, l'hot topic solo tramite algoritmi AI."
+      "A": "Il topic è un tema ricorrente; l'hot topic è un tema emergente o improvvisamente esplosivo.",
+      "B": "Il topic è una parola chiave, l'hot topic è una citazione diretta di un influencer.",
+      "C": "Il topic è positivo, mentre l'hot topic è sempre legato a una crisi reputazionale negativa.",
+      "D": "Il topic è rilevato manualmente, l'hot topic solo tramite algoritmi AI."
     },
     "answer": "A",
     "tags": [
@@ -3171,12 +3175,12 @@
   {
     "id": 189,
     "section": "Monitoring, listening e sentiment",
-    "text": "Quale tra i seguenti e considerato un limite critico dell'Intelligenza Artificiale applicata alla sentiment analysis?",
+    "text": "Quale tra i seguenti è considerato un limite critico dell'Intelligenza Artificiale applicata alla sentiment analysis?",
     "options": {
-      "A": "La difficolta nel comprendere correttamente sarcasmo, ironia e ambiguita linguistica senza un intervento umano.",
+      "A": "La difficoltà nel comprendere correttamente sarcasmo, ironia e ambiguità linguistica senza un intervento umano.",
       "B": "La mancanza di piattaforme di crawling in grado di raccogliere dati dai social network.",
       "C": "Il costo eccessivamente elevato rispetto all'impiego di analisti umani per ogni singolo post.",
-      "D": "L'incapacita assoluta di analizzare grandi volumi di dati in tempo reale."
+      "D": "L'incapacità assoluta di analizzare grandi volumi di dati in tempo reale."
     },
     "answer": "A",
     "tags": [
@@ -3192,7 +3196,7 @@
     "options": {
       "A": "La quota di copertura media ottenuta dall'organizzazione rispetto ai competitor.",
       "B": "Il ritorno economico calcolato in base alle tariffe pubblicitarie equivalenti.",
-      "C": "La qualita del tono editoriale (positivo/negativo) dei messaggi diffusi.",
+      "C": "La qualità del tono editoriale (positivo/negativo) dei messaggi diffusi.",
       "D": "Il numero di volte in cui i portavoce aziendali vengono citati esplicitamente."
     },
     "answer": "A",
@@ -3207,8 +3211,8 @@
     "section": "Monitoring, listening e sentiment",
     "text": "Secondo il report State of PR Measurement (2024–2025), quale sfida persiste per i professionisti della comunicazione?",
     "options": {
-      "A": "La difficolta nel collegare le metriche di comunicazione ai risultati di business.",
-      "B": "L'impossibilita tecnica di monitorare i risultati su base regolare.",
+      "A": "La difficoltà nel collegare le metriche di comunicazione ai risultati di business.",
+      "B": "L'impossibilità tecnica di monitorare i risultati su base regolare.",
       "C": "La mancanza di strumenti software per il social listening.",
       "D": "L'assenza di KPI definiti per il media monitoring tradizionale."
     },
@@ -3275,7 +3279,7 @@
   {
     "id": 195,
     "section": "Monitoring, listening e sentiment",
-    "text": "Nel processo di analisi semantica, cos'e l''Estrattore di funzioni semantiche'?",
+    "text": "Nel processo di analisi semantica, cos'è l''Estrattore di funzioni semantiche'?",
     "options": {
       "A": "Un modulo che identifica i ruoli dei vari elementi della frase (es. chi compie l'azione).",
       "B": "Un filtro che elimina le 'stop words' come articoli e preposizioni.",
@@ -3294,7 +3298,7 @@
     "section": "Monitoring, listening e sentiment",
     "text": "Quale problema pongono i termini omonimi durante la definizione della tassonomia e delle query?",
     "options": {
-      "A": "Possono generare ambiguita nel dataset, includendo messaggi non attinenti al brand.",
+      "A": "Possono generare ambiguità nel dataset, includendo messaggi non attinenti al brand.",
       "B": "Riducono drasticamente il volume di messaggi catturati dal sistema.",
       "C": "Impediscono l'uso di operatori logici come AND e OR.",
       "D": "Rendono impossibile l'esportazione manuale dei dati da Wikipedia."
@@ -3308,9 +3312,9 @@
   {
     "id": 197,
     "section": "Monitoring, listening e sentiment",
-    "text": "Nell'analisi del sentiment, cos'e l'approccio 'Misto/Ibrido'?",
+    "text": "Nell'analisi del sentiment, cos'è l'approccio 'Misto/Ibrido'?",
     "options": {
-      "A": "Possono generare ambiguita nel dataset, includendo messaggi non attinenti al brand.",
+      "A": "Possono generare ambiguità nel dataset, includendo messaggi non attinenti al brand.",
       "B": "Riducono drasticamente il volume dei messaggi raccolti dal sistema.",
       "C": "Impediscono l'uso di operatori logici come AND e OR nelle query.",
       "D": "Rendono inutilizzabili i metadati temporali dei messaggi raccolti."
@@ -3324,7 +3328,7 @@
   {
     "id": 198,
     "section": "Monitoring, listening e sentiment",
-    "text": "Secondo il report 'State of PR Measurement', qual e la sfida attuale per i professionisti?",
+    "text": "Secondo il report 'State of PR Measurement', qual è la sfida attuale per i professionisti?",
     "options": {
       "A": "Collegare le metriche utilizzate ai risultati di business e all'impatto strategico.",
       "B": "Limitarsi alla rendicontazione degli output media prodotti nel periodo.",
@@ -3375,7 +3379,7 @@
   {
     "id": 201,
     "section": "Monitoring, listening e sentiment",
-    "text": "Quale di questi e un limite riconosciuto dei dizionari predefiniti nella Sentiment Analysis?",
+    "text": "Quale di questi è un limite riconosciuto dei dizionari predefiniti nella Sentiment Analysis?",
     "options": {
       "A": "Non riescono a cogliere le sfumature ironiche o sarcastiche del linguaggio.",
       "B": "Richiedono sempre un training set annotato manualmente per ogni analisi.",
@@ -3398,7 +3402,7 @@
       "A": "L'intenzione d'acquisto (Activation).",
       "B": "La soddisfazione post-acquisto dichiarata dal consumatore.",
       "C": "Il ricordo sollecitato della marca dopo l'esposizione pubblicitaria.",
-      "D": "La notorieta spontanea del brand nel settore alimentare."
+      "D": "La notorietà spontanea del brand nel settore alimentare."
     },
     "answer": "A",
     "tags": [
@@ -3410,11 +3414,11 @@
   {
     "id": 203,
     "section": "Monitoring, listening e sentiment",
-    "text": "Quale affermazione di Gary Hamel e riportata per descrivere il cambio di potere nella comunicazione?",
+    "text": "Quale affermazione di Gary Hamel è riportata per descrivere il cambio di potere nella comunicazione?",
     "options": {
-      "A": "I manager non sono piu ai comandi della conversazione",
-      "B": "La tecnologia e l'unica cosa che conta per il profitto",
-      "C": "Il Web e una moda passeggera senza futuro",
+      "A": "I manager non sono più ai comandi della conversazione",
+      "B": "La tecnologia è l'unica cosa che conta per il profitto",
+      "C": "Il Web è una moda passeggera senza futuro",
       "D": "Ogni azienda deve diventare un'agenzia di stampa"
     },
     "answer": "A",
@@ -3427,7 +3431,7 @@
   {
     "id": 204,
     "section": "Monitoring, listening e sentiment",
-    "text": "Cosa e cambiato nel mercato pubblicitario digitale oggi rispetto al passato?",
+    "text": "Cosa è cambiato nel mercato pubblicitario digitale oggi rispetto al passato?",
     "options": {
       "A": "La competizione e interna ai canali digitali (social vs search vs video).",
       "B": "La pianificazione digitale si concentra solo sui formati display tradizionali.",
@@ -3446,7 +3450,7 @@
     "section": "Monitoring, listening e sentiment",
     "text": "Cosa si intende per 'Opportunity to See' (OTS) o Impressions?",
     "options": {
-      "A": "La possibilita potenziale che il pubblico ha di essere raggiunto dal messaggio",
+      "A": "La possibilità potenziale che il pubblico ha di essere raggiunto dal messaggio",
       "B": "Il numero di persone che hanno effettivamente acquistato il prodotto",
       "C": "Il numero di articoli scritti spontaneamente dai giornalisti",
       "D": "La percentuale di messaggi chiave recepiti correttamente"
@@ -3478,10 +3482,10 @@
   {
     "id": 207,
     "section": "Monitoring, listening e sentiment",
-    "text": "Cosa deve rappresentare il 'lettore medio' nell'analisi qualitativa della visibilita?",
+    "text": "Cosa deve rappresentare il 'lettore medio' nell'analisi qualitativa della visibilità?",
     "options": {
       "A": "Qualcuno che non conosce le strategie dell'azienda e giudica solo il contenuto",
-      "B": "Un potenziale cliente che ha gia intenzione di acquistare il prodotto",
+      "B": "Un potenziale cliente che ha già intenzione di acquistare il prodotto",
       "C": "Il top management dell'organizzazione che valuta l'operato dell'ufficio stampa",
       "D": "Un esperto del settore con profonde conoscenze pregresse"
     },
@@ -3497,9 +3501,9 @@
     "text": "Cosa si intende per 'Tono editoriale' (o Sentiment) nel monitoraggio dei media?",
     "options": {
       "A": "La valutazione se l'esposizione e favorevole, neutra o sfavorevole all'organizzazione.",
-      "B": "La quantita complessiva di articoli pubblicati in un dato periodo.",
+      "B": "La quantità complessiva di articoli pubblicati in un dato periodo.",
       "C": "La presenza dei messaggi chiave nella copertura ottenuta.",
-      "D": "La centralita del soggetto all'interno del contenuto editoriale."
+      "D": "La centralità del soggetto all'interno del contenuto editoriale."
     },
     "answer": "A",
     "tags": [
@@ -3563,7 +3567,7 @@
   {
     "id": 212,
     "section": "Monitoring, listening e sentiment",
-    "text": "Nel monitoraggio dei media, cos'e la 'Sentiment Analysis'?",
+    "text": "Nel monitoraggio dei media, cos'è la 'Sentiment Analysis'?",
     "options": {
       "A": "L'analisi qualitativa del tono (positivo, negativo, neutro) delle conversazioni e degli articoli.",
       "B": "Il conteggio del numero totale di articoli pubblicati nel periodo.",
@@ -3580,12 +3584,12 @@
   {
     "id": 213,
     "section": "Monitoring, listening e sentiment",
-    "text": "Secondo le lezioni, perche i beni intangibili sono spesso 'piu difficili da imitare' rispetto ai beni fisici?",
+    "text": "Secondo le lezioni, perché i beni intangibili sono spesso 'più difficili da imitare' rispetto ai beni fisici?",
     "options": {
-      "A": "Perche sono radicati nella conoscenza, nelle relazioni e nella cultura specifica di quell'organizzazione.",
-      "B": "Perche coincidono sempre con brevetti registrati e legalmente protetti.",
-      "C": "Perche possono essere acquistati sul mercato solo da imprese gia leader.",
-      "D": "Perche derivano esclusivamente dal volume degli investimenti pubblicitari."
+      "A": "Perché sono radicati nella conoscenza, nelle relazioni e nella cultura specifica di quell'organizzazione.",
+      "B": "Perché coincidono sempre con brevetti registrati e legalmente protetti.",
+      "C": "Perché possono essere acquistati sul mercato solo da imprese già leader.",
+      "D": "Perché derivano esclusivamente dal volume degli investimenti pubblicitari."
     },
     "answer": "A",
     "tags": [
@@ -3600,10 +3604,10 @@
     "section": "Monitoring, listening e sentiment",
     "text": "Nella 'Sentiment Analysis', cosa caratterizza l'approccio basato sui modelli linguistici evoluti (Transformer/LLM)?",
     "options": {
-      "A": "La capacita di cogliere meglio sfumature, ironia e contesto rispetto ai modelli probabilistici.",
+      "A": "La capacità di cogliere meglio sfumature, ironia e contesto rispetto ai modelli probabilistici.",
       "B": "L'uso di semplici liste di parole positive o negative (bag-of-words).",
-      "C": "L'incapacita totale di distinguere tra messaggi ironici e messaggi letterali.",
-      "D": "La necessita di catalogare manualmente ogni singolo post raccolto."
+      "C": "L'incapacità totale di distinguere tra messaggi ironici e messaggi letterali.",
+      "D": "La necessità di catalogare manualmente ogni singolo post raccolto."
     },
     "answer": "A",
     "tags": [
@@ -3632,7 +3636,7 @@
   {
     "id": 216,
     "section": "Monitoring, listening e sentiment",
-    "text": "Quale di questi e un indicatore di 'Output' tipico del media monitoring?",
+    "text": "Quale di questi è un indicatore di 'Output' tipico del media monitoring?",
     "options": {
       "A": "Il numero di articoli pubblicati e le impression generate.",
       "B": "Il numero di fan su un social network.",
@@ -3649,7 +3653,7 @@
   {
     "id": 217,
     "section": "Monitoring, listening e sentiment",
-    "text": "Nel monitoraggio dei media, qual e la differenza tra l'analisi quantitativa e la 'Sentiment Analysis'?",
+    "text": "Nel monitoraggio dei media, qual è la differenza tra l'analisi quantitativa e la 'Sentiment Analysis'?",
     "options": {
       "A": "La quantitativa conta i volumi (es. numero di articoli), il sentiment valuta il tono e l'atteggiamento verso il soggetto.",
       "B": "La quantitativa valuta il tono, mentre il sentiment misura soltanto la reach.",
@@ -3665,11 +3669,11 @@
   {
     "id": 218,
     "section": "Monitoring, listening e sentiment",
-    "text": "Qual e il limite principale della 'Sentiment Analysis' basata su dizionari (bag-of-words)?",
+    "text": "Qual è il limite principale della 'Sentiment Analysis' basata su dizionari (bag-of-words)?",
     "options": {
-      "A": "Ha difficolta a comprendere il contesto, l'ironia e le sfumature linguistiche complesse.",
+      "A": "Ha difficoltà a comprendere il contesto, l'ironia e le sfumature linguistiche complesse.",
       "B": "È troppo costosa da implementare per le piccole medie imprese.",
-      "C": "Non puo essere utilizzata sui dati provenienti dai social network.",
+      "C": "Non può essere utilizzata sui dati provenienti dai social network.",
       "D": "Richiede l'intervento umano per ogni singolo post analizzato."
     },
     "answer": "A",
@@ -3682,7 +3686,7 @@
   {
     "id": 219,
     "section": "Monitoring, listening e sentiment",
-    "text": "Qual e il rischio principale dell''Automazione Cieca' nell'uso dell'AI per la misurazione social?",
+    "text": "Qual è il rischio principale dell''Automazione Cieca' nell'uso dell'AI per la misurazione social?",
     "options": {
       "A": "Far agire un sistema o prendere decisioni operative direttamente sugli output dell'AI senza supervisione umana.",
       "B": "Usare l'AI solo come supporto alla classificazione preliminare dei contenuti.",
@@ -3701,7 +3705,7 @@
   {
     "id": 220,
     "section": "Monitoring, listening e sentiment",
-    "text": "In un'attivita di media monitoring, il conteggio delle 'impression' e classificato come:",
+    "text": "In un'attività di media monitoring, il conteggio delle 'impression' è classificato come:",
     "options": {
       "A": "Output.",
       "B": "Impatto strategico.",
@@ -3717,7 +3721,7 @@
   {
     "id": 221,
     "section": "Monitoring, listening e sentiment",
-    "text": "Un brand energetico vuole capire se la propria 'Share of Voice' e superiore a quella di Enel. Quale tipo di valutazione sta eseguendo?",
+    "text": "Un brand energetico vuole capire se la propria 'Share of Voice' è superiore a quella di Enel. Quale tipo di valutazione sta eseguendo?",
     "options": {
       "A": "Valutazione Competitiva.",
       "B": "Valutazione Dinamica.",
@@ -3734,7 +3738,7 @@
   {
     "id": 222,
     "section": "Monitoring, listening e sentiment",
-    "text": "Qual e il limite principale nell'uso di 'dizionari' (bag-of-words) per la sentiment analysis automatica?",
+    "text": "Qual è il limite principale nell'uso di 'dizionari' (bag-of-words) per la sentiment analysis automatica?",
     "options": {
       "A": "Non riescono a cogliere il contesto, l'ironia o il sarcasmo.",
       "B": "Sono troppo costosi da implementare per le piccole aziende.",
@@ -3755,7 +3759,7 @@
       "A": "Dal punto di vista del lettore medio al primo contatto con il testo.",
       "B": "Dal punto di vista dell'organizzazione citata nel contenuto.",
       "C": "Dal punto di vista dell'analista che conosce il contesto interno.",
-      "D": "Dal punto di vista del pubblico gia favorevole al brand."
+      "D": "Dal punto di vista del pubblico già favorevole al brand."
     },
     "answer": "A",
     "tags": [
@@ -3817,9 +3821,9 @@
     "text": "Quale caratteristica distingue un Joint Industry Committee (JIC) da un Media Owner Committee (MOC)?",
     "options": {
       "A": "Il JIC coinvolge investitori pubblicitari, agenzie e centri media insieme agli editori.",
-      "B": "Il MOC garantisce una currency piu trasparente e riconosciuta dal mercato internazionale.",
-      "C": "Il JIC e gestito esclusivamente dagli editori per garantire la veridicita dei propri dati.",
-      "D": "Il JIC non puo mai essere utilizzato per certificare dati d'ascolto televisivi o radiofonici."
+      "B": "Il MOC garantisce una currency più trasparente e riconosciuta dal mercato internazionale.",
+      "C": "Il JIC è gestito esclusivamente dagli editori per garantire la veridicità dei propri dati.",
+      "D": "Il JIC non può mai essere utilizzato per certificare dati d'ascolto televisivi o radiofonici."
     },
     "answer": "A",
     "tags": [
@@ -3845,7 +3849,7 @@
   {
     "id": 229,
     "section": "Enti certificatori e audience",
-    "text": "Nel contesto di Audiradio, quale obiettivo e prioritario per il 2025?",
+    "text": "Nel contesto di Audiradio, quale obiettivo è prioritario per il 2025?",
     "options": {
       "A": "Consolidare una 'Total Audience' dell'audio che includa ascolto via etere e via protocollo IP.",
       "B": "Limitare la misurazione ai soli podcast on demand escludendo la radio lineare.",
@@ -3881,7 +3885,7 @@
     "section": "Enti certificatori e audience",
     "text": "Nel sistema Auditel, cosa si intende per 'Total Audience'?",
     "options": {
-      "A": "L'integrazione della fruizione televisiva su ogni device e modalita (lineare, on demand, mobile).",
+      "A": "L'integrazione della fruizione televisiva su ogni device e modalità (lineare, on demand, mobile).",
       "B": "La misurazione dei soli spettatori che guardano la TV tradizionale via satellite.",
       "C": "Il numero totale di televisori venduti in Italia in un anno solare.",
       "D": "La somma degli ascolti radiofonici e televisivi certificati dallo stesso ente."
@@ -3915,7 +3919,7 @@
       "A": "La tiratura e la diffusione di quotidiani e periodici, sia cartacei che digitali.",
       "B": "La readership effettiva stimata dei quotidiani e dei periodici.",
       "C": "Il tempo medio di permanenza sui siti delle testate giornalistiche.",
-      "D": "La qualita editoriale degli articoli secondo criteri giornalistici."
+      "D": "La qualità editoriale degli articoli secondo criteri giornalistici."
     },
     "answer": "A",
     "tags": [
@@ -3960,7 +3964,7 @@
     "text": "Cosa si intende per logica 'JIC' (Joint Industry Committee) nel sistema degli enti certificatori delle audience?",
     "options": {
       "A": "Organismi composti da tutte le componenti del mercato (editori, agenzie, investitori) per garantire dati trasparenti e condivisi.",
-      "B": "Societa controllate solo dagli editori per certificare i propri dati di vendita.",
+      "B": "Società controllate solo dagli editori per certificare i propri dati di vendita.",
       "C": "Comitati pubblici che producono statistiche ufficiali sugli investimenti pubblicitari.",
       "D": "Sistemi tecnici che raccolgono dati censuari senza una governance condivisa."
     },
@@ -3972,11 +3976,11 @@
   {
     "id": 237,
     "section": "Enti certificatori e audience",
-    "text": "Nel sistema ADS (Accertamenti Diffusione Stampa), qual e la differenza tra 'tiratura' e 'diffusione'?",
+    "text": "Nel sistema ADS (Accertamenti Diffusione Stampa), qual è la differenza tra 'tiratura' e 'diffusione'?",
     "options": {
       "A": "La tiratura indica le copie stampate, mentre la diffusione indica le copie che arrivano effettivamente al mercato.",
       "B": "La tiratura misura il numero di lettori totali, mentre la diffusione misura il numero di abbonati digitali.",
-      "C": "La tiratura e un dato autocertificato dall'editore, mentre la diffusione e certificata da Audicom.",
+      "C": "La tiratura è un dato autocertificato dall'editore, mentre la diffusione è certificata da Audicom.",
       "D": "Non esiste differenza, sono due termini interscambiabili che descrivono il successo di un quotidiano."
     },
     "answer": "A",
@@ -3989,7 +3993,7 @@
     "section": "Enti certificatori e audience",
     "text": "Cosa misura l'indice 'PQII' nel modello di valutazione della stampa di GRV?",
     "options": {
-      "A": "La qualita e l'impatto della copertura media basandosi su REAV e readership, espresso come valore numerico non monetario.",
+      "A": "La qualità e l'impatto della copertura media basandosi su REAV e readership, espresso come valore numerico non monetario.",
       "B": "Il valore pubblicitario equivalente dello spazio occupato dall'articolo.",
       "C": "Il numero di uscite stampa ottenute durante una campagna media.",
       "D": "La quota di articoli positivi rispetto al totale della copertura."
@@ -4025,7 +4029,7 @@
       "A": "Un sistema di 'Joint Industry Committee' con controllo incrociato tra attori del mercato.",
       "B": "Un comitato interno all'azienda per la gestione delle crisi.",
       "C": "Un indicatore di sentiment positivo registrato sui social network.",
-      "D": "Una tecnica di intervista individuale condotta in profondita."
+      "D": "Una tecnica di intervista individuale condotta in profondità."
     },
     "answer": "A",
     "tags": [
@@ -4040,7 +4044,7 @@
     "text": "Nella tassonomia dei KPI, l'area 'Organizzativa' del capitale comunicativo (Livello Sommativo) riguarda:",
     "options": {
       "A": "Stile comunicativo e manageriale, cultura comunicativa e diffusione dei valori.",
-      "B": "La percezione che i consumatori hanno della qualita dei singoli prodotti.",
+      "B": "La percezione che i consumatori hanno della qualità dei singoli prodotti.",
       "C": "Il numero di follower acquisiti sulla pagina LinkedIn aziendale.",
       "D": "Il ROI finanziario calcolato per l'ultimo trimestre solare."
     },
@@ -4070,7 +4074,7 @@
   {
     "id": 243,
     "section": "Enti certificatori e audience",
-    "text": "Quale ente e nato nel 2023 dalla fusione tra Audiweb e Audipress?",
+    "text": "Quale ente è nato nel 2023 dalla fusione tra Audiweb e Audipress?",
     "options": {
       "A": "Audicom",
       "B": "Auditel",
@@ -4104,7 +4108,7 @@
     "options": {
       "A": "Un dato riconosciuto e accettato da tutto il mercato come base per le transazioni commerciali.",
       "B": "Il budget totale che un'azienda dedica alla comunicazione ogni anno.",
-      "C": "Un indice interno usato dall'editore per valutare la qualita dei contenuti.",
+      "C": "Un indice interno usato dall'editore per valutare la qualità dei contenuti.",
       "D": "Il tasso di aggiornamento dei dati nelle piattaforme di analytics."
     },
     "answer": "A",
@@ -4150,8 +4154,8 @@
     "text": "Cosa differenzia la 'Tiratura' dalla 'Diffusione' nei dati ADS?",
     "options": {
       "A": "La tiratura indica le copie stampate, la diffusione le copie che arrivano effettivamente al mercato.",
-      "B": "La tiratura e il numero di lettori, la diffusione e il numero di copie vendute.",
-      "C": "La tiratura e certificata da ADS, la diffusione solo dagli editori.",
+      "B": "La tiratura è il numero di lettori, la diffusione è il numero di copie vendute.",
+      "C": "La tiratura è certificata da ADS, la diffusione solo dagli editori.",
       "D": "La tiratura riguarda il digitale, la diffusione riguarda il cartaceo."
     },
     "answer": "A",
@@ -4162,7 +4166,7 @@
   {
     "id": 249,
     "section": "Enti certificatori e audience",
-    "text": "Nella ricerca di base di Auditel, qual e l'obiettivo principale del campionamento di 20.000 famiglie all'anno?",
+    "text": "Nella ricerca di base di Auditel, qual è l'obiettivo principale del campionamento di 20.000 famiglie all'anno?",
     "options": {
       "A": "Determinare l'Universo statistico delle famiglie italiane e le loro dotazioni tecnologiche.",
       "B": "Analizzare il sentiment degli spettatori verso gli spot pubblicitari.",
@@ -4196,7 +4200,7 @@
   {
     "id": 251,
     "section": "Enti certificatori e audience",
-    "text": "Nella struttura di un Joint Industry Committee (JIC), come gli enti certificatori italiani, quale funzione assolve la pariteticita tra le diverse componenti del mercato?",
+    "text": "Nella struttura di un Joint Industry Committee (JIC), come gli enti certificatori italiani, quale funzione assolve la pariteticità tra le diverse componenti del mercato?",
     "options": {
       "A": "Garantire l'assenza di conflitti di interesse tra investitori, agenzie e editori.",
       "B": "Massimizzare i profitti degli editori attraverso la vendita di spazi pubblicitari.",
@@ -4213,29 +4217,12 @@
   {
     "id": 252,
     "section": "Enti certificatori e audience",
-    "text": "Perche Audicom rappresenta una fusione strategica tra Audiweb e Audipress nel panorama italiano?",
-    "options": {
-      "A": "Per offrire una ricerca integrata digital + print superando la separazione storica dei consumi.",
-      "B": "Per unificare i costi di licenza dei software di analisi per le piccole agenzie.",
-      "C": "Per gestire esclusivamente i dati provenienti dai panel di famiglie residenti all'estero.",
-      "D": "Per contrastare il monopolio di Auditel sulla misurazione dei contenuti video."
-    },
-    "answer": "A",
-    "tags": [
-      "enti_audience",
-      "ricerca_metodi",
-      "seo_geo_digitale"
-    ]
-  },
-  {
-    "id": 253,
-    "section": "Enti certificatori e audience",
-    "text": "Nell'architettura Auditel, qual e il ruolo specifico della 'Ricerca di Base'?",
+    "text": "Nell'architettura Auditel, qual è il ruolo specifico della 'Ricerca di Base'?",
     "options": {
       "A": "Fornire una fotografia sociodemografica e tecnologica su 20.000 famiglie per alimentare il database di campionamento.",
       "B": "Misurare l'ascolto minuto per minuto su smartphone e tablet tramite SDK.",
-      "C": "Stimare il gradimento qualitativo dei programmi trasmessi dalle emittenti.",
-      "D": "Certificare direttamente la total audience giornaliera dei singoli contenuti."
+      "C": "Verificare la correttezza dei pagamenti del canone televisivo delle famiglie italiane.",
+      "D": "Intervistare i telespettatori riguardo al gradimento qualitativo dei programmi trasmessi."
     },
     "answer": "A",
     "tags": [
@@ -4245,25 +4232,41 @@
     ]
   },
   {
-    "id": 254,
+    "id": 253,
     "section": "Enti certificatori e audience",
     "text": "Quale tra i seguenti indicatori del sistema censuario Auditel misura il volume totale di stream effettivamente avviati per almeno 300 millisecondi?",
     "options": {
-      "A": "Legitimate Stream (LS)",
-      "B": "Average Minute Rating-Device (AMR-D)",
-      "C": "Total Time Spent (TTS)",
-      "D": "Average Stream Duration (ASD)"
+      "A": "Fornire una fotografia sociodemografica e tecnologica su 20.000 famiglie per alimentare il database di campionamento.",
+      "B": "Misurare l'ascolto minuto per minuto su smartphone e tablet tramite SDK.",
+      "C": "Stimare il gradimento qualitativo dei programmi trasmessi dalle emittenti.",
+      "D": "Certificare direttamente la total audience giornaliera dei singoli contenuti."
     },
     "answer": "A",
     "tags": [
       "enti_audience",
-      "social_roi"
+      "modelli"
+    ]
+  },
+  {
+    "id": 254,
+    "section": "Enti certificatori e audience",
+    "text": "Che cosa certifica ADS oltre alla tiratura e alla diffusione dei quotidiani?",
+    "options": {
+      "A": "La diffusione delle edizioni digitali e dei supplementi opzionali.",
+      "B": "L'indice di gradimento politico degli editoriali pubblicati in prima pagina.",
+      "C": "La veridicità delle notizie pubblicate per prevenire le fake news.",
+      "D": "Il numero esatto di persone che hanno effettivamente letto ogni pagina del giornale."
+    },
+    "answer": "A",
+    "tags": [
+      "enti_audience",
+      "ricerca_metodi"
     ]
   },
   {
     "id": 255,
     "section": "Enti certificatori e audience",
-    "text": "Perche Auditel integra i dati del SuperPanel (campionario) con quelli del sistema SDK (censuario)?",
+    "text": "Quale di questi indicatori viene calcolato dividendo il Total Time Spent (TTS) per il numero di Legitimate Stream (LS)?",
     "options": {
       "A": "Per ottenere la 'Total Audience', unendo gli ascolti della TV tradizionale a quelli sui device digitali.",
       "B": "Per sostituire la ricerca di base con soli dati censuari raccolti dai player.",
@@ -4281,7 +4284,7 @@
   {
     "id": 256,
     "section": "Enti certificatori e audience",
-    "text": "Che cosa certifica ADS oltre alla tiratura e alla diffusione dei quotidiani?",
+    "text": "Nella gerarchia degli enti certificatori, quale organismo si occupa specificamente della 'Total Audience' televisiva ogni giorno alle ore 10:00?",
     "options": {
       "A": "La diffusione delle edizioni digitali e dei supplementi opzionali.",
       "B": "La readership effettiva stimata dei singoli articoli pubblicati.",
@@ -4297,37 +4300,6 @@
   {
     "id": 257,
     "section": "Enti certificatori e audience",
-    "text": "Quale di questi indicatori viene calcolato dividendo il Total Time Spent (TTS) per il numero di Legitimate Stream (LS)?",
-    "options": {
-      "A": "Average Stream Duration (ASD)",
-      "B": "Average Minute Rating-Device (AMR-D)",
-      "C": "Unique Audience",
-      "D": "VOSDAL Percentage"
-    },
-    "answer": "A",
-    "tags": [
-      "enti_audience",
-      "social_roi"
-    ]
-  },
-  {
-    "id": 258,
-    "section": "Enti certificatori e audience",
-    "text": "Nella gerarchia degli enti certificatori, quale organismo si occupa specificamente della 'Total Audience' televisiva ogni giorno alle ore 10:00?",
-    "options": {
-      "A": "Auditel",
-      "B": "Audiradio",
-      "C": "ADS",
-      "D": "Audicom"
-    },
-    "answer": "A",
-    "tags": [
-      "enti_audience"
-    ]
-  },
-  {
-    "id": 259,
-    "section": "Enti certificatori e audience",
     "text": "Quale caratteristica definisce strutturalmente un Joint Industry Committee (JIC) nel mercato italiano della comunicazione?",
     "options": {
       "A": "La partecipazione paritetica di investitori, agenzie e centri media, ed editori.",
@@ -4341,12 +4313,12 @@
     ]
   },
   {
-    "id": 260,
+    "id": 258,
     "section": "Enti certificatori e audience",
     "text": "Nel processo di certificazione ADS, cosa distingue la 'Tiratura' dalla 'Diffusione'?",
     "options": {
       "A": "La tiratura indica il numero di copie stampate, mentre la diffusione indica le copie passate al mercato.",
-      "B": "La diffusione e un dato istantaneo, mentre la tiratura richiede due anni per essere certificata.",
+      "B": "La diffusione è un dato istantaneo, mentre la tiratura richiede due anni per essere certificata.",
       "C": "La tiratura include gli abbonamenti gratuiti, mentre la diffusione considera solo le vendite in edicola.",
       "D": "La tiratura riguarda le copie vendute online, la diffusione quelle cartacee."
     },
@@ -4356,7 +4328,7 @@
     ]
   },
   {
-    "id": 261,
+    "id": 259,
     "section": "Enti certificatori e audience",
     "text": "Nella ricerca di base Auditel, il sistema CAPI viene utilizzato per:",
     "options": {
@@ -4374,14 +4346,14 @@
     ]
   },
   {
-    "id": 262,
+    "id": 260,
     "section": "Enti certificatori e audience",
-    "text": "Cosa indica l'indicatore di 'Permanenza' (PR) nei dati Auditel?",
+    "text": "Cosa indica l'indicatore di 'Permanenza' ($PR$) nei dati Auditel?",
     "options": {
-      "A": "La fedelta di visione, calcolata come rapporto tra minuti visti e durata del programma.",
+      "A": "La fedeltà di visione, calcolata come rapporto tra minuti visti e durata del programma.",
       "B": "Il numero totale di individui che hanno visto almeno un minuto di un contenuto.",
-      "C": "Il rapporto tra ascoltatori di un canale e totale degli ascoltatori televisivi del momento.",
-      "D": "La capacita di un programma di attrarre nuovi spettatori nel corso della puntata."
+      "C": "Il rapporto tra ascoltatori di un canale e il totale degli ascoltatori televisivi del momento.",
+      "D": "La capacità di un programma di attrarre nuovi spettatori nel corso della puntata."
     },
     "answer": "A",
     "tags": [
@@ -4389,7 +4361,7 @@
     ]
   },
   {
-    "id": 263,
+    "id": 261,
     "section": "Enti certificatori e audience",
     "text": "Quale delle seguenti affermazioni descrive correttamente la 'Reach Netta' nel sistema Total Audience?",
     "options": {
@@ -4405,39 +4377,22 @@
     ]
   },
   {
-    "id": 264,
+    "id": 262,
     "section": "Enti certificatori e audience",
-    "text": "Nel sistema Audicom, i dati 'Censuari' (Big Data) servono principalmente a rilevare:",
+    "text": "Nella metrica Auditel, come si calcola la 'Permanenza' (PR)?",
     "options": {
-      "A": "L'intensita reale di utilizzo come pagine viste e tempo speso sul perimetro digitale.",
-      "B": "Le opinioni dei lettori sulla qualita degli articoli giornalistici.",
-      "C": "Il numero di copie cartacee distribuite gratuitamente nelle stazioni.",
-      "D": "Le caratteristiche socio-demografiche degli utenti (eta e genere)."
+      "A": "La fedeltà di visione, calcolata come rapporto tra minuti visti e durata del programma.",
+      "B": "Il numero totale di individui che hanno visto almeno un minuto di un contenuto.",
+      "C": "Il rapporto tra ascoltatori di un canale e totale degli ascoltatori televisivi del momento.",
+      "D": "La capacità di un programma di attrarre nuovi spettatori nel corso della puntata."
     },
     "answer": "A",
     "tags": [
-      "enti_audience",
-      "modelli"
+      "enti_audience"
     ]
   },
   {
-    "id": 265,
-    "section": "Enti certificatori e audience",
-    "text": "Perche Audiradio ha adottato la tecnologia SDK integrata nei player?",
-    "options": {
-      "A": "Per certificare la Total Audience audio includendo l'ascolto digitale e on-demand.",
-      "B": "Per limitare la rilevazione alla sola radio lineare via etere.",
-      "C": "Per sostituire la currency di mercato con dati non certificati dagli editori.",
-      "D": "Per misurare esclusivamente il gradimento qualitativo dei programmi radio."
-    },
-    "answer": "A",
-    "tags": [
-      "enti_audience",
-      "ricerca_metodi"
-    ]
-  },
-  {
-    "id": 266,
+    "id": 263,
     "section": "Enti certificatori e audience",
     "text": "Cosa si intende per 'VOSDAL' nei protocolli Auditel?",
     "options": {
@@ -4453,9 +4408,9 @@
     ]
   },
   {
-    "id": 267,
+    "id": 264,
     "section": "Enti certificatori e audience",
-    "text": "Nel processo ADS, qual e il tempo medio che porta alla certificazione definitiva dei dati?",
+    "text": "Secondo il materiale, qual è il tempo medio di durata del processo che porta alla certificazione definitiva dei dati ADS?",
     "options": {
       "A": "Quasi due anni.",
       "B": "Ogni mese, contestualmente alla pubblicazione dei dati dichiarati.",
@@ -4468,9 +4423,56 @@
     ]
   },
   {
-    "id": 268,
+    "id": 265,
     "section": "Enti certificatori e audience",
     "text": "Cosa si intende per 'Ricerca di Base' nel sistema Auditel?",
+    "options": {
+      "A": "Per certificare la Total Audience audio includendo l'ascolto digitale e on-demand.",
+      "B": "Per limitare la rilevazione alla sola radio lineare via etere.",
+      "C": "Per sostituire la currency di mercato con dati non certificati dagli editori.",
+      "D": "Per misurare esclusivamente il gradimento qualitativo dei programmi radio."
+    },
+    "answer": "A",
+    "tags": [
+      "enti_audience",
+      "ricerca_metodi"
+    ]
+  },
+  {
+    "id": 266,
+    "section": "Enti certificatori e audience",
+    "text": "Cosa indica la metrica 'Legitimate Stream' ($LS$) nei dati censuari Auditel?",
+    "options": {
+      "A": "Il volume di stream erogati e visti per almeno $300$ millisecondi.",
+      "B": "Il numero di commenti positivi ricevuti da un video su YouTube.",
+      "C": "La somma dei minuti visti da un utente unico in un'intera settimana.",
+      "D": "Il numero di video scaricati illegalmente da siti pirata."
+    },
+    "answer": "A",
+    "tags": [
+      "enti_audience",
+      "ricerca_metodi"
+    ]
+  },
+  {
+    "id": 267,
+    "section": "Enti certificatori e audience",
+    "text": "Nel processo ADS, qual è il tempo medio che porta alla certificazione definitiva dei dati?",
+    "options": {
+      "A": "1975, dalle associazioni UPA, FIEG e federazioni pubblicitarie.",
+      "B": "2023, dalla fusione di Audiweb e Audipress.",
+      "C": "2018, per introdurre il sistema censuario digitale.",
+      "D": "2025, come evoluzione del Tavolo Editori Radio."
+    },
+    "answer": "A",
+    "tags": [
+      "enti_audience"
+    ]
+  },
+  {
+    "id": 268,
+    "section": "Enti certificatori e audience",
+    "text": "Quale ente in Italia si occupa di misurare gli ascolti della TV?",
     "options": {
       "A": "Un'indagine sociale continuativa su circa 20.000 famiglie per mappare l'universo tecnologico del Paese.",
       "B": "Una rilevazione minuto per minuto degli ascolti prodotti dal SuperPanel.",
@@ -4487,7 +4489,7 @@
   {
     "id": 269,
     "section": "Enti certificatori e audience",
-    "text": "Cosa indica la metrica 'Legitimate Stream' (LS) nei dati censuari Auditel?",
+    "text": "Nei dati censuari Auditel, cosa viene conteggiato come 'Legitimate Stream' (LS)?",
     "options": {
       "A": "Il volume di stream erogati e visti per almeno 300 millisecondi.",
       "B": "La somma dei secondi visualizzati da tutti gli utenti di un canale.",
@@ -4504,14 +4506,15 @@
     "section": "Enti certificatori e audience",
     "text": "Il sistema ADS e stato costituito nel:",
     "options": {
-      "A": "1975, dalle associazioni UPA, FIEG e federazioni pubblicitarie.",
-      "B": "2023, dalla fusione di Audiweb e Audipress.",
-      "C": "2018, per introdurre il sistema censuario digitale.",
-      "D": "2025, come evoluzione del Tavolo Editori Radio."
+      "A": "L'incidenza di ogni singola fascia oraria rispetto al totale dell'ascolto registrato nell'intera giornata.",
+      "B": "La divisione dei telespettatori in base alla loro età e alla classe socio-economica di appartenenza.",
+      "C": "Il numero totale di secondi che un singolo individuo trascorre davanti allo smartphone in una mattina.",
+      "D": "Il rapporto tra il costo di uno spot in prima serata e la sua efficacia misurata il giorno successivo."
     },
     "answer": "A",
     "tags": [
-      "enti_audience"
+      "enti_audience",
+      "modelli"
     ]
   },
   {
@@ -4521,7 +4524,7 @@
     "options": {
       "A": "Gli outcome: cambiamenti in opinioni, atteggiamenti, comportamenti",
       "B": "I prodotti finali offerti dall'organizzazione al mercato",
-      "C": "Le risorse impiegate dalle attivita relative alla comunicazione",
+      "C": "Le risorse impiegate dalle attività relative alla comunicazione",
       "D": "I concorrenti diretti dell'organizzazione nel mercato"
     },
     "answer": "A",
@@ -4536,7 +4539,7 @@
     "text": "Nel modello logico del processo di valutazione, cosa sono le \"variabili ponte\"?",
     "options": {
       "A": "Elementi che collegano output e obiettivi su cui il comunicatore esercita potere",
-      "B": "Le risorse umane ed economiche investite nelle attivita di comunicazione",
+      "B": "Le risorse umane ed economiche investite nelle attività di comunicazione",
       "C": "Gli effetti finali sulle performance complessive delle organizzazioni",
       "D": "Metriche puramente quantitative di output mediatico di periodo"
     },
@@ -4581,9 +4584,9 @@
   {
     "id": 275,
     "section": "Modelli di valutazione",
-    "text": "Nel 'Measurement Tree', la metafora della 'LINFA' e utilizzata per indicare:",
+    "text": "Nel 'Measurement Tree', la metafora della 'LINFA' è utilizzata per indicare:",
     "options": {
-      "A": "Cio che e visibile internamente esclusivamente ai collaboratori e dipendenti.",
+      "A": "Ciò che è visibile internamente esclusivamente ai collaboratori e dipendenti.",
       "B": "Il budget economico che permette all'azienda di sopravvivere.",
       "C": "La reputazione accumulata nel tempo presso i consumatori.",
       "D": "I messaggi diffusi attraverso i social media."
@@ -4598,12 +4601,12 @@
   {
     "id": 276,
     "section": "Modelli di valutazione",
-    "text": "Perche nel 'Measurement Tree' il processo di valutazione non puo essere limitato solo alla fase ex post?",
+    "text": "Cosa caratterizza il 'Continuing Model' di valutazione?",
     "options": {
-      "A": "Perche deve comprendere anche la valutazione ex ante e quella in itinere.",
-      "B": "Perche coincide con la sola misurazione degli output immediati.",
-      "C": "Perche considera irrilevante la definizione preventiva degli obiettivi.",
-      "D": "Perche misura solo gli outcome finali senza guardare al processo."
+      "A": "Perché deve comprendere anche la valutazione ex ante e quella in itinere.",
+      "B": "Perché coincide con la sola misurazione degli output immediati.",
+      "C": "Perché considera irrilevante la definizione preventiva degli obiettivi.",
+      "D": "Perché misura solo gli outcome finali senza guardare al processo."
     },
     "answer": "A",
     "tags": [
@@ -4613,7 +4616,7 @@
   {
     "id": 277,
     "section": "Modelli di valutazione",
-    "text": "Cosa caratterizza il 'Continuing Model' di valutazione?",
+    "text": "Quale distinzione fondamentale propone il 'PII Model' riguardo ai risultati?",
     "options": {
       "A": "È un processo dinamico e flessibile basato su un meccanismo di feedback continuo.",
       "B": "È un modello lineare centrato quasi esclusivamente sulla copertura mediatica.",
@@ -4622,50 +4625,36 @@
     },
     "answer": "A",
     "tags": [
-      "modelli"
+      "modelli",
+      "seo_geo_digitale"
     ]
   },
   {
     "id": 278,
     "section": "Modelli di valutazione",
-    "text": "Quale distinzione fondamentale propone il 'PII Model' riguardo ai risultati?",
+    "text": "Nel modello PII (Preparation, Implementation, Impact), perché gli output sono definiti come 'pseudo-effetti'?",
     "options": {
-      "A": "Che gli output sono pseudo-effetti, mentre gli effetti autentici sono gli outcome (impact).",
-      "B": "Che gli output sono effetti autentici, mentre gli outcome sono solo preparatori.",
-      "C": "Che l'unico risultato valido e il ritorno economico immediato (ROI).",
-      "D": "Che non esiste alcuna differenza tra preparazione e implementazione."
+      "A": "Perché rappresentano sforzi e prodotti realizzati, ma non garantiscono alcun cambiamento effettivo nei pubblici.",
+      "B": "Perché sono metriche che scompaiono rapidamente dopo la fine della campagna pubblicitaria.",
+      "C": "Perché sono errori di misurazione derivanti dall'uso di strumenti non certificati.",
+      "D": "Perché sono calcolati esclusivamente tramite algoritmi di intelligenza artificiale non supervisionati."
     },
     "answer": "A",
     "tags": [
       "modelli",
-      "seo_geo_digitale",
-      "social_roi"
+      "ricerca_metodi",
+      "seo_geo_digitale"
     ]
   },
   {
     "id": 279,
     "section": "Modelli di valutazione",
-    "text": "Nel modello PII (Preparation, Implementation, Impact), perche gli output sono definiti come 'pseudo-effetti'?",
+    "text": "Quale dimensione della qualità comunicativa nel modello di Vos e Schoemaker si riferisce alla 'capacità di rispondere al contesto'?",
     "options": {
-      "A": "Perche rappresentano sforzi e prodotti realizzati, ma non garantiscono alcun cambiamento effettivo nei pubblici.",
-      "B": "Perche misurano gli effetti cognitivi, affettivi e conativi della comunicazione.",
-      "C": "Perche coincidono con il contributo della comunicazione agli obiettivi di business.",
-      "D": "Perche indicano il cambiamento di comportamento osservato nei pubblici."
-    },
-    "answer": "A",
-    "tags": [
-      "modelli"
-    ]
-  },
-  {
-    "id": 280,
-    "section": "Modelli di valutazione",
-    "text": "Quale dimensione della qualita comunicativa nel modello di Vos e Schoemaker si riferisce alla 'capacita di rispondere al contesto'?",
-    "options": {
-      "A": "Reattivita.",
-      "B": "Chiarezza.",
-      "C": "Coerenza.",
-      "D": "Efficienza."
+      "A": "Perché rappresentano sforzi e prodotti realizzati, ma non garantiscono alcun cambiamento effettivo nei pubblici.",
+      "B": "Perché misurano gli effetti cognitivi, affettivi e conativi della comunicazione.",
+      "C": "Perché coincidono con il contributo della comunicazione agli obiettivi di business.",
+      "D": "Perché indicano il cambiamento di comportamento osservato nei pubblici."
     },
     "answer": "A",
     "tags": [
@@ -4674,9 +4663,9 @@
     ]
   },
   {
-    "id": 281,
+    "id": 280,
     "section": "Modelli di valutazione",
-    "text": "Secondo i 'Barcelona Principles 3.0', qual e la posizione ufficiale riguardo agli AVE (Advertising Value Equivalent)?",
+    "text": "Secondo i 'Barcelona Principles 3.0', qual è la posizione ufficiale riguardo agli AVE (Advertising Value Equivalent)?",
     "options": {
       "A": "Gli AVE non rappresentano il valore della comunicazione e non devono essere utilizzati come metrica di efficacia.",
       "B": "Gli AVE sono validi solo per la stampa cartacea, mentre per il digitale si devono usare le impression.",
@@ -4690,7 +4679,7 @@
     ]
   },
   {
-    "id": 282,
+    "id": 281,
     "section": "Modelli di valutazione",
     "text": "Nel 'Yardstick Model', a quale livello appartiene la misurazione del 'ricordo' (recall) e della 'comprensione' del messaggio?",
     "options": {
@@ -4705,7 +4694,7 @@
     ]
   },
   {
-    "id": 283,
+    "id": 282,
     "section": "Modelli di valutazione",
     "text": "Secondo il 'MACRO Model', da cosa derivano gli 'Input'?",
     "options": {
@@ -4721,7 +4710,7 @@
     ]
   },
   {
-    "id": 284,
+    "id": 283,
     "section": "Modelli di valutazione",
     "text": "Nel modello PII, cosa si valuta nella fase di 'Implementation'?",
     "options": {
@@ -4737,14 +4726,14 @@
     ]
   },
   {
-    "id": 285,
+    "id": 284,
     "section": "Modelli di valutazione",
     "text": "Nel 'PRE Model', come viene concepita la valutazione?",
     "options": {
       "A": "Come un processo che accompagna parallelamente tutte le fasi della pianificazione.",
       "B": "Come uno strumento mirato solo a calcolare il ritorno monetario dell'investimento.",
-      "C": "Come una tecnica di pre-test per verificare la leggibilita dei contenuti.",
-      "D": "Come un'attivita che deve avvenire esclusivamente alla fine della campagna."
+      "C": "Come una tecnica di pre-test per verificare la leggibilità dei contenuti.",
+      "D": "Come un'attività che deve avvenire esclusivamente alla fine della campagna."
     },
     "answer": "A",
     "tags": [
@@ -4753,26 +4742,9 @@
     ]
   },
   {
-    "id": 286,
+    "id": 285,
     "section": "Modelli di valutazione",
-    "text": "Perche l'uso dell'AVE (Advertising Value Equivalency) e fortemente sconsigliato dai Barcelona Principles 3.0?",
-    "options": {
-      "A": "Perche non misura il valore reale della comunicazione ma solo un costo ipotetico dello spazio.",
-      "B": "Perche puo essere applicato solo alla stampa cartacea e non ai media digitali.",
-      "C": "Perche e troppo difficile da calcolare per le piccole aziende.",
-      "D": "Perche non tiene conto dell'impatto visivo delle immagini pubblicate."
-    },
-    "answer": "A",
-    "tags": [
-      "modelli",
-      "seo_geo_digitale",
-      "social_roi"
-    ]
-  },
-  {
-    "id": 287,
-    "section": "Modelli di valutazione",
-    "text": "Quale modello di valutazione e descritto come 'dinamico, flessibile e orientato al lungo periodo' con feedback continui?",
+    "text": "Quale modello di valutazione è descritto come 'dinamico, flessibile e orientato al lungo periodo' con feedback continui?",
     "options": {
       "A": "Continuing Model",
       "B": "Short Model",
@@ -4785,14 +4757,46 @@
     ]
   },
   {
-    "id": 288,
+    "id": 286,
     "section": "Modelli di valutazione",
     "text": "Nel 'Brioschi Model', cosa valuta l'efficacia 'sociale'?",
     "options": {
       "A": "L'impatto della comunicazione sul benessere sociale degli interlocutori.",
       "B": "Il numero di condivisioni e commenti sui social network.",
-      "C": "La capacita di creare community online basate sull'economia collaborativa.",
-      "D": "La qualita delle relazioni gerarchiche all'interno dell'organizzazione."
+      "C": "La capacità di creare community online basate sull'economia collaborativa.",
+      "D": "La qualità delle relazioni gerarchiche all'interno dell'organizzazione."
+    },
+    "answer": "A",
+    "tags": [
+      "modelli",
+      "social_roi"
+    ]
+  },
+  {
+    "id": 287,
+    "section": "Modelli di valutazione",
+    "text": "Nella piramide delle tecniche di valutazione (Macro Model), cosa accade salendo verso il vertice?",
+    "options": {
+      "A": "Le tecniche diventano più sofisticate e richiedono competenze specifiche per l'interpretazione.",
+      "B": "Il numero di dati raccolti diminuisce drasticamente fino a zero.",
+      "C": "Le tecniche vengono eseguite esclusivamente da macchine senza intervento umano.",
+      "D": "Le tecniche diventano più semplici e meno costose."
+    },
+    "answer": "A",
+    "tags": [
+      "modelli",
+      "seo_geo_digitale"
+    ]
+  },
+  {
+    "id": 288,
+    "section": "Modelli di valutazione",
+    "text": "Nel contesto della misurazione, cosa si intende per 'Impatto' (Impact)?",
+    "options": {
+      "A": "Il contributo di lungo termine agli obiettivi strategici e al business dell'organizzazione.",
+      "B": "La velocità con cui una notizia si diffonde sui canali digitali.",
+      "C": "Il numero di like e condivisioni ottenuti sui social network.",
+      "D": "La quantità di persone raggiunte da un messaggio pubblicitario."
     },
     "answer": "A",
     "tags": [
@@ -4803,12 +4807,12 @@
   {
     "id": 289,
     "section": "Modelli di valutazione",
-    "text": "Nella piramide delle tecniche di valutazione (Macro Model), cosa accade salendo verso il vertice?",
+    "text": "Cosa afferma il principio degli obiettivi 'SMART'?",
     "options": {
-      "A": "Le tecniche diventano piu sofisticate e richiedono competenze specifiche per l'interpretazione.",
-      "B": "Le tecniche diventano piu semplici e richiedono meno tempo di analisi.",
+      "A": "Le tecniche diventano più sofisticate e richiedono competenze specifiche per l'interpretazione.",
+      "B": "Le tecniche diventano più semplici e richiedono meno tempo di analisi.",
       "C": "La valutazione si limita progressivamente al conteggio degli output.",
-      "D": "Il costo della misurazione diminuisce perche si usano solo dati gia disponibili."
+      "D": "Il costo della misurazione diminuisce perché si usano solo dati già disponibili."
     },
     "answer": "A",
     "tags": [
@@ -4819,12 +4823,12 @@
   {
     "id": 290,
     "section": "Modelli di valutazione",
-    "text": "Nel contesto della misurazione, cosa si intende per 'Impatto' (Impact)?",
+    "text": "Nell'ambito della sentiment analysis, cosa s'intende per 'Topic'?",
     "options": {
-      "A": "Il contributo di lungo termine agli obiettivi strategici e al business dell'organizzazione.",
-      "B": "La velocita con cui una notizia si diffonde sui canali digitali.",
-      "C": "Il numero di like e condivisioni ottenuti sui social network.",
-      "D": "La quantita di persone raggiunte da un messaggio pubblicitario."
+      "A": "Il macro-tema o l'argomento specifico a cui è associato un certo sentiment.",
+      "B": "La persona che ha scritto il post più condiviso dell'anno.",
+      "C": "Un tipo di pubblicità molto rumorosa e fastidiosa.",
+      "D": "Il nome della marca concorrente più aggressiva."
     },
     "answer": "A",
     "tags": [
@@ -4835,7 +4839,7 @@
   {
     "id": 291,
     "section": "Modelli di valutazione",
-    "text": "Cosa afferma il principio degli obiettivi 'SMART'?",
+    "text": "Quale fase del modello PRE (Planning, Research and Evaluation) risponde alla domanda 'Dove siamo adesso?'",
     "options": {
       "A": "Che gli obiettivi devono essere specifici, misurabili, attuabili, rilevanti e definiti nel tempo.",
       "B": "Che gli obiettivi devono coincidere sempre con un risultato economico di breve periodo.",
@@ -4851,12 +4855,12 @@
   {
     "id": 292,
     "section": "Modelli di valutazione",
-    "text": "Nell'ambito della sentiment analysis, cosa s'intende per 'Topic'?",
+    "text": "Nella metafora del Measurement Tree, cosa rappresentano i 'Fiori'?",
     "options": {
       "A": "Il macro-tema o l'argomento specifico a cui e associato un certo sentiment.",
-      "B": "La polarita positiva, negativa o neutra attribuita a un contenuto.",
+      "B": "La polarità positiva, negativa o neutra attribuita a un contenuto.",
       "C": "La fonte in cui viene pubblicato il messaggio analizzato.",
-      "D": "Il profilo dell'autore che genera piu engagement nel periodo."
+      "D": "Il profilo dell'autore che genera più engagement nel periodo."
     },
     "answer": "A",
     "tags": [
@@ -4866,38 +4870,6 @@
   },
   {
     "id": 293,
-    "section": "Modelli di valutazione",
-    "text": "Quale fase del modello PRE (Planning, Research and Evaluation) risponde alla domanda 'Dove siamo adesso?'",
-    "options": {
-      "A": "Audit",
-      "B": "Strategia",
-      "C": "Valutazione finale",
-      "D": "Definizione degli obiettivi"
-    },
-    "answer": "A",
-    "tags": [
-      "modelli",
-      "seo_geo_digitale"
-    ]
-  },
-  {
-    "id": 294,
-    "section": "Modelli di valutazione",
-    "text": "Nella metafora del Measurement Tree, cosa rappresentano i 'Fiori'?",
-    "options": {
-      "A": "Gli outcome, ovvero gli effetti finali della comunicazione sui pubblici.",
-      "B": "I prodotti e i servizi visibili all'esterno (corteccia).",
-      "C": "Gli obiettivi di comunicazione (radici).",
-      "D": "I canali social utilizzati (rami)."
-    },
-    "answer": "A",
-    "tags": [
-      "modelli",
-      "social_roi"
-    ]
-  },
-  {
-    "id": 295,
     "section": "Modelli di valutazione",
     "text": "Nel modello Yardstick, a quale livello appartiene la misurazione della 'ricezione del messaggio e del ricordo'?",
     "options": {
@@ -4912,9 +4884,9 @@
     ]
   },
   {
-    "id": 296,
+    "id": 294,
     "section": "Modelli di valutazione",
-    "text": "Quale modello di valutazione della comunicazione e lineare e 'one-way', concentrandosi quasi esclusivamente sulla copertura mediatica ottenuta?",
+    "text": "Quale modello di valutazione della comunicazione è lineare e 'one-way', concentrandosi quasi esclusivamente sulla copertura mediatica ottenuta?",
     "options": {
       "A": "Short Model",
       "B": "Continuing Model",
@@ -4927,9 +4899,9 @@
     ]
   },
   {
-    "id": 297,
+    "id": 295,
     "section": "Modelli di valutazione",
-    "text": "Quale modello reputazionale assimila l'organizzazione a un soggetto con una propria personalita, usando dimensioni come 'machismo', 'prestigio' o 'gradevolezza'?",
+    "text": "Quale modello reputazionale assimila l'organizzazione a un soggetto con una propria personalità, usando dimensioni come 'machismo', 'prestigio' o 'gradevolezza'?",
     "options": {
       "A": "Corporate Character (Corporate Personality Scale)",
       "B": "Corporate Credibility Scale",
@@ -4942,7 +4914,7 @@
     ]
   },
   {
-    "id": 298,
+    "id": 296,
     "section": "Modelli di valutazione",
     "text": "Nel modello PII, cosa si intende per 'pseudo-effetti'?",
     "options": {
@@ -4958,9 +4930,40 @@
     ]
   },
   {
+    "id": 297,
+    "section": "Modelli di valutazione",
+    "text": "Nel Modello Glebb, qual è l'effetto di una 'Prima pagina dedicata' sul valore di partenza dell'articolo?",
+    "options": {
+      "A": "Incremento del $200\\%$.",
+      "B": "Incremento del $100\\%$.",
+      "C": "Incremento del $50\\%$.",
+      "D": "Incremento del $120\\%$."
+    },
+    "answer": "A",
+    "tags": [
+      "modelli"
+    ]
+  },
+  {
+    "id": 298,
+    "section": "Modelli di valutazione",
+    "text": "Nelle dispense, quale metrica è definita come 'troppo ampia' e spesso misurata tramite il ROI?",
+    "options": {
+      "A": "L'IMPACT.",
+      "B": "L'ADVOCACY.",
+      "C": "Il REACH.",
+      "D": "Lo SHARE OF VOICE."
+    },
+    "answer": "A",
+    "tags": [
+      "modelli",
+      "social_roi"
+    ]
+  },
+  {
     "id": 299,
     "section": "Modelli di valutazione",
-    "text": "Nel Modello Glebb, qual e l'effetto di una 'Prima pagina dedicata' sul valore di partenza dell'articolo?",
+    "text": "Cosa differenzia l'acronimo VALUES dal tradizionale modello SMART nella definizione degli obiettivi?",
     "options": {
       "A": "Incremento del 200%.",
       "B": "Incremento del 100%.",
@@ -4975,57 +4978,27 @@
   {
     "id": 300,
     "section": "Modelli di valutazione",
-    "text": "Quale metrica e considerata troppo ampia e spesso misurata tramite il ROI?",
+    "text": "Quale metrica è considerata troppo ampia e spesso misurata tramite il ROI?",
     "options": {
-      "A": "L'IMPACT.",
-      "B": "L'ADVOCACY.",
-      "C": "Il REACH.",
-      "D": "Lo SHARE OF VOICE."
+      "A": "Aumento della produttività interna e miglioramento delle performance commerciali.",
+      "B": "Conteggio dei 'like' su un post di Instagram.",
+      "C": "Numero di ore di formazione erogate ai comunicatori.",
+      "D": "Qualità grafica della brochure aziendale."
     },
     "answer": "A",
     "tags": [
       "modelli",
+      "seo_geo_digitale",
       "social_roi"
     ]
   },
   {
     "id": 301,
     "section": "Modelli di valutazione",
-    "text": "Cosa differenzia l'acronimo VALUES dal tradizionale modello SMART nella definizione degli obiettivi?",
-    "options": {
-      "A": "VALUES mette esplicitamente in evidenza il link necessario con gli obiettivi di business.",
-      "B": "SMART si applica solo alla pubblicita, VALUES a tutte le relazioni pubbliche.",
-      "C": "VALUES e utilizzato solo per le organizzazioni no-profit.",
-      "D": "VALUES non richiede che gli obiettivi siano misurabili."
-    },
-    "answer": "A",
-    "tags": [
-      "modelli"
-    ]
-  },
-  {
-    "id": 302,
-    "section": "Modelli di valutazione",
-    "text": "Quale di questi e un esempio di KPI di impatto sulle aree di performance (Impact)?",
-    "options": {
-      "A": "Aumento della produttivita interna e miglioramento delle performance commerciali.",
-      "B": "Conteggio dei 'like' su un post di Instagram.",
-      "C": "Numero di ore di formazione erogate ai comunicatori.",
-      "D": "Qualita grafica della brochure aziendale."
-    },
-    "answer": "A",
-    "tags": [
-      "modelli",
-      "seo_geo_digitale"
-    ]
-  },
-  {
-    "id": 303,
-    "section": "Modelli di valutazione",
-    "text": "Quale di questi concetti e maggiormente trascurato dall'acronimo SMART rispetto al CCPM?",
+    "text": "Quale di questi concetti è maggiormente trascurato dall'acronimo SMART rispetto al CCPM?",
     "options": {
       "A": "Il collegamento diretto e strategico con il business dell'organizzazione.",
-      "B": "La necessita che un obiettivo sia misurabile numericamente.",
+      "B": "La necessità che un obiettivo sia misurabile numericamente.",
       "C": "Il fatto che un obiettivo debba avere una scadenza temporale.",
       "D": "La precisione nella descrizione dell'obiettivo."
     },
@@ -5036,14 +5009,14 @@
     ]
   },
   {
-    "id": 304,
+    "id": 302,
     "section": "Modelli di valutazione",
-    "text": "Quale di questi e un esempio di 'Antecedente' legato alle influenze esterne nel modello di Corradini e Nardelli?",
+    "text": "Quale di questi è un esempio di 'Antecedente' legato alle influenze esterne nel modello di Corradini e Nardelli?",
     "options": {
-      "A": "Cio che dice la stampa sull'organizzazione",
-      "B": "La disponibilita a collaborare con l'impresa",
+      "A": "Ciò che dice la stampa sull'organizzazione",
+      "B": "La disponibilità a collaborare con l'impresa",
       "C": "La fiducia provata dai clienti",
-      "D": "La qualita effettiva di un prodotto acquistato"
+      "D": "La qualità effettiva di un prodotto acquistato"
     },
     "answer": "A",
     "tags": [
@@ -5052,7 +5025,7 @@
     ]
   },
   {
-    "id": 305,
+    "id": 303,
     "section": "Modelli di valutazione",
     "text": "Nel modello 'The Measurement Tree', cosa rappresentano i fiori (blossoms)?",
     "options": {
@@ -5069,7 +5042,7 @@
     ]
   },
   {
-    "id": 306,
+    "id": 304,
     "section": "Modelli di valutazione",
     "text": "Nel 'Measurement Tree', cosa rappresenta il suolo (soil)?",
     "options": {
@@ -5084,7 +5057,7 @@
     ]
   },
   {
-    "id": 307,
+    "id": 305,
     "section": "Modelli di valutazione",
     "text": "Cosa rappresentano le foglie (leaves) nel 'Measurement Tree'?",
     "options": {
@@ -5100,22 +5073,23 @@
     ]
   },
   {
-    "id": 308,
+    "id": 306,
     "section": "Modelli di valutazione",
     "text": "Cosa caratterizza un obiettivo SMART nella Fase 2 del modello PRE?",
     "options": {
       "A": "Essere specifico, misurabile, raggiungibile, rilevante e temporizzato.",
-      "B": "Essere definito in modo ampio per adattarsi a ogni evoluzione della campagna.",
-      "C": "Essere formulato solo dopo la raccolta dei risultati finali.",
-      "D": "Essere espresso come elenco di attivita operative da svolgere."
+      "B": "Essere molto vago per permettere cambiamenti in corso d'opera.",
+      "C": "Essere scritto esclusivamente in lingua inglese per essere internazionale.",
+      "D": "Essere approvato solo dai dipendenti più giovani e 'smart'."
     },
     "answer": "A",
     "tags": [
-      "modelli"
+      "modelli",
+      "seo_geo_digitale"
     ]
   },
   {
-    "id": 309,
+    "id": 307,
     "section": "Modelli di valutazione",
     "text": "Secondo l'acronimo SMART, cosa si intende con il requisito 'Achievable' per un obiettivo di comunicazione?",
     "options": {
@@ -5131,14 +5105,14 @@
     ]
   },
   {
-    "id": 310,
+    "id": 308,
     "section": "Modelli di valutazione",
     "text": "Nel modello Yardstick di Lindenmann (1997), il 'Livello 3' (Avanzato) si focalizza su:",
     "options": {
-      "A": "Cambiamenti nelle opinioni, negli atteggiamenti e nei comportamenti dei pubblici.",
-      "B": "Analisi delle uscite sui media e numero di impressioni totali.",
-      "C": "Misurazione del ricordo e della comprensione dei messaggi diffusi.",
-      "D": "Verifica della leggibilita dei testi prima della loro distribuzione."
+      "A": "Essere specifico, misurabile, raggiungibile, rilevante e temporizzato.",
+      "B": "Essere definito in modo ampio per adattarsi a ogni evoluzione della campagna.",
+      "C": "Essere formulato solo dopo la raccolta dei risultati finali.",
+      "D": "Essere espresso come elenco di attività operative da svolgere."
     },
     "answer": "A",
     "tags": [
@@ -5146,13 +5120,13 @@
     ]
   },
   {
-    "id": 311,
+    "id": 309,
     "section": "Modelli di valutazione",
     "text": "Cosa suggerisce il modello PII di Cutlip (2000) riguardo agli 'Outcome'?",
     "options": {
       "A": "Che rappresentano gli autentici effetti della comunicazione, divisi in livelli cognitivi, affettivi e conativi.",
       "B": "Che sono semplici misure della fase di implementazione, come il numero di comunicati inviati.",
-      "C": "Che possono essere sostituiti dagli output se il budget e limitato.",
+      "C": "Che possono essere sostituiti dagli output se il budget è limitato.",
       "D": "Che devono essere misurati esclusivamente tramite analisi del contenuto dei media."
     },
     "answer": "A",
@@ -5163,12 +5137,12 @@
     ]
   },
   {
-    "id": 312,
+    "id": 310,
     "section": "Modelli di valutazione",
     "text": "Cosa differenzia il 'Continuing Model' di Watson dallo 'Short Model'?",
     "options": {
-      "A": "Il Continuing Model e un processo circolare che permette aggiustamenti in itinere.",
-      "B": "Il Continuing Model e lineare e non prevede meccanismi di feedback.",
+      "A": "Il Continuing Model è un processo circolare che permette aggiustamenti in itinere.",
+      "B": "Il Continuing Model è lineare e non prevede meccanismi di feedback.",
       "C": "Il Continuing Model non richiede una ricerca iniziale di base.",
       "D": "Il Continuing Model si usa solo per le relazioni con i media di breve durata."
     },
@@ -5179,7 +5153,7 @@
     ]
   },
   {
-    "id": 313,
+    "id": 311,
     "section": "Modelli di valutazione",
     "text": "Nella fase di 'Implementation' del modello PII, quali dati vengono monitorati?",
     "options": {
@@ -5196,7 +5170,7 @@
     ]
   },
   {
-    "id": 314,
+    "id": 312,
     "section": "Modelli di valutazione",
     "text": "Cosa indica l'acronimo SMART riguardo alla lettera 'R'?",
     "options": {
@@ -5212,7 +5186,7 @@
     ]
   },
   {
-    "id": 315,
+    "id": 313,
     "section": "Modelli di valutazione",
     "text": "Secondo le caratteristiche SMART, cosa significa che un obiettivo di comunicazione deve essere 'Specific'?",
     "options": {
@@ -5220,6 +5194,37 @@
       "B": "Deve essere tecnicamente realizzabile con il budget a disposizione.",
       "C": "Deve essere completato entro una data prestabilita senza proroghe.",
       "D": "Deve essere espresso esclusivamente attraverso numeri e percentuali."
+    },
+    "answer": "A",
+    "tags": [
+      "modelli",
+      "social_roi"
+    ]
+  },
+  {
+    "id": 314,
+    "section": "Modelli di valutazione",
+    "text": "Nel modello Yardistic, a quale livello appartiene la valutazione del 'Ricordo'?",
+    "options": {
+      "A": "Livello 2 Intermedio.",
+      "B": "Livello 1 Output.",
+      "C": "Livello 3 Avanzato (Outcome).",
+      "D": "Livello 4 Impatto Strategico."
+    },
+    "answer": "A",
+    "tags": [
+      "modelli"
+    ]
+  },
+  {
+    "id": 315,
+    "section": "Modelli di valutazione",
+    "text": "Nel contesto dei Barcelona Principles, il principio 2 afferma che la valutazione dovrebbe identificare:",
+    "options": {
+      "A": "Outputs, outcomes e l'impatto potenziale.",
+      "B": "Solo il ritorno economico immediato (ROI).",
+      "C": "I canali social che costano meno in assoluto.",
+      "D": "Il numero di dipendenti che hanno partecipato al corso di formazione."
     },
     "answer": "A",
     "tags": [
@@ -5245,12 +5250,12 @@
   {
     "id": 317,
     "section": "Modelli di valutazione",
-    "text": "Nel contesto dei Barcelona Principles, il principio 2 afferma che la valutazione dovrebbe identificare:",
+    "text": "Quale delle seguenti affermazioni descrive correttamente la logica 'Through The Line' (TTL)?",
     "options": {
       "A": "Outputs, outcomes e l'impatto potenziale.",
       "B": "Solo il ritorno economico immediato (ROI).",
       "C": "Soltanto il volume di copertura media ottenuta.",
-      "D": "Esclusivamente il numero di attivita realizzate dalla funzione."
+      "D": "Esclusivamente il numero di attività realizzate dalla funzione."
     },
     "answer": "A",
     "tags": [
@@ -5261,7 +5266,7 @@
   {
     "id": 318,
     "section": "Modelli di valutazione",
-    "text": "Quale principio dei Barcelona Principles 3.0 afferma che la misurazione deve includere analisi sia qualitative che quantitative?",
+    "text": "Secondo il 'Brioschi Model', l'efficacia sociale della comunicazione valuta:",
     "options": {
       "A": "Principio 4.",
       "B": "Principio 1.",
@@ -5270,15 +5275,16 @@
     },
     "answer": "A",
     "tags": [
-      "modelli"
+      "modelli",
+      "social_roi"
     ]
   },
   {
     "id": 319,
     "section": "Modelli di valutazione",
-    "text": "Quale delle seguenti affermazioni descrive correttamente la logica 'Through The Line' (TTL)?",
+    "text": "Nel modello PII (Preparation, Implementation, Impact), cosa viene valutato nella fase di 'Preparation'?",
     "options": {
-      "A": "È una strategia che integra ATL e BTL per accompagnare l'utente lungo l'intero funnel, dalla notorieta alla conversione.",
+      "A": "È una strategia che integra ATL e BTL per accompagnare l'utente lungo l'intero funnel, dalla notorietà alla conversione.",
       "B": "È una logica basata solo su media di massa e indicatori di copertura.",
       "C": "È un approccio focalizzato solo su promozioni dirette e conversione immediata.",
       "D": "È una misurazione separata dei canali senza integrazione tra awareness e azione."
@@ -5291,12 +5297,12 @@
   {
     "id": 320,
     "section": "Modelli di valutazione",
-    "text": "Perche gli obiettivi SMART sono considerati un requisito per una misurazione efficace?",
+    "text": "Qual è il limite principale del 'Short Model' nella valutazione della comunicazione?",
     "options": {
-      "A": "Perche costringono a definire traguardi specifici, misurabili e temporalmente definiti, rendendo possibile il confronto con i risultati.",
-      "B": "Perche sostituiscono la necessita di scegliere KPI coerenti con gli obiettivi.",
-      "C": "Perche garantiscono automaticamente il raggiungimento degli outcome attesi.",
-      "D": "Perche permettono di valutare la comunicazione senza una baseline iniziale."
+      "A": "Perché costringono a definire traguardi specifici, misurabili e temporalmente definiti, rendendo possibile il confronto con i risultati.",
+      "B": "Perché sostituiscono la necessità di scegliere KPI coerenti con gli obiettivi.",
+      "C": "Perché garantiscono automaticamente il raggiungimento degli outcome attesi.",
+      "D": "Perché permettono di valutare la comunicazione senza una baseline iniziale."
     },
     "answer": "A",
     "tags": [
@@ -5306,61 +5312,26 @@
   {
     "id": 321,
     "section": "Modelli di valutazione",
-    "text": "Secondo il 'Brioschi Model', l'efficacia sociale della comunicazione valuta:",
+    "text": "Perché nel 'Measurement Tree' il processo di valutazione non può essere limitato solo alla fase ex post?",
     "options": {
-      "A": "L'impatto della comunicazione sul benessere sociale degli interlocutori.",
-      "B": "Il posizionamento del brand rispetto ai concorrenti diretti.",
-      "C": "Il numero di 'like' e condivisioni sui social network.",
-      "D": "La riduzione dei costi operativi del dipartimento di comunicazione."
+      "A": "Perché deve comprendere anche la valutazione ex ante e quella in itinere.",
+      "B": "Perché i risultati della comunicazione sono istantanei e svaniscono subito.",
+      "C": "Perché le radici dell'albero si seccano se non valutate all'inizio.",
+      "D": "Perché la valutazione ex post è considerata scientificamente inattendibile."
     },
     "answer": "A",
     "tags": [
-      "modelli",
-      "seo_geo_digitale",
-      "social_roi"
+      "modelli"
     ]
   },
   {
     "id": 322,
     "section": "Modelli di valutazione",
-    "text": "Nel modello PII (Preparation, Implementation, Impact), cosa viene valutato nella fase di 'Preparation'?",
-    "options": {
-      "A": "L'adeguatezza ex-ante dei messaggi, anche attraverso pre-test sui contenuti.",
-      "B": "Il cambiamento di comportamento a lungo termine dei clienti.",
-      "C": "Il numero di persone effettivamente raggiunte dal messaggio.",
-      "D": "Il costo totale delle agenzie di comunicazione coinvolte."
-    },
-    "answer": "A",
-    "tags": [
-      "modelli",
-      "ricerca_metodi",
-      "social_roi"
-    ]
-  },
-  {
-    "id": 323,
-    "section": "Modelli di valutazione",
-    "text": "Qual e il limite principale del 'Short Model' nella valutazione della comunicazione?",
-    "options": {
-      "A": "È un processo lineare che non prevede alcun meccanismo di feedback.",
-      "B": "È eccessivamente costoso da implementare per le piccole imprese.",
-      "C": "Richiede anni di osservazione prima di produrre risultati validi.",
-      "D": "Si basa esclusivamente su indagini etnografiche complesse."
-    },
-    "answer": "A",
-    "tags": [
-      "modelli",
-      "ricerca_metodi"
-    ]
-  },
-  {
-    "id": 324,
-    "section": "Modelli di valutazione",
     "text": "Il 'PRE Model' suggerisce che la pianificazione e la valutazione debbano essere:",
     "options": {
       "A": "Processi paralleli che procedono insieme lungo tutto il piano.",
-      "B": "Attivita separate affidate a dipartimenti che non comunicano tra loro.",
-      "C": "Svolte esclusivamente da consulenti esterni per garantire neutralita.",
+      "B": "Attività separate affidate a dipartimenti che non comunicano tra loro.",
+      "C": "Svolte esclusivamente da consulenti esterni per garantire neutralità.",
       "D": "Realizzate solo in caso di crisi reputazionale imprevista."
     },
     "answer": "A",
@@ -5369,14 +5340,14 @@
     ]
   },
   {
-    "id": 325,
+    "id": 323,
     "section": "Modelli di valutazione",
-    "text": "Il 'Brioschi Model' propone di valutare ogni attivita di comunicazione su tre dimensioni:",
+    "text": "Il 'Brioschi Model' propone di valutare ogni attività di comunicazione su tre dimensioni:",
     "options": {
       "A": "Efficacia tecnica, economica e sociale.",
-      "B": "Output, out-take e outcome.",
-      "C": "Cognitiva, affettiva e conativa.",
-      "D": "Interna, esterna e istituzionale."
+      "B": "Velocità, costo e divertimento.",
+      "C": "Input, Output e Outcome.",
+      "D": "Numero di like, numero di share e numero di commenti."
     },
     "answer": "A",
     "tags": [
@@ -5385,7 +5356,7 @@
     ]
   },
   {
-    "id": 326,
+    "id": 324,
     "section": "Modelli di valutazione",
     "text": "Il 'PII Model' di valutazione suddivide il processo in quali fasi?",
     "options": {
@@ -5401,22 +5372,23 @@
     ]
   },
   {
-    "id": 327,
+    "id": 325,
     "section": "Modelli di valutazione",
-    "text": "Cos'e il 'Short Model' nella classificazione dei modelli di valutazione?",
+    "text": "Cos'è il 'Short Model' nella classificazione dei modelli di valutazione?",
     "options": {
-      "A": "Un modello lineare e one-way focalizzato sul raggiungimento degli output media.",
-      "B": "Un modello circolare fondato sul feedback continuo degli stakeholder.",
-      "C": "Un modello a tre livelli progressivi: output, out-take e outcome.",
-      "D": "Un modello che integra valutazione ongoing e valutazione finale."
+      "A": "Efficacia tecnica, economica e sociale.",
+      "B": "Output, out-take e outcome.",
+      "C": "Cognitiva, affettiva e conativa.",
+      "D": "Interna, esterna e istituzionale."
     },
     "answer": "A",
     "tags": [
-      "modelli"
+      "modelli",
+      "social_roi"
     ]
   },
   {
-    "id": 328,
+    "id": 326,
     "section": "Modelli di valutazione",
     "text": "In cosa consiste il 'Livello 2 (Out-take)' del Yardstick Model?",
     "options": {
@@ -5431,14 +5403,14 @@
     ]
   },
   {
-    "id": 329,
+    "id": 327,
     "section": "Modelli di valutazione",
     "text": "Il 'PRE Model' (Planning, Research and Evaluation) suggerisce che la valutazione:",
     "options": {
-      "A": "Debba avvenire in parallelo alla pianificazione, partendo dall'audit iniziale e proseguendo in modo continuo.",
-      "B": "Dipenda esclusivamente dalla scelta di obiettivi SMART, senza necessita di analisi del contesto (audit).",
-      "C": "Debba concentrarsi solo sugli output per garantire la massima velocita di esecuzione.",
-      "D": "Sia utile solo alla fine di un progetto per giustificare i costi sostenuti di fronte al management."
+      "A": "Un modello lineare e one-way focalizzato sul raggiungimento degli output media.",
+      "B": "Un modello circolare fondato sul feedback continuo degli stakeholder.",
+      "C": "Un modello a tre livelli progressivi: output, out-take e outcome.",
+      "D": "Un modello che integra valutazione ongoing e valutazione finale."
     },
     "answer": "A",
     "tags": [
@@ -5447,9 +5419,26 @@
     ]
   },
   {
-    "id": 330,
+    "id": 328,
     "section": "Modelli di valutazione",
-    "text": "Il modello Brioschi valuta ogni attivita di comunicazione su tre dimensioni di efficacia. Quali sono?",
+    "text": "Perché l'uso dell'AVE (Advertising Value Equivalency) è fortemente sconsigliato dai Barcelona Principles 3.0?",
+    "options": {
+      "A": "Perché non misura il valore reale della comunicazione ma solo un costo ipotetico dello spazio.",
+      "B": "Perché può essere applicato solo alla stampa cartacea e non ai media digitali.",
+      "C": "Perché è troppo difficile da calcolare per le piccole aziende.",
+      "D": "Perché non tiene conto dell'impatto visivo delle immagini pubblicate."
+    },
+    "answer": "A",
+    "tags": [
+      "modelli",
+      "seo_geo_digitale",
+      "social_roi"
+    ]
+  },
+  {
+    "id": 329,
+    "section": "Modelli di valutazione",
+    "text": "Il modello Brioschi valuta ogni attività di comunicazione su tre dimensioni di efficacia. Quali sono?",
     "options": {
       "A": "Tecnica, Economica e Sociale.",
       "B": "Visiva, Testuale e Simbolica.",
@@ -5463,14 +5452,14 @@
     ]
   },
   {
-    "id": 331,
+    "id": 330,
     "section": "Modelli di valutazione",
-    "text": "Qual e il valore di partenza incrementato dal moltiplicatore 'Titolo' nel modello Glebb?",
+    "text": "Qual è il valore di partenza incrementato dal moltiplicatore 'Titolo' nel modello Glebb?",
     "options": {
-      "A": "50%.",
-      "B": "10%.",
-      "C": "200%.",
-      "D": "5%."
+      "A": "$50\\%$.",
+      "B": "$10\\%$.",
+      "C": "$200\\%$.",
+      "D": "$5\\%$."
     },
     "answer": "A",
     "tags": [
@@ -5478,14 +5467,14 @@
     ]
   },
   {
-    "id": 332,
+    "id": 331,
     "section": "Modelli di valutazione",
-    "text": "In quale anno e stato elaborato il modello 'Communication Satisfaction Questionnaire' (CSQ)?",
+    "text": "In quale anno è stato elaborato il modello 'Communication Satisfaction Questionnaire' (CSQ)?",
     "options": {
-      "A": "1977",
-      "B": "1990",
-      "C": "2001",
-      "D": "2025"
+      "A": "50%.",
+      "B": "10%.",
+      "C": "200%.",
+      "D": "5%."
     },
     "answer": "A",
     "tags": [
@@ -5495,14 +5484,14 @@
     ]
   },
   {
-    "id": 333,
+    "id": 332,
     "section": "Modelli di valutazione",
-    "text": "Il 'Short Model' di Watson (2001) e caratterizzato da:",
+    "text": "Il 'Short Model' di Watson (2001) è caratterizzato da:",
     "options": {
       "A": "Un approccio lineare focalizzato sul raggiungimento dei giusti interlocutori nel breve periodo.",
-      "B": "La necessita di utilizzare tecniche etnografiche complesse per misurare il cambiamento d'opinione.",
+      "B": "La necessità di utilizzare tecniche etnografiche complesse per misurare il cambiamento d'opinione.",
       "C": "Un processo circolare basato su feedback costanti degli stakeholder.",
-      "D": "La flessibilita di cambiare tattica durante l'esecuzione della campagna."
+      "D": "La flessibilità di cambiare tattica durante l'esecuzione della campagna."
     },
     "answer": "A",
     "tags": [
@@ -5510,12 +5499,12 @@
     ]
   },
   {
-    "id": 334,
+    "id": 333,
     "section": "Modelli di valutazione",
-    "text": "Il 'Macro Model' di Macnamara (1997) descrive l'attivita di valutazione come una piramide in cui:",
+    "text": "Il 'Macro Model' di Macnamara (1997) descrive l'attività di valutazione come una piramide in cui:",
     "options": {
-      "A": "I metodi diventano piu sofisticati e costosi man mano che si sale verso gli outcome.",
-      "B": "La base e costituita dagli outcome perche sono i dati piu facili da raccogliere.",
+      "A": "I metodi diventano più sofisticati e costosi man mano che si sale verso gli outcome.",
+      "B": "La base è costituita dagli outcome perché sono i dati più facili da raccogliere.",
       "C": "Tutte le fasi hanno lo stesso peso economico e richiedono le medesime competenze tecniche.",
       "D": "La valutazione ex-ante deve essere evitata per non influenzare i risultati finali."
     },
@@ -5526,6 +5515,23 @@
     ]
   },
   {
+    "id": 334,
+    "section": "Modelli di valutazione",
+    "text": "Perché gli obiettivi SMART sono considerati un requisito per una misurazione efficace?",
+    "options": {
+      "A": "Perché costringono a definire traguardi specifici, misurabili e temporalmente definiti, rendendo possibile il confronto con i risultati.",
+      "B": "Perché sono gli unici obiettivi accettati dai social media per poter pubblicare annunci.",
+      "C": "Perché garantiscono che l'azienda sia vista come intelligente (smart) dai suoi concorrenti.",
+      "D": "Perché permettono di risparmiare denaro riducendo il numero di dipendenti necessari."
+    },
+    "answer": "A",
+    "tags": [
+      "modelli",
+      "seo_geo_digitale",
+      "social_roi"
+    ]
+  },
+  {
     "id": 335,
     "section": "Modelli di valutazione",
     "text": "Il 'Yardstick Model' di valutazione della comunicazione si articola su tre livelli. Cosa misura il secondo livello (Out-take)?",
@@ -5533,7 +5539,7 @@
       "A": "La ricezione, la comprensione e il ricordo del messaggio da parte del pubblico.",
       "B": "Il numero di articoli pubblicati e la reach ottenuta.",
       "C": "Il cambiamento duraturo negli atteggiamenti e nei comportamenti d'acquisto.",
-      "D": "Il contributo della comunicazione al valore azionario della societa."
+      "D": "Il contributo della comunicazione al valore azionario della società."
     },
     "answer": "A",
     "tags": [
@@ -5576,11 +5582,11 @@
   {
     "id": 338,
     "section": "Modelli di valutazione",
-    "text": "Quale delle seguenti e una caratteristica distintiva del 'Yardstick Model' di valutazione?",
+    "text": "Quale delle seguenti è una caratteristica distintiva del 'Yardstick Model' di valutazione?",
     "options": {
       "A": "Propone tre livelli progressivi di valutazione: Output, Out-take e Outcome.",
       "B": "Si focalizza esclusivamente sulla dimensione etica e sociale dell'azienda.",
-      "C": "Elimina totalmente la necessita di effettuare pre-test o post-test sulle campagne.",
+      "C": "Elimina totalmente la necessità di effettuare pre-test o post-test sulle campagne.",
       "D": "Cambiamenti nelle opinioni, negli atteggiamenti e nei comportamenti dei pubblici."
     },
     "answer": "A",
@@ -5593,10 +5599,10 @@
   {
     "id": 339,
     "section": "Modelli di valutazione",
-    "text": "Cosa introduce il 'MACRO Model of PR Evaluation' rispetto ai modelli piu semplici?",
+    "text": "Cosa introduce il 'MACRO Model of PR Evaluation' rispetto ai modelli più semplici?",
     "options": {
       "A": "La distinzione tra valutazione a livello individuale (micro-decisioni) e a livello di programma, includendo la valutazione degli input.",
-      "B": "L'uso esclusivo di ricerche causali con gruppi di controllo per ogni attivita.",
+      "B": "L'uso esclusivo di ricerche causali con gruppi di controllo per ogni attività.",
       "C": "La metafora dell'albero per descrivere il rapporto tra obiettivi e outcome.",
       "D": "La riduzione della valutazione al solo conteggio degli output media."
     },
@@ -5628,7 +5634,7 @@
     "options": {
       "A": "La circolazione delle informazioni sui progetti in corso e futuri della funzione.",
       "B": "La soddisfazione per lo stile comunicativo dei superiori diretti.",
-      "C": "La qualita dei feedback personali ricevuti dai dipendenti.",
+      "C": "La qualità dei feedback personali ricevuti dai dipendenti.",
       "D": "La comunicazione informale tra colleghi all'interno dell'organizzazione."
     },
     "answer": "A",
@@ -5641,12 +5647,12 @@
   {
     "id": 342,
     "section": "Modelli di valutazione",
-    "text": "Perche la metafora del 'Measurement Tree' e utile nella valutazione della comunicazione?",
+    "text": "Perché la metafora del 'Measurement Tree' è utile nella valutazione della comunicazione?",
     "options": {
-      "A": "Perche collega obiettivi, pubblici, tattiche e outcome in una sequenza coerente.",
-      "B": "Perche trasforma ogni attivita comunicativa in un valore economico unico.",
-      "C": "Perche separa gli obiettivi di comunicazione dagli effetti sui pubblici.",
-      "D": "Perche considera solo le uscite media visibili nel breve periodo."
+      "A": "Perché collega obiettivi, pubblici, tattiche e outcome in una sequenza coerente.",
+      "B": "Perché trasforma ogni attività comunicativa in un valore economico unico.",
+      "C": "Perché separa gli obiettivi di comunicazione dagli effetti sui pubblici.",
+      "D": "Perché considera solo le uscite media visibili nel breve periodo."
     },
     "answer": "A",
     "tags": [
@@ -5659,9 +5665,9 @@
     "section": "Modelli di valutazione",
     "text": "Cosa si intende per 'Efficacia Tecnica' secondo la matrice di Brioschi?",
     "options": {
-      "A": "La capacita di influenzare conoscenze e atteggiamenti per sviluppare la corporate identity.",
+      "A": "La capacità di influenzare conoscenze e atteggiamenti per sviluppare la corporate identity.",
       "B": "Il contenimento dei costi di produzione sotto una soglia prestabilita.",
-      "C": "La capacita di generare benessere sociale negli interlocutori.",
+      "C": "La capacità di generare benessere sociale negli interlocutori.",
       "D": "Il contributo diretto della comunicazione al risultato economico."
     },
     "answer": "A",
@@ -5677,7 +5683,7 @@
     "options": {
       "A": "Che l'obiettivo deve essere raggiungibile date le risorse e il contesto a disposizione.",
       "B": "Che l'obiettivo deve essere misurabile attraverso un indicatore numerico.",
-      "C": "Che l'obiettivo deve essere rilevante rispetto alle priorita organizzative.",
+      "C": "Che l'obiettivo deve essere rilevante rispetto alle priorità organizzative.",
       "D": "Che l'obiettivo deve avere una scadenza temporale definita."
     },
     "answer": "A",
@@ -5689,7 +5695,7 @@
   {
     "id": 345,
     "section": "Modelli di valutazione",
-    "text": "Nel 'MACRO Model', perche e importante valutare la fase di 'Input'?",
+    "text": "Nel 'MACRO Model', perché è importante valutare la fase di 'Input'?",
     "options": {
       "A": "Per verificare l'adeguatezza delle decisioni prese riguardo a formati, contenuti e immagini.",
       "B": "Per misurare i cambiamenti di atteggiamento generati nel pubblico finale.",
@@ -5741,7 +5747,7 @@
     "section": "Performance measurement e CCPM",
     "text": "Nella tassonomia dei KPI di comunicazione proposta da Romenti, cosa rientra nella dimensione \"relazionale e sociale\" del livello sommativo?",
     "options": {
-      "A": "Qualita delle relazioni con gli stakeholder, capacita di mantenerle, fiducia",
+      "A": "Qualità delle relazioni con gli stakeholder, capacità di mantenerle, fiducia",
       "B": "La reputazione e la percezione complessiva dei pubblici esterni",
       "C": "Le competenze comunicative e il benessere dei dipendenti interni",
       "D": "Lo stile manageriale e la cultura comunicativa dell'organizzazione"
@@ -5758,12 +5764,12 @@
   {
     "id": 349,
     "section": "Performance measurement e CCPM",
-    "text": "Nel Communication Value System di Romenti, qual e il punto di partenza?",
+    "text": "Nel Communication Value System di Romenti, qual è il punto di partenza?",
     "options": {
       "A": "Gli obiettivi di business strategici dell'organizzazione",
       "B": "Le richieste informative degli stakeholder esterni",
       "C": "Gli obiettivi del piano di comunicazione predisposto dalla funzione",
-      "D": "I KPI gia adottati dalla funzione comunicazione nel periodo"
+      "D": "I KPI già adottati dalla funzione comunicazione nel periodo"
     },
     "answer": "A",
     "tags": [
@@ -5778,7 +5784,7 @@
     "section": "Performance measurement e CCPM",
     "text": "Nella tassonomia dei KPI, a cosa serve specificamente il livello 'Formativo'?",
     "options": {
-      "A": "A capire se le attivita e gli strumenti funzionano durante la fase di implementazione.",
+      "A": "A capire se le attività e gli strumenti funzionano durante la fase di implementazione.",
       "B": "A misurare esclusivamente il cambiamento della reputazione nel lungo periodo.",
       "C": "A rendicontare il valore economico finale generato dalla comunicazione.",
       "D": "A calcolare il ritorno sull'investimento (ROI) della singola campagna."
@@ -5798,7 +5804,7 @@
     "options": {
       "A": "Validi: gli obiettivi devono essere rilevanti per il business e per l'organizzazione.",
       "B": "Verificabili: gli obiettivi devono essere certificati da soggetti esterni.",
-      "C": "Valutabili: gli obiettivi devono coincidere con indicatori gia disponibili.",
+      "C": "Valutabili: gli obiettivi devono coincidere con indicatori già disponibili.",
       "D": "Vincolanti: gli obiettivi devono restare identici per tutto il piano."
     },
     "answer": "A",
@@ -5811,12 +5817,12 @@
   {
     "id": 352,
     "section": "Performance measurement e CCPM",
-    "text": "Nel modello CCPM, perche e importante mappare le 'Performance Expectations'?",
+    "text": "Nel modello CCPM, perché è importante mappare le 'Performance Expectations'?",
     "options": {
-      "A": "Perche la valutazione e efficace solo se utile per chi deve prendere decisioni.",
-      "B": "Perche tutti gli stakeholder condividono spontaneamente la stessa idea di successo.",
-      "C": "Perche consente di sostituire gli obiettivi di business con metriche standard.",
-      "D": "Perche permette di evitare la scelta dei destinatari del report finale."
+      "A": "Perché la valutazione e efficace solo se utile per chi deve prendere decisioni.",
+      "B": "Perché tutti gli stakeholder condividono spontaneamente la stessa idea di successo.",
+      "C": "Perché consente di sostituire gli obiettivi di business con metriche standard.",
+      "D": "Perché permette di evitare la scelta dei destinatari del report finale."
     },
     "answer": "A",
     "tags": [
@@ -5827,7 +5833,7 @@
   {
     "id": 353,
     "section": "Performance measurement e CCPM",
-    "text": "Secondo il modello di Romenti, la valutazione e efficace solo se:",
+    "text": "Secondo il modello di Romenti, la valutazione è efficace solo se:",
     "options": {
       "A": "È utile per chi deve prendere decisioni (management).",
       "B": "Produce sempre un indicatore economico unico e confrontabile.",
@@ -5862,9 +5868,9 @@
   {
     "id": 355,
     "section": "Performance measurement e CCPM",
-    "text": "Nel modello logico del CCPM, qual e la sequenza concettuale piu corretta?",
+    "text": "Nel modello logico del CCPM, qual è la sequenza concettuale più corretta?",
     "options": {
-      "A": "Input e attivita, output, variabili ponte, outcome e impatto sulle aree di performance.",
+      "A": "Input e attività, output, variabili ponte, outcome e impatto sulle aree di performance.",
       "B": "Audit iniziale, scelta dei canali, report finale, ROI e archiviazione dei dati.",
       "C": "Focus group, survey, analisi del contenuto, esperimento causale e benchmark.",
       "D": "Awareness, engagement, reach, frequenza e costo per contatto lordo."
@@ -5880,10 +5886,10 @@
   {
     "id": 356,
     "section": "Performance measurement e CCPM",
-    "text": "Secondo i principi del 'Communication Value System', qual e il primo passo per costruire una strategia di misurazione efficace?",
+    "text": "Secondo i principi del 'Communication Value System', qual è il primo passo per costruire una strategia di misurazione efficace?",
     "options": {
       "A": "Identificare gli obiettivi di business rilevanti dell'organizzazione.",
-      "B": "Scegliere lo strumento tecnologico (software) piu avanzato disponibile sul mercato.",
+      "B": "Scegliere lo strumento tecnologico (software) più avanzato disponibile sul mercato.",
       "C": "Calcolare il ROI dell'anno precedente per definire il budget futuro.",
       "D": "Raccogliere tutte le vanity metrics possibili per mostrare volumi elevati al management."
     },
@@ -5903,7 +5909,7 @@
       "A": "La tendenza a raccogliere dati facili da reperire ma poco utili per i processi decisionali.",
       "B": "L'utilizzo di un gruppo di controllo in una ricerca causale che altera i risultati finali.",
       "C": "L'errore di utilizzare software di Intelligenza Artificiale per analizzare il sentiment senza supervisione umana.",
-      "D": "L'impossibilita di distinguere tra investimenti di marketing e investimenti di comunicazione."
+      "D": "L'impossibilità di distinguere tra investimenti di marketing e investimenti di comunicazione."
     },
     "answer": "A",
     "tags": [
@@ -5917,7 +5923,7 @@
   {
     "id": 358,
     "section": "Performance measurement e CCPM",
-    "text": "Nell'approccio 'Through The Line' (TTL), qual e la caratteristica distintiva della misurazione?",
+    "text": "Nell'approccio 'Through The Line' (TTL), qual è la caratteristica distintiva della misurazione?",
     "options": {
       "A": "L'utilizzo di KPI integrati che seguono l'intero customer journey, combinando consapevolezza e conversione.",
       "B": "La focalizzazione esclusiva sulla 'Reach' e sui 'Gross Rating Points' (GRP) tipici della TV.",
@@ -5970,7 +5976,7 @@
     "text": "Cosa distingue le misure 'Rendicontative' dalle altre nella tassonomia dei KPI?",
     "options": {
       "A": "Collegano la comunicazione alle performance di business complessive (es. vendite, quota di mercato).",
-      "B": "Si focalizzano esclusivamente sulla qualita delle relazioni con gli stakeholder.",
+      "B": "Si focalizzano esclusivamente sulla qualità delle relazioni con gli stakeholder.",
       "C": "Servono ai tecnici per migliorare gli strumenti di comunicazione.",
       "D": "Valutano l'adeguatezza dei messaggi attraverso pre-test su campioni."
     },
@@ -5986,9 +5992,9 @@
   {
     "id": 362,
     "section": "Performance measurement e CCPM",
-    "text": "Cosa si intende per 'Causalita Realistica' nelle attivita di comunicazione organizzativa?",
+    "text": "Cosa si intende per 'Causalità Realistica' nelle attività di comunicazione organizzativa?",
     "options": {
-      "A": "La capacita di dimostrare un nesso plausibile tra comunicazione ed effetti in contesti complessi.",
+      "A": "La capacità di dimostrare un nesso plausibile tra comunicazione ed effetti in contesti complessi.",
       "B": "L'idea che la comunicazione sia l'unica causa di ogni successo aziendale.",
       "C": "La misurazione degli effetti basata esclusivamente sul buon senso del manager.",
       "D": "L'applicazione rigorosa di metodi di laboratorio per isolare ogni variabile."
@@ -6004,7 +6010,7 @@
     "section": "Performance measurement e CCPM",
     "text": "Nella tassonomia dei KPI, le 'misure formative' si distinguono per un obiettivo specifico. Quale?",
     "options": {
-      "A": "Valutare le singole attivita di comunicazione in relazione agli obiettivi specifici.",
+      "A": "Valutare le singole attività di comunicazione in relazione agli obiettivi specifici.",
       "B": "Aggregare i risultati di tutte le funzioni aziendali per il bilancio sociale.",
       "C": "Misurare il valore generato per l'organizzazione nel medio-lungo periodo.",
       "D": "Calcolare esclusivamente il ROI finanziario delle campagne pubblicitarie."
@@ -6019,9 +6025,9 @@
   {
     "id": 364,
     "section": "Performance measurement e CCPM",
-    "text": "Secondo Romenti, qual e il presupposto fondamentale della 'Communication Balanced Scorecard' (BSC) di Vos e Shoemaker?",
+    "text": "Secondo Romenti, qual è il presupposto fondamentale della 'Communication Balanced Scorecard' (BSC) di Vos e Shoemaker?",
     "options": {
-      "A": "Che a ciascuna delle prospettive aziendali corrisponda un'attivita specifica di comunicazione.",
+      "A": "Che a ciascuna delle prospettive aziendali corrisponda un'attività specifica di comunicazione.",
       "B": "Che il ROI sia l'unico indicatore valido per misurare il successo comunicativo.",
       "C": "Che la comunicazione debba essere separata dalle prospettive di business.",
       "D": "Che ogni prospettiva aziendale richieda la stessa metrica standard."
@@ -6037,12 +6043,12 @@
   {
     "id": 365,
     "section": "Performance measurement e CCPM",
-    "text": "Nel modello logico, perche e importante monitorare gli 'obiettivi di implementazione'?",
+    "text": "Nel modello logico, perché è importante monitorare gli 'obiettivi di implementazione'?",
     "options": {
-      "A": "Perche permettono di verificare se si sta facendo quanto necessario affinche il programma raggiunga i suoi effetti.",
-      "B": "Perche sostituiscono la necessita di definire gli obiettivi SMART a monte.",
-      "C": "Perche servono esclusivamente a calcolare il budget residuo a fine anno.",
-      "D": "Perche rappresentano l'unico indicatore di successo per il Board aziendale."
+      "A": "Perché permettono di verificare se si sta facendo quanto necessario affinché il programma raggiunga i suoi effetti.",
+      "B": "Perché sostituiscono la necessità di definire gli obiettivi SMART a monte.",
+      "C": "Perché servono esclusivamente a calcolare il budget residuo a fine anno.",
+      "D": "Perché rappresentano l'unico indicatore di successo per il Board aziendale."
     },
     "answer": "A",
     "tags": [
@@ -6105,7 +6111,7 @@
     "section": "Performance measurement e CCPM",
     "text": "Che cosa si intende per 'ascolto continuativo' nel contesto del miglioramento delle performance aziendali?",
     "options": {
-      "A": "Un'attivita integrata che rileva costantemente elementi di miglioramento e risponde agli utenti.",
+      "A": "Un'attività integrata che rileva costantemente elementi di miglioramento e risponde agli utenti.",
       "B": "Un monitoraggio limitato al periodo di lancio di un prodotto.",
       "C": "Una rilevazione finale usata solo per rendicontare i risultati ottenuti.",
       "D": "Un controllo tecnico dei canali proprietari senza lettura delle conversazioni."
@@ -6119,12 +6125,12 @@
   {
     "id": 370,
     "section": "Performance measurement e CCPM",
-    "text": "Perche e importante distinguere tra indicatori 'Lead' e 'Lag'?",
+    "text": "Che cosa suggerisce il modello CCPM riguardo alla causalità?",
     "options": {
-      "A": "Perche i Lead sono driver della performance futura, mentre i Lag misurano i risultati passati.",
-      "B": "Perche gli indicatori Lead sono gli unici che interessano agli azionisti.",
-      "C": "Perche gli indicatori Lag costano meno da raccogliere rispetto ai Lead.",
-      "D": "Non c'e differenza reale, sono termini usati solo nella letteratura accademica."
+      "A": "Di non cercare una causalità perfetta, ma una causalità 'plausibile'.",
+      "B": "Di cercare sempre una causalità perfetta e scientificamente dimostrabile.",
+      "C": "Che la comunicazione è l'unico fattore che determina il successo aziendale.",
+      "D": "Di ignorare del tutto i nessi causali per focalizzarsi solo sulla visibilità."
     },
     "answer": "A",
     "tags": [
@@ -6135,23 +6141,6 @@
   },
   {
     "id": 371,
-    "section": "Performance measurement e CCPM",
-    "text": "Che cosa suggerisce il modello CCPM riguardo alla causalita?",
-    "options": {
-      "A": "Di non cercare una causalita perfetta, ma una causalita 'plausibile'.",
-      "B": "Di cercare sempre una causalita perfetta e scientificamente dimostrabile.",
-      "C": "Che la comunicazione e l'unico fattore che determina il successo aziendale.",
-      "D": "Di ignorare del tutto i nessi causali per focalizzarsi solo sulla visibilita."
-    },
-    "answer": "A",
-    "tags": [
-      "modelli",
-      "performance_ccpm",
-      "seo_geo_digitale"
-    ]
-  },
-  {
-    "id": 372,
     "section": "Performance measurement e CCPM",
     "text": "Nell'ambito della Balanced Scorecard applicata alla comunicazione, cosa rappresenta la prospettiva 'Clienti' secondo Vos e Schoemaker?",
     "options": {
@@ -6167,9 +6156,26 @@
     ]
   },
   {
+    "id": 372,
+    "section": "Performance measurement e CCPM",
+    "text": "Nel modello 'Value Link', qual è il primo passaggio fondamentale?",
+    "options": {
+      "A": "Raggiungere le persone e renderle consapevoli.",
+      "B": "Vendere il prodotto al cliente finale.",
+      "C": "Calcolare il ROI totale dell'azienda.",
+      "D": "Assumere nuovi dipendenti nell'ufficio marketing."
+    },
+    "answer": "A",
+    "tags": [
+      "modelli",
+      "performance_ccpm",
+      "social_roi"
+    ]
+  },
+  {
     "id": 373,
     "section": "Performance measurement e CCPM",
-    "text": "Nel modello 'Value Link', qual e il primo passaggio fondamentale?",
+    "text": "Secondo il modello delle 4 prospettive di Vos e Schoemaker (derivato dalla Balanced Scorecard), a quale area corrisponde la 'comunicazione istituzionale'?",
     "options": {
       "A": "Raggiungere le persone e renderle consapevoli.",
       "B": "Trasformare immediatamente la relazione in risultati economici.",
@@ -6186,26 +6192,10 @@
   {
     "id": 374,
     "section": "Performance measurement e CCPM",
-    "text": "Secondo il modello delle 4 prospettive di Vos e Schoemaker (derivato dalla Balanced Scorecard), a quale area corrisponde la 'comunicazione istituzionale'?",
-    "options": {
-      "A": "Economico-Finanziaria",
-      "B": "Cliente",
-      "C": "Processi Interni",
-      "D": "Apprendimento e Crescita"
-    },
-    "answer": "A",
-    "tags": [
-      "modelli",
-      "performance_ccpm"
-    ]
-  },
-  {
-    "id": 375,
-    "section": "Performance measurement e CCPM",
     "text": "Quale errore metodologico definisce la 'trappola della misurazione' nel modello CCPM?",
     "options": {
-      "A": "Raccogliere tutto cio che e facile misurare (spesso numerico) ma poco utile per il processo decisionale.",
-      "B": "Non misurare affatto le attivita per paura di risultati negativi.",
+      "A": "Raccogliere tutto ciò che è facile misurare (spesso numerico) ma poco utile per il processo decisionale.",
+      "B": "Non misurare affatto le attività per paura di risultati negativi.",
       "C": "Affidarsi esclusivamente a consulenti esterni per la valutazione dei risultati.",
       "D": "Usare solo metodi qualitativi ignorando i dati quantitativi certificati."
     },
@@ -6217,9 +6207,9 @@
     ]
   },
   {
-    "id": 376,
+    "id": 375,
     "section": "Performance measurement e CCPM",
-    "text": "Secondo Parmenter, quali indicatori sono monitorati con frequenza alta e si concentrano sugli aspetti piu critici per il successo presente e futuro?",
+    "text": "Secondo Parmenter, quali indicatori sono monitorati con frequenza alta e si concentrano sugli aspetti più critici per il successo presente e futuro?",
     "options": {
       "A": "KPI (Key Performance Indicators)",
       "B": "KRI (Key Results Indicators)",
@@ -6233,28 +6223,47 @@
     ]
   },
   {
-    "id": 377,
+    "id": 376,
     "section": "Performance measurement e CCPM",
-    "text": "Perche l'attribuzione di causalita e considerata una sfida nel modello CCPM?",
+    "text": "Nel modello CCPM, perché è importante identificare i soggetti coinvolti prima della misurazione?",
     "options": {
-      "A": "Perche non sempre e possibile isolare gli effetti della comunicazione tramite metodi sperimentali rigorosi.",
-      "B": "Perche gli output media dimostrano automaticamente il contributo della comunicazione al business.",
-      "C": "Perche la causalita puo essere stabilita solo contando le impression generate.",
-      "D": "Perche il modello CCPM esclude l'analisi delle variabili esterne."
+      "A": "Perché ciascuno ha aspettative e bisogni informativi differenti che guidano l'utilizzo dei risultati.",
+      "B": "Per poter inviare a tutti lo stesso identico report standardizzato di 500 pagine.",
+      "C": "Per decidere a chi addebitare i costi della ricerca in base alla simpatia.",
+      "D": "Per verificare che nessuno dei partecipanti abbia precedenti penali."
     },
     "answer": "A",
     "tags": [
       "modelli",
       "performance_ccpm",
-      "seo_geo_digitale"
+      "ricerca_metodi"
+    ]
+  },
+  {
+    "id": 377,
+    "section": "Performance measurement e CCPM",
+    "text": "Quali sono i tre filoni disciplinari alla base del modello di valutazione CCPM?",
+    "options": {
+      "A": "Ricerca valutativa, performance measurement e teoria degli intangibili.",
+      "B": "Media buying, creatività pubblicitaria e pianificazione degli spazi.",
+      "C": "Certificazione delle audience, contabilità industriale e normativa privacy.",
+      "D": "SEO tecnico, social advertising e customer service operativo."
+    },
+    "answer": "A",
+    "tags": [
+      "modelli",
+      "performance_ccpm",
+      "ricerca_metodi",
+      "seo_geo_digitale",
+      "social_roi"
     ]
   },
   {
     "id": 378,
     "section": "Performance measurement e CCPM",
-    "text": "Nel modello CCPM, perche e importante identificare i soggetti coinvolti prima della misurazione?",
+    "text": "Quale metodologia suggerisce il CCPM per identificare e analizzare le possibili cause degli effetti, superando il limite dei metodi sperimentali?",
     "options": {
-      "A": "Perche ciascuno ha aspettative e bisogni informativi differenti che guidano l'utilizzo dei risultati.",
+      "A": "Perché ciascuno ha aspettative e bisogni informativi differenti che guidano l'utilizzo dei risultati.",
       "B": "Per produrre un unico report standardizzato identico per tutti.",
       "C": "Per separare la valutazione dagli obiettivi decisionali dei destinatari.",
       "D": "Per limitare la misurazione alle sole esigenze della funzione comunicazione."
@@ -6268,24 +6277,24 @@
   {
     "id": 379,
     "section": "Performance measurement e CCPM",
-    "text": "Quali sono i tre filoni disciplinari alla base del modello di valutazione CCPM?",
+    "text": "Nel modello VALUES per la definizione degli obiettivi, cosa indica la lettera 'V'?",
     "options": {
-      "A": "Ricerca valutativa, misurazione delle performance e misurazione degli intangibili.",
-      "B": "Marketing operativo, finanza aziendale e analisi dei dati statistici.",
-      "C": "Relazioni pubbliche tradizionali, auditing finanziario e controllo di gestione.",
-      "D": "Psicologia dei consumi, sociologia dei media e gestione delle risorse umane."
+      "A": "Validi per il business, ovvero rilevanti per l'organizzazione e coerenti con le sue finalità.",
+      "B": "Veloci da raggiungere per mostrare subito successi al management.",
+      "C": "Variabili in base al budget disponibile nel trimestre.",
+      "D": "Verificabili statisticamente attraverso software di machine learning."
     },
     "answer": "A",
     "tags": [
       "modelli",
       "performance_ccpm",
-      "ricerca_metodi"
+      "social_roi"
     ]
   },
   {
     "id": 380,
     "section": "Performance measurement e CCPM",
-    "text": "Quale metodologia suggerisce il CCPM per identificare e analizzare le possibili cause degli effetti, superando il limite dei metodi sperimentali?",
+    "text": "Nella Fase 2 del CCPM, cosa si intende per 'Livello Rendicontativo'?",
     "options": {
       "A": "General Elimination Methodology (GEM).",
       "B": "Analisi SWOT qualitativa.",
@@ -6302,27 +6311,28 @@
   {
     "id": 381,
     "section": "Performance measurement e CCPM",
-    "text": "Nel modello VALUES per la definizione degli obiettivi, cosa indica la lettera 'V'?",
+    "text": "Secondo il modello CCPM, perché è cruciale definire i soggetti interessati a ciascuna misura nel piano di misurazione?",
     "options": {
-      "A": "Validi per il business, ovvero rilevanti per l'organizzazione e coerenti con le sue finalita.",
-      "B": "Veloci da raggiungere per mostrare subito successi al management.",
-      "C": "Variabili in base al budget disponibile nel trimestre.",
-      "D": "Verificabili statisticamente attraverso software di machine learning."
+      "A": "Per assicurarsi che i risultati siano comunicati in modo mirato a chi deve prendere decisioni.",
+      "B": "Per poter dare la colpa a qualcuno in caso di risultati negativi.",
+      "C": "Per limitare l'accesso ai dati sensibili solo a pochissime persone.",
+      "D": "Per vendere i dati ottenuti a società esterne di marketing."
     },
     "answer": "A",
     "tags": [
       "modelli",
       "performance_ccpm",
-      "social_roi"
+      "ricerca_metodi",
+      "seo_geo_digitale"
     ]
   },
   {
     "id": 382,
     "section": "Performance measurement e CCPM",
-    "text": "Nella Fase 2 del CCPM, cosa si intende per 'Livello Rendicontativo'?",
+    "text": "Quale tra queste affermazioni descrive correttamente il passaggio dagli 'Output' agli 'Outcome' nel modello logico?",
     "options": {
       "A": "Le misure che consentono di dimostrare il contributo della comunicazione ai risultati complessivi di business.",
-      "B": "La fase in cui si contano gli output prodotti dalle singole attivita.",
+      "B": "La fase in cui si contano gli output prodotti dalle singole attività.",
       "C": "Il livello che serve a correggere strumenti e messaggi durante l'implementazione.",
       "D": "La valutazione ex ante dell'adeguatezza dei contenuti prima del lancio."
     },
@@ -6336,7 +6346,7 @@
   {
     "id": 383,
     "section": "Performance measurement e CCPM",
-    "text": "Secondo il modello CCPM, perche e cruciale definire i soggetti interessati a ciascuna misura nel piano di misurazione?",
+    "text": "Cosa indica il parametro 'Storia' (\\$S\\$) nel sistema di obiettivi VALUES?",
     "options": {
       "A": "Per assicurarsi che i risultati siano comunicati in modo mirato a chi deve prendere decisioni.",
       "B": "Per produrre lo stesso livello di dettaglio informativo per tutti gli stakeholder.",
@@ -6354,12 +6364,12 @@
   {
     "id": 384,
     "section": "Performance measurement e CCPM",
-    "text": "Quale tra queste affermazioni descrive correttamente il passaggio dagli 'Output' agli 'Outcome' nel modello logico?",
+    "text": "Cosa si intende per 'causalità plausibile' nel modello CCPM?",
     "options": {
-      "A": "Gli output sono i risultati immediati delle attivita, gli outcome sono i cambiamenti generati sui pubblici.",
-      "B": "Gli output sono i costi sostenuti, gli outcome sono i ricavi ottenuti.",
-      "C": "Gli output riguardano i dipendenti interni, gli outcome riguardano i clienti esterni.",
-      "D": "Non c'e differenza tra i due termini nel modello CCPM."
+      "A": "Riconoscere che, pur non essendoci certezza assoluta, i dati suggeriscono un legame credibile tra comunicazione ed effetti.",
+      "B": "Inventare dei collegamenti tra i dati per soddisfare le richieste del capo.",
+      "C": "Assumere che ogni evento positivo sia causato dalla comunicazione per default.",
+      "D": "Ignorare completamente il problema della causalità perché troppo difficile."
     },
     "answer": "A",
     "tags": [
@@ -6372,8 +6382,8 @@
     "section": "Performance measurement e CCPM",
     "text": "Cosa indica il parametro 'Storia' nel sistema di obiettivi VALUES?",
     "options": {
-      "A": "La necessita di avere un termine di confronto, come l'andamento passato o un benchmark dei competitor.",
-      "B": "La descrizione cronologica delle campagne gia realizzate dall'organizzazione.",
+      "A": "La necessità di avere un termine di confronto, come l'andamento passato o un benchmark dei competitor.",
+      "B": "La descrizione cronologica delle campagne già realizzate dall'organizzazione.",
       "C": "La memoria dei valori fondativi da richiamare nella comunicazione interna.",
       "D": "La durata complessiva della relazione tra agenzia e committente."
     },
@@ -6387,11 +6397,11 @@
   {
     "id": 386,
     "section": "Performance measurement e CCPM",
-    "text": "Cosa si intende per 'causalita plausibile' nel modello CCPM?",
+    "text": "Quale componente del modello logico descrive le 'attività di comunicazione svolte'?",
     "options": {
       "A": "Riconoscere che, pur non essendoci certezza assoluta, i dati suggeriscono un legame credibile tra comunicazione ed effetti.",
       "B": "Assumere che ogni risultato positivo derivi direttamente dalla comunicazione.",
-      "C": "Rinunciare a collegare attivita, output e outcome per evitare errori di attribuzione.",
+      "C": "Rinunciare a collegare attività, output e outcome per evitare errori di attribuzione.",
       "D": "Usare solo esperimenti di laboratorio per isolare ogni variabile esterna."
     },
     "answer": "A",
@@ -6403,60 +6413,12 @@
   {
     "id": 387,
     "section": "Performance measurement e CCPM",
-    "text": "Nel sistema VALUES, la 'A' di 'Adeguati' si riferisce a:",
+    "text": "Nella Communication Balanced Scorecard di Vos e Shoemaker, a quale prospettiva corrisponde la 'comunicazione istituzionale'?",
     "options": {
       "A": "Obiettivi realistici rispetto alle risorse e coerenti con il contesto specifico della valutazione.",
-      "B": "Obiettivi accettati dal mercato perche basati su metriche certificate.",
-      "C": "Obiettivi analitici perche scomposti in sotto-indicatori di canale.",
-      "D": "Obiettivi approvati perche gia utilizzati in campagne precedenti."
-    },
-    "answer": "A",
-    "tags": [
-      "modelli",
-      "performance_ccpm"
-    ]
-  },
-  {
-    "id": 388,
-    "section": "Performance measurement e CCPM",
-    "text": "Quale componente del modello logico descrive le 'attivita di comunicazione svolte'?",
-    "options": {
-      "A": "Obiettivi di implementazione.",
-      "B": "Input finanziari.",
-      "C": "Variabili ponte.",
-      "D": "Indicatori ESG."
-    },
-    "answer": "A",
-    "tags": [
-      "modelli",
-      "performance_ccpm"
-    ]
-  },
-  {
-    "id": 389,
-    "section": "Performance measurement e CCPM",
-    "text": "Perche il modello CCPM e considerato un 'ciclo' di performance management?",
-    "options": {
-      "A": "Perche le decisioni e le azioni intraprese rialimentano l'analisi del contesto per le valutazioni successive.",
-      "B": "Perche la stessa misurazione va ripetuta identica senza adattamenti nel tempo.",
-      "C": "Perche il modello si chiude con la rendicontazione finale al management.",
-      "D": "Perche ogni ciclo elimina la necessita di ridefinire obiettivi e stakeholder."
-    },
-    "answer": "A",
-    "tags": [
-      "modelli",
-      "performance_ccpm"
-    ]
-  },
-  {
-    "id": 390,
-    "section": "Performance measurement e CCPM",
-    "text": "Nella Communication Balanced Scorecard, quale prospettiva riguarda piu direttamente l'efficienza dei processi comunicativi interni?",
-    "options": {
-      "A": "Prospettiva dei processi interni.",
-      "B": "Prospettiva economico-finanziaria.",
-      "C": "Prospettiva del cliente.",
-      "D": "Prospettiva dell'apprendimento e della crescita."
+      "B": "Obiettivi accettati dal mercato perché basati su metriche certificate.",
+      "C": "Obiettivi analitici perché scomposti in sotto-indicatori di canale.",
+      "D": "Obiettivi approvati perché già utilizzati in campagne precedenti."
     },
     "answer": "A",
     "tags": [
@@ -6466,7 +6428,7 @@
     ]
   },
   {
-    "id": 391,
+    "id": 388,
     "section": "Performance measurement e CCPM",
     "text": "Nella prospettiva dei 'processi interni' della Communication BSC, cosa si potrebbe misurare?",
     "options": {
@@ -6483,14 +6445,14 @@
     ]
   },
   {
-    "id": 392,
+    "id": 389,
     "section": "Performance measurement e CCPM",
-    "text": "Nella Communication BSC, l'obiettivo della prospettiva 'apprendimento e crescita' e:",
+    "text": "Nella Communication BSC, l'obiettivo della prospettiva 'apprendimento e crescita' è:",
     "options": {
-      "A": "Sviluppare una coerenza tra tutte le attivita e promuovere l'innovazione nella comunicazione.",
-      "B": "Massimizzare la pressione pubblicitaria sui canali a pagamento.",
-      "C": "Misurare la quota di mercato ottenuta con le campagne di prodotto.",
-      "D": "Garantire la puntualita dei processi amministrativi interni."
+      "A": "Perché le decisioni e le azioni intraprese rialimentano l'analisi del contesto per le valutazioni successive.",
+      "B": "Perché la stessa misurazione va ripetuta identica senza adattamenti nel tempo.",
+      "C": "Perché il modello si chiude con la rendicontazione finale al management.",
+      "D": "Perché ogni ciclo elimina la necessità di ridefinire obiettivi e stakeholder."
     },
     "answer": "A",
     "tags": [
@@ -6500,25 +6462,24 @@
     ]
   },
   {
-    "id": 393,
+    "id": 390,
     "section": "Performance measurement e CCPM",
-    "text": "Nella misurazione delle performance, cosa si intende per 'allineamento costante'?",
+    "text": "Nella Communication Balanced Scorecard, quale prospettiva riguarda più direttamente l'efficienza dei processi comunicativi interni?",
     "options": {
-      "A": "Verificare che gli obiettivi di comunicazione siano sempre coerenti con la strategia aziendale.",
-      "B": "Uniformare la lunghezza dei comunicati stampa prodotti dalla funzione.",
-      "C": "Rendere identici i KPI usati da tutte le unita organizzative.",
-      "D": "Aggiornare con frequenza fissa i contenuti pubblicati sul sito aziendale."
+      "A": "Prospettiva dei processi interni.",
+      "B": "Prospettiva economico-finanziaria.",
+      "C": "Prospettiva del cliente.",
+      "D": "Prospettiva dell'apprendimento e della crescita."
     },
     "answer": "A",
     "tags": [
       "modelli",
       "performance_ccpm",
-      "ricerca_metodi",
-      "seo_geo_digitale"
+      "ricerca_metodi"
     ]
   },
   {
-    "id": 394,
+    "id": 391,
     "section": "Performance measurement e CCPM",
     "text": "Cosa si intende per 'Variabili Ponte' all'interno di un modello logico di valutazione?",
     "options": {
@@ -6534,14 +6495,14 @@
     ]
   },
   {
-    "id": 395,
+    "id": 392,
     "section": "Performance measurement e CCPM",
     "text": "Secondo il modello di Stefania Romenti, a cosa servono le 'misure formative'?",
     "options": {
-      "A": "Ad apportare aggiustamenti e miglioramenti alle attivita in corso",
-      "B": "A rendicontare il valore economico finale al top management",
-      "C": "A tirare le somme definitive sui risultati raggiunti a fine anno",
-      "D": "A misurare esclusivamente l'apprendimento dei dipendenti"
+      "A": "Sviluppare una coerenza tra tutte le attività e promuovere l'innovazione nella comunicazione.",
+      "B": "Massimizzare la pressione pubblicitaria sui canali a pagamento.",
+      "C": "Misurare la quota di mercato ottenuta con le campagne di prodotto.",
+      "D": "Garantire la puntualità dei processi amministrativi interni."
     },
     "answer": "A",
     "tags": [
@@ -6550,30 +6511,32 @@
     ]
   },
   {
-    "id": 396,
+    "id": 393,
     "section": "Performance measurement e CCPM",
     "text": "Nella tassonomia dei KPI, come vengono definiti gli 'effetti generati sui pubblici'?",
     "options": {
-      "A": "Outcome",
-      "B": "Output",
-      "C": "Impact",
-      "D": "Input"
+      "A": "Verificare che gli obiettivi di comunicazione siano sempre coerenti con la strategia aziendale.",
+      "B": "Uniformare la lunghezza dei comunicati stampa prodotti dalla funzione.",
+      "C": "Rendere identici i KPI usati da tutte le unità organizzative.",
+      "D": "Aggiornare con frequenza fissa i contenuti pubblicati sul sito aziendale."
     },
     "answer": "A",
     "tags": [
       "modelli",
-      "performance_ccpm"
+      "performance_ccpm",
+      "ricerca_metodi",
+      "seo_geo_digitale"
     ]
   },
   {
-    "id": 397,
+    "id": 394,
     "section": "Performance measurement e CCPM",
     "text": "Nella tassonomia di Romenti, cosa misurano le 'misure di adeguatezza'?",
     "options": {
-      "A": "Se le attivita sono state progettate correttamente per raggiungere l'effetto desiderato (valutazione ex ante)",
+      "A": "Se le attività sono state progettate correttamente per raggiungere l'effetto desiderato (valutazione ex ante)",
       "B": "Il grado di soddisfazione dei dipendenti a fine anno",
       "C": "Il numero di persone che hanno visto l'evento",
-      "D": "Se il budget e stato speso interamente"
+      "D": "Se il budget è stato speso interamente"
     },
     "answer": "A",
     "tags": [
@@ -6582,9 +6545,9 @@
     ]
   },
   {
-    "id": 398,
+    "id": 395,
     "section": "Performance measurement e CCPM",
-    "text": "Nella tassonomia dei KPI, l'aumento della notorieta (Awareness) a quale livello appartiene?",
+    "text": "Nella tassonomia dei KPI, l'aumento della notorietà (Awareness) a quale livello appartiene?",
     "options": {
       "A": "Livello di Outcome",
       "B": "Livello di Output",
@@ -6598,7 +6561,7 @@
     ]
   },
   {
-    "id": 399,
+    "id": 396,
     "section": "Performance measurement e CCPM",
     "text": "Cosa caratterizza principalmente l'approccio Through The Line (TTL)?",
     "options": {
@@ -6614,9 +6577,61 @@
     ]
   },
   {
-    "id": 400,
+    "id": 397,
     "section": "Performance measurement e CCPM",
     "text": "Nella 'ROI Pyramid' di Owyang, cosa si trova al vertice della piramide?",
+    "options": {
+      "A": "Business Objectives (es. miglioramento delle performance finanziarie)",
+      "B": "Social Media Metrics (es. numero di retweet)",
+      "C": "Il costo totale della tecnologia utilizzata",
+      "D": "L'elenco dei follower più influenti"
+    },
+    "answer": "A",
+    "tags": [
+      "modelli",
+      "performance_ccpm",
+      "social_roi"
+    ]
+  },
+  {
+    "id": 398,
+    "section": "Performance measurement e CCPM",
+    "text": "Cosa indica l'indice di 'Advocacy' nel calcolo delle performance di un programma di influencer marketing?",
+    "options": {
+      "A": "Il rapporto tra partecipanti attivi al programma e membri totali, unito alla loro capacità di influenzare altri",
+      "B": "Il numero di avvocati che hanno commentato il post dell'influencer",
+      "C": "Il costo totale pagato per ogni singola menzione ricevuta",
+      "D": "Se gli influencer hanno utilizzato l'hashtag corretto nel post"
+    },
+    "answer": "A",
+    "tags": [
+      "modelli",
+      "performance_ccpm",
+      "ricerca_metodi"
+    ]
+  },
+  {
+    "id": 399,
+    "section": "Performance measurement e CCPM",
+    "text": "Secondo il framework di John Lovett, quale tra i seguenti indicatori è classificabile come 'Foundation metric' (KPI) e non come semplice 'Counting metric'?",
+    "options": {
+      "A": "Engagement rate",
+      "B": "Visualizzazioni totali",
+      "C": "Numero di follower",
+      "D": "Numero di post pubblicati"
+    },
+    "answer": "A",
+    "tags": [
+      "modelli",
+      "performance_ccpm",
+      "ricerca_metodi",
+      "seo_geo_digitale"
+    ]
+  },
+  {
+    "id": 400,
+    "section": "Performance measurement e CCPM",
+    "text": "Quale principio suggerisce il modello CCPM riguardo al rapporto di causalità tra comunicazione e risultati?",
     "options": {
       "A": "Business Objectives (es. miglioramento delle performance finanziarie).",
       "B": "Social Media Metrics (es. numero di retweet).",
@@ -6636,9 +6651,9 @@
     "section": "ROI, AVE e indicatori economici",
     "text": "Secondo i critici del ROI integralista, le ragioni principali della sua inadeguatezza sono:",
     "options": {
-      "A": "I risultati significativi sono di lungo periodo, e le attivita sono integrate con altre",
-      "B": "Il management aziendale non chiede mai il ROI delle attivita di comunicazione",
-      "C": "I dati di vendita non esistono per le attivita di PR",
+      "A": "I risultati significativi sono di lungo periodo, e le attività sono integrate con altre",
+      "B": "Il management aziendale non chiede mai il ROI delle attività di comunicazione",
+      "C": "I dati di vendita non esistono per le attività di PR",
       "D": "I costi della comunicazione non sono mai documentabili in modo accurato"
     },
     "answer": "A",
@@ -6655,9 +6670,9 @@
     "section": "ROI, AVE e indicatori economici",
     "text": "Cosa misura l'AVE?",
     "options": {
-      "A": "Il valore monetario equivalente della visibilita mediatica ottenuta",
+      "A": "Il valore monetario equivalente della visibilità mediatica ottenuta",
       "B": "Il livello di awareness raggiunto dai pubblici target",
-      "C": "La qualita giornalistica delle uscite ottenute",
+      "C": "La qualità giornalistica delle uscite ottenute",
       "D": "Il sentiment medio della copertura mediatica"
     },
     "answer": "A",
@@ -6671,9 +6686,9 @@
   {
     "id": 403,
     "section": "ROI, AVE e indicatori economici",
-    "text": "Cosa indica l'unita di misura 'GRV' nel modello PQII?",
+    "text": "Cosa indica l'unità di misura 'GRV' nel modello PQII?",
     "options": {
-      "A": "Un'unita indice per esprimere l'impatto qualitativo senza trasformarlo direttamente in euro.",
+      "A": "Un'unità indice per esprimere l'impatto qualitativo senza trasformarlo direttamente in euro.",
       "B": "Un valore monetario equivalente ottenuto dalle tariffe pubblicitarie degli spazi.",
       "C": "Una misura di reach lorda calcolata sui contatti potenziali del mezzo.",
       "D": "Un indicatore di sentiment che classifica la copertura come positiva o negativa."
@@ -6688,9 +6703,9 @@
   {
     "id": 404,
     "section": "ROI, AVE e indicatori economici",
-    "text": "Quale di queste affermazioni sul ROI della comunicazione e corretta?",
+    "text": "Quale di queste affermazioni sul ROI della comunicazione è corretta?",
     "options": {
-      "A": "Il suo calcolo e spesso complesso perche e difficile isolare l'effetto monetario della sola comunicazione.",
+      "A": "Il suo calcolo è spesso complesso perché è difficile isolare l'effetto monetario della sola comunicazione.",
       "B": "Corrisponde esattamente al numero di like e condivisioni ottenuti sui social media.",
       "C": "Si calcola dividendo il numero di articoli per il costo dell'agenzia stampa.",
       "D": "È l'unico indicatore necessario per dimostrare il valore della funzione comunicazione."
@@ -6704,12 +6719,12 @@
   {
     "id": 405,
     "section": "ROI, AVE e indicatori economici",
-    "text": "Secondo la critica di Accoto e Mandelli, perche l'ossessione per il ROI inteso come 'silver metric' nei social media puo essere fuorviante?",
+    "text": "Secondo la critica di Accoto e Mandelli, perché l'ossessione per il ROI inteso come 'silver metric' nei social media può essere fuorviante?",
     "options": {
-      "A": "Perche presuppone mercati perfettamente controllabili e prevedibili, ignorando il valore strategico di lungo periodo.",
-      "B": "Perche i social media non possono generare ritorni economici diretti in nessun caso.",
-      "C": "Perche il calcolo del ROI richiede investimenti pubblicitari che non sono ammessi nelle strategie organiche.",
-      "D": "Perche il ROI e una metrica applicabile solo ai media tradizionali (ATL) e non a quelli digitali."
+      "A": "Perché presuppone mercati perfettamente controllabili e prevedibili, ignorando il valore strategico di lungo periodo.",
+      "B": "Perché i social media non possono generare ritorni economici diretti in nessun caso.",
+      "C": "Perché il calcolo del ROI richiede investimenti pubblicitari che non sono ammessi nelle strategie organiche.",
+      "D": "Perché il ROI è una metrica applicabile solo ai media tradizionali (ATL) e non a quelli digitali."
     },
     "answer": "A",
     "tags": [
@@ -6724,7 +6739,7 @@
     "section": "ROI, AVE e indicatori economici",
     "text": "Cosa afferma il principio di Hayzlett sul 'Return on Ignorance'?",
     "options": {
-      "A": "Che non presidiare i social media puo generare costi competitivi e reputazionali.",
+      "A": "Che non presidiare i social media può generare costi competitivi e reputazionali.",
       "B": "Che i social media vanno valutati solo quando producono vendite immediate.",
       "C": "Che l'assenza dai social elimina i rischi di reputazione online.",
       "D": "Che la misurazione deve limitarsi ai media tradizionali certificati."
@@ -6740,7 +6755,7 @@
   {
     "id": 407,
     "section": "ROI, AVE e indicatori economici",
-    "text": "Nel framework di Altimeter (ROI Pyramid), qual e il rischio principale dell'approccio tattico ai social media?",
+    "text": "Nel framework di Altimeter (ROI Pyramid), qual è il rischio principale dell'approccio tattico ai social media?",
     "options": {
       "A": "Focalizzarsi esclusivamente sulle 'counting metrics' native della piattaforma invece che sugli obiettivi di business.",
       "B": "Integrare troppo presto i dati social con il sistema di Customer Relationship Management (CRM).",
@@ -6762,7 +6777,7 @@
     "text": "Cosa sostiene la 'posizione critica' sul ROI della comunicazione?",
     "options": {
       "A": "Che molti risultati comunicativi sono intangibili e di lungo periodo, rendendo la monetizzazione forzata e spesso inattendibile.",
-      "B": "Che il ROI vada usato solo quando e gia disponibile un dato economico attribuibile.",
+      "B": "Che il ROI vada usato solo quando è già disponibile un dato economico attribuibile.",
       "C": "Che l'efficacia comunicativa debba essere valutata soltanto con indicatori di copertura.",
       "D": "Che la comunicazione non debba mai collegarsi agli obiettivi economici dell'organizzazione."
     },
@@ -6793,12 +6808,12 @@
   {
     "id": 410,
     "section": "ROI, AVE e indicatori economici",
-    "text": "Perche un 'ascolto globale' senza selezione delle fonti e considerato rischioso e poco efficace?",
+    "text": "Quale tra questi è un indicatore alternativo al ROI che misura il raggiungimento delle aspettative dei pubblici?",
     "options": {
-      "A": "Perche rileverebbe troppi messaggi non attinenti agli obiettivi e aumenterebbe inutilmente i costi.",
-      "B": "Perche ridurrebbe la possibilita di confrontare fonti diverse nello stesso periodo.",
-      "C": "Perche impedirebbe di distinguere tra canali proprietari, earned e paid.",
-      "D": "Perche renderebbe impossibile qualunque classificazione automatica del sentiment."
+      "A": "Perché rileverebbe troppi messaggi non attinenti agli obiettivi e aumenterebbe inutilmente i costi.",
+      "B": "Perché ridurrebbe la possibilità di confrontare fonti diverse nello stesso periodo.",
+      "C": "Perché impedirebbe di distinguere tra canali proprietari, earned e paid.",
+      "D": "Perché renderebbe impossibile qualunque classificazione automatica del sentiment."
     },
     "answer": "A",
     "tags": [
@@ -6826,24 +6841,7 @@
   {
     "id": 412,
     "section": "ROI, AVE e indicatori economici",
-    "text": "Che cos'e l'AVE (Advertising Value Equivalency)?",
-    "options": {
-      "A": "Il calcolo del costo che si sarebbe dovuto sostenere per acquistare lo spazio redazionale come pubblicita.",
-      "B": "La misura dell'impatto sociale di una campagna di comunicazione.",
-      "C": "Un metodo scientificamente approvato per misurare la reputazione.",
-      "D": "Il monitoraggio delle keyword sui motori di ricerca."
-    },
-    "answer": "A",
-    "tags": [
-      "ricerca_metodi",
-      "roi_ave",
-      "social_roi"
-    ]
-  },
-  {
-    "id": 413,
-    "section": "ROI, AVE e indicatori economici",
-    "text": "Quale approccio alla sentiment analysis garantisce alta precisione e comprensione del contesto, ma soffre di scarsa scalabilita ed elevati costi?",
+    "text": "Che cos'è l'AVE (Advertising Value Equivalency)?",
     "options": {
       "A": "Approccio Manuale",
       "B": "Approccio Automatico",
@@ -6857,7 +6855,7 @@
     ]
   },
   {
-    "id": 414,
+    "id": 413,
     "section": "ROI, AVE e indicatori economici",
     "text": "Quale indicatore economico alternativo al ROI stima quanto soggetti informati sarebbero disposti a pagare per ottenere i benefici generati dalla comunicazione?",
     "options": {
@@ -6873,14 +6871,14 @@
     ]
   },
   {
-    "id": 415,
+    "id": 414,
     "section": "ROI, AVE e indicatori economici",
-    "text": "Perche il valore REAV e solitamente superiore al semplice EAV (Advertising Value Equivalent)?",
+    "text": "Nel calcolo del REAV, cosa si intende per 'Demoltiplicatore focus dedicato'?",
     "options": {
-      "A": "Perche applica moltiplicatori qualitativi legati alla posizione, al titolo e alle immagini.",
-      "B": "Perche usa solo il costo dello spazio pubblicitario senza correzioni qualitative.",
-      "C": "Perche misura direttamente il fatturato generato dalla copertura editoriale.",
-      "D": "Perche somma al valore media i costi di produzione dell'agenzia di PR."
+      "A": "Un coefficiente (solitamente pari a 1) usato quando l'intero articolo parla esclusivamente dell'azienda/prodotto.",
+      "B": "Una riduzione del $90\\%$ del valore se l'articolo è troppo lungo.",
+      "C": "Un premio in denaro assegnato al giornalista per aver scritto l'articolo.",
+      "D": "Un errore di calcolo che va sempre rimosso dalla formula finale."
     },
     "answer": "A",
     "tags": [
@@ -6890,9 +6888,27 @@
     ]
   },
   {
+    "id": 415,
+    "section": "ROI, AVE e indicatori economici",
+    "text": "Nel framework di misurazione di Vincenzo Cosenza, cosa differenzia le 'Information' dai 'Dati'?",
+    "options": {
+      "A": "Perché applica moltiplicatori qualitativi legati alla posizione, al titolo e alle immagini.",
+      "B": "Perché usa solo il costo dello spazio pubblicitario senza correzioni qualitative.",
+      "C": "Perché misura direttamente il fatturato generato dalla copertura editoriale.",
+      "D": "Perché somma al valore media i costi di produzione dell'agenzia di PR."
+    },
+    "answer": "A",
+    "tags": [
+      "modelli",
+      "roi_ave",
+      "seo_geo_digitale",
+      "social_roi"
+    ]
+  },
+  {
     "id": 416,
     "section": "ROI, AVE e indicatori economici",
-    "text": "Nel calcolo del REAV, cosa si intende per 'Demoltiplicatore focus dedicato'?",
+    "text": "Cosa rappresenta l'unità di misura 'GRV' nel sistema di valutazione di Glebb / Romoli Venturi?",
     "options": {
       "A": "Un coefficiente che considera quanto l'articolo e centrato sull'azienda o sul prodotto analizzato.",
       "B": "Un fattore che aumenta il valore quando il brand e citato solo marginalmente.",
@@ -6909,48 +6925,44 @@
   {
     "id": 417,
     "section": "ROI, AVE e indicatori economici",
-    "text": "Nel framework di misurazione di Vincenzo Cosenza, cosa differenzia le 'Information' dai 'Dati'?",
+    "text": "Quale tra questi è un sinonimo del controverso indicatore AVE (Advertising Value Equivalent)?",
     "options": {
       "A": "Le informazioni sono dati lavorati e inseriti in un contesto specifico.",
-      "B": "I dati sono gia interpretati, mentre le informazioni sono unita grezze non contestualizzate.",
-      "C": "Le informazioni coincidono con raccomandazioni operative gia pronte per l'azione.",
-      "D": "Non c'e alcuna differenza, sono sinonimi nel processo di analisi."
+      "B": "I dati sono già interpretati, mentre le informazioni sono unità grezze non contestualizzate.",
+      "C": "Le informazioni coincidono con raccomandazioni operative già pronte per l'azione.",
+      "D": "Non c'è alcuna differenza, sono sinonimi nel processo di analisi."
     },
     "answer": "A",
     "tags": [
-      "modelli",
       "roi_ave",
-      "seo_geo_digitale",
       "social_roi"
     ]
   },
   {
     "id": 418,
     "section": "ROI, AVE e indicatori economici",
-    "text": "Cosa rappresenta l'unita di misura 'GRV' nel sistema di valutazione di Glebb / Romoli Venturi?",
+    "text": "Quale indicatore misura il 'livello di raggiungimento delle aspettative dei pubblici'?",
     "options": {
-      "A": "Un'unita indice che evita di trasformare automaticamente la qualita della copertura in euro.",
-      "B": "Il Gross Rating Value, ovvero il totale dei contatti lordi su base settimanale.",
-      "C": "La percentuale di crescita del capitale umano generata dalla comunicazione interna.",
-      "D": "Il costo per mille impression garantito dagli editori certificati."
+      "A": "ROE (Return on Expectations).",
+      "B": "ROI (Return on Investment).",
+      "C": "AVE (Advertising Value Equivalent).",
+      "D": "ROMI (Return on Media Impact)."
     },
     "answer": "A",
     "tags": [
-      "ricerca_metodi",
       "roi_ave",
-      "seo_geo_digitale",
       "social_roi"
     ]
   },
   {
     "id": 419,
     "section": "ROI, AVE e indicatori economici",
-    "text": "Quale tra questi e un sinonimo del controverso indicatore AVE (Advertising Value Equivalent)?",
+    "text": "Quale di questi indicatori è considerato un 'sinonimo dell'AVE'?",
     "options": {
-      "A": "ROEM (Return on Earned Media).",
-      "B": "ROMI (Return on Media Impact).",
-      "C": "ROTI (Return on Target Influence).",
-      "D": "ROE (Return on Expectations)."
+      "A": "ROEM.",
+      "B": "ROMI.",
+      "C": "ROTI.",
+      "D": "Return on Objectives."
     },
     "answer": "A",
     "tags": [
@@ -6961,7 +6973,7 @@
   {
     "id": 420,
     "section": "ROI, AVE e indicatori economici",
-    "text": "Quale misura alternativa confronta iniziative che producono effetti simili scegliendo quella meno costosa o piu efficace?",
+    "text": "Quale misura alternativa confronta iniziative che producono effetti simili scegliendo quella meno costosa o più efficace?",
     "options": {
       "A": "Rapporto costo/efficacia.",
       "B": "Return on Expectations.",
@@ -6993,16 +7005,15 @@
   {
     "id": 422,
     "section": "ROI, AVE e indicatori economici",
-    "text": "Secondo il framework di Lovett, in quale categoria rientrano metriche come il fatturato generato o la riduzione dei costi del customer care?",
+    "text": "Cosa rappresenta il 'Valore REAV' rispetto all'AVE tradizionale?",
     "options": {
-      "A": "Business Value Metrics",
-      "B": "Counting Metrics",
-      "C": "Foundation Metrics",
-      "D": "Vanity Metrics"
+      "A": "È un AVE corretto con coefficienti e moltiplicatori qualitativi.",
+      "B": "È il Reddito Effettivo Annuo delle Vendite pubblicitarie.",
+      "C": "È un indice che misura esclusivamente la velocità di caricamento delle pagine web.",
+      "D": "È il costo di una singola riga di testo moltiplicato per il numero di lettori totali."
     },
     "answer": "A",
     "tags": [
-      "modelli",
       "roi_ave",
       "social_roi"
     ]
@@ -7010,7 +7021,7 @@
   {
     "id": 423,
     "section": "ROI, AVE e indicatori economici",
-    "text": "Secondo la formula generale, come si calcola il ROI di un'attivita di comunicazione?",
+    "text": "Secondo la formula generale, come si calcola il ROI di un'attività di comunicazione?",
     "options": {
       "A": "(Benefici - costi) / costi x 100.",
       "B": "(Costi - benefici) / benefici x 100.",
@@ -7026,7 +7037,7 @@
   {
     "id": 424,
     "section": "ROI, AVE e indicatori economici",
-    "text": "Cosa rappresenta il 'Valore REAV' rispetto all'AVE tradizionale?",
+    "text": "Nella formula Input/Output, quale di questi esempi è corretto?",
     "options": {
       "A": "È un AVE corretto con coefficienti e moltiplicatori qualitativi.",
       "B": "È un indicatore di ritorno sugli obiettivi non monetari.",
@@ -7036,22 +7047,24 @@
     "answer": "A",
     "tags": [
       "roi_ave",
+      "seo_geo_digitale",
       "social_roi"
     ]
   },
   {
     "id": 425,
     "section": "ROI, AVE e indicatori economici",
-    "text": "Che cosa caratterizza il 'Success Case Method' (SCM)?",
+    "text": "Nel calcolo del valore della comunicazione, cosa si intende per 'ROI della comunicazione' in senso stretto?",
     "options": {
-      "A": "L'analisi approfondita dei casi di successo attraverso una combinazione di dati e narrazioni.",
-      "B": "L'eliminazione di tutti i casi che non hanno prodotto un ROI immediato.",
-      "C": "La creazione di storie di successo fittizie per migliorare la reputazione.",
-      "D": "L'analisi statistica di tutti i fallimenti aziendali dell'ultimo decennio."
+      "A": "Il rapporto tra il guadagno finanziario generato dalla comunicazione e il costo sostenuto per realizzarla.",
+      "B": "Il numero di follower guadagnati diviso il numero di ore di sonno perse dal social media manager.",
+      "C": "La semplice somma di tutti i 'mi piace' ricevuti nell'arco di un anno.",
+      "D": "L'equivalente in denaro dello spazio pubblicitario ottenuto gratuitamente (AVE)."
     },
     "answer": "A",
     "tags": [
       "roi_ave",
+      "seo_geo_digitale",
       "social_roi"
     ]
   },
@@ -7062,7 +7075,7 @@
     "options": {
       "A": "Costo sostenuto per ogni partecipante effettivamente presente a un evento.",
       "B": "Miglioramento della fiducia degli stakeholder dopo una campagna.",
-      "C": "Qualita percepita della relazione tra organizzazione e pubblici.",
+      "C": "Qualità percepita della relazione tra organizzazione e pubblici.",
       "D": "Quota di conversazioni positive rispetto al totale delle menzioni."
     },
     "answer": "A",
@@ -7075,7 +7088,7 @@
   {
     "id": 427,
     "section": "ROI, AVE e indicatori economici",
-    "text": "Nel calcolo del valore della comunicazione, cosa si intende per 'ROI della comunicazione' in senso stretto?",
+    "text": "Qual è il presupposto per applicare la tecnica dell'AVE (Advertising Value Equivalent)?",
     "options": {
       "A": "Il rapporto tra il guadagno finanziario generato dalla comunicazione e il costo sostenuto per realizzarla.",
       "B": "Il rapporto tra reach ottenuta e costo per mille contatti lordi della campagna.",
@@ -7092,43 +7105,9 @@
   {
     "id": 428,
     "section": "ROI, AVE e indicatori economici",
-    "text": "Qual e l'obiettivo principale delle ricerche qualitative in ambito comunicativo?",
+    "text": "Qual è il limite principale della formula base dell'AVE?",
     "options": {
-      "A": "Esplorare situazioni poco note e formulare ipotesi interpretative.",
-      "B": "Ottenere dati statisticamente rappresentativi dell'intera popolazione.",
-      "C": "Isolare le variabili per dimostrare un nesso di causalita univoco.",
-      "D": "Calcolare esattamente il ritorno sull'investimento (ROI)."
-    },
-    "answer": "A",
-    "tags": [
-      "ricerca_metodi",
-      "roi_ave",
-      "social_roi"
-    ]
-  },
-  {
-    "id": 429,
-    "section": "ROI, AVE e indicatori economici",
-    "text": "Qual e il presupposto per applicare la tecnica dell'AVE (Advertising Value Equivalent)?",
-    "options": {
-      "A": "Attribuire alla copertura editoriale il costo di uno spazio pubblicitario equivalente.",
-      "B": "Calcolare il numero di like ottenuti su un post organico.",
-      "C": "Moltiplicare il fatturato annuo per il numero di giornalisti accreditati.",
-      "D": "Intervistare ogni singolo lettore per verificare se ricorda l'articolo."
-    },
-    "answer": "A",
-    "tags": [
-      "ricerca_metodi",
-      "roi_ave",
-      "social_roi"
-    ]
-  },
-  {
-    "id": 430,
-    "section": "ROI, AVE e indicatori economici",
-    "text": "Qual e il limite principale della formula base dell'AVE?",
-    "options": {
-      "A": "Non misura il tono, la qualita e la credibilita della copertura.",
+      "A": "Non misura il tono, la qualità e la credibilità della copertura.",
       "B": "È troppo complicata da spiegare al top management.",
       "C": "Funziona solo per i canali televisivi nazionali.",
       "D": "Richiede l'uso di indagini etnografiche costose."
@@ -7140,11 +7119,45 @@
     ]
   },
   {
+    "id": 429,
+    "section": "ROI, AVE e indicatori economici",
+    "text": "Qual è la formula corretta per calcolare il ROI (Return on Investment)?",
+    "options": {
+      "A": "$$ROI = \\frac{(Benefici - Costi)}{Costi} \\times 100$$",
+      "B": "$$ROI = (Reach \\times Frequenza) \\div Costo$$",
+      "C": "$$ROI = (REAV \\times Readership) \\div 1.000.000$$",
+      "D": "$$ROI = \\frac{Costi}{Benefici} \\times 100$$"
+    },
+    "answer": "A",
+    "tags": [
+      "enti_audience",
+      "roi_ave",
+      "social_roi"
+    ]
+  },
+  {
+    "id": 430,
+    "section": "ROI, AVE e indicatori economici",
+    "text": "Qual è la formula corretta del ROI della comunicazione e qual è il suo limite principale?",
+    "options": {
+      "A": "$$\\frac{\\text{benefici} - \\text{costi}}{\\text{costi}} \\times 100$$; il limite è la difficoltà nell'attribuire causalmente i benefici alla sola comunicazione.",
+      "B": "$$\\text{Numero di lead} / \\text{Investimento totale}$$; il limite è che non tiene conto della qualità dei contatti generati.",
+      "C": "$$\\text{Spazio editoriale} \\times \\text{Costo pubblicità equivalente}$$; il limite è che sovrastima sempre il valore reale.",
+      "D": "$$\\% \\text{Promotori} - \\% \\text{Detrattori}$$; il limite è che non è espresso in euro."
+    },
+    "answer": "A",
+    "tags": [
+      "roi_ave",
+      "seo_geo_digitale",
+      "social_roi"
+    ]
+  },
+  {
     "id": 431,
     "section": "ROI, AVE e indicatori economici",
     "text": "Nella formula del ROI, quale grandezza si trova al denominatore?",
     "options": {
-      "A": "I costi o l'investimento sostenuto per l'attivita.",
+      "A": "I costi o l'investimento sostenuto per l'attività.",
       "B": "Il totale dei benefici lordi generati dalla campagna.",
       "C": "Il numero di contatti raggiunti dal messaggio.",
       "D": "Il valore pubblicitario equivalente della copertura."
@@ -7160,10 +7173,10 @@
     "section": "ROI, AVE e indicatori economici",
     "text": "Quale limite metodologico va ricordato quando si presenta il ROI della comunicazione?",
     "options": {
-      "A": "La difficolta di attribuire causalmente i benefici alla sola comunicazione.",
+      "A": "La difficoltà di attribuire causalmente i benefici alla sola comunicazione.",
       "B": "L'assenza di una formula matematica condivisa per il calcolo del ritorno.",
-      "C": "L'impossibilita di usare dati economici in presenza di obiettivi di business.",
-      "D": "La necessita di sostituire sempre il ROI con l'AVE."
+      "C": "L'impossibilità di usare dati economici in presenza di obiettivi di business.",
+      "D": "La necessità di sostituire sempre il ROI con l'AVE."
     },
     "answer": "A",
     "tags": [
@@ -7175,44 +7188,28 @@
   {
     "id": 433,
     "section": "ROI, AVE e indicatori economici",
-    "text": "Qual e la differenza tra ROI e ROO?",
+    "text": "Qual è la differenza tra ROI e ROO?",
     "options": {
-      "A": "Il ROI cerca di monetizzare il ritorno, mentre il ROO misura il grado di raggiungimento degli obiettivi prefissati.",
-      "B": "Il ROI si applica solo ai social media, mentre il ROO si applica solo alla pubblicita televisiva.",
-      "C": "Il ROI e una misura ex-ante (preventiva), mentre il ROO e una misura ex-post (consuntiva).",
-      "D": "Non esiste differenza, sono due acronimi inglesi che indicano lo stesso concetto di efficienza."
+      "A": "Il ROI misura il ritorno economico, il ROO il grado di raggiungimento degli obiettivi.",
+      "B": "Il ROI riguarda solo gli obiettivi qualitativi, il ROO solo il valore monetario.",
+      "C": "Il ROI si usa per le audience certificate, il ROO per calcolare tiratura e diffusione.",
+      "D": "Il ROI misura soltanto i social media, il ROO soltanto la copertura stampa."
     },
     "answer": "A",
     "tags": [
+      "enti_audience",
       "roi_ave",
-      "seo_geo_digitale",
       "social_roi"
     ]
   },
   {
     "id": 434,
     "section": "ROI, AVE e indicatori economici",
-    "text": "L'indicatore ROEM (Return on Earned Media) e un sinonimo di:",
+    "text": "L'indicatore ROEM (Return on Earned Media) è un sinonimo di:",
     "options": {
-      "A": "AVE (Advertising Equivalency Value).",
-      "B": "Sentiment Analysis qualitativa.",
-      "C": "Reach totale cumulata.",
-      "D": "ROI finanziario."
-    },
-    "answer": "A",
-    "tags": [
-      "roi_ave",
-      "social_roi"
-    ]
-  },
-  {
-    "id": 435,
-    "section": "ROI, AVE e indicatori economici",
-    "text": "Qual e la funzione strategica delle 'Misure Formative'?",
-    "options": {
-      "A": "Fornire feedback durante lo svolgimento delle attivita per apportare correzioni.",
+      "A": "Fornire feedback durante lo svolgimento delle attività per apportare correzioni.",
       "B": "Rendicontare i risultati finali al top management al termine dell'anno.",
-      "C": "Sostituire la necessita di definire obiettivi SMART all'inizio del piano.",
+      "C": "Sostituire la necessità di definire obiettivi SMART all'inizio del piano.",
       "D": "Calcolare esclusivamente il ritorno economico dell'investimento (ROI)."
     },
     "answer": "A",
@@ -7223,12 +7220,29 @@
     ]
   },
   {
+    "id": 435,
+    "section": "ROI, AVE e indicatori economici",
+    "text": "Perché il valore REAV è solitamente superiore al semplice EAV (Advertising Value Equivalent)?",
+    "options": {
+      "A": "Perché applica moltiplicatori qualitativi legati alla posizione, al titolo e alle immagini.",
+      "B": "Perché viene calcolato esclusivamente sulle tariffe pubblicitarie scontate del $70\\%$.",
+      "C": "Perché riflette il fatturato generato direttamente dalle vendite del prodotto.",
+      "D": "Perché include i costi di produzione dell'agenzia di PR."
+    },
+    "answer": "A",
+    "tags": [
+      "roi_ave",
+      "seo_geo_digitale",
+      "social_roi"
+    ]
+  },
+  {
     "id": 436,
     "section": "ROI, AVE e indicatori economici",
-    "text": "Qual e il limite principale del metodo di valutazione AVE (Advertising Value Equivalent)?",
+    "text": "Qual è il limite principale del metodo di valutazione AVE (Advertising Value Equivalent)?",
     "options": {
       "A": "Confonde il costo di uno spazio pubblicitario con il valore reale della comunicazione editoriale.",
-      "B": "Si applica solo alla televisione e non puo essere usato per stampa o web.",
+      "B": "Si applica solo alla televisione e non può essere usato per stampa o web.",
       "C": "Misura direttamente gli outcome cognitivi, affettivi e comportamentali.",
       "D": "Richiede sempre una survey rappresentativa su tutti i lettori esposti."
     },
@@ -7243,7 +7257,7 @@
   {
     "id": 437,
     "section": "ROI, AVE e indicatori economici",
-    "text": "Qual e la differenza principale tra relazioni di 'Scambio' e relazioni 'Comunitarie'?",
+    "text": "Qual è la differenza principale tra relazioni di 'Scambio' e relazioni 'Comunitarie'?",
     "options": {
       "A": "Nelle relazioni di scambio si offrono benefici per riceverne altri, in quelle comunitarie per il benessere altrui.",
       "B": "Le relazioni di scambio sono basate sulla fiducia, quelle comunitarie solo su contratti.",
@@ -7259,7 +7273,7 @@
   {
     "id": 438,
     "section": "ROI, AVE e indicatori economici",
-    "text": "All'interno della ROI Pyramid di Jeremiah Owyang, qual e l'elemento che deve essere definito prima di scegliere le tecnologie e le metriche specifiche?",
+    "text": "All'interno della ROI Pyramid di Jeremiah Owyang, qual è l'elemento che deve essere definito prima di scegliere le tecnologie e le metriche specifiche?",
     "options": {
       "A": "Obiettivi aziendali e strategia",
       "B": "Metriche di interazione",
@@ -7276,10 +7290,10 @@
   {
     "id": 439,
     "section": "ROI, AVE e indicatori economici",
-    "text": "Quando e piu corretto parlare di ROO invece che di ROI?",
+    "text": "Quando è più corretto parlare di ROO invece che di ROI?",
     "options": {
       "A": "Quando si valuta il grado di raggiungimento di obiettivi comunicativi prefissati.",
-      "B": "Quando si monetizza lo spazio editoriale ottenuto come pubblicita equivalente.",
+      "B": "Quando si monetizza lo spazio editoriale ottenuto come pubblicità equivalente.",
       "C": "Quando si calcola il rapporto tra benefici economici e costi sostenuti.",
       "D": "Quando si certificano audience e readership tramite organismi di mercato."
     },
@@ -7297,7 +7311,7 @@
     "text": "Quale tra queste affermazioni descrive la metrica ROO (Return On Objectives)?",
     "options": {
       "A": "Il grado di raggiungimento degli obiettivi di comunicazione prefissati.",
-      "B": "Il calcolo del guadagno monetario netto per ogni euro speso in pubblicita.",
+      "B": "Il calcolo del guadagno monetario netto per ogni euro speso in pubblicità.",
       "C": "Il tempo medio di permanenza degli utenti sulla home page del sito web.",
       "D": "Il valore economico equivalente della copertura editoriale ottenuta."
     },
@@ -7311,10 +7325,10 @@
   {
     "id": 441,
     "section": "ROI, AVE e indicatori economici",
-    "text": "Qual e il limite principale dell'utilizzo dell'AVE (Advertising Value Equivalent) come metrica di valutazione delle PR?",
+    "text": "Qual è il limite principale dell'utilizzo dell'AVE (Advertising Value Equivalent) come metrica di valutazione delle PR?",
     "options": {
-      "A": "Non misura automaticamente tono, qualita, centralita della citazione e credibilita della copertura.",
-      "B": "Misura solo la copertura lorda e non puo essere convertito in un valore monetario.",
+      "A": "Non misura automaticamente tono, qualità, centralità della citazione e credibilità della copertura.",
+      "B": "Misura solo la copertura lorda e non può essere convertito in un valore monetario.",
       "C": "Si basa esclusivamente su interviste qualitative agli stakeholder interni.",
       "D": "Riguarda solo la pianificazione paid e non considera gli earned media."
     },
@@ -7328,12 +7342,12 @@
   {
     "id": 442,
     "section": "ROI, AVE e indicatori economici",
-    "text": "Perche gli AVE (Advertising Value Equivalent) sono considerati una 'trappola' concettuale?",
+    "text": "Quale indicatore misura il 'ritorno sull'influenza sul target' al netto degli investimenti?",
     "options": {
-      "A": "Perche confondono il costo di uno spazio pubblicitario con il valore relazionale ed editoriale di un contenuto spontaneo.",
-      "B": "Perche misurano direttamente outcome e impatto, ignorando gli output intermedi.",
-      "C": "Perche certificano automaticamente la qualita della relazione con gli stakeholder.",
-      "D": "Perche sono applicabili solo alle campagne paid e non alla copertura editoriale."
+      "A": "Perché confondono il costo di uno spazio pubblicitario con il valore relazionale ed editoriale di un contenuto spontaneo.",
+      "B": "Perché misurano direttamente outcome e impatto, ignorando gli output intermedi.",
+      "C": "Perché certificano automaticamente la qualità della relazione con gli stakeholder.",
+      "D": "Perché sono applicabili solo alle campagne paid e non alla copertura editoriale."
     },
     "answer": "A",
     "tags": [
@@ -7345,12 +7359,12 @@
   {
     "id": 443,
     "section": "ROI, AVE e indicatori economici",
-    "text": "Quale indicatore misura il 'ritorno sull'influenza sul target' al netto degli investimenti?",
+    "text": "Perché gli AVE (Advertising Value Equivalent) sono considerati una 'trappola' concettuale?",
     "options": {
-      "A": "ROTI (Return on Target Influence)",
-      "B": "ROI (Return on Investment)",
-      "C": "ROEM (Return on Earned Media).",
-      "D": "ROE (Return on Expectations)."
+      "A": "Perché confondono il costo di uno spazio pubblicitario con il valore relazionale ed editoriale di un contenuto spontaneo.",
+      "B": "Perché obbligano le aziende a spendere più soldi in pubblicità rispetto alle attività di PR.",
+      "C": "Perché misura solo l'efficienza dei costi e non il raggiungimento degli obiettivi",
+      "D": "Perché trasforma la copertura editoriale in valore monetario ignorando il contesto"
     },
     "answer": "A",
     "tags": [
@@ -7361,12 +7375,12 @@
   {
     "id": 444,
     "section": "ROI, AVE e indicatori economici",
-    "text": "Perche e importante misurare il ROI della comunicazione nonostante le difficolta metodologiche?",
+    "text": "Qual è il principale limite metodologico dell'AVE (Advertising Value Equivalent) segnalato nel corso?",
     "options": {
-      "A": "Per aumentare la credibilita dei comunicatori agli occhi del top management, spesso abituato a indicatori economico-finanziari.",
-      "B": "Perche il ROI misura direttamente fiducia, reputazione e soddisfazione degli stakeholder.",
-      "C": "Perche permette sempre di isolare perfettamente la comunicazione dalle altre leve aziendali.",
-      "D": "Perche rende secondaria la definizione di obiettivi e KPI prima della campagna."
+      "A": "Per aumentare la credibilità dei comunicatori agli occhi del top management, spesso abituato a indicatori economico-finanziari.",
+      "B": "Perché il ROI misura direttamente fiducia, reputazione e soddisfazione degli stakeholder.",
+      "C": "Perché permette sempre di isolare perfettamente la comunicazione dalle altre leve aziendali.",
+      "D": "Perché rende secondaria la definizione di obiettivi e KPI prima della campagna."
     },
     "answer": "A",
     "tags": [
@@ -7378,10 +7392,10 @@
   {
     "id": 445,
     "section": "ROI, AVE e indicatori economici",
-    "text": "Qual e il principale limite metodologico dell'AVE (Advertising Value Equivalent) segnalato nel corso?",
+    "text": "Qual è il limite principale delle 'Counting Metrics' secondo Vincenzo Cosenza?",
     "options": {
-      "A": "Non considera variabili qualitative come tono, credibilita della fonte o centralita della citazione.",
-      "B": "Non puo essere applicato a stampa, radio, televisione o canali online.",
+      "A": "Non considera variabili qualitative come tono, credibilità della fonte o centralità della citazione.",
+      "B": "Non può essere applicato a stampa, radio, televisione o canali online.",
       "C": "Richiede sempre dati di vendita certificati dal reparto commerciale.",
       "D": "Misura il raggiungimento degli obiettivi strategici meglio del ROO."
     },
@@ -7398,7 +7412,7 @@
     "section": "Intangibili e reputazione",
     "text": "Quali benefici tangibili produce, secondo Romenti, una buona reputazione?",
     "options": {
-      "A": "Capacita di fissare un premium price, attrarre i migliori talenti e ottenere maggiore fedelta",
+      "A": "Capacità di fissare un premium price, attrarre i migliori talenti e ottenere maggiore fedeltà",
       "B": "Crescita automatica della quota di mercato e dei volumi di vendita di periodo",
       "C": "Riduzione delle imposte e degli oneri fiscali sul fatturato annuale dell'organizzazione",
       "D": "Aumento della copertura mediatica spontanea sui media tradizionali generalisti"
@@ -7432,7 +7446,7 @@
     "section": "Intangibili e reputazione",
     "text": "Nel Reputation Quotient, come viene misurata la reputazione?",
     "options": {
-      "A": "Attraverso indicatori affettivi e cognitivi aggregati su piu dimensioni",
+      "A": "Attraverso indicatori affettivi e cognitivi aggregati su più dimensioni",
       "B": "Come valore monetario equivalente della copertura editoriale ottenuta",
       "C": "Attraverso il solo grado di soddisfazione verso la comunicazione interna",
       "D": "Come somma delle copie diffuse e delle audience certificate nel periodo"
@@ -7447,10 +7461,10 @@
   {
     "id": 449,
     "section": "Intangibili e reputazione",
-    "text": "Qual e il limite principale di un modello reputazionale sintetico rispetto a uno analitico?",
+    "text": "Qual è il limite principale di un modello reputazionale sintetico rispetto a uno analitico?",
     "options": {
       "A": "Tende a privilegiare il dato aggregato, mentre l'analitico scompone la reputazione in dimensioni",
-      "B": "Misura solo dati tecnici di traffico e non puo essere usato sui pubblici",
+      "B": "Misura solo dati tecnici di traffico e non può essere usato sui pubblici",
       "C": "Coincide sempre con l'AVE e quindi produce solo un valore economico equivalente",
       "D": "Richiede esclusivamente interviste telefoniche CATI e non ammette altre fonti"
     },
@@ -7469,7 +7483,7 @@
     "text": "Nella classificazione di Berens e Van Riel, quali sono i tre filoni dei modelli reputazionali?",
     "options": {
       "A": "Aspettative sociali, corporate character e trust",
-      "B": "Immagine, identita visiva e customer journey",
+      "B": "Immagine, identità visiva e customer journey",
       "C": "Capitale umano, capitale relazionale e capitale strutturale",
       "D": "Relazioni con clienti e stakeholder, reputazione, fiducia"
     },
@@ -7486,7 +7500,7 @@
     "section": "Intangibili e reputazione",
     "text": "Cosa si intende per 'Flussi simbolici' nel capitale comunicativo?",
     "options": {
-      "A": "Tutto cio che rende possibile la circolazione di valori e significati condivisi.",
+      "A": "Tutto ciò che rende possibile la circolazione di valori e significati condivisi.",
       "B": "Le procedure operative e i sistemi informativi che strutturano l'organizzazione.",
       "C": "Le competenze professionali e relazionali possedute dai dipendenti.",
       "D": "Le relazioni commerciali e istituzionali consolidate con gli stakeholder."
@@ -7505,7 +7519,7 @@
     "options": {
       "A": "Il capitale intellettuale non genera pienamente valore se non viene comunicato e condiviso.",
       "B": "Il capitale intellettuale riguarda solo procedure interne e infrastrutture tecniche.",
-      "C": "La comunicazione serve solo a rendicontare il capitale finanziario gia prodotto.",
+      "C": "La comunicazione serve solo a rendicontare il capitale finanziario già prodotto.",
       "D": "Capitale intellettuale e comunicazione sono ambiti separati senza influenza reciproca."
     },
     "answer": "A",
@@ -7554,7 +7568,7 @@
   {
     "id": 455,
     "section": "Intangibili e reputazione",
-    "text": "Quale tra questi e un esempio di 'Capitale Narrativo'?",
+    "text": "Quale tra questi è un esempio di 'Capitale Narrativo'?",
     "options": {
       "A": "L'insieme delle storie, del corporate storytelling e delle conversazioni online sull'azienda.",
       "B": "Le procedure operative e i manuali interni che regolano il lavoro quotidiano.",
@@ -7575,7 +7589,7 @@
       "A": "Intangibili come fiducia e reputazione che collegano gli outcome all'impatto sul business.",
       "B": "Gli output immediati prodotti dalla funzione, come comunicati, eventi e post.",
       "C": "Gli input economici e professionali impiegati prima dell'avvio del programma.",
-      "D": "Le metriche di copertura media usate per stimare la visibilita ottenuta."
+      "D": "Le metriche di copertura media usate per stimare la visibilità ottenuta."
     },
     "answer": "A",
     "tags": [
@@ -7587,7 +7601,7 @@
   {
     "id": 457,
     "section": "Intangibili e reputazione",
-    "text": "Quale tra i seguenti e un principio chiave del modello CCPM?",
+    "text": "Quale tra i seguenti è un principio chiave del modello CCPM?",
     "options": {
       "A": "La valutazione partecipativa e il coinvolgimento degli stakeholder.",
       "B": "L'orientamento puramente tecnico e statistico della misurazione.",
@@ -7607,9 +7621,9 @@
     "section": "Intangibili e reputazione",
     "text": "Nel contesto del capitale intellettuale, cosa comprende il 'Capitale Umano'?",
     "options": {
-      "A": "Competenze, conoscenze, capacita comunicative e livelli di istruzione del personale.",
+      "A": "Competenze, conoscenze, capacità comunicative e livelli di istruzione del personale.",
       "B": "Procedure, sistemi informativi, cultura organizzativa e infrastrutture interne.",
-      "C": "Relazioni con clienti, stakeholder, fornitori e comunita di riferimento.",
+      "C": "Relazioni con clienti, stakeholder, fornitori e comunità di riferimento.",
       "D": "Storie, narrazioni e conversazioni che rendono riconoscibile l'organizzazione."
     },
     "answer": "A",
@@ -7624,9 +7638,9 @@
     "section": "Intangibili e reputazione",
     "text": "Quale distinzione fondamentale esiste tra 'Immagine' e 'Reputazione'?",
     "options": {
-      "A": "L'immagine e la percezione immediata, mentre la reputazione e un giudizio consolidato nel tempo.",
+      "A": "L'immagine è la percezione immediata, mentre la reputazione è un giudizio consolidato nel tempo.",
       "B": "L'immagine si misura solo con i numeri, la reputazione solo con le parole.",
-      "C": "L'immagine e il giudizio sedimentato nel tempo, la reputazione e istantanea.",
+      "C": "L'immagine è il giudizio sedimentato nel tempo, la reputazione è istantanea.",
       "D": "Non esiste alcuna differenza, sono sinonimi usati indifferentemente nel CCPM."
     },
     "answer": "A",
@@ -7638,12 +7652,12 @@
   {
     "id": 460,
     "section": "Intangibili e reputazione",
-    "text": "Perche la comunicazione e centrale nello sviluppo del capitale intellettuale?",
+    "text": "Perché la comunicazione è centrale nello sviluppo del capitale intellettuale?",
     "options": {
-      "A": "Perche permette la circolazione delle conoscenze e la creazione di relazioni.",
-      "B": "Perche trasforma automaticamente ogni risorsa intangibile in valore finanziario.",
-      "C": "Perche sostituisce il capitale umano con procedure e sistemi informativi.",
-      "D": "Perche rende superflua la misurazione della reputazione presso gli stakeholder."
+      "A": "Perché permette la circolazione delle conoscenze e la creazione di relazioni.",
+      "B": "Perché trasforma automaticamente ogni risorsa intangibile in valore finanziario.",
+      "C": "Perché sostituisce il capitale umano con procedure e sistemi informativi.",
+      "D": "Perché rende superflua la misurazione della reputazione presso gli stakeholder."
     },
     "answer": "A",
     "tags": [
@@ -7676,7 +7690,7 @@
     "options": {
       "A": "Alla misurazione delle dimensioni consolidate del capitale comunicativo: organizzativo-umano, relazionale-sociale e reputazionale-narrativo.",
       "B": "Alla valutazione ex ante dell'adeguatezza dei messaggi prima del lancio.",
-      "C": "Alla misurazione delle singole attivita per correggerle durante l'implementazione.",
+      "C": "Alla misurazione delle singole attività per correggerle durante l'implementazione.",
       "D": "Alla dimostrazione del contributo della comunicazione alle performance di business."
     },
     "answer": "A",
@@ -7691,7 +7705,7 @@
   {
     "id": 463,
     "section": "Intangibili e reputazione",
-    "text": "Secondo Grunig e Hon, quali sono i due tipi principali di relazione che un'organizzazione puo avere con i suoi stakeholder?",
+    "text": "Secondo Grunig e Hon, quali sono i due tipi principali di relazione che un'organizzazione può avere con i suoi stakeholder?",
     "options": {
       "A": "Relazioni di scambio (basate su benefici attesi) e relazioni comunitarie (basate sul bene dell'altro).",
       "B": "Relazioni digitali (social media) e relazioni fisiche (in presenza).",
@@ -7710,10 +7724,10 @@
     "section": "Intangibili e reputazione",
     "text": "Cosa si intende per 'capitale narrativo' all'interno del capitale comunicativo?",
     "options": {
-      "A": "La capacita dell'organizzazione di raccontarsi in modo coerente e di generare storie che creano senso per gli stakeholder.",
-      "B": "Il numero totale di caratteri e parole scritte nei rapporti annuali di sostenibilita.",
+      "A": "La capacità dell'organizzazione di raccontarsi in modo coerente e di generare storie che creano senso per gli stakeholder.",
+      "B": "Il numero totale di caratteri e parole scritte nei rapporti annuali di sostenibilità.",
       "C": "Il valore economico dei diritti d'autore acquistati per una campagna pubblicitaria.",
-      "D": "La capacita dei giornalisti di scrivere articoli lunghi e dettagliati sull'azienda."
+      "D": "La capacità dei giornalisti di scrivere articoli lunghi e dettagliati sull'azienda."
     },
     "answer": "A",
     "tags": [
@@ -7728,7 +7742,7 @@
     "text": "Cosa caratterizza il livello 'Sommativo' della valutazione rispetto a quello 'Formativo'?",
     "options": {
       "A": "Misura il valore del capitale comunicativo consolidato nel tempo invece delle singole iniziative.",
-      "B": "Si focalizza sulle singole attivita di comunicazione per apportare correzioni in itinere.",
+      "B": "Si focalizza sulle singole attività di comunicazione per apportare correzioni in itinere.",
       "C": "Utilizza esclusivamente KPI di business standardizzati come il fatturato o la quota di mercato.",
       "D": "Ha lo scopo principale di supportare la pianificazione strategica prima dell'azione."
     },
@@ -7745,8 +7759,8 @@
     "text": "Nella scomposizione del capitale comunicativo (livello sommativo), cosa comprende l'area 'Umana'?",
     "options": {
       "A": "Le competenze comunicative, gli stili socio-comunicativi e il benessere dei dipendenti.",
-      "B": "La capacita dell'organizzazione di raccontarsi e la percezione dei pubblici.",
-      "C": "La qualita delle relazioni con gli stakeholder esterni e il livello di fiducia.",
+      "B": "La capacità dell'organizzazione di raccontarsi e la percezione dei pubblici.",
+      "C": "La qualità delle relazioni con gli stakeholder esterni e il livello di fiducia.",
       "D": "Lo stile comunicativo manageriale e la cultura dell'organizzazione."
     },
     "answer": "A",
@@ -7759,7 +7773,7 @@
   {
     "id": 467,
     "section": "Intangibili e reputazione",
-    "text": "Quale componente del capitale comunicativo (livello sommativo) riguarda la capacita dell'organizzazione di raccontarsi?",
+    "text": "Quale componente del capitale comunicativo (livello sommativo) riguarda la capacità dell'organizzazione di raccontarsi?",
     "options": {
       "A": "Capitale Narrativo",
       "B": "Capitale Relazionale",
@@ -7776,12 +7790,12 @@
   {
     "id": 468,
     "section": "Intangibili e reputazione",
-    "text": "Perche non si deve trattare la reputazione come una misura diretta con standard unico?",
+    "text": "Perché non si deve trattare la reputazione come una misura diretta con standard unico?",
     "options": {
-      "A": "Perche e un giudizio multidimensionale che richiede diversi indicatori e prospettive.",
-      "B": "Perche la reputazione e un asset tangibile facilmente quantificabile in euro.",
-      "C": "Perche solo il dipartimento marketing ha il diritto di valutarla.",
-      "D": "Perche la reputazione cambia troppo velocemente per essere misurata."
+      "A": "Perché è un giudizio multidimensionale che richiede diversi indicatori e prospettive.",
+      "B": "Perché la reputazione è un asset tangibile facilmente quantificabile in euro.",
+      "C": "Perché solo il dipartimento marketing ha il diritto di valutarla.",
+      "D": "Perché la reputazione cambia troppo velocemente per essere misurata."
     },
     "answer": "A",
     "tags": [
@@ -7796,7 +7810,7 @@
       "A": "A creare un clima di fiducia e avviare la partecipazione rompendo il ghiaccio.",
       "B": "A presentare subito gli stimoli principali senza introdurre il tema.",
       "C": "A raccogliere solo dati anagrafici prima di chiudere la discussione.",
-      "D": "A selezionare i partecipanti piu adatti mentre il focus group e gia iniziato."
+      "D": "A selezionare i partecipanti più adatti mentre il focus group e già iniziato."
     },
     "answer": "A",
     "tags": [
@@ -7841,12 +7855,12 @@
   {
     "id": 472,
     "section": "Intangibili e reputazione",
-    "text": "Secondo il modello CCPM di Romenti, perche la misurazione e definita 'situazionale'?",
+    "text": "Secondo il modello CCPM di Romenti, perché la misurazione è definita 'situazionale'?",
     "options": {
-      "A": "Perche dipende strettamente dal contesto, dagli stakeholder e dalla storia dell'organizzazione.",
-      "B": "Perche deve essere effettuata solo in situazioni di crisi aziendale.",
-      "C": "Perche si basa esclusivamente su dati raccolti in tempo reale.",
-      "D": "Perche ignora gli obiettivi di lungo termine per focalizzarsi sull'istante."
+      "A": "Perché dipende strettamente dal contesto, dagli stakeholder e dalla storia dell'organizzazione.",
+      "B": "Perché deve essere effettuata solo in situazioni di crisi aziendale.",
+      "C": "Perché si basa esclusivamente su dati raccolti in tempo reale.",
+      "D": "Perché ignora gli obiettivi di lungo termine per focalizzarsi sull'istante."
     },
     "answer": "A",
     "tags": [
@@ -7906,7 +7920,7 @@
   {
     "id": 476,
     "section": "Intangibili e reputazione",
-    "text": "Quale modello di analisi dell'identita aziendale confronta l'autopercezione interna del management con l'immagine stimata presso il pubblico?",
+    "text": "Quale modello di analisi dell'identità aziendale confronta l'autopercezione interna del management con l'immagine stimata presso il pubblico?",
     "options": {
       "A": "Cobweb Model",
       "B": "Lux Model",
@@ -7922,7 +7936,7 @@
   {
     "id": 477,
     "section": "Intangibili e reputazione",
-    "text": "Quale delle seguenti non e una delle quattro componenti della qualita relazionale secondo Grunig e Hon?",
+    "text": "Quale delle seguenti non è una delle quattro componenti della qualità relazionale secondo Grunig e Hon?",
     "options": {
       "A": "Premium Price",
       "B": "Fiducia (Trust)",
@@ -7956,7 +7970,7 @@
     "section": "Intangibili e reputazione",
     "text": "Nella valutazione della reputazione, cosa si intende per modelli 'analitici'?",
     "options": {
-      "A": "Modelli che scompongono la reputazione in piu dimensioni cognitive e attributi.",
+      "A": "Modelli che scompongono la reputazione in più dimensioni cognitive e attributi.",
       "B": "Modelli che misurano direttamente un unico dato sintetico della reputazione.",
       "C": "Modelli che analizzano solo la reputazione finanziaria presso gli investitori.",
       "D": "Modelli basati esclusivamente su algoritmi di machine learning."
@@ -7985,10 +7999,10 @@
   {
     "id": 481,
     "section": "Intangibili e reputazione",
-    "text": "Nelle relazioni 'Comunitarie' tra organizzazione e stakeholder, qual e il principio guida?",
+    "text": "Nelle relazioni 'Comunitarie' tra organizzazione e stakeholder, qual è il principio guida?",
     "options": {
       "A": "Le parti offrono benefici per interesse verso il benessere dell'altro, senza attendere una ricompensa immediata.",
-      "B": "Le parti scambiano benefici aspettandosi reciprocita diretta nel breve periodo.",
+      "B": "Le parti scambiano benefici aspettandosi reciprocità diretta nel breve periodo.",
       "C": "La relazione nasce solo da contratti formali e obblighi commerciali.",
       "D": "Il rapporto viene valutato unicamente attraverso indicatori di vendita."
     },
@@ -8003,9 +8017,9 @@
     "section": "Intangibili e reputazione",
     "text": "Quali sono le tre sottovariabili fondamentali utilizzate per misurare la Fiducia (Trust)?",
     "options": {
-      "A": "Integrita, Affidabilita e Competenza.",
+      "A": "Integrità, Affidabilità e Competenza.",
       "B": "Simbolismo, Comportamento e Comunicazione.",
-      "C": "Notorieta, Immagine e Reputazione.",
+      "C": "Notorietà, Immagine e Reputazione.",
       "D": "Engagement, Advocacy e Interaction."
     },
     "answer": "A",
@@ -8031,9 +8045,9 @@
   {
     "id": 484,
     "section": "Intangibili e reputazione",
-    "text": "Cosa indica l'indice delle 'idee piu condivise o votate' in un programma di ascolto?",
+    "text": "Cosa indica l'indice delle 'idee più condivise o votate' in un programma di ascolto?",
     "options": {
-      "A": "La capacita dell'azienda di raccogliere feedback costruttivi dagli stakeholder.",
+      "A": "La capacità dell'azienda di raccogliere feedback costruttivi dagli stakeholder.",
       "B": "La quota di conversazioni favorevoli rispetto al totale delle menzioni raccolte.",
       "C": "Il livello di reach potenziale ottenuto dai contenuti pubblicati.",
       "D": "Il valore pubblicitario equivalente attribuito alla copertura media."
@@ -8067,10 +8081,10 @@
     "section": "Intangibili e reputazione",
     "text": "Nel monitoraggio della reputazione, la differenza tra 'Immagine' e 'Reputazione' risiede principalmente nel fatto che:",
     "options": {
-      "A": "L'immagine e una percezione istantanea, mentre la reputazione e un giudizio sedimentato nel tempo.",
+      "A": "L'immagine è una percezione istantanea, mentre la reputazione è un giudizio sedimentato nel tempo.",
       "B": "L'immagine riguarda solo il logo aziendale, la reputazione riguarda solo i prezzi dei prodotti.",
-      "C": "L'immagine e misurabile quantitativamente, la reputazione e solo una sensazione psicologica.",
-      "D": "L'immagine e controllata dai competitor, la reputazione e controllata esclusivamente dall'azienda."
+      "C": "L'immagine è misurabile quantitativamente, la reputazione è solo una sensazione psicologica.",
+      "D": "L'immagine è controllata dai competitor, la reputazione è controllata esclusivamente dall'azienda."
     },
     "answer": "A",
     "tags": [
@@ -8084,7 +8098,7 @@
     "text": "Nel contesto del capitale comunicativo, la dimensione della 'Comunicazione Interna' favorisce principalmente:",
     "options": {
       "A": "Il coordinamento tra persone e processi e la valorizzazione del capitale umano.",
-      "B": "La visibilita esterna sui media ottenuta attraverso la rassegna stampa.",
+      "B": "La visibilità esterna sui media ottenuta attraverso la rassegna stampa.",
       "C": "La certificazione delle audience da parte degli organismi di mercato.",
       "D": "La monetizzazione degli spazi pubblicitari sui canali proprietari."
     },
@@ -8101,7 +8115,7 @@
     "section": "Intangibili e reputazione",
     "text": "Cosa rappresenta la componente 'Variabili ponte' all'interno del Modello Logico del CCPM?",
     "options": {
-      "A": "Gli intangibili della comunicazione come la fiducia, la reputazione e la qualita della relazione.",
+      "A": "Gli intangibili della comunicazione come la fiducia, la reputazione e la qualità della relazione.",
       "B": "I canali di comunicazione che collegano l'azienda ai diversi mercati geografici.",
       "C": "Le risorse economiche che vengono spostate da un progetto all'altro.",
       "D": "I dipendenti che fungono da collegamento tra diversi uffici."
@@ -8117,7 +8131,7 @@
   {
     "id": 489,
     "section": "Intangibili e reputazione",
-    "text": "Quale tra i seguenti NON e un elemento fondamentale delle Mappe Narrative?",
+    "text": "Quale tra i seguenti NON è un elemento fondamentale delle Mappe Narrative?",
     "options": {
       "A": "L'esclusione categorica di qualsiasi dato numerico o statistico.",
       "B": "La rappresentazione del capitale comunicativo generato nel tempo.",
@@ -8155,7 +8169,7 @@
     "text": "Nel modello RepTrak Pulse, a cosa si riferiscono le 'Componenti Emotive'?",
     "options": {
       "A": "Stima, ammirazione, fiducia e sentimenti degli stakeholder verso l'azienda.",
-      "B": "Performance finanziarie, governance, innovazione e qualita dei prodotti.",
+      "B": "Performance finanziarie, governance, innovazione e qualità dei prodotti.",
       "C": "Reach, frequenza, GRP e costo per mille contatti della campagna.",
       "D": "Soddisfazione dei dipendenti verso i flussi di comunicazione interna."
     },
@@ -8171,7 +8185,7 @@
     "section": "Intangibili e reputazione",
     "text": "Quali elementi costituiscono le 'Componenti Razionali' del modello RepTrak Pulse?",
     "options": {
-      "A": "Innovazione, qualita di prodotti/servizi, luogo di lavoro, performance finanziaria, visione, leadership, cittadinanza e governance.",
+      "A": "Innovazione, qualità di prodotti/servizi, luogo di lavoro, performance finanziaria, visione, leadership, cittadinanza e governance.",
       "B": "Stima, ammirazione, fiducia e sentimenti generali degli stakeholder.",
       "C": "Reach, frequenza, impression, click-through rate e costo per contatto.",
       "D": "Output media, share of voice, presenza dei messaggi chiave e tono."
@@ -8186,10 +8200,10 @@
   {
     "id": 493,
     "section": "Intangibili e reputazione",
-    "text": "Secondo l'International Association of Business Communication (2003), la comunicazione e centrale nello sviluppo di:",
+    "text": "Secondo l'International Association of Business Communication (2003), la comunicazione è centrale nello sviluppo di:",
     "options": {
       "A": "Capitale umano, relazionale e organizzativo.",
-      "B": "Solo capitale relazionale, perche gli altri intangibili sono tecnici.",
+      "B": "Solo capitale relazionale, perché gli altri intangibili sono tecnici.",
       "C": "Capitale finanziario, quota di mercato e margine operativo lordo.",
       "D": "Solo riduzione dei costi pubblicitari e ritorno economico immediato."
     },
@@ -8220,12 +8234,12 @@
   {
     "id": 495,
     "section": "Intangibili e reputazione",
-    "text": "Perche i vantaggi competitivi basati sulla reputazione sono piu durevoli?",
+    "text": "Perché i vantaggi competitivi basati sulla reputazione sono più durevoli?",
     "options": {
-      "A": "Perche derivano da percezioni consolidate nel tempo e non solo da tattiche momentanee.",
-      "B": "Perche dipendono quasi esclusivamente da investimenti pubblicitari di breve periodo.",
-      "C": "Perche coincidono con brevetti e licenze protetti da norme giuridiche.",
-      "D": "Perche dipendono soltanto dalla dimensione economica dell'impresa."
+      "A": "Perché derivano da percezioni consolidate nel tempo e non solo da tattiche momentanee.",
+      "B": "Perché dipendono quasi esclusivamente da investimenti pubblicitari di breve periodo.",
+      "C": "Perché coincidono con brevetti e licenze protetti da norme giuridiche.",
+      "D": "Perché dipendono soltanto dalla dimensione economica dell'impresa."
     },
     "answer": "A",
     "tags": [
@@ -8235,10 +8249,10 @@
   {
     "id": 496,
     "section": "Intangibili e reputazione",
-    "text": "Quale tra questi e un beneficio tangibile della reputazione nel mercato del lavoro?",
+    "text": "Quale tra questi è un beneficio tangibile della reputazione nel mercato del lavoro?",
     "options": {
-      "A": "Capacita di attirare i migliori talenti.",
-      "B": "Possibilita di applicare un premium price ai clienti finali.",
+      "A": "Capacità di attirare i migliori talenti.",
+      "B": "Possibilità di applicare un premium price ai clienti finali.",
       "C": "Aumento della copertura mediatica spontanea nel breve periodo.",
       "D": "Riduzione automatica degli oneri fiscali sul fatturato."
     },
@@ -8251,12 +8265,12 @@
   {
     "id": 497,
     "section": "Intangibili e reputazione",
-    "text": "Nella visione degli economisti aziendali, cos'e la reputazione?",
+    "text": "Nella visione degli economisti aziendali, cos'è la reputazione?",
     "options": {
       "A": "Una risorsa immateriale fondamentale nel processo di generazione del valore dell'impresa.",
       "B": "Un output media misurabile solo attraverso il numero di articoli pubblicati.",
       "C": "Un costo pubblicitario da ridurre per aumentare il margine operativo.",
-      "D": "Una procedura di certificazione tecnica della qualita dei processi."
+      "D": "Una procedura di certificazione tecnica della qualità dei processi."
     },
     "answer": "A",
     "tags": [
@@ -8272,8 +8286,8 @@
     "options": {
       "A": "Rappresenta il giudizio di valore su attributi, azioni passate e performance future dell'azienda.",
       "B": "Coincide con la somma dei reclami ricevuti dal servizio clienti nel periodo.",
-      "C": "Misura soltanto la visibilita media ottenuta nelle fonti giornalistiche.",
-      "D": "Indica il livello tecnico di riconoscibilita del logo e dei colori aziendali."
+      "C": "Misura soltanto la visibilità media ottenuta nelle fonti giornalistiche.",
+      "D": "Indica il livello tecnico di riconoscibilità del logo e dei colori aziendali."
     },
     "answer": "A",
     "tags": [
@@ -8283,9 +8297,9 @@
   {
     "id": 499,
     "section": "Intangibili e reputazione",
-    "text": "Nella misurazione dell'identita organizzativa, cosa si intende per 'Temperamento'?",
+    "text": "Nella misurazione dell'identità organizzativa, cosa si intende per 'Temperamento'?",
     "options": {
-      "A": "L'intensita, la forza e la velocita con cui l'organizzazione agisce.",
+      "A": "L'intensità, la forza e la velocità con cui l'organizzazione agisce.",
       "B": "Il sistema dei valori dichiarati nella mission e nel codice etico.",
       "C": "Il grado di formalizzazione delle procedure interne e dei ruoli.",
       "D": "La competenza tecnica dei dipendenti nella gestione dei media digitali."
@@ -8298,7 +8312,7 @@
   {
     "id": 500,
     "section": "Intangibili e reputazione",
-    "text": "Quale tra questi e un elemento del 'Capitale Organizzativo' (componente strutturale)?",
+    "text": "Quale tra questi è un elemento del 'Capitale Organizzativo' (componente strutturale)?",
     "options": {
       "A": "Cultura organizzativa e valori.",
       "B": "Livello di istruzione e competenze dei singoli dipendenti.",

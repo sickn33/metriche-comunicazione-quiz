@@ -465,24 +465,138 @@ function q(section, text, options, answer, source = "exam-photo") {
   };
 }
 
+const ITALIAN_ACCENT_WORDS = new Map([
+  ["adattabilita", "adattabilità"],
+  ["affidabilita", "affidabilità"],
+  ["ambiguita", "ambiguità"],
+  ["attivita", "attività"],
+  ["autorita", "autorità"],
+  ["capacita", "capacità"],
+  ["causalita", "causalità"],
+  ["centralita", "centralità"],
+  ["citta", "città"],
+  ["cio", "ciò"],
+  ["comunita", "comunità"],
+  ["cosi", "così"],
+  ["contabilita", "contabilità"],
+  ["creativita", "creatività"],
+  ["credibilita", "credibilità"],
+  ["criticita", "criticità"],
+  ["disponibilita", "disponibilità"],
+  ["difficolta", "difficoltà"],
+  ["diversita", "diversità"],
+  ["e", "e"],
+  ["efficacia", "efficacia"],
+  ["eta", "età"],
+  ["fedelta", "fedeltà"],
+  ["finalita", "finalità"],
+  ["gia", "già"],
+  ["identita", "identità"],
+  ["incapacita", "incapacità"],
+  ["impossibilita", "impossibilità"],
+  ["integrita", "integrità"],
+  ["intensita", "intensità"],
+  ["marginalita", "marginalità"],
+  ["modalita", "modalità"],
+  ["necessita", "necessità"],
+  ["neutralita", "neutralità"],
+  ["notorieta", "notorietà"],
+  ["novita", "novità"],
+  ["numerosita", "numerosità"],
+  ["opportunita", "opportunità"],
+  ["perche", "perché"],
+  ["pero", "però"],
+  ["piu", "più"],
+  ["poiche", "poiché"],
+  ["polarita", "polarità"],
+  ["possibilita", "possibilità"],
+  ["priorita", "priorità"],
+  ["produttivita", "produttività"],
+  ["profondita", "profondità"],
+  ["proprieta", "proprietà"],
+  ["pubblicita", "pubblicità"],
+  ["puntualita", "puntualità"],
+  ["puo", "può"],
+  ["qualita", "qualità"],
+  ["quantita", "quantità"],
+  ["realta", "realtà"],
+  ["reciprocita", "reciprocità"],
+  ["redditivita", "redditività"],
+  ["responsabilita", "responsabilità"],
+  ["rilevanza", "rilevanza"],
+  ["rappresentativita", "rappresentatività"],
+  ["riconoscibilita", "riconoscibilità"],
+  ["sensibilita", "sensibilità"],
+  ["societa", "società"],
+  ["sostenibilita", "sostenibilità"],
+  ["specificita", "specificità"],
+  ["stabilita", "stabilità"],
+  ["tempestivita", "tempestività"],
+  ["unita", "unità"],
+  ["utilita", "utilità"],
+  ["validita", "validità"],
+  ["variabilita", "variabilità"],
+  ["velocita", "velocità"],
+  ["verita", "verità"],
+  ["visibilita", "visibilità"],
+]);
+
+function preserveCase(original, replacement) {
+  if (original === original.toUpperCase()) return replacement.toUpperCase();
+  if (original[0] === original[0].toUpperCase()) return replacement[0].toUpperCase() + replacement.slice(1);
+  return replacement;
+}
+
+function restoreItalianAccents(value) {
+  let text = String(value || "");
+  for (const [plain, accented] of ITALIAN_ACCENT_WORDS) {
+    if (plain === accented) continue;
+    text = text.replace(new RegExp(`\\b${plain}\\b`, "gi"), match => preserveCase(match, accented));
+  }
+
+  return text
+    .replace(/\b([Cc]os')e\b/g, "$1è")
+    .replace(/\b([Qq]ual) e\b/g, "$1 è")
+    .replace(/\b([Cc]osa) e\b/g, "$1 è")
+    .replace(/\b([Cc]he cosa) e\b/g, "$1 è")
+    .replace(/\b([Cc]ome) e\b/g, "$1 è")
+    .replace(/\b([Qq]uando) e\b/g, "$1 è")
+    .replace(/\b([Dd]ove) e\b/g, "$1 è")
+    .replace(/\b([Pp]erché) e\b/g, "$1 è")
+    .replace(/\b([Nn]on) e\b/g, "$1 è")
+    .replace(/\b(Quale tra i seguenti) e (?=un\b)/g, "$1 è ")
+    .replace(/\b(Quale delle seguenti) e (?=una\b)/g, "$1 è ")
+    .replace(/\b(Quale metrica) e (?=considerata\b)/g, "$1 è ")
+    .replace(/\b(Quale di queste affermazioni sul ROI della comunicazione) e (?=corretta\b)/g, "$1 è ")
+    .replace(/\b(L'indicatore ROEM \(Return on Earned Media\)) e (?=un sinonimo\b)/g, "$1 è ")
+    .replace(/\b(del '[^']+') e (?=utile\b)/g, "$1 è ")
+    .replace(/\b(non sempre) e (?=possibile\b)/g, "$1 è ")
+    .replace(/\b(la comunicazione) e (?=centrale\b)/g, "$1 è ")
+    .replace(/\bc'e\b/g, "c'è")
+    .replace(/\bC'e\b/g, "C'è")
+    .replace(/\be([:?!])/g, "è$1")
+    .replace(/\bE([:?!])/g, "È$1")
+    .replace(/(^|[.!?]\s+)E (?=(?:necessario|utile|corretto|sbagliato|possibile|importante|preferibile|opportuno|rilevante|centrale|misurabile)\b)/g, "$1È ");
+}
+
 function cleanText(value) {
-  return String(value || "")
+  return restoreItalianAccents(String(value || "")
     .normalize("NFKC")
     .replace(/\$(\d{4})\$/g, "$1")
     .replace(/[’]/g, "'")
     .replace(/[“”]/g, "\"")
-    .replace(/[àá]/g, "a")
-    .replace(/[èé]/g, "e")
-    .replace(/[ìí]/g, "i")
-    .replace(/[òó]/g, "o")
-    .replace(/[ùú]/g, "u")
     .replace(/\s+/g, " ")
     .replace(/\s+([,.;:?!])/g, "$1")
-    .trim();
+    .trim());
 }
 
 function normalizeKey(value) {
-  return cleanText(value).toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+  return cleanText(value)
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
 }
 
 function coverageKey(value) {
@@ -1505,7 +1619,7 @@ const manualReviewOverrides = {
     },
   },
   262: {
-    text: "Cosa indica l'indicatore di 'Permanenza' (PR) nei dati Auditel?",
+    text: "Nella metrica Auditel, come si calcola la 'Permanenza' (PR)?",
     options: {
       A: "La fedelta di visione, calcolata come rapporto tra minuti visti e durata del programma.",
       B: "Il numero totale di individui che hanno visto almeno un minuto di un contenuto.",
@@ -1530,7 +1644,7 @@ const manualReviewOverrides = {
     },
   },
   269: {
-    text: "Cosa indica la metrica 'Legitimate Stream' (LS) nei dati censuari Auditel?",
+    text: "Nei dati censuari Auditel, cosa viene conteggiato come 'Legitimate Stream' (LS)?",
     options: {
       A: "Il volume di stream erogati e visti per almeno 300 millisecondi.",
       B: "La somma dei secondi visualizzati da tutti gli utenti di un canale.",
@@ -2287,6 +2401,12 @@ const manualReviewOverrides = {
   },
   152: {
     text: "Quale delle seguenti e una caratteristica del Web 4.0?",
+    options: {
+      A: "Sistemi predittivi, AI conversazionale, agenti autonomi e automazione decisionale.",
+      B: "Siti statici consultati in modo prevalentemente unidirezionale dagli utenti.",
+      C: "Piattaforme social basate soprattutto su profili, commenti e condivisioni.",
+      D: "Pagine semanticamente collegate ma senza capacita di azione autonoma.",
+    },
   },
   158: {
     text: "Quale di questi NON rientra tra i grandi vettori del cambiamento digitale?",
@@ -2308,6 +2428,12 @@ const manualReviewOverrides = {
   },
   433: {
     text: "Qual e la differenza tra ROI e ROO?",
+    options: {
+      A: "Il ROI misura il ritorno economico, il ROO il grado di raggiungimento degli obiettivi.",
+      B: "Il ROI riguarda solo gli obiettivi qualitativi, il ROO solo il valore monetario.",
+      C: "Il ROI si usa per le audience certificate, il ROO per calcolare tiratura e diffusione.",
+      D: "Il ROI misura soltanto i social media, il ROO soltanto la copertura stampa.",
+    },
   },
   434: {
     text: "L'indicatore ROEM (Return on Earned Media) e un sinonimo di:",
@@ -2400,10 +2526,10 @@ const manualReviewOverrides = {
   },
   377: {
     options: {
-      A: "Perche non sempre e possibile isolare gli effetti della comunicazione tramite metodi sperimentali rigorosi.",
-      B: "Perche gli output media dimostrano automaticamente il contributo della comunicazione al business.",
-      C: "Perche la causalita puo essere stabilita solo contando le impression generate.",
-      D: "Perche il modello CCPM esclude l'analisi delle variabili esterne.",
+      A: "Ricerca valutativa, performance measurement e teoria degli intangibili.",
+      B: "Media buying, creativita pubblicitaria e pianificazione degli spazi.",
+      C: "Certificazione delle audience, contabilita industriale e normativa privacy.",
+      D: "SEO tecnico, social advertising e customer service operativo.",
     },
   },
   417: {
@@ -2483,18 +2609,27 @@ const manualReviewOverrides = {
 for (const question of bank) {
   const override = manualReviewOverrides[question.id];
   if (!override) continue;
-  if (override.text) question.text = override.text;
-  if (override.options) question.options = override.options;
+  if (override.text) question.text = cleanText(override.text);
+  if (override.options) {
+    question.options = Object.fromEntries(
+      Object.entries(override.options).map(([letter, option]) => [letter, cleanText(option)])
+    );
+  }
   question.answer = "A";
   question.tags = [...new Set(tagsFor(question).concat(question.tags.includes("stile_esame") ? ["stile_esame"] : []))].sort();
 }
 
 const report = validate(bank);
+const specialQuizzes = SPECIAL_QUIZZES.map(quiz => ({
+  ...quiz,
+  label: cleanText(quiz.label),
+  description: cleanText(quiz.description),
+}));
 
 const contents = `// Banco quiz esame per Metriche della Comunicazione.
 // Generato da scripts/build-exam-bank.js usando le domande reali del compito come calibrazione di stile.
 (() => {
-  window.METRICHE_SPECIAL_QUIZZES = ${JSON.stringify(SPECIAL_QUIZZES, null, 2)};
+  window.METRICHE_SPECIAL_QUIZZES = ${JSON.stringify(specialQuizzes, null, 2)};
 
   window.METRICHE_QUIZ_BANK = ${JSON.stringify(bank, null, 2)};
 })();
