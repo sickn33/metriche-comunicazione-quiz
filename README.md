@@ -1,7 +1,7 @@
 # Quiz Metriche della Comunicazione
 
-Quiz interattivo da 50 domande random, pescate da una banca completa di 525 domande sugli argomenti di Metriche della Comunicazione.
+Quiz interattivo da 50 domande random, pescate da una banca esame di 500 domande sugli argomenti di Metriche della Comunicazione.
 
 ## Uso
 
-Apri il sito pubblicato con GitHub Pages e premi **Nuovo quiz** per generare un nuovo giro da 50 domande. Le domande sono ripescate ogni volta dalla banca completa, quindi possono ricapitare in sessioni successive.
+Apri il sito pubblicato con GitHub Pages e premi **Nuovo quiz** per generare un nuovo giro da 50 domande. Dal menu **Modalita quiz** puoi scegliere il quiz generale oppure sessioni speciali su modelli, enti/audience, social-listening-ROI, ricerca/metodi, CCPM-performance, reputazione/intangibili e SEO-GEO-digitale.
