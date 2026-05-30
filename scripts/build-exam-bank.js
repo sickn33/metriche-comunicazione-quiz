@@ -582,7 +582,7 @@ function restoreItalianAccents(value) {
 function cleanText(value) {
   return restoreItalianAccents(String(value || "")
     .normalize("NFKC")
-    .replace(/\$(\d{4})\$/g, "$1")
+    .replace(/\$([A-Za-z0-9]+)\$/g, "$1")
     .replace(/[’]/g, "'")
     .replace(/[“”]/g, "\"")
     .replace(/\s+/g, " ")
@@ -1596,18 +1596,18 @@ const manualReviewOverrides = {
   },
   253: {
     options: {
-      A: "Fornire una fotografia sociodemografica e tecnologica su 20.000 famiglie per alimentare il database di campionamento.",
-      B: "Misurare l'ascolto minuto per minuto su smartphone e tablet tramite SDK.",
-      C: "Stimare il gradimento qualitativo dei programmi trasmessi dalle emittenti.",
-      D: "Certificare direttamente la total audience giornaliera dei singoli contenuti.",
+      A: "Legitimate Stream (LS).",
+      B: "Total Time Spent (TTS).",
+      C: "Average Stream Duration (ASD).",
+      D: "Unique Audience (UA).",
     },
   },
   255: {
     options: {
-      A: "Per ottenere la 'Total Audience', unendo gli ascolti della TV tradizionale a quelli sui device digitali.",
-      B: "Per sostituire la ricerca di base con soli dati censuari raccolti dai player.",
-      C: "Per misurare solo la fruizione on demand escludendo la visione lineare.",
-      D: "Per trasformare i dati televisivi in una misura di sentiment degli spettatori.",
+      A: "Average Stream Duration (ASD).",
+      B: "Legitimate Stream (LS).",
+      C: "Total Time Spent (TTS).",
+      D: "Unique Audience (UA).",
     },
   },
   256: {
@@ -1629,18 +1629,26 @@ const manualReviewOverrides = {
   },
   265: {
     options: {
-      A: "Per certificare la Total Audience audio includendo l'ascolto digitale e on-demand.",
-      B: "Per limitare la rilevazione alla sola radio lineare via etere.",
-      C: "Per sostituire la currency di mercato con dati non certificati dagli editori.",
-      D: "Per misurare esclusivamente il gradimento qualitativo dei programmi radio.",
+      A: "Un'indagine continuativa sulle famiglie italiane per descrivere universo tecnologico e dotazioni di consumo.",
+      B: "La rilevazione minuto per minuto degli ascolti televisivi prodotti dal SuperPanel.",
+      C: "Il sistema censuario basato su SDK e tag inseriti nei player digitali.",
+      D: "La certificazione della diffusione delle copie cartacee e digitali della stampa.",
+    },
+  },
+  266: {
+    options: {
+      A: "Il volume di stream erogati e visti per almeno 300 millisecondi.",
+      B: "La somma dei secondi visualizzati dagli utenti su un contenuto o canale.",
+      C: "La durata media degli stream calcolata dividendo TTS per LS.",
+      D: "Il numero di utenti unici che hanno visto almeno una volta il contenuto.",
     },
   },
   268: {
     options: {
-      A: "Un'indagine sociale continuativa su circa 20.000 famiglie per mappare l'universo tecnologico del Paese.",
-      B: "Una rilevazione minuto per minuto degli ascolti prodotti dal SuperPanel.",
-      C: "Un sistema censuario basato su SDK inseriti nei player digitali.",
-      D: "Una ricerca qualitativa sul gradimento dei programmi televisivi.",
+      A: "Auditel.",
+      B: "ADS.",
+      C: "Audicom.",
+      D: "Audiradio.",
     },
   },
   269: {
