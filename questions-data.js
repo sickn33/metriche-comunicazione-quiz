@@ -250,14 +250,13 @@
     "text": "Che cosa si intende per 'variabili ponte' all'interno del processo di valutazione della comunicazione?",
     "options": {
       "A": "Elementi che collegano gli output agli obiettivi desiderati, su cui il comunicatore ha potere.",
-      "B": "Indicatori economici utilizzati per calcolare il valore del brand in borsa.",
-      "C": "Strumenti di misurazione obsoleti che devono essere sostituiti dall'AI.",
-      "D": "Fattori puramente esterni che impediscono il raggiungimento degli obiettivi."
+      "B": "Indicatori economici utilizzati per stimare direttamente il valore finanziario del brand.",
+      "C": "Fattori esterni non controllabili che agiscono sul contesto della comunicazione.",
+      "D": "Misure di copertura media usate per descrivere solo la visibilita ottenuta."
     },
     "answer": "A",
     "tags": [
-      "fondamenti",
-      "seo_geo_digitale"
+      "fondamenti"
     ]
   },
   {
@@ -610,18 +609,17 @@
   {
     "id": 36,
     "section": "Fondamenti della misurazione",
-    "text": "Nel questionario di relazione, l'affermazione 'Penso che questa organizzazione riesca ad avere successo calpestando le altre persone' serve a misurare:",
+    "text": "Nel questionario di relazione, quale dimensione misura integrita, affidabilita e competenza percepita dell'organizzazione?",
     "options": {
-      "A": "La creazione e pubblicazione di 10 post settimanali sulla pagina LinkedIn aziendale.",
-      "B": "Il miglioramento della fiducia degli stakeholder verso il CEO.",
-      "C": "Il ricordo spontaneo del brand dopo l'esposizione al contenuto.",
-      "D": "L'aumento della propensione all'acquisto dopo la campagna."
+      "A": "La fiducia.",
+      "B": "La soddisfazione.",
+      "C": "Il commitment.",
+      "D": "Il controllo reciproco."
     },
     "answer": "A",
     "tags": [
       "fondamenti",
-      "ricerca_metodi",
-      "social_roi"
+      "ricerca_metodi"
     ]
   },
   {
@@ -899,15 +897,15 @@
     "section": "Ricerca in comunicazione",
     "text": "Nelle indagini qualitative, l'intervista in profondita ha il vantaggio di:",
     "options": {
-      "A": "Per l'obsolescenza e la scarsa adattabilita dei dati gia esistenti.",
-      "B": "Perche richiedono molto piu tempo rispetto a quelle primarie.",
-      "C": "Perche non possono mai essere utilizzate per decisioni aziendali.",
-      "D": "Perche producono solo insight qualitativi e non dati numerici."
+      "A": "Approfondire vissuti, motivazioni e significati individuali senza la pressione del gruppo.",
+      "B": "Ottenere stime statisticamente rappresentative dell'intera popolazione.",
+      "C": "Misurare automaticamente il ROI economico della campagna.",
+      "D": "Osservare direttamente i comportamenti senza dialogare con il soggetto."
     },
     "answer": "A",
     "tags": [
       "ricerca_metodi",
-      "seo_geo_digitale"
+      "social_roi"
     ]
   },
   {
@@ -930,10 +928,10 @@
     "section": "Ricerca in comunicazione",
     "text": "Nel modello 'ZMOT' (Zero Moment of Truth), dove si colloca la fase di ricerca digitale del consumatore?",
     "options": {
-      "A": "Manipolare o osservare variazioni controllate per verificare un nesso tra variabili.",
-      "B": "Esplorare liberamente vissuti e motivazioni senza ipotesi iniziali.",
-      "C": "Raccogliere dati esistenti prodotti per altri obiettivi.",
-      "D": "Descrivere la copertura media ottenuta in un periodo."
+      "A": "Prima dell'acquisto, quando il consumatore cerca informazioni e confronta alternative online.",
+      "B": "Dopo l'acquisto, quando il cliente valuta la soddisfazione e il servizio ricevuto.",
+      "C": "Nel momento fisico della vendita, quando il prodotto viene pagato in negozio.",
+      "D": "Nella fase di rendicontazione, quando l'azienda calcola i risultati economici."
     },
     "answer": "A",
     "tags": [
@@ -946,10 +944,10 @@
     "section": "Ricerca in comunicazione",
     "text": "Nella fase di ricerca qualitativa, perche e consigliabile evitare 'rapporti gerarchici diretti' all'interno di un focus group?",
     "options": {
-      "A": "Capacita metodologica di applicare tecniche di ricerca e interpretarne i risultati.",
-      "B": "Capacita creativa di ideare campagne pubblicitarie ad alto impatto.",
-      "C": "Conoscenza commerciale dei listini media e degli spazi pubblicitari.",
-      "D": "Capacita di negoziare budget e fornitori per la produzione dei materiali."
+      "A": "Per evitare che l'interazione sia condizionata e che i partecipanti non siano liberi di esprimersi.",
+      "B": "Per assicurare che tutti i partecipanti abbiano lo stesso ruolo formale nell'organizzazione.",
+      "C": "Per aumentare la rappresentativita statistica del gruppo rispetto alla popolazione.",
+      "D": "Per facilitare la trasformazione delle risposte qualitative in frequenze numeriche."
     },
     "answer": "A",
     "tags": [
@@ -961,15 +959,14 @@
     "section": "Ricerca in comunicazione",
     "text": "Quale tra i seguenti e un punto di forza specifico del Focus Group rispetto all'intervista individuale?",
     "options": {
-      "A": "Le tecniche diventano piu sofisticate, costose e richiedono piu tempo.",
-      "B": "Le tecniche diventano piu semplici e possono essere fatte da chiunque.",
-      "C": "I costi diminuiscono drasticamente grazie alle economie di scala.",
-      "D": "Le tecniche diventano meno adatte a interpretare fenomeni complessi."
+      "A": "L'interazione tra partecipanti fa emergere confronti, accordi, conflitti e significati condivisi.",
+      "B": "La possibilita di ottenere stime percentuali generalizzabili all'intera popolazione.",
+      "C": "Il controllo sperimentale delle variabili per dimostrare un nesso causale.",
+      "D": "L'assenza di influenza reciproca tra partecipanti durante la raccolta delle risposte."
     },
     "answer": "A",
     "tags": [
-      "ricerca_metodi",
-      "seo_geo_digitale"
+      "ricerca_metodi"
     ]
   },
   {
@@ -1059,9 +1056,9 @@
     "text": "Cosa si intende per tecnica delle domande 'a imbuto' nella conduzione di un focus group?",
     "options": {
       "A": "Partire da temi generali e poco strutturati per arrivare gradualmente a domande specifiche.",
-      "B": "Ripetere la stessa domanda piu volte finche tutti non danno la stessa risposta.",
-      "C": "Fare domande sempre piu difficili per testare la resistenza psicologica dei soggetti.",
-      "D": "Utilizzare un imbuto fisico per decidere l'ordine di parola dei partecipanti."
+      "B": "Ripetere la stessa domanda in modo identico finche tutti non danno la stessa risposta.",
+      "C": "Alternare domande statistiche e domande sperimentali con gruppo di controllo.",
+      "D": "Iniziare dalla conclusione del moderatore e chiedere ai partecipanti di confermarla."
     },
     "answer": "A",
     "tags": [
@@ -1072,12 +1069,12 @@
   {
     "id": 65,
     "section": "Ricerca in comunicazione",
-    "text": "Nella ricerca Forrester citata, quale metrica risulta essere la piu utilizzata dal settore 'Utility/Banking services'?",
+    "text": "Nel focus group, perche la composizione del gruppo va progettata prima della sessione?",
     "options": {
-      "A": "Per evitare che l'interazione sia condizionata e che i partecipanti non siano liberi di esprimersi.",
-      "B": "Perche i vertici aziendali non sono considerati target interessanti per le indagini qualitative.",
-      "C": "Perche le gerarchie impediscono al moderatore di guidare la discussione.",
-      "D": "Per aumentare la numerosita statistica del campione osservato."
+      "A": "Per favorire un confronto utile, coerente con gli obiettivi conoscitivi e non condizionato da squilibri eccessivi.",
+      "B": "Per rendere il gruppo statisticamente rappresentativo dell'intera popolazione nazionale.",
+      "C": "Per sostituire la traccia del moderatore con una selezione casuale dei partecipanti.",
+      "D": "Per garantire che ogni risposta possa essere trasformata direttamente in un dato di vendita."
     },
     "answer": "A",
     "tags": [
@@ -1106,14 +1103,15 @@
     "section": "Ricerca in comunicazione",
     "text": "Quale di questi strumenti e tipico della ricerca quantitativa?",
     "options": {
-      "A": "La ricerca e valutazione delle informazioni.",
-      "B": "La raccomandazione del prodotto ad altri utenti.",
-      "C": "La valutazione della soddisfazione post-acquisto.",
-      "D": "La produzione del contenuto da parte dell'azienda."
+      "A": "La survey.",
+      "B": "Il focus group.",
+      "C": "L'osservazione partecipante.",
+      "D": "Le tecniche proiettive."
     },
     "answer": "A",
     "tags": [
-      "ricerca_metodi"
+      "ricerca_metodi",
+      "social_roi"
     ]
   },
   {
@@ -1121,13 +1119,14 @@
     "section": "Ricerca in comunicazione",
     "text": "Quale tipologia di ricerca in comunicazione viene svolta per generare insight e supportare la pianificazione strategica prima dell'azione?",
     "options": {
-      "A": "La lettura dei dati alla luce di contesto, obiettivi e decisioni.",
-      "B": "La conversione automatica delle risposte in percentuali.",
-      "C": "La trascrizione letterale delle risposte senza interpretazione.",
-      "D": "La pulizia formale del dataset prima dell'archiviazione."
+      "A": "Ricerca ex ante o diagnostica, utile a orientare obiettivi e strategia prima dell'azione.",
+      "B": "Valutazione sommativa, usata solo per tirare le somme a fine campagna.",
+      "C": "Rendicontazione economica, centrata esclusivamente sui KPI di business.",
+      "D": "Certificazione di audience, necessaria per validare tiratura e ascolti."
     },
     "answer": "A",
     "tags": [
+      "enti_audience",
       "ricerca_metodi"
     ]
   },
@@ -1167,14 +1166,15 @@
     "section": "Ricerca in comunicazione",
     "text": "Quale di queste domande in un questionario misura la 'Competenza' dell'organizzazione?",
     "options": {
-      "A": "Per evitare che la conoscenza pregressa influenzi o inibisca la libera espressione delle opinioni.",
-      "B": "Per garantire che il campione sia statisticamente rappresentativo.",
-      "C": "Per evitare che il moderatore debba spiegare il tema di discussione.",
-      "D": "Per poter applicare un disegno causale con gruppo di controllo."
+      "A": "Quanto ritiene che l'organizzazione abbia le capacita necessarie per mantenere le promesse?",
+      "B": "Quanto ricorda il logo dell'organizzazione dopo aver visto la campagna?",
+      "C": "Quante volte ha letto un articolo sull'organizzazione nell'ultimo mese?",
+      "D": "Quanto spesso riceve comunicazioni interne dal suo responsabile diretto?"
     },
     "answer": "A",
     "tags": [
-      "ricerca_metodi"
+      "ricerca_metodi",
+      "social_roi"
     ]
   },
   {
@@ -1198,10 +1198,25 @@
     "section": "Ricerca in comunicazione",
     "text": "Quale delle seguenti e una caratteristica distintiva delle 'Ricerche Primarie'?",
     "options": {
-      "A": "L'inserimento del ricercatore in un gruppo sociale nel suo ambiente naturale per un periodo lungo.",
-      "B": "Guardare un focus group da dietro uno specchio unidirezionale senza farsi vedere.",
-      "C": "Monitorare i commenti degli utenti sulle pagine Facebook aziendali per 24 ore.",
-      "D": "Somministrare un questionario standardizzato a un campione ampio."
+      "A": "La raccolta di dati originali progettati appositamente per il problema di ricerca.",
+      "B": "L'utilizzo di dati gia raccolti da altri soggetti per finalita differenti.",
+      "C": "La sola analisi dei report storici gia disponibili in azienda.",
+      "D": "La rielaborazione di statistiche pubbliche senza contatto con i rispondenti."
+    },
+    "answer": "A",
+    "tags": [
+      "ricerca_metodi"
+    ]
+  },
+  {
+    "id": 74,
+    "section": "Ricerca in comunicazione",
+    "text": "Nella ricerca valutativa, cosa si intende per 'ricerche secondarie'?",
+    "options": {
+      "A": "L'utilizzo di dati gia esistenti, raccolti in precedenza per altri obiettivi.",
+      "B": "La raccolta di risposte originali tramite interviste, survey o osservazione.",
+      "C": "Una tecnica proiettiva basata su immagini e frasi da completare.",
+      "D": "Un esperimento con gruppo sperimentale e gruppo di controllo."
     },
     "answer": "A",
     "tags": [
@@ -1210,33 +1225,18 @@
     ]
   },
   {
-    "id": 74,
-    "section": "Ricerca in comunicazione",
-    "text": "Nella ricerca valutativa, cosa si intende per 'ricerche secondarie'?",
-    "options": {
-      "A": "Un riconoscimento (economico o di altra natura) fornito ai partecipanti per il loro tempo e contributo.",
-      "B": "La promessa di non pubblicare le risposte date dai partecipanti.",
-      "C": "Il compenso riconosciuto al moderatore per condurre la discussione.",
-      "D": "La selezione preliminare dei partecipanti prima del field."
-    },
-    "answer": "A",
-    "tags": [
-      "ricerca_metodi",
-      "seo_geo_digitale"
-    ]
-  },
-  {
     "id": 75,
     "section": "Ricerca in comunicazione",
     "text": "Quale strumento di ricerca qualitativa e piu indicato per far emergere sensazioni emotive profonde attraverso stimoli mascherati?",
     "options": {
-      "A": "L'analisi del contesto, la costruzione di ipotesi di lavoro e l'individuazione del target.",
-      "B": "La gestione dei conflitti che emergono durante la discussione tra i partecipanti.",
-      "C": "Il calcolo statistico della varianza delle risposte ottenute.",
-      "D": "La codifica delle risposte al termine della sessione di gruppo."
+      "A": "Le tecniche proiettive.",
+      "B": "La survey a risposta chiusa.",
+      "C": "L'analisi dei dati secondari.",
+      "D": "Il panel Auditel."
     },
     "answer": "A",
     "tags": [
+      "enti_audience",
       "ricerca_metodi",
       "social_roi"
     ]
@@ -1246,10 +1246,10 @@
     "section": "Ricerca in comunicazione",
     "text": "Cosa caratterizza la tecnica delle domande 'a imbuto' in un focus group?",
     "options": {
-      "A": "Ricerche Qualitative.",
-      "B": "Ricerche Quantitative.",
-      "C": "Analisi dei costi-benefici puramente economici.",
-      "D": "Ricerche causali con gruppo sperimentale e gruppo di controllo."
+      "A": "Si parte da domande generali per arrivare progressivamente a domande piu specifiche.",
+      "B": "Si chiede subito al partecipante di scegliere tra alternative numeriche chiuse.",
+      "C": "Si alternano domande di vendita e domande di certificazione delle audience.",
+      "D": "Si evitano le domande di apertura per ridurre la durata della sessione."
     },
     "answer": "A",
     "tags": [
@@ -1277,10 +1277,10 @@
     "section": "Ricerca in comunicazione",
     "text": "Quale tra queste e una fase della valutazione degli outcome nel modello PRE?",
     "options": {
-      "A": "Ricerca etnografica tramite osservazione partecipante.",
-      "B": "Monitoraggio giornaliero della rassegna stampa.",
-      "C": "Creazione di un database di contatti giornalistici.",
-      "D": "Calcolo del budget residuo alla fine del progetto."
+      "A": "La valutazione finale del cambiamento prodotto sui pubblici rispetto agli obiettivi.",
+      "B": "Il monitoraggio operativo delle uscite stampa durante l'implementazione.",
+      "C": "La raccolta di dati secondari prima della definizione del brief.",
+      "D": "La costruzione del database dei contatti giornalistici."
     },
     "answer": "A",
     "tags": [
@@ -1293,10 +1293,10 @@
     "section": "Ricerca in comunicazione",
     "text": "Nell'analisi del contenuto, cosa si intende per 'scomposizione'?",
     "options": {
-      "A": "Perche si basa su regole di scomposizione del testo fisse che chiunque puo replicare.",
-      "B": "Perche utilizza solo numeri e ignora completamente il significato delle parole.",
-      "C": "Perche si limita alla lettura impressionistica del testo da parte dell'analista.",
-      "D": "Perche interpreta liberamente i testi senza categorie condivise."
+      "A": "Suddividere il contenuto in unita di analisi e categorie definite in modo replicabile.",
+      "B": "Riassumere liberamente il testo senza una griglia condivisa di codifica.",
+      "C": "Trasformare ogni contenuto in un valore economico equivalente.",
+      "D": "Selezionare i partecipanti piu adatti a un focus group."
     },
     "answer": "A",
     "tags": [
@@ -1308,10 +1308,25 @@
     "section": "Ricerca in comunicazione",
     "text": "Cosa si intende per 'Output' in una ricerca valutativa?",
     "options": {
-      "A": "La survey",
-      "B": "L'intervista in profondita",
-      "C": "Le tecniche proiettive",
-      "D": "L'osservazione partecipante"
+      "A": "Il prodotto immediato di un'attivita, come comunicati, eventi, contenuti o uscite media.",
+      "B": "Il cambiamento stabile di opinioni, atteggiamenti o comportamenti dei pubblici.",
+      "C": "L'impatto finale sulle performance economiche complessive dell'organizzazione.",
+      "D": "La baseline strategica usata prima dell'avvio della campagna."
+    },
+    "answer": "A",
+    "tags": [
+      "ricerca_metodi"
+    ]
+  },
+  {
+    "id": 81,
+    "section": "Ricerca in comunicazione",
+    "text": "Nel focus group, qual e lo scopo della fase di 'Pianificazione'?",
+    "options": {
+      "A": "A definire obiettivi, target, composizione del gruppo, traccia e condizioni della discussione.",
+      "B": "A trasformare automaticamente le risposte dei partecipanti in percentuali generalizzabili.",
+      "C": "A sostituire il ruolo del moderatore con un questionario standardizzato.",
+      "D": "A calcolare il ROI della campagna prima di raccogliere i dati qualitativi."
     },
     "answer": "A",
     "tags": [
@@ -1320,34 +1335,19 @@
     ]
   },
   {
-    "id": 81,
-    "section": "Ricerca in comunicazione",
-    "text": "Nel focus group, qual e lo scopo della fase di 'Pianificazione'?",
-    "options": {
-      "A": "Perche dalla sua efficacia dipende la qualita e l'affidabilita delle informazioni raccolte.",
-      "B": "Perche sostituisce la fase di campionamento della ricerca.",
-      "C": "Perche elimina la necessita di interpretare i dati raccolti.",
-      "D": "Perche rende superflua la definizione degli obiettivi conoscitivi."
-    },
-    "answer": "A",
-    "tags": [
-      "ricerca_metodi"
-    ]
-  },
-  {
     "id": 82,
     "section": "Ricerca in comunicazione",
     "text": "Nella ricerca valutativa, la distinzione tra valutazione 'Summativa' e 'Formativa' risiede nel fatto che:",
     "options": {
-      "A": "Perche le organizzazioni preferiscono spesso dati numerici e percentuali piu facili da inserire in report sintetici.",
-      "B": "Perche consentono sempre generalizzazioni statistiche piu solide.",
-      "C": "Perche richiedono meno tempo e meno competenze interpretative.",
-      "D": "Perche sono usate solo dopo il lancio della campagna."
+      "A": "La formativa serve a migliorare in corso d'opera, la sommativa a valutare risultati e valore conclusivo.",
+      "B": "La formativa si usa solo dopo la campagna, la sommativa solo prima dell'implementazione.",
+      "C": "La formativa riguarda le audience certificate, la sommativa riguarda i dati qualitativi.",
+      "D": "La formativa misura solo il ROI, la sommativa solo il numero di comunicati prodotti."
     },
     "answer": "A",
     "tags": [
       "ricerca_metodi",
-      "seo_geo_digitale"
+      "social_roi"
     ]
   },
   {
@@ -1370,10 +1370,10 @@
     "section": "Ricerca in comunicazione",
     "text": "Quale tecnica di ricerca quantitativa si occupa della descrizione obiettiva e sistematica dei contenuti della comunicazione?",
     "options": {
-      "A": "Esperimento con gruppo di controllo e gruppo sperimentale",
-      "B": "Survey su campione statisticamente rappresentativo",
-      "C": "Focus group con domande a imbuto",
-      "D": "Analisi del contenuto della rassegna stampa"
+      "A": "Analisi del contenuto della rassegna stampa.",
+      "B": "Survey su campione statisticamente rappresentativo.",
+      "C": "Focus group con domande a imbuto.",
+      "D": "Esperimento con gruppo di controllo e gruppo sperimentale."
     },
     "answer": "A",
     "tags": [
@@ -1403,13 +1403,14 @@
     "text": "Perche le ricerche secondarie sono considerate vantaggiose ma limitate?",
     "options": {
       "A": "Sono poco costose ma soffrono di obsolescenza e scarsa adattabilita agli obiettivi specifici.",
-      "B": "Sono vantaggiose per la velocita, ma limitate perche non contengono numeri.",
-      "C": "Sono vantaggiose perche create dagli stakeholder, ma limitate dalla loro soggettivita.",
-      "D": "Sono vantaggiose perche gratuite, ma limitate perche illegali senza permessi."
+      "B": "Sono sempre aggiornate e perfettamente coerenti con la domanda di ricerca.",
+      "C": "Eliminano la necessita di interpretare i dati nel contesto dell'organizzazione.",
+      "D": "Garantiscono lo stesso livello di profondita delle interviste qualitative primarie."
     },
     "answer": "A",
     "tags": [
-      "ricerca_metodi"
+      "ricerca_metodi",
+      "seo_geo_digitale"
     ]
   },
   {
@@ -1417,10 +1418,10 @@
     "section": "Ricerca in comunicazione",
     "text": "Quale di questi metodi di raccolta dati e considerato 'Primario'?",
     "options": {
-      "A": "Immagini, spot, oggetti concreti o frasi da completare.",
-      "B": "Questionari a risposta chiusa somministrati a un campione ampio.",
-      "C": "Tabelle statistiche ricavate da dati secondari gia disponibili.",
-      "D": "Liste di KPI economici da inserire nel report finale."
+      "A": "Una survey somministrata direttamente a un campione definito per la ricerca.",
+      "B": "Una tabella statistica gia pubblicata da un ente esterno.",
+      "C": "Un report storico prodotto da una precedente campagna.",
+      "D": "Una rassegna di dati amministrativi gia disponibili in azienda."
     },
     "answer": "A",
     "tags": [
@@ -1432,15 +1433,14 @@
     "section": "Ricerca in comunicazione",
     "text": "Cosa si intende per 'Customer Journey' nel contesto della comunicazione?",
     "options": {
-      "A": "Mostrare una lista di marchi e chiedere quali si ricordano di aver visto in pubblicita.",
-      "B": "Chiedere 'Qual e l'ultima pubblicita che hai visto?' a bruciapelo.",
-      "C": "Analizzare se l'utente ha acquistato il prodotto dopo un anno.",
-      "D": "Misurare la quota di mercato raggiunta dopo la campagna."
+      "A": "Il percorso di interazioni e touchpoint che accompagna il cliente dalla conoscenza al post-acquisto.",
+      "B": "Il solo momento in cui il cliente paga il prodotto nel punto vendita.",
+      "C": "La sequenza interna con cui l'azienda approva una campagna pubblicitaria.",
+      "D": "Il calendario editoriale dei contenuti pubblicati sui canali social proprietari."
     },
     "answer": "A",
     "tags": [
       "ricerca_metodi",
-      "seo_geo_digitale",
       "social_roi"
     ]
   },
@@ -1449,14 +1449,16 @@
     "section": "Ricerca in comunicazione",
     "text": "Cosa indica il parametro 'Spoke person' in un'analisi qualitativa?",
     "options": {
-      "A": "La percentuale di articoli che includono citazioni dirette di un portavoce aziendale",
-      "B": "La velocita con cui parla il portavoce",
-      "C": "Il numero di lingue parlate dall'ufficio stampa",
-      "D": "Il costo del vestito indossato durante l'intervista"
+      "A": "La presenza e il peso delle citazioni attribuite a portavoce o rappresentanti ufficiali.",
+      "B": "La presenza dei messaggi chiave definiti dall'organizzazione nel contenuto.",
+      "C": "La centralita del soggetto citato all'interno dell'articolo analizzato.",
+      "D": "La valutazione del tono favorevole, neutro o sfavorevole della copertura."
     },
     "answer": "A",
     "tags": [
-      "ricerca_metodi"
+      "modelli",
+      "ricerca_metodi",
+      "social_roi"
     ]
   },
   {
@@ -1464,16 +1466,15 @@
     "section": "Ricerca in comunicazione",
     "text": "Nel contesto della ricerca valutativa, qual e il principale limite delle 'Ricerche Secondarie'?",
     "options": {
-      "A": "Domande che permettono ai partecipanti di riflettere sui commenti precedenti e chiudere la discussione.",
-      "B": "Domande di apertura usate per rompere il ghiaccio all'inizio.",
-      "C": "Domande di transizione che accompagnano verso il tema centrale.",
-      "D": "Domande chiave usate per approfondire il nucleo della discussione."
+      "A": "Possono essere obsolete o poco adattabili agli obiettivi specifici della ricerca.",
+      "B": "Garantiscono sempre maggiore accuratezza rispetto alle ricerche primarie.",
+      "C": "Permettono di evitare qualunque interpretazione da parte del ricercatore.",
+      "D": "Sono utilizzabili solo quando non esistono dati quantitativi disponibili."
     },
     "answer": "A",
     "tags": [
       "ricerca_metodi",
-      "seo_geo_digitale",
-      "social_roi"
+      "seo_geo_digitale"
     ]
   },
   {
@@ -1494,18 +1495,16 @@
   {
     "id": 92,
     "section": "Ricerca in comunicazione",
-    "text": "Perche nel Focus Group e sconsigliato avere partecipanti legati da rapporti gerarchici diretti?",
+    "text": "Nel focus group, perche e importante evitare dinamiche che inibiscono la parola dei partecipanti?",
     "options": {
-      "A": "A causa del rischio di obsolescenza e della difficolta di adattamento dei dati a obiettivi specifici.",
-      "B": "Perche permettono di raccogliere dati progettati ad hoc per il problema.",
-      "C": "Perche sono sempre piu accurate delle ricerche primarie.",
-      "D": "Perche eliminano il bisogno di interpretazione contestuale."
+      "A": "Per raccogliere opinioni libere e ridurre il rischio che alcuni soggetti orientino o blocchino gli altri.",
+      "B": "Per ottenere automaticamente un campione statisticamente rappresentativo.",
+      "C": "Per trasformare la discussione qualitativa in un esperimento causale.",
+      "D": "Per evitare che il moderatore debba preparare una traccia di discussione."
     },
     "answer": "A",
     "tags": [
-      "ricerca_metodi",
-      "seo_geo_digitale",
-      "social_roi"
+      "ricerca_metodi"
     ]
   },
   {
@@ -1529,10 +1528,10 @@
     "section": "Ricerca in comunicazione",
     "text": "Nel contesto della ricerca qualitativa, qual e il ruolo dell''Osservatore' durante un Focus Group?",
     "options": {
-      "A": "Registrare le reazioni non verbali, le dinamiche di gruppo e supportare il moderatore senza intervenire direttamente.",
-      "B": "Interrompere la discussione ogni volta che un partecipante dice qualcosa di non condiviso dal brand.",
-      "C": "Controllare che i partecipanti non rubino i biscotti messi a disposizione per il break.",
-      "D": "Sostituire i partecipanti che si annoiano durante le due ore di discussione."
+      "A": "Registrare reazioni non verbali e dinamiche di gruppo, supportando il moderatore senza guidare la discussione.",
+      "B": "Sostituire il moderatore nella conduzione delle domande piu delicate.",
+      "C": "Valutare economicamente il contributo di ogni partecipante alla ricerca.",
+      "D": "Trasformare in tempo reale tutte le risposte in un questionario quantitativo."
     },
     "answer": "A",
     "tags": [
@@ -1544,15 +1543,14 @@
     "section": "Ricerca in comunicazione",
     "text": "Nella ricerca qualitativa, qual e il vantaggio principale dell''Interazione' tra i partecipanti di un Focus Group?",
     "options": {
-      "A": "Funziona da stimolo per il dialogo e la creativita, facendo emergere idee che non uscirebbero in un'intervista singola.",
-      "B": "Permette ai partecipanti di dividersi il costo del parcheggio fuori dalla sede della ricerca.",
-      "C": "Serve a creare nuovi gruppi di amici che poi compreranno insieme i prodotti dell'azienda.",
-      "D": "Consente al moderatore di addormentarsi mentre i partecipanti discutono autonomamente."
+      "A": "Funziona da stimolo per il dialogo e fa emergere idee che potrebbero non uscire in un'intervista singola.",
+      "B": "Elimina ogni influenza reciproca tra partecipanti durante la discussione.",
+      "C": "Garantisce risultati statisticamente generalizzabili alla popolazione.",
+      "D": "Permette di dimostrare il nesso causale tra campagna e acquisto."
     },
     "answer": "A",
     "tags": [
-      "ricerca_metodi",
-      "seo_geo_digitale"
+      "ricerca_metodi"
     ]
   },
   {
@@ -1577,14 +1575,16 @@
     "section": "Ricerca in comunicazione",
     "text": "Nella fase di Ranking dei motori di ricerca, su cosa si basa la selezione dei risultati?",
     "options": {
-      "A": "Su numerosi fattori di rilevanza e pertinenza rispetto alla query dell'utente.",
-      "B": "Sulla quantita di colori vivaci presenti nel design del sito.",
-      "C": "Sul numero di dipendenti dell'azienda proprietaria del sito web.",
-      "D": "Esclusivamente sulla data di creazione della pagina web."
+      "A": "Su numerosi fattori di rilevanza, autorevolezza e pertinenza rispetto alla query dell'utente.",
+      "B": "Sulla sola frequenza della parola chiave all'interno della pagina.",
+      "C": "Sul volume di traffico paid acquistato dall'organizzazione.",
+      "D": "Sull'ordine cronologico con cui le pagine sono state scoperte dal crawler."
     },
     "answer": "A",
     "tags": [
-      "ricerca_metodi"
+      "ricerca_metodi",
+      "seo_geo_digitale",
+      "social_roi"
     ]
   },
   {
@@ -1623,10 +1623,10 @@
     "section": "Ricerca in comunicazione",
     "text": "Cosa caratterizza l'osservazione partecipante di tipo 'dissimulato'?",
     "options": {
-      "A": "L'utilizzo di citazioni dirette e un resoconto ordinato tematicamente.",
-      "B": "La trasformazione delle risposte in frequenze e percentuali sintetiche.",
-      "C": "La presentazione dei risultati come sequenza cronologica dell'incontro.",
-      "D": "La verifica del nesso causale tramite gruppo sperimentale e controllo."
+      "A": "Il ricercatore partecipa al contesto senza dichiarare apertamente il proprio ruolo di osservatore.",
+      "B": "Il ricercatore osserva il gruppo dichiarando fin dall'inizio obiettivi e metodo.",
+      "C": "I partecipanti compilano un questionario anonimo senza incontrare il ricercatore.",
+      "D": "Il moderatore conduce una discussione collettiva con una traccia a imbuto."
     },
     "answer": "A",
     "tags": [
@@ -1638,15 +1638,14 @@
     "section": "Ricerca in comunicazione",
     "text": "Quale tra i seguenti e un limite intrinseco dei focus group?",
     "options": {
-      "A": "La necessita di testare i risultati ottenuti con un'indagine quantitativa successiva.",
-      "B": "Il fatto di essere troppo economici per essere considerati professionali.",
-      "C": "L'obbligo di svolgerli esclusivamente in forma scritta via email.",
-      "D": "L'impossibilita per i partecipanti di parlare tra loro."
+      "A": "La necessita di verificare o approfondire i risultati con ulteriori strumenti, spesso quantitativi.",
+      "B": "La possibilita di ottenere automaticamente dati rappresentativi dell'intera popolazione.",
+      "C": "L'assenza di interazione tra partecipanti durante la discussione.",
+      "D": "La capacita di eliminare completamente il ruolo del moderatore."
     },
     "answer": "A",
     "tags": [
-      "ricerca_metodi",
-      "seo_geo_digitale"
+      "ricerca_metodi"
     ]
   },
   {
@@ -1654,10 +1653,10 @@
     "section": "Ricerca in comunicazione",
     "text": "Cosa significa che la ricerca valutativa deve 'supportare la decisione'?",
     "options": {
-      "A": "La necessita di testare i risultati ottenuti con un'indagine quantitativa successiva.",
-      "B": "La possibilita di stimare con precisione la quota di mercato del brand.",
-      "C": "La capacita di osservare comportamenti reali senza dichiarazioni verbali.",
-      "D": "L'applicazione di inferenze causali tramite gruppo di controllo."
+      "A": "Trasformare dati e interpretazioni in indicazioni utili per scegliere o correggere le azioni.",
+      "B": "Produrre un archivio completo di dati grezzi senza raccomandazioni operative.",
+      "C": "Sostituire le decisioni manageriali con un unico indicatore automatico.",
+      "D": "Misurare solo la visibilita media ottenuta nel periodo analizzato."
     },
     "answer": "A",
     "tags": [
@@ -1670,9 +1669,9 @@
     "text": "Nel contesto del Social Media Listening, perche e fondamentale definire le 'domande di business' prima di raccogliere i dati?",
     "options": {
       "A": "Per evitare che la ricerca sia guidata casualmente dai messaggi trovati, perdendo di vista le esigenze dell'azienda.",
-      "B": "Perche i termini di servizio dei social impongono di dichiarare il motivo dell'ascolto.",
-      "C": "Per poter scaricare i dati gratuitamente senza pagare le licenze dei software.",
-      "D": "Per dimostrare ai dipendenti che il management ha le idee chiare."
+      "B": "Per scegliere prima il tool piu completo, indipendentemente dagli obiettivi conoscitivi.",
+      "C": "Per usare lo stesso set di keyword in ogni mercato senza adattamenti locali.",
+      "D": "Per sostituire gli obiettivi di business con il volume complessivo dei messaggi raccolti."
     },
     "answer": "A",
     "tags": [
@@ -1686,10 +1685,10 @@
     "section": "Ricerca in comunicazione",
     "text": "Qual e la fase piu delicata nella costruzione di un'indagine su campioni (survey)?",
     "options": {
-      "A": "Per evitare che la ricerca sia guidata casualmente dai messaggi trovati, perdendo di vista le esigenze dell'azienda.",
-      "B": "Per scegliere prima le metriche piu facili da raccogliere sulle piattaforme disponibili.",
-      "C": "Per limitare l'analisi ai soli canali proprietari dell'organizzazione.",
-      "D": "Per trasformare ogni conversazione raccolta in un indicatore di performance economica."
+      "A": "La costruzione del campione e del questionario, perche condiziona la qualita dei dati raccolti.",
+      "B": "La scelta del software di impaginazione usato per presentare il report finale.",
+      "C": "L'archiviazione dei questionari dopo la chiusura dell'analisi.",
+      "D": "La selezione degli esempi grafici da inserire nelle slide conclusive."
     },
     "answer": "A",
     "tags": [
@@ -3315,14 +3314,13 @@
     "text": "Secondo il report 'State of PR Measurement', qual e la sfida attuale per i professionisti?",
     "options": {
       "A": "Collegare le metriche utilizzate ai risultati di business e all'impatto strategico.",
-      "B": "Iniziare finalmente a monitorare i risultati, visto che quasi nessuno lo fa.",
-      "C": "Imparare a scrivere comunicati stampa senza l'uso del computer.",
-      "D": "Convincere i giornalisti a pubblicare piu notizie positive gratis."
+      "B": "Limitarsi alla rendicontazione degli output media prodotti nel periodo.",
+      "C": "Sostituire i KPI collegati agli obiettivi con metriche di volume facilmente disponibili.",
+      "D": "Separare la misurazione della comunicazione dagli obiettivi decisionali del management."
     },
     "answer": "A",
     "tags": [
       "media_monitoring",
-      "ricerca_metodi",
       "seo_geo_digitale",
       "social_roi"
     ]
@@ -6227,9 +6225,9 @@
     "text": "Perche l'attribuzione di causalita e considerata una sfida nel modello CCPM?",
     "options": {
       "A": "Perche non sempre e possibile isolare gli effetti della comunicazione tramite metodi sperimentali rigorosi.",
-      "B": "Perche i manager rifiutano per principio di collegare la comunicazione agli obiettivi di business.",
-      "C": "Perche i dati raccolti sono sempre di natura numerica e oggettiva.",
-      "D": "Perche le teorie scientifiche sulla comunicazione sono ormai considerate obsolete."
+      "B": "Perche gli output media dimostrano automaticamente il contributo della comunicazione al business.",
+      "C": "Perche la causalita puo essere stabilita solo contando le impression generate.",
+      "D": "Perche il modello CCPM esclude l'analisi delle variabili esterne."
     },
     "answer": "A",
     "tags": [
@@ -6900,10 +6898,10 @@
     "section": "ROI, AVE e indicatori economici",
     "text": "Nel framework di misurazione di Vincenzo Cosenza, cosa differenzia le 'Information' dai 'Dati'?",
     "options": {
-      "A": "Le informazioni sono dati lavorati e inseriti in un contesto specifico",
-      "B": "I dati sono sempre digitali, le informazioni solo analogiche",
-      "C": "Le informazioni sono consigli pratici per l'azienda",
-      "D": "Non c'e alcuna differenza, sono sinonimi"
+      "A": "Le informazioni sono dati lavorati e inseriti in un contesto specifico.",
+      "B": "I dati sono gia interpretati, mentre le informazioni sono unita grezze non contestualizzate.",
+      "C": "Le informazioni coincidono con raccomandazioni operative gia pronte per l'azione.",
+      "D": "Non c'e alcuna differenza, sono sinonimi nel processo di analisi."
     },
     "answer": "A",
     "tags": [
