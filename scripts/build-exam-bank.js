@@ -29,11 +29,12 @@ const TARGETS = new Map([
   ["Digitale, social e motori di ricerca", 75],
   ["Monitoring, listening e sentiment", 45],
   ["Enti certificatori e audience", 45],
-  ["Modelli di valutazione", 75],
+  ["Modelli di valutazione", 125],
   ["Performance measurement e CCPM", 55],
   ["ROI, AVE e indicatori economici", 45],
   ["Intangibili e reputazione", 55],
 ]);
+const EXPECTED_TOTAL = [...TARGETS.values()].reduce((sum, count) => sum + count, 0);
 
 const SPECIAL_QUIZZES = [
   { id: "all", label: "Generale bilanciato", description: "50 domande casuali da tutto il banco" },
@@ -229,6 +230,309 @@ const examSeeds = [
   ], "D"),
 ];
 
+const modelExtraSeeds = [
+  q("Modelli di valutazione", "Nel modello Short di Watson, qual è il limite principale della logica one-way?", [
+    "Considera la comunicazione come flusso lineare e non integra veri feedback.",
+    "Valuta solo le relazioni interne tra collaboratori e superiori.",
+    "Trasforma sempre gli outcome in indicatori economici di breve periodo.",
+    "Sostituisce la definizione degli obiettivi con la sola analisi dei competitor.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Il modello Short di Watson è più adatto quando l'analisi riguarda:", [
+    "Campagne circoscritte, copertura media e output di breve periodo.",
+    "La costruzione pluriennale della fiducia con tutti gli stakeholder.",
+    "La revisione continua degli obiettivi durante ogni fase del programma.",
+    "La misurazione finale delle performance economiche complessive aziendali.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Che cosa distingue il Continuing Model di Watson rispetto allo Short Model?", [
+    "Introduce feedback continui e consente di ricalibrare obiettivi e attività.",
+    "Misura soltanto la quantità di comunicati prodotti in una campagna.",
+    "Elimina la ricerca iniziale perché considera sufficienti gli output.",
+    "Riduce la valutazione a una fotografia finale della copertura media.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nel Continuing Model, a cosa serve la valutazione durante lo svolgimento del programma?", [
+    "A verificare l'andamento e correggere la strategia sulla base dei feedback.",
+    "A certificare la tiratura dei mezzi usati nel piano media.",
+    "A rilevare soltanto la soddisfazione finale con una survey ex post.",
+    "A calcolare il valore pubblicitario equivalente delle uscite stampa.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nel modello Yardstick, che cosa rientra nel livello degli output?", [
+    "Uscite media, impression, materiali prodotti e pubblici potenzialmente raggiunti.",
+    "Cambiamenti stabili negli atteggiamenti e nei comportamenti dei pubblici.",
+    "Contributo della comunicazione ai risultati economici e competitivi.",
+    "Fiducia, reputazione e qualità della relazione con gli stakeholder.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nel modello Yardstick, che cosa indica il livello degli out-take?", [
+    "Ricezione, comprensione, conoscenza e ricordo del messaggio da parte dei pubblici.",
+    "Numero di articoli pubblicati e audience potenziale della copertura.",
+    "Valore economico finale prodotto dalla comunicazione sul business.",
+    "Qualità dei processi interni della funzione comunicazione.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nel modello Yardstick, quando si parla di outcome?", [
+    "Quando si osservano cambiamenti in opinioni, atteggiamenti o comportamenti.",
+    "Quando si contano comunicati stampa, eventi e contenuti prodotti.",
+    "Quando si stabilisce il budget disponibile per la campagna.",
+    "Quando si selezionano i giornalisti da inserire nella media list.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Perché nel modello Yardstick la definizione degli obiettivi precede la misurazione?", [
+    "Perché consente di scegliere livelli e indicatori coerenti con ciò che si vuole ottenere.",
+    "Perché gli obiettivi servono solo a descrivere i risultati già raggiunti.",
+    "Perché gli indicatori devono essere identici per tutte le organizzazioni.",
+    "Perché la copertura media è sempre sufficiente per valutare ogni effetto.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nel modello di Brioschi, che cosa indica l'efficacia tecnica?", [
+    "Il grado di raggiungimento degli obiettivi specifici della comunicazione.",
+    "La capacità della comunicazione di ridurre i costi fiscali dell'organizzazione.",
+    "La quantità di vendite attribuibile direttamente alla funzione commerciale.",
+    "La qualità estetica dei materiali prodotti durante la campagna.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nel modello di Brioschi, che cosa riguarda l'efficacia economica?", [
+    "Il contributo della comunicazione agli obiettivi economici dell'organizzazione.",
+    "La soddisfazione sociale generata presso i pubblici di riferimento.",
+    "La correttezza metodologica della costruzione del questionario.",
+    "Il numero di contenuti pubblicati sui media proprietari nel periodo.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nel modello di Brioschi, che cosa riguarda l'efficacia sociale?", [
+    "Il benessere prodotto dalla comunicazione nei confronti degli interlocutori sociali.",
+    "Il costo complessivo dei canali acquistati per ottenere copertura.",
+    "Il ritorno economico immediato generato dalle vendite di periodo.",
+    "La pressione pubblicitaria pianificata sui mezzi a pagamento.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Quali livelli di complessità prevede Brioschi per valutare l'efficacia della comunicazione?", [
+    "Elementare, intermedio e avanzato.",
+    "Output, out-take e outcome.",
+    "Strategico, tattico e operativo.",
+    "Quantitativo, qualitativo e narrativo.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nel modello PII, che cosa valuta la fase di Preparation?", [
+    "L'adeguatezza ex ante di messaggi, contenuti e scelte comunicative.",
+    "La quantità di copertura ottenuta dopo la conclusione della campagna.",
+    "Gli effetti cognitivi prodotti nel medio periodo sui pubblici.",
+    "La relazione finale tra comunicazione e performance di business.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nel modello PII, che cosa misura la fase di Implementation?", [
+    "Sforzi, strumenti, persone o media raggiunti durante l'esecuzione del programma.",
+    "Il cambiamento profondo delle opinioni dopo un lungo periodo di osservazione.",
+    "La reputazione sedimentata dell'organizzazione presso tutti gli stakeholder.",
+    "La coerenza degli obiettivi di business definiti dal top management.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nel modello PII, perché la fase di Impact richiede tecniche più sofisticate?", [
+    "Perché osserva effetti cognitivi e comportamentali che maturano in tempi più lunghi.",
+    "Perché si limita a contare le uscite stampa prodotte nel periodo.",
+    "Perché riguarda solo la distribuzione dei materiali ai giornalisti.",
+    "Perché sostituisce la ricerca con il giudizio intuitivo del comunicatore.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nel modello PII, perché gli output sono definiti pseudo-effetti?", [
+    "Perché mostrano ciò che è stato prodotto, non gli effetti autentici sui pubblici.",
+    "Perché sono indicatori economici finali già collegati alle vendite.",
+    "Perché descrivono cambiamenti stabili negli atteggiamenti dei pubblici.",
+    "Perché misurano direttamente la reputazione complessiva dell'organizzazione.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Il MACRO Model analizza la valutazione della comunicazione su quali livelli?", [
+    "Livello individuale dei professionisti e livello dei programmi di comunicazione.",
+    "Livello dei media tradizionali e livello dei media digitali acquistati.",
+    "Livello economico, livello finanziario e livello contabile della funzione.",
+    "Livello della survey, livello del focus group e livello dell'intervista.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nel MACRO Model, che cosa sono gli input?", [
+    "Microdecisioni professionali su formato, contenuti, immagini e scelte redazionali.",
+    "Risultati economici finali generati dalla reputazione aziendale.",
+    "Cambiamenti comportamentali dei pubblici osservati dopo la campagna.",
+    "Indicatori di fiducia raccolti presso stakeholder esterni.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Qual è la sequenza della piramide del MACRO Model?", [
+    "Input, output e outcome.",
+    "Ricerca, ascolto e pubblicazione.",
+    "Awareness, consideration e purchase.",
+    "Crawling, indexing e ranking.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Da cosa dipende, nel MACRO Model, la sofisticazione della valutazione?", [
+    "Dalle risorse disponibili e dal livello di sviluppo del processo valutativo.",
+    "Dal numero di follower presenti sui canali social proprietari.",
+    "Dalla scelta di misurare solo indicatori economici di vendita.",
+    "Dalla possibilità di usare sempre lo stesso questionario standard.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nel Measurement Tree, che cosa rappresenta l'ambiente in cui cresce l'albero?", [
+    "Il contesto competitivo e organizzativo in cui si colloca la comunicazione.",
+    "Gli outcome finali raggiunti sui pubblici prioritari della campagna.",
+    "I materiali visibili prodotti dalla funzione comunicazione.",
+    "Le relazioni interne tra collaboratori coinvolti nel progetto.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nel Measurement Tree, che cosa rappresenta la corteccia dell'albero?", [
+    "I prodotti o servizi dell'organizzazione visibili all'esterno.",
+    "Gli obiettivi strategici che alimentano l'intero programma.",
+    "I pubblici del piano di media relations selezionati per la campagna.",
+    "Gli effetti su opinioni, atteggiamenti e comportamenti dei pubblici.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nel Measurement Tree, che cosa rappresenta la linfa?", [
+    "Ciò che è visibile ai collaboratori interni e alimenta il funzionamento dell'organizzazione.",
+    "La quota di copertura media ottenuta rispetto ai concorrenti diretti.",
+    "Il valore monetario equivalente della visibilità editoriale raggiunta.",
+    "La lista degli output prodotti dalla funzione comunicazione nel periodo.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nel Measurement Tree, quale differenza c'è tra rami e foglie?", [
+    "I rami indicano i pubblici della campagna, le foglie i pubblici del piano media relations.",
+    "I rami indicano gli output prodotti, le foglie gli obiettivi economici finali.",
+    "I rami rappresentano le risorse investite, le foglie i costi dei canali.",
+    "I rami rappresentano gli outcome, le foglie le microdecisioni professionali.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Quale passaggio appartiene alle fasi del Measurement Tree?", [
+    "Valutare output e outcome rispetto agli obiettivi definiti all'inizio.",
+    "Calcolare il ROI pubblicitario partendo dal prezzo degli spazi media.",
+    "Definire i pubblici del piano media relations prima degli obiettivi.",
+    "Sostituire la valutazione finale con una semplice rassegna stampa.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nel PRE Model, che domanda guida la fase di Audit?", [
+    "Dove siamo adesso?",
+    "Quanto vale economicamente la copertura ottenuta?",
+    "Quale share televisivo abbiamo raggiunto?",
+    "Quante uscite stampa dobbiamo comprare?",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nel PRE Model, che cosa si definisce nella fase degli obiettivi?", [
+    "Dove l'organizzazione deve arrivare con il programma di comunicazione.",
+    "Il valore pubblicitario equivalente delle uscite media future.",
+    "La composizione del panel usato dagli enti certificatori.",
+    "Il numero di domande da inserire nel questionario finale.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nel PRE Model, che domanda sintetizza la fase strategica?", [
+    "Come ci arriviamo?",
+    "Quanti articoli sono usciti?",
+    "Chi ha certificato la tiratura?",
+    "Quanto costa il media buying?",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nel PRE Model, a cosa serve la valutazione ongoing?", [
+    "A capire se il programma sta procedendo verso gli obiettivi mentre è in corso.",
+    "A chiudere il bilancio finale quando ogni attività è già terminata.",
+    "A selezionare il campione statistico per una ricerca nazionale.",
+    "A stimare solo il valore economico finale della copertura ottenuta.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nel PRE Model, quale domanda appartiene alla valutazione finale?", [
+    "Com'è andata?",
+    "Dove siamo adesso?",
+    "Come ci arriviamo?",
+    "Quale media compriamo?",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nel Value Link, qual è il primo passaggio del percorso di valore?", [
+    "Raggiungere i pubblici e renderli consapevoli dell'organizzazione.",
+    "Collegare la relazione solo al fatturato osservato nel breve periodo.",
+    "Eliminare gli stakeholder meno favorevoli dal processo comunicativo.",
+    "Misurare solo la copertura ottenuta sui media tradizionali.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nel Value Link, che cosa significa indirizzare i pubblici verso la relazione?", [
+    "Favorire un coinvolgimento che avvicini i pubblici all'organizzazione.",
+    "Aumentare soltanto la frequenza dei messaggi pubblicitari acquistati.",
+    "Sostituire gli obiettivi relazionali con metriche di audience certificata.",
+    "Limitarsi a registrare il numero di contenuti pubblicati nel periodo.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nel Value Link, perché sono importanti trattenere e motivare i pubblici?", [
+    "Perché la relazione deve mantenersi nel tempo prima di contribuire ai risultati.",
+    "Perché la valutazione termina quando il pubblico vede il primo messaggio.",
+    "Perché gli outcome coincidono sempre con le impression generate.",
+    "Perché la fiducia non incide sulle performance organizzative.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nel Value Link, quando la relazione produce valore per l'organizzazione?", [
+    "Quando contribuisce positivamente agli obiettivi e ai risultati di business.",
+    "Quando viene descritta solo come quantità di uscite stampa ottenute.",
+    "Quando sostituisce la definizione degli obiettivi di comunicazione.",
+    "Quando resta separata dagli stakeholder prioritari dell'organizzazione.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nel Communication Value System, qual è il punto di partenza del processo?", [
+    "Identificare gli obiettivi di business strategici dell'organizzazione.",
+    "Scegliere prima i KPI disponibili nella dashboard della funzione.",
+    "Calcolare la copertura media ottenuta nel periodo precedente.",
+    "Redigere il report finale prima della pianificazione comunicativa.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nel Communication Value System, perché gli obiettivi di business vengono collegati agli stakeholder?", [
+    "Per capire quali pubblici possono influenzare il raggiungimento degli obiettivi.",
+    "Per trasformare ogni stakeholder in un indicatore economico uniforme.",
+    "Per evitare di definire obiettivi specifici di comunicazione.",
+    "Per sostituire l'analisi dei pubblici con la rassegna stampa.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nel Communication Value System, qual è l'esito finale del percorso di misurazione?", [
+    "Costruire una Communication Balanced Scorecard con KPI coerenti.",
+    "Produrre una lista di comunicati stampa ordinati per data.",
+    "Misurare soltanto il numero di interazioni sui canali social.",
+    "Calcolare l'AVE come unica metrica di valore comunicativo.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Quali sono le quattro prospettive classiche della Balanced Scorecard di Kaplan e Norton?", [
+    "Finanziaria, cliente, processi interni, apprendimento e crescita.",
+    "Output, out-take, outcome e impatto.",
+    "Preparazione, implementazione, impatto e rendicontazione.",
+    "Awareness, consideration, purchase e loyalty.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Quali prospettive aggiunge Parmenter alla Balanced Scorecard?", [
+    "Comunità e dipendenti.",
+    "SEO e social listening.",
+    "Tiratura e diffusione.",
+    "AVE e ROI pubblicitario.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nell'adattamento di Vos e Schoemaker, a quale area comunicativa corrisponde la prospettiva cliente?", [
+    "Alla comunicazione di marketing.",
+    "Alla comunicazione istituzionale.",
+    "All'organizzazione della funzione comunicazione.",
+    "Alla comunicazione interna sui processi.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nell'adattamento di Vos e Schoemaker, a che cosa corrisponde apprendimento e crescita?", [
+    "All'organizzazione della funzione comunicazione.",
+    "Alla comunicazione di marketing verso i clienti.",
+    "Alla certificazione della diffusione dei mezzi.",
+    "Alla misurazione della copertura editoriale.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nella qualità del sistema di comunicazione, che cosa indica la chiarezza?", [
+    "Obiettivi e messaggi comprensibili per i pubblici cui sono rivolti.",
+    "La sola quantità di uscite pubblicate dai media nel periodo.",
+    "Il valore monetario equivalente della copertura editoriale.",
+    "La presenza di un unico indicatore uguale per tutte le campagne.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nella qualità del sistema di comunicazione, che cosa indica l'orientamento all'ambiente?", [
+    "La capacità di ascoltare contesto, stakeholder e segnali esterni rilevanti.",
+    "La decisione di misurare solo attività interne alla funzione.",
+    "Il calcolo automatico della copertura ottenuta su un canale.",
+    "La scelta di evitare benchmark e confronti con il contesto.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nella qualità del sistema di comunicazione, che cosa indica la coerenza?", [
+    "L'allineamento tra obiettivi, messaggi, canali e comportamenti organizzativi.",
+    "La quantità complessiva di impression generate nel periodo.",
+    "Il costo medio sostenuto per ciascun contenuto pubblicato.",
+    "La presenza di indicatori separati dagli obiettivi strategici.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nella qualità del sistema di comunicazione, che cosa indica la reattività?", [
+    "La capacità di rispondere ai segnali raccolti e adattare le azioni.",
+    "La possibilità di misurare soltanto alla fine del programma.",
+    "La stabilità dei messaggi anche quando il contesto cambia.",
+    "La coincidenza tra output prodotti e impatto di business.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Su quali tre radici teoriche si fonda il CCPM di Romenti?", [
+    "Ricerca valutativa, performance measurement e studio degli intangibili.",
+    "SEO, social media listening e pianificazione pubblicitaria.",
+    "Tiratura, diffusione e audience certificata.",
+    "Survey, focus group e osservazione partecipante.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nel CCPM, che cosa sono le performance expectations?", [
+    "Le attese informative e valutative che orientano obiettivi, metriche e decisioni.",
+    "Le uscite stampa minime fissate come unico criterio di riuscita della campagna.",
+    "Le vendite di periodo considerate come unico indicatore del successo comunicativo.",
+    "Le preferenze grafiche del management sul formato del report finale.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nel CCPM, che cosa indaga l'audit della cultura della misurazione?", [
+    "Come l'organizzazione concepisce controllo, miglioramento, KPI e uso dei risultati.",
+    "Quale ente certifica la diffusione dei quotidiani e dei periodici.",
+    "Quanti contenuti digitali vengono pubblicati ogni settimana dalla funzione.",
+    "Quale formato creativo deve essere usato nella campagna successiva.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "Nel modello logico del CCPM, qual è la sequenza corretta?", [
+    "Input, attività, output, outcome, variabili ponte e impatto sulle performance.",
+    "Awareness, consideration, purchase, loyalty, advocacy e vendita.",
+    "Crawling, indexing, ranking, click, conversione e retention.",
+    "Preparazione, implementazione, rassegna stampa, fatturato e bilancio.",
+  ], "A", "appunti-cheat"),
+  q("Modelli di valutazione", "A che cosa servono le mappe narrative nel CCPM?", [
+    "A rappresentare interdipendenze e percorsi plausibili di creazione del valore.",
+    "A sostituire la raccolta dei dati con una descrizione narrativa non verificata.",
+    "A ordinare graficamente le uscite stampa in base alla data di pubblicazione.",
+    "A sintetizzare in un unico indice il valore reputazionale complessivo.",
+  ], "A", "appunti-cheat"),
+];
+
 const studySeeds = [
   q("Fondamenti della misurazione", "A cosa servono principalmente le misure rendicontative?", [
     "A correggere una campagna durante la sua realizzazione operativa",
@@ -271,6 +575,12 @@ const studySeeds = [
     "A trasformare automaticamente lo share televisivo in valore pubblicitario equivalente",
     "A misurare la lettura effettiva dei quotidiani cartacei e digitali",
     "A selezionare i partecipanti del panel radiofonico tramite interviste qualitative",
+  ], "A", "appunti-cheat"),
+  q("Performance measurement e CCPM", "Che cosa distingue un KRI da un KPI nel performance measurement?", [
+    "Il KRI sintetizza risultati passati, mentre il KPI guida driver critici di performance.",
+    "Il KRI misura solo output media, mentre il KPI misura esclusivamente audience certificate.",
+    "Il KRI è sempre qualitativo, mentre il KPI è sempre espresso in valore economico.",
+    "Il KRI sostituisce gli obiettivi, mentre il KPI sostituisce la raccolta dei dati.",
   ], "A", "appunti-cheat"),
 ];
 
@@ -863,8 +1173,8 @@ function selectQuestions(candidates) {
       selectedText.add(key);
     }
   }
-  if (selected.length !== 500) {
-    throw new Error(`Expected 500 questions, selected ${selected.length}`);
+  if (selected.length !== EXPECTED_TOTAL) {
+    throw new Error(`Expected ${EXPECTED_TOTAL} questions, selected ${selected.length}`);
   }
   return selected;
 }
@@ -912,7 +1222,7 @@ function validate(bank) {
 }
 
 const notebookBank = JSON.parse(fs.readFileSync(sourcePath, "utf8"));
-const allCandidates = [...examSeeds, ...studySeeds, ...notebookBank]
+const allCandidates = [...examSeeds, ...modelExtraSeeds, ...studySeeds, ...notebookBank]
   .map(sourceToCandidate)
   .filter(candidate => candidate.text && candidate.correct)
   .filter(candidate => !BANNED.test(normalizeKey(candidate.text)))
@@ -923,7 +1233,17 @@ const pools = buildDistractorPools(allCandidates);
 const bank = selected.map((candidate, index) => toQuestion(index + 1, candidate, pools));
 
 const manualReviewOverrides = {
+  q272: {
+    matchText: "Nel modello logico del processo di valutazione, cosa sono le \"variabili ponte\"?",
+    options: {
+      A: "Intangibili come fiducia, reputazione e relazione che collegano outcome e impatto.",
+      B: "Le risorse umane ed economiche investite nelle attività di comunicazione.",
+      C: "Metriche quantitative che descrivono soltanto la copertura media ottenuta.",
+      D: "Gli effetti finali sulle performance complessive dell'organizzazione.",
+    },
+  },
   5: {
+    matchText: "Nel contesto dei livelli di valutazione della comunicazione, quale di questi rappresenta un 'Outcome'?",
     options: {
       A: "Un cambiamento nelle conoscenze, negli atteggiamenti o nei comportamenti dei pubblici.",
       B: "Il numero di comunicati, eventi o contenuti prodotti dalla funzione comunicazione.",
@@ -932,6 +1252,7 @@ const manualReviewOverrides = {
     },
   },
   6: {
+    matchText: "Cosa si intende per 'Trappola della misurazione'?",
     options: {
       A: "Raccogliere cio che e facile misurare ma poco utile per decidere.",
       B: "Usare solo indicatori qualitativi anche quando servono dati quantitativi.",
@@ -1246,8 +1567,45 @@ const manualReviewOverrides = {
     options: {
       A: "Funziona da stimolo per il dialogo e la creatività, facendo emergere idee che non uscirebbero in un'intervista singola.",
       B: "Garantisce risultati statisticamente rappresentativi dell'intera popolazione.",
-      C: "Elimina l'influenza reciproca tra partecipanti durante la raccolta delle risposte.",
+      C: "Riduce la discussione a una sequenza di risposte chiuse individuali.",
       D: "Permette di dimostrare un nesso causale tra campagna e comportamento d'acquisto.",
+    },
+  },
+  q62: {
+    matchText: "Quale delle seguenti affermazioni descrive correttamente la funzione principale della ricerca valutativa nel contesto organizzativo descritto nelle dispense?",
+    options: {
+      A: "Supportare il processo decisionale comprendendo i fenomeni e definendo azioni correttive.",
+      B: "Limitarsi a produrre una rendicontazione numerica dopo la chiusura delle attività.",
+      C: "Misurare solo la quantità di contenuti pubblicati sui canali dell'organizzazione.",
+      D: "Sostituire la definizione degli obiettivi con dati raccolti a posteriori.",
+    },
+  },
+  q161: {
+    matchText: "Quale evento ha portato al successo immediato del Web nel 1993?",
+    options: {
+      A: "La decisione del CERN di rendere pubblica e gratuita la tecnologia.",
+      B: "La disponibilità dei primi browser grafici accessibili a un pubblico più ampio.",
+      C: "La standardizzazione dei protocolli che rese più semplice pubblicare e navigare.",
+      D: "La crescita dell'interesse accademico e commerciale verso le reti ipertestuali.",
+    },
+  },
+  q230: {
+    matchText: "Quale evento storico del 1993 ha favorito la diffusione globale del Web?",
+    text: "Nel sistema Auditel, che cosa fornisce la Ricerca di Base al SuperPanel?",
+    options: {
+      A: "L'universo statistico e le informazioni sociodemografiche e tecnologiche per costruire il campione.",
+      B: "La rilevazione minuto per minuto degli ascolti prodotti dai meter domestici.",
+      C: "La valorizzazione economica degli spazi pubblicitari acquistati dagli inserzionisti.",
+      D: "Il giudizio qualitativo dei telespettatori sui programmi trasmessi nel periodo.",
+    },
+  },
+  q270: {
+    matchText: "Nel sistema Total Audience di Auditel, cos'è la 'Ripartizione ascolto per fascia oraria' (RSH)?",
+    options: {
+      A: "L'incidenza di ogni singola fascia oraria rispetto al totale dell'ascolto registrato nell'intera giornata.",
+      B: "La composizione sociodemografica degli individui presenti nel panel televisivo.",
+      C: "La quota di famiglie dotate di smart TV rispetto all'universo statistico.",
+      D: "Il costo medio degli spazi pubblicitari acquistati in una specifica fascia.",
     },
   },
   98: {
@@ -2775,9 +3133,9 @@ const manualReviewOverrides = {
   42: {
     options: {
       A: "L'utente può essere più vulnerabile a contenuti falsi se coerenti con i propri bias.",
-      B: "Le filter bubble eliminano sempre la circolazione di contenuti non verificati.",
-      C: "La disinformazione riguarda solo contenuti esterni agli ambienti social.",
-      D: "Le notizie false perdono efficacia quando sono allineate alle credenze pregresse.",
+      B: "Le filter bubble dipendono solo dalla scelta casuale delle fonti informative.",
+      C: "La disinformazione riguarda esclusivamente i media tradizionali generalisti.",
+      D: "Le notizie false perdono efficacia quando confermano convinzioni pregresse.",
     },
   },
   43: {
@@ -2834,7 +3192,7 @@ const manualReviewOverrides = {
     options: {
       A: "Funziona da stimolo per il dialogo e la creatività, facendo emergere idee che non uscirebbero in un'intervista singola.",
       B: "Garantisce risultati statisticamente rappresentativi dell'intera popolazione di riferimento.",
-      C: "Elimina l'influenza reciproca tra partecipanti durante la raccolta delle risposte.",
+      C: "Riduce la discussione a una sequenza di risposte chiuse individuali.",
       D: "Permette di dimostrare un nesso causale tra campagna e comportamento d'acquisto.",
     },
   },
@@ -2964,6 +3322,7 @@ const manualReviewOverrides = {
     },
   },
   368: {
+    matchText: "Che cosa si intende per 'KPI di Business' nel contesto del livello rendicontativo?",
     options: {
       A: "Misure derivate dal marketing e management, come vendite, quota di mercato e fidelizzazione.",
       B: "Indicatori di visibilità e copertura media ottenuta nel periodo.",
@@ -2972,6 +3331,7 @@ const manualReviewOverrides = {
     },
   },
   449: {
+    matchText: "Qual e il limite principale di un modello reputazionale sintetico rispetto a uno analitico?",
     options: {
       A: "Tende a privilegiare il dato aggregato, mentre l'analitico scompone la reputazione in dimensioni.",
       B: "Misura soltanto la reputazione finanziaria e trascura le percezioni degli stakeholder.",
@@ -2980,6 +3340,7 @@ const manualReviewOverrides = {
     },
   },
   463: {
+    matchText: "Secondo Grunig e Hon, quali sono i due tipi principali di relazione che un'organizzazione può avere con i suoi stakeholder?",
     options: {
       A: "Relazioni di scambio, basate su benefici attesi, e relazioni comunitarie, basate sul bene dell'altro.",
       B: "Relazioni digitali, mediate dai social media, e relazioni fisiche, gestite in presenza.",
@@ -2988,6 +3349,7 @@ const manualReviewOverrides = {
     },
   },
   486: {
+    matchText: "Nel monitoraggio della reputazione, la differenza tra 'Immagine' e 'Reputazione' risiede principalmente nel fatto che:",
     options: {
       A: "L'immagine è una percezione istantanea, mentre la reputazione è un giudizio sedimentato nel tempo.",
       B: "L'immagine è il giudizio sedimentato nel tempo, mentre la reputazione è una percezione immediata.",
@@ -2995,10 +3357,319 @@ const manualReviewOverrides = {
       D: "Immagine e reputazione sono sinonimi perché entrambe derivano dalla percezione dei pubblici.",
     },
   },
+  q328: {
+    matchText: "Nel modello PII (Preparation, Implementation, Impact), perché gli output sono definiti come 'pseudo-effetti'?",
+    options: {
+      A: "Perché rappresentano sforzi e prodotti realizzati, ma non garantiscono cambiamenti effettivi nei pubblici.",
+      B: "Perché sono misure economiche finali attribuite direttamente ai risultati di business.",
+      C: "Perché appartengono alla fase di pre-test e non alla fase di implementazione.",
+      D: "Perché descrivono opinioni e comportamenti già modificati dal programma.",
+    },
+  },
+  q326: {
+    matchText: "Cosa caratterizza il 'Continuing Model' di valutazione?",
+    options: {
+      A: "È un processo dinamico e flessibile basato su un meccanismo di feedback continuo.",
+      B: "È un modello lineare usato soprattutto per campagne circoscritte di breve periodo.",
+      C: "È un modello concentrato sulla distinzione tra output, out-take e outcome.",
+      D: "È una matrice che valuta efficacia tecnica, economica e sociale.",
+    },
+  },
+  q337: {
+    matchText: "Nella piramide delle tecniche di valutazione (Macro Model), cosa accade salendo verso il vertice?",
+    options: {
+      A: "Le tecniche diventano più sofisticate e richiedono competenze specifiche per l'interpretazione.",
+      B: "Le misure si concentrano progressivamente sugli output più immediati della campagna.",
+      C: "La valutazione si riduce alla sola analisi della copertura media ottenuta.",
+      D: "Gli indicatori diventano più semplici e meno collegati agli obiettivi strategici.",
+    },
+  },
+  q339: {
+    matchText: "Cosa afferma il principio degli obiettivi 'SMART'?",
+    options: {
+      A: "Che gli obiettivi devono essere specifici, misurabili, attuabili, rilevanti e definiti nel tempo.",
+      B: "Che gli obiettivi devono essere sempre espressi come indicatori finanziari.",
+      C: "Che gli obiettivi vanno definiti solo dopo la chiusura della campagna.",
+      D: "Che gli obiettivi devono coincidere con le attività operative previste.",
+    },
+  },
+  q340: {
+    matchText: "Nell'ambito della sentiment analysis, cosa s'intende per 'Topic'?",
+    text: "Nel Social Measurement Compass di Altimeter, a che cosa serve il framework?",
+    options: {
+      A: "A orientare la scelta delle metriche social in base alla direzione strategica da valutare.",
+      B: "A certificare audience e diffusione dei mezzi usati nella pianificazione media.",
+      C: "A calcolare il valore pubblicitario equivalente della copertura editoriale.",
+      D: "A distinguere le tre fasi tecniche dei motori di ricerca: crawling, indexing e ranking.",
+    },
+  },
+  q347: {
+    matchText: "Nel Modello Glebb, qual è l'effetto di una 'Prima pagina dedicata' sul valore di partenza dell'articolo?",
+    text: "A che cosa è associato il riferimento Glebb / Romoli Venturi negli appunti?",
+    options: {
+      A: "All'AVE corretto e alla valorizzazione qualitativa dell'impatto stampa.",
+      B: "Alla misurazione della soddisfazione verso la comunicazione interna.",
+      C: "Alla distinzione tra output, out-take e outcome nel modello Yardstick.",
+      D: "Alla costruzione della Balanced Scorecard per la funzione comunicazione.",
+    },
+  },
+  q356: {
+    matchText: "Cosa caratterizza un obiettivo SMART nella Fase 2 del modello PRE?",
+    options: {
+      A: "Essere specifico, misurabile, raggiungibile, rilevante e temporizzato.",
+      B: "Essere formulato in modo ampio per adattarsi a qualsiasi risultato ottenuto.",
+      C: "Essere definito solo dopo la raccolta dei dati conclusivi della campagna.",
+      D: "Essere espresso come elenco di attività operative da completare.",
+    },
+  },
+  q357: {
+    matchText: "Secondo l'acronimo SMART, cosa si intende con il requisito 'Achievable' per un obiettivo di comunicazione?",
+    options: {
+      A: "Che sia realistico e raggiungibile date le risorse e il contesto a disposizione.",
+      B: "Che sia espresso in termini puramente economici per calcolare il ROI.",
+      C: "Che sia collegato temporalmente a una data di scadenza precisa.",
+      D: "Che sia rilevante per gli obiettivi strategici dell'organizzazione.",
+    },
+  },
+  q364: {
+    matchText: "Nel modello Yardistic, a quale livello appartiene la valutazione del 'Ricordo'?",
+    text: "Nel modello Yardstick, la misurazione del 'ricordo' appartiene a quale livello?",
+    options: {
+      A: "Livello 2: out-take.",
+      B: "Livello 1: output.",
+      C: "Livello 3: outcome.",
+      D: "Livello di impatto sulle performance di business.",
+    },
+  },
+  q365: {
+    matchText: "Nel contesto dei Barcelona Principles, il principio 2 afferma che la valutazione dovrebbe identificare:",
+    options: {
+      A: "Output, outcome e impatto potenziale della comunicazione.",
+      B: "Soltanto il ritorno economico immediato attribuibile alla campagna.",
+      C: "La sola quantità di contenuti pubblicati sui media proprietari.",
+      D: "La spesa pubblicitaria equivalente alla copertura editoriale ottenuta.",
+    },
+  },
+  q367: {
+    matchText: "Quale delle seguenti affermazioni descrive correttamente la logica 'Through The Line' (TTL)?",
+    text: "Nel Measurement Tree, che cosa rappresenta il tronco dell'albero?",
+    options: {
+      A: "Le strategie e le tattiche scelte per raggiungere gli obiettivi di comunicazione.",
+      B: "Gli outcome finali prodotti sui pubblici prioritari della campagna.",
+      C: "I pubblici del piano di media relations selezionati dalla funzione comunicazione.",
+      D: "Il contesto competitivo in cui l'organizzazione svolge le proprie attività.",
+    },
+  },
+  q371: {
+    matchText: "Perché nel 'Measurement Tree' il processo di valutazione non può essere limitato solo alla fase ex post?",
+    options: {
+      A: "Perché deve comprendere anche la valutazione ex ante e quella in itinere.",
+      B: "Perché riguarda solo la rendicontazione finale verso il management.",
+      C: "Perché considera sufficienti le metriche di copertura media.",
+      D: "Perché sostituisce la pianificazione con il monitoraggio degli output.",
+    },
+  },
+  q372: {
+    matchText: "Il 'PRE Model' suggerisce che la pianificazione e la valutazione debbano essere:",
+    options: {
+      A: "Processi paralleli che procedono insieme lungo tutto il piano.",
+      B: "Fasi separate, con la valutazione concentrata soltanto alla chiusura.",
+      C: "Attività indipendenti dagli obiettivi definiti nella fase iniziale.",
+      D: "Procedure dedicate esclusivamente alla rendicontazione economica finale.",
+    },
+  },
+  q373: {
+    matchText: "Il 'Brioschi Model' propone di valutare ogni attività di comunicazione su tre dimensioni:",
+    options: {
+      A: "Efficacia tecnica, economica e sociale.",
+      B: "Output, out-take e outcome.",
+      C: "Preparazione, implementazione e impatto.",
+      D: "Livello interno, esterno e istituzionale.",
+    },
+  },
+  q375: {
+    matchText: "Cos'è il 'Short Model' nella classificazione dei modelli di valutazione?",
+    options: {
+      A: "Un modello lineare e one-way focalizzato sul raggiungimento degli output media.",
+      B: "Un modello circolare basato su feedback continui e correzioni in itinere.",
+      C: "Un modello fondato su audit iniziale, pianificazione e valutazione parallela.",
+      D: "Un modello che valuta efficacia tecnica, economica e sociale della comunicazione.",
+    },
+  },
+  q380: {
+    matchText: "Qual è il valore di partenza incrementato dal moltiplicatore 'Titolo' nel modello Glebb?",
+    text: "Nel riferimento Glebb / Romoli Venturi, perché si parla di AVE corretto?",
+    options: {
+      A: "Perché il valore della copertura viene ponderato con elementi qualitativi dell'uscita.",
+      B: "Perché l'AVE viene sostituito da una survey sul ricordo del messaggio.",
+      C: "Perché il modello misura solo le relazioni interne tra dipendenti e superiori.",
+      D: "Perché la valutazione si limita a contare il numero di comunicati diffusi.",
+    },
+  },
+  q384: {
+    matchText: "Perché gli obiettivi SMART sono considerati un requisito per una misurazione efficace?",
+    options: {
+      A: "Perché rendono possibile confrontare risultati e traguardi definiti in modo chiaro.",
+      B: "Perché trasformano ogni obiettivo di comunicazione in un indicatore finanziario.",
+      C: "Perché permettono di evitare la scelta di pubblici e stakeholder prioritari.",
+      D: "Perché coincidono con l'elenco delle attività operative da realizzare.",
+    },
+  },
+  q386: {
+    matchText: "Nel 'MACRO Model', cosa rappresentano gli INPUT della comunicazione?",
+    options: {
+      A: "Le micro-decisioni professionali come formato, contenuti, immagini e scelte redazionali.",
+      B: "Gli output prodotti dalla campagna, come articoli e materiali diffusi.",
+      C: "Gli outcome osservati sui pubblici dopo l'esposizione al messaggio.",
+      D: "Le variabili ponte che collegano relazione e performance organizzativa.",
+    },
+  },
+  q387: {
+    matchText: "Nella fase di 'Implementation' del PII Model, cosa viene monitorato principalmente?",
+    options: {
+      A: "Gli sforzi realizzati, gli strumenti attivati e la copertura raggiunta.",
+      B: "L'adeguatezza dei messaggi valutata prima del lancio del programma.",
+      C: "Gli effetti cognitivi e comportamentali osservati nel medio periodo.",
+      D: "Il contributo finale della comunicazione agli obiettivi di business.",
+    },
+  },
+  q388: {
+    matchText: "Quale delle seguenti è una caratteristica distintiva del 'Yardstick Model' di valutazione?",
+    options: {
+      A: "Propone tre livelli progressivi di valutazione: output, out-take e outcome.",
+      B: "Misura esclusivamente la dimensione economica e sociale della comunicazione.",
+      C: "Valuta solo la preparazione dei messaggi prima della loro diffusione.",
+      D: "Accompagna la pianificazione con audit, strategia e valutazione continua.",
+    },
+  },
+  q389: {
+    matchText: "Cosa introduce il 'MACRO Model of PR Evaluation' rispetto ai modelli più semplici?",
+    options: {
+      A: "La distinzione tra livello individuale e livello di programma, includendo la valutazione degli input.",
+      B: "La metafora dell'albero per collegare radici, rami, foglie e fiori.",
+      C: "La misurazione del solo ritorno economico prodotto dalle attività di comunicazione.",
+      D: "La distinzione tra efficacia tecnica, economica e sociale della comunicazione.",
+    },
+  },
+  q390: {
+    matchText: "Nel 'Measurement Tree', cosa rappresentano le 'radici' e cosa i 'fiori'?",
+    options: {
+      A: "Le radici sono gli obiettivi di comunicazione; i fiori sono gli outcome.",
+      B: "Le radici sono le strategie operative; i fiori sono i canali media attivati.",
+      C: "Le radici sono i pubblici del piano; i fiori sono gli output prodotti.",
+      D: "Le radici sono il contesto competitivo; i fiori sono i prodotti visibili all'esterno.",
+    },
+  },
+  q391: {
+    matchText: "Che cosa indica la dimensione 'Integrazione Organizzativa' nel modello CSQ?",
+    text: "Che cosa misura il Communication Satisfaction Questionnaire (CSQ) di Downs e Hazen?",
+    options: {
+      A: "La soddisfazione verso la comunicazione interna attraverso otto dimensioni.",
+      B: "La reputazione esterna dell'organizzazione attraverso indicatori finanziari.",
+      C: "Il valore pubblicitario equivalente della copertura editoriale ottenuta.",
+      D: "La sequenza output, out-take e outcome di una campagna media.",
+    },
+  },
+  q393: {
+    matchText: "Cosa si intende per 'Efficacia Tecnica' secondo la matrice di Brioschi?",
+    options: {
+      A: "Il grado di raggiungimento degli obiettivi specifici della comunicazione.",
+      B: "Il contributo della comunicazione agli obiettivi economici dell'organizzazione.",
+      C: "Il benessere sociale prodotto dalla comunicazione sugli interlocutori.",
+      D: "La quantità di output media generati durante la fase di implementazione.",
+    },
+  },
+  q394: {
+    matchText: "Nel contesto degli obiettivi SMART, cosa indica la lettera 'A' (Achievable)?",
+    options: {
+      A: "Che l'obiettivo deve essere raggiungibile date le risorse e il contesto a disposizione.",
+      B: "Che l'obiettivo deve essere definito in modo specifico per pubblici e risultati.",
+      C: "Che l'obiettivo deve essere misurabile attraverso indicatori osservabili.",
+      D: "Che l'obiettivo deve avere una scadenza temporale esplicita.",
+    },
+  },
+  q395: {
+    matchText: "Nel 'MACRO Model', perché è importante valutare la fase di 'Input'?",
+    options: {
+      A: "Per verificare l'adeguatezza delle decisioni prese su formati, contenuti e immagini.",
+      B: "Per misurare gli effetti finali su opinioni, atteggiamenti e comportamenti.",
+      C: "Per stimare il valore monetario equivalente della copertura media.",
+      D: "Per collegare direttamente la relazione con i risultati economici finali.",
+    },
+  },
+  q435: {
+    matchText: "Cosa si intende per 'causalità plausibile' nel modello CCPM?",
+    options: {
+      A: "Riconoscere che i dati suggeriscono un legame credibile tra comunicazione ed effetti, anche senza certezza assoluta.",
+      B: "Attribuire ogni risultato positivo alla comunicazione senza considerare fattori esterni.",
+      C: "Evitare qualsiasi collegamento tra attività, outcome e impatto sulle performance.",
+      D: "Usare solo esperimenti controllati per dimostrare effetti in contesti organizzativi reali.",
+    },
+  },
+  q491: {
+    matchText: "Qual è il limite principale dell'utilizzo dell'AVE (Advertising Value Equivalent) come metrica di valutazione delle PR?",
+    options: {
+      A: "Non misura il valore reale della comunicazione, né gli outcome prodotti sui pubblici.",
+      B: "Misura solo il ricordo del messaggio dopo l'esposizione alla campagna.",
+      C: "Può essere usato esclusivamente per stimare l'audience televisiva certificata.",
+      D: "Richiede sempre dati di vendita individuali raccolti presso i clienti.",
+    },
+  },
+  q494: {
+    matchText: "Qual è il principale limite metodologico dell'AVE (Advertising Value Equivalent) segnalato nel corso?",
+    options: {
+      A: "Non considera variabili qualitative come tono, credibilità della fonte e centralità della citazione.",
+      B: "Non può essere applicato ad alcun contenuto pubblicato sui media digitali.",
+      C: "Richiede sempre una survey sul ricordo del messaggio presso il pubblico.",
+      D: "Misura direttamente gli outcome relazionali prodotti dalla comunicazione.",
+    },
+  },
+  q537: {
+    matchText: "Nel contesto del capitale comunicativo, la dimensione della 'Comunicazione Interna' favorisce principalmente:",
+    options: {
+      A: "Il coordinamento tra persone e processi e la valorizzazione del capitale umano.",
+      B: "La copertura editoriale positiva presso stakeholder esterni all'organizzazione.",
+      C: "La valorizzazione finanziaria della visibilità ottenuta sui media.",
+      D: "La classificazione di topic e hot topic nelle conversazioni social.",
+    },
+  },
+  q541: {
+    matchText: "Nel modello RepTrak Pulse, a cosa si riferiscono le 'Componenti Emotive'?",
+    options: {
+      A: "A stima, ammirazione, fiducia e sentimenti degli stakeholder verso l'organizzazione.",
+      B: "A innovazione, qualità dei prodotti, governance e performance finanziaria.",
+      C: "A output, out-take, outcome e impatto potenziale della comunicazione.",
+      D: "A tiratura, diffusione, readership e total audience dei mezzi pianificati.",
+    },
+  },
+  q542: {
+    matchText: "Quali elementi costituiscono le 'Componenti Razionali' del modello RepTrak Pulse?",
+    options: {
+      A: "Innovazione, qualità di prodotti e servizi, luogo di lavoro, performance, leadership, cittadinanza e governance.",
+      B: "Stima, ammirazione, fiducia e sentimenti degli stakeholder verso l'organizzazione.",
+      C: "Output, out-take, outcome e impatto potenziale della comunicazione.",
+      D: "Tiratura, diffusione, readership e total audience dei mezzi pianificati.",
+    },
+  },
+  q502: {
+    matchText: "Quale di queste affermazioni descrive correttamente la relazione tra capitale intellettuale e comunicazione?",
+    options: {
+      A: "Il capitale intellettuale genera valore quando conoscenze, relazioni e risorse immateriali vengono comunicate e condivise.",
+      B: "Il capitale intellettuale coincide soltanto con la dotazione tecnologica dell'organizzazione.",
+      C: "Capitale intellettuale e comunicazione restano due dimensioni indipendenti.",
+      D: "La comunicazione riguarda solo gli output media e non incide sugli intangibili.",
+    },
+  },
 };
 
+const manualReviewOverrideByText = new Map(
+  Object.values(manualReviewOverrides).map(override => [normalizeKey(override.matchText), override])
+);
+
 for (const question of bank) {
-  const override = manualReviewOverrides[question.id];
+  const idOverride = manualReviewOverrides[question.id];
+  const stableIdOverride = question.id <= 270 && idOverride && !idOverride.matchText ? idOverride : null;
+  const override = manualReviewOverrideByText.get(normalizeKey(question.text)) || stableIdOverride;
   if (!override) continue;
   if (override.text) question.text = cleanText(override.text);
   if (override.options) {
