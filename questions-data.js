@@ -250,10 +250,10 @@
     "section": "Fondamenti della misurazione",
     "text": "Che cosa si intende per 'variabili ponte' all'interno del processo di valutazione della comunicazione?",
     "options": {
-      "A": "Elementi che collegano gli output agli obiettivi desiderati, su cui il comunicatore ha potere.",
-      "B": "Indicatori economici utilizzati per stimare direttamente il valore finanziario del brand.",
-      "C": "Fattori esterni non controllabili che agiscono sul contesto della comunicazione.",
-      "D": "Misure di copertura media usate per descrivere solo la visibilità ottenuta."
+      "A": "Intangibili come fiducia, reputazione e relazione che collegano outcome e impatto.",
+      "B": "Le risorse operative impiegate per produrre contenuti, eventi e uscite media.",
+      "C": "Gli indicatori di copertura usati per descrivere soltanto la visibilità ottenuta.",
+      "D": "I risultati economici finali già osservati nelle aree di performance."
     },
     "answer": "A",
     "tags": [
@@ -698,17 +698,17 @@
   {
     "id": 41,
     "section": "Fondamenti della misurazione",
-    "text": "Nel 2026, qual è la strategia suggerita per gestire la varietà di dispositivi?",
+    "text": "Nella gestione dei touchpoint digitali, quale approccio è coerente con una strategia multi-device?",
     "options": {
-      "A": "Strategia multi-device reale, considerando anche il ruolo ancora rilevante del desktop.",
-      "B": "Strategia mobile-only, ignorando gli altri dispositivi di accesso.",
-      "C": "Strategia centrata solo su smartwatch e dispositivi indossabili.",
-      "D": "Strategia offline, sostituendo i touchpoint digitali con materiali cartacei."
+      "A": "Considerare dispositivi diversi e contesti d'uso, senza trascurare il desktop.",
+      "B": "Limitare la progettazione ai soli dispositivi mobili più usati dal pubblico.",
+      "C": "Separare completamente i touchpoint digitali dalla misurazione del percorso utente.",
+      "D": "Sostituire i touchpoint digitali con materiali offline non tracciabili."
     },
     "answer": "A",
     "tags": [
       "fondamenti",
-      "modelli"
+      "seo_geo_digitale"
     ]
   },
   {
@@ -1395,10 +1395,10 @@
     "section": "Ricerca in comunicazione",
     "text": "Nella ricerca valutativa, perché è fondamentale definire dei 'Benchmark'?",
     "options": {
-      "A": "Per avere delle pietre di paragone rispetto alle quali valutare scostamenti e risultati.",
-      "B": "Per obbligare il management a non cambiare mai la strategia di comunicazione.",
-      "C": "Per ridurre i costi della valutazione eliminando la necessità di campionamento.",
-      "D": "Per garantire l'anonimato delle aziende concorrenti durante l'analisi."
+      "A": "Per avere parametri di confronto rispetto ai quali valutare scostamenti e risultati.",
+      "B": "Per sostituire gli obiettivi della campagna con valori medi di settore.",
+      "C": "Per evitare la costruzione di baseline prima dell'avvio del programma.",
+      "D": "Per limitare il confronto ai soli dati disponibili nei report interni."
     },
     "answer": "A",
     "tags": [
@@ -2359,9 +2359,9 @@
     "text": "Nel monitoraggio dei media, cosa distingue il 'Social Listening' dal semplice monitoraggio?",
     "options": {
       "A": "Il social listening parte da domande di business e deve produrre insight e raccomandazioni.",
-      "B": "Il social listening conta solo i like, il monitoraggio conta anche i commenti.",
-      "C": "Il monitoraggio è un'attività gratuita, il listening è sempre a pagamento.",
-      "D": "Il social listening si applica solo ai canali televisivi."
+      "B": "Il social listening si limita a contare interazioni native sulle piattaforme social.",
+      "C": "Il monitoraggio interpreta sempre gli insight, mentre il listening raccoglie solo dati grezzi.",
+      "D": "Il social listening riguarda solo i canali televisivi e radiofonici certificati."
     },
     "answer": "A",
     "tags": [
@@ -4402,9 +4402,9 @@
     "text": "Secondo il materiale, qual è il tempo medio di durata del processo che porta alla certificazione definitiva dei dati ADS?",
     "options": {
       "A": "Quasi due anni.",
-      "B": "Ogni mese, contestualmente alla pubblicazione dei dati dichiarati.",
+      "B": "Pochi giorni dopo la dichiarazione iniziale comunicata dagli editori.",
       "C": "Circa sei mesi dopo la chiusura dell'anno fiscale dell'editore.",
-      "D": "Sette giorni lavorativi grazie al sistema digitale in tempo reale."
+      "D": "Ogni mese, contestualmente alla pubblicazione dei dati dichiarati."
     },
     "answer": "A",
     "tags": [
@@ -4955,14 +4955,13 @@
     "text": "Nel Value Link, qual è il primo passaggio del percorso di valore?",
     "options": {
       "A": "Raggiungere i pubblici e renderli consapevoli dell'organizzazione.",
-      "B": "Eliminare gli stakeholder meno favorevoli dal processo comunicativo.",
+      "B": "Considerare solo i pubblici già favorevoli all'organizzazione.",
       "C": "Misurare solo la copertura ottenuta sui media tradizionali.",
       "D": "Collegare la relazione solo al fatturato osservato nel breve periodo."
     },
     "answer": "A",
     "tags": [
-      "modelli",
-      "ricerca_metodi"
+      "modelli"
     ]
   },
   {

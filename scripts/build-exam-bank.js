@@ -414,7 +414,7 @@ const modelExtraSeeds = [
   q("Modelli di valutazione", "Nel Value Link, qual è il primo passaggio del percorso di valore?", [
     "Raggiungere i pubblici e renderli consapevoli dell'organizzazione.",
     "Collegare la relazione solo al fatturato osservato nel breve periodo.",
-    "Eliminare gli stakeholder meno favorevoli dal processo comunicativo.",
+    "Considerare solo i pubblici già favorevoli all'organizzazione.",
     "Misurare solo la copertura ottenuta sui media tradizionali.",
   ], "A", "appunti-cheat"),
   q("Modelli di valutazione", "Nel Value Link, che cosa significa indirizzare i pubblici verso la relazione?", [
@@ -3136,6 +3136,52 @@ const manualReviewOverrides = {
       B: "Le filter bubble dipendono solo dalla scelta casuale delle fonti informative.",
       C: "La disinformazione riguarda esclusivamente i media tradizionali generalisti.",
       D: "Le notizie false perdono efficacia quando confermano convinzioni pregresse.",
+    },
+  },
+  q13: {
+    matchText: "Che cosa si intende per 'variabili ponte' all'interno del processo di valutazione della comunicazione?",
+    options: {
+      A: "Intangibili come fiducia, reputazione e relazione che collegano outcome e impatto.",
+      B: "Le risorse operative impiegate per produrre contenuti, eventi e uscite media.",
+      C: "Gli indicatori di copertura usati per descrivere soltanto la visibilità ottenuta.",
+      D: "I risultati economici finali già osservati nelle aree di performance.",
+    },
+  },
+  q41: {
+    matchText: "Nel 2026, qual è la strategia suggerita per gestire la varietà di dispositivi?",
+    text: "Nella gestione dei touchpoint digitali, quale approccio è coerente con una strategia multi-device?",
+    options: {
+      A: "Considerare dispositivi diversi e contesti d'uso, senza trascurare il desktop.",
+      B: "Limitare la progettazione ai soli dispositivi mobili più usati dal pubblico.",
+      C: "Separare completamente i touchpoint digitali dalla misurazione del percorso utente.",
+      D: "Sostituire i touchpoint digitali con materiali offline non tracciabili.",
+    },
+  },
+  q85: {
+    matchText: "Nella ricerca valutativa, perché è fondamentale definire dei 'Benchmark'?",
+    options: {
+      A: "Per avere parametri di confronto rispetto ai quali valutare scostamenti e risultati.",
+      B: "Per sostituire gli obiettivi della campagna con valori medi di settore.",
+      C: "Per evitare la costruzione di baseline prima dell'avvio del programma.",
+      D: "Per limitare il confronto ai soli dati disponibili nei report interni.",
+    },
+  },
+  q142: {
+    matchText: "Nel monitoraggio dei media, cosa distingue il 'Social Listening' dal semplice monitoraggio?",
+    options: {
+      A: "Il social listening parte da domande di business e deve produrre insight e raccomandazioni.",
+      B: "Il social listening si limita a contare interazioni native sulle piattaforme social.",
+      C: "Il monitoraggio interpreta sempre gli insight, mentre il listening raccoglie solo dati grezzi.",
+      D: "Il social listening riguarda solo i canali televisivi e radiofonici certificati.",
+    },
+  },
+  q264: {
+    matchText: "Secondo il materiale, qual è il tempo medio di durata del processo che porta alla certificazione definitiva dei dati ADS?",
+    options: {
+      A: "Quasi due anni.",
+      B: "Pochi giorni dopo la dichiarazione iniziale comunicata dagli editori.",
+      C: "Circa sei mesi dopo la chiusura dell'anno fiscale dell'editore.",
+      D: "Ogni mese, contestualmente alla pubblicazione dei dati dichiarati.",
     },
   },
   43: {
