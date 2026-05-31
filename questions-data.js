@@ -6631,16 +6631,14 @@
     "text": "Nel modello CCPM, perché è importante mappare le 'Performance Expectations'?",
     "options": {
       "A": "Perché la valutazione è efficace solo se utile per chi deve prendere decisioni.",
-      "B": "Perché tutti gli stakeholder hanno sempre la stessa idea di successo comunicativo.",
-      "C": "Per poter sanzionare i dipendenti che non raggiungono le aspettative dei manager.",
-      "D": "Perché è un requisito legale richiesto dalla normativa italiana sulla trasparenza."
+      "B": "Perché consente di usare lo stesso report sintetico per tutti i destinatari.",
+      "C": "Perché permette di sostituire gli obiettivi con gli indicatori disponibili.",
+      "D": "Perché riduce la valutazione alla rendicontazione finale degli output."
     },
     "answer": "A",
     "tags": [
       "modelli",
-      "performance_ccpm",
-      "ricerca_metodi",
-      "seo_geo_digitale"
+      "performance_ccpm"
     ]
   },
   {
@@ -6648,17 +6646,15 @@
     "section": "Performance measurement e CCPM",
     "text": "Secondo il modello di Romenti, la valutazione è efficace solo se:",
     "options": {
-      "A": "È utile per chi deve prendere decisioni (management).",
-      "B": "Produce un valore di ROI superiore al 200%.",
-      "C": "Vengono utilizzati solo dati numerici e oggettivi.",
-      "D": "Viene svolta da un ente esterno certificatore come Auditel."
+      "A": "È utile per chi deve prendere decisioni.",
+      "B": "Raccoglie il maggior numero possibile di metriche disponibili.",
+      "C": "Misura soprattutto gli output prodotti dalla funzione comunicazione.",
+      "D": "È sintetizzata in un unico indice economico finale."
     },
     "answer": "A",
     "tags": [
-      "enti_audience",
       "modelli",
-      "performance_ccpm",
-      "social_roi"
+      "performance_ccpm"
     ]
   },
   {
@@ -6684,10 +6680,10 @@
     "section": "Performance measurement e CCPM",
     "text": "Quale delle seguenti opzioni descrive correttamente il 'Modello Logico' nel CCPM?",
     "options": {
-      "A": "Input $\\rightarrow$ Output $\\rightarrow$ Outcome $\\rightarrow$ Variabili Ponte $\\rightarrow$ Impatto sulle aree di performance.",
-      "B": "Ricerca $\\rightarrow$ Strategia $\\rightarrow$ Implementazione $\\rightarrow$ Valutazione Ongoing $\\rightarrow$ Valutazione Finale.",
-      "C": "Focus Group $\\rightarrow$ Survey $\\rightarrow$ Analisi del Contenuto $\\rightarrow$ Esperimento Causale.",
-      "D": "Attività $\\rightarrow$ Interazione $\\rightarrow$ Influenza $\\rightarrow$ Advocacy $\\rightarrow$ Impatto."
+      "A": "Input, attività, output, outcome, variabili ponte e impatto sulle performance.",
+      "B": "Audit, obiettivi, strategia, valutazione ongoing e valutazione finale.",
+      "C": "Focus group, survey, analisi del contenuto ed esperimento causale.",
+      "D": "Reach, engagement, conversione, retention e advocacy."
     },
     "answer": "A",
     "tags": [
@@ -6840,18 +6836,16 @@
     "section": "Performance measurement e CCPM",
     "text": "Secondo Romenti, qual è il presupposto fondamentale della 'Communication Balanced Scorecard' (BSC) di Vos e Shoemaker?",
     "options": {
-      "A": "Che a ciascuna delle prospettive aziendali corrisponda un'attività specifica di comunicazione.",
-      "B": "Che il ROI sia l'unico indicatore valido per misurare il successo comunicativo.",
-      "C": "Che ogni dipendente debba essere misurato in base al numero di interazioni social generate.",
-      "D": "Che la comunicazione interna non debba mai essere integrata nei processi di change management."
+      "A": "A ciascuna prospettiva aziendale può corrispondere un'attività specifica di comunicazione.",
+      "B": "Le quattro prospettive devono essere misurate con lo stesso KPI di output.",
+      "C": "La comunicazione istituzionale sostituisce tutte le altre aree comunicative.",
+      "D": "La Balanced Scorecard serve solo a calcolare il ritorno economico della campagna."
     },
     "answer": "A",
     "tags": [
       "modelli",
       "performance_ccpm",
-      "ricerca_metodi",
-      "seo_geo_digitale",
-      "social_roi"
+      "ricerca_metodi"
     ]
   },
   {
@@ -6975,26 +6969,25 @@
     "text": "Nel modello 'Value Link', qual è il primo passaggio fondamentale?",
     "options": {
       "A": "Raggiungere le persone e renderle consapevoli.",
-      "B": "Vendere il prodotto al cliente finale.",
-      "C": "Calcolare il ROI totale dell'azienda.",
-      "D": "Assumere nuovi dipendenti nell'ufficio marketing."
+      "B": "Indirizzare i pubblici verso una relazione con l'organizzazione.",
+      "C": "Trattenere e motivare i pubblici nel tempo.",
+      "D": "Tradurre la relazione in contributo agli obiettivi di business."
     },
     "answer": "A",
     "tags": [
       "modelli",
-      "performance_ccpm",
-      "social_roi"
+      "performance_ccpm"
     ]
   },
   {
     "id": 424,
     "section": "Performance measurement e CCPM",
-    "text": "Secondo il modello delle 4 prospettive di Vos e Schoemaker (derivato dalla Balanced Scorecard), a quale area corrisponde la 'comunicazione istituzionale'?",
+    "text": "Nella Balanced Scorecard adattata da Vos e Schoemaker, a cosa corrisponde la prospettiva dei processi interni?",
     "options": {
-      "A": "Economico-Finanziaria",
-      "B": "Cliente",
-      "C": "Processi Interni",
-      "D": "Apprendimento e Crescita"
+      "A": "Alla comunicazione interna.",
+      "B": "Alla comunicazione istituzionale.",
+      "C": "Alla comunicazione di marketing.",
+      "D": "All'organizzazione della funzione comunicazione."
     },
     "answer": "A",
     "tags": [
@@ -7040,16 +7033,15 @@
     "section": "Performance measurement e CCPM",
     "text": "Nel modello CCPM, perché è importante identificare i soggetti coinvolti prima della misurazione?",
     "options": {
-      "A": "Perché ciascuno ha aspettative e bisogni informativi differenti che guidano l'utilizzo dei risultati.",
-      "B": "Per poter inviare a tutti lo stesso identico report standardizzato di 500 pagine.",
-      "C": "Per decidere a chi addebitare i costi della ricerca in base alla simpatia.",
-      "D": "Per verificare che nessuno dei partecipanti abbia precedenti penali."
+      "A": "Perché ciascuno ha aspettative e bisogni informativi differenti che guidano l'uso dei risultati.",
+      "B": "Per applicare a tutti i destinatari lo stesso set di indicatori standard.",
+      "C": "Per scegliere i canali media prima di definire gli obiettivi di business.",
+      "D": "Per limitare la misurazione alle richieste informative della funzione comunicazione."
     },
     "answer": "A",
     "tags": [
       "modelli",
-      "performance_ccpm",
-      "ricerca_metodi"
+      "performance_ccpm"
     ]
   },
   {
@@ -7074,10 +7066,10 @@
     "section": "Performance measurement e CCPM",
     "text": "Quale metodologia suggerisce il CCPM per identificare e analizzare le possibili cause degli effetti, superando il limite dei metodi sperimentali?",
     "options": {
-      "A": "General Elimination Methodology (\\$GEM\\$).",
-      "B": "Analisi SWOT qualitativa.",
-      "C": "Focus Group esplorativo.",
-      "D": "Balanced Scorecard applicata."
+      "A": "General Elimination Methodology (GEM).",
+      "B": "Most Significant Change (MSC).",
+      "C": "Success Case Method (SCM).",
+      "D": "Communication Balanced Scorecard."
     },
     "answer": "A",
     "tags": [
@@ -7108,10 +7100,10 @@
     "section": "Performance measurement e CCPM",
     "text": "Nella Fase 2 del CCPM, cosa si intende per 'Livello Rendicontativo'?",
     "options": {
-      "A": "Le misure che consentono di dimostrare il contributo della comunicazione ai risultati complessivi di business.",
-      "B": "La fase in cui si contano quanti comunicati stampa sono stati pubblicati.",
-      "C": "Il calcolo dei minuti dedicati da ogni consulente al progetto.",
-      "D": "L'attività di archiviazione delle fatture delle agenzie di comunicazione."
+      "A": "Misure che dimostrano il contributo della comunicazione ai risultati complessivi di business.",
+      "B": "Misure usate per correggere attività e strumenti durante l'implementazione.",
+      "C": "Misure che valutano il capitale comunicativo e relazionale nel medio-lungo periodo.",
+      "D": "Misure che descrivono la produzione immediata di output e contenuti."
     },
     "answer": "A",
     "tags": [
@@ -7126,17 +7118,15 @@
     "section": "Performance measurement e CCPM",
     "text": "Secondo il modello CCPM, perché è cruciale definire i soggetti interessati a ciascuna misura nel piano di misurazione?",
     "options": {
-      "A": "Per assicurarsi che i risultati siano comunicati in modo mirato a chi deve prendere decisioni.",
-      "B": "Per poter dare la colpa a qualcuno in caso di risultati negativi.",
-      "C": "Per limitare l'accesso ai dati sensibili solo a pochissime persone.",
-      "D": "Per vendere i dati ottenuti a società esterne di marketing."
+      "A": "Per comunicare i risultati in modo mirato a chi deve prendere decisioni.",
+      "B": "Per evitare che il piano di misurazione debba contenere KPI rendicontativi.",
+      "C": "Per sostituire la raccolta dati con una distribuzione più efficace del report.",
+      "D": "Per separare gli stakeholder dagli obiettivi strategici dell'organizzazione."
     },
     "answer": "A",
     "tags": [
       "modelli",
-      "performance_ccpm",
-      "ricerca_metodi",
-      "seo_geo_digitale"
+      "performance_ccpm"
     ]
   },
   {
@@ -7158,12 +7148,12 @@
   {
     "id": 434,
     "section": "Performance measurement e CCPM",
-    "text": "Cosa indica il parametro 'Storia' (\\$S\\$) nel sistema di obiettivi VALUES?",
+    "text": "Cosa indica il parametro 'Storia' nel sistema di obiettivi VALUES?",
     "options": {
-      "A": "La necessità di avere un termine di confronto, come l'andamento passato o un benchmark dei competitor.",
-      "B": "Il numero di anni di esperienza del responsabile della comunicazione.",
-      "C": "L'obbligo di scrivere un libro sulla fondazione dell'azienda.",
-      "D": "La narrazione degli errori commessi nelle campagne precedenti."
+      "A": "La necessità di avere un termine di confronto, come andamento passato o benchmark.",
+      "B": "La ricostruzione narrativa della storia dell'organizzazione nel report finale.",
+      "C": "La sequenza cronologica delle attività svolte durante la campagna.",
+      "D": "La descrizione dei casi di successo da inserire nella presentazione."
     },
     "answer": "A",
     "tags": [
@@ -7194,9 +7184,9 @@
     "text": "Nel sistema VALUES, la 'A' di 'Adeguati' si riferisce a:",
     "options": {
       "A": "Obiettivi realistici rispetto alle risorse e coerenti con il contesto specifico della valutazione.",
-      "B": "Obiettivi approvati da almeno due agenzie di certificazione esterne.",
-      "C": "Obiettivi che utilizzano esclusivamente un linguaggio accademico.",
-      "D": "Obiettivi che non cambiano mai nel tempo."
+      "B": "Obiettivi definiti dopo la raccolta dei dati per adattarsi ai risultati ottenuti.",
+      "C": "Obiettivi uguali per tutte le campagne, indipendentemente dal contesto.",
+      "D": "Obiettivi espressi solo come indicatori finanziari di breve periodo."
     },
     "answer": "A",
     "tags": [
@@ -7260,27 +7250,10 @@
     "section": "Performance measurement e CCPM",
     "text": "Nella Communication BSC, l'obiettivo della prospettiva 'apprendimento e crescita' è:",
     "options": {
-      "A": "Sviluppare una coerenza tra tutte le attività e promuovere l'innovazione nella comunicazione.",
-      "B": "Garantire che tutti i dipendenti ricevano la busta paga puntualmente.",
-      "C": "Ottenere il miglior prezzo possibile per l'acquisto di spazi media.",
-      "D": "Massimizzare il numero di click sugli annunci pubblicitari."
-    },
-    "answer": "A",
-    "tags": [
-      "modelli",
-      "performance_ccpm",
-      "ricerca_metodi"
-    ]
-  },
-  {
-    "id": 441,
-    "section": "Performance measurement e CCPM",
-    "text": "Nella misurazione delle performance, cosa si intende per 'allineamento costante'?",
-    "options": {
-      "A": "Verificare che gli obiettivi di comunicazione siano sempre coerenti con la strategia aziendale.",
-      "B": "Mantenere i loghi aziendali perfettamente dritti su tutti i materiali cartacei.",
-      "C": "Assicurarsi che tutti i comunicati stampa abbiano la stessa lunghezza.",
-      "D": "Aggiornare il sito web ogni ora con nuove notizie."
+      "A": "Sviluppare organizzazione, competenze e capacità di innovazione della funzione comunicazione.",
+      "B": "Misurare la comunicazione di marketing rivolta ai clienti finali.",
+      "C": "Valutare la comunicazione istituzionale verso investitori e contesto economico.",
+      "D": "Controllare soprattutto l'efficienza dei processi interni già stabilizzati."
     },
     "answer": "A",
     "tags": [
@@ -7291,14 +7264,30 @@
     ]
   },
   {
+    "id": 441,
+    "section": "Performance measurement e CCPM",
+    "text": "Nella misurazione delle performance, cosa si intende per 'allineamento costante'?",
+    "options": {
+      "A": "Verificare che gli obiettivi di comunicazione siano coerenti con la strategia aziendale.",
+      "B": "Mantenere invariato lo stesso set di KPI in ogni campagna.",
+      "C": "Aggiornare i dati in tempo reale anche quando non servono alle decisioni.",
+      "D": "Confrontare gli output prodotti senza collegarli agli obiettivi strategici."
+    },
+    "answer": "A",
+    "tags": [
+      "modelli",
+      "performance_ccpm"
+    ]
+  },
+  {
     "id": 442,
     "section": "Performance measurement e CCPM",
     "text": "Cosa si intende per 'Variabili Ponte' all'interno di un modello logico di valutazione?",
     "options": {
-      "A": "Elementi che collegano gli output agli obiettivi desiderati su cui il comunicatore ha controllo.",
-      "B": "Il budget economico che permette di passare dalla progettazione alla realizzazione.",
-      "C": "Dati statistici che collegano le letture cartacee a quelle digitali.",
-      "D": "Fattori esterni imprevedibili che annullano l'effetto della comunicazione."
+      "A": "Intangibili come fiducia, reputazione e relazione che collegano outcome e impatto.",
+      "B": "Indicatori di output che descrivono la quantità di contenuti prodotti.",
+      "C": "Risorse operative usate per trasformare input in attività di comunicazione.",
+      "D": "Risultati economici finali già osservati nelle aree di performance."
     },
     "answer": "A",
     "tags": [
@@ -7343,15 +7332,16 @@
     "section": "Performance measurement e CCPM",
     "text": "Nella tassonomia di Romenti, cosa misurano le 'misure di adeguatezza'?",
     "options": {
-      "A": "Se le attività sono state progettate correttamente per raggiungere l'effetto desiderato (valutazione ex ante)",
-      "B": "Il grado di soddisfazione dei dipendenti a fine anno",
-      "C": "Il numero di persone che hanno visto l'evento",
-      "D": "Se il budget è stato speso interamente"
+      "A": "Se le attività sono progettate correttamente per raggiungere l'effetto desiderato.",
+      "B": "Il contributo finale della comunicazione ai risultati complessivi di business.",
+      "C": "La quantità di output prodotti durante l'implementazione del programma.",
+      "D": "Il cambiamento di opinioni e comportamenti osservato nei pubblici."
     },
     "answer": "A",
     "tags": [
       "modelli",
-      "performance_ccpm"
+      "performance_ccpm",
+      "seo_geo_digitale"
     ]
   },
   {
@@ -7375,15 +7365,17 @@
     "section": "Performance measurement e CCPM",
     "text": "Cosa caratterizza principalmente l'approccio Through The Line (TTL)?",
     "options": {
-      "A": "L'integrazione di leve ATL e BTL in un'unica strategia omnicanale",
-      "B": "L'esclusione totale dei media digitali a favore di quelli fisici",
-      "C": "L'utilizzo di un unico indicatore di performance per tutti i canali",
-      "D": "Il focus esclusivo sulla fase di awareness del brand"
+      "A": "L'integrazione di leve ATL e BTL in un'unica strategia omnicanale.",
+      "B": "La separazione netta tra comunicazione di massa e canali a risposta diretta.",
+      "C": "Il focus esclusivo sulla notorietà del brand attraverso media paid.",
+      "D": "La misurazione del solo ROI diretto generato nel punto vendita."
     },
     "answer": "A",
     "tags": [
       "modelli",
-      "performance_ccpm"
+      "performance_ccpm",
+      "seo_geo_digitale",
+      "social_roi"
     ]
   },
   {
@@ -7408,16 +7400,17 @@
     "section": "Performance measurement e CCPM",
     "text": "Cosa indica l'indice di 'Advocacy' nel calcolo delle performance di un programma di influencer marketing?",
     "options": {
-      "A": "Il rapporto tra partecipanti attivi al programma e membri totali, unito alla loro capacità di influenzare altri",
-      "B": "Il numero di avvocati che hanno commentato il post dell'influencer",
-      "C": "Il costo totale pagato per ogni singola menzione ricevuta",
-      "D": "Se gli influencer hanno utilizzato l'hashtag corretto nel post"
+      "A": "Il rapporto tra partecipanti attivi e membri totali, insieme alla capacità di influenzare altri.",
+      "B": "La quota di copertura media ottenuta rispetto ai competitor diretti.",
+      "C": "Il costo sostenuto per ogni menzione prodotta dagli influencer.",
+      "D": "Il sentiment medio dei commenti raccolti durante la campagna."
     },
     "answer": "A",
     "tags": [
       "modelli",
       "performance_ccpm",
-      "ricerca_metodi"
+      "seo_geo_digitale",
+      "social_roi"
     ]
   },
   {
@@ -7986,14 +7979,13 @@
     "text": "Perché un 'ascolto globale' senza selezione delle fonti è considerato rischioso e poco efficace?",
     "options": {
       "A": "Perché rileverebbe troppi messaggi non attinenti agli obiettivi e aumenterebbe inutilmente i costi.",
-      "B": "Perché l'analisi semantica non è in grado di processare fonti diverse dai blog.",
-      "C": "Perché violerebbe le policy sulla privacy degli utenti di Wikipedia e X.",
-      "D": "Perché le piattaforme di listening non supportano volumi di dati eccessivi."
+      "B": "Perché ridurrebbe eccessivamente il numero di messaggi disponibili per l'analisi.",
+      "C": "Perché impedirebbe di applicare qualunque classificazione del sentiment.",
+      "D": "Perché trasformerebbe il listening in una misurazione certificata di audience."
     },
     "answer": "A",
     "tags": [
       "roi_ave",
-      "seo_geo_digitale",
       "social_roi"
     ]
   },
@@ -8287,10 +8279,10 @@
     "section": "Intangibili e reputazione",
     "text": "Cosa si intende per 'Flussi simbolici' nel capitale comunicativo?",
     "options": {
-      "A": "Tutto ciò che rende possibile la circolazione di valori e significati condivisi.",
-      "B": "La spedizione di campioni omaggio ai clienti più fedeli.",
-      "C": "L'uso di icone grafiche nelle chat aziendali (emoji).",
-      "D": "Il trasferimento elettronico di valuta tra diverse banche."
+      "A": "Ciò che rende possibile la circolazione di valori e significati condivisi.",
+      "B": "I flussi informativi operativi che collegano reparti e procedure interne.",
+      "C": "Il trasferimento tecnico dei dati tra sistemi informativi aziendali.",
+      "D": "La visibilità media generata dalle uscite stampa nel periodo."
     },
     "answer": "A",
     "tags": [
@@ -8339,9 +8331,9 @@
     "text": "Nel modello CCPM, la fase di 'Assessment del contesto comunicativo' serve a:",
     "options": {
       "A": "Mappare stakeholder, aspettative e audit della cultura della misurazione.",
-      "B": "Sostituire completamente l'uso di KPI quantitativi con mappe narrative.",
-      "C": "Raccogliere i dati finali per calcolare il ROI della comunicazione.",
-      "D": "Certificare i dati d'ascolto presso gli enti come Audicom o Auditel."
+      "B": "Misurare soltanto gli output conclusivi prodotti dalla funzione comunicazione.",
+      "C": "Calcolare il ROI economico finale prima di definire gli obiettivi.",
+      "D": "Certificare audience, tiratura e ascolti attraverso gli enti di settore."
     },
     "answer": "A",
     "tags": [
@@ -8357,14 +8349,15 @@
     "section": "Intangibili e reputazione",
     "text": "Quale tra questi è un esempio di 'Capitale Narrativo'?",
     "options": {
-      "A": "L'insieme delle storie, del corporate storytelling e delle conversazioni online sull'azienda.",
-      "B": "La lista dei software per l'invio di newsletter posseduti dall'impresa.",
-      "C": "L'organigramma aziendale che definisce i ruoli del dipartimento comunicazione.",
-      "D": "Il certificato di laurea di un dipendente dell'ufficio stampa."
+      "A": "L'insieme di storie, corporate storytelling e conversazioni sull'organizzazione.",
+      "B": "Le competenze tecniche e comunicative possedute dal personale interno.",
+      "C": "Le procedure, le infrastrutture e i sistemi informativi aziendali.",
+      "D": "Le relazioni commerciali e fiduciarie costruite con gli stakeholder."
     },
     "answer": "A",
     "tags": [
       "reputazione_intangibili",
+      "ricerca_metodi",
       "seo_geo_digitale"
     ]
   },
@@ -8373,18 +8366,15 @@
     "section": "Intangibili e reputazione",
     "text": "Cosa rappresentano le 'Variabili Ponte' nel modello logico del CCPM?",
     "options": {
-      "A": "Intangibili come fiducia e reputazione che collegano gli outcome all'impatto sul business.",
-      "B": "I tecnici esterni incaricati di installare i meter Auditel nelle famiglie.",
-      "C": "Il numero di post pubblicati sui social che servono a portare traffico al sito.",
-      "D": "Le spese impreviste che emergono durante una campagna media."
+      "A": "Intangibili come fiducia e reputazione che collegano outcome e impatto sul business.",
+      "B": "Le risorse economiche e professionali usate come input del programma.",
+      "C": "Gli output prodotti, come contenuti, eventi e uscite media.",
+      "D": "I risultati economici finali già osservati nelle aree di performance."
     },
     "answer": "A",
     "tags": [
-      "enti_audience",
       "modelli",
-      "reputazione_intangibili",
-      "ricerca_metodi",
-      "social_roi"
+      "reputazione_intangibili"
     ]
   },
   {
@@ -8392,16 +8382,15 @@
     "section": "Intangibili e reputazione",
     "text": "Quale tra i seguenti è un principio chiave del modello CCPM?",
     "options": {
-      "A": "La valutazione partecipativa e il coinvolgimento degli stakeholder.",
-      "B": "L'orientamento puramente tecnico e statistico della misurazione.",
-      "C": "L'uso esclusivo del ROI come unica metrica di successo.",
-      "D": "La misurazione anonima senza mai rivelare gli obiettivi al management."
+      "A": "Orientare la misurazione al contesto, agli stakeholder e alle decisioni organizzative.",
+      "B": "Usare il ROI economico come unica metrica valida per ogni attività.",
+      "C": "Limitare la valutazione alla quantità di output prodotti nel periodo.",
+      "D": "Applicare uno standard identico a tutte le organizzazioni e campagne."
     },
     "answer": "A",
     "tags": [
       "modelli",
       "reputazione_intangibili",
-      "seo_geo_digitale",
       "social_roi"
     ]
   },
@@ -8411,9 +8400,9 @@
     "text": "Nel contesto del capitale intellettuale, cosa comprende il 'Capitale Umano'?",
     "options": {
       "A": "Competenze, conoscenze, capacità comunicative e livelli di istruzione del personale.",
-      "B": "Il valore dei computer e delle scrivanie usate dai dipendenti.",
-      "C": "I contratti firmati con i fornitori esterni di servizi digitali.",
-      "D": "Le procedure scritte per la gestione della crisi aziendale."
+      "B": "Procedure, sistemi informativi e infrastrutture organizzative interne.",
+      "C": "Relazioni con stakeholder, reputazione, immagine e fiducia.",
+      "D": "Storie, simboli e narrazioni generate intorno all'organizzazione."
     },
     "answer": "A",
     "tags": [
@@ -8444,9 +8433,9 @@
     "text": "Secondo il materiale, perché la comunicazione è centrale nello sviluppo del capitale intellettuale?",
     "options": {
       "A": "Perché permette la circolazione delle conoscenze e la creazione di relazioni.",
-      "B": "Perché garantisce che l'azienda non riceva mai critiche dai media esterni.",
-      "C": "Perché permette di ridurre drasticamente il numero dei dipendenti necessari.",
-      "D": "Perché è l'unica funzione aziendale che produce documenti scritti ufficiali."
+      "B": "Perché coincide con la sola visibilità ottenuta sui media tradizionali.",
+      "C": "Perché produce documenti formali separati dagli intangibili organizzativi.",
+      "D": "Perché sostituisce la misurazione della reputazione presso gli stakeholder."
     },
     "answer": "A",
     "tags": [
@@ -8477,18 +8466,17 @@
     "section": "Intangibili e reputazione",
     "text": "Nella tassonomia dei KPI del CCPM (Lezione 5), a cosa corrisponde il 'Livello Sommativo'?",
     "options": {
-      "A": "Alla misurazione delle dimensioni consolidate del capitale comunicativo (organizzativo, relazionale, reputazionale).",
-      "B": "Alla valutazione ex-ante dell'adeguatezza dei messaggi prima del lancio di una campagna.",
-      "C": "Al semplice conteggio matematico di tutti i like ottenuti in un anno solare.",
-      "D": "Alla dimostrazione dell'impatto economico finale (ROI) sulle vendite dell'azienda."
+      "A": "Alla misurazione delle dimensioni consolidate del capitale comunicativo.",
+      "B": "Alla valutazione ex ante dell'adeguatezza di messaggi e strumenti.",
+      "C": "Al conteggio degli output prodotti durante l'implementazione.",
+      "D": "Alla dimostrazione dell'impatto economico finale sulle performance."
     },
     "answer": "A",
     "tags": [
       "modelli",
       "reputazione_intangibili",
       "ricerca_metodi",
-      "seo_geo_digitale",
-      "social_roi"
+      "seo_geo_digitale"
     ]
   },
   {
@@ -8583,29 +8571,31 @@
     "text": "Nelle 'Trappole d'esame', perché non si deve dire che la reputazione si misura direttamente con uno standard unico?",
     "options": {
       "A": "Perché è un giudizio multidimensionale che richiede diversi indicatori e prospettive.",
-      "B": "Perché la reputazione è un asset tangibile facilmente quantificabile in euro.",
-      "C": "Perché solo il dipartimento marketing ha il diritto di valutarla.",
-      "D": "Perché la reputazione cambia troppo velocemente per essere misurata."
+      "B": "Perché coincide con il valore pubblicitario equivalente della copertura media.",
+      "C": "Perché può essere descritta solo attraverso dati certificati di audience.",
+      "D": "Perché riguarda esclusivamente gli output prodotti dall'ufficio stampa."
     },
     "answer": "A",
     "tags": [
-      "reputazione_intangibili"
+      "reputazione_intangibili",
+      "ricerca_metodi",
+      "social_roi"
     ]
   },
   {
     "id": 519,
     "section": "Intangibili e reputazione",
-    "text": "Nel contesto del focus group, a cosa serve la fase di 'Warm up'?",
+    "text": "Secondo Grunig e Hon, cosa indica il commitment nella relazione organizzazione-stakeholder?",
     "options": {
-      "A": "A creare un clima di fiducia e avviare la partecipazione rompendo il ghiaccio.",
-      "B": "A presentare immediatamente gli stimoli pubblicitari per vedere le reazioni a caldo.",
-      "C": "A riscaldare l'ambiente fisico del locale per il comfort dei partecipanti.",
-      "D": "A selezionare i partecipanti scartando quelli meno loquaci."
+      "A": "Il desiderio di mantenere nel tempo una relazione considerata importante.",
+      "B": "Il bilanciamento del potere decisionale tra organizzazione e stakeholder.",
+      "C": "Il giudizio su integrità, affidabilità e competenza dell'organizzazione.",
+      "D": "La valutazione dei benefici ricevuti rispetto alle aspettative iniziali."
     },
     "answer": "A",
     "tags": [
-      "reputazione_intangibili",
-      "ricerca_metodi"
+      "modelli",
+      "reputazione_intangibili"
     ]
   },
   {
@@ -8791,14 +8781,15 @@
     "section": "Intangibili e reputazione",
     "text": "Nelle relazioni 'Comunitarie' tra organizzazione e stakeholder, qual è il principio guida?",
     "options": {
-      "A": "Le parti offrono benefici per puro interesse verso il benessere dell'altro, senza aspettarsi ricompense immediate.",
-      "B": "Il focus esclusivo è sulla massimizzazione del profitto aziendale calpestando gli interessi altrui.",
-      "C": "Ogni azione è subordinata alla certezza di ricevere un beneficio economico equivalente.",
-      "D": "L'organizzazione agisce solo se lo stakeholder ha già fornito un vantaggio competitivo."
+      "A": "Offrire benefici per interesse verso il benessere dell'altro senza ricompensa immediata.",
+      "B": "Mantenere la relazione solo quando è previsto uno scambio equivalente.",
+      "C": "Formalizzare la relazione attraverso un accordo contrattuale di breve periodo.",
+      "D": "Gestire la relazione secondo ruoli gerarchici interni all'organizzazione."
     },
     "answer": "A",
     "tags": [
-      "reputazione_intangibili"
+      "reputazione_intangibili",
+      "social_roi"
     ]
   },
   {
@@ -8819,31 +8810,35 @@
   {
     "id": 533,
     "section": "Intangibili e reputazione",
-    "text": "Cosa si intende per 'Vetrina Prodotto' nel calcolo dei moltiplicatori Glebb?",
+    "text": "Nel Reputation Quotient, quale dimensione è considerata affettiva?",
     "options": {
-      "A": "La pubblicazione di un'immagine accompagnata dalla descrizione del prodotto.",
-      "B": "Un banner pubblicitario animato presente su un sito e-commerce.",
-      "C": "L'esposizione fisica del prodotto nella vetrina di un negozio in centro.",
-      "D": "La citazione del marchio in un elenco alfabetico a fine rivista."
+      "A": "Attrattività emotiva.",
+      "B": "Prodotti e servizi.",
+      "C": "Performance finanziaria.",
+      "D": "Responsabilità sociale."
     },
     "answer": "A",
     "tags": [
-      "reputazione_intangibili"
+      "modelli",
+      "reputazione_intangibili",
+      "social_roi"
     ]
   },
   {
     "id": 534,
     "section": "Intangibili e reputazione",
-    "text": "Cosa indica l'indice delle 'idee più condivise o votate' in un programma di ascolto?",
+    "text": "Nel capitale comunicativo, quale dimensione riguarda la qualità delle relazioni con gli stakeholder?",
     "options": {
-      "A": "La capacità dell'azienda di raccogliere feedback costruttivi dagli stakeholder",
-      "B": "Il numero di volte che il logo aziendale è stato scaricato",
-      "C": "La velocità della connessione internet dell'azienda",
-      "D": "Il costo totale della campagna pubblicitaria"
+      "A": "Capitale relazionale.",
+      "B": "Capitale umano.",
+      "C": "Capitale narrativo.",
+      "D": "Capitale organizzativo."
     },
     "answer": "A",
     "tags": [
-      "reputazione_intangibili"
+      "reputazione_intangibili",
+      "ricerca_metodi",
+      "seo_geo_digitale"
     ]
   },
   {
@@ -8992,10 +8987,10 @@
     "section": "Intangibili e reputazione",
     "text": "Secondo l'International Association of Business Communication (2003), la comunicazione è centrale nello sviluppo di:",
     "options": {
-      "A": "Capitale umano, relazionale e organizzativo",
-      "B": "Solo dei sistemi informatici hardware",
-      "C": "Della riduzione dei costi pubblicitari",
-      "D": "Esclusivamente dei profitti a breve termine"
+      "A": "Capitale umano, relazionale e organizzativo.",
+      "B": "Soli sistemi informativi e infrastrutture tecniche.",
+      "C": "Soli indicatori economici di breve periodo.",
+      "D": "Soli output media prodotti dalla funzione comunicazione."
     },
     "answer": "A",
     "tags": [
@@ -9009,16 +9004,17 @@
     "section": "Intangibili e reputazione",
     "text": "Cosa valuta il 'Reputation Quotient' (RQ) nell'ambito dell'analisi aziendale?",
     "options": {
-      "A": "Un punteggio sintetico basato sulla somma delle valutazioni dei vari indicatori reputazionali",
-      "B": "Il rapporto tra metri quadri di uffici e numero di impiegati",
-      "C": "La velocità media con cui un'azienda risponde ai reclami via email",
-      "D": "Il numero di segnalazioni negative ricevute dal garante della privacy"
+      "A": "Un punteggio reputazionale basato su indicatori affettivi e cognitivi.",
+      "B": "Il valore pubblicitario equivalente della copertura editoriale ottenuta.",
+      "C": "La soddisfazione verso la comunicazione interna su otto dimensioni.",
+      "D": "La tiratura e la diffusione certificate dei mezzi pianificati."
     },
     "answer": "A",
     "tags": [
+      "enti_audience",
       "modelli",
       "reputazione_intangibili",
-      "seo_geo_digitale"
+      "ricerca_metodi"
     ]
   },
   {
@@ -9026,14 +9022,16 @@
     "section": "Intangibili e reputazione",
     "text": "Secondo il materiale, perché i vantaggi competitivi basati sulla reputazione sono 'più durevoli'?",
     "options": {
-      "A": "Perché derivano da percezioni consolidate nel tempo e non solo da tattiche momentanee",
-      "B": "Perché i governi vietano di parlare male delle aziende famose",
-      "C": "Perché sono protetti da brevetti internazionali a durata illimitata",
-      "D": "Perché richiedono zero investimenti economici dopo essere stati ottenuti"
+      "A": "Perché derivano da percezioni consolidate nel tempo e difficili da imitare.",
+      "B": "Perché dipendono solo dall'intensità della copertura media del periodo.",
+      "C": "Perché nascono da promozioni tattiche facilmente replicabili dai competitor.",
+      "D": "Perché possono essere ottenuti senza investimenti comunicativi continuativi."
     },
     "answer": "A",
     "tags": [
-      "reputazione_intangibili"
+      "reputazione_intangibili",
+      "ricerca_metodi",
+      "seo_geo_digitale"
     ]
   },
   {
@@ -9041,10 +9039,10 @@
     "section": "Intangibili e reputazione",
     "text": "Quale tra questi è un beneficio tangibile della reputazione nel mercato del lavoro?",
     "options": {
-      "A": "Capacità di attirare i migliori talenti",
-      "B": "Possibilità di licenziare senza giusta causa",
-      "C": "Esonero totale dal versamento dei contributi previdenziali",
-      "D": "Diritto di utilizzare solo stagisti non retribuiti"
+      "A": "Capacità di attirare i migliori talenti.",
+      "B": "Riduzione della necessità di comunicazione interna.",
+      "C": "Maggiore quantità di output media prodotti nel breve periodo.",
+      "D": "Sostituzione dei processi di selezione con la sola notorietà del brand."
     },
     "answer": "A",
     "tags": [
@@ -9056,10 +9054,10 @@
     "section": "Intangibili e reputazione",
     "text": "Nella visione degli economisti aziendali, cos'è la reputazione?",
     "options": {
-      "A": "Una risorsa immateriale fondamentale nel processo di generazione del valore dell'impresa",
-      "B": "Un semplice costo di marketing che non produce ritorni reali",
-      "C": "La somma dei debiti contratti con le banche estere",
-      "D": "Un documento cartaceo che attesta la qualità ISO"
+      "A": "Una risorsa immateriale fondamentale nel processo di generazione del valore dell'impresa.",
+      "B": "Un costo di marketing separato dai processi di creazione del valore.",
+      "C": "Un indicatore di sola copertura media ottenuta nel periodo.",
+      "D": "Un attributo estetico collegato principalmente all'identità visiva."
     },
     "answer": "A",
     "tags": [
@@ -9072,15 +9070,15 @@
     "section": "Intangibili e reputazione",
     "text": "Cosa significa che la reputazione 'riassume le percezioni degli stakeholder'?",
     "options": {
-      "A": "Rappresenta il giudizio di valore su attributi, azioni passate e performance future dell'azienda",
-      "B": "Significa che l'azienda deve fare un riassunto scritto di tutte le email dei clienti",
-      "C": "Indica che solo gli azionisti di maggioranza decidono il valore del brand",
-      "D": "Significa che l'azienda può cambiare la propria identità ogni giorno in base ai sondaggi"
+      "A": "Rappresenta un giudizio su attributi, azioni passate e attese future dell'azienda.",
+      "B": "Indica una percezione istantanea limitata a un singolo touchpoint comunicativo.",
+      "C": "Riguarda soltanto il giudizio degli analisti finanziari e degli investitori.",
+      "D": "Coincide con il numero di menzioni ottenute sui media in un dato periodo."
     },
     "answer": "A",
     "tags": [
       "reputazione_intangibili",
-      "seo_geo_digitale"
+      "ricerca_metodi"
     ]
   },
   {
@@ -9088,10 +9086,10 @@
     "section": "Intangibili e reputazione",
     "text": "Nella misurazione dell'identità organizzativa, cosa si intende per 'Temperamento'?",
     "options": {
-      "A": "L'intensità, la forza e la velocità con cui l'organizzazione agisce",
-      "B": "La capacità dei climatizzatori di mantenere costante la temperatura",
-      "C": "La resistenza fisica degli edifici aziendali ai terremoti",
-      "D": "L'umore passeggero del CEO durante le riunioni mattutine"
+      "A": "L'intensità, la forza e la velocità con cui l'organizzazione agisce.",
+      "B": "Il clima comunicazionale percepito dai dipendenti interni.",
+      "C": "Il livello di fiducia attribuito dagli stakeholder esterni.",
+      "D": "L'insieme dei segni visivi che rendono riconoscibile l'organizzazione."
     },
     "answer": "A",
     "tags": [
@@ -9104,10 +9102,10 @@
     "section": "Intangibili e reputazione",
     "text": "Quale tra questi è un elemento del 'Capitale Organizzativo' (componente strutturale)?",
     "options": {
-      "A": "Cultura organizzativa e valori",
-      "B": "Il livello di istruzione dei singoli dipendenti",
-      "C": "La flotta di veicoli aziendali in leasing",
-      "D": "I nomi dei figli di tutti i clienti storici"
+      "A": "Cultura organizzativa e valori.",
+      "B": "Competenze e qualifiche professionali dei dipendenti.",
+      "C": "Relazioni con stakeholder, reputazione e fiducia.",
+      "D": "Storie e narrazioni condivise sull'organizzazione."
     },
     "answer": "A",
     "tags": [

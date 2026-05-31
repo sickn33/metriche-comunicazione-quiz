@@ -3643,6 +3643,170 @@ const manualReviewOverrides = {
       D: "Per collegare direttamente la relazione con i risultati economici finali.",
     },
   },
+  q403: {
+    matchText: "Nel modello CCPM, perché è importante mappare le 'Performance Expectations'?",
+    options: {
+      A: "Perché la valutazione è efficace solo se utile per chi deve prendere decisioni.",
+      B: "Perché consente di usare lo stesso report sintetico per tutti i destinatari.",
+      C: "Perché permette di sostituire gli obiettivi con gli indicatori disponibili.",
+      D: "Perché riduce la valutazione alla rendicontazione finale degli output.",
+    },
+  },
+  q404: {
+    matchText: "Secondo il modello di Romenti, la valutazione è efficace solo se:",
+    options: {
+      A: "È utile per chi deve prendere decisioni.",
+      B: "Raccoglie il maggior numero possibile di metriche disponibili.",
+      C: "Misura soprattutto gli output prodotti dalla funzione comunicazione.",
+      D: "È sintetizzata in un unico indice economico finale.",
+    },
+  },
+  q406: {
+    matchText: "Quale delle seguenti opzioni descrive correttamente il 'Modello Logico' nel CCPM?",
+    options: {
+      A: "Input, attività, output, outcome, variabili ponte e impatto sulle performance.",
+      B: "Audit, obiettivi, strategia, valutazione ongoing e valutazione finale.",
+      C: "Focus group, survey, analisi del contenuto ed esperimento causale.",
+      D: "Reach, engagement, conversione, retention e advocacy.",
+    },
+  },
+  q415: {
+    matchText: "Secondo Romenti, qual è il presupposto fondamentale della 'Communication Balanced Scorecard' (BSC) di Vos e Shoemaker?",
+    options: {
+      A: "A ciascuna prospettiva aziendale può corrispondere un'attività specifica di comunicazione.",
+      B: "Le quattro prospettive devono essere misurate con lo stesso KPI di output.",
+      C: "La comunicazione istituzionale sostituisce tutte le altre aree comunicative.",
+      D: "La Balanced Scorecard serve solo a calcolare il ritorno economico della campagna.",
+    },
+  },
+  q423: {
+    matchText: "Nel modello 'Value Link', qual è il primo passaggio fondamentale?",
+    options: {
+      A: "Raggiungere le persone e renderle consapevoli.",
+      B: "Indirizzare i pubblici verso una relazione con l'organizzazione.",
+      C: "Trattenere e motivare i pubblici nel tempo.",
+      D: "Tradurre la relazione in contributo agli obiettivi di business.",
+    },
+  },
+  q424: {
+    matchText: "Secondo il modello delle 4 prospettive di Vos e Schoemaker (derivato dalla Balanced Scorecard), a quale area corrisponde la 'comunicazione istituzionale'?",
+    text: "Nella Balanced Scorecard adattata da Vos e Schoemaker, a cosa corrisponde la prospettiva dei processi interni?",
+    options: {
+      A: "Alla comunicazione interna.",
+      B: "Alla comunicazione istituzionale.",
+      C: "Alla comunicazione di marketing.",
+      D: "All'organizzazione della funzione comunicazione.",
+    },
+  },
+  q427: {
+    matchText: "Nel modello CCPM, perché è importante identificare i soggetti coinvolti prima della misurazione?",
+    options: {
+      A: "Perché ciascuno ha aspettative e bisogni informativi differenti che guidano l'uso dei risultati.",
+      B: "Per applicare a tutti i destinatari lo stesso set di indicatori standard.",
+      C: "Per scegliere i canali media prima di definire gli obiettivi di business.",
+      D: "Per limitare la misurazione alle richieste informative della funzione comunicazione.",
+    },
+  },
+  q429: {
+    matchText: "Quale metodologia suggerisce il CCPM per identificare e analizzare le possibili cause degli effetti, superando il limite dei metodi sperimentali?",
+    options: {
+      A: "General Elimination Methodology (GEM).",
+      B: "Most Significant Change (MSC).",
+      C: "Success Case Method (SCM).",
+      D: "Communication Balanced Scorecard.",
+    },
+  },
+  q431: {
+    matchText: "Nella Fase 2 del CCPM, cosa si intende per 'Livello Rendicontativo'?",
+    options: {
+      A: "Misure che dimostrano il contributo della comunicazione ai risultati complessivi di business.",
+      B: "Misure usate per correggere attività e strumenti durante l'implementazione.",
+      C: "Misure che valutano il capitale comunicativo e relazionale nel medio-lungo periodo.",
+      D: "Misure che descrivono la produzione immediata di output e contenuti.",
+    },
+  },
+  q432: {
+    matchText: "Secondo il modello CCPM, perché è cruciale definire i soggetti interessati a ciascuna misura nel piano di misurazione?",
+    options: {
+      A: "Per comunicare i risultati in modo mirato a chi deve prendere decisioni.",
+      B: "Per evitare che il piano di misurazione debba contenere KPI rendicontativi.",
+      C: "Per sostituire la raccolta dati con una distribuzione più efficace del report.",
+      D: "Per separare gli stakeholder dagli obiettivi strategici dell'organizzazione.",
+    },
+  },
+  q434: {
+    matchText: "Cosa indica il parametro 'Storia' (\\$S\\$) nel sistema di obiettivi VALUES?",
+    text: "Cosa indica il parametro 'Storia' nel sistema di obiettivi VALUES?",
+    options: {
+      A: "La necessità di avere un termine di confronto, come andamento passato o benchmark.",
+      B: "La ricostruzione narrativa della storia dell'organizzazione nel report finale.",
+      C: "La sequenza cronologica delle attività svolte durante la campagna.",
+      D: "La descrizione dei casi di successo da inserire nella presentazione.",
+    },
+  },
+  q436: {
+    matchText: "Nel sistema VALUES, la 'A' di 'Adeguati' si riferisce a:",
+    options: {
+      A: "Obiettivi realistici rispetto alle risorse e coerenti con il contesto specifico della valutazione.",
+      B: "Obiettivi definiti dopo la raccolta dei dati per adattarsi ai risultati ottenuti.",
+      C: "Obiettivi uguali per tutte le campagne, indipendentemente dal contesto.",
+      D: "Obiettivi espressi solo come indicatori finanziari di breve periodo.",
+    },
+  },
+  q440: {
+    matchText: "Nella Communication BSC, l'obiettivo della prospettiva 'apprendimento e crescita' è:",
+    options: {
+      A: "Sviluppare organizzazione, competenze e capacità di innovazione della funzione comunicazione.",
+      B: "Misurare la comunicazione di marketing rivolta ai clienti finali.",
+      C: "Valutare la comunicazione istituzionale verso investitori e contesto economico.",
+      D: "Controllare soprattutto l'efficienza dei processi interni già stabilizzati.",
+    },
+  },
+  q441: {
+    matchText: "Nella misurazione delle performance, cosa si intende per 'allineamento costante'?",
+    options: {
+      A: "Verificare che gli obiettivi di comunicazione siano coerenti con la strategia aziendale.",
+      B: "Mantenere invariato lo stesso set di KPI in ogni campagna.",
+      C: "Aggiornare i dati in tempo reale anche quando non servono alle decisioni.",
+      D: "Confrontare gli output prodotti senza collegarli agli obiettivi strategici.",
+    },
+  },
+  q442: {
+    matchText: "Cosa si intende per 'Variabili Ponte' all'interno di un modello logico di valutazione?",
+    options: {
+      A: "Intangibili come fiducia, reputazione e relazione che collegano outcome e impatto.",
+      B: "Indicatori di output che descrivono la quantità di contenuti prodotti.",
+      C: "Risorse operative usate per trasformare input in attività di comunicazione.",
+      D: "Risultati economici finali già osservati nelle aree di performance.",
+    },
+  },
+  q445: {
+    matchText: "Nella tassonomia di Romenti, cosa misurano le 'misure di adeguatezza'?",
+    options: {
+      A: "Se le attività sono progettate correttamente per raggiungere l'effetto desiderato.",
+      B: "Il contributo finale della comunicazione ai risultati complessivi di business.",
+      C: "La quantità di output prodotti durante l'implementazione del programma.",
+      D: "Il cambiamento di opinioni e comportamenti osservato nei pubblici.",
+    },
+  },
+  q447: {
+    matchText: "Cosa caratterizza principalmente l'approccio Through The Line (TTL)?",
+    options: {
+      A: "L'integrazione di leve ATL e BTL in un'unica strategia omnicanale.",
+      B: "La separazione netta tra comunicazione di massa e canali a risposta diretta.",
+      C: "Il focus esclusivo sulla notorietà del brand attraverso media paid.",
+      D: "La misurazione del solo ROI diretto generato nel punto vendita.",
+    },
+  },
+  q449: {
+    matchText: "Cosa indica l'indice di 'Advocacy' nel calcolo delle performance di un programma di influencer marketing?",
+    options: {
+      A: "Il rapporto tra partecipanti attivi e membri totali, insieme alla capacità di influenzare altri.",
+      B: "La quota di copertura media ottenuta rispetto ai competitor diretti.",
+      C: "Il costo sostenuto per ogni menzione prodotta dagli influencer.",
+      D: "Il sentiment medio dei commenti raccolti durante la campagna.",
+    },
+  },
   q435: {
     matchText: "Cosa si intende per 'causalità plausibile' nel modello CCPM?",
     options: {
@@ -3670,6 +3834,15 @@ const manualReviewOverrides = {
       D: "Misura direttamente gli outcome relazionali prodotti dalla comunicazione.",
     },
   },
+  q483: {
+    matchText: "Perché un 'ascolto globale' senza selezione delle fonti è considerato rischioso e poco efficace?",
+    options: {
+      A: "Perché rileverebbe troppi messaggi non attinenti agli obiettivi e aumenterebbe inutilmente i costi.",
+      B: "Perché ridurrebbe eccessivamente il numero di messaggi disponibili per l'analisi.",
+      C: "Perché impedirebbe di applicare qualunque classificazione del sentiment.",
+      D: "Perché trasformerebbe il listening in una misurazione certificata di audience.",
+    },
+  },
   q537: {
     matchText: "Nel contesto del capitale comunicativo, la dimensione della 'Comunicazione Interna' favorisce principalmente:",
     options: {
@@ -3695,6 +3868,198 @@ const manualReviewOverrides = {
       B: "Stima, ammirazione, fiducia e sentimenti degli stakeholder verso l'organizzazione.",
       C: "Output, out-take, outcome e impatto potenziale della comunicazione.",
       D: "Tiratura, diffusione, readership e total audience dei mezzi pianificati.",
+    },
+  },
+  q501: {
+    matchText: "Cosa si intende per 'Flussi simbolici' nel capitale comunicativo?",
+    options: {
+      A: "Ciò che rende possibile la circolazione di valori e significati condivisi.",
+      B: "I flussi informativi operativi che collegano reparti e procedure interne.",
+      C: "Il trasferimento tecnico dei dati tra sistemi informativi aziendali.",
+      D: "La visibilità media generata dalle uscite stampa nel periodo.",
+    },
+  },
+  q504: {
+    matchText: "Nel modello CCPM, la fase di 'Assessment del contesto comunicativo' serve a:",
+    options: {
+      A: "Mappare stakeholder, aspettative e audit della cultura della misurazione.",
+      B: "Misurare soltanto gli output conclusivi prodotti dalla funzione comunicazione.",
+      C: "Calcolare il ROI economico finale prima di definire gli obiettivi.",
+      D: "Certificare audience, tiratura e ascolti attraverso gli enti di settore.",
+    },
+  },
+  q505: {
+    matchText: "Quale tra questi è un esempio di 'Capitale Narrativo'?",
+    options: {
+      A: "L'insieme di storie, corporate storytelling e conversazioni sull'organizzazione.",
+      B: "Le competenze tecniche e comunicative possedute dal personale interno.",
+      C: "Le procedure, le infrastrutture e i sistemi informativi aziendali.",
+      D: "Le relazioni commerciali e fiduciarie costruite con gli stakeholder.",
+    },
+  },
+  q506: {
+    matchText: "Cosa rappresentano le 'Variabili Ponte' nel modello logico del CCPM?",
+    options: {
+      A: "Intangibili come fiducia e reputazione che collegano outcome e impatto sul business.",
+      B: "Le risorse economiche e professionali usate come input del programma.",
+      C: "Gli output prodotti, come contenuti, eventi e uscite media.",
+      D: "I risultati economici finali già osservati nelle aree di performance.",
+    },
+  },
+  q507: {
+    matchText: "Quale tra i seguenti è un principio chiave del modello CCPM?",
+    options: {
+      A: "Orientare la misurazione al contesto, agli stakeholder e alle decisioni organizzative.",
+      B: "Usare il ROI economico come unica metrica valida per ogni attività.",
+      C: "Limitare la valutazione alla quantità di output prodotti nel periodo.",
+      D: "Applicare uno standard identico a tutte le organizzazioni e campagne.",
+    },
+  },
+  q508: {
+    matchText: "Nel contesto del capitale intellettuale, cosa comprende il 'Capitale Umano'?",
+    options: {
+      A: "Competenze, conoscenze, capacità comunicative e livelli di istruzione del personale.",
+      B: "Procedure, sistemi informativi e infrastrutture organizzative interne.",
+      C: "Relazioni con stakeholder, reputazione, immagine e fiducia.",
+      D: "Storie, simboli e narrazioni generate intorno all'organizzazione.",
+    },
+  },
+  q510: {
+    matchText: "Secondo il materiale, perché la comunicazione è centrale nello sviluppo del capitale intellettuale?",
+    options: {
+      A: "Perché permette la circolazione delle conoscenze e la creazione di relazioni.",
+      B: "Perché coincide con la sola visibilità ottenuta sui media tradizionali.",
+      C: "Perché produce documenti formali separati dagli intangibili organizzativi.",
+      D: "Perché sostituisce la misurazione della reputazione presso gli stakeholder.",
+    },
+  },
+  q512: {
+    matchText: "Nella tassonomia dei KPI del CCPM (Lezione 5), a cosa corrisponde il 'Livello Sommativo'?",
+    options: {
+      A: "Alla misurazione delle dimensioni consolidate del capitale comunicativo.",
+      B: "Alla valutazione ex ante dell'adeguatezza di messaggi e strumenti.",
+      C: "Al conteggio degli output prodotti durante l'implementazione.",
+      D: "Alla dimostrazione dell'impatto economico finale sulle performance.",
+    },
+  },
+  q518: {
+    matchText: "Nelle 'Trappole d'esame', perché non si deve dire che la reputazione si misura direttamente con uno standard unico?",
+    options: {
+      A: "Perché è un giudizio multidimensionale che richiede diversi indicatori e prospettive.",
+      B: "Perché coincide con il valore pubblicitario equivalente della copertura media.",
+      C: "Perché può essere descritta solo attraverso dati certificati di audience.",
+      D: "Perché riguarda esclusivamente gli output prodotti dall'ufficio stampa.",
+    },
+  },
+  q519: {
+    matchText: "Nel contesto del focus group, a cosa serve la fase di 'Warm up'?",
+    text: "Secondo Grunig e Hon, cosa indica il commitment nella relazione organizzazione-stakeholder?",
+    options: {
+      A: "Il desiderio di mantenere nel tempo una relazione considerata importante.",
+      B: "Il bilanciamento del potere decisionale tra organizzazione e stakeholder.",
+      C: "Il giudizio su integrità, affidabilità e competenza dell'organizzazione.",
+      D: "La valutazione dei benefici ricevuti rispetto alle aspettative iniziali.",
+    },
+  },
+  q531: {
+    matchText: "Nelle relazioni 'Comunitarie' tra organizzazione e stakeholder, qual è il principio guida?",
+    options: {
+      A: "Offrire benefici per interesse verso il benessere dell'altro senza ricompensa immediata.",
+      B: "Mantenere la relazione solo quando è previsto uno scambio equivalente.",
+      C: "Formalizzare la relazione attraverso un accordo contrattuale di breve periodo.",
+      D: "Gestire la relazione secondo ruoli gerarchici interni all'organizzazione.",
+    },
+  },
+  q533: {
+    matchText: "Cosa si intende per 'Vetrina Prodotto' nel calcolo dei moltiplicatori Glebb?",
+    text: "Nel Reputation Quotient, quale dimensione è considerata affettiva?",
+    options: {
+      A: "Attrattività emotiva.",
+      B: "Prodotti e servizi.",
+      C: "Performance finanziaria.",
+      D: "Responsabilità sociale.",
+    },
+  },
+  q534: {
+    matchText: "Cosa indica l'indice delle 'idee più condivise o votate' in un programma di ascolto?",
+    text: "Nel capitale comunicativo, quale dimensione riguarda la qualità delle relazioni con gli stakeholder?",
+    options: {
+      A: "Capitale relazionale.",
+      B: "Capitale umano.",
+      C: "Capitale narrativo.",
+      D: "Capitale organizzativo.",
+    },
+  },
+  q543: {
+    matchText: "Secondo l'International Association of Business Communication (2003), la comunicazione è centrale nello sviluppo di:",
+    options: {
+      A: "Capitale umano, relazionale e organizzativo.",
+      B: "Soli sistemi informativi e infrastrutture tecniche.",
+      C: "Soli indicatori economici di breve periodo.",
+      D: "Soli output media prodotti dalla funzione comunicazione.",
+    },
+  },
+  q544: {
+    matchText: "Cosa valuta il 'Reputation Quotient' (RQ) nell'ambito dell'analisi aziendale?",
+    options: {
+      A: "Un punteggio reputazionale basato su indicatori affettivi e cognitivi.",
+      B: "Il valore pubblicitario equivalente della copertura editoriale ottenuta.",
+      C: "La soddisfazione verso la comunicazione interna su otto dimensioni.",
+      D: "La tiratura e la diffusione certificate dei mezzi pianificati.",
+    },
+  },
+  q545: {
+    matchText: "Secondo il materiale, perché i vantaggi competitivi basati sulla reputazione sono 'più durevoli'?",
+    options: {
+      A: "Perché derivano da percezioni consolidate nel tempo e difficili da imitare.",
+      B: "Perché dipendono solo dall'intensità della copertura media del periodo.",
+      C: "Perché nascono da promozioni tattiche facilmente replicabili dai competitor.",
+      D: "Perché possono essere ottenuti senza investimenti comunicativi continuativi.",
+    },
+  },
+  q546: {
+    matchText: "Quale tra questi è un beneficio tangibile della reputazione nel mercato del lavoro?",
+    options: {
+      A: "Capacità di attirare i migliori talenti.",
+      B: "Riduzione della necessità di comunicazione interna.",
+      C: "Maggiore quantità di output media prodotti nel breve periodo.",
+      D: "Sostituzione dei processi di selezione con la sola notorietà del brand.",
+    },
+  },
+  q548: {
+    matchText: "Cosa significa che la reputazione 'riassume le percezioni degli stakeholder'?",
+    options: {
+      A: "Rappresenta un giudizio su attributi, azioni passate e attese future dell'azienda.",
+      B: "Indica una percezione istantanea limitata a un singolo touchpoint comunicativo.",
+      C: "Riguarda soltanto il giudizio degli analisti finanziari e degli investitori.",
+      D: "Coincide con il numero di menzioni ottenute sui media in un dato periodo.",
+    },
+  },
+  q549: {
+    matchText: "Nella misurazione dell'identità organizzativa, cosa si intende per 'Temperamento'?",
+    options: {
+      A: "L'intensità, la forza e la velocità con cui l'organizzazione agisce.",
+      B: "Il clima comunicazionale percepito dai dipendenti interni.",
+      C: "Il livello di fiducia attribuito dagli stakeholder esterni.",
+      D: "L'insieme dei segni visivi che rendono riconoscibile l'organizzazione.",
+    },
+  },
+  q550: {
+    matchText: "Quale tra questi è un elemento del 'Capitale Organizzativo' (componente strutturale)?",
+    options: {
+      A: "Cultura organizzativa e valori.",
+      B: "Competenze e qualifiche professionali dei dipendenti.",
+      C: "Relazioni con stakeholder, reputazione e fiducia.",
+      D: "Storie e narrazioni condivise sull'organizzazione.",
+    },
+  },
+  q547: {
+    matchText: "Nella visione degli economisti aziendali, cos'è la reputazione?",
+    options: {
+      A: "Una risorsa immateriale fondamentale nel processo di generazione del valore dell'impresa.",
+      B: "Un costo di marketing separato dai processi di creazione del valore.",
+      C: "Un indicatore di sola copertura media ottenuta nel periodo.",
+      D: "Un attributo estetico collegato principalmente all'identità visiva.",
     },
   },
   q502: {
