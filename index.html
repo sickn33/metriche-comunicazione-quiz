@@ -437,7 +437,7 @@
     <header class="topbar">
       <div>
         <h1>Quiz Metriche della Comunicazione</h1>
-        <p class="subhead">Quiz da 50 domande pescate casualmente da un banco esame di 550 quesiti, con modalità speciali per ripassare modelli e argomenti specifici.</p>
+        <p class="subhead">Quiz da 50 domande pescate casualmente da un banco esame di 560 quesiti, con modalità speciali per ripassare modelli e argomenti specifici.</p>
       </div>
       <div class="toolbar">
         <button id="restartBtn" type="button">Nuovo quiz</button>
@@ -502,7 +502,7 @@
     </section>
   </main>
 
-  <script src="questions-data.js?v=20260531-model-extra"></script>
+  <script src="questions-data.js?v=20260531-enti-cleanup"></script>
   <script>
     const quizModes = window.METRICHE_SPECIAL_QUIZZES || [];
 
@@ -533,7 +533,7 @@
 
     const letters = ["A", "B", "C", "D"];
     const quizSize = 50;
-    const storageKey = "metriche-comunicazione-quiz-v12-model-extra";
+    const storageKey = "metriche-comunicazione-quiz-v13-enti-cleanup";
     let questions = window.METRICHE_QUIZ_BANK || [];
     const questionById = new Map(questions.map(q => [q.id, q]));
     let state = loadState();

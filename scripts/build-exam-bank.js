@@ -28,7 +28,7 @@ const TARGETS = new Map([
   ["Ricerca in comunicazione", 60],
   ["Digitale, social e motori di ricerca", 75],
   ["Monitoring, listening e sentiment", 45],
-  ["Enti certificatori e audience", 45],
+  ["Enti certificatori e audience", 55],
   ["Modelli di valutazione", 125],
   ["Performance measurement e CCPM", 55],
   ["ROI, AVE e indicatori economici", 45],
@@ -533,6 +533,105 @@ const modelExtraSeeds = [
   ], "A", "appunti-cheat"),
 ];
 
+const entiExtraSeeds = [
+  q("Enti certificatori e audience", "Nel mercato della comunicazione, a cosa serve una currency condivisa?", [
+    "A fornire una misura riconosciuta dal mercato per regolare la compravendita degli spazi.",
+    "A sostituire la ricerca sui pubblici con una stima economica interna dell'editore.",
+    "A indicare il budget annuale che l'organizzazione destina alla comunicazione.",
+    "A calcolare automaticamente il ROI commerciale di una campagna pubblicitaria.",
+  ], "A", "appunti-cheat"),
+  q("Enti certificatori e audience", "Perché gli enti certificatori delle audience operano spesso come JIC?", [
+    "Per ridurre i conflitti di interesse attraverso il controllo incrociato degli attori del mercato.",
+    "Per consentire agli editori di dichiarare autonomamente i dati senza verifiche esterne.",
+    "Per trasformare ogni dato di ascolto in un indicatore di gradimento qualitativo.",
+    "Per separare completamente investitori, agenzie e concessionarie dalla misurazione.",
+  ], "A", "appunti-cheat"),
+  q("Enti certificatori e audience", "Che cosa misura ADS nel mercato italiano della stampa?", [
+    "Tiratura e diffusione di quotidiani e periodici, cartacei e digitali.",
+    "La lettura effettiva dei giornali da parte dei singoli lettori.",
+    "Gli ascolti televisivi lineari e on demand rilevati con meter.",
+    "L'audience digitale di siti e app misurata tramite panel e SDK.",
+  ], "A", "appunti-cheat"),
+  q("Enti certificatori e audience", "Nel sistema ADS, qual è la differenza corretta tra tiratura e diffusione?", [
+    "La tiratura indica le copie stampate, la diffusione quelle effettivamente portate al mercato.",
+    "La tiratura indica i lettori effettivi, la diffusione il numero di abbonamenti digitali.",
+    "La tiratura riguarda solo il digitale, la diffusione soltanto le copie cartacee.",
+    "La tiratura è rilevata da Audicom, la diffusione è dichiarata dal SuperPanel.",
+  ], "A", "appunti-cheat"),
+  q("Enti certificatori e audience", "Perché la certificazione ADS è considerata una certificazione di terza parte?", [
+    "Perché verifica i dati dichiarati dagli editori per garantire trasparenza e veridicità.",
+    "Perché misura direttamente il sentiment dei lettori verso ogni testata.",
+    "Perché sostituisce la vendita degli spazi pubblicitari con una metrica reputazionale.",
+    "Perché calcola la qualità giornalistica degli articoli pubblicati nel periodo.",
+  ], "A", "appunti-cheat"),
+  q("Enti certificatori e audience", "Quale cambiamento istituzionale ha portato alla nascita di Audicom nel 2023?", [
+    "La fusione tra Audiweb e Audipress per integrare audience digitali e stampa.",
+    "La trasformazione di Auditel in ente unico per TV, radio e quotidiani.",
+    "La sostituzione di ADS con un sistema censuario basato su tag e SDK.",
+    "La nascita del MOC come comitato esclusivo degli investitori pubblicitari.",
+  ], "A", "appunti-cheat"),
+  q("Enti certificatori e audience", "Come viene costruita la Total Digital Audience secondo Audicom?", [
+    "Integrando un campione di persone con rilevazioni censuarie tramite tag e SDK.",
+    "Contando solo le copie digitali vendute dalle testate giornalistiche.",
+    "Usando esclusivamente interviste qualitative sul gradimento dei siti informativi.",
+    "Sommando gli ascolti televisivi e radiofonici rilevati nello stesso giorno.",
+  ], "A", "appunti-cheat"),
+  q("Enti certificatori e audience", "Quali sono indicatori tipici usati da Audicom per siti e mobile app?", [
+    "Unique audience, page views, stream views e time spent.",
+    "Tiratura, diffusione, resi e copie distribuite in edicola.",
+    "AMR, permanenza, fascia oraria e composizione per target TV.",
+    "Premium price, fiducia, commitment e soddisfazione relazionale.",
+  ], "A", "appunti-cheat"),
+  q("Enti certificatori e audience", "Nel sistema Auditel, a cosa serve la Ricerca di Base?", [
+    "A definire l'universo delle famiglie e le dotazioni tecnologiche da cui costruire il campione.",
+    "A rilevare minuto per minuto gli ascolti prodotti dai meter domestici.",
+    "A certificare la diffusione cartacea e digitale dei quotidiani italiani.",
+    "A stimare il sentiment degli spettatori verso programmi e spot televisivi.",
+  ], "A", "appunti-cheat"),
+  q("Enti certificatori e audience", "Che cosa distingue il sistema campionario Auditel dal sistema censuario?", [
+    "Il campionario misura persone con meter, il censuario rileva fruizioni digitali tramite tag e SDK.",
+    "Il campionario conta le copie stampate, il censuario certifica le copie vendute.",
+    "Il campionario riguarda solo la radio, il censuario riguarda soltanto i quotidiani.",
+    "Il campionario raccoglie opinioni qualitative, il censuario misura la reputazione aziendale.",
+  ], "A", "appunti-cheat"),
+  q("Enti certificatori e audience", "Nel sistema Auditel, cosa sintetizza la formula Everytime-Everywhere-Everydevice?", [
+    "La logica della Total Audience televisiva su tempi, luoghi e dispositivi diversi.",
+    "La certificazione mensile della tiratura e diffusione dei quotidiani.",
+    "La selezione dei partecipanti ai focus group sulla fruizione televisiva.",
+    "La misurazione del solo ascolto radiofonico lineare del giorno precedente.",
+  ], "A", "appunti-cheat"),
+  q("Enti certificatori e audience", "A cosa serve la Golden Rule nel sistema Auditel?", [
+    "A far sì che software diversi restituiscano lo stesso dato finale fino al terzo decimale.",
+    "A stabilire che ogni programma televisivo debba essere valutato solo con survey qualitative.",
+    "A imporre che la stampa venga misurata con gli stessi meter usati per la televisione.",
+    "A calcolare il valore pubblicitario equivalente degli ascolti ottenuti da un canale.",
+  ], "A", "appunti-cheat"),
+  q("Enti certificatori e audience", "Qual è il ruolo di Audiradio nel mercato italiano?", [
+    "Misurare gli ascolti radiofonici lineari e on demand per costruire una currency dell'audio.",
+    "Certificare la tiratura e la diffusione delle testate quotidiane e periodiche.",
+    "Rilevare la Total Digital Audience di siti e app tramite panel online.",
+    "Attribuire un valore economico alle uscite editoriali ottenute dalle PR.",
+  ], "A", "appunti-cheat"),
+  q("Enti certificatori e audience", "Nel passaggio da TER ad Audiradio, quale ruolo viene attribuito al MOC?", [
+    "Costituire il nuovo JIC per la misurazione degli ascolti radiofonici.",
+    "Certificare le copie cartacee distribuite dagli editori nel periodo.",
+    "Gestire direttamente la vendita degli spazi pubblicitari televisivi.",
+    "Sostituire AgCom nel controllo istituzionale della Total Audience TV.",
+  ], "A", "appunti-cheat"),
+  q("Enti certificatori e audience", "Che cosa indica il Day After Recall nella misurazione radiofonica?", [
+    "Un metodo basato sul ricordo dell'ascolto radiofonico del giorno precedente.",
+    "La rilevazione minuto per minuto degli ascolti televisivi durante la notte.",
+    "La deduplicazione degli utenti che passano da smartphone a televisore.",
+    "La certificazione mensile delle copie digitali dichiarate dagli editori.",
+  ], "A", "appunti-cheat"),
+  q("Enti certificatori e audience", "Perché la deduplicazione è centrale nella Total Audience?", [
+    "Per evitare che la stessa persona venga contata più volte quando usa device diversi.",
+    "Per aumentare artificialmente il numero di contatti dichiarati agli investitori.",
+    "Per eliminare dal campione tutte le famiglie con più televisori domestici.",
+    "Per sostituire i dati censuari con interviste qualitative di gradimento.",
+  ], "A", "appunti-cheat"),
+];
+
 const studySeeds = [
   q("Fondamenti della misurazione", "A cosa servono principalmente le misure rendicontative?", [
     "A correggere una campagna durante la sua realizzazione operativa",
@@ -649,7 +748,8 @@ const COVERAGE_TERMS = [
   "RepTrak",
 ];
 
-const BANNED = /coordinate gps|bonifici bancari|spam|prezzo piu basso|ansia dei dipendenti|licenziamento|licenziare automaticamente|dati bancari|interessi bancari|costo della carta|effetti speciali|font usiamo|logo scegliamo|pausa pranzo|tutti i cittadini|segretezza assoluta|stato italiano|quiz a premi|sbloccare le domande|vietato per legge|illegali da utilizzare|tre parole chiave|email di spam|gps|denaro contante|pesati fisicamente|deprezzamento|umore del valutatore|magazzino|macchinetta|impianti audio|ispezione fiscale|evasioni|cancellare i messaggi|correttezza grammaticale|posizione geografica esatta|acquistare nuovi spazi|contratto annuale|eliminazione di tutti i competitor|incantesimo|oroscopo|lotteria|premio a sorte|bancari personali|giorno di vacanza|arredamento dell'ufficio|sotto il livello dell acqua|spot marini|posizionamento geografico degli uffici|zone rurali|titolo in borsa|quotate in borsa|indici di borsa|azioni in borsa|ogni 24 ore|400|immediatamente statica|segnale radiofonico|direttore creativo|contratto di fornitura|errori trovati nel codice|media tradizionali perche sono morti|mappe geografiche|server|password|caffe|addizioni matematiche|database excel|obbligo di legge|obbligatori per legge|obbligatorio|obbligatoria|legge impone|legge sulla privacy|proibite dalla legge|vietate dai protocolli|legge italiana|virus informatico|indirizzo ip|scaffale del negozio|cancellati e ricaricati|antenne televisive|bozze digitali|premi vinti|algoritmo matematico|orologi|cartine geografiche|dimostrazione matematica assoluta|100% delle vendite|velocita di connessione|connessione wi-fi|cancellazione automatica|post negativi dai motori|rumore bianco|non e piu necessario raccogliere dati|solo l intuizione|solo l'intuizione|mappa geografica|luoghi digitali|cancellazione degli articoli|posizione geografica|controllo fiscale|superiore diretto|giornalisti che hanno scritto male|excel pesanti|luce l'acqua e il gas|spese per la luce|telefono privati|numeri di telefono|bloccare gli utenti|wikipedia come unica fonte|forza fisica|rumore prodotto|confondere i dirigenti|qualsiasi altra analisi|risparmiare energia|spegnendo|produttivita oraria|produttivita richiesto|riduce il costo del lavoro|automatizzando le relazioni|sostituisce la necessita|software gratuiti|qualita sostituisce completamente|ultima pagina alla prima|non comunicare nulla|dare ordini ai propri superiori|azzerare completamente le tasse|acquistare velocemente|monopolio assoluto|settore merceologico|indovinare i risultati|parente stretto|ingegneria meccanica|persone provenienti da nazioni diverse|non deve contenere piu di due domande|tre lingue diverse|stampare i fogli|non esistono piu esperti|non richiedono alcun budget|partecipanti tendono sempre a mentire|poco serio|poco affidabile|capi sono pigri|incolpare qualcuno|lanciare un prodotto a caso|chiedere agli amici|copiare fedelmente|critic.*subordinati|utenti anonimi|profilo linkedin del ceo|sovvenzioni statali|diminuiscono automaticamente|chip nel cervello|robot|microfono durante un focus group|profitti tra i vari soci|criptovalute|guardare lo stesso numero di minuti|pubbliche in italia|spiare i propri collaboratori|fatturare piu ore|rapporto finale molto piu lungo|grammatica italiana|determinare le colpe|toccato fisicamente|grado di resistenza verticale|cronometro|forum generalisti sono vietati|forum generalisti non esiste|metadati da analizzare nella fase|regolamento disciplinare|non conoscono i metodi statistici|budget.*sempre insufficienti|puramente casuali|intervistatori dimenticano|contratto sindacale|ogni singola famiglia|software statistici aggiornati|notaio|minimo di vendite|consegnati al ceo|calcolati automaticamente dai bot|euro non e piu considerato|troppo difficile da calcolare per i comunicatori|troppo difficile da calcolare per il management|nomi e cognomi|nomi e i cognomi|risarcimenti danni|grafici a torta|brevetti tecnologici|calcolo automatico della media|traduzione simultanea|tutti i dipendenti devono|stessa eta e professione|non e mai permesso offrire|listini dei media|suggerite dall algoritmo|e gratuito mentre|elenco degli amici|recensioni positive lasciate dai clienti|siti web possono essere chiusi|smettere di pubblicare|gratuito per tutti|obbligo di usare il computer|fine del commercio elettronico|scrivere in modo ripetitivo|rileggere gli stessi commenti|parlare in pubblico senza leggere|basandosi solo sul numero di like|amministratore delegato|maggioranza del cda|lunghezza fisica degli articoli|software automatico che sostituisce|algoritmo automatico|colpevolizzazione|canali.*pirata|falsificati.*agenzie|falsificati sistematicamente|compiacere|smettere di monitorare|confondere gli analisti|colori usare nel logo|consulenza esterne|costa molto di piu|privacy ne vietano|troppo tempo per essere raccolte|temperatura media|fuori dall'orario di lavoro|incremento automatico|occultamento dei dati|pressione sanguigna|licenziare l'agenzia|spot.*odiato|dieci anni|multinazionali del tabacco|toglie lavoro ai giornalisti|troppo basso rispetto al mercato|valore emotivo di una pubblicita|materie prime|nuovi uffici|scrivere e-mail|ortografia|libri pubblicati dal fondatore|inventario dei vecchi archivi/i;
+const BANNED = /coordinate gps|bonifici bancari|spam|prezzo piu basso|ansia dei dipendenti|licenziamento|licenziare automaticamente|dati bancari|interessi bancari|costo della carta|effetti speciali|font usiamo|logo scegliamo|pausa pranzo|tutti i cittadini|segretezza assoluta|stato italiano|quiz a premi|sbloccare le domande|vietato per legge|illegali da utilizzare|tre parole chiave|email di spam|gps|denaro contante|pesati fisicamente|deprezzamento|umore del valutatore|magazzino|macchinetta|impianti audio|ispezione fiscale|evasioni|cancellare i messaggi|correttezza grammaticale|posizione geografica esatta|acquistare nuovi spazi|contratto annuale|eliminazione di tutti i competitor|incantesimo|oroscopo|lotteria|premio a sorte|cosa indica il net promoter score nps e come viene calcolato|secondo manuel castells come comunica e consuma|imbuto fisico|rubino i biscotti|costo del parcheggio|addormentarsi|nuovi gruppi di amici|troppo economici|forma scritta via email|si annoiano|a sorte da un contenitore|contemporaneamente all'inizio|ricette della nonna|voli aerei|critica distruttiva|attacchi degli hacker|tassazione sui servizi digitali|forme di baratto|proteggere i governi|televisione tradizionale|soldi pagati|aumentare lo stipendio|punire chiunque|beni fisici pesanti|frigorifero|ministero dell'economia|dimensioni fisiche|premio solo|scapito della felicita|compenso per gli intervistatori|capo azienda|termini di servizio dei social|scaricare i dati gratuitamente|dipendenti che il management|bancari personali|giorno di vacanza|arredamento dell'ufficio|sotto il livello dell acqua|spot marini|posizionamento geografico degli uffici|zone rurali|titolo in borsa|quotate in borsa|indici di borsa|azioni in borsa|ogni 24 ore|400|immediatamente statica|segnale radiofonico|direttore creativo|contratto di fornitura|errori trovati nel codice|media tradizionali perche sono morti|mappe geografiche|server|password|caffe|addizioni matematiche|database excel|obbligo di legge|obbligatori per legge|obbligatorio|obbligatoria|legge impone|legge sulla privacy|proibite dalla legge|vietate dai protocolli|legge italiana|virus informatico|indirizzo ip|scaffale del negozio|cancellati e ricaricati|antenne televisive|bozze digitali|premi vinti|algoritmo matematico|orologi|cartine geografiche|dimostrazione matematica assoluta|100% delle vendite|velocita di connessione|connessione wi-fi|cancellazione automatica|post negativi dai motori|rumore bianco|non e piu necessario raccogliere dati|solo l intuizione|solo l'intuizione|mappa geografica|luoghi digitali|cancellazione degli articoli|posizione geografica|controllo fiscale|superiore diretto|giornalisti che hanno scritto male|excel pesanti|luce l'acqua e il gas|spese per la luce|telefono privati|numeri di telefono|bloccare gli utenti|wikipedia come unica fonte|forza fisica|rumore prodotto|confondere i dirigenti|qualsiasi altra analisi|risparmiare energia|spegnendo|produttivita oraria|produttivita richiesto|riduce il costo del lavoro|automatizzando le relazioni|sostituisce la necessita|software gratuiti|qualita sostituisce completamente|ultima pagina alla prima|non comunicare nulla|dare ordini ai propri superiori|azzerare completamente le tasse|acquistare velocemente|monopolio assoluto|settore merceologico|indovinare i risultati|parente stretto|ingegneria meccanica|persone provenienti da nazioni diverse|non deve contenere piu di due domande|tre lingue diverse|stampare i fogli|non esistono piu esperti|non richiedono alcun budget|partecipanti tendono sempre a mentire|poco serio|poco affidabile|capi sono pigri|incolpare qualcuno|lanciare un prodotto a caso|chiedere agli amici|copiare fedelmente|critic.*subordinati|utenti anonimi|profilo linkedin del ceo|sovvenzioni statali|diminuiscono automaticamente|chip nel cervello|robot|microfono durante un focus group|profitti tra i vari soci|criptovalute|guardare lo stesso numero di minuti|pubbliche in italia|spiare i propri collaboratori|fatturare piu ore|rapporto finale molto piu lungo|grammatica italiana|determinare le colpe|toccato fisicamente|grado di resistenza verticale|cronometro|forum generalisti sono vietati|forum generalisti non esiste|metadati da analizzare nella fase|regolamento disciplinare|non conoscono i metodi statistici|budget.*sempre insufficienti|puramente casuali|intervistatori dimenticano|contratto sindacale|ogni singola famiglia|software statistici aggiornati|notaio|minimo di vendite|consegnati al ceo|calcolati automaticamente dai bot|euro non e piu considerato|troppo difficile da calcolare per i comunicatori|troppo difficile da calcolare per il management|nomi e cognomi|nomi e i cognomi|risarcimenti danni|grafici a torta|brevetti tecnologici|calcolo automatico della media|traduzione simultanea|tutti i dipendenti devono|stessa eta e professione|non e mai permesso offrire|listini dei media|suggerite dall algoritmo|e gratuito mentre|elenco degli amici|recensioni positive lasciate dai clienti|siti web possono essere chiusi|smettere di pubblicare|gratuito per tutti|obbligo di usare il computer|fine del commercio elettronico|scrivere in modo ripetitivo|rileggere gli stessi commenti|parlare in pubblico senza leggere|basandosi solo sul numero di like|amministratore delegato|maggioranza del cda|lunghezza fisica degli articoli|software automatico che sostituisce|algoritmo automatico|colpevolizzazione|canali.*pirata|falsificati.*agenzie|falsificati sistematicamente|compiacere|smettere di monitorare|confondere gli analisti|colori usare nel logo|consulenza esterne|costa molto di piu|privacy ne vietano|troppo tempo per essere raccolte|temperatura media|fuori dall'orario di lavoro|incremento automatico|occultamento dei dati|pressione sanguigna|licenziare l'agenzia|spot.*odiato|dieci anni|multinazionali del tabacco|toglie lavoro ai giornalisti|troppo basso rispetto al mercato|valore emotivo di una pubblicita|materie prime|nuovi uffici|scrivere e-mail|ortografia|libri pubblicati dal fondatore|inventario dei vecchi archivi/i;
+const REVIEW_BANNED = /metodo socratico|ostetrico mentale|we are social 2026|59 14|93 8|lunghezza in centimetri|numero totale di lingue|pixel|bonus|magazzinieri|logo del brand|bug tecnici|banconote false|alto stipendio|tasse che l azienda|lingua latina|computer prodotti dopo|fatture di pagamento|utenti non hanno mai opinioni|volume della voce|dipendenti che parlano bene|fattura a un fornitore|profilo falso|battiti cardiaci|ordine tecnico di sospensione|bilanci degli editori|stagisti|ceo|sempre sbagliato|invidiosi|algoritmo di google|budget spesa in inchiostro|intercettare illegalmente|telefonate dei concorrenti|notizie positive gratis|bianco e nero|nessuno guarda|software di listening piu costoso|soldi rimasti|giornalisti a scrivere bene|sacchetto|prezzo base|bambini sotto|google per vedere|youtube|scaricati illegalmente|siti pirata|software scaricati illegalmente|guardie giurate|si sono sposati|dolci|cioccolatini|animali domestici|tutte le lingue del mondo|velocita del sito|numero di follower su instagram al numero di dipendenti|reclami ricevuti|televisori venduti|radio vendute|fedelta politica|software di analisi.*editori|censurano|ads notizie|just in case|euro dollaro|fake news|effettivamente letto ogni pagina|pagamenti del canone|meter guasto|dirigenti televisivi|palinsesti|mixaggio automatico|ginnastica|colore della cravatta|film visto|velocita del vento|software piu costoso|dipartimento separato|ministero dell economia|yardistic|\bvpl\b|pqll|giga byte|gravita degli errori|guadagno reale delle vendite|giornalisti che scrivono|logo aziendale appare|radio e televisione analogica|rifiutato di leggere|ogni singola parola|contratto senza leggerlo|prestare denaro|patto di non concorrenza|moltiplica il numero di dipendenti|velocita di risposta sui social|software che corregge|colore dei loghi|licenziare lo staff|geni incompresi|dollari|benessere fisico|post pubblicati dagli influencer|partecipanti di analizzare|intelligenza artificiale per scrivere|due ore|spegnere l ia|file excel|post divertenti|registrazione audio|telefoniche del call center|utenti sono intrinsecamente ignoranti|perderanno il 50|premio in denaro|articolo e troppo lungo|errori grammaticali|moda passeggera|agenzia di stampa|hacker|principio 10|piangere|usare i dadi|inventarsi i dati|colore della carta|ore di sonno|tabelline|nessun giornalista|criptovaluta|tre timbri|tre persone|quartieri residenziali|cittadinanza straniera|votare alle elezioni|cartelli stradali|valuta estera|mercato nero|sette anni|crepe fisiche|muri della sede|ultimi 50 anni/i;
 
 const manualDistractors = {
   "Fondamenti della misurazione": [
@@ -814,6 +914,7 @@ const ITALIAN_ACCENT_WORDS = new Map([
   ["novita", "novità"],
   ["numerosita", "numerosità"],
   ["opportunita", "opportunità"],
+  ["pariteticita", "pariteticità"],
   ["perche", "perché"],
   ["pero", "però"],
   ["piu", "più"],
@@ -847,6 +948,7 @@ const ITALIAN_ACCENT_WORDS = new Map([
   ["validita", "validità"],
   ["variabilita", "variabilità"],
   ["velocita", "velocità"],
+  ["veridicita", "veridicità"],
   ["verita", "verità"],
   ["visibilita", "visibilità"],
 ]);
@@ -872,6 +974,8 @@ function restoreItalianAccents(value) {
     .replace(/\b([Cc]ome) e\b/g, "$1 è")
     .replace(/\b([Qq]uando) e\b/g, "$1 è")
     .replace(/\b([Dd]ove) e\b/g, "$1 è")
+    .replace(/\be (?=(?:strategicamente|realmente|particolarmente)\b)/g, "è ")
+    .replace(/\bE (?=(?:strategicamente|realmente|particolarmente)\b)/g, "È ")
     .replace(/\b(Quale tipo di metodo) e (?=più adatto\b)/g, "$1 è ")
     .replace(/\b(la visibilità) e (?=più selettiva\b)/g, "$1 è ")
     .replace(/\b(ciò che) e (?=facile\b)/g, "$1 è ")
@@ -925,6 +1029,11 @@ function normalizeKey(value) {
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, " ")
     .trim();
+}
+
+function isBannedText(value) {
+  const key = normalizeKey(value);
+  return BANNED.test(key) || REVIEW_BANNED.test(key);
 }
 
 function coverageKey(value) {
@@ -983,17 +1092,21 @@ function cleanSection(section) {
 }
 
 function inferSection(question) {
-  const explicit = cleanSection(question.section);
-  if (explicit !== "Altri argomenti dalle fonti") return explicit;
-  const hay = normalizeKey(`${question.text} ${Object.values(question.options || {}).join(" ")}`);
-  if (/\b(ads|audicom|audiweb|auditel|audiradio|ter|jic|currency|panel|census|sdk|meter|diffusione|tiratura|readership|total audience)\b/i.test(hay)) return "Enti certificatori e audience";
+  const answer = question.answer || "A";
+  const correct = (question.options || {})[answer] || "";
+  const hay = normalizeKey(`${question.text} ${correct}`);
   if (/\b(roi|roo|ave|reav|pqii|cosenza|return on ignorance|silver metric|valore economico)\b/i.test(hay)) return "ROI, AVE e indicatori economici";
+  const explicit = cleanSection(question.section);
+  const hasAudienceSignal = /\b(ads|audicom|audiweb|auditel|audiradio|ter|jic|currency|panel|census|sdk|meter|total audience)\b|tiratura|diffusione (?:di |dei |della |delle )?(?:quotidiani|periodici|stampa|copie|edizioni)/i.test(hay);
+  if (hasAudienceSignal) return "Enti certificatori e audience";
+  const hasDigitalSignal = /\b(social|web|seo|sea|sem|geo|ga4|quality score|zero click|motori di risposta|intelligenza artificiale|analytics|pyramid|compass|owyang|altimeter|peso|zmot|lovett|customer care|crawling|indexing|ranking|serp|follower|metriche di interazione|tecnologia per la misurazione)\b/i.test(hay);
+  if (hasDigitalSignal) return "Digitale, social e motori di ricerca";
   if (/\b(ccpm|balanced scorecard|value link|values|kpi|kri|performance|communication value system|return on communication|lead|lag|variabili ponte)\b/i.test(hay)) return "Performance measurement e CCPM";
   if (/\b(yardstick|pii|macro model|measurement tree|pre model|barcelona|amec|integrated evaluation framework|smart|modello|framework|watson)\b/i.test(hay)) return "Modelli di valutazione";
-  if (/\b(reputazione|capitale comunicativo|capitale narrativo|capitale relazionale|identita|immagine|grunig|hon|reptrak|reputation quotient|fortune|wmac|berens|van riel|stakeholder|fiducia|soddisfazione|integrita|skandia)\b/i.test(hay)) return "Intangibili e reputazione";
-  if (/\b(social|web|seo|sea|sem|geo|ga4|quality score|zero click|motori di risposta|ai|intelligenza artificiale|analytics|pyramid|compass|owyang|altimeter|peso|zmot|lovett|customer care|crawling|serp|follower|metriche di interazione|tecnologia per la misurazione)\b/i.test(hay)) return "Digitale, social e motori di ricerca";
-  if (/\b(listening|monitoring|sentiment|topic|hot topic|mappa semantica|share of voice|media relation|rassegna|lettore medio|ots|analisi semantica|tassonomia|query|influencer|competitor|valutazione dinamica|analisi delle persone|disambiguazione)\b/i.test(hay)) return "Monitoring, listening e sentiment";
-  if (/\b(focus group|survey|questionario|cawi|cati|intervista|osservazione|ricerca|campione|campionamento|neuromarketing|eye tracker|eeg|gsr|heat map|pre test|proiettive|qualitativ|quantitativ|causal|controllo)\b/i.test(hay)) return "Ricerca in comunicazione";
+  if (/\b(reputazione|intangibili|beni intangibili|asset intangibili|capitale comunicativo|capitale narrativo|capitale relazionale|identita|immagine|grunig|hon|relazioni di scambio|relazioni comunitarie|reptrak|reputation quotient|fortune|wmac|berens|van riel|stakeholder|fiducia|soddisfazione|integrita|skandia)\b/i.test(hay)) return "Intangibili e reputazione";
+  if (/\b(listening|monitoring|sentiment|topic|hot topic|mappa semantica|share of voice|media relation|rassegna|lettore medio|ots|analisi semantica|tassonomia|query|influencer|competitor|valutazione dinamica|analisi delle persone|disambiguazione|ascolto globale|selezione delle fonti)\b/i.test(hay)) return "Monitoring, listening e sentiment";
+  if (/\b(focus group|survey|questionario|cawi|cati|intervista|osservazione|ricerca|ricerche|indagine|campione|campionamento|neuromarketing|eye tracker|eeg|gsr|heat map|pre test|proiettive|qualitativ|quantitativ|causal|controllo)\b/i.test(hay)) return "Ricerca in comunicazione";
+  if (explicit !== "Altri argomenti dalle fonti") return explicit;
   return "Fondamenti della misurazione";
 }
 
@@ -1009,7 +1122,7 @@ function answerKind(value) {
 
 function optionQuality(option, correct) {
   const o = cleanText(option);
-  if (!o || BANNED.test(normalizeKey(o))) return false;
+  if (!o || isBannedText(o)) return false;
   if (normalizeKey(o) === normalizeKey(correct)) return false;
   const ow = wordCount(o);
   const cw = wordCount(correct);
@@ -1019,7 +1132,8 @@ function optionQuality(option, correct) {
 }
 
 function tagsFor(question) {
-  const hay = normalizeKey(`${question.section} ${question.text} ${Object.values(question.options).join(" ")}`);
+  const correct = question.options[question.answer] || "";
+  const hay = normalizeKey(`${question.text} ${correct}`);
   const tags = new Set();
   const sectionTags = {
     "Fondamenti della misurazione": "fondamenti",
@@ -1033,11 +1147,12 @@ function tagsFor(question) {
     "Intangibili e reputazione": "reputazione_intangibili",
   };
   tags.add(sectionTags[question.section]);
+  const roiMetricSignal = /\b(roi|roo|ave|reav|pqii|cosenza|return on ignorance|silver metric|valore economico)\b/.test(hay);
   if (/yardstick|pii|macro|measurement tree|pre model|barcelona|amec|integrated evaluation|smart|balanced scorecard|ccpm|values|value link|communication value system|social measurement compass|roi pyramid|altimeter|owyang|lovett|peso|zmot|reputation quotient|reptrak|fortune|wmac|berens|grunig|hon|watson|skandia|modello|framework/.test(hay)) tags.add("modelli");
-  if (/auditel|audicom|audiweb|audiradio|\bads\b|\bter\b|jic|currency|panel|census|sdk|meter|readership|total audience|diffusione|tiratura/.test(hay)) tags.add("enti_audience");
+  if (!roiMetricSignal && /\b(auditel|audicom|audiweb|audiradio|ads|ter|jic|currency|panel|census|sdk|meter|meters|total audience)\b|tiratura|diffusione (?:di |dei |della |delle )?(?:quotidiani|periodici|stampa|copie|edizioni)/.test(hay)) tags.add("enti_audience");
   if (/social|listening|sentiment|topic|hot topic|analytics|roi|roo|ave|reav|pqii|cosenza|owyang|altimeter|compass|customer care|brand health/.test(hay)) tags.add("social_roi");
   if (/focus group|survey|questionario|cawi|cati|intervista|osservazione|neuromarketing|eye tracker|eeg|gsr|heat map|campione|ricerca|pre test|proiettive/.test(hay)) tags.add("ricerca_metodi");
-  if (/seo|sea|sem|geo|ga4|quality score|zero click|motori di risposta|web 1|web 2|web 3|web 4|ai|intelligenza artificiale|api|scraping|rss|crawling|serp/.test(hay)) tags.add("seo_geo_digitale");
+  if (/seo|sea|sem|geo|ga4|quality score|zero click|motori di risposta|web 1|web 2|web 3|web 4|intelligenza artificiale|api|scraping|rss|crawling|serp/.test(hay)) tags.add("seo_geo_digitale");
   return [...tags].filter(Boolean).sort();
 }
 
@@ -1072,7 +1187,7 @@ function questionScore(candidate) {
   if (words > 28) score += (words - 28) * 8;
   if (words < 5) score += 12;
   if (correctWords > 18) score += (correctWords - 18) * 5;
-  if (BANNED.test(normalizeKey(candidate.text)) || BANNED.test(normalizeKey(candidate.correct))) score += 500;
+  if (isBannedText(candidate.text) || isBannedText(candidate.correct)) score += 500;
   return score;
 }
 
@@ -1082,7 +1197,7 @@ function buildDistractorPools(candidates) {
     pools[section] = {};
     for (const kind of ["short", "term", "name", "list", "definition"]) {
       pools[section][kind] = candidates
-        .filter(candidate => candidate.section === section && candidate.kind === kind && !BANNED.test(normalizeKey(candidate.correct)))
+        .filter(candidate => candidate.section === section && candidate.kind === kind && !isBannedText(candidate.correct))
         .sort((a, b) => a.sourceIndex - b.sourceIndex);
     }
   }
@@ -1198,7 +1313,7 @@ function validate(bank) {
     if (max > Math.max(8, min * 3 + 5)) {
       errors.push(`Distractor length imbalance: ${question.id} ${JSON.stringify(question.options)} lengths=${lengths.join(",")}`);
     }
-    if (Object.values(question.options).some(option => BANNED.test(normalizeKey(option)))) errors.push(`Banned option: ${question.id}`);
+    if (Object.values(question.options).some(option => isBannedText(option))) errors.push(`Banned option: ${question.id} ${question.text} ${JSON.stringify(question.options)}`);
     if (!correct || !question.answer) errors.push(`Missing answer: ${question.id}`);
   }
   for (const [section, target] of TARGETS) {
@@ -1222,10 +1337,10 @@ function validate(bank) {
 }
 
 const notebookBank = JSON.parse(fs.readFileSync(sourcePath, "utf8"));
-const allCandidates = [...examSeeds, ...modelExtraSeeds, ...studySeeds, ...notebookBank]
+const allCandidates = [...examSeeds, ...modelExtraSeeds, ...entiExtraSeeds, ...studySeeds, ...notebookBank]
   .map(sourceToCandidate)
   .filter(candidate => candidate.text && candidate.correct)
-  .filter(candidate => !BANNED.test(normalizeKey(candidate.text)))
+  .filter(candidate => !isBannedText(candidate.text))
   .filter(candidate => wordCount(candidate.text) <= 42);
 
 const selected = selectQuestions(allCandidates);
@@ -1242,19 +1357,158 @@ const manualReviewOverrides = {
       D: "Gli effetti finali sulle performance complessive dell'organizzazione.",
     },
   },
+  focusFunnel: {
+    matchText: "Cosa si intende per tecnica delle domande 'a imbuto' nella conduzione di un focus group?",
+    options: {
+      A: "Partire da temi generali e arrivare gradualmente a domande più specifiche.",
+      B: "Alternare domande aperte e chiuse senza seguire un ordine predefinito.",
+      C: "Porre subito domande direttive per ridurre la varietà delle risposte.",
+      D: "Distribuire le domande tra i partecipanti in base al loro ruolo aziendale.",
+    },
+  },
+  quantitativeTool: {
+    matchText: "Quale di questi strumenti è tipico della ricerca quantitativa?",
+    options: {
+      A: "La survey su un campione definito.",
+      B: "L'intervista in profondità con traccia semi-strutturata.",
+      C: "Le tecniche proiettive basate su stimoli ambigui.",
+      D: "L'osservazione partecipante in un contesto naturale.",
+    },
+  },
+  preOutcomePhase: {
+    matchText: "Quale tra queste è una fase della valutazione degli outcome nel modello PRE?",
+    text: "Nel modello PRE, a cosa serve la valutazione finale?",
+    options: {
+      A: "A capire se gli obiettivi sono stati raggiunti e quali outcome sono emersi.",
+      B: "A costruire la media list prima dell'avvio operativo della campagna.",
+      C: "A definire il budget disponibile prima della ricerca preliminare.",
+      D: "A scegliere gli strumenti creativi senza confrontarli con gli obiettivi.",
+    },
+  },
+  focusObserver: {
+    matchText: "Nel contesto della ricerca qualitativa, qual è il ruolo dell''Osservatore' durante un Focus Group?",
+    text: "Nel contesto della ricerca qualitativa, qual è il ruolo dell'osservatore durante un focus group?",
+    options: {
+      A: "Registrare reazioni non verbali, dinamiche di gruppo e passaggi rilevanti della discussione.",
+      B: "Guidare la conversazione al posto del moderatore quando emergono opinioni divergenti.",
+      C: "Selezionare il campione statistico e calcolare la rappresentatività dei risultati.",
+      D: "Trasformare le risposte qualitative in una stima immediata del ROI della campagna.",
+    },
+  },
+  focusInteraction: {
+    matchText: "Nella ricerca qualitativa, qual è il vantaggio principale dell''Interazione' tra i partecipanti di un Focus Group?",
+    text: "Nella ricerca qualitativa, qual è il vantaggio principale dell'interazione tra i partecipanti di un focus group?",
+    options: {
+      A: "Stimola confronto e creatività, facendo emergere idee difficili da ottenere in interviste singole.",
+      B: "Elimina del tutto il rischio di conformismo tra persone con opinioni diverse.",
+      C: "Garantisce automaticamente risultati rappresentativi dell'intera popolazione.",
+      D: "Permette di sostituire il moderatore con una traccia completamente standardizzata.",
+    },
+  },
+  focusGroupLimit: {
+    matchText: "Quale tra i seguenti è un limite intrinseco dei 'Focus Group' menzionato nel materiale?",
+    options: {
+      A: "La necessità di confermare spesso gli insight con una successiva indagine quantitativa.",
+      B: "La difficoltà di osservare interazioni tra partecipanti con esperienze diverse.",
+      C: "L'impossibilità di usare una traccia di discussione preparata dal ricercatore.",
+      D: "La produzione esclusiva di dati numerici immediatamente generalizzabili.",
+    },
+  },
+  webMemoryFormula: {
+    matchText: "Quale 'formula di memoria' viene suggerita per l'evoluzione del Web da 1.0 a 4.0?",
+    options: {
+      A: "Web 1.0 legge, Web 2.0 partecipa, Web 3.0 comprende, Web 4.0 agisce.",
+      B: "Web 1.0 ascolta, Web 2.0 compra, Web 3.0 recensisce, Web 4.0 archivia.",
+      C: "Web 1.0 stampa, Web 2.0 trasmette, Web 3.0 vende, Web 4.0 certifica.",
+      D: "Web 1.0 misura output, Web 2.0 outcome, Web 3.0 impatto, Web 4.0 ROI.",
+    },
+  },
+  competitiveTrend: {
+    matchText: "Secondo le dispense, perché è utile la 'Valutazione Competitiva' dinamica mese per mese?",
+    options: {
+      A: "Per individuare variazioni nella copertura dei competitor e decidere azioni proattive.",
+      B: "Per sostituire il monitoraggio qualitativo con un unico dato di vendita mensile.",
+      C: "Per classificare ogni menzione come positiva senza leggere il contesto.",
+      D: "Per confrontare solo i dati interni evitando benchmark esterni.",
+    },
+  },
+  peopleAnalysisAction: {
+    matchText: "Quale delle seguenti azioni è un esempio concreto derivante dall'Analisi delle Persone?",
+    options: {
+      A: "Contattare tempestivamente un influencer rilevante che critica l'organizzazione.",
+      B: "Modificare la tassonomia semantica senza considerare il ruolo degli autori.",
+      C: "Aumentare la frequenza dei post senza distinguere le community coinvolte.",
+      D: "Ignorare gli autori marginali e rilevanti trattandoli come fonti equivalenti.",
+    },
+  },
+  semanticDisambiguation: {
+    matchText: "Cosa si intende per 'disambiguazione' effettuata dai moduli di analisi semantica?",
+    options: {
+      A: "Identificare il significato corretto di una parola basandosi sul contesto della frase.",
+      B: "Separare i messaggi duplicati da quelli pubblicati una sola volta.",
+      C: "Ordinare le menzioni dalla più recente alla meno recente.",
+      D: "Collegare parole chiave e operatori logici per rendere più precisa la query.",
+    },
+  },
+  dynamicEvaluation: {
+    matchText: "Cosa si intende per 'Valutazione Dinamica' nell'analisi quantitativa?",
+    options: {
+      A: "La misurazione dell'andamento dei volumi di discussione nel tempo.",
+      B: "La classificazione del sentiment senza considerare serie storiche o baseline.",
+      C: "Il confronto statico tra dati raccolti in un solo giorno di osservazione.",
+      D: "Il trasferimento tecnico dei dati tra piattaforme senza interpretazione.",
+    },
+  },
+  dictionarySentimentLimit: {
+    matchText: "Qual è il rischio principale dell'uso di dizionari 'bag-of-words' nella sentiment analysis automatica?",
+    options: {
+      A: "La perdita del contesto, che può portare a interpretazioni errate di ironia o negazioni.",
+      B: "La necessità di costruire una tassonomia diversa per ogni singola piattaforma social.",
+      C: "La riduzione del volume di messaggi analizzabili rispetto alla lettura manuale.",
+      D: "L'impossibilità di confrontare il sentiment con altre metriche di media monitoring.",
+    },
+  },
+  atlShareOfVoice: {
+    matchText: "Cosa indica l'indice 'Share of Voice' (SOV) in una campagna ATL?",
+    options: {
+      A: "La quota di pressione pubblicitaria di un brand rispetto al totale del mercato di riferimento.",
+      B: "La percentuale di persone che ricordano spontaneamente il messaggio della campagna.",
+      C: "Il rapporto tra contatti raggiunti e frequenza media di esposizione.",
+      D: "La quota di conversioni generate dai canali below the line.",
+    },
+  },
+  piiPretest: {
+    matchText: "Secondo il modello PRE, in quale fase avviene il pre-test dei messaggi su segmenti di destinatari?",
+    text: "Nel modello PII, in quale fase può avvenire il pre-test dei messaggi?",
+    options: {
+      A: "Preparation.",
+      B: "Implementation.",
+      C: "Impact.",
+      D: "Reporting.",
+    },
+  },
+  inputOutputExample: {
+    matchText: "Nella formula Input/Output, quale di questi esempi è corretto?",
+    options: {
+      A: "Numero di ore di lavoro rispetto al numero di comunicati prodotti.",
+      B: "Numero di uscite media rispetto ai punti percentuali di conoscenza.",
+      C: "Costo dell'evento rispetto all'aumento della notorietà.",
+      D: "Sentiment positivo rispetto al livello di fiducia degli stakeholder.",
+    },
+  },
   5: {
     matchText: "Nel contesto dei livelli di valutazione della comunicazione, quale di questi rappresenta un 'Outcome'?",
     options: {
       A: "Un cambiamento nelle conoscenze, negli atteggiamenti o nei comportamenti dei pubblici.",
       B: "Il numero di comunicati, eventi o contenuti prodotti dalla funzione comunicazione.",
-      C: "Le risorse economiche e professionali impiegate per realizzare l'attivita.",
+      C: "Le risorse economiche e professionali impiegate per realizzare l'attività.",
       D: "Il contributo finale della comunicazione alle performance complessive di business.",
     },
   },
   6: {
     matchText: "Cosa si intende per 'Trappola della misurazione'?",
     options: {
-      A: "Raccogliere cio che e facile misurare ma poco utile per decidere.",
+      A: "Raccogliere ciò che è facile misurare ma poco utile per decidere.",
       B: "Usare solo indicatori qualitativi anche quando servono dati quantitativi.",
       C: "Comunicare i risultati al management prima della raccolta dei dati.",
       D: "Confrontare gli output con gli outcome in momenti temporali diversi.",
@@ -1587,16 +1841,6 @@ const manualReviewOverrides = {
       B: "La disponibilità dei primi browser grafici accessibili a un pubblico più ampio.",
       C: "La standardizzazione dei protocolli che rese più semplice pubblicare e navigare.",
       D: "La crescita dell'interesse accademico e commerciale verso le reti ipertestuali.",
-    },
-  },
-  q230: {
-    matchText: "Quale evento storico del 1993 ha favorito la diffusione globale del Web?",
-    text: "Nel sistema Auditel, che cosa fornisce la Ricerca di Base al SuperPanel?",
-    options: {
-      A: "L'universo statistico e le informazioni sociodemografiche e tecnologiche per costruire il campione.",
-      B: "La rilevazione minuto per minuto degli ascolti prodotti dai meter domestici.",
-      C: "La valorizzazione economica degli spazi pubblicitari acquistati dagli inserzionisti.",
-      D: "Il giudizio qualitativo dei telespettatori sui programmi trasmessi nel periodo.",
     },
   },
   q270: {
@@ -4071,16 +4315,785 @@ const manualReviewOverrides = {
       D: "La comunicazione riguarda solo gli output media e non incide sugli intangibili.",
     },
   },
+  socialEcosystems: {
+    matchText: "Quale ruolo hanno oggi TikTok e Instagram secondo la definizione di 'ecosistemi complessi'?",
+    options: {
+      A: "Piattaforme che coprono tutto il funnel, dalla consapevolezza alla fedeltà.",
+      B: "Canali orientati soprattutto a community verticali persistenti e spazi tematici chiusi.",
+      C: "Piattaforme pensate principalmente per networking professionale e lead B2B.",
+      D: "Motori di ricerca generalisti basati su query testuali e indicizzazione web.",
+    },
+  },
+  csqChannelQuality: {
+    matchText: "Cosa valuta la dimensione 'Qualità dei canali di comunicazione' nel CSQ?",
+    options: {
+      A: "Le modalità di funzionamento dei principali strumenti di comunicazione interna.",
+      B: "La soddisfazione dei dipendenti rispetto al feedback ricevuto dai superiori.",
+      C: "La qualità del clima comunicativo nelle relazioni orizzontali tra colleghi.",
+      D: "L'adeguatezza delle informazioni ricevute sui cambiamenti organizzativi.",
+    },
+  },
+  organizationalEffectiveness: {
+    matchText: "Nella comunicazione, l'efficacia organizzativa complessiva dipende da:",
+    options: {
+      A: "La coerenza e il collegamento degli obiettivi di comunicazione con quelli dell'azienda.",
+      B: "L'autonomia della funzione comunicazione rispetto agli obiettivi strategici aziendali.",
+      C: "La quantità di output prodotti indipendentemente dagli outcome ottenuti sui pubblici.",
+      D: "La separazione tra comunicazione interna e processi decisionali dell'organizzazione.",
+    },
+  },
+  plausibleCausalityMayne: {
+    matchText: "Secondo il principio della 'Causalità Plausibile' di Mayne, cosa deve fare un valutatore se non può usare un gruppo di controllo?",
+    options: {
+      A: "Analizzare ed eliminare logicamente altre possibili cause degli effetti osservati (General Elimination Methodology).",
+      B: "Aumentare la numerosità del campione e trattarla come prova sufficiente del nesso causale.",
+      C: "Limitarsi al confronto prima/dopo senza discutere altri fattori che possono aver inciso.",
+      D: "Sostituire la valutazione causale con il giudizio qualitativo del responsabile del progetto.",
+    },
+  },
+  focusGroupSize: {
+    matchText: "Qual è il numero di partecipanti consigliato per un focus group efficace?",
+    options: {
+      A: "Tra 6 e 12 persone.",
+      B: "Tra 3 e 4 persone, per evitare qualunque interazione laterale.",
+      C: "Tra 20 e 25 persone, per avvicinarsi a un piccolo campione statistico.",
+      D: "Oltre 30 persone, per aumentare la varietà delle opinioni raccolte.",
+    },
+  },
+  surveyQuestionnairePhase: {
+    matchText: "In una survey (indagine su campioni), qual è considerata la fase più delicata?",
+    options: {
+      A: "La creazione del questionario.",
+      B: "La presentazione dei risultati al management.",
+      C: "La scelta del software per l'elaborazione dei dati.",
+      D: "La definizione del formato grafico del report conclusivo.",
+    },
+  },
+  hamelPowerShift: {
+    matchText: "Quale affermazione di Gary Hamel è riportata per descrivere il cambio di potere nella comunicazione?",
+    options: {
+      A: "I manager non sono più ai comandi della conversazione.",
+      B: "Le conversazioni restano controllabili dalla marca se pianificate in anticipo.",
+      C: "I clienti dialogano solo attraverso canali proprietari gestiti dall'organizzazione.",
+      D: "Il successo comunicativo dipende soprattutto dalla pressione pubblicitaria acquistata.",
+    },
+  },
+  socialAdvocacyMeaning: {
+    matchText: "Cosa si intende per 'Advocacy' nel framework delle metriche social?",
+    options: {
+      A: "La capacità di attivare sostenitori o promotori spontanei del brand tra gli utenti.",
+      B: "La capacità di aumentare la reach paid attraverso annunci mirati a pubblici simili.",
+      C: "Il numero di interazioni generate dai contenuti proprietari nel breve periodo.",
+      D: "La riduzione dei costi di customer care ottenuta attraverso i canali social.",
+    },
+  },
+  businessValueAltimeter: {
+    matchText: "Quale di questi è un indicatore di 'Business Value' nel framework Altimeter?",
+    options: {
+      A: "Riduzione del traffico al call center tradizionale grazie al supporto social.",
+      B: "Aumento dei follower totali sulla pagina proprietaria nel periodo osservato.",
+      C: "Frequenza di pubblicazione dei contenuti programmati nel piano editoriale.",
+      D: "Sentiment medio delle conversazioni spontanee relative al brand.",
+    },
+  },
+  shareOfAnswerGeo: {
+    matchText: "Cosa indica il parametro 'Share of Answer' nel contesto della GEO?",
+    options: {
+      A: "La quota di contenuto di un brand utilizzata dal motore generativo per comporre la risposta finale all'utente.",
+      B: "La quota di risultati organici occupata dal sito nella SERP tradizionale.",
+      C: "La percentuale di impression acquistate sulle keyword a pagamento.",
+      D: "Il rapporto tra risposte del customer care e richieste ricevute dagli utenti.",
+    },
+  },
+  bowNeutralPoste: {
+    matchText: "Nel metodo BoW per la Sentiment Analysis di Poste Italiane (caso studio), come viene classificato un articolo 'descrittivo o neutro'?",
+    options: {
+      A: "Positivo, se non contiene elementi critici o negativi.",
+      B: "Negativo solo quando contiene valutazioni sfavorevoli esplicite.",
+      C: "Neutro e separato dal conteggio dei contenuti positivi.",
+      D: "Non classificato se riguarda servizi pubblici o comunicazioni istituzionali.",
+    },
+  },
+  editorialTone: {
+    matchText: "Cosa si intende per 'Tono editoriale' (o Sentiment) nel monitoraggio dei media?",
+    options: {
+      A: "La valutazione se l'esposizione è favorevole, neutra o sfavorevole all'organizzazione.",
+      B: "La percentuale di articoli che riportano i messaggi chiave dell'organizzazione.",
+      C: "La centralità del brand nel titolo, nel lead o nelle parti più visibili del contenuto.",
+      D: "La stima della reach potenziale generata dalla testata che pubblica il contenuto.",
+    },
+  },
+  sentimentDefinition: {
+    matchText: "Nel monitoraggio dei media, cos'è la 'Sentiment Analysis'?",
+    options: {
+      A: "L'analisi qualitativa del tono (positivo, negativo, neutro) delle conversazioni e degli articoli.",
+      B: "Il conteggio quantitativo delle uscite media e delle impression generate.",
+      C: "La mappatura delle fonti in base ad autorevolezza, reach e rilevanza.",
+      D: "L'identificazione della presenza dei messaggi chiave nel coverage ottenuto.",
+    },
+  },
+  onlineNewsCounting: {
+    matchText: "Qual è il limite metodologico segnalato riguardo al conteggio delle news online nel media monitoring?",
+    options: {
+      A: "Quando una news viene aggiornata più volte, conviene solitamente considerare solo la versione finale più stabile.",
+      B: "Ogni aggiornamento della stessa news va sempre contato come uscita autonoma.",
+      C: "La prima versione pubblicata deve sostituire sempre tutte le versioni successive.",
+      D: "Le news online vanno escluse perché non hanno una periodicità cartacea certificata.",
+    },
+  },
+  automaticSentimentRisk: {
+    matchText: "Qual è il rischio principale dell'attribuzione automatica del sentiment tramite algoritmi?",
+    options: {
+      A: "L'attribuzione di un giudizio 'neutro' alla stragrande maggioranza dei casi.",
+      B: "La maggiore precisione rispetto alla lettura manuale dei singoli contenuti.",
+      C: "La classificazione sempre positiva dei contenuti puramente descrittivi.",
+      D: "L'impossibilità tecnica di elaborare dataset ampi in tempi rapidi.",
+    },
+  },
+  mixedSentimentAdvantage: {
+    matchText: "Qual è il principale vantaggio del Sentiment 'Misto'?",
+    options: {
+      A: "Permette di correggere manualmente un campione significativo di dati automatici.",
+      B: "Sostituisce completamente la supervisione umana con un dizionario automatico.",
+      C: "Classifica ogni contenuto manualmente senza alcun supporto algoritmico.",
+      D: "Limita l'analisi ai soli contenuti positivi per ridurre il margine di errore.",
+    },
+  },
+  mediaMonitoringPurpose: {
+    matchText: "Qual è lo scopo principale del 'Media Monitoring' come attività continuativa?",
+    options: {
+      A: "Raccogliere sistematicamente i dati nel tempo per osservare l'evoluzione della presenza mediatica e gestire eventuali crisi.",
+      B: "Misurare una singola campagna solo a posteriori senza costruire serie storiche.",
+      C: "Produrre una rassegna stampa priva di analisi, insight o confronto nel tempo.",
+      D: "Sostituire l'analisi qualitativa con il solo conteggio delle uscite pubblicate.",
+    },
+  },
+  auditelTts: {
+    matchText: "Cosa indica l'indicatore 'Total Time Spent' (TTS) nel sistema Auditel?",
+    options: {
+      A: "La somma di tutti i secondi visualizzati da ogni individuo per un singolo canale.",
+      B: "La durata media di ciascuno stream effettivamente avviato dagli utenti.",
+      C: "Il volume totale di stream validi prodotti dai player digitali rilevati.",
+      D: "L'ascolto medio per minuto rilevato sui dispositivi digitali censiti.",
+    },
+  },
+  adsCertification: {
+    matchText: "Che cosa certifica ADS (Accertamenti Diffusione Stampa)?",
+    options: {
+      A: "La tiratura e la diffusione di quotidiani e periodici, sia cartacei che digitali.",
+      B: "L'audience internet di siti e app tramite panel e rilevazioni censuarie.",
+      C: "Gli ascolti televisivi lineari e on demand prodotti dai diversi device.",
+      D: "Gli ascolti radiofonici lineari e digitali utilizzati come currency audio.",
+    },
+  },
+  adsThirdParty: {
+    matchText: "Nel sistema ADS, cosa garantisce la 'Certificazione Terza'?",
+    options: {
+      A: "L'assoluta indipendenza del controllo, garantendo che i dati dichiarati dagli editori corrispondano alla realtà.",
+      B: "La pubblicazione dei dati dichiarati dagli editori senza ulteriori verifiche esterne.",
+      C: "La misurazione del gradimento qualitativo dei lettori verso le singole testate.",
+      D: "La certificazione affidata direttamente alla concessionaria che vende gli spazi.",
+    },
+  },
+  adsMeasuresSpecifically: {
+    matchText: "Cosa misura nello specifico ADS (Accertamenti Diffusione Stampa)?",
+    options: {
+      A: "La tiratura e la diffusione di quotidiani e periodici, sia cartacei che digitali.",
+      B: "La Total Digital Audience di siti e app editoriali tramite panel e SDK.",
+      C: "L'ascolto televisivo lineare e on demand prodotto dal SuperPanel.",
+      D: "La currency radiofonica basata su ascolto lineare e fruizione digitale.",
+    },
+  },
+  auditelHybridResearch: {
+    matchText: "Nel sistema Auditel, cosa si intende per ricerca 'ibrida'?",
+    options: {
+      A: "Un sistema che combina dati campionari (da panel di famiglie) e dati censuari (da dispositivi connessi).",
+      B: "Una ricerca che somma ascolti televisivi e radiofonici in un unico dato audio-video.",
+      C: "Un'indagine qualitativa sul gradimento degli spettatori integrata da interviste in profondità.",
+      D: "Un sistema fondato solo su dati censuari digitali senza alcun panel rappresentativo.",
+    },
+  },
+  audicomCurrency: {
+    matchText: "Cosa si intende per 'Currency' digitale nel contesto di Audicom?",
+    options: {
+      A: "Il dato ufficiale di audience internet riconosciuto dal mercato per pianificare gli investimenti pubblicitari online.",
+      B: "La tariffa media di acquisto di un clic pubblicitario sulle testate digitali rilevate.",
+      C: "Un indicatore interno di gradimento degli utenti verso i contenuti editoriali online.",
+      D: "Il valore pubblicitario equivalente delle uscite web ottenute dall'ufficio stampa.",
+    },
+  },
+  csqMeaning: {
+    matchText: "Cosa indaga il modello 'Communication Satisfaction Questionnaire' (CSQ) di Downs e Hazen del 1977?",
+    options: {
+      A: "Otto dimensioni della soddisfazione dei dipendenti nei confronti della comunicazione interna.",
+      B: "Il grado di soddisfazione dei clienti dopo l'acquisto di un prodotto.",
+      C: "La qualità percepita della reputazione esterna presso gli stakeholder finanziari.",
+      D: "La sequenza output, out-take e outcome di una campagna media.",
+    },
+  },
+  reavMeaning: {
+    matchText: "Cosa rappresenta il 'Valore REAV' rispetto all'AVE tradizionale?",
+    options: {
+      A: "È un AVE corretto con coefficienti e moltiplicatori qualitativi.",
+      B: "È un indice non monetario che affianca REAV e readership nel PQII.",
+      C: "È un indicatore di ROI social calcolato su engagement e conversioni.",
+      D: "È una stima della reach netta prodotta dagli enti certificatori di audience.",
+    },
+  },
+  communicationRoiStrict: {
+    matchText: "Nel calcolo del valore della comunicazione, cosa si intende per 'ROI della comunicazione' in senso stretto?",
+    options: {
+      A: "Il rapporto tra il guadagno finanziario generato dalla comunicazione e il costo sostenuto per realizzarla.",
+      B: "Il grado di raggiungimento degli obiettivi prefissati senza monetizzare il ritorno.",
+      C: "Il valore pubblicitario equivalente dello spazio editoriale ottenuto gratuitamente.",
+      D: "La quota di pressione pubblicitaria ottenuta rispetto al totale del mercato.",
+    },
+  },
+  avePremise: {
+    matchText: "Qual è il presupposto per applicare la tecnica dell'AVE (Advertising Value Equivalent)?",
+    options: {
+      A: "Attribuire alla copertura editoriale il costo di uno spazio pubblicitario equivalente.",
+      B: "Misurare gli outcome della campagna tramite una survey sul pubblico raggiunto.",
+      C: "Correggere la copertura con indicatori di tono, centralità e messaggi chiave.",
+      D: "Collegare direttamente la comunicazione alle vendite isolate del periodo.",
+    },
+  },
+  aveBaseLimit: {
+    matchText: "Qual è il limite principale del metodo di valutazione AVE (Advertising Value Equivalent)?",
+    options: {
+      A: "Confonde il costo di uno spazio pubblicitario con il valore reale della comunicazione editoriale.",
+      B: "Misura direttamente gli outcome relazionali prodotti dalla copertura ottenuta.",
+      C: "Certifica l'audience dei mezzi attraverso panel e rilevazioni censuarie.",
+      D: "Stima la soddisfazione degli stakeholder verso la comunicazione interna.",
+    },
+  },
+  pqiiMeasure: {
+    matchText: "Cosa misura l'indice 'PQII' nel modello di valutazione della stampa di GRV?",
+    options: {
+      A: "La qualità e l'impatto della copertura media basandosi su REAV e readership, espresso come valore numerico non monetario.",
+      B: "Il costo per ogni singola interazione ottenuta dai contenuti social collegati alla campagna.",
+      C: "Il livello di ricordo del messaggio rilevato tramite una survey post-campagna.",
+      D: "La quota di copertura ottenuta dall'organizzazione rispetto ai competitor diretti.",
+    },
+  },
+  roiFormulaCommunication: {
+    matchText: "Quale formula deve essere utilizzata per calcolare correttamente il ROI (Return On Investment) applicato a una specifica attività di comunicazione?",
+    options: {
+      A: "$ROI = \\frac{benefici - costi}{costi} \\times 100$",
+      B: "$ROI = \\frac{costi - benefici}{benefici} \\times 100$",
+      C: "$ROI = \\frac{ricavi}{costi} \\times 100$",
+      D: "$PQII = \\frac{REAV \\times readership}{1.000.000}$",
+    },
+  },
+  rooMeaning: {
+    matchText: "Quale tra queste affermazioni descrive la metrica ROO (Return On Objectives)?",
+    options: {
+      A: "Il grado di raggiungimento degli obiettivi di comunicazione prefissati.",
+      B: "Il calcolo del guadagno monetario netto per ogni euro investito.",
+      C: "Il tempo medio di permanenza degli utenti sulla home page del sito web.",
+      D: "Il valore pubblicitario equivalente della copertura editoriale ottenuta.",
+    },
+  },
+  pqiiFormula: {
+    matchText: "Qual è la formula corretta per calcolare il Press Quality Impact Index (PQII) espresso in unità GRV?",
+    options: {
+      A: "$\\frac{REAV \\times Readership}{1.000.000}$",
+      B: "$REAV + Readership$",
+      C: "$\\frac{Benefici - Costi}{Costi} \\times 100$",
+      D: "$\\%Promotori - \\%Detrattori$",
+    },
+  },
+  pqiiCalculation: {
+    matchText: "Come viene calcolato l'indice PQII (Press Quality Impact Index) secondo il modello Glebb/Romoli Venturi?",
+    options: {
+      A: "Affiancando il valore REAV (AVE corretto) alla readership certificata del mezzo.",
+      B: "Moltiplicando il solo EAV per coefficienti qualitativi senza considerare la readership.",
+      C: "Sommando numero di uscite media e sentiment positivo del periodo.",
+      D: "Dividendo il costo della campagna per il numero di articoli pubblicati.",
+    },
+  },
+  returnOnIgnorance: {
+    matchText: "Cosa afferma il principio di Hayzlett sul 'Return on Ignorance'?",
+    options: {
+      A: "Che ignorare i social media comporta un costo competitivo e reputazionale misurabile.",
+      B: "Che il valore va misurato come grado di raggiungimento degli obiettivi non monetari.",
+      C: "Che la copertura editoriale può essere trasformata in costo pubblicitario equivalente.",
+      D: "Che il ritorno finanziario si calcola sempre come rapporto tra benefici e costi.",
+    },
+  },
+  focusDemultiplier: {
+    matchText: "Nel calcolo del REAV, cosa si intende per 'Demoltiplicatore focus dedicato'?",
+    options: {
+      A: "Un coefficiente (solitamente pari a 1) usato quando l'intero articolo parla esclusivamente dell'azienda/prodotto.",
+      B: "Un coefficiente che riduce il valore quando la citazione è marginale o condivisa con altri soggetti.",
+      C: "Il moltiplicatore applicato quando il brand compare nel titolo o nel sottotitolo.",
+      D: "Il parametro di readership usato per ponderare il valore finale della copertura.",
+    },
+  },
+  aveConceptTrap: {
+    matchText: "Perché gli AVE (Advertising Value Equivalent) sono considerati una 'trappola' concettuale?",
+    options: {
+      A: "Perché confondono il costo di uno spazio pubblicitario con il valore relazionale ed editoriale di un contenuto spontaneo.",
+      B: "Perché misurano direttamente outcome cognitivi, affettivi e comportamentali dei pubblici.",
+      C: "Perché sostituiscono l'analisi qualitativa con un indice sintetico di reputazione.",
+      D: "Perché richiedono sempre dati di vendita individuali raccolti presso i clienti.",
+    },
+  },
+  narrativeCapitalDefinition: {
+    matchText: "Cosa si intende per 'capitale narrativo' all'interno del capitale comunicativo?",
+    options: {
+      A: "La capacità dell'organizzazione di raccontarsi in modo coerente e di generare storie che creano senso per gli stakeholder.",
+      B: "L'insieme di procedure, sistemi informativi e infrastrutture che sostengono l'organizzazione.",
+      C: "Le competenze tecniche e comunicative possedute dal personale interno.",
+      D: "La qualità delle relazioni fiduciarie costruite con clienti e stakeholder.",
+    },
+  },
+  microEconomistsReputation: {
+    matchText: "Quale componente dello studio della reputazione si occupa di vederla come un 'segnale informativo indiretto' della qualità?",
+    options: {
+      A: "I micro-economisti.",
+      B: "Gli studiosi dell'identità organizzativa.",
+      C: "Gli approcci psicologici alla percezione dei pubblici.",
+      D: "I modelli di corporate character e personalità aziendale.",
+    },
+  },
+  reptrakCitizenship: {
+    matchText: "Cosa si intende per 'Cittadinanza Sociale' tra le componenti razionali del RepTrak?",
+    options: {
+      A: "L'impegno dell'azienda verso la società e l'ambiente.",
+      B: "La solidità finanziaria e la redditività dell'organizzazione.",
+      C: "La stima, l'ammirazione e la fiducia provate dagli stakeholder.",
+      D: "La qualità percepita dei prodotti e dei servizi offerti.",
+    },
+  },
+  symbolicFlows: {
+    matchText: "Nel contesto del capitale intellettuale, cosa sono i 'Flussi Simbolici'?",
+    options: {
+      A: "La circolazione di valori e significati che rendono l'identità riconoscibile.",
+      B: "I flussi informativi operativi che collegano reparti e procedure interne.",
+      C: "Le transazioni economiche registrate tra organizzazione e stakeholder.",
+      D: "I dati tecnici trasferiti tra sistemi informativi aziendali.",
+    },
+  },
+  narrativeCapitalIntangibles: {
+    matchText: "Cosa si intende per 'capitale narrativo' nell'ambito degli intangibili aziendali?",
+    options: {
+      A: "L'insieme delle storie, dei racconti e delle conversazioni che rendono visibili le risorse dell'azienda.",
+      B: "Le procedure, le infrastrutture e i sistemi informativi che sostengono l'organizzazione.",
+      C: "Le competenze professionali e comunicative del personale interno.",
+      D: "La qualità delle relazioni commerciali e fiduciarie con gli stakeholder.",
+    },
+  },
+  rqEmotiveComponents: {
+    matchText: "Nella valutazione della reputazione tramite il Reputation Quotient (RQ), cosa rappresentano le componenti emotive?",
+    options: {
+      A: "La stima, l'ammirazione e la fiducia che gli stakeholder provano verso l'azienda.",
+      B: "Performance finanziaria, governance e cittadinanza sociale dell'organizzazione.",
+      C: "Prodotti, servizi, leadership e ambiente di lavoro percepiti dagli stakeholder.",
+      D: "Notorietà, tiratura, diffusione e audience certificata dei mezzi.",
+    },
+  },
+  reputationSample: {
+    matchText: "Nello schema di misurazione della reputazione, chi costituisce solitamente il campione degli intervistati?",
+    options: {
+      A: "Manager, investitori, dipendenti e consumatori con un minimo livello di familiarità con l'organizzazione.",
+      B: "Solo clienti recenti che hanno acquistato un prodotto nell'ultimo mese.",
+      C: "Solo componenti del management interno coinvolti nella comunicazione.",
+      D: "Pubblici senza alcuna familiarità con l'organizzazione valutata.",
+    },
+  },
+  rqSevenPointScale: {
+    matchText: "Cosa indica l'attribuzione di un punteggio da 1 a 7 nel calcolo del Reputation Quotient?",
+    options: {
+      A: "Il grado di accordo dell'intervistato tra le sue aspettative e i comportamenti dell'organizzazione.",
+      B: "Il peso economico attribuito alle uscite media ottenute dall'organizzazione.",
+      C: "La frequenza di esposizione del pubblico ai contenuti della campagna.",
+      D: "Il punteggio tecnico di bilancio assegnato dagli analisti finanziari.",
+    },
+  },
+  identityVsImage: {
+    matchText: "Secondo le definizioni, cosa differenzia l'Identità Organizzativa dall'Immagine Aziendale?",
+    options: {
+      A: "L'identità è ciò che l'azienda realmente è e mostra, l'immagine è ciò che gli altri percepiscono.",
+      B: "L'identità è il giudizio esterno consolidato, l'immagine riguarda solo i tratti interni.",
+      C: "L'identità coincide con il logo, mentre l'immagine riguarda solo la reputazione finanziaria.",
+      D: "Identità e immagine sono sinonimi utilizzati per indicare la stessa percezione.",
+    },
+  },
+  relationalIntegrity: {
+    matchText: "Cosa si intende per 'Integrità' nel contesto della qualità relazionale?",
+    options: {
+      A: "La percezione che l'organizzazione agisca secondo principi etici e corretti.",
+      B: "La percezione che l'organizzazione possieda competenze tecniche adeguate.",
+      C: "La soddisfazione dello stakeholder rispetto ai benefici ricevuti dalla relazione.",
+      D: "Il desiderio di mantenere nel tempo una relazione considerata importante.",
+    },
+  },
+  humanCapitalActivation: {
+    matchText: "Cosa accade al Capitale Umano quando viene attivato dalla comunicazione efficace?",
+    options: {
+      A: "Viene valorizzato, poiché le competenze individuali vengono messe in rete e rese produttive per l'organizzazione.",
+      B: "Viene trasformato in procedure e brevetti senza passare dalle relazioni interne.",
+      C: "Viene ridotto a semplice costo del personale da contenere nel breve periodo.",
+      D: "Viene sostituito dagli asset fisici usati nei processi produttivi dell'organizzazione.",
+    },
+  },
+  causalControlGroupFunction: {
+    matchText: "Nella ricerca causale, qual è la funzione principale del 'gruppo di controllo'?",
+    options: {
+      A: "Servire da termine di paragone non venendo sottoposto agli stimoli comunicativi.",
+      B: "Verificare la chiarezza del questionario prima della somministrazione sul campo.",
+      C: "Raccogliere dati secondari utili a formulare ipotesi interpretative.",
+      D: "Osservare l'interazione tra partecipanti in una situazione qualitativa.",
+    },
+  },
+  evaluativeResearchVsControl: {
+    matchText: "Qual è una caratteristica distintiva della ricerca valutativa rispetto al semplice controllo?",
+    options: {
+      A: "Essere basata su metodi scientifici che garantiscono rigore e replicabilità.",
+      B: "Limitarsi alla verifica amministrativa degli scostamenti rispetto al budget.",
+      C: "Concentrarsi solo sull'analisi dei costi fissi e variabili del progetto.",
+      D: "Produrre una rendicontazione finale senza interpretare le cause dei risultati.",
+    },
+  },
+  controlGroupsRole: {
+    matchText: "Qual è il ruolo dei 'Gruppi di Controllo' nelle ricerche causali?",
+    options: {
+      A: "Sono persone che non vengono sottoposte agli stimoli della comunicazione.",
+      B: "Sono partecipanti usati per pre-testare la traccia di un focus group.",
+      C: "Sono ricercatori incaricati di verificare la coerenza del questionario.",
+      D: "Sono pubblici osservati solo nella fase esplorativa qualitativa.",
+    },
+  },
+  interviewVsFocusGroup: {
+    matchText: "Qual è il principale vantaggio di un'intervista rispetto a un focus group?",
+    options: {
+      A: "Evita la tendenza degli intervistati a conformare le proprie risposte a quelle del gruppo.",
+      B: "Permette di osservare direttamente le dinamiche di interazione tra partecipanti.",
+      C: "Garantisce risultati statisticamente rappresentativi della popolazione.",
+      D: "Riduce la raccolta dati a una sequenza di risposte chiuse standardizzate.",
+    },
+  },
+  focusOpeningQuestions: {
+    matchText: "Qual è lo scopo delle domande di 'Apertura' in un Focus Group?",
+    options: {
+      A: "Permettere la creazione del gruppo e mettere a proprio agio i partecipanti.",
+      B: "Entrare subito nel nucleo decisionale del problema di ricerca.",
+      C: "Raccogliere dati quantitativi confrontabili tra tutti i partecipanti.",
+      D: "Verificare sperimentalmente il nesso tra stimolo ed effetto osservato.",
+    },
+  },
+  web1993TurningPoint: {
+    matchText: "Quale evento storico del 1993 ha favorito la diffusione globale del Web?",
+    options: {
+      A: "Il rilascio della tecnologia del Web nel pubblico dominio da parte del CERN.",
+      B: "La nascita dei primi social network basati su profili personali e community.",
+      C: "La formalizzazione del concetto di Web 2.0 e contenuto generato dagli utenti.",
+      D: "L'introduzione degli smartphone come dispositivo centrale della navigazione.",
+    },
+  },
+  socialMedia2020sTrend: {
+    matchText: "Quale trend caratterizza l'evoluzione dei social media negli anni 2020?",
+    options: {
+      A: "La trasformazione dei canali in ecosistemi digitali integrati.",
+      B: "La riduzione dei social a semplici spazi di pubblicazione testuale.",
+      C: "La separazione netta tra contenuti, community, commerce e customer care.",
+      D: "Il ritorno a piattaforme prive di algoritmi di raccomandazione e creator economy.",
+    },
+  },
+  socialCaringMeaning: {
+    matchText: "Cosa si intende per 'Social Caring' in ambito aziendale?",
+    options: {
+      A: "L'attività di customer service svolta pubblicamente e rapidamente sui social.",
+      B: "La pianificazione di contenuti promozionali per aumentare la reach organica.",
+      C: "Il monitoraggio della brand reputation senza risposta diretta agli utenti.",
+      D: "La gestione dei programmi di advocacy rivolti a sostenitori del brand.",
+    },
+  },
+  web4Characteristic: {
+    matchText: "Quale caratteristica distingue principalmente il Web 4.0 dalle fasi precedenti?",
+    options: {
+      A: "L'uso di agenti autonomi e sistemi predittivi capaci di anticipare i bisogni degli utenti.",
+      B: "L'affermazione di contenuti generati dagli utenti e piattaforme partecipative.",
+      C: "La pubblicazione di siti statici consultabili attraverso pagine ipertestuali.",
+      D: "L'organizzazione semantica dei dati per renderli leggibili dalle macchine.",
+    },
+  },
+  webEvolutionFormula: {
+    matchText: "Quale formula sintetizza l'evoluzione del Web dal 1.0 al 4.0 secondo gli appunti?",
+    options: {
+      A: "Leggi -> Partecipa -> Capisce -> Agisce.",
+      B: "Pubblica -> Condivide -> Classifica -> Certifica.",
+      C: "Output -> Out-take -> Outcome -> Impatto.",
+      D: "Crawling -> Indexing -> Ranking -> Risposta.",
+    },
+  },
+  homonymsQueryProblem: {
+    matchText: "Quale problema pongono i termini omonimi durante la definizione della tassonomia e delle query?",
+    options: {
+      A: "Possono generare ambiguità nel dataset, includendo messaggi non attinenti al brand.",
+      B: "Riducono il volume delle menzioni perché escludono automaticamente i sinonimi.",
+      C: "Impediscono di usare operatori logici per combinare parole chiave e filtri.",
+      D: "Richiedono una verifica del contesto per distinguere significati diversi.",
+    },
+  },
+  intangibleImitation: {
+    matchText: "Secondo le lezioni, perché i beni intangibili sono spesso 'più difficili da imitare' rispetto ai beni fisici?",
+    options: {
+      A: "Perché sono radicati nella conoscenza, nelle relazioni e nella cultura specifica di quell'organizzazione.",
+      B: "Perché derivano solo dalla quantità di copertura media ottenuta nel periodo.",
+      C: "Perché coincidono con asset fisici protetti da proprietà e brevetti industriali.",
+      D: "Perché possono essere trasferiti integralmente attraverso un singolo atto contabile.",
+    },
+  },
+  peopleAnalysisRole: {
+    matchText: "In un'analisi delle persone, perché è fondamentale distinguere il ruolo degli autori (es. amministratore vs utente occasionale)?",
+    options: {
+      A: "Per valutarne la rilevanza e l'impatto potenziale all'interno di quella specifica community.",
+      B: "Per escludere automaticamente gli utenti occasionali dal volume totale delle conversazioni.",
+      C: "Per attribuire lo stesso peso a ogni autore indipendentemente dalla posizione nella rete.",
+      D: "Per trasformare l'analisi delle persone in un conteggio puramente quantitativo.",
+    },
+  },
+  sharedSoleImportance: {
+    matchText: "Perché è importante distinguere tra 'Shared' e 'Sole' mentions?",
+    options: {
+      A: "Per capire se l'azienda è la protagonista assoluta dell'articolo o se appare insieme ai competitor.",
+      B: "Per distinguere la quota di copertura ottenuta da quella dei concorrenti nello stesso periodo.",
+      C: "Per misurare il tono editoriale favorevole, neutro o sfavorevole della menzione.",
+      D: "Per verificare se l'articolo contiene i messaggi chiave definiti dall'organizzazione.",
+    },
+  },
+  economicPrIndicatorValue: {
+    matchText: "Qual è il valore aggiunto di utilizzare un indicatore economico (come il valore dello spazio pubblicitario equivalente) per misurare le PR?",
+    options: {
+      A: "Aumentare la credibilità delle attività di comunicazione agli occhi del top management (spesso orientato ai numeri).",
+      B: "Sostituire la valutazione qualitativa degli articoli con una prova di outcome comportamentale.",
+      C: "Dimostrare automaticamente che la copertura editoriale produce vendite immediate.",
+      D: "Misurare la soddisfazione degli stakeholder attraverso un indicatore di costo.",
+    },
+  },
+  statePrMeasurementChallenge: {
+    matchText: "Secondo il report 'State of PR Measurement', qual è la sfida attuale per i professionisti?",
+    options: {
+      A: "Collegare le metriche utilizzate ai risultati di business e all'impatto strategico.",
+      B: "Abbandonare del tutto le metriche qualitative per usare soltanto dati certificati.",
+      C: "Sostituire ogni report interpretativo con una rassegna stampa non commentata.",
+      D: "Affidare la misurazione delle PR agli stessi enti che certificano tiratura e ascolti.",
+    },
+  },
+  concessionarieJic: {
+    matchText: "Nel contesto dei JIC, chi sono le 'Concessionarie'?",
+    options: {
+      A: "Soggetti che vendono gli spazi pubblicitari per conto degli editori.",
+      B: "Centri media che pianificano gli investimenti per conto degli inserzionisti.",
+      C: "Associazioni di editori che partecipano alla governance della misurazione.",
+      D: "Aziende investitrici che acquistano spazi per comunicare al mercato.",
+    },
+  },
+  measurementTreeRoots: {
+    matchText: "Secondo il modello del 'Measurement Tree', cosa rappresentano metaforicamente le RADICI?",
+    options: {
+      A: "Gli obiettivi di comunicazione chiari e precisi.",
+      B: "Il contesto competitivo e organizzativo in cui opera l'organizzazione.",
+      C: "I pubblici prioritari cui sono rivolte le attività di comunicazione.",
+      D: "Gli outcome generati dalla comunicazione sui pubblici di riferimento.",
+    },
+  },
+  measurementTreeSap: {
+    matchText: "Nel 'Measurement Tree', la metafora della 'LINFA' è utilizzata per indicare:",
+    options: {
+      A: "Ciò che è visibile internamente esclusivamente ai collaboratori e dipendenti.",
+      B: "Gli obiettivi di comunicazione che sostengono l'intero processo valutativo.",
+      C: "I prodotti e servizi visibili all'esterno dell'organizzazione.",
+      D: "Gli outcome finali osservabili nei pubblici dopo il programma.",
+    },
+  },
+  intangibleAssetsHardToImitate: {
+    matchText: "Secondo i materiali, perché gli asset intangibili sono 'difficili da imitare'?",
+    options: {
+      A: "Perché sono radicati nella cultura, nelle relazioni e nel capitale umano specifico di quell'azienda.",
+      B: "Perché sono iscritti a bilancio con un valore contabile certo e stabile.",
+      C: "Perché dipendono esclusivamente da brevetti legali facilmente verificabili.",
+      D: "Perché possono essere acquistati già pronti sul mercato da fornitori esterni.",
+    },
+  },
+  symbolicComponentIntangibles: {
+    matchText: "Cosa si intende per 'Componente Simbolica' della comunicazione nell'alveo degli intangibili?",
+    options: {
+      A: "La capacità della comunicazione di dare senso all'identità aziendale e costruire una reputazione solida.",
+      B: "La quota di copertura media generata da comunicati stampa e articoli ottenuti.",
+      C: "La componente finanziaria che collega comunicazione e vendite di breve periodo.",
+      D: "La parte tecnica del sistema informativo usata per archiviare i dati interni.",
+    },
+  },
+  auditelEntityQuestion: {
+    matchText: "Quale ente in Italia si occupa di misurare gli ascolti della TV?",
+    text: "Nel sistema italiano degli enti certificatori, quale funzione svolge Auditel?",
+    options: {
+      A: "Rileva l'audience televisiva integrando panel, meter e dati censuari per la Total Audience.",
+      B: "Certifica tiratura e diffusione delle testate quotidiane e periodiche.",
+      C: "Misura l'audience digitale di siti e app attraverso la ricerca integrata Audicom.",
+      D: "Costruisce la currency dell'audio per radio lineare e fruizione on demand.",
+    },
+  },
+  barcelonaPrincipleFour: {
+    matchText: "Quale principio dei Barcelona Principles 3.0 afferma che la misurazione deve includere analisi sia qualitative che quantitative?",
+    options: {
+      A: "Principio 4.",
+      B: "Principio 2.",
+      C: "Principio 5.",
+      D: "Principio 7.",
+    },
+  },
+  cpmSummativeCapital: {
+    matchText: "Nel modello CCPM, la 'valutazione complessiva del capitale' avviene a quale livello?",
+    options: {
+      A: "Livello Sommativo.",
+      B: "Livello Formativo.",
+      C: "Livello Rendicontativo.",
+      D: "Livello di monitoraggio degli output.",
+    },
+  },
+  rooRoeDifference: {
+    matchText: "Quale tra questi è un indicatore alternativo al ROI che misura il raggiungimento delle aspettative dei pubblici?",
+    text: "Quale distinzione tra ROO e ROE è corretta nel materiale sul ROI della comunicazione?",
+    options: {
+      A: "Il ROO valuta il raggiungimento degli obiettivi, il ROE il raggiungimento delle aspettative.",
+      B: "Il ROO monetizza l'esposizione earned, il ROE calcola il valore pubblicitario equivalente.",
+      C: "Il ROO misura solo le impression digitali, il ROE misura la tiratura certificata.",
+      D: "Il ROO coincide con l'AVE corretto, il ROE coincide con il PQII espresso in GRV.",
+    },
+  },
+  roemAveRelation: {
+    matchText: "Quale di questi indicatori è considerato un 'sinonimo dell'AVE'?",
+    text: "Perché il ROEM viene avvicinato all'AVE nelle dispense?",
+    options: {
+      A: "Perché valorizza l'esposizione earned attribuendole un equivalente economico.",
+      B: "Perché misura il raggiungimento degli obiettivi non monetari della campagna.",
+      C: "Perché stima le aspettative degli stakeholder prima dell'avvio della comunicazione.",
+      D: "Perché valuta il ricordo del messaggio attraverso una survey post-campagna.",
+    },
+  },
+  cosenzaCountingMetricsLimit: {
+    matchText: "Qual è il limite principale delle 'Counting Metrics' secondo Vincenzo Cosenza?",
+    options: {
+      A: "Hanno valore solo se lette dinamicamente e collegate ad altre metriche e obiettivi.",
+      B: "Misurano direttamente il contributo economico delle conversazioni social al fatturato.",
+      C: "Sostituiscono le metriche di business quando l'obiettivo è aumentare la visibilità.",
+      D: "Sono sufficienti da sole per valutare advocacy, loyalty e impatto relazionale.",
+    },
+  },
+  communicationRoiImportance: {
+    matchText: "Perché è importante misurare il ROI della comunicazione nonostante le difficoltà metodologiche?",
+    options: {
+      A: "Per aumentare la credibilità dei comunicatori agli occhi del top management, che ha spesso un background economico-finanziario.",
+      B: "Perché il ROI è l'unico indicatore capace di misurare sentimenti, fiducia e qualità relazionale.",
+      C: "Perché misura soltanto l'efficienza dei costi e non il raggiungimento degli obiettivi.",
+      D: "Perché trasforma la copertura editoriale in valore monetario ignorando il contesto.",
+    },
+  },
+  grvUnitMeaning: {
+    matchText: "Cosa indica l'unità di misura 'GRV' nel modello PQII?",
+    options: {
+      A: "Un'unità indice di impatto qualitativo, non un valore economico in euro.",
+      B: "Il valore pubblicitario equivalente calcolato applicando soltanto il listino media.",
+      C: "Il rapporto tra benefici e costi di una specifica attività di comunicazione.",
+      D: "La readership certificata usata come base per stimare la portata del mezzo.",
+    },
+  },
+  interviewDepthAdvantage: {
+    matchText: "Nelle indagini qualitative, l'intervista in profondità ha il vantaggio di:",
+    options: {
+      A: "Evitare la tendenza degli intervistati a conformarsi alle risposte del gruppo.",
+      B: "Osservare direttamente le interazioni e le dinamiche collettive tra partecipanti.",
+      C: "Produrre dati statisticamente generalizzabili a una popolazione ampia.",
+      D: "Standardizzare completamente le risposte attraverso domande chiuse.",
+    },
+  },
+  qualitativeGeneralizationLimit: {
+    matchText: "Nelle ricerche qualitative, perché i risultati non sono considerati 'generalizzabili'?",
+    options: {
+      A: "Perché mirano a esplorare la soggettività e le esperienze uniche dei partecipanti.",
+      B: "Perché privilegiano campioni numericamente ampi e statisticamente rappresentativi.",
+      C: "Perché eliminano l'interpretazione del ricercatore a favore di soli indicatori numerici.",
+      D: "Perché hanno come obiettivo principale la stima causale degli effetti di una campagna.",
+    },
+  },
+  socialSourcesNoise: {
+    matchText: "Quale elemento critico rende difficile la selezione delle fonti sui social network rispetto ai forum?",
+    options: {
+      A: "L'alto tasso di 'rumore' e il fluire dei messaggi in tempo reale.",
+      B: "Il fatto che i forum producano sempre un volume di messaggi superiore ai social network.",
+      C: "La completa assenza di metadati utili come autore, data e canale.",
+      D: "La necessità di usare solo fonti già incluse nel monitoraggio dei media tradizionali.",
+    },
+  },
+  listeningQuestionsRationalization: {
+    matchText: "Cosa deve fare l'analista per 'razionalizzare' le domande dell'ascolto nella Fase 1?",
+    options: {
+      A: "Basarle strettamente sugli obiettivi di business identificati nel social media plan.",
+      B: "Formularle partendo solo dagli indicatori già disponibili nella piattaforma nativa.",
+      C: "Sostituirle con una lista generale di keyword prima di chiarire il bisogno informativo.",
+      D: "Ridurre l'analisi alle domande che producono risposte numeriche immediate.",
+    },
+  },
+  socialReachMetric: {
+    matchText: "Quale di queste affermazioni descrive correttamente la 'Reach di un post' secondo la formula proposta nel materiale?",
+    text: "Nel framework di Lovett, quale obiettivo viene misurato da metriche come reach e share of voice?",
+    options: {
+      A: "Incrementare la visibilità e la possibilità che il contenuto venga visto dai pubblici.",
+      B: "Misurare la riduzione dei costi operativi del customer care attraverso i social.",
+      C: "Valutare il livello di fedeltà e advocacy generato dagli utenti più coinvolti.",
+      D: "Stimare il valore economico diretto della singola conversione attribuita al canale.",
+    },
+  },
+  modernSnaOpinionLeaders: {
+    matchText: "Nel contesto della Social Network Analysis (SNA) moderna, cosa è cambiato rispetto al passato nell'identificazione degli opinion leader?",
+    options: {
+      A: "L'influenza non è più concentrata solo sui blogger, ma distribuita su creator, media verticali e community.",
+      B: "Gli opinion leader vengono individuati esclusivamente attraverso i link in entrata verso i blog.",
+      C: "La dimensione della community è sempre sufficiente per misurare l'influenza di un autore.",
+      D: "Le relazioni tra attori non sono più rilevanti perché contano solo le piattaforme usate.",
+    },
+  },
+  seoIndexingMeaning: {
+    matchText: "Cosa si intende per 'Indexing' (Indicizzazione) nel contesto della SEO?",
+    options: {
+      A: "L'organizzazione e l'archiviazione dei contenuti analizzati in un database interrogabile.",
+      B: "L'acquisto di parole chiave a pagamento per apparire in cima ai risultati.",
+      C: "La selezione finale dei risultati da ordinare in base alla pertinenza della query.",
+      D: "La scansione iniziale delle pagine web seguendo collegamenti e sitemap.",
+    },
+  },
+  sharedSoleMediaMonitoring: {
+    matchText: "Cosa indica l'indicatore 'Shared vs Sole mentions' nel media monitoring?",
+    options: {
+      A: "La distinzione tra articoli in cui l'azienda è protagonista unica e articoli in cui compare insieme a competitor o altri soggetti.",
+      B: "La quota di copertura ottenuta dall'organizzazione rispetto ai competitor nello stesso periodo.",
+      C: "Il tono favorevole, neutro o sfavorevole attribuito alla citazione nel contenuto.",
+      D: "La presenza dei messaggi chiave definiti dall'organizzazione all'interno dell'articolo.",
+    },
+  },
+  jicStructuralFeature: {
+    matchText: "Quale caratteristica definisce strutturalmente un Joint Industry Committee (JIC) nel mercato italiano della comunicazione?",
+    options: {
+      A: "La partecipazione paritetica di investitori, agenzie e centri media, ed editori.",
+      B: "La presenza di un solo soggetto proprietario responsabile della misurazione.",
+      C: "La separazione completa tra investitori, agenzie ed editori nella governance.",
+      D: "La gestione esclusiva da parte degli editori per controllare i dati di vendita.",
+    },
+  },
 };
 
 const manualReviewOverrideByText = new Map(
-  Object.values(manualReviewOverrides).map(override => [normalizeKey(override.matchText), override])
+  Object.values(manualReviewOverrides)
+    .filter(override => override.matchText)
+    .map(override => [normalizeKey(override.matchText), override])
 );
 
 for (const question of bank) {
-  const idOverride = manualReviewOverrides[question.id];
-  const stableIdOverride = question.id <= 270 && idOverride && !idOverride.matchText ? idOverride : null;
-  const override = manualReviewOverrideByText.get(normalizeKey(question.text)) || stableIdOverride;
+  const override = manualReviewOverrideByText.get(normalizeKey(question.text));
   if (!override) continue;
   if (override.text) question.text = cleanText(override.text);
   if (override.options) {
