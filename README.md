@@ -1,6 +1,6 @@
 # Quiz Metriche della Comunicazione
 
-Quiz interattivo da 50 domande random, pescate da una banca esame di 560 domande sugli argomenti di Metriche della Comunicazione.
+Quiz interattivo da 50 domande random, pescate da una banca esame di 1000 domande sugli argomenti di Metriche della Comunicazione.
 
 ## Uso
 

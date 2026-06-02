@@ -24,15 +24,15 @@ const SECTIONS = [
 ];
 
 const TARGETS = new Map([
-  ["Fondamenti della misurazione", 45],
-  ["Ricerca in comunicazione", 60],
-  ["Digitale, social e motori di ricerca", 75],
-  ["Monitoring, listening e sentiment", 45],
-  ["Enti certificatori e audience", 55],
-  ["Modelli di valutazione", 125],
-  ["Performance measurement e CCPM", 55],
-  ["ROI, AVE e indicatori economici", 45],
-  ["Intangibili e reputazione", 55],
+  ["Fondamenti della misurazione", 70],
+  ["Ricerca in comunicazione", 85],
+  ["Digitale, social e motori di ricerca", 110],
+  ["Monitoring, listening e sentiment", 70],
+  ["Enti certificatori e audience", 75],
+  ["Modelli di valutazione", 300],
+  ["Performance measurement e CCPM", 100],
+  ["ROI, AVE e indicatori economici", 70],
+  ["Intangibili e reputazione", 120],
 ]);
 const EXPECTED_TOTAL = [...TARGETS.values()].reduce((sum, count) => sum + count, 0);
 
@@ -683,6 +683,205 @@ const studySeeds = [
   ], "A", "appunti-cheat"),
 ];
 
+const modelCoverageExpansionSeeds = [
+  ["Nel modello Short di Watson, quale condizione rende il modello particolarmente adatto?", "Obiettivi di breve periodo e campagne media con output osservabili.", "Programmi relazionali di lungo periodo con feedback continuo dagli stakeholder.", "Valutazioni partecipative centrate sulle performance expectations dei decisori.", "Analisi degli intangibili collegati al capitale comunicativo organizzativo."],
+  ["Perché lo Short Model di Watson viene definito lineare e one-way?", "Perché segue il flusso della comunicazione senza veri meccanismi di feedback.", "Perché collega direttamente capitale comunicativo e risultati economico-finanziari.", "Perché integra dashboard, mappe narrative e uso partecipativo dei dati.", "Perché misura simultaneamente input, outcome e impatto organizzativo."],
+  ["Nel modello Short di Watson, quale livello viene osservato soprattutto?", "Il raggiungimento degli interlocutori attraverso output di comunicazione.", "La trasformazione della relazione in capitale comunicativo stabile.", "L'attribuzione causale fra comunicazione e performance di business.", "La qualità delle relazioni comunitarie con gli stakeholder strategici."],
+  ["Quando il modello Short di Watson rischia di essere insufficiente?", "Quando la valutazione richiede aggiustamenti continui e feedback dal contesto.", "Quando l'obiettivo è verificare una copertura mediatica di breve periodo.", "Quando servono indicatori di output immediati e facilmente osservabili.", "Quando la campagna riguarda soprattutto la diffusione di messaggi media."],
+  ["Che cosa caratterizza il Continuing Model di Watson?", "Un processo dinamico che accompagna la comunicazione con feedback continuo.", "Una lettura statica della copertura media ottenuta a fine campagna.", "Un calcolo economico fondato sul valore pubblicitario equivalente.", "Una certificazione esterna delle audience disponibili sul mercato."],
+  ["Nel Continuing Model, a cosa serve il feedback raccolto durante il programma?", "A correggere ricerca iniziale, obiettivi e attività comunicative.", "A sostituire la fase di pianificazione con una misurazione finale.", "A trasformare gli output in risultati economici automaticamente attribuibili.", "A ridurre la valutazione alla sola rendicontazione verso il management."],
+  ["Quale affermazione descrive meglio la logica del Continuing Model?", "La valutazione accompagna ricerca, strategia e attuazione con aggiustamenti successivi.", "La misurazione viene eseguita solo dopo la conclusione del programma.", "Gli outcome sono esclusi perché il modello osserva soltanto la produzione.", "Gli obiettivi vengono fissati dopo aver calcolato il valore economico."],
+  ["Nel confronto tra Short e Continuing Model, qual è la differenza centrale?", "Il primo è più lineare, il secondo è più circolare e adattivo.", "Il primo misura solo impatti economici, il secondo solo tiratura e diffusione.", "Il primo è reputazionale, il secondo riguarda solo strumenti digitali.", "Il primo usa KPI finanziari, il secondo esclude gli obiettivi."],
+  ["Quali sono i due modelli di valutazione richiamati da Watson?", "Short Model e Continuing Model.", "Yardstick Model e Brioschi Model.", "PRE Model e MACRO Model.", "Measurement Tree e Communication Value System."],
+  ["Perché il Continuing Model è più coerente con programmi di lungo periodo?", "Perché consente di ricalibrare attività e obiettivi mentre il processo procede.", "Perché elimina la necessità di definire obiettivi prima della misurazione.", "Perché considera solo output visibili nei media immediatamente disponibili.", "Perché evita il confronto con stakeholder e condizioni di contesto."],
+  ["Nel modello Short, cosa si intende per raggiungimento degli interlocutori?", "La capacità del messaggio di arrivare ai media o ai pubblici rilevanti.", "La costruzione di un sistema di performance management partecipativo.", "La deduplicazione degli utenti su più dispositivi e piattaforme.", "La trasformazione degli stakeholder in obiettivi economici di business."],
+  ["Quale limite accomuna i modelli troppo lineari di valutazione?", "Rendono difficile leggere feedback, apprendimento e correzioni in itinere.", "Richiedono sempre analisi sperimentali con gruppi di controllo.", "Misurano esclusivamente la soddisfazione dei dipendenti interni.", "Sostituiscono gli obiettivi con indicatori reputazionali sintetici."],
+  ["Nel modello Yardstick, qual è la sequenza corretta dei tre livelli?", "Output, out-take, outcome.", "Input, capitale, impatto.", "Audit, strategia, dashboard.", "Fiducia, reputazione, business."],
+  ["Nel modello Yardstick, che cosa rappresentano gli output?", "Uscite, impression, audience e copertura prodotte dall'attività.", "Comprensione, ricordo e ricezione del messaggio da parte dei pubblici.", "Cambiamenti in opinioni, atteggiamenti e comportamenti dei destinatari.", "Contributi finali agli obiettivi complessivi dell'organizzazione."],
+  ["Nel modello Yardstick, che cosa rappresentano gli out-take?", "Ricezione, comprensione, conoscenza e ricordo del messaggio.", "Attività realizzate, uscite stampa, impression e audience raggiunta.", "Risultati economici consolidati generati dalla reputazione aziendale.", "Valori equivalenti della copertura editoriale rispetto agli spazi paid."],
+  ["Nel modello Yardstick, quando si parla di outcome?", "Quando cambiano opinioni, atteggiamenti o comportamenti dei pubblici.", "Quando si contano uscite, impression e audience raggiunta.", "Quando si stimano i costi degli spazi pubblicitari equivalenti.", "Quando si certificano tiratura e diffusione dei mezzi editoriali."],
+  ["Perché nello Yardstick Model gli obiettivi vengono definiti prima della misurazione?", "Per decidere a quale livello valutare l'efficacia della comunicazione.", "Per sostituire la raccolta dati con un giudizio conclusivo del management.", "Per trasformare ogni indicatore disponibile in una misura strategica.", "Per evitare il confronto tra output immediati e cambiamenti nei pubblici."],
+  ["Quale esempio rientra negli output del modello Yardstick?", "Il numero di uscite sui media ottenute dalla campagna.", "Il ricordo del messaggio rilevato presso il pubblico target.", "Il cambiamento di atteggiamento verso l'organizzazione.", "La fiducia relazionale maturata nel lungo periodo."],
+  ["Quale esempio rientra negli out-take del modello Yardstick?", "La comprensione del messaggio da parte del pubblico raggiunto.", "La quantità di contenuti pubblicati dalla funzione comunicazione.", "L'impatto economico finale sugli obiettivi aziendali.", "La presenza di relazioni comunitarie con gli stakeholder."],
+  ["Quale esempio rientra negli outcome del modello Yardstick?", "Un cambiamento di comportamento osservato nel pubblico target.", "La pubblicazione di un comunicato su più testate online.", "La stima del valore pubblicitario equivalente di un articolo.", "La disponibilità di una dashboard aggiornata con dati operativi."],
+  ["Nel modello Yardstick, perché l'out-take non coincide con l'outcome?", "Perché indica ricezione e comprensione, non ancora cambiamento nei pubblici.", "Perché misura soltanto l'impatto economico sul business dell'organizzazione.", "Perché riguarda esclusivamente gli input creativi scelti dal comunicatore.", "Perché certifica la diffusione di stampa e audience televisive."],
+  ["Nel modello Yardstick, a cosa servono pre-test e survey nella fase di outcome?", "A rilevare se sono cambiati atteggiamenti, opinioni o comportamenti.", "A contare soltanto gli output prodotti dalla campagna sui media.", "A stimare direttamente il costo dello spazio pubblicitario equivalente.", "A stabilire una currency condivisa per editori e investitori."],
+  ["Quale distinzione è corretta secondo la logica Yardstick?", "Output è ciò che si produce, outcome è ciò che cambia nei pubblici.", "Output e outcome coincidono quando la copertura è molto elevata.", "Out-take indica sempre il contributo economico al fatturato.", "Impatto e out-take sono due nomi per la stessa misura."],
+  ["Perché lo Yardstick Model è considerato relativamente rapido ed economico?", "Perché permette di scegliere il livello di misurazione coerente con gli obiettivi.", "Perché elimina il bisogno di dati e usa solo giudizi qualitativi conclusivi.", "Perché misura sempre tutti gli effetti con lo stesso strumento standardizzato.", "Perché attribuisce automaticamente ogni risultato alle attività di comunicazione."],
+  ["Nel modello Yardstick, quale informazione aiuta a scegliere il livello di valutazione?", "La finalità dell'obiettivo comunicativo che si vuole verificare.", "Il formato grafico scelto per presentare il report finale.", "Il numero di canali proprietari disponibili all'organizzazione.", "La disponibilità di una certificazione esterna della testata."],
+  ["Che cosa misura l'efficacia tecnica nel modello di Brioschi?", "Il raggiungimento degli obiettivi specifici dell'attività comunicativa.", "Il contributo della comunicazione agli obiettivi economici dell'organizzazione.", "L'impatto dell'attività sul benessere sociale degli interlocutori.", "La qualità della relazione fiduciaria con tutti gli stakeholder."],
+  ["Che cosa misura l'efficacia economica nel modello di Brioschi?", "Il contributo dell'attività agli obiettivi economici dell'organizzazione.", "La sola comprensione del messaggio da parte dei pubblici raggiunti.", "Il benessere sociale prodotto sugli interlocutori coinvolti.", "La quantità di uscite e impression ottenute sui media."],
+  ["Che cosa misura l'efficacia sociale nel modello di Brioschi?", "L'impatto dell'attività sul benessere sociale degli interlocutori.", "La redditività immediata generata da una singola uscita media.", "La sola qualità tecnica dei messaggi diffusi nel periodo.", "La deduplicazione delle audience su dispositivi diversi."],
+  ["Quali dimensioni compongono il modello di Brioschi?", "Efficacia tecnica, efficacia economica ed efficacia sociale.", "Output, out-take, outcome e impatto.", "Audit, strategia, ongoing e valutazione finale.", "Capitale umano, relazionale e strutturale."],
+  ["Perché il modello di Brioschi non riduce la valutazione alla sola tecnica?", "Perché considera anche contributo economico e impatto sociale.", "Perché misura solo la quantità di contatti raggiunti dai media.", "Perché sostituisce gli obiettivi specifici con metriche digitali.", "Perché usa soltanto indicatori reputazionali di lungo periodo."],
+  ["A quali livelli può essere applicato il modello di Brioschi?", "Elementare, intermedio e avanzato.", "Primario, secondario e terziario.", "Strategico, digitale e narrativo.", "Cognitivo, affettivo e commerciale."],
+  ["Nel modello di Brioschi, perché l'efficacia sociale è distinta da quella economica?", "Perché riguarda il benessere degli interlocutori, non solo risultati finanziari.", "Perché coincide con la vendita diretta generata da una campagna.", "Perché misura esclusivamente la copertura giornalistica ottenuta.", "Perché dipende soltanto dai costi degli spazi pubblicitari."],
+  ["Nel modello di Brioschi, cosa indica una valutazione avanzata?", "Una lettura più articolata dell'efficacia rispetto a più dimensioni.", "Una misurazione limitata alla presenza del brand nelle uscite media.", "Una verifica svolta solo prima della pianificazione della campagna.", "Una stima automatica del ROI basata su un unico indicatore."],
+  ["Nel modello PII, quali sono le tre fasi principali?", "Preparation, Implementation e Impact.", "Audit, Strategy e Follow-up.", "Output, Currency e Dashboard.", "Reach, Engagement e Advocacy."],
+  ["Nel PII Model, che cosa si valuta nella fase di Preparation?", "L'adeguatezza ex ante di messaggi e materiali comunicativi.", "Il numero di persone e media effettivamente raggiunti.", "Gli effetti cognitivi e comportamentali di medio periodo.", "La costruzione di una scorecard di performance organizzativa."],
+  ["Nel PII Model, che cosa prevale nella fase di Implementation?", "La misurazione quantitativa di sforzi, strumenti attivati e output.", "La verifica degli effetti autentici sui pubblici nel lungo periodo.", "La stima della reputazione attraverso indicatori affettivi e cognitivi.", "La definizione degli obiettivi di business per ogni stakeholder."],
+  ["Nel PII Model, che cosa riguarda la fase di Impact?", "Gli effetti cognitivi e comportamentali osservabili con tempi più lunghi.", "La sola produzione di comunicati, eventi e materiali informativi.", "La scelta delle micro-decisioni creative prima della campagna.", "La certificazione della diffusione dei media su base mensile."],
+  ["Perché nel PII Model gli output sono definiti pseudo-effetti?", "Perché mostrano attività svolte, ma non dimostrano cambiamenti nei pubblici.", "Perché coincidono sempre con l'impatto economico finale della campagna.", "Perché sono misure qualitative impossibili da confrontare nel tempo.", "Perché riguardano solo il capitale relazionale dell'organizzazione."],
+  ["Quale strumento è coerente con la fase di Preparation del PII Model?", "Un pre-test sull'adeguatezza dei messaggi prima della diffusione.", "Una stima del valore pubblicitario equivalente dopo la rassegna stampa.", "Una rilevazione della reputazione consolidata su più anni.", "Una certificazione della total audience televisiva giornaliera."],
+  ["Nel PII Model, cosa si misura quando si contano persone e media raggiunti?", "La fase di Implementation e gli output prodotti.", "La fase di Impact e gli outcome cognitivi finali.", "La fase di Preparation e l'adeguatezza dei messaggi.", "La fase rendicontativa e l'impatto economico di business."],
+  ["Nel PII Model, perché la fase di Impact richiede tecniche più sofisticate?", "Perché osserva effetti autentici e non solo attività immediatamente prodotte.", "Perché deve sempre trasformare la copertura in valore pubblicitario equivalente.", "Perché misura soltanto la presenza del messaggio sui mezzi tradizionali.", "Perché sostituisce survey e pre-test con indicatori di diffusione."],
+  ["Quale sequenza descrive correttamente il PII Model?", "Adeguatezza iniziale, implementazione delle attività, effetti sui pubblici.", "Contesto competitivo, radici, rami, foglie e fiori.", "Obiettivi di business, stakeholder, KPI e scorecard.", "Lead indicator, lag indicator, KRI e rendicontazione finale."],
+  ["Nel PII Model, quale errore interpretativo va evitato?", "Scambiare gli output prodotti per effetti autentici della comunicazione.", "Considerare gli outcome come una semplice lista di strumenti attivati.", "Definire gli obiettivi prima di scegliere i messaggi e i canali.", "Usare tecniche di pre-test per valutare l'adeguatezza dei contenuti."],
+  ["Perché il PII Model non è una valutazione soltanto finale?", "Perché include una verifica ex ante dei messaggi nella Preparation.", "Perché considera solo l'impatto economico dopo la chiusura del piano.", "Perché elimina la distinzione tra implementazione e risultati ottenuti.", "Perché si applica esclusivamente ai bilanci di comunicazione."],
+  ["Su quali livelli lavora il MACRO Model of PR Evaluation?", "Livello individuale e livello di programma.", "Livello editoriale e livello pubblicitario.", "Livello economico e livello fiscale.", "Livello tecnico e livello certificativo."],
+  ["Qual è la sequenza della piramide del MACRO Model?", "Input, output e outcome.", "Audit, obiettivi e strategia.", "Reach, frequency e share.", "Fiducia, reputazione e business."],
+  ["Nel MACRO Model, che cosa sono gli input?", "Micro-decisioni dei professionisti su contenuti, formati e scelte comunicative.", "Cambiamenti osservati in conoscenze, atteggiamenti e comportamenti dei pubblici.", "Uscite, strumenti e attività realizzate durante il programma.", "Indicatori economici standardizzati provenienti dal management aziendale."],
+  ["Perché nel MACRO Model la valutazione parte già dagli input?", "Per verificare ex ante l'adeguatezza delle decisioni comunicative.", "Per calcolare subito il valore economico della copertura ottenuta.", "Per evitare di distinguere strumenti realizzati ed effetti sui pubblici.", "Per sostituire la strategia con dati consuntivi di rassegna stampa."],
+  ["Nel MACRO Model, che cosa rappresentano gli output?", "Attività, strumenti e prodotti comunicativi effettivamente realizzati.", "Conoscenze, atteggiamenti e comportamenti modificati nei pubblici.", "Obiettivi di business collegati a stakeholder e KPI.", "Dimensioni reputazionali affettive e cognitive aggregate."],
+  ["Nel MACRO Model, che cosa rappresentano gli outcome?", "Cambiamenti in conoscenze, atteggiamenti e comportamenti dei pubblici.", "Micro-decisioni su formato, contenuti e immagini del messaggio.", "Strumenti realizzati e attività prodotte dalla funzione comunicazione.", "Dati certificati sulla diffusione dei mezzi e sulle audience."],
+  ["Da cosa dipende la sofisticazione della valutazione nel MACRO Model?", "Anche dalle risorse disponibili per tecniche e tempi di analisi.", "Soltanto dalla lunghezza del report conclusivo presentato al management.", "Dalla possibilità di usare un unico indicatore per tutte le attività.", "Dalla sostituzione degli outcome con il valore pubblicitario equivalente."],
+  ["Nel MACRO Model, perché il livello individuale è rilevante?", "Perché considera come le persone ricevono e modificano conoscenze o atteggiamenti.", "Perché limita la misurazione alla produzione interna dei materiali.", "Perché misura solo i processi organizzativi della funzione comunicazione.", "Perché certifica le audience disponibili per la pianificazione pubblicitaria."],
+  ["Nel MACRO Model, che cosa va controllato prima della diffusione?", "La qualità e l'adeguatezza delle scelte comunicative di input.", "Il valore economico definitivo degli spazi editoriali ottenuti.", "La reputazione consolidata dell'organizzazione nel lungo periodo.", "La conversione commerciale realizzata dopo la chiusura del piano."],
+  ["Quale affermazione descrive correttamente il MACRO Model?", "Collega decisioni iniziali, attività realizzate ed effetti sui pubblici.", "Misura soltanto la quantità di uscite stampa pubblicate nel periodo.", "Sostituisce gli obiettivi di comunicazione con indicatori di vendita.", "Si limita alla certificazione delle audience televisive e digitali."],
+  ["Nel Measurement Tree, che cosa rappresenta l'ambiente dell'albero?", "Il contesto competitivo in cui opera l'organizzazione.", "Gli obiettivi specifici di comunicazione della campagna.", "I prodotti e servizi visibili all'esterno dell'organizzazione.", "I pubblici del piano di relazioni con i media."],
+  ["Nel Measurement Tree, che cosa rappresentano le radici?", "Gli obiettivi di comunicazione che sostengono il processo.", "Le strategie e tattiche scelte per realizzare la campagna.", "Gli outcome prodotti nei pubblici raggiunti dalla comunicazione.", "Il contesto competitivo esterno in cui cresce l'organizzazione."],
+  ["Nel Measurement Tree, che cosa rappresenta il tronco?", "Le strategie e tattiche che danno struttura alla campagna.", "Gli obiettivi di comunicazione posti alla base della valutazione.", "I pubblici specifici cui sono rivolte le relazioni con i media.", "I cambiamenti in opinioni e comportamenti prodotti nei pubblici."],
+  ["Nel Measurement Tree, che cosa rappresenta la corteccia?", "Prodotti e servizi visibili all'esterno dell'organizzazione.", "Ciò che è visibile ai collaboratori all'interno.", "I pubblici del piano di relazioni con i media.", "Gli outcome generati presso gli interlocutori raggiunti."],
+  ["Nel Measurement Tree, che cosa rappresenta la linfa?", "Ciò che è visibile ai collaboratori all'interno dell'organizzazione.", "Il contesto competitivo in cui opera l'organizzazione.", "Le strategie e tattiche usate per raggiungere i pubblici.", "I cambiamenti finali in atteggiamenti e comportamenti."],
+  ["Nel Measurement Tree, che cosa rappresentano i rami?", "I pubblici a cui è rivolta la campagna.", "Gli obiettivi organizzativi raggiunti alla fine.", "I prodotti visibili all'esterno dell'organizzazione.", "Le misure economiche della performance finanziaria."],
+  ["Nel Measurement Tree, che cosa rappresentano le foglie?", "I pubblici del piano di relazioni con i media.", "Gli obiettivi di comunicazione collocati alla base.", "Le strategie e tattiche realizzate dalla funzione.", "Gli indicatori di impatto economico sul business."],
+  ["Nel Measurement Tree, che cosa rappresentano i fiori?", "Gli outcome prodotti nei pubblici raggiunti dalla comunicazione.", "Gli input e le risorse investite nelle attività.", "I concorrenti diretti presenti nel contesto competitivo.", "Le tattiche operative usate per diffondere i messaggi."],
+  ["Quali sono le quattro fasi valutative del Measurement Tree?", "Obiettivi, output, outcome e raggiungimento degli obiettivi organizzativi.", "Preparation, Implementation, Impact e dashboard finale.", "Audit, obiettivi, strategia, valutazione ongoing e finale.", "Input, attività, variabili ponte e capitale narrativo."],
+  ["Nel Measurement Tree, cosa si valuta nella seconda fase?", "Gli output immediatamente visibili prodotti dalla comunicazione.", "Il contesto competitivo in cui opera l'organizzazione.", "La qualità delle relazioni consolidate con gli stakeholder.", "La sostenibilità economica complessiva del piano aziendale."],
+  ["Nel Measurement Tree, cosa si valuta nella terza fase?", "Gli outcome, cioè ciò che il pubblico ha percepito o modificato.", "La sola definizione degli obiettivi specifici della campagna.", "Le micro-decisioni sui formati e sui contenuti informativi.", "La deduplicazione delle audience raggiunte da più dispositivi."],
+  ["Nel Measurement Tree, cosa si valuta nella quarta fase?", "Il raggiungimento degli obiettivi organizzativi collegati alla comunicazione.", "La sola quantità di materiali prodotti dalla funzione comunicazione.", "La certificazione della tiratura dei media usati dalla campagna.", "La scelta dei messaggi prima della diffusione presso i pubblici."],
+  ["Perché il Measurement Tree insiste su obiettivi chiari e misurabili?", "Per collegare output e outcome al contesto organizzativo.", "Per sostituire la valutazione con una metafora visiva dell'albero.", "Per evitare qualunque confronto tra risultati e decisioni future.", "Per usare sempre la stessa metrica economica in ogni campagna."],
+  ["Nel Measurement Tree, qual è la differenza tra rami e foglie?", "I rami sono i pubblici della campagna, le foglie quelli media.", "I rami sono gli outcome, le foglie gli obiettivi organizzativi.", "I rami sono i prodotti visibili, le foglie il contesto competitivo.", "I rami sono le risorse interne, le foglie i costi economici."],
+  ["Nel Measurement Tree, qual è la differenza tra corteccia e linfa?", "La corteccia riguarda il visibile esterno, la linfa il visibile interno.", "La corteccia riguarda gli outcome, la linfa gli impatti economici.", "La corteccia indica gli obiettivi, la linfa indica i media.", "La corteccia rappresenta il contesto, la linfa rappresenta i competitor."],
+  ["Che cosa distingue la metafora dell'albero dal processo valutativo vero e proprio?", "La metafora visualizza i livelli, il processo definisce le fasi di valutazione.", "La metafora misura il ROI, il processo misura solo la tiratura.", "La metafora riguarda i media, il processo riguarda solo i dipendenti.", "La metafora sostituisce gli obiettivi, il processo elimina gli outcome."],
+  ["Nel PRE Model, quali sono le cinque fasi principali?", "Audit, obiettivi, strategia, valutazione ongoing e valutazione finale.", "Output, out-take, outcome, impatto e capitale comunicativo.", "Preparation, Implementation, Impact, relazione e reputazione.", "Input, attività, copertura, audience e valore economico."],
+  ["Nel PRE Model, quale domanda guida la fase di Audit?", "Dove siamo adesso?", "Dove dobbiamo andare?", "Come ci arriviamo?", "Com'è andata?"],
+  ["Nel PRE Model, quale domanda guida la definizione degli obiettivi?", "Dove dobbiamo andare?", "Dove siamo adesso?", "Ci stiamo arrivando?", "Quale valore economico otteniamo?"],
+  ["Nel PRE Model, quale domanda guida la fase strategica?", "Come ci arriviamo?", "Dove siamo adesso?", "Com'è andata?", "Quanto vale lo spazio editoriale?"],
+  ["Nel PRE Model, quale domanda guida la valutazione ongoing?", "Ci stiamo arrivando?", "Dove dobbiamo andare?", "Quanto è costata la campagna?", "Quale audience è certificata?"],
+  ["Nel PRE Model, quale domanda sintetizza la valutazione finale?", "Com'è andata?", "Dove siamo adesso?", "Come ci arriviamo?", "Quale currency è condivisa?"],
+  ["Perché il PRE Model mette in parallelo pianificazione e valutazione?", "Perché la misurazione accompagna tutte le fasi del piano.", "Perché la valutazione deve avvenire solo dopo la campagna.", "Perché gli output sostituiscono obiettivi e strategia.", "Perché gli stakeholder non influenzano il processo valutativo."],
+  ["Nel PRE Model, cosa si decide nella fase strategica?", "A quale livello valutare e con quali metodi.", "Quale ente certifica la diffusione dei media.", "Quale valore pubblicitario equivalente attribuire alla copertura.", "Quale reputazione storica possiede l'organizzazione."],
+  ["Nel PRE Model, che cosa misurano gli output?", "I risultati immediati prodotti dalle attività di comunicazione.", "La ricezione e comprensione del messaggio da parte dei pubblici.", "I cambiamenti di atteggiamento e comportamento nel tempo.", "Gli impatti economici consolidati sul business aziendale."],
+  ["Nel PRE Model, che cosa misurano gli out-take?", "Ricezione e comprensione del messaggio da parte dei pubblici.", "Strumenti prodotti e attività immediate realizzate dalla funzione.", "Cambiamenti stabili in atteggiamenti e comportamenti.", "Obiettivi economici definiti per ciascun gruppo stakeholder."],
+  ["Nel PRE Model, che cosa misurano gli outcome?", "Cambiamenti di atteggiamento e comportamento nei pubblici.", "Quantità di uscite e materiali prodotti nel periodo.", "Adeguatezza iniziale dei messaggi prima della diffusione.", "Valore economico equivalente della copertura editoriale."],
+  ["A cosa serve la valutazione ongoing nel PRE Model?", "A verificare l'andamento e correggere il piano mentre procede.", "A chiudere il report finale senza interpretare gli outcome.", "A sostituire la fase di audit con indicatori di copertura.", "A certificare le audience dei canali usati dalla campagna."],
+  ["Perché il tempo è un fattore critico nel PRE Model?", "Perché ogni fase richiede domande e misure coerenti con il momento.", "Perché tutte le misure devono essere raccolte solo alla fine.", "Perché gli output diventano outcome se passano molti mesi.", "Perché la valutazione non può modificare la pianificazione."],
+  ["Quali caratteristiche compongono un obiettivo SMART?", "Specificità, misurabilità, raggiungibilità, rilevanza e definizione temporale.", "Visibilità, engagement, advocacy, innovazione e supporto.", "Output, out-take, outcome, impatto e valore economico.", "Tiratura, diffusione, audience, readership e copertura."],
+  ["Che cosa indica la S degli obiettivi SMART?", "La specificità dell'obiettivo da raggiungere.", "La sostenibilità economica della campagna.", "La socialità dei pubblici coinvolti.", "La sintesi del report conclusivo."],
+  ["Che cosa indica la M degli obiettivi SMART?", "La misurabilità dell'obiettivo definito.", "La monetizzazione automatica degli outcome.", "La metodologia unica valida per ogni piano.", "La mediazione fra stakeholder interni ed esterni."],
+  ["Che cosa indica la A degli obiettivi SMART?", "La raggiungibilità dell'obiettivo rispetto a risorse e contesto.", "L'audience certificata disponibile nel mercato pubblicitario.", "L'analisi automatica delle citazioni ottenute sui media.", "L'attribuzione economica certa di ogni risultato comunicativo."],
+  ["Che cosa indica la R degli obiettivi SMART?", "La rilevanza dell'obiettivo rispetto al piano e all'organizzazione.", "La reputazione come unico effetto misurabile della comunicazione.", "La rendicontazione economica sostitutiva degli outcome.", "La readership certificata applicata al valore editoriale."],
+  ["Che cosa indica la T degli obiettivi SMART?", "La definizione temporale entro cui verificare il risultato.", "La tiratura dei mezzi usati nella pianificazione media.", "La tassonomia delle fonti del social media listening.", "La teoria reputazionale scelta per classificare gli stakeholder."],
+  ["Perché gli obiettivi SMART sono importanti nella valutazione?", "Per rendere verificabile il confronto tra obiettivi e risultati.", "Per trasformare automaticamente ogni output in impatto di business.", "Per evitare l'uso di metodi qualitativi nella ricerca valutativa.", "Per sostituire la pianificazione con la sola reportistica finale."],
+  ["Che ruolo ha AMEC nella misurazione della comunicazione?", "È un riferimento internazionale per evaluation e performance measurement.", "È l'ente italiano che certifica la diffusione della stampa.", "È il modello che misura solo il ricordo del messaggio.", "È una metrica economica alternativa al valore pubblicitario equivalente."],
+  ["Come evolve la logica dei Barcelona Principles?", "Da correzione degli errori a indicazioni operative e revisione 3.0.", "Da misurazione qualitativa a certificazione della tiratura cartacea.", "Da social listening a rilevazione minuto per minuto degli ascolti TV.", "Da capitale umano a capitale relazionale e capitale strutturale."],
+  ["Quale principio viene rafforzato dai Barcelona Principles 3.0?", "Il superamento dell'AVE come misura unica del valore della comunicazione.", "La coincidenza tra output mediatici e risultati di business.", "La sostituzione degli outcome con la sola reach ottenuta.", "La riduzione della valutazione alla compravendita degli spazi media."],
+  ["Che cosa collega l'Integrated Evaluation Framework di AMEC?", "Obiettivi, attività, output, outcome e impatto.", "Tiratura, diffusione, readership e resi editoriali.", "Audit, focus group, panel e questionario telefonico.", "Reputazione, immagine, identità visiva e stile grafico."],
+  ["Nel framework integrato di AMEC, qual è l'uso corretto dei dati?", "Trasformare metriche e risultati in decisioni di comunicazione.", "Sostituire gli obiettivi con dati raccolti senza interpretazione.", "Usare solo indicatori numerici evitando analisi qualitative.", "Valutare la comunicazione soltanto con il valore economico equivalente."],
+  ["Perché il framework integrato di AMEC coinvolge gli stakeholder?", "Per leggere i risultati rispetto a bisogni informativi e decisioni.", "Per evitare il confronto tra obiettivi e risultati raggiunti.", "Per affidare la valutazione solo a metriche editoriali esterne.", "Per misurare esclusivamente la disponibilità dei canali media."],
+  ["Quale combinazione è coerente con l'Integrated Evaluation Framework?", "KPI numerici, analisi qualitative e interpretazione dei risultati.", "Solo AVE, costo dello spazio e valore pubblicitario equivalente.", "Solo output media, senza outcome e senza impatto.", "Solo dati di audience, senza obiettivi né attività."],
+  ["Perché nel framework AMEC gli obiettivi vengono prima delle metriche?", "Perché la metrica deve rispondere a una finalità valutativa definita.", "Perché gli indicatori disponibili sono sempre strategici in sé.", "Perché l'AVE può sostituire il piano di misurazione.", "Perché gli stakeholder devono leggere soltanto dati consuntivi."],
+  ["In un modello di valutazione, perché il contesto organizzativo è rilevante?", "Perché condiziona risultati, interpretazione dei dati e decisioni successive.", "Perché rende inutile distinguere output, outcome e impatto.", "Perché permette di usare una sola metrica per tutte le attività.", "Perché sostituisce la ricerca con la percezione del comunicatore."],
+  ["Quale criterio accomuna i principali modelli di valutazione della comunicazione?", "Collegare attività, risultati e obiettivi con livelli di analisi distinti.", "Ridurre la valutazione alla quantità di materiali prodotti.", "Misurare sempre la comunicazione con un valore economico equivalente.", "Escludere stakeholder e contesto per rendere i dati più semplici."],
+  ["Quale modello usa esplicitamente la metafora dell'albero?", "Il Measurement Tree.", "Il Continuing Model.", "Il Brioschi Model.", "Il PII Model."],
+  ["Quale modello affianca esplicitamente pianificazione e valutazione?", "Il Planning, Research and Evaluation Model.", "Il modello Yardstick.", "Il modello di Brioschi.", "Il modello Skandia."],
+  ["Quale modello distingue efficacia tecnica, economica e sociale?", "Il modello di Brioschi.", "Il Measurement Tree.", "Il modello Short di Watson.", "Il MACRO Model."],
+  ["Quale modello è costruito attorno al feedback continuo?", "Il Continuing Model di Watson.", "Lo Short Model di Watson.", "Il modello Yardstick.", "Il modello Brioschi."],
+  ["Quale modello distingue Preparation, Implementation e Impact?", "Il PII Model.", "Il PRE Model.", "Il Measurement Tree.", "Lo Yardstick Model."],
+  ["Quale modello descrive una piramide input-output-outcome?", "Il MACRO Model.", "Il Brioschi Model.", "Il Continuing Model.", "Il PRE Model."],
+  ["Nel modello Short di Watson, perché la copertura ottenuta è centrale?", "Perché verifica se i messaggi hanno raggiunto interlocutori rilevanti.", "Perché misura la qualità relazionale maturata nel lungo periodo.", "Perché calcola il contributo economico prodotto dagli intangibili.", "Perché ricostruisce mappe narrative del capitale comunicativo."],
+  ["Nel Continuing Model, che cosa significa ricalibrare le attività?", "Modificare azioni e obiettivi alla luce delle informazioni raccolte.", "Sostituire la pianificazione con un solo report conclusivo.", "Contare soltanto le uscite prodotte nella fase iniziale.", "Attribuire ogni risultato a una singola variabile isolata."],
+  ["Nel confronto tra i modelli di Watson, quale modello usa meno feedback?", "Lo Short Model.", "Il Continuing Model.", "Il PRE Model.", "Il Measurement Tree."],
+  ["Nel confronto tra i modelli di Watson, quale modello segue meglio l'apprendimento progressivo?", "Il Continuing Model.", "Lo Short Model.", "Il Brioschi Model.", "Lo Yardstick Model."],
+  ["Nel modello Yardstick, perché il livello degli output è il più immediato?", "Perché osserva attività e copertura prodotte direttamente dalla comunicazione.", "Perché misura già i cambiamenti stabili nei comportamenti dei pubblici.", "Perché valuta il contributo agli obiettivi complessivi dell'organizzazione.", "Perché ricostruisce la qualità delle relazioni nel lungo periodo."],
+  ["Nel modello Yardstick, perché il livello degli out-take è intermedio?", "Perché riguarda ricezione e comprensione prima del cambiamento vero e proprio.", "Perché coincide con la produzione dei materiali e delle uscite media.", "Perché misura solo effetti economici consolidati dell'organizzazione.", "Perché sostituisce il livello degli outcome nelle valutazioni finali."],
+  ["Nel modello Yardstick, quale passaggio richiede di osservare i pubblici?", "La verifica degli outcome prodotti in opinioni, atteggiamenti o comportamenti.", "La sola raccolta degli input creativi scelti dalla funzione.", "La certificazione mensile dei mezzi usati dalla campagna.", "La conversione della copertura in valore pubblicitario equivalente."],
+  ["Nel modello Yardstick, quale livello è più vicino alla semplice produzione?", "Il livello degli output.", "Il livello degli outcome.", "Il livello dell'impatto organizzativo.", "Il livello delle variabili ponte."],
+  ["Nel modello Yardstick, quale livello è più vicino alla comprensione del messaggio?", "Il livello degli out-take.", "Il livello degli output.", "Il livello del capitale narrativo.", "Il livello degli obiettivi economici."],
+  ["Nel modello Yardstick, quale livello è più vicino al cambiamento del pubblico?", "Il livello degli outcome.", "Il livello degli output.", "Il livello degli input.", "Il livello della currency media."],
+  ["Nel modello di Brioschi, quale dimensione guarda agli obiettivi propri della campagna?", "L'efficacia tecnica.", "L'efficacia sociale.", "L'efficacia economica.", "L'efficacia reputazionale."],
+  ["Nel modello di Brioschi, quale dimensione guarda al contributo economico?", "L'efficacia economica.", "L'efficacia tecnica.", "L'efficacia sociale.", "L'efficacia narrativa."],
+  ["Nel modello di Brioschi, quale dimensione guarda agli interlocutori come soggetti sociali?", "L'efficacia sociale.", "L'efficacia tecnica.", "L'efficacia economica.", "L'efficacia editoriale."],
+  ["Perché il modello di Brioschi è utile nella valutazione della comunicazione?", "Perché obbliga a leggere l'efficacia su più dimensioni.", "Perché riduce ogni risultato alla quantità di copertura ottenuta.", "Perché considera solo la fase finale della campagna.", "Perché elimina la necessità di obiettivi specifici."],
+  ["Nel PII Model, quale fase precede la diffusione vera e propria?", "La Preparation.", "La Implementation.", "La Impact.", "La rendicontazione finale."],
+  ["Nel PII Model, quale fase riguarda la realizzazione operativa?", "La Implementation.", "La Preparation.", "La Impact.", "La valutazione degli intangibili."],
+  ["Nel PII Model, quale fase osserva gli effetti prodotti?", "La Impact.", "La Preparation.", "La Implementation.", "La definizione degli obiettivi."],
+  ["Nel PII Model, perché la Preparation è una fase valutativa?", "Perché controlla l'adeguatezza dei messaggi prima dell'uso.", "Perché misura i cambiamenti comportamentali dopo la campagna.", "Perché conta le uscite pubblicate durante il piano.", "Perché stima la reputazione consolidata dell'organizzazione."],
+  ["Nel PII Model, perché la Implementation non basta a dimostrare efficacia?", "Perché descrive ciò che è stato fatto, non ciò che è cambiato.", "Perché riguarda soltanto le intenzioni iniziali della funzione.", "Perché misura già l'impatto completo sugli obiettivi organizzativi.", "Perché coincide con la qualità relazionale degli stakeholder."],
+  ["Nel MACRO Model, quale elemento viene prima degli output?", "Gli input.", "Gli outcome.", "Gli impatti.", "Gli out-take."],
+  ["Nel MACRO Model, quale elemento viene dopo gli output?", "Gli outcome.", "Gli input.", "Gli obiettivi SMART.", "Gli indicatori economici."],
+  ["Nel MACRO Model, perché gli input non sono dettagli marginali?", "Perché orientano qualità e adeguatezza della comunicazione successiva.", "Perché coincidono con i risultati finali raggiunti dai pubblici.", "Perché sostituiscono l'analisi degli output e degli outcome.", "Perché misurano la diffusione certificata dei mezzi usati."],
+  ["Nel MACRO Model, quale relazione va ricostruita?", "Quella tra decisioni iniziali, attività realizzate ed effetti prodotti.", "Quella tra tiratura, diffusione e readership dei quotidiani.", "Quella tra valore pubblicitario equivalente e costo degli spazi.", "Quella tra reputazione storica e classifiche di settore."],
+  ["Nel Measurement Tree, quale parte dell'albero richiama gli obiettivi?", "Le radici.", "Le foglie.", "I fiori.", "La corteccia."],
+  ["Nel Measurement Tree, quale parte dell'albero richiama strategie e tattiche?", "Il tronco.", "Le radici.", "I fiori.", "La linfa."],
+  ["Nel Measurement Tree, quale parte dell'albero richiama gli outcome?", "I fiori.", "Le radici.", "Il tronco.", "La corteccia."],
+  ["Nel Measurement Tree, quale parte dell'albero richiama i pubblici della campagna?", "I rami.", "La corteccia.", "La linfa.", "Le radici."],
+  ["Nel Measurement Tree, quale parte dell'albero richiama i pubblici media?", "Le foglie.", "I fiori.", "Il tronco.", "L'ambiente."],
+  ["Nel Measurement Tree, quale parte dell'albero richiama il visibile esterno?", "La corteccia.", "La linfa.", "I fiori.", "Le radici."],
+  ["Nel Measurement Tree, quale parte dell'albero richiama il visibile interno?", "La linfa.", "La corteccia.", "I rami.", "Le foglie."],
+  ["Nel PRE Model, perché l'audit viene prima degli obiettivi?", "Perché chiarisce la situazione di partenza da cui pianificare.", "Perché sostituisce la strategia con un dato consuntivo.", "Perché misura già gli outcome finali del piano.", "Perché evita di formulare domande valutative."],
+  ["Nel PRE Model, perché la strategia viene dopo gli obiettivi?", "Perché indica come raggiungere una direzione già definita.", "Perché decide gli obiettivi soltanto alla fine del piano.", "Perché misura automaticamente gli effetti della comunicazione.", "Perché trasforma ogni uscita in valore economico."],
+  ["Nel PRE Model, perché la valutazione finale non è l'unica misurazione?", "Perché il modello prevede anche audit e controllo durante il percorso.", "Perché la pianificazione non richiede dati prima dell'attuazione.", "Perché gli output bastano sempre a spiegare ogni risultato.", "Perché la valutazione ongoing coincide con la chiusura del report."],
+  ["Nel PRE Model, quale fase permette correzioni mentre il piano è attivo?", "La valutazione ongoing.", "La definizione degli obiettivi.", "La valutazione finale.", "L'audit iniziale."],
+  ["Quale modello è più adatto a una logica di controllo in itinere?", "Il Continuing Model.", "Lo Short Model.", "Il modello di Brioschi.", "Il modello Yardstick."],
+  ["Quale modello è più adatto a distinguere livelli di effetto progressivi?", "Il modello Yardstick.", "Il modello Short.", "Il modello di Brioschi.", "Il Continuing Model."],
+  ["Quale modello è più adatto a valutare adeguatezza, realizzazione ed effetti?", "Il PII Model.", "Il Measurement Tree.", "Il Brioschi Model.", "Lo Short Model."],
+  ["Quale modello è più adatto a controllare anche le decisioni iniziali?", "Il MACRO Model.", "Il modello Brioschi.", "Lo Short Model.", "Il modello Yardstick."],
+  ["Quale modello è più adatto a ricordare visivamente livelli e pubblici della campagna?", "Il Measurement Tree.", "Il PII Model.", "Il modello Short.", "Il modello di Brioschi."],
+  ["Quale modello è più adatto a collegare domande di pianificazione e domande di valutazione?", "Il PRE Model.", "Il MACRO Model.", "Lo Short Model.", "Il modello Yardstick."],
+  ["Nel confronto tra Yardstick e PII, quale differenza è corretta?", "Yardstick distingue livelli di effetto, PII distingue fasi del processo.", "Yardstick misura solo input, PII misura solo reputazione.", "Yardstick riguarda solo valori economici, PII solo audience certificate.", "Yardstick elimina gli outcome, PII elimina la Preparation."],
+  ["Nel confronto tra MACRO e PII, quale elemento è comune?", "La distinzione fra attività realizzate ed effetti sui pubblici.", "La certificazione esterna della diffusione dei media.", "La riduzione del valore comunicativo all'AVE.", "La misurazione esclusiva del capitale relazionale."],
+  ["Nel confronto tra Short e Yardstick, quale affermazione è corretta?", "Lo Short è più lineare, lo Yardstick articola più livelli di efficacia.", "Lo Short misura solo outcome, lo Yardstick misura solo input.", "Lo Short riguarda la reputazione, lo Yardstick la certificazione TV.", "Lo Short usa feedback continuo, lo Yardstick elimina gli obiettivi."],
+  ["Nel confronto tra PRE e Continuing, quale tratto comune emerge?", "Entrambi vedono la valutazione come processo che accompagna l'azione.", "Entrambi limitano la misurazione alla chiusura della campagna.", "Entrambi rifiutano la possibilità di correggere il piano.", "Entrambi misurano soltanto la copertura media ottenuta."],
+  ["Nel Cobweb Model applicato all'identità aziendale, cosa viene confrontato?", "Autopercezione interna e immagine stimata presso il pubblico.", "Tiratura certificata e readership dei mezzi stampa utilizzati.", "Costo degli spazi pubblicitari e valore editoriale equivalente.", "Numero di touchpoint digitali e tasso di conversione finale."],
+  ["Nel Lux Model, quale elemento rientra tra le sette caratteristiche predefinite?", "Il temperamento dell'organizzazione.", "La share of voice ottenuta nella rassegna stampa.", "Il valore pubblicitario equivalente della copertura.", "La deduplicazione degli utenti su device diversi."],
+  ["Nel Laddering applicato alla corporate identity, da dove parte l'analisi?", "Dai comportamenti dei dipendenti e dalle motivazioni che li orientano.", "Dalla certificazione esterna delle audience pubblicitarie disponibili.", "Dal calcolo del ROI economico delle campagne media.", "Dalla scansione dei contenuti indicizzati dai motori di ricerca."],
+  ["A cosa serve il Keller's Mannheimer CI Test nei modelli di identità?", "A misurare gli effetti della corporate identity sui meccanismi di identificazione.", "A stimare la frequenza minuto per minuto degli ascolti televisivi.", "A classificare gli articoli stampa in base al valore pubblicitario equivalente.", "A misurare solo la reputazione finanziaria presso gli analisti."],
+  ["Quale strumento misura il clima organizzativo distinguendo supporto, innovazione, regole ed efficienza informativa?", "L'OCIPO.", "Il REAV.", "Il PQII.", "Il Quality Score."],
+  ["Che cosa misura il ROIT nei modelli richiamati sulla corporate identity?", "Il grado di identificazione dei membri con l'organizzazione.", "Il ritorno monetario netto delle attività di comunicazione.", "La qualità degli spazi pubblicitari acquistati sui media.", "La quota di traffico organico generata dai motori di ricerca."],
+  ["A cosa serve l'OCAI nei modelli su identità e cultura organizzativa?", "A confrontare cultura attuale e cultura desiderata per il futuro.", "A deduplicare audience televisive e digitali sullo stesso individuo.", "A misurare il valore economico equivalente delle uscite media.", "A calcolare la centralità dell'organizzazione in ogni articolo."],
+  ["Nei modelli di communication audit, quali aree vengono osservate principalmente?", "Flussi di comunicazione, messaggi diffusi e clima della comunicazione.", "Vendite del periodo, margini industriali e quota di mercato.", "Tiratura, diffusione e readership certificata dei quotidiani.", "Crawling, indexing e ranking delle pagine nei motori di ricerca."],
+  ["Perché il Communication Satisfaction Questionnaire (CSQ) è rilevante nella communication audit?", "Perché misura la soddisfazione verso la comunicazione interna su otto dimensioni.", "Perché calcola la reputazione generale usando un solo punteggio affettivo.", "Perché certifica le audience digitali attraverso tag e SDK degli editori.", "Perché trasforma la copertura editoriale in valore monetario equivalente."],
+  ["Nella Customer Based Reputation Scale, da quale prospettiva viene misurata la reputazione?", "Dal punto di vista dei clienti.", "Dal punto di vista esclusivo del management interno.", "Dal punto di vista degli enti certificatori delle audience.", "Dal punto di vista dei motori di ricerca e dei crawler."],
+  ["Quale dimensione rientra nella Customer Based Reputation Scale?", "Orientamento al cliente e qualità di prodotti e servizi.", "Crawling, indexing e ranking dei contenuti web.", "Output, out-take e outcome della campagna media.", "Tiratura, diffusione e readership delle testate stampa."],
+  ["Che cosa caratterizza il modello SPIRIT nella valutazione reputazionale?", "Collega reputazione, antecedenti ed esiti emotivi e comportamentali.", "Riduce la reputazione al solo valore degli spazi editoriali ottenuti.", "Misura soltanto la personalità interna dei dipendenti.", "Certifica la fruizione televisiva minuto per minuto."],
+  ["Nel filone 'corporate character', che cosa misura la Corporate Personality Scale?", "La reputazione leggendo l'organizzazione come soggetto con una propria personalità.", "La soddisfazione verso i flussi di comunicazione interna su otto dimensioni.", "La qualità certificata delle audience prodotte dagli editori digitali.", "La relazione tra valore pubblicitario equivalente e readership del mezzo."],
+  ["Nel modello SPIRIT, quali elementi vengono messi in relazione?", "Esperienze degli stakeholder, influenze esterne ed esiti emotivi e comportamentali.", "Tiratura delle testate, costo degli spazi e valore pubblicitario equivalente.", "Crawling, indicizzazione e ranking dei contenuti nei motori di ricerca.", "Clima interno, cultura desiderata e grado di identificazione dei dipendenti."],
+].map(item => modelQ(...item));
+
+const roiCoverageExpansionSeeds = [
+  ["Nel dibattito sul ROI della comunicazione, che cosa sostiene la posizione integralista?", "Che il contributo della comunicazione possa essere tradotto in termini monetari.", "Che ogni risultato comunicativo debba essere valutato solo con indicatori qualitativi.", "Che la copertura mediatica non possa mai essere confrontata con i costi.", "Che gli obiettivi di comunicazione vadano separati dagli obiettivi di business."],
+  ["Qual è la formula base del ROI richiamata nelle lezioni?", "Benefici meno costi, diviso costi, moltiplicato per cento.", "Copertura editoriale moltiplicata per costo dello spazio pubblicitario.", "Reach divisa per frequenza e corretta per share of voice.", "Readership moltiplicata per sentiment e divisa per audience."],
+  ["Qual è la critica principale al ROI integralista applicato alla comunicazione?", "Attribuire effetti economici certi quando i risultati sono spesso indiretti e lunghi.", "Misurare soltanto la qualità dei messaggi prima della loro diffusione.", "Dare troppa importanza alla comprensione del messaggio da parte dei pubblici.", "Usare indicatori di reputazione invece di indicatori di output media."],
+  ["Perché la posizione critica mette in discussione il ROI puro?", "Perché molte leve agiscono insieme e l'attribuzione causale è difficile.", "Perché la comunicazione produce solo risultati immediati e misurabili.", "Perché gli stakeholder richiedono sempre lo stesso indicatore finanziario.", "Perché gli output media coincidono con il contributo al business."],
+  ["Che cosa propone la posizione intermedia sul ROI della comunicazione?", "Dialogare con il business usando anche indicatori alternativi al ROI stretto.", "Rifiutare ogni collegamento tra comunicazione e obiettivi organizzativi.", "Usare l'AVE come unica misura valida del valore comunicativo.", "Misurare solo la quantità di materiali prodotti dalla funzione."],
+  ["Quando ha senso parlare di ROI nei social media?", "Per una specifica attività, in un periodo definito e con investimento definito.", "Per tutti i social media considerati insieme e senza obiettivi separati.", "Quando non sono disponibili costi, risultati attribuibili e orizzonte temporale.", "Quando la campagna riguarda soltanto awareness e relazione di lungo periodo."],
+  ["Prima di calcolare il ROI di un'attività social, cosa bisogna chiarire?", "Obiettivi di business, costi inclusi, periodo e risultati attribuibili.", "Numero di piattaforme usate, colore dei contenuti e formato del report.", "Tiratura dei media tradizionali e valore della readership certificata.", "Solo volumi di interazione, senza collegamento con il business."],
+  ["Che cosa misura il ROO?", "Il grado di raggiungimento degli obiettivi di comunicazione.", "Il valore pubblicitario equivalente della copertura editoriale.", "La relazione tra copertura media e risultati economici osservati.", "La valorizzazione dell'esposizione ottenuta sui media earned."],
+  ["Che cosa indica il ROMI nel materiale del corso?", "La relazione tra copertura media e risultati osservati.", "Il grado di raggiungimento degli obiettivi comunicativi.", "I cambiamenti rilevati nei pubblici di riferimento.", "Il valore economico corretto della copertura editoriale."],
+  ["Che cosa indica il ROTI?", "I cambiamenti rilevati nei pubblici di riferimento.", "La relazione tra copertura media e risultati osservati.", "Il valore pubblicitario equivalente della rassegna stampa.", "La valorizzazione dell'esposizione earned ottenuta sui media."],
+  ["Che cosa indica il ROEM?", "La valorizzazione dell'esposizione ottenuta sui media earned.", "Il grado di raggiungimento degli obiettivi comunicativi.", "I cambiamenti rilevati nei pubblici target.", "La relazione tra copertura media e risultati osservati."],
+  ["Che cosa confronta l'analisi costi-benefici?", "Alternative diverse in base al vantaggio economico complessivo.", "Solo uscite stampa ottenute e costo dello spazio pubblicitario.", "Solo atteggiamenti dei pubblici prima e dopo la campagna.", "Soltanto indicatori di engagement sui canali proprietari."],
+  ["A cosa serve il rapporto costo-efficacia?", "A confrontare iniziative con effetti simili rispetto a costo o efficacia.", "A trasformare ogni uscita editoriale in valore economico equivalente.", "A misurare il ricordo del messaggio senza considerare i costi.", "A certificare audience e diffusione dei mezzi pubblicitari."],
+  ["Che cosa stima il ROI sociale?", "Quanto soggetti informati pagherebbero per i benefici prodotti.", "Il valore pubblicitario equivalente dello spazio editoriale ottenuto.", "La quantità di interazioni generate dai canali social proprietari.", "La quota di copertura ottenuta rispetto ai concorrenti diretti."],
+  ["Che cosa misura l'AVE?", "Il valore monetario equivalente della copertura editoriale ottenuta.", "Il raggiungimento degli obiettivi di comunicazione fissati dal piano.", "Il cambiamento di atteggiamento dei pubblici di riferimento.", "La qualità relazionale maturata fra organizzazione e stakeholder."],
+  ["Qual è la formula base dell'AVE?", "Spazio editoriale ottenuto per costo dello spazio pubblicitario equivalente.", "Benefici meno costi, diviso costi, moltiplicato per cento.", "Readership divisa per audience e corretta con il sentiment.", "Outcome raggiunti divisi per output prodotti nel periodo."],
+  ["Qual è un vantaggio dell'AVE richiamato nelle lezioni?", "È semplice e parla un linguaggio economico comprensibile al management.", "Misura direttamente tono, qualità e centralità di ogni citazione.", "Isola con certezza gli effetti della comunicazione sulle vendite.", "Sostituisce gli obiettivi di comunicazione con risultati di business."],
+  ["Qual è il limite principale dell'AVE?", "Non misura da solo tono, qualità, centralità e credibilità della copertura.", "Non permette di attribuire un valore monetario alla copertura editoriale.", "Misura esclusivamente outcome relazionali di lungo periodo.", "Richiede sempre survey rappresentative presso tutti gli stakeholder."],
+  ["Che cosa indica il REAV nelle slide del corso?", "Una versione corretta dell'AVE con coefficienti e moltiplicatori qualitativi.", "Il ritorno economico puro calcolato su benefici e costi della campagna.", "Il grado di raggiungimento degli obiettivi comunicativi pianificati.", "La quota di esposizione earned ottenuta rispetto ai competitor."],
+  ["Che cosa combina il PQII?", "REAV e readership certificata in un indice di impatto qualitativo.", "ROI finanziario e fatturato generato nel periodo della campagna.", "Out-take e sentiment in una misura unica di reputazione.", "Share of voice e traffico organico in un valore economico certo."],
+  ["Nel PQII, che cosa rappresentano le unità GRV?", "Unità indice, non un valore economico espresso in euro.", "Ricavi netti direttamente generati dalla comunicazione.", "Valori di audience certificata dalla televisione.", "Quote di mercato raggiunte dalla campagna."],
+  ["Che cosa suggerisce il Return on Ignorance richiamato a lezione?", "Ignorare social media e ascolto può produrre costi competitivi e reputazionali.", "La mancata comunicazione elimina i costi e aumenta il ROI finanziario.", "Il ROI dei social media può essere calcolato senza obiettivi e periodo.", "L'AVE deve sostituire ogni forma di misurazione degli outcome."],
+  ["Perché ROI, ROO e AVE non vanno usati come sinonimi?", "Perché misurano ritorno economico, raggiungimento obiettivi e valore equivalente.", "Perché indicano tutti lo stesso valore monetario della copertura editoriale.", "Perché descrivono soltanto livelli diversi della ricerca qualitativa.", "Perché sono tre nomi alternativi per l'impatto reputazionale."],
+  ["Quando un indicatore alternativo al ROI è preferibile?", "Quando l'obiettivo riguarda relazione, reputazione, apprendimento o assistenza.", "Quando si vuole evitare qualunque collegamento con gli obiettivi del piano.", "Quando la campagna produce soltanto benefici monetari immediati e isolabili.", "Quando il management richiede esclusivamente un valore economico equivalente."],
+].map(item => roiQ(...item));
+
+const coverageExpansionSeeds = [
+  ...modelCoverageExpansionSeeds,
+  ...roiCoverageExpansionSeeds,
+];
+
 const COVERAGE_TERMS = [
   "output",
   "out-take",
@@ -749,7 +948,8 @@ const COVERAGE_TERMS = [
 ];
 
 const BANNED = /coordinate gps|bonifici bancari|spam|prezzo piu basso|ansia dei dipendenti|licenziamento|licenziare automaticamente|dati bancari|interessi bancari|costo della carta|effetti speciali|font usiamo|logo scegliamo|pausa pranzo|tutti i cittadini|segretezza assoluta|stato italiano|quiz a premi|sbloccare le domande|vietato per legge|illegali da utilizzare|tre parole chiave|email di spam|gps|denaro contante|pesati fisicamente|deprezzamento|umore del valutatore|magazzino|macchinetta|impianti audio|ispezione fiscale|evasioni|cancellare i messaggi|correttezza grammaticale|posizione geografica esatta|acquistare nuovi spazi|contratto annuale|eliminazione di tutti i competitor|incantesimo|oroscopo|lotteria|premio a sorte|cosa indica il net promoter score nps e come viene calcolato|secondo manuel castells come comunica e consuma|imbuto fisico|rubino i biscotti|costo del parcheggio|addormentarsi|nuovi gruppi di amici|troppo economici|forma scritta via email|si annoiano|a sorte da un contenitore|contemporaneamente all'inizio|ricette della nonna|voli aerei|critica distruttiva|attacchi degli hacker|tassazione sui servizi digitali|forme di baratto|proteggere i governi|televisione tradizionale|soldi pagati|aumentare lo stipendio|punire chiunque|beni fisici pesanti|frigorifero|ministero dell'economia|dimensioni fisiche|premio solo|scapito della felicita|compenso per gli intervistatori|capo azienda|termini di servizio dei social|scaricare i dati gratuitamente|dipendenti che il management|bancari personali|giorno di vacanza|arredamento dell'ufficio|sotto il livello dell acqua|spot marini|posizionamento geografico degli uffici|zone rurali|titolo in borsa|quotate in borsa|indici di borsa|azioni in borsa|ogni 24 ore|400|immediatamente statica|segnale radiofonico|direttore creativo|contratto di fornitura|errori trovati nel codice|media tradizionali perche sono morti|mappe geografiche|server|password|caffe|addizioni matematiche|database excel|obbligo di legge|obbligatori per legge|obbligatorio|obbligatoria|legge impone|legge sulla privacy|proibite dalla legge|vietate dai protocolli|legge italiana|virus informatico|indirizzo ip|scaffale del negozio|cancellati e ricaricati|antenne televisive|bozze digitali|premi vinti|algoritmo matematico|orologi|cartine geografiche|dimostrazione matematica assoluta|100% delle vendite|velocita di connessione|connessione wi-fi|cancellazione automatica|post negativi dai motori|rumore bianco|non e piu necessario raccogliere dati|solo l intuizione|solo l'intuizione|mappa geografica|luoghi digitali|cancellazione degli articoli|posizione geografica|controllo fiscale|superiore diretto|giornalisti che hanno scritto male|excel pesanti|luce l'acqua e il gas|spese per la luce|telefono privati|numeri di telefono|bloccare gli utenti|wikipedia come unica fonte|forza fisica|rumore prodotto|confondere i dirigenti|qualsiasi altra analisi|risparmiare energia|spegnendo|produttivita oraria|produttivita richiesto|riduce il costo del lavoro|automatizzando le relazioni|sostituisce la necessita|software gratuiti|qualita sostituisce completamente|ultima pagina alla prima|non comunicare nulla|dare ordini ai propri superiori|azzerare completamente le tasse|acquistare velocemente|monopolio assoluto|settore merceologico|indovinare i risultati|parente stretto|ingegneria meccanica|persone provenienti da nazioni diverse|non deve contenere piu di due domande|tre lingue diverse|stampare i fogli|non esistono piu esperti|non richiedono alcun budget|partecipanti tendono sempre a mentire|poco serio|poco affidabile|capi sono pigri|incolpare qualcuno|lanciare un prodotto a caso|chiedere agli amici|copiare fedelmente|critic.*subordinati|utenti anonimi|profilo linkedin del ceo|sovvenzioni statali|diminuiscono automaticamente|chip nel cervello|robot|microfono durante un focus group|profitti tra i vari soci|criptovalute|guardare lo stesso numero di minuti|pubbliche in italia|spiare i propri collaboratori|fatturare piu ore|rapporto finale molto piu lungo|grammatica italiana|determinare le colpe|toccato fisicamente|grado di resistenza verticale|cronometro|forum generalisti sono vietati|forum generalisti non esiste|metadati da analizzare nella fase|regolamento disciplinare|non conoscono i metodi statistici|budget.*sempre insufficienti|puramente casuali|intervistatori dimenticano|contratto sindacale|ogni singola famiglia|software statistici aggiornati|notaio|minimo di vendite|consegnati al ceo|calcolati automaticamente dai bot|euro non e piu considerato|troppo difficile da calcolare per i comunicatori|troppo difficile da calcolare per il management|nomi e cognomi|nomi e i cognomi|risarcimenti danni|grafici a torta|brevetti tecnologici|calcolo automatico della media|traduzione simultanea|tutti i dipendenti devono|stessa eta e professione|non e mai permesso offrire|listini dei media|suggerite dall algoritmo|e gratuito mentre|elenco degli amici|recensioni positive lasciate dai clienti|siti web possono essere chiusi|smettere di pubblicare|gratuito per tutti|obbligo di usare il computer|fine del commercio elettronico|scrivere in modo ripetitivo|rileggere gli stessi commenti|parlare in pubblico senza leggere|basandosi solo sul numero di like|amministratore delegato|maggioranza del cda|lunghezza fisica degli articoli|software automatico che sostituisce|algoritmo automatico|colpevolizzazione|canali.*pirata|falsificati.*agenzie|falsificati sistematicamente|compiacere|smettere di monitorare|confondere gli analisti|colori usare nel logo|consulenza esterne|costa molto di piu|privacy ne vietano|troppo tempo per essere raccolte|temperatura media|fuori dall'orario di lavoro|incremento automatico|occultamento dei dati|pressione sanguigna|licenziare l'agenzia|spot.*odiato|dieci anni|multinazionali del tabacco|toglie lavoro ai giornalisti|troppo basso rispetto al mercato|valore emotivo di una pubblicita|materie prime|nuovi uffici|scrivere e-mail|ortografia|libri pubblicati dal fondatore|inventario dei vecchi archivi/i;
-const REVIEW_BANNED = /metodo socratico|ostetrico mentale|we are social 2026|59 14|93 8|lunghezza in centimetri|numero totale di lingue|pixel|bonus|magazzinieri|logo del brand|bug tecnici|banconote false|alto stipendio|tasse che l azienda|lingua latina|computer prodotti dopo|fatture di pagamento|utenti non hanno mai opinioni|volume della voce|dipendenti che parlano bene|fattura a un fornitore|profilo falso|battiti cardiaci|ordine tecnico di sospensione|bilanci degli editori|stagisti|ceo|sempre sbagliato|invidiosi|algoritmo di google|budget spesa in inchiostro|intercettare illegalmente|telefonate dei concorrenti|notizie positive gratis|bianco e nero|nessuno guarda|software di listening piu costoso|soldi rimasti|giornalisti a scrivere bene|sacchetto|prezzo base|bambini sotto|google per vedere|youtube|scaricati illegalmente|siti pirata|software scaricati illegalmente|guardie giurate|si sono sposati|dolci|cioccolatini|animali domestici|tutte le lingue del mondo|velocita del sito|numero di follower su instagram al numero di dipendenti|reclami ricevuti|televisori venduti|radio vendute|fedelta politica|software di analisi.*editori|censurano|ads notizie|just in case|euro dollaro|fake news|effettivamente letto ogni pagina|pagamenti del canone|meter guasto|dirigenti televisivi|palinsesti|mixaggio automatico|ginnastica|colore della cravatta|film visto|velocita del vento|software piu costoso|dipartimento separato|ministero dell economia|yardistic|\bvpl\b|pqll|giga byte|gravita degli errori|guadagno reale delle vendite|giornalisti che scrivono|logo aziendale appare|radio e televisione analogica|rifiutato di leggere|ogni singola parola|contratto senza leggerlo|prestare denaro|patto di non concorrenza|moltiplica il numero di dipendenti|velocita di risposta sui social|software che corregge|colore dei loghi|licenziare lo staff|geni incompresi|dollari|benessere fisico|post pubblicati dagli influencer|partecipanti di analizzare|intelligenza artificiale per scrivere|due ore|spegnere l ia|file excel|post divertenti|registrazione audio|telefoniche del call center|utenti sono intrinsecamente ignoranti|perderanno il 50|premio in denaro|articolo e troppo lungo|errori grammaticali|moda passeggera|agenzia di stampa|hacker|principio 10|piangere|usare i dadi|inventarsi i dati|colore della carta|ore di sonno|tabelline|nessun giornalista|criptovaluta|tre timbri|tre persone|quartieri residenziali|cittadinanza straniera|votare alle elezioni|cartelli stradali|valuta estera|mercato nero|sette anni|crepe fisiche|muri della sede|ultimi 50 anni/i;
+const REVIEW_BANNED = /metodo socratico|ostetrico mentale|we are social 2026|59 14|93 8|lunghezza in centimetri|numero totale di lingue|pixel|bonus|magazzinieri|logo del brand|bug tecnici|banconote false|alto stipendio|tasse che l azienda|lingua latina|computer prodotti dopo|fatture di pagamento|utenti non hanno mai opinioni|volume della voce|dipendenti che parlano bene|fattura a un fornitore|profilo falso|battiti cardiaci|ordine tecnico di sospensione|bilanci degli editori|stagisti|ceo|sempre sbagliato|invidiosi|algoritmo di google|budget spesa in inchiostro|intercettare illegalmente|telefonate dei concorrenti|notizie positive gratis|bianco e nero|nessuno guarda|software di listening piu costoso|soldi rimasti|giornalisti a scrivere bene|sacchetto|prezzo base|bambini sotto|google per vedere|youtube|scaricati illegalmente|siti pirata|software scaricati illegalmente|guardie giurate|si sono sposati|dolci|cioccolatini|animali domestici|tutte le lingue del mondo|velocita del sito|numero di follower su instagram al numero di dipendenti|reclami ricevuti|televisori venduti|radio vendute|fedelta politica|software di analisi.*editori|censurano|ads notizie|just in case|euro dollaro|fake news|effettivamente letto ogni pagina|pagamenti del canone|meter guasto|dirigenti televisivi|palinsesti|mixaggio automatico|ginnastica|colore della cravatta|film visto|velocita del vento|software piu costoso|dipartimento separato|ministero dell economia|yardistic|\bvpl\b|pqll|giga byte|gravita degli errori|guadagno reale delle vendite|giornalisti che scrivono|logo aziendale appare|radio e televisione analogica|rifiutato di leggere|ogni singola parola|contratto senza leggerlo|prestare denaro|patto di non concorrenza|moltiplica il numero di dipendenti|velocita di risposta sui social|software che corregge|colore dei loghi|licenziare lo staff|geni incompresi|dollari|benessere fisico|post pubblicati dagli influencer|partecipanti di analizzare|intelligenza artificiale per scrivere|due ore|spegnere l ia|file excel|post divertenti|registrazione audio|telefoniche del call center|utenti sono intrinsecamente ignoranti|perderanno il 50|premio in denaro|articolo e troppo lungo|errori grammaticali|moda passeggera|agenzia di stampa|hacker|principio 10|piangere|usare i dadi|inventarsi i dati|colore della carta|ore di sonno|tabelline|nessun giornalista|criptovaluta|tre timbri|tre persone|quartieri residenziali|cittadinanza straniera|votare alle elezioni|cartelli stradali|valuta estera|mercato nero|sette anni|crepe fisiche|muri della sede|ultimi 50 anni|whatsapp|email arriva|citazioni in un libro|100 grammi|velocita con cui parla|lingue parlate|vestito indossato|terza lingua straniera|sostituire la creativita|premi internazionali|grafici colorati|clienti ricchi|clienti poveri|zona depressa|margine di profitto|pagine laterali|stipendi dei dipendenti|film d azione|cartoni animati|arresta i telespettatori|ordini gerarchici|riduzione degli stipendi|computer piu veloci|cambio di religione|file video in un file audio|incidenti stradali|pensione anticipata|causa legale|stampa fisica|stadi calcistici|stipendio dei comunicatori|storie di successo fittizie|fallimenti aziendali|affitto degli uffici|budget.*dipartimento it|stampare i report|licenziare il valutatore|costo per riga|citazioni negative.*twitter|benessere psicofisico|non sono generalizzabili a soggetti con caratteristiche analoghe|interazione fredda|60 secondi|regalare ai partecipanti|illegali senza permessi|singolo consumatore scelto a caso|listino del prossimo anno|stile letterario/i;
+const REVIEW_BANNED_EXTRA = /database giganti|software proprietari molto costosi|censurare automaticamente|sostituire completamente i creatori|fatturazione elettronica|totale assenza di costi|database mondiale|gestito dall onu|commentare i post degli amici|codici binari|scopi pubblicitari|immagini e video senza testo|font di grandi dimensioni|altezza fisica|spendono piu soldi|font piccolissimo|utenti non prestano piu attenzione|funzionano solo su dispositivi mobili|troppo intelligente|sostituisca completamente il dipartimento marketing|licenze software|yahoo answers|logo aziendale ogni settimana|controllo dei profili privati|bot automatici|beneficenza.*facebook|5 66|18 ore e 36|ottobre 2025|bow.*poste|descrittivo o neutro|stragrande maggioranza|basata su ai e considerata limitata|agenzie di digital pr|misura il volume delle citazioni senza interpretarne il tono|giornalisti delle agenzie non sono veri|troppo spazio nel database|massimo di 10 parole|account social.*piattaforme meta|ridurre il numero di dipendenti|tempo massimo.*televisore|presentatori parlano|scene tagliate|quota societaria|detiene la rai|33|coordin.*antitrust|email.*ogni ora della notte|motto dei tecnici|stesso selfie|distruzione fisica|copie rubate|ente governativo punitivo|troppa pubblicita durante i film|vendere spazi pubblicitari|programmi televisivi educativi|radio.*dal 2025|processo di valutazione the measuring tree|che cosa misura il communication satisfaction questionnaire|organi interni dei dipendenti|debiti.*ferie|telefono dei venditori|immobili di proprieta|risparmia sui costi di internet|assumere subito nuovi manager|carta consumata|muri e delle fondamenta|abiti formali|obbligo legale dei clienti|ordini impartiti dai capi|lamentele depositate|rubrica telefonica|numero di parenti|sistema informativo segreto|connessione wi fi|email inviate fuori dall orario|esseri umani con algoritmi|cambiare agenzia|roi cala|logo aziendale attraverso i decenni|narrazioni mitologiche|biografia dei fondatori|gruppo di controllo con un algoritmo|lista nera|pagare meno tasse|soldi regalare|programmi tv chiudere|nuova agenzia pubblicitaria|ventiquattro ore|filosofi greci|non serva a nulla|tre libri diversi|centesimo comunicato|debiti finanziari|spazio pubblicitario in tv|nessuno parli mai|memorizzare lo statuto|stipendi con messaggi|commenti negativi prima|fan sui social|bagni dell azienda|mensa aziendale|automatizzando tutti i flussi|colore del logo|dividendi degli azionisti|fondi assicurativi|immuni da qualsiasi errore|leggi vigenti|spiare le strategie|cartelloni pubblicitari stradali|schermi durante gli eventi|dipendenti che meritano|racconto romanzato|inventare scuse|ufficio legale|puntualita nei pagamenti|risultati negativi dai motori|immunita legale|solo i brevetti tecnici|profili social|maxischermo|metri quadrati|organigramma gerarchico depositato|potere contrattuale unilaterale|fornitori esterni|inflazione del mercato|camera di commercio|rumore di fondo all interno|catasto degli intangibili|certificazione iso|sistemi di allarme|messaggi subliminali|obbligati per legge|licenziare tutto lo staff|criptato per impedirne/i;
 
 const manualDistractors = {
   "Fondamenti della misurazione": [
@@ -873,6 +1073,14 @@ function q(section, text, options, answer, source = "exam-photo") {
     answer,
     source,
   };
+}
+
+function modelQ(text, correct, b, c, d) {
+  return q("Modelli di valutazione", text, [correct, b, c, d], "A", "appunti-cheat");
+}
+
+function roiQ(text, correct, b, c, d) {
+  return q("ROI, AVE e indicatori economici", text, [correct, b, c, d], "A", "appunti-cheat");
 }
 
 const ITALIAN_ACCENT_WORDS = new Map([
@@ -1033,7 +1241,7 @@ function normalizeKey(value) {
 
 function isBannedText(value) {
   const key = normalizeKey(value);
-  return BANNED.test(key) || REVIEW_BANNED.test(key);
+  return BANNED.test(key) || REVIEW_BANNED.test(key) || REVIEW_BANNED_EXTRA.test(key);
 }
 
 function coverageKey(value) {
@@ -1095,14 +1303,14 @@ function inferSection(question) {
   const answer = question.answer || "A";
   const correct = (question.options || {})[answer] || "";
   const hay = normalizeKey(`${question.text} ${correct}`);
-  if (/\b(roi|roo|ave|reav|pqii|cosenza|return on ignorance|silver metric|valore economico)\b/i.test(hay)) return "ROI, AVE e indicatori economici";
+  if (/\b(roi|roo|romi|roti|roem|ave|reav|pqii|grv|cosenza|return on ignorance|silver metric|valore economico)\b/i.test(hay)) return "ROI, AVE e indicatori economici";
   const explicit = cleanSection(question.section);
   const hasAudienceSignal = /\b(ads|audicom|audiweb|auditel|audiradio|ter|jic|currency|panel|census|sdk|meter|total audience)\b|tiratura|diffusione (?:di |dei |della |delle )?(?:quotidiani|periodici|stampa|copie|edizioni)/i.test(hay);
   if (hasAudienceSignal) return "Enti certificatori e audience";
   const hasDigitalSignal = /\b(social|web|seo|sea|sem|geo|ga4|quality score|zero click|motori di risposta|intelligenza artificiale|analytics|pyramid|compass|owyang|altimeter|peso|zmot|lovett|customer care|crawling|indexing|ranking|serp|follower|metriche di interazione|tecnologia per la misurazione)\b/i.test(hay);
   if (hasDigitalSignal) return "Digitale, social e motori di ricerca";
   if (/\b(ccpm|balanced scorecard|value link|values|kpi|kri|performance|communication value system|return on communication|lead|lag|variabili ponte)\b/i.test(hay)) return "Performance measurement e CCPM";
-  if (/\b(yardstick|pii|macro model|measurement tree|pre model|barcelona|amec|integrated evaluation framework|smart|modello|framework|watson)\b/i.test(hay)) return "Modelli di valutazione";
+  if (/\b(yardstick|pii|macro model|measurement tree|the measuring tree|pre model|short model|continuing model|brioschi|barcelona|amec|integrated evaluation framework|smart|modello|framework|watson)\b/i.test(hay)) return "Modelli di valutazione";
   if (/\b(reputazione|intangibili|beni intangibili|asset intangibili|capitale comunicativo|capitale narrativo|capitale relazionale|identita|immagine|grunig|hon|relazioni di scambio|relazioni comunitarie|reptrak|reputation quotient|fortune|wmac|berens|van riel|stakeholder|fiducia|soddisfazione|integrita|skandia)\b/i.test(hay)) return "Intangibili e reputazione";
   if (/\b(listening|monitoring|sentiment|topic|hot topic|mappa semantica|share of voice|media relation|rassegna|lettore medio|ots|analisi semantica|tassonomia|query|influencer|competitor|valutazione dinamica|analisi delle persone|disambiguazione|ascolto globale|selezione delle fonti)\b/i.test(hay)) return "Monitoring, listening e sentiment";
   if (/\b(focus group|survey|questionario|cawi|cati|intervista|osservazione|ricerca|ricerche|indagine|campione|campionamento|neuromarketing|eye tracker|eeg|gsr|heat map|pre test|proiettive|qualitativ|quantitativ|causal|controllo)\b/i.test(hay)) return "Ricerca in comunicazione";
@@ -1147,10 +1355,10 @@ function tagsFor(question) {
     "Intangibili e reputazione": "reputazione_intangibili",
   };
   tags.add(sectionTags[question.section]);
-  const roiMetricSignal = /\b(roi|roo|ave|reav|pqii|cosenza|return on ignorance|silver metric|valore economico)\b/.test(hay);
+  const roiMetricSignal = /\b(roi|roo|romi|roti|roem|ave|reav|pqii|grv|cosenza|return on ignorance|silver metric|valore economico)\b/.test(hay);
   if (/yardstick|pii|macro|measurement tree|pre model|barcelona|amec|integrated evaluation|smart|balanced scorecard|ccpm|values|value link|communication value system|social measurement compass|roi pyramid|altimeter|owyang|lovett|peso|zmot|reputation quotient|reptrak|fortune|wmac|berens|grunig|hon|watson|skandia|modello|framework/.test(hay)) tags.add("modelli");
   if (!roiMetricSignal && /\b(auditel|audicom|audiweb|audiradio|ads|ter|jic|currency|panel|census|sdk|meter|meters|total audience)\b|tiratura|diffusione (?:di |dei |della |delle )?(?:quotidiani|periodici|stampa|copie|edizioni)/.test(hay)) tags.add("enti_audience");
-  if (/social|listening|sentiment|topic|hot topic|analytics|roi|roo|ave|reav|pqii|cosenza|owyang|altimeter|compass|customer care|brand health/.test(hay)) tags.add("social_roi");
+  if (/social|listening|sentiment|topic|hot topic|analytics|roi|roo|romi|roti|roem|ave|reav|pqii|grv|cosenza|owyang|altimeter|compass|customer care|brand health/.test(hay)) tags.add("social_roi");
   if (/focus group|survey|questionario|cawi|cati|intervista|osservazione|neuromarketing|eye tracker|eeg|gsr|heat map|campione|ricerca|pre test|proiettive/.test(hay)) tags.add("ricerca_metodi");
   if (/seo|sea|sem|geo|ga4|quality score|zero click|motori di risposta|web 1|web 2|web 3|web 4|intelligenza artificiale|api|scraping|rss|crawling|serp/.test(hay)) tags.add("seo_geo_digitale");
   return [...tags].filter(Boolean).sort();
@@ -1337,7 +1545,7 @@ function validate(bank) {
 }
 
 const notebookBank = JSON.parse(fs.readFileSync(sourcePath, "utf8"));
-const allCandidates = [...examSeeds, ...modelExtraSeeds, ...entiExtraSeeds, ...studySeeds, ...notebookBank]
+const allCandidates = [...examSeeds, ...modelExtraSeeds, ...entiExtraSeeds, ...studySeeds, ...coverageExpansionSeeds, ...notebookBank]
   .map(sourceToCandidate)
   .filter(candidate => candidate.text && candidate.correct)
   .filter(candidate => !isBannedText(candidate.text))
@@ -1348,6 +1556,750 @@ const pools = buildDistractorPools(allCandidates);
 const bank = selected.map((candidate, index) => toQuestion(index + 1, candidate, pools));
 
 const manualReviewOverrides = {
+  q1001: {
+    matchText: "Qual è il limite principale delle ricerche qualitative nella valutazione della comunicazione?",
+    options: {
+      A: "Non consentono generalizzazioni statistiche all'intera popolazione.",
+      B: "Non permettono di esplorare motivazioni, percezioni e significati attribuiti dai soggetti.",
+      C: "Richiedono sempre campioni probabilistici molto numerosi e rappresentativi.",
+      D: "Producono solo indicatori economici e non informazioni interpretative.",
+    },
+  },
+  q1002: {
+    matchText: "L'indicatore ROTI (Return on Target Influence) si ottiene calcolando:",
+    options: {
+      A: "I cambiamenti rilevati nei pubblici di riferimento dopo l'attività.",
+      B: "Il valore pubblicitario equivalente della copertura editoriale ottenuta.",
+      C: "Il grado di raggiungimento degli obiettivi comunicativi fissati dal piano.",
+      D: "La relazione tra copertura media e risultati osservati nel periodo.",
+    },
+  },
+  q1003: {
+    matchText: "Che cosa caratterizza il 'Success Case Method' (SCM)?",
+    options: {
+      A: "L'analisi approfondita dei casi di successo attraverso dati e narrazioni.",
+      B: "La verifica sperimentale di un nesso causale tramite gruppo di controllo.",
+      C: "La misurazione standardizzata di atteggiamenti su un campione rappresentativo.",
+      D: "La codifica sistematica dei contenuti pubblicati nella copertura media.",
+    },
+  },
+  q1004: {
+    matchText: "Nel contesto del focus group, perché è sconsigliata la presenza di persone con rapporti gerarchici diretti nello stesso gruppo?",
+    options: {
+      A: "Per evitare che l'interazione sia condizionata e che i partecipanti non siano liberi di esprimersi.",
+      B: "Per garantire che tutti i partecipanti appartengano alla stessa fascia socio-demografica.",
+      C: "Per trasformare la discussione qualitativa in risposte statisticamente generalizzabili.",
+      D: "Per evitare che il moderatore debba usare domande di apertura e di transizione.",
+    },
+  },
+  q1005: {
+    matchText: "Nella ricerca valutativa, la 'visione della realtà di tipo interpretativo' è associata a:",
+    options: {
+      A: "Ricerche qualitative.",
+      B: "Ricerche quantitative standardizzate.",
+      C: "Ricerche causali con gruppi di controllo.",
+      D: "Analisi secondarie su dati amministrativi.",
+    },
+  },
+  q1006: {
+    matchText: "Nel focus group su Poste Italiane citato a lezione, quale comportamento è stato interpretato come segnale di percezione di marginalità organizzativa?",
+    options: {
+      A: "La tendenza dei postini a collocarsi in posizione marginale nel setting fisico.",
+      B: "La scelta dei partecipanti di usare esempi concreti legati al proprio ruolo quotidiano.",
+      C: "La difficoltà iniziale a collegare l'esperienza personale agli obiettivi organizzativi.",
+      D: "La diversa partecipazione alla discussione in base alla posizione percepita nel gruppo.",
+    },
+  },
+  q1007: {
+    matchText: "Nell'analisi del contenuto, cosa si intende per 'scomposizione'?",
+    options: {
+      A: "Identificare temi e unità di analisi semplici a partire da contenuti complessi.",
+      B: "Attribuire un tono positivo, negativo, neutro o bilanciato a ciascun contenuto.",
+      C: "Classificare le fonti in base a tipologia, autorevolezza e rilevanza per il brand.",
+      D: "Confrontare la presenza dei messaggi chiave con gli obiettivi della campagna.",
+    },
+  },
+  q1008: {
+    matchText: "Perché le news pubblicate su luoghi non accessibili al pubblico (es. agenzie di stampa riservate) non dovrebbero avere lo stesso valore nel monitoring?",
+    options: {
+      A: "Perché raggiungono soprattutto addetti ai lavori e non il pubblico generale.",
+      B: "Perché vanno sempre conteggiate come comunicazioni interne dell'organizzazione.",
+      C: "Perché assumono automaticamente un sentiment neutro in ogni protocollo di analisi.",
+      D: "Perché devono essere escluse anche quando vengono rilanciate da fonti pubbliche.",
+    },
+  },
+  q1009: {
+    matchText: "Quale di questi è un limite riconosciuto dei dizionari predefiniti nella Sentiment Analysis?",
+    options: {
+      A: "Non riescono a cogliere sfumature ironiche, sarcasmo e contesto della frase.",
+      B: "Richiedono sempre una lettura manuale integrale di ogni contenuto raccolto.",
+      C: "Sono adatti solo alla misurazione dei volumi di citazioni, non del linguaggio.",
+      D: "Impediscono di confrontare nel tempo contenuti positivi, negativi e neutri.",
+    },
+  },
+  q1010: {
+    matchText: "Nella 'Sentiment Analysis' corretta, da quale punto di vista deve essere valutato il contenuto?",
+    options: {
+      A: "Dal punto di vista del lettore medio, basandosi sul testo e su un protocollo chiaro.",
+      B: "Dal punto di vista dell'organizzazione che ha prodotto o favorito il contenuto.",
+      C: "Dal punto di vista del management, privilegiando le notizie più utili al report.",
+      D: "Dal punto di vista dell'analista, includendo informazioni non presenti nel testo.",
+    },
+  },
+  q1011: {
+    matchText: "Secondo le dispense, qual è il rischio principale legato all'uso eccessivo di query nel listening senza una fase di pulizia del dato?",
+    options: {
+      A: "Il rumore di fondo, cioè messaggi irrilevanti che inquinano l'analisi.",
+      B: "La perdita della possibilità di confrontare fonti diverse nello stesso periodo.",
+      C: "La riduzione artificiale dei volumi di conversazione osservabili online.",
+      D: "La trasformazione del listening in una semplice analisi della copertura stampa.",
+    },
+  },
+  q1012: {
+    matchText: "Nella valutazione dinamica dei volumi di conversazione online, perché è utile rapportarli alle attività proattive dell'azienda?",
+    options: {
+      A: "Per comprendere l'impatto delle azioni aziendali sulle discussioni spontanee.",
+      B: "Per separare le conversazioni spontanee da qualunque attività di comunicazione svolta.",
+      C: "Per misurare solo i contenuti prodotti dai canali proprietari dell'organizzazione.",
+      D: "Per evitare di interpretare picchi e variazioni alla luce del calendario delle azioni.",
+    },
+  },
+  q1013: {
+    matchText: "Cosa si intende per 'Share of Voice' (SoV) nel monitoraggio dei media?",
+    options: {
+      A: "La quota di copertura ottenuta dall'organizzazione rispetto ai competitor.",
+      B: "La frequenza con cui i portavoce ufficiali vengono citati negli articoli.",
+      C: "La presenza dei messaggi chiave dell'organizzazione nella copertura ottenuta.",
+      D: "La valutazione del tono favorevole o sfavorevole dei contenuti pubblicati.",
+    },
+  },
+  q1014: {
+    matchText: "Nel monitoraggio dei media, che cosa indica la 'Third-party endorsement'?",
+    options: {
+      A: "La presenza di soggetti terzi che confermano o sostengono l'organizzazione.",
+      B: "La quota di copertura ottenuta rispetto ai concorrenti diretti nel periodo.",
+      C: "La centralità dell'organizzazione nel titolo, nel lead o nel corpo dell'articolo.",
+      D: "La presenza dei messaggi chiave definiti dalla funzione comunicazione.",
+    },
+  },
+  q1015: {
+    matchText: "Che cosa misura l'indicatore 'Spokesperson Presence' nel media monitoring?",
+    options: {
+      A: "La frequenza e il rilievo delle citazioni attribuite ai portavoce ufficiali.",
+      B: "La quota di copertura complessiva ottenuta rispetto ai competitor.",
+      C: "La presenza di fonti terze che confermano la posizione dell'organizzazione.",
+      D: "La capacità dei contenuti di riportare i messaggi chiave della campagna.",
+    },
+  },
+  q1016: {
+    matchText: "Cosa indica l'indicatore 'OTS' (Opportunity To See) secondo il glossario finale?",
+    options: {
+      A: "Le occasioni potenziali di esposizione, calcolate su readership e uscite.",
+      B: "La percentuale di persone che hanno compreso e ricordato il messaggio.",
+      C: "La quota di copertura dell'organizzazione rispetto ai concorrenti diretti.",
+      D: "La valutazione qualitativa del tono favorevole o sfavorevole dei contenuti.",
+    },
+  },
+  q1017: {
+    matchText: "Nel monitoraggio dei media, qual è la differenza tra l'analisi quantitativa e la 'Sentiment Analysis'?",
+    options: {
+      A: "La quantitativa conta i volumi, il sentiment valuta il tono verso il soggetto.",
+      B: "La quantitativa misura solo i pubblici interni, il sentiment solo quelli esterni.",
+      C: "La quantitativa riguarda le immagini, il sentiment riguarda esclusivamente i testi.",
+      D: "La quantitativa sostituisce gli obiettivi, il sentiment sostituisce le fonti.",
+    },
+  },
+  q1018: {
+    matchText: "In un processo di Sentiment Analysis corretta, da quale punto di vista va valutato il testo?",
+    text: "In un processo di Sentiment Analysis, quale errore metodologico va evitato?",
+    options: {
+      A: "Attribuire il tono usando informazioni esterne invece di ciò che il lettore medio legge nel testo.",
+      B: "Distinguere fra contenuti positivi, negativi, neutri e bilanciati secondo un protocollo.",
+      C: "Valutare il contenuto alla luce del soggetto di analisi definito prima della codifica.",
+      D: "Separare il giudizio sul testo dalla simpatia personale verso l'organizzazione.",
+    },
+  },
+  q1019: {
+    matchText: "In Italia, quale JIC subentrerà al precedente TER per la misurazione della radio dal 2025?",
+    text: "In Italia, quale JIC è subentrato al precedente TER per la misurazione della radio?",
+    options: {
+      A: "Audiradio.",
+      B: "Audicom.",
+      C: "ADS.",
+      D: "Auditel.",
+    },
+  },
+  q1020: {
+    matchText: "Quale modello affianca esplicitamente pianificazione e valutazione?",
+    options: {
+      A: "Il Planning, Research and Evaluation Model.",
+      B: "Il modello Yardstick.",
+      C: "Il modello di Brioschi.",
+      D: "Il MACRO Model.",
+    },
+  },
+  q1021: {
+    matchText: "Nel modello Skandia, cosa si intende per 'Capitale Umano'?",
+    options: {
+      A: "Competenze, conoscenze, capacità e attitudine collaborativa dei dipendenti.",
+      B: "Relazioni con clienti e stakeholder, reputazione, fiducia e immagine.",
+      C: "Processi, procedure, sistemi informativi e cultura organizzativa.",
+      D: "Storie e conversazioni che rendono riconoscibile l'organizzazione nel tempo.",
+    },
+  },
+  q1022: {
+    matchText: "Quale di questi è un esempio di 'Capitale Organizzativo' nel modello Skandia?",
+    options: {
+      A: "Processi, procedure, sistemi informativi e cultura aziendale.",
+      B: "Competenze, conoscenze e capacità professionali dei dipendenti.",
+      C: "Relazioni con stakeholder, reputazione e fiducia nel mercato.",
+      D: "Narrazioni, storie e conversazioni associate all'organizzazione.",
+    },
+  },
+  q1023: {
+    matchText: "Nel modello Skandia, cosa succede se le competenze dei dipendenti non vengono condivise?",
+    options: {
+      A: "Non generano valore perché il capitale umano non viene attivato dalla comunicazione.",
+      B: "Diventano automaticamente capitale relazionale anche senza scambio organizzativo.",
+      C: "Sono contabilizzate come capitale strutturale indipendentemente dai processi.",
+      D: "Sostituiscono la necessità di sistemi, procedure e cultura organizzativa.",
+    },
+  },
+  q1024: {
+    matchText: "Nel modello MACRO, cosa si intende per valutazione a livello di 'Input'?",
+    options: {
+      A: "L'analisi delle micro-decisioni su formati, contenuti e scelte prima della diffusione.",
+      B: "La misurazione degli strumenti realizzati e delle attività prodotte dal programma.",
+      C: "La verifica dei cambiamenti in conoscenze, atteggiamenti e comportamenti.",
+      D: "La valutazione dell'impatto finale sulle aree di performance organizzativa.",
+    },
+  },
+  q1025: {
+    matchText: "Quale delle seguenti affermazioni descrive correttamente la 'Componente Strutturale' del modello Skandia?",
+    options: {
+      A: "Include sistemi, processi, database e cultura che restano nell'organizzazione.",
+      B: "Coincide con competenze, conoscenze e capacità individuali dei dipendenti.",
+      C: "Riguarda relazioni, fiducia e reputazione costruite con clienti e stakeholder.",
+      D: "Indica storie e conversazioni che danno significato pubblico all'organizzazione.",
+    },
+  },
+  q1026: {
+    matchText: "Cos'è l'orientamento 'Manageriale' citato tra le dimensioni del modello?",
+    options: {
+      A: "L'attenzione all'uso dei risultati valutativi per prendere decisioni più efficaci.",
+      B: "La misurazione della sola quantità di output prodotti dalla funzione comunicazione.",
+      C: "La scelta di indicatori non collegati agli obiettivi e al contesto organizzativo.",
+      D: "La lettura della valutazione come controllo tecnico separato dal management.",
+    },
+  },
+  q1027: {
+    matchText: "In riferimento al modello di Newell e Goldsmith, cosa esprime la dimensione 'Lealtà'?",
+    options: {
+      A: "Onestà, sincerità e convinzione che l'organizzazione mantenga la parola data.",
+      B: "Competenza tecnica percepita dell'organizzazione nel proprio settore di attività.",
+      C: "Attrattività emotiva generale prodotta dalla reputazione presso gli stakeholder.",
+      D: "Propensione dei clienti a ripetere l'acquisto nel breve periodo.",
+    },
+  },
+  q1028: {
+    matchText: "Cos'è la 'Comunicazione dei Subordinati' nelle dimensioni del modello CSQ?",
+    options: {
+      A: "La capacità dei collaboratori di anticipare bisogni dei superiori e attivare flussi verso l'alto.",
+      B: "La qualità dei canali ufficiali usati dall'organizzazione per diffondere informazioni interne.",
+      C: "Il livello di soddisfazione verso clima comunicazionale e integrazione organizzativa.",
+      D: "La quantità di feedback personali ricevuti dai dipendenti sulle proprie prestazioni.",
+    },
+  },
+  q1029: {
+    matchText: "Il 'Capitale Relazionale' nel modello Skandia ampliato comprende:",
+    options: {
+      A: "Relazioni con stakeholder, immagine, reputazione e fiducia.",
+      B: "Processi, procedure, sistemi informativi e cultura organizzativa.",
+      C: "Competenze, conoscenze, qualifiche e capacità collaborative dei dipendenti.",
+      D: "Storie, conversazioni e narrazioni che costruiscono significato nel tempo.",
+    },
+  },
+  q1030: {
+    matchText: "In quale fase del modello PRE si applicano per la prima volta le tecniche di valutazione scelte?",
+    options: {
+      A: "Fase 4: valutazione in corso o ongoing.",
+      B: "Fase 1: audit della situazione di partenza.",
+      C: "Fase 2: definizione degli obiettivi del piano.",
+      D: "Fase 3: formulazione della strategia di comunicazione.",
+    },
+  },
+  q1031: {
+    matchText: "La 'Corteccia' (bark) nel modello arboreo simboleggia:",
+    options: {
+      A: "Servizi, prodotti e ciò che dell'organizzazione è visibile all'esterno.",
+      B: "Obiettivi di comunicazione collocati alla base del processo valutativo.",
+      C: "Pubblici cui è rivolta la campagna e pubblici del piano media.",
+      D: "Outcome generati presso gli interlocutori raggiunti dalla comunicazione.",
+    },
+  },
+  q1032: {
+    matchText: "Il modello Communication Satisfaction Questionnaire (1977) indaga 8 dimensioni. Cosa permette di capire l'analisi del 'clima comunicazionale'?",
+    options: {
+      A: "Il livello di soddisfazione verso l'atmosfera comunicativa interna.",
+      B: "La qualità delle relazioni esterne con clienti e stakeholder finanziari.",
+      C: "Il valore pubblicitario equivalente della copertura editoriale ottenuta.",
+      D: "La sequenza output, out-take e outcome di una campagna media.",
+    },
+  },
+  q1033: {
+    matchText: "Il principio 7 dei Barcelona Principles 3.0 sottolinea che la misurazione deve guidare:",
+    options: {
+      A: "Apprendimento e insight, fondandosi su integrità e trasparenza.",
+      B: "La sola rendicontazione dei volumi di output ottenuti nel periodo.",
+      C: "La sostituzione degli outcome con il valore pubblicitario equivalente.",
+      D: "La misurazione separata dei canali online rispetto a quelli offline.",
+    },
+  },
+  q1034: {
+    matchText: "Nella ricerca valutativa, cos'è il 'Modello Logico' del processo?",
+    options: {
+      A: "La ricostruzione della catena di cause ed effetti che conduce ai risultati.",
+      B: "Una lista di output media ordinati per data di pubblicazione.",
+      C: "Un questionario standardizzato per misurare la soddisfazione interna.",
+      D: "Una metrica economica che traduce la copertura in valore pubblicitario.",
+    },
+  },
+  q1035: {
+    matchText: "Cosa rappresenta il 'Yardstick Model'?",
+    options: {
+      A: "Un modello rapido ed economico basato su output, out-take e outcome.",
+      B: "Un modello centrato su Preparation, Implementation e Impact.",
+      C: "Una piramide che distingue input, output e outcome su due livelli.",
+      D: "Una scorecard che traduce la strategia in prospettive di performance.",
+    },
+  },
+  q1036: {
+    matchText: "Nel modello di Corradini e Nardelli, come vengono classificati gli indicatori relativi alla reputazione?",
+    text: "Nel modello SPIRIT richiamato da Corradini e Nardelli, quali elementi vengono collegati?",
+    options: {
+      A: "Reputazione, antecedenti ed esiti emotivi e comportamentali.",
+      B: "Output, out-take, outcome e impatto potenziale della comunicazione.",
+      C: "Capitale umano, capitale relazionale e capitale organizzativo.",
+      D: "Efficacia tecnica, efficacia economica ed efficacia sociale.",
+    },
+  },
+  q1037: {
+    matchText: "Cosa si intende per 'Most Significant Change' (MSC) nel modello CCPM?",
+    options: {
+      A: "Una metodologia basata su storie di cambiamento significative per valutare l'impatto.",
+      B: "Un metodo sperimentale che isola una variabile comunicativa con gruppo di controllo.",
+      C: "Una procedura di eliminazione sistematica delle cause alternative degli effetti.",
+      D: "Una scorecard che collega obiettivi di business, stakeholder e KPI.",
+    },
+  },
+  q1038: {
+    matchText: "Nel modello CCPM, perché è fondamentale 'mappare le fonti' durante il processo di valutazione?",
+    options: {
+      A: "Per raccogliere dati attendibili da soggetti competenti e nei tempi previsti.",
+      B: "Per scegliere solo fonti favorevoli alla posizione dell'organizzazione.",
+      C: "Per sostituire l'interpretazione dei risultati con una lista di canali.",
+      D: "Per evitare di collegare fonti, metodi e responsabilità nel piano di misurazione.",
+    },
+  },
+  q1039: {
+    matchText: "Nel framework VALUES, cosa si intende per 'Unità di analisi' (U)?",
+    options: {
+      A: "Il riferimento a specifici pubblici o stakeholder verso cui si attendono effetti.",
+      B: "La metrica finanziaria scelta per esprimere i risultati in valore monetario.",
+      C: "La singola fonte media da monitorare durante la raccolta degli output.",
+      D: "Il livello organizzativo incaricato di approvare il report finale.",
+    },
+  },
+  q1040: {
+    matchText: "Nel modello CCPM, la dimensione 'Manageriale' della valutazione implica che:",
+    options: {
+      A: "La valutazione deve entrare nei processi decisionali per generare valore.",
+      B: "La misurazione deve limitarsi al controllo operativo delle attività svolte.",
+      C: "I risultati devono essere separati dalle decisioni di management.",
+      D: "Gli indicatori vanno scelti perché disponibili, anche se poco utili.",
+    },
+  },
+  q1041: {
+    matchText: "Nel CCPM, la fase di 'Assessment del contesto' serve a definire:",
+    options: {
+      A: "Cosa ha senso misurare in base a obiettivi, stakeholder e mappe narrative.",
+      B: "Come pubblicare il report finale dopo la chiusura del programma.",
+      C: "Quale valore pubblicitario equivalente attribuire alla copertura ottenuta.",
+      D: "Quante uscite media produrre prima di misurare gli outcome.",
+    },
+  },
+  q1042: {
+    matchText: "Cosa si intende per 'Teorie della misurazione' nel terzo principio del modello CCPM?",
+    options: {
+      A: "L'uso di modelli logici che spiegano perché e attraverso quali variabili la comunicazione contribuisce alla performance.",
+      B: "La scelta di misurare solo ciò che è immediatamente disponibile nelle dashboard operative.",
+      C: "La convinzione che gli output siano sufficienti a dimostrare l'impatto di business.",
+      D: "La separazione fra raccolta dei dati, interpretazione e decisioni organizzative.",
+    },
+  },
+  q1043: {
+    matchText: "Quale indicatore misura il 'ritorno sull'influenza sul target' al netto degli investimenti?",
+    text: "Quale indicatore misura il ritorno sull'influenza esercitata sul target?",
+    options: {
+      A: "ROTI (Return on Target Influence).",
+      B: "ROO (Return on Objectives).",
+      C: "ROEM (Return on Earned Media).",
+      D: "AVE (Advertising Value Equivalent).",
+    },
+  },
+  q1044: {
+    matchText: "Quando nasce il 'Capitale Comunicativo' secondo la prospettiva strategica?",
+    options: {
+      A: "Quando la comunicazione attiva e mette in relazione il capitale intellettuale.",
+      B: "Quando l'organizzazione ottiene una quantità elevata di uscite media.",
+      C: "Quando il capitale umano viene considerato separato da relazioni e processi.",
+      D: "Quando la reputazione viene ridotta a un indicatore sintetico di visibilità.",
+    },
+  },
+  q1045: {
+    matchText: "In che modo la comunicazione interna contribuisce al capitale comunicativo?",
+    options: {
+      A: "Favorendo coordinamento, appartenenza e condivisione delle conoscenze.",
+      B: "Misurando solo la quantità di comunicazioni inviate ai dipendenti.",
+      C: "Sostituendo il confronto interno con messaggi unidirezionali standardizzati.",
+      D: "Separando competenze individuali, processi organizzativi e relazioni interne.",
+    },
+  },
+  q1046: {
+    matchText: "In che modo l'ascolto può prevenire una crisi reputazionale secondo le dispense?",
+    options: {
+      A: "Individuando tempestivamente focolai di crisi durante l'ascolto continuativo.",
+      B: "Limitando il monitoraggio ai periodi in cui la conversazione è favorevole.",
+      C: "Separando customer experience e reputazione per evitare segnali ambigui.",
+      D: "Misurando solo il volume complessivo delle menzioni senza leggere i temi.",
+    },
+  },
+  q1047: {
+    matchText: "In una valutazione della Corporate Identity, a cosa serve un 'Facilities Audit'?",
+    text: "Nella valutazione della componente simbolica dell'identità, a cosa serve un inventario degli elementi espressivi?",
+    options: {
+      A: "A rilevare materiali e oggetti che esprimono l'identità aziendale.",
+      B: "A misurare la soddisfazione dei dipendenti verso la comunicazione interna.",
+      C: "A stimare il valore economico equivalente della copertura editoriale.",
+      D: "A valutare gli outcome comportamentali prodotti da una campagna media.",
+    },
+  },
+  q1048: {
+    matchText: "Cosa si intende per 'Capitale Comunicativo'?",
+    text: "Quale affermazione descrive meglio il capitale comunicativo?",
+    options: {
+      A: "È la capacità di attivare e collegare le componenti del capitale intellettuale.",
+      B: "È il budget complessivo investito in campagne pubblicitarie nel periodo.",
+      C: "È la sola reputazione esterna misurata presso clienti e investitori.",
+      D: "È l'insieme dei beni materiali usati dalla funzione comunicazione.",
+    },
+  },
+  q1049: {
+    matchText: "Quale di queste affermazioni descrive correttamente il concetto di 'Capitale Narrativo'?",
+    options: {
+      A: "È l'insieme di storie e conversazioni che rendono riconoscibile l'organizzazione.",
+      B: "Coincide con il capitale umano perché riguarda solo competenze individuali.",
+      C: "Misura il valore economico dei diritti editoriali posseduti dall'azienda.",
+      D: "Sostituisce identità e reputazione con un indice unico di visibilità media.",
+    },
+  },
+  q1050: {
+    matchText: "Quale tecnica proiettiva viene usata nelle ricerche di immagine aziendale?",
+    options: {
+      A: "Uso di associazioni, simboli o immagini per far emergere sentimenti impliciti.",
+      B: "Indagine CAWI standardizzata su un campione probabilistico rappresentativo.",
+      C: "Analisi del contenuto della copertura media ottenuta nel periodo.",
+      D: "Media monitoring continuativo su testate stampa, online, TV e radio.",
+    },
+  },
+  q1051: {
+    matchText: "Nel Capitale Intellettuale, la componente definita 'Capitale Organizzativo' comprende:",
+    options: {
+      A: "Processi, procedure, cultura aziendale e infrastrutture informative.",
+      B: "Competenze, conoscenze e capacità collaborative dei dipendenti.",
+      C: "Relazioni con clienti, stakeholder, reputazione e fiducia.",
+      D: "Storie e conversazioni che raccontano l'organizzazione nel tempo.",
+    },
+  },
+  q1052: {
+    matchText: "Cosa rappresenta la reputazione per i sociologi, secondo il materiale?",
+    options: {
+      A: "Un indicatore del grado di legittimazione dell'organizzazione nel contesto.",
+      B: "Una risorsa immateriale che crea valore economico per l'impresa.",
+      C: "Un segnale informativo che riduce l'incertezza nei mercati.",
+      D: "Una percezione aggregata misurabile attraverso indicatori affettivi e cognitivi.",
+    },
+  },
+  q1053: {
+    matchText: "Nel questionario CAWI, la domanda 'Dopo lo spot, la percezione di Barilla è migliorata, invariata o peggiorata?' valuta:",
+    options: {
+      A: "L'impatto sul profilo di immagine dell'azienda.",
+      B: "Il ricordo spontaneo assoluto della marca pubblicizzata.",
+      C: "La comprensione del messaggio chiave dello spot.",
+      D: "La propensione all'acquisto dopo l'esposizione pubblicitaria.",
+    },
+  },
+  q1054: {
+    matchText: "Nel contesto del Capitale Comunicativo, cosa rappresentano i 'Flussi Simbolici'?",
+    options: {
+      A: "La circolazione di valori, significati e identità dentro e fuori l'organizzazione.",
+      B: "La sequenza di output media prodotti dalla funzione comunicazione.",
+      C: "La trasmissione tecnica dei dati tra sistemi informativi aziendali.",
+      D: "La distribuzione dei budget fra canali paid, owned, earned e shared.",
+    },
+  },
+  q1055: {
+    matchText: "Quale ruolo gioca la comunicazione nella trasformazione del capitale intellettuale in valore aziendale?",
+    options: {
+      A: "Agisce come fattore attivante che mette in relazione le componenti immateriali.",
+      B: "Misura direttamente il valore contabile degli asset intangibili nel bilancio.",
+      C: "Trasforma automaticamente competenze individuali in risultati economici certi.",
+      D: "Sostituisce processi e sistemi organizzativi con attività di visibilità esterna.",
+    },
+  },
+  q1056: {
+    matchText: "Secondo lo studio dell'IABC (2003), in quale ambito la comunicazione è centrale?",
+    options: {
+      A: "Nello sviluppo di capitale umano, relazionale e organizzativo.",
+      B: "Nella sola gestione della copertura stampa e delle relazioni media.",
+      C: "Nel calcolo del valore pubblicitario equivalente delle uscite ottenute.",
+      D: "Nella certificazione delle audience disponibili per la pianificazione media.",
+    },
+  },
+  q1057: {
+    matchText: "Quale tra questi è un beneficio tangibile derivante da una buona reputazione aziendale?",
+    options: {
+      A: "La capacità di attrarre talenti migliori e ridurre i costi di acquisizione clienti.",
+      B: "La trasformazione automatica della reputazione in aumento immediato delle vendite.",
+      C: "La possibilità di evitare attività di ascolto durante crisi e controversie.",
+      D: "La sostituzione degli indicatori di business con sole misure di visibilità.",
+    },
+  },
+  q1058: {
+    matchText: "Cosa si intende per 'beni intangibili' nel contesto del valore d'azienda?",
+    options: {
+      A: "Risorse immateriali legate a conoscenza, relazioni, reputazione e organizzazione.",
+      B: "Beni fisici utilizzati nei processi produttivi e logistici dell'impresa.",
+      C: "Investimenti finanziari negoziabili detenuti nel portafoglio aziendale.",
+      D: "Spazi pubblicitari acquistati per aumentare rapidamente la notorietà.",
+    },
+  },
+  q1059: {
+    matchText: "Cosa si intende per 'Osservazione Partecipante' nella ricerca valutativa?",
+    options: {
+      A: "Una tecnica per osservare comportamenti degli stakeholder nel loro contesto naturale.",
+      B: "Una survey standardizzata per generalizzare risultati a una popolazione ampia.",
+      C: "Un'analisi automatica delle conversazioni online basata su dizionari semantici.",
+      D: "Un metodo per stimare il valore economico della copertura editoriale ottenuta.",
+    },
+  },
+  q1060: {
+    matchText: "Cosa distingue una misurazione 'Sommativa' da una 'Rendicontativa'?",
+    options: {
+      A: "La sommativa valuta risultati consolidati, la rendicontativa dimostra impatto e accountability.",
+      B: "La sommativa corregge il piano in corso, la rendicontativa definisce gli obiettivi ex ante.",
+      C: "La sommativa misura solo output media, la rendicontativa misura solo focus group.",
+      D: "La sommativa riguarda la ricerca qualitativa, la rendicontativa solo la survey.",
+    },
+  },
+  q1061: {
+    matchText: "Qual è il ruolo fondamentale della comunicazione nel trasformare il capitale intellettuale in valore?",
+    options: {
+      A: "Attivare le risorse immateriali e metterle in relazione tra loro.",
+      B: "Attribuire un valore pubblicitario equivalente agli asset immateriali.",
+      C: "Separare capitale umano, capitale relazionale e capitale organizzativo.",
+      D: "Misurare soltanto la notorietà generata dalle attività esterne.",
+    },
+  },
+  q1062: {
+    matchText: "All'interno del capitale comunicativo (Livello Sommativo), l'area 'Relazionale e Sociale' include:",
+    options: {
+      A: "Qualità delle relazioni con gli stakeholder e livello di fiducia.",
+      B: "Stile comunicativo, competenze e benessere dei dipendenti interni.",
+      C: "Capacità narrativa, reputazione e percezione complessiva dei pubblici.",
+      D: "KPI di business standardizzati provenienti da management e marketing.",
+    },
+  },
+  q1063: {
+    matchText: "La sottovariabile della fiducia definita 'Competenza' si riferisce a:",
+    options: {
+      A: "La convinzione che l'organizzazione abbia le capacità per fare ciò che promette.",
+      B: "La percezione che l'organizzazione agisca con onestà e correttezza morale.",
+      C: "La convinzione che l'organizzazione tenga conto anche degli interessi degli stakeholder.",
+      D: "Il livello di soddisfazione complessiva maturato nella relazione con l'organizzazione.",
+    },
+  },
+  q1064: {
+    matchText: "Qual è il ruolo strategico della comunicazione rispetto al Capitale Intellettuale?",
+    options: {
+      A: "Agire come fattore attivante che collega le componenti e crea valore.",
+      B: "Certificare in bilancio il valore finanziario degli asset intangibili.",
+      C: "Sostituire formazione, cultura organizzativa e relazioni interne.",
+      D: "Misurare soltanto la copertura ottenuta sui media esterni.",
+    },
+  },
+  q1065: {
+    matchText: "In che modo la comunicazione agisce sul capitale organizzativo?",
+    options: {
+      A: "Rende più efficaci strutture, processi e sistemi informativi facilitando il dialogo.",
+      B: "Trasforma automaticamente processi e procedure in capitale umano individuale.",
+      C: "Sostituisce la cultura aziendale con un insieme di messaggi esterni.",
+      D: "Riduce il valore dei sistemi organizzativi rispetto alle relazioni di mercato.",
+    },
+  },
+  q1066: {
+    matchText: "La comunicazione è definita come una 'Leva Strategica'. Cosa significa?",
+    options: {
+      A: "Che contribuisce alla creazione di valore e fiducia, non solo all'operatività.",
+      B: "Che coincide con la sola produzione di materiali e contenuti informativi.",
+      C: "Che va attivata soltanto dopo una crisi o un problema reputazionale.",
+      D: "Che deve essere misurata solo con indicatori di costo e copertura.",
+    },
+  },
+  q1067: {
+    matchText: "Cos'è il 'Passaparola' (Word of Mouth - WOM) nella misurazione della reputazione?",
+    options: {
+      A: "La diffusione spontanea di informazioni tra persone sulla base dell'esperienza.",
+      B: "La quota di copertura media ottenuta rispetto ai concorrenti diretti.",
+      C: "La valorizzazione monetaria della copertura editoriale non acquistata.",
+      D: "Il livello di ricordo del messaggio rilevato dopo l'esposizione.",
+    },
+  },
+  q1068: {
+    matchText: "In che modo la comunicazione valorizza il 'Capitale Umano' secondo le slide?",
+    options: {
+      A: "Sviluppando competenze relazionali e condivisione delle conoscenze tra dipendenti.",
+      B: "Trasformando automaticamente ogni competenza individuale in brevetto aziendale.",
+      C: "Sostituendo la formazione con campagne di comunicazione esterna.",
+      D: "Separando i flussi informativi dai processi di collaborazione interna.",
+    },
+  },
+  q1069: {
+    matchText: "Perché gli 'Intangibili' sono considerati una fonte di vantaggio competitivo superiore agli asset fisici?",
+    options: {
+      A: "Perché sono difficili da imitare e creano valore nel lungo periodo.",
+      B: "Perché producono sempre risultati immediati dopo una singola campagna.",
+      C: "Perché possono essere misurati solo con indicatori di visibilità media.",
+      D: "Perché sostituiscono completamente beni materiali, processi e competenze.",
+    },
+  },
+  q1070: {
+    matchText: "Secondo i materiali, perché gli asset intangibili sono 'difficili da imitare'?",
+    options: {
+      A: "Perché sono radicati in cultura, relazioni e capitale umano specifici dell'azienda.",
+      B: "Perché hanno sempre un valore contabile certo e stabile nel bilancio.",
+      C: "Perché dipendono esclusivamente da brevetti legali facili da verificare.",
+      D: "Perché possono essere replicati acquistando risorse equivalenti sul mercato.",
+    },
+  },
+  q1071: {
+    matchText: "L'osservazione partecipante è particolarmente utile per valutare:",
+    options: {
+      A: "I comportamenti effettivi degli stakeholder nel loro contesto naturale.",
+      B: "La comprensione cognitiva del messaggio rilevata con un questionario.",
+      C: "La copertura media ottenuta attraverso il conteggio degli articoli.",
+      D: "Il valore economico equivalente degli spazi editoriali ottenuti.",
+    },
+  },
+  q1072: {
+    matchText: "Qual è la distinzione fondamentale tra 'Immagine' e 'Reputazione' aziendale?",
+    options: {
+      A: "L'immagine è una percezione istantanea, la reputazione è un giudizio sedimentato nel tempo.",
+      B: "L'immagine coincide con l'identità dichiarata, la reputazione con il capitale umano.",
+      C: "L'immagine riguarda solo i pubblici interni, la reputazione solo quelli esterni.",
+      D: "L'immagine si misura solo con indicatori quantitativi, la reputazione solo con focus group.",
+    },
+  },
+  q1073: {
+    matchText: "Perché la 'Reputazione' è considerata un asset più stabile dell''Immagine'?",
+    options: {
+      A: "Perché si sedimenta nel tempo attraverso comportamenti reali e promesse mantenute.",
+      B: "Perché coincide con la fotografia istantanea che i pubblici hanno dell'organizzazione.",
+      C: "Perché dipende soltanto dalla visibilità prodotta da una singola campagna.",
+      D: "Perché può essere valutata senza considerare storia e coerenza dei comportamenti.",
+    },
+  },
+  q1074: {
+    matchText: "Qual è il limite principale del Capitale Intellettuale se non supportato dal Capitale Comunicativo?",
+    options: {
+      A: "Resta una risorsa statica che non circola, non si coordina e non genera valore dinamico.",
+      B: "Diventa automaticamente reputazione positiva anche senza relazioni e condivisione.",
+      C: "Sostituisce il bisogno di processi, cultura organizzativa e sistemi informativi.",
+      D: "Produce valore economico immediato senza dover essere attivato dalla comunicazione.",
+    },
+  },
+  q1075: {
+    matchText: "Perché si afferma che il capitale intellettuale non esiste senza comunicazione?",
+    options: {
+      A: "Perché la comunicazione permette condivisione delle competenze e costruzione di reputazione.",
+      B: "Perché il capitale intellettuale coincide con la sola comunicazione esterna.",
+      C: "Perché reputazione e relazioni non dipendono dai comportamenti organizzativi.",
+      D: "Perché gli asset immateriali si misurano solo con conteggi di copertura media.",
+    },
+  },
+  q1076: {
+    matchText: "L'immagine aziendale viene definita nei materiali come:",
+    options: {
+      A: "Una fotografia istantanea dell'organizzazione nella mente delle persone.",
+      B: "Un giudizio stabile costruito nel tempo attraverso comportamenti coerenti.",
+      C: "Il modo in cui l'organizzazione sceglie di presentare se stessa ai pubblici.",
+      D: "La somma delle relazioni fiduciarie costruite con clienti e stakeholder.",
+    },
+  },
+  q1077: {
+    matchText: "Il capitale comunicativo attiva il capitale intellettuale. Quale tra queste è una conseguenza di tale attivazione?",
+    options: {
+      A: "Le conoscenze individuali circolano e diventano patrimonio strategico dell'organizzazione.",
+      B: "Le risorse immateriali restano separate dai processi organizzativi e relazionali.",
+      C: "La reputazione viene sostituita da indicatori di output immediati.",
+      D: "Il capitale umano viene misurato solo come costo del personale.",
+    },
+  },
+  q1078: {
+    matchText: "Qual è la differenza tra Capitale Intellettuale e Capitale Narrativo secondo le slide?",
+    options: {
+      A: "L'intellettuale riguarda le risorse immateriali, il narrativo le storie che le rendono riconoscibili.",
+      B: "Il narrativo coincide con il capitale umano, l'intellettuale solo con i brevetti.",
+      C: "Il narrativo è una risorsa solo interna, l'intellettuale una risorsa solo esterna.",
+      D: "L'intellettuale misura la copertura media, il narrativo misura l'AVE ottenuto.",
+    },
+  },
+  q1079: {
+    matchText: "Perché il 'Capitale Comunicativo' è considerato una risorsa 'attivante'?",
+    options: {
+      A: "Perché trasforma risorse immateriali latenti in valore mettendo in relazione persone e processi.",
+      B: "Perché produce automaticamente valore senza bisogno di relazioni, processi o contesto.",
+      C: "Perché sostituisce capitale umano, relazionale e organizzativo con la sola visibilità.",
+      D: "Perché misura esclusivamente il budget investito nella comunicazione esterna.",
+    },
+  },
+  q1080: {
+    matchText: "In che modo il 'Capitale Comunicativo' si distingue dal 'Capitale Intellettuale'?",
+    options: {
+      A: "Rappresenta la capacità di attivare e mettere in relazione le risorse immateriali.",
+      B: "Coincide con la sola componente relazionale del capitale intellettuale.",
+      C: "È composto soltanto dai canali digitali proprietari dell'organizzazione.",
+      D: "Riguarda esclusivamente il budget destinato ad attività advertising.",
+    },
+  },
+  q1081: {
+    matchText: "Quale vantaggio tangibile deriva dalla capacità di un'azienda di fissare un 'premium price' grazie alla reputazione?",
+    options: {
+      A: "I clienti sono disposti a pagare di più per un'organizzazione di cui si fidano.",
+      B: "La reputazione viene trasformata automaticamente in quota di mercato.",
+      C: "L'organizzazione può evitare di misurare soddisfazione e fiducia.",
+      D: "Il premium price sostituisce ogni altro indicatore di valore relazionale.",
+    },
+  },
+  q1082: {
+    matchText: "Nelle relazioni 'Comunitarie' misurate dai questionari, quale di queste affermazioni è tipica?",
+    options: {
+      A: "Questa organizzazione è molto interessata al benessere di persone come me.",
+      B: "Questa organizzazione offre benefici solo quando riceve qualcosa in cambio.",
+      C: "Questa organizzazione valuta la relazione soltanto in termini di transazioni.",
+      D: "Questa organizzazione considera la relazione come puro scambio economico.",
+    },
+  },
   q272: {
     matchText: "Nel modello logico del processo di valutazione, cosa sono le \"variabili ponte\"?",
     options: {
@@ -4912,10 +5864,10 @@ const manualReviewOverrides = {
   intangibleAssetsHardToImitate: {
     matchText: "Secondo i materiali, perché gli asset intangibili sono 'difficili da imitare'?",
     options: {
-      A: "Perché sono radicati nella cultura, nelle relazioni e nel capitale umano specifico di quell'azienda.",
-      B: "Perché sono iscritti a bilancio con un valore contabile certo e stabile.",
-      C: "Perché dipendono esclusivamente da brevetti legali facilmente verificabili.",
-      D: "Perché possono essere acquistati già pronti sul mercato da fornitori esterni.",
+      A: "Perché sono radicati in cultura, relazioni e capitale umano specifici dell'azienda.",
+      B: "Perché hanno sempre un valore contabile certo e stabile nel bilancio.",
+      C: "Perché dipendono esclusivamente da brevetti legali facili da verificare.",
+      D: "Perché possono essere replicati acquistando risorse equivalenti sul mercato.",
     },
   },
   symbolicComponentIntangibles: {
@@ -5082,6 +6034,368 @@ const manualReviewOverrides = {
       B: "La presenza di un solo soggetto proprietario responsabile della misurazione.",
       C: "La separazione completa tra investitori, agenzie ed editori nella governance.",
       D: "La gestione esclusiva da parte degli editori per controllare i dati di vendita.",
+    },
+  },
+  continuingModelDistinctiveFinal: {
+    matchText: "Qual è la caratteristica distintiva del 'Continuing Model' di valutazione?",
+    options: {
+      A: "La valutazione accompagna il programma con feedback e correzioni continue.",
+      B: "La misurazione si svolge soltanto dopo la chiusura del programma.",
+      C: "Il modello osserva solo output media immediatamente visibili.",
+      D: "Gli obiettivi vengono definiti dopo la rendicontazione finale.",
+    },
+  },
+  capitalNarrativeMeaningFinal: {
+    matchText: "Il concetto di 'Capitale Narrativo' all'interno del capitale comunicativo si riferisce a:",
+    options: {
+      A: "L'insieme di storie e conversazioni prodotte dall'azienda e dai pubblici.",
+      B: "La componente strutturale fatta di procedure, sistemi e infrastrutture informative.",
+      C: "Le competenze individuali e collaborative che formano il capitale umano.",
+      D: "La qualità delle relazioni fiduciarie con clienti e stakeholder.",
+    },
+  },
+  phaseSixActionTuningFinal: {
+    matchText: "Qual è il fine ultimo della 'Fase 6: Messa a punto delle azioni'?",
+    options: {
+      A: "Proporre interventi operativi per risolvere problemi o ottimizzare servizi.",
+      B: "Archiviare i dati raccolti senza trasformarli in decisioni organizzative.",
+      C: "Limitare il report alla descrizione delle metriche già disponibili.",
+      D: "Rimandare le raccomandazioni alla successiva campagna di comunicazione.",
+    },
+  },
+  territorialCriterionMultinationalsFinal: {
+    matchText: "Perché il criterio 'Territoriale' è importante per le aziende multinazionali?",
+    options: {
+      A: "Per individuare luoghi di discussione specifici nei Paesi in cui l'azienda opera.",
+      B: "Per segmentare i pubblici esclusivamente in base a età, genere e professione.",
+      C: "Per scegliere solo canali proprietari già controllati direttamente dall'organizzazione.",
+      D: "Per confrontare i volumi globali senza distinguere mercati e contesti locali.",
+    },
+  },
+  aiRetentionAppsFinal: {
+    matchText: "In che modo l'IA favorisce la 'Fidelizzazione' (Retention) nelle app?",
+    options: {
+      A: "Creando routine di consumo basate su suggerimenti personalizzati.",
+      B: "Aumentando la copertura media del primo contenuto pubblicato dall'utente.",
+      C: "Certificando l'audience digitale tramite un panel esterno di famiglie.",
+      D: "Trasformando ogni interazione in valore pubblicitario equivalente.",
+    },
+  },
+  researchTechniquesPyramidFinal: {
+    matchText: "Nella gerarchia delle tecniche di ricerca, salendo verso la cima della piramide:",
+    options: {
+      A: "Le tecniche diventano più sofisticate, costose e richiedono più tempo.",
+      B: "Le tecniche diventano più semplici e richiedono meno interpretazione.",
+      C: "Le tecniche si concentrano soltanto sugli output immediatamente prodotti.",
+      D: "Le tecniche vengono sostituite da dati certificati di audience e diffusione.",
+    },
+  },
+  focusStimuliPresentationFinal: {
+    matchText: "Nella fase di 'Presentazione degli stimoli' di un focus group, quali strumenti possono essere usati?",
+    options: {
+      A: "Immagini, spot, oggetti concreti o frasi da completare.",
+      B: "Scale chiuse standardizzate da somministrare individualmente via CAWI.",
+      C: "Dati certificati su tiratura, diffusione e readership dei mezzi stampa.",
+      D: "Gruppi sperimentali e di controllo per isolare un nesso causale.",
+    },
+  },
+  kruegerFinalQuestionsFinal: {
+    matchText: "Nella gerarchia delle domande di Krueger per un Focus Group, cosa sono le 'Domande Finali'?",
+    options: {
+      A: "Domande che permettono ai partecipanti di riflettere sui commenti precedenti e chiudere la discussione.",
+      B: "Domande iniziali usate per presentare i partecipanti e rompere il ghiaccio.",
+      C: "Domande di transizione che introducono gradualmente il tema centrale.",
+      D: "Domande chiave poste nella parte centrale per affrontare il problema di ricerca.",
+    },
+  },
+  monitoringListeningTypoFinal: {
+    matchText: "Qual è la differenza sostanziale tra il 'monitoraggio' e l'ascolto' dei social media definita nel materiale?",
+    text: "Qual è la differenza sostanziale tra 'monitoraggio' e 'ascolto' dei social media definita nel materiale?",
+    options: {
+      A: "L'ascolto aggiunge al tracciamento l'analisi strategica per generare input di miglioramento.",
+      B: "Il monitoraggio è sempre strategico, mentre l'ascolto è solo raccolta tecnica dei dati.",
+      C: "L'ascolto riguarda soltanto le campagne paid, il monitoraggio solo il customer care.",
+      D: "Il monitoraggio si applica ai social, l'ascolto esclusivamente ai media tradizionali.",
+    },
+  },
+  sourcesMappingFinal: {
+    matchText: "Cos'è la 'Mappatura delle fonti' citata nella seconda fase?",
+    options: {
+      A: "L'identificazione di dove provengono i dati necessari, come fonti interne, esterne e analytics.",
+      B: "La classificazione finale del sentiment dopo la lettura dei contenuti raccolti.",
+      C: "La stima del valore economico della copertura editoriale ottenuta.",
+      D: "La preparazione grafica del report destinato al top management.",
+    },
+  },
+  mediaWebConvergenceFinal: {
+    matchText: "Perché oggi non è più possibile distinguere nettamente tra media tradizionali e web?",
+    options: {
+      A: "Perché i mezzi sono interconnessi, come TV in streaming e quotidiani sui social.",
+      B: "Perché i media tradizionali non producono più contenuti editoriali autonomi.",
+      C: "Perché le audience digitali sostituiscono sempre le indagini campionarie.",
+      D: "Perché solo i social media sono oggi considerati fonti giornalistiche certificate.",
+    },
+  },
+  geoNewEnvironmentsFinal: {
+    matchText: "Perché è importante monitorare i 'Nuovi ambienti digitali' come le piattaforme generative (GEO)?",
+    options: {
+      A: "Per analizzare la visibilità nei motori di risposta che usano l'IA.",
+      B: "Per misurare soltanto il tempo di permanenza degli utenti sul sito aziendale.",
+      C: "Per acquistare parole chiave più economiche nelle campagne search paid.",
+      D: "Per certificare la diffusione cartacea delle fonti citate dai sistemi generativi.",
+    },
+  },
+  nativeMetricsLimitFinal: {
+    matchText: "Qual è il limite principale delle metriche 'native' fornite direttamente dalle piattaforme social (es. Facebook Insights)?",
+    options: {
+      A: "La mancanza di profondità interpretativa e la difficoltà di confrontare dati tra piattaforme diverse.",
+      B: "La garanzia che tutte le piattaforme usino definizioni identiche per ogni metrica.",
+      C: "La capacità di misurare direttamente il fatturato generato da ogni contenuto organico.",
+      D: "La sostituzione completa delle ricerche qualitative e delle survey sui pubblici.",
+    },
+  },
+  tacticalCountingMetricsFinal: {
+    matchText: "Perché un approccio 'tattico' ai social media produce principalmente 'counting metrics'?",
+    options: {
+      A: "Perché ci si focalizza sulla gestione quotidiana dei canali senza obiettivi di business a lungo termine.",
+      B: "Perché le counting metrics misurano sempre l'impatto economico finale sul business.",
+      C: "Perché i social network impediscono di raccogliere dati su attività e interazioni.",
+      D: "Perché un approccio tattico elimina la necessità di definire KPI operativi.",
+    },
+  },
+  web2CollaborativeEconomyFinal: {
+    matchText: "Perché nel Web 2.0 si parla di 'economia collaborativa'?",
+    options: {
+      A: "Per la nascita di piattaforme dove il valore è creato dal contributo collettivo degli utenti.",
+      B: "Perché introduce sistemi autonomi di intelligenza artificiale generativa.",
+      C: "Perché torna a siti statici in cui l'utente legge contenuti senza interagire.",
+      D: "Perché certifica le audience digitali tramite organismi paritetici di mercato.",
+    },
+  },
+  transformerModelsFinal: {
+    matchText: "Nel monitoraggio del sentiment, cosa sono i 'Modelli Transformer' (es. GPT/LLM)?",
+    options: {
+      A: "Modelli linguistici evoluti capaci di cogliere meglio contesto e sfumature rispetto ai semplici dizionari.",
+      B: "Dizionari statici che assegnano polarità contando solo parole positive e negative.",
+      C: "Indicatori di audience certificata usati per stimare la reach potenziale dei media.",
+      D: "Metriche di output che misurano soltanto il numero di contenuti pubblicati.",
+    },
+  },
+  dictionarySentimentLimitFinal: {
+    matchText: "Qual è il limite principale del metodo dei 'Dizionari' (bag-of-words) nella sentiment analysis?",
+    options: {
+      A: "Ha un limite forte nella comprensione del contesto e dell'ironia.",
+      B: "Non può essere applicato a grandi volumi di contenuti digitali.",
+      C: "Richiede sempre la codifica manuale integrale di ogni singolo contenuto.",
+      D: "Misura direttamente atteggiamenti e comportamenti dei pubblici dopo la campagna.",
+    },
+  },
+  otsMediaRelationsFinal: {
+    matchText: "Cosa indica l'acronimo 'OTS' nelle relazioni media?",
+    options: {
+      A: "Opportunity To See, cioè le opportunità potenziali di essere raggiunti dal messaggio.",
+      B: "Il cambiamento di opinioni e comportamenti dopo l'esposizione alla campagna.",
+      C: "La quota di copertura ottenuta rispetto ai competitor nello stesso periodo.",
+      D: "Il grado di comprensione e ricordo del messaggio presso il pubblico target.",
+    },
+  },
+  totalDigitalAudienceAudicomFinal: {
+    matchText: "Cosa si intende per 'Total Digital Audience' nel sistema Audicom?",
+    options: {
+      A: "La misurazione integrata della fruizione di internet tramite panel di persone e rilevazioni censuarie.",
+      B: "La certificazione esclusiva della tiratura cartacea delle testate quotidiane.",
+      C: "La somma delle interazioni social ottenute dai brand in un dato periodo.",
+      D: "Una rilevazione qualitativa del gradimento degli utenti verso i siti web.",
+    },
+  },
+  auditelHybridSystemFinal: {
+    matchText: "Cosa misura Auditel attraverso il suo sistema di ricerca ibrido?",
+    options: {
+      A: "Le performance editoriali e pubblicitarie della TV, minuto per minuto, su tutti i dispositivi.",
+      B: "Il grado di soddisfazione qualitativa degli spettatori verso i programmi televisivi.",
+      C: "Le vendite generate dagli spot durante la visione dei programmi in diretta.",
+      D: "La diffusione cartacea e digitale dei quotidiani presso i lettori italiani.",
+    },
+  },
+  auditelSuperpanelFinal: {
+    matchText: "In Auditel, che cos'è il 'Superpanel'?",
+    options: {
+      A: "Il database permanente di circa 20.000 famiglie da cui viene estratto il campione meter.",
+      B: "Il software censuario installato nei player digitali degli editori televisivi.",
+      C: "Il comitato di governance che rappresenta investitori, agenzie ed editori.",
+      D: "La metrica che indica la quota di ascolto di un canale sul totale TV acceso.",
+    },
+  },
+  auditelHardwareFinal: {
+    matchText: "In una ricerca Auditel, quali dati vengono mappati riguardo alla 'Dotazione Hardware' della famiglia?",
+    options: {
+      A: "Numero di TV, Smart TV, game console, decoder e device mobili.",
+      B: "Preferenze dichiarate sui generi televisivi guardati più spesso dalla famiglia.",
+      C: "Dati di acquisto e-commerce effettuati durante le pause pubblicitarie.",
+      D: "Opinioni qualitative dei componenti sul gradimento dei programmi TV.",
+    },
+  },
+  audicomMultisourceFinal: {
+    matchText: "Il sistema Audicom adotta una logica 'multi-fonte'. Cosa significa concretamente?",
+    options: {
+      A: "Integra dati provenienti da panel di utenti con big data censuari per stimare audience e intensità d'uso.",
+      B: "Si basa solo sulle dichiarazioni degli editori senza controlli di terza parte.",
+      C: "Utilizza esclusivamente interviste qualitative in profondità presso i lettori.",
+      D: "Misura soltanto copie stampate, rese e abbonamenti dei quotidiani cartacei.",
+    },
+  },
+  goldenRuleTypoFinal: {
+    matchText: "Qual è lo scopo principale della 'Golden Rule' stabilità da Auditel?",
+    text: "Qual è lo scopo principale della 'Golden Rule' fissata da Auditel?",
+    options: {
+      A: "Garantire che software diversi producano lo stesso risultato numerico partendo dalla stessa base dati.",
+      B: "Stabilire quale canale televisivo ottiene la share più alta nel prime time.",
+      C: "Escludere dalla misurazione ogni consumo televisivo avvenuto su device digitali.",
+      D: "Sostituire il panel meter con sole interviste telefoniche di gradimento.",
+    },
+  },
+  audiradioSdkFinal: {
+    matchText: "Perché Audiradio ha adottato la tecnologia SDK integrata nei player?",
+    options: {
+      A: "Per certificare la Total Audience audio includendo ascolto digitale e on-demand.",
+      B: "Per sostituire la radio con una misurazione esclusiva dei contenuti televisivi.",
+      C: "Per rilevare la tiratura e la diffusione delle testate periodiche cartacee.",
+      D: "Per misurare il sentiment degli ascoltatori verso i conduttori radiofonici.",
+    },
+  },
+  skandiaRelationalFinal: {
+    matchText: "In base al modello Skandia, cosa comprende la 'componente relazionale' (originariamente definita componente cliente)?",
+    options: {
+      A: "Le relazioni con tutti gli stakeholder, l'immagine, la reputazione e la fiducia.",
+      B: "Le competenze individuali e collettive possedute dai dipendenti dell'organizzazione.",
+      C: "Processi, procedure, sistemi informativi e cultura organizzativa interna.",
+      D: "Gli output immediati prodotti dalla funzione comunicazione nel periodo.",
+    },
+  },
+  skandiaClientRelationalFinal: {
+    matchText: "Perché nel modello Skandia la 'componente del cliente' è stata successivamente ampliata in 'componente relazionale'?",
+    options: {
+      A: "Per riconoscere l'importanza di tutti gli stakeholder, non solo di chi acquista il prodotto.",
+      B: "Per limitare il modello alla sola relazione commerciale di vendita.",
+      C: "Per spostare la componente relazionale dentro il capitale organizzativo.",
+      D: "Per sostituire reputazione e fiducia con indicatori di output media.",
+    },
+  },
+  measurementTreeEnvironmentFinal: {
+    matchText: "Cosa rappresenta l'ambiente naturale in cui è immerso il 'Measurement Tree'?",
+    options: {
+      A: "L'ambiente competitivo e il clima culturale.",
+      B: "Le strategie e tattiche che costituiscono il tronco dell'albero.",
+      C: "Gli outcome generati presso i pubblici raggiunti dalla campagna.",
+      D: "I pubblici media rappresentati dalle foglie dell'albero.",
+    },
+  },
+  impactMeaningFinal: {
+    matchText: "Cosa si intende per 'Impact' nel modello di misurazione?",
+    options: {
+      A: "Il valore generato per l'organizzazione nel medio-lungo periodo.",
+      B: "Il numero di contenuti, eventi e uscite media prodotti dalla funzione.",
+      C: "La ricezione, comprensione e memorizzazione del messaggio nei pubblici.",
+      D: "La quantità di contatti potenziali generati dalla copertura media.",
+    },
+  },
+  yardstickPyramidTechniquesFinal: {
+    matchText: "Nella gerarchia dei metodi di valutazione (Yardstick Model), come si posizionano le tecniche risalendo la piramide?",
+    options: {
+      A: "Diventano più sofisticate, costose e richiedono più tempo e risorse.",
+      B: "Diventano progressivamente più semplici e meno costose da applicare.",
+      C: "Si concentrano sempre meno sugli outcome e sempre più sugli output.",
+      D: "Vengono sostituite da metriche di audience certificate dagli editori.",
+    },
+  },
+  skandiaHumanCapitalFinal: {
+    matchText: "Nel modello Skandia, come viene definita la componente del capitale umano?",
+    options: {
+      A: "Le competenze, le conoscenze e le capacità individuali e collettive dei dipendenti.",
+      B: "Processi, procedure, sistemi informativi e cultura che restano nell'organizzazione.",
+      C: "Relazioni con stakeholder, immagine, reputazione e fiducia costruite nel tempo.",
+      D: "Storie e conversazioni che raccontano l'organizzazione ai pubblici.",
+    },
+  },
+  reputationQuotientFinal: {
+    matchText: "Quale elemento caratterizza il modello 'Reputation Quotient' nell'analisi della reputazione?",
+    options: {
+      A: "L'uso di 20 indicatori suddivisi in 6 dimensioni, una affettiva e cinque cognitive.",
+      B: "La misurazione della credibilità attraverso le sole dimensioni esperienza e lealtà.",
+      C: "La lettura dell'organizzazione come personalità composta da tratti caratteriali.",
+      D: "La valutazione della reputazione esclusivamente dal punto di vista dei clienti.",
+    },
+  },
+  ccpmActionsFinal: {
+    matchText: "Nella Fase 2 del modello CCPM, qual è il ruolo della 'Trasformazione dei piani in azioni'?",
+    options: {
+      A: "Garantire che i risultati della misurazione vengano usati per migliorare le performance comunicative.",
+      B: "Limitare l'uso dei dati alla conservazione del report finale.",
+      C: "Separare la misurazione dai processi decisionali della funzione comunicazione.",
+      D: "Sostituire gli obiettivi VALUES con indicatori scelti dopo la campagna.",
+    },
+  },
+  performanceMeasurementFocusFinal: {
+    matchText: "Qual è il focus principale del 'Performance Measurement' nella comunicazione aziendale?",
+    options: {
+      A: "Capire come la comunicazione contribuisce alla performance complessiva dell'organizzazione.",
+      B: "Confrontare soltanto i costi delle agenzie incaricate della campagna.",
+      C: "Misurare esclusivamente la rapidità di invio dei comunicati stampa.",
+      D: "Analizzare solo parametri tecnici del sito, come tempi di caricamento.",
+    },
+  },
+  cultureVsSkillsFinal: {
+    matchText: "In termini di Capitale Intellettuale, cosa differenzia la 'Cultura Organizzativa' dalle 'Competenze dello Staff'?",
+    options: {
+      A: "La cultura è un asset strutturale che rimane nell'azienda, le competenze appartengono alle persone.",
+      B: "La cultura appartiene al capitale relazionale, le competenze alla reputazione esterna.",
+      C: "La cultura misura solo output media, le competenze misurano l'AVE ottenuto.",
+      D: "La cultura coincide con la componente cliente, le competenze con la fiducia.",
+    },
+  },
+  capitalNarrativeDescribedFinal: {
+    matchText: "Il 'Capitale Narrativo' è descritto come:",
+    options: {
+      A: "L'insieme delle storie e delle conversazioni, online e offline, che raccontano l'organizzazione.",
+      B: "L'insieme delle procedure e dei sistemi informativi che restano nell'organizzazione.",
+      C: "Le competenze tecniche e relazionali possedute dai singoli dipendenti.",
+      D: "Le relazioni fiduciarie con clienti e stakeholder esterni.",
+    },
+  },
+  exchangeCommunityRelationsFinal: {
+    matchText: "Qual è la differenza principale tra relazioni di 'Scambio' e relazioni 'Comunitarie'?",
+    options: {
+      A: "Nelle relazioni di scambio si offrono benefici per riceverne altri, in quelle comunitarie per il benessere altrui.",
+      B: "Le relazioni di scambio riguardano solo pubblici interni, quelle comunitarie solo clienti finali.",
+      C: "Le relazioni comunitarie sono misurate soltanto con indicatori di output media.",
+      D: "Le relazioni di scambio coincidono con la fiducia, quelle comunitarie con la notorietà.",
+    },
+  },
+  intellectualCommunicationThesisFinal: {
+    matchText: "Qual è la tesi centrale che lega il Capitale Intellettuale alla Comunicazione?",
+    options: {
+      A: "Il capitale intellettuale non genera valore automaticamente, ma deve essere attivato e messo in relazione dalla comunicazione.",
+      B: "Il capitale intellettuale coincide con la sola comunicazione esterna dell'organizzazione.",
+      C: "La comunicazione riduce il valore degli intangibili perché aumenta i costi operativi.",
+      D: "Il capitale intellettuale può generare valore senza condivisione, relazioni o processi comunicativi.",
+    },
+  },
+  intellectualVsCommunicativeFinal: {
+    matchText: "Qual è la differenza fondamentale tra Capitale Intellettuale e Capitale Comunicativo?",
+    options: {
+      A: "Il primo è l'insieme delle risorse immateriali possedute, il secondo è la capacità di attivarle e metterle in relazione.",
+      B: "Il capitale intellettuale riguarda solo i manager, quello comunicativo solo i social media manager.",
+      C: "Il capitale comunicativo è tangibile, mentre quello intellettuale è sempre materiale.",
+      D: "Il capitale intellettuale coincide con i budget pubblicitari, quello comunicativo con la reach.",
+    },
+  },
+  marketingRelationalTrustFinal: {
+    matchText: "Nelle teorie del Marketing Relazionale, qual è l'elemento che ha l'effetto più forte sulla valutazione di una relazione?",
+    options: {
+      A: "La fiducia.",
+      B: "La soddisfazione maturata nella relazione.",
+      C: "L'impegno percepito tra le parti.",
+      D: "Il controllo reciproco nella relazione.",
     },
   },
 };
